@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- THIS IS A TEMPLATE FILE WITH SAMPLE VALUES FILLED IN. PLEASE REVIEW AND UPDATE FOR YOUR INSTALLER --><!-- Its Schema is available here public/Common/xplat/schema/CSUManifest.xsd --><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">  
+<UpdateID>12.0.3</UpdateID>
+<TargetBuildType>2</TargetBuildType>
+<OwningChannel>AdobeDreamweaverCS6-12</OwningChannel>
+  <DisplayName default="en_US"><en_US>Dreamweaver CS6 (to version 12.0.3) to address HiDPI-compliance and resolve critical bugs.</en_US>
+          <cs_CZ>Aktualizace Dreamweaver CS6 (až po verzi 12.0.3) zaměřená na soulad se standardem HiDPI a řešení závažných chyb.</cs_CZ>
+          <de_DE>Dreamweaver CS6 (bis Version 12.0.3) zur HiDPI-Kompatibilität und zur Lösung kritischer Bugs.</de_DE>
+          <es_ES>Dreamweaver CS6 (a la versión 12.0.3) para resolver la compatibilidad con HiDPI y problemas críticos.</es_ES>
+          <es_MX>Dreamweaver CS6 (a la versión 12.0.3) para resolver la compatibilidad con HiDPI y problemas críticos.</es_MX>
+          <fr_FR>Dreamweaver CS6 (jusqu'à la version 12.0.3) pour assurer la conformité HiDPI et corriger des bogues critiques.</fr_FR>
+		  <fr_MA>Dreamweaver CS6 (jusqu'à la version 12.0.3) pour assurer la conformité HiDPI et corriger des bogues critiques.</fr_MA>
+          <fr_CA>Dreamweaver CS6 (jusqu'à la version 12.0.3) pour assurer la conformité HiDPI et corriger des bogues critiques.</fr_CA>
+          <it_IT>Dreamweaver CS6 (fino alla versione 12.0.3) implementa la conformità HiDPI e risolve alcuni bug critici.</it_IT>
+          <ja_JP>（バージョン 12.0.3 までの）Dreamweaver CS6 は、HiDPI 準拠に対応し、重大なバグを解決します。</ja_JP>
+          <ko_KR>Dreamweaver CS6(12.0.3 버전까지)의 HiDPI-호환성을 다루고 심각한 버그를 해결합니다.</ko_KR>
+          <nl_NL>Dreamweaver CS6-update (naar versie 12.0.3) verhelpt HiDPI-compatibiliteitsproblemen en kritieke fouten.</nl_NL>
+          <pl_PL>Aktualizacja programu Dreamweaver CS6 do wersji 12.0.3 rozwiązuje problemy z obsługą technologii HiDPI oraz usuwa błędy krytyczne.</pl_PL>
+          <pt_BR>Dreamweaver CS6 (para a versão 12.0.3) para abordar conformidade com HiDPI e resolver bugs críticos.</pt_BR>
+          <ru_RU>Dreamweaver CS6 (до версии 12.0.3) для обеспечения поддержки режима HiDPI и устранения критических неполадок.</ru_RU>
+          <sv_SE>Dreamweaver CS6 (till version 12.0.3) för att hantera HiDPI-kompatibilitet och åtgärda viktiga fel.</sv_SE>
+          <tr_TR>Dreamweaver CS6 12.0.3 güncellemesinde HiDPI uyumluluğu ele alınır ve önemli hatalar çözülür.</tr_TR>
+          <zh_CN>Dreamweaver CS6（至 12.0.3 版）解决了 HiDPI 兼容性问题和严重错误。</zh_CN>
+          <zh_TW>Dreamweaver CS6 (至版本 12.0.3) 能夠解決 HiDPI 相容性問題與排除嚴重錯誤。</zh_TW>
+        </DisplayName>
+  <!-- One for each locale to be displayed in CS Updater-->
+  <Description default="en_US"><en_US>The latest update to Adobe Dreamweaver CS6 includes optimizations for HiDPI displays, improves performance in Code View, Live View rendering and addresses FTP transfer permission issues. This update to Adobe Dreamweaver ensures continued compatibility with the Adobe PhoneGap Build service.</en_US>
+          <cs_CZ>Nejnovější aktualizace k softwaru Adobe Dreamweaver CS6 nabízí optimalizaci displejů HiDPI, zajišťuje kvalitnější vykreslování ve Zobrazení kódu a Živém zobrazení a zaměřuje se na potíže s oprávněním pro přenos prostřednictvím protokolu FTP. Tato aktualizace softwaru Adobe Dreamweaver zajišťuje trvající kompatibilitu se službou Adobe PhoneGap Build.</cs_CZ>
+          <de_DE>Die neueste Aktualisierung für Adobe Dreamweaver CS6 umfasst Optimierungen für die HiDPI-Anzeige, verbessert die Performance in der Codeansicht und der Live View-Wiedergabe und behebt Probleme mit FTP-Übertragungsrechten. Diese Adobe Dreamweaver-Aktualisierung stellt sicher, dass die Kompatibilität mit dem Adobe PhoneGap Build-Service weiterhin gewährleistet ist.</de_DE>
+          <es_ES>La actualización más reciente para Adobe Dreamweaver CS6 incluye optimizaciones para pantallas HiDPI, mejora el rendimiento en la Vista de código y la representación en la Vista en vivo y resuelve problemas de permisos para transferencias FTP. Esta actualización de Adobe Dreamweaver garantiza que se mantenga la compatibilidad con el servicio Adobe PhoneGap Build.</es_ES>
+          <es_MX>La actualización más reciente para Adobe Dreamweaver CS6 incluye optimizaciones para pantallas HiDPI, mejora el rendimiento en la Vista de código y la representación en la Vista en vivo y resuelve problemas de permisos para transferencias FTP. Esta actualización de Adobe Dreamweaver garantiza que se mantenga la compatibilidad con el servicio Adobe PhoneGap Build.</es_MX>
+          <fr_FR>La plus récente mise à niveau d'Adobe Dreamweaver CS6 comporte des optimisations pour les écrans HiDPI, améliore les performances en mode Code et le rendu en mode En direct, et corrige les problèmes d'autorisations de transfert FTP. Cette mise à  niveau d'Adobe Dreamweaver garantit la compatibilité avec le service Adobe PhoneGap Build.</fr_FR>
+		  <fr_MA>La plus récente mise à niveau d'Adobe Dreamweaver CS6 comporte des optimisations pour les écrans HiDPI, améliore les performances en mode Code et le rendu en mode En direct, et corrige les problèmes d'autorisations de transfert FTP. Cette mise à  niveau d'Adobe Dreamweaver garantit la compatibilité avec le service Adobe PhoneGap Build.</fr_MA>
+          <fr_CA>La plus récente mise à niveau d'Adobe Dreamweaver CS6 comporte des optimisations pour les écrans HiDPI, améliore les performances en mode Code et le rendu en mode En direct, et corrige les problèmes d'autorisations de transfert FTP. Cette mise à  niveau d'Adobe Dreamweaver garantit la compatibilité avec le service Adobe PhoneGap Build.</fr_CA>
+          <it_IT>L'ultimo aggiornamento di Adobe Dreamweaver CS6 include ottimizzazioni per i display HiDPI, migliora le prestazioni nella vista Codice, il rendering nella vista Dal vivo e risolve alcuni problemi relativi alle autorizzazioni per il trasferimento FTP. Questo aggiornamento di Adobe Dreamweaver garantisce la compatibilità ininterrotta con il servizio Adobe PhoneGap Build.</it_IT>
+          <ja_JP>Adobe Dreamweaver CS6 の最新アップデートは、HiDPI 表示を最適化し、コードビューやライブビューのレンダリングでのパフォーマンスを向上させ、FTP 転送のアクセス許可の問題に対処します。Adobe Dreamweaver のこのアップデートにより、Adobe PhoneGap Build サービスとの継続した互換性が保証されます。</ja_JP>
+          <ko_KR>Adobe Dreamweaver CS6의 최신 업데이트는 HiDPI 디스플레이를 위한 최적화를 포함하고 있으며, 코드 뷰, 라이브 뷰 렌더링 기능을 개선하고, FTP 전송 권한 문제를 다루었습니다. 이 Adobe Dreamweaver 업데이트를 통해 Adobe PhoneGap Build 서비스로 지속적인 호환성을 보장합니다.</ko_KR>
+          <nl_NL>De nieuwste update voor Adobe Dreamweaver CS6 biedt optimalisaties voor HiDPI-schermen, verbeterde prestaties voor Codeweergave en Live View-rendering en verhelpt machtigingsproblemen voor FTP-overdracht. Deze update zorgt ervoor dat Adobe Dreamweaver compatibel blijft met de service Adobe PhoneGap Build.</nl_NL>
+          <pl_PL>Najnowsza aktualizacja programu Adobe Dreamweaver CS6 obejmuje optymalizację działania wyświetlaczy w technologii HiDPI, zwiększa wydajność pracy w widoku Kod, usprawnia renderowanie w widoku aktywnym i rozwiązuje problemy z uprawnieniami do przesyłania plików przez serwer FTP. Zapewnia również nieprzerwaną zgodność z usługą Adobe PhoneGap Build.</pl_PL>
+          <pt_BR>A atualização mais recente para a Adobe Dreamweaver CS6 inclui otimizações das exibições HiDPI, aumento de desempenho na renderização do Visualizador de código e da Visualização dinâmica e corrige problemas de permissão nas transferências do FTP.</pt_BR>
+          <ru_RU>Последнее обновление Adobe Dreamweaver CS6 включает оптимизацию для отображения в разрешении HiDPI, улучшает производительность в представлении кода, обработку в режиме интерактивного просмотра и позволяет устранить проблемы с разрешениями на передачу данных на FTP. Это обновление Adobe Dreamweaver гарантирует постоянную совместимость со службой Adobe PhoneGap Build.</ru_RU>
+          <sv_SE>Den senaste uppdateringen av Adobe Dreamweaver CS6 innehåller optimeringar för HiDPI-skärmar, Live-vy-rendering och förbättrad prestanda i kodvyn samt hanterar behörighetsproblem vid FTP-överföring. Den här uppdateringen av Adobe Dreamweaver säkerställer fortsatt kompatibilitet med Adobe PhoneGap Build-tjänsten.</sv_SE>
+          <tr_TR>Adobe Dreamweaver CS6'ya yönelik en son güncelleme HiDPI ekranlarına yönelik en iyileştirmeler içerir, Kod Görünümü ile Canlı Görünüm'de görüntü oluşturma performansını geliştirir ve FTP aktarım izniyle ilgili sorunları ele alır. Bu Adobe Dreamweaver güncellemesi, Adobe PhoneGap Build hizmetiyle uyumluluğun devam etmesini sağlar.</tr_TR>
+          <zh_CN>Adobe Dreamweaver CS6 的最新更新包括优化 HiDPI 显示、提高代码视图和实时视图中的呈现性能并解决 FTP 传输权限问题。该项 Adobe Dreamweaver 更新确保能够继续兼容 Adobe PhoneGap Build 服务。</zh_CN>
+          <zh_TW>Adobe Dreamweaver CS6 最新更新包括 HiDPI 顯示最佳化，改善程式碼檢視效能、即時檢視呈現及解決 FTP 傳送權限問題。此項 Adobe Dreamweaver 更新確保與 Adobe PhoneGap Build 服務持續的相容性。</zh_TW>
+        </Description>
+  <AffectedChannels><ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+  </AffectedChannels>
+  <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobeDreamweaver-12.0-All-Update/AdobePatchInstaller.app</ExecutableName>
+      <Size>104690211</Size>
+      
+      
+      
+    </File>
+  </InstallFiles>
+  <NeedsReboot>false</NeedsReboot>
+
+
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{9821BD6D-3E1D-11E2-8B1C-9920D5DFDAC9}</UpdatePayloadID>
+  <OwningPayloadID>{8ACD4814-788B-11E1-AC70-A860A781E0D9}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^Dreamweaver$</Process>
+  </ConflictingProcesses>
+<TargetLicensingType>2</TargetLicensingType><RecommendingChannels><ChannelID>AdobeDreamweaverCS6-12</ChannelID></RecommendingChannels></Manifest>

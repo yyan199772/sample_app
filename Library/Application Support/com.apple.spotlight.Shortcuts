@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>in</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Adobe InDesign CS6</string>
+		<key>LAST_USED</key>
+		<date>2015-11-09T19:04:43Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Adobe%20InDesign%20CS6/Adobe%20InDesign%20CS6.app/</string>
+	</dict>
+	<key>ph</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Adobe Photoshop CS6</string>
+		<key>LAST_USED</key>
+		<date>2015-11-11T16:55:35Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Adobe%20Photoshop%20CS6/Adobe%20Photoshop%20CS6.app/</string>
+	</dict>
+	<key>pho</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Adobe Photoshop CS6</string>
+		<key>LAST_USED</key>
+		<date>2015-10-26T18:31:27Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Adobe%20Photoshop%20CS6/Adobe%20Photoshop%20CS6.app/</string>
+	</dict>
+	<key>phot</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Adobe Photoshop CS6</string>
+		<key>LAST_USED</key>
+		<date>2015-11-04T17:35:56Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Adobe%20Photoshop%20CS6/Adobe%20Photoshop%20CS6.app/</string>
+	</dict>
+	<key>photosh</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Adobe Photoshop CS6</string>
+		<key>LAST_USED</key>
+		<date>2015-11-16T13:11:42Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Adobe%20Photoshop%20CS6/Adobe%20Photoshop%20CS6.app/</string>
+	</dict>
+	<key>sub</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Sublime Text 2</string>
+		<key>LAST_USED</key>
+		<date>2015-11-18T17:38:30Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Sublime%20Text%202.app/</string>
+	</dict>
+	<key>ter</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2015-12-02T18:14:50Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>term</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2015-12-02T18:14:11Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>termi</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2015-10-19T18:00:47Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>termina;</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2015-11-18T17:29:19Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>terminal</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2015-09-18T15:16:52Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+</dict>
+</plist>

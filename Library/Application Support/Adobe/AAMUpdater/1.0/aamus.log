@@ -1,0 +1,387 @@
+:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-11-18T17:27:10: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-11-18T17:27:10: CFU(Webfeed): Query licensing type for LEID  = Photoshop-CS6-Mac-GM
+2015-11-18T17:27:10: A valid perpetual license found for  = Photoshop-CS6-Mac-GM
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: CFU(Webfeed): Query licensing type for LEID  = ExMan-CS6-Mac-GM
+2015-11-18T17:27:10: No valid license found for  = ExMan-CS6-Mac-GM
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:10: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-11-18T17:27:11: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-11-18T17:27:11: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-11-18T17:27:11: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:11: CFU(Webfeed): Query licensing type for LEID  = Camera_Raw-7-MAC-GM
+2015-11-18T17:27:12: No valid license found for  = Camera_Raw-7-MAC-GM
+2015-11-18T17:27:12: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:12: Exiting IsAppGoodToUpdate with return  = 1
+2015-11-18T17:27:12: CFU(Webfeed): Query licensing type for LEID  = DigitalPublishing-CS6-Mac-GM
+2015-11-18T17:27:12: No valid license found for  = DigitalPublishing-CS6-Mac-GM
+2015-11-18T17:27:12: Returning from << UCCheckForUpdates >> call with outErr value -  = 0
+2015-11-18T17:27:12: CFU(Webfeed): Web feed has increased, Going for incremental feed download
+2015-11-18T17:27:12: Revoking update:  = REVOKE/ALL/AdobeLightroom-6.0/6.2.1
+2015-11-18T17:27:12: Revoking update:  = REVOKE/ALL/PhotoshopCameraRaw8-8.0/9.2.89
+2015-11-18T17:27:12: Revoking update:  = REVOKE/ALL/PhotoshopCameraRawForElements14-9.1/9.2.89
+2015-11-18T17:27:13: Check for Updates was done successfully.
+2015-11-18T17:27:14: UCGetprogress : Check for updates returning state for reffId  = 
+2015-11-18T17:27:14: UCGetprogress : Check for updates returning state     = 21
+2015-11-18T17:27:14: UCGetprogress : Check for updates returning outError  = 0
+2015-11-18T17:27:14: UCGetprogress : Check for updates returning percent   = 100
+2015-11-18T17:27:14: UCGetprogress : Check for updates returning unique error code string   = U21M1C0
+2015-11-18T17:27:14: Returning from << UCTerminate >> call with value = 1
+2015-11-18T17:27:14: UpdaterCoreImpl::ShutdownLogFile : Going to call ShutdownESDLogFile()
+2015-11-18T17:27:14: <<< Adobe Updater Log End <<<
+
+
+2015-11-18T17:27:15: >>> Adobe Updater Log Begin >>>
+2015-11-18T17:27:15: UpdaterCoreImpl::InitLogFile : Application Version 6.0.0.67
+2015-11-18T17:27:15: UpdaterCoreImpl::InitLogFile : cmdline option --> -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamus.log
+2015-11-18T17:27:15: UpdaterCoreImpl::InitLogFile : cmdline option --> -logLevel = 2
+2015-11-18T17:27:15: UCInitialize : AAMLauncher was NOT running.
+2015-11-18T17:27:15: UpdaterCore : Returning from << UCInitialize >> Returning with outErr Value =>  = 0
+2015-11-18T19:40:05: <<< Adobe Updater Log End <<<
+
+
+2015-12-01T13:14:25: >>> Adobe Updater Log Begin >>>
+2015-12-01T13:14:25: UpdaterCoreImpl::InitLogFile : Application Version 6.0.0.67
+2015-12-01T13:14:25: UpdaterCoreImpl::InitLogFile : cmdline option --> -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamus.log
+2015-12-01T13:14:25: UpdaterCoreImpl::InitLogFile : cmdline option --> -logLevel = 2
+2015-12-01T13:14:25: UCInitialize : AAMLauncher was NOT running.
+2015-12-01T13:14:27: UpdaterCore : Returning from << UCInitialize >> Returning with outErr Value =>  = 0
+2015-12-01T13:14:27: UCCheckForUpdates : Updater is loaded in AAM Updates Notifier mode.
+2015-12-01T13:14:27: UCCheckForUpdates : User level lock acquired for AAM Updates Notifier.
+2015-12-01T13:14:35: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:35: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:36: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:41: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:41: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:41: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:41: CFU(Webfeed): Query licensing type for LEID  = AdobeMediaEncoder-CS6-Mac-GM
+2015-12-01T13:14:42: No valid license found for  = AdobeMediaEncoder-CS6-Mac-GM
+2015-12-01T13:14:42: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:42: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:42: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:42: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:42: CFU(Webfeed): Query licensing type for LEID  = FlashPro-CS6-Mac-GM
+2015-12-01T13:14:42: No valid license found for  = FlashPro-CS6-Mac-GM
+2015-12-01T13:14:42: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:42: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:42: CFU(Webfeed): Query licensing type for LEID  = Photoshop-CS6-Mac-GM
+2015-12-01T13:14:43: A valid perpetual license found for  = Photoshop-CS6-Mac-GM
+2015-12-01T13:14:43: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:43: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:43: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:43: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:43: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:43: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:43: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-01T13:14:43: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:44: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:44: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-01T13:14:44: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-01T13:14:44: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:44: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:44: CFU(Webfeed): Query licensing type for LEID  = Bridge-CS6-Mac-GM
+2015-12-01T13:14:45: No valid license found for  = Bridge-CS6-Mac-GM
+2015-12-01T13:14:45: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:45: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:45: CFU(Webfeed): Query licensing type for LEID  = Photoshop-CS6-Mac-GM
+2015-12-01T13:14:46: A valid perpetual license found for  = Photoshop-CS6-Mac-GM
+2015-12-01T13:14:46: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-01T13:14:46: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: CFU(Webfeed): Query licensing type for LEID  = Illustrator-CS6-Mac-GM
+2015-12-01T13:14:46: No valid license found for  = Illustrator-CS6-Mac-GM
+2015-12-01T13:14:46: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-01T13:14:46: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: CFU(Webfeed): Query licensing type for LEID  = Illustrator-CS6-Mac-GM
+2015-12-01T13:14:46: No valid license found for  = Illustrator-CS6-Mac-GM
+2015-12-01T13:14:46: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-01T13:14:46: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:46: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:46: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-01T13:14:46: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:46: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-01T13:14:46: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-01T13:14:46: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:46: CFU(Webfeed): Query licensing type for LEID  = Fireworks-CS6-Mac-GM
+2015-12-01T13:14:47: No valid license found for  = Fireworks-CS6-Mac-GM
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-01T13:14:47: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-01T13:14:47: CFU(Webfeed): Query licensing type for LEID  = Photoshop-CS6-Mac-GM
+2015-12-01T13:14:47: A valid perpetual license found for  = Photoshop-CS6-Mac-GM
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: CFU(Webfeed): Query licensing type for LEID  = ExMan-CS6-Mac-GM
+2015-12-01T13:14:47: No valid license found for  = ExMan-CS6-Mac-GM
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:47: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-01T13:14:48: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-01T13:14:48: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-01T13:14:48: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: CFU(Webfeed): Query licensing type for LEID  = Camera_Raw-7-MAC-GM
+2015-12-01T13:14:48: No valid license found for  = Camera_Raw-7-MAC-GM
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-01T13:14:48: CFU(Webfeed): Query licensing type for LEID  = DigitalPublishing-CS6-Mac-GM
+2015-12-01T13:14:49: No valid license found for  = DigitalPublishing-CS6-Mac-GM
+2015-12-01T13:14:49: Returning from << UCCheckForUpdates >> call with outErr value -  = 0
+2015-12-01T13:14:50: CFU(Webfeed): Web feed has increased, Going for incremental feed download
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeMediaEncoder-9.0.0-Trial/9.0.2
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeSpeedGrade-9.0.0-Trial/9.0.1
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeAfterEffects-13.5.0-Trial/13.5.1
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeCharacterAnimatorPreview-1.0/1.0.2
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobePremierePro-9.0.0-Trial/9.0.2
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeDreamweavercc64Bit-16/16.0.1
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeInDesignCC2015-11.0/11.1.0.122
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeIllustrator19-mul/19.1.0.29.0
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobePhotoshopCC2015-16.0/16.0.1
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobeExportAssets2-2.0/2.3
+2015-12-01T13:14:50: Revoking update:  = REVOKE/ALL/AdobePreviewCC-1.0.0/1.1.1
+2015-12-01T13:14:50: Check for Updates was done successfully.
+2015-12-01T13:14:50: UCGetprogress : Check for updates returning state for reffId  = 
+2015-12-01T13:14:50: UCGetprogress : Check for updates returning state     = 21
+2015-12-01T13:14:50: UCGetprogress : Check for updates returning outError  = 0
+2015-12-01T13:14:50: UCGetprogress : Check for updates returning percent   = 100
+2015-12-01T13:14:50: UCGetprogress : Check for updates returning unique error code string   = U21M1C0
+2015-12-01T13:14:50: Returning from << UCTerminate >> call with value = 1
+2015-12-01T13:14:50: UpdaterCoreImpl::ShutdownLogFile : Going to call ShutdownESDLogFile()
+2015-12-01T13:14:50: <<< Adobe Updater Log End <<<
+
+
+2015-12-01T13:14:50: >>> Adobe Updater Log Begin >>>
+2015-12-01T13:14:50: UpdaterCoreImpl::InitLogFile : Application Version 6.0.0.67
+2015-12-01T13:14:50: UpdaterCoreImpl::InitLogFile : cmdline option --> -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamus.log
+2015-12-01T13:14:50: UpdaterCoreImpl::InitLogFile : cmdline option --> -logLevel = 2
+2015-12-01T13:14:50: UCInitialize : AAMLauncher was NOT running.
+2015-12-01T13:14:50: UpdaterCore : Returning from << UCInitialize >> Returning with outErr Value =>  = 0
+2015-12-01T13:15:36: <<< Adobe Updater Log End <<<
+
+
+2015-12-02T18:04:38: >>> Adobe Updater Log Begin >>>
+2015-12-02T18:04:38: UpdaterCoreImpl::InitLogFile : Application Version 6.0.0.67
+2015-12-02T18:04:38: UpdaterCoreImpl::InitLogFile : cmdline option --> -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamus.log
+2015-12-02T18:04:38: UpdaterCoreImpl::InitLogFile : cmdline option --> -logLevel = 2
+2015-12-02T18:04:38: UCInitialize : AAMLauncher was NOT running.
+2015-12-02T18:04:38: UpdaterCore : Returning from << UCInitialize >> Returning with outErr Value =>  = 0
+2015-12-02T18:04:38: UCCheckForUpdates : Updater is loaded in AAM Updates Notifier mode.
+2015-12-02T18:04:38: UCCheckForUpdates : User level lock acquired for AAM Updates Notifier.
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:39: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:40: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:40: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:40: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:45: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:45: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:45: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:45: CFU(Webfeed): Query licensing type for LEID  = AdobeMediaEncoder-CS6-Mac-GM
+2015-12-02T18:04:46: No valid license found for  = AdobeMediaEncoder-CS6-Mac-GM
+2015-12-02T18:04:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:46: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:46: CFU(Webfeed): Query licensing type for LEID  = FlashPro-CS6-Mac-GM
+2015-12-02T18:04:47: No valid license found for  = FlashPro-CS6-Mac-GM
+2015-12-02T18:04:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:47: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:47: CFU(Webfeed): Query licensing type for LEID  = Photoshop-CS6-Mac-GM
+2015-12-02T18:04:48: A valid perpetual license found for  = Photoshop-CS6-Mac-GM
+2015-12-02T18:04:49: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:49: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:49: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:49: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:49: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:49: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:49: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-02T18:04:49: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:50: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:50: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-02T18:04:50: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-02T18:04:50: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:50: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:50: CFU(Webfeed): Query licensing type for LEID  = Bridge-CS6-Mac-GM
+2015-12-02T18:04:51: No valid license found for  = Bridge-CS6-Mac-GM
+2015-12-02T18:04:51: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:51: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:51: CFU(Webfeed): Query licensing type for LEID  = Photoshop-CS6-Mac-GM
+2015-12-02T18:04:51: A valid perpetual license found for  = Photoshop-CS6-Mac-GM
+2015-12-02T18:04:51: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-02T18:04:51: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-02T18:04:51: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:51: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:51: CFU(Webfeed): Query licensing type for LEID  = Illustrator-CS6-Mac-GM
+2015-12-02T18:04:52: No valid license found for  = Illustrator-CS6-Mac-GM
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-02T18:04:52: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = Illustrator-CS6-Mac-GM
+2015-12-02T18:04:52: No valid license found for  = Illustrator-CS6-Mac-GM
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-02T18:04:52: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:52: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:52: No valid license found for  = Dreamweaver-CS6-Mac-GM
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-02T18:04:52: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = Fireworks-CS6-Mac-GM
+2015-12-02T18:04:52: No valid license found for  = Fireworks-CS6-Mac-GM
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for perpetual licenses, but client doesn't have a valid perpetual license. 
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = Photoshop-CS6-Mac-GM
+2015-12-02T18:04:52: A valid perpetual license found for  = Photoshop-CS6-Mac-GM
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = ExMan-CS6-Mac-GM
+2015-12-02T18:04:52: No valid license found for  = ExMan-CS6-Mac-GM
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: CFU(Webfeed): Patch is meant only for subscription licenses, but client doesn't have a valid subscription license. 
+2015-12-02T18:04:52: Going in waiting state as following Recommendation is no more valid for this update(license mismatch)
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: CFU(Webfeed): Query licensing type for LEID  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: A valid perpetual license found for  = InDesign-CS6-Mac-GM
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:52: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:53: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:53: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:53: CFU(Webfeed): Query licensing type for LEID  = Camera_Raw-7-MAC-GM
+2015-12-02T18:04:53: No valid license found for  = Camera_Raw-7-MAC-GM
+2015-12-02T18:04:53: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:53: Exiting IsAppGoodToUpdate with return  = 1
+2015-12-02T18:04:53: CFU(Webfeed): Query licensing type for LEID  = DigitalPublishing-CS6-Mac-GM
+2015-12-02T18:04:53: No valid license found for  = DigitalPublishing-CS6-Mac-GM
+2015-12-02T18:04:53: Returning from << UCCheckForUpdates >> call with outErr value -  = 0
+2015-12-02T18:04:54: CFU(Webfeed):: Web feed hasn't changed since last time.
+2015-12-02T18:04:54: CFU(Webfeed): Webfeed is empty
+2015-12-02T18:04:54: CFU(Webfeed): MRL is empty
+2015-12-02T18:04:54: Check for Updates was done successfully.
+2015-12-02T18:04:54: UCGetprogress : Check for updates returning state for reffId  = 
+2015-12-02T18:04:54: UCGetprogress : Check for updates returning state     = 21
+2015-12-02T18:04:54: UCGetprogress : Check for updates returning outError  = 0
+2015-12-02T18:04:54: UCGetprogress : Check for updates returning percent   = 100
+2015-12-02T18:04:54: UCGetprogress : Check for updates returning unique error code string   = U21M1C0
+2015-12-02T18:04:54: Returning from << UCTerminate >> call with value = 1
+2015-12-02T18:04:54: UpdaterCoreImpl::ShutdownLogFile : Going to call ShutdownESDLogFile()
+2015-12-02T18:04:54: <<< Adobe Updater Log End <<<
+
+
+2015-12-02T18:04:54: >>> Adobe Updater Log Begin >>>
+2015-12-02T18:04:54: UpdaterCoreImpl::InitLogFile : Application Version 6.0.0.67
+2015-12-02T18:04:54: UpdaterCoreImpl::InitLogFile : cmdline option --> -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamus.log
+2015-12-02T18:04:54: UpdaterCoreImpl::InitLogFile : cmdline option --> -logLevel = 2
+2015-12-02T18:04:54: UCInitialize : AAMLauncher was NOT running.
+2015-12-02T18:04:55: UpdaterCore : Returning from << UCInitialize >> Returning with outErr Value =>  = 0

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd" CSUVersion="1.0">
+    <UpdateID>5.0.2</UpdateID>
+    <OwningChannel>AdobeBridgeCS6-5.0</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+	<DisplayName default="en_US">
+	  <en_US>Adobe Bridge CS6 5.0.2 Update</en_US>
+	  <en_AE>Adobe Bridge CS6 5.0.2 Update</en_AE>
+	  <en_IL>Adobe Bridge CS6 5.0.2 Update</en_IL>
+	  <cs_CZ>Adobe Bridge CS6 5.0.2 – aktualizace</cs_CZ>
+	  <da_DK>Adobe Bridge CS6 5.0.2 opdatering</da_DK>
+	  <de_DE>Aktualisierung für Adobe Bridge CS6 5.0.2</de_DE>
+	  <es_ES>Actualización de Adobe Bridge CS6 5.0.2</es_ES>
+	  <es_MX>Actualización de Adobe Bridge CS6 5.0.2</es_MX>
+	  <fi_FI>Adobe Bridge CS6 5.0.2 -päivitys</fi_FI>
+	  <fr_FR>Mise à jour 5.0.2 d'Adobe Bridge CS6</fr_FR>
+	  <fr_MA>Mise à jour 5.0.2 d'Adobe Bridge CS6</fr_MA>
+	  <hu_HU>Adobe Bridge CS6 5.0.2 frissítés</hu_HU>
+	  <it_IT>Aggiornamento di Adobe Bridge CS6 5.0.2</it_IT>
+	  <ja_JP>Adobe Bridge CS6 5.0.2 アップデート</ja_JP>
+	  <ko_KR>Adobe Bridge CS6 5.0.2 업데이트</ko_KR>
+	  <nb_NO>Adobe Bridge CS6 5.0.2-oppdatering</nb_NO>
+	  <nl_NL>Adobe Bridge CS6 5.0.2-update</nl_NL>
+	  <pl_PL>Adobe Bridge CS6 5.0.2 – Aktualizacja</pl_PL>
+	  <pt_BR>Atualização Adobe Bridge CS6 5.0.2</pt_BR>
+	  <ru_RU>Обновление Adobe Bridge CS6 5.0.2</ru_RU>
+	  <sv_SE>Uppdatering av Adobe Bridge CS6 5.0.2</sv_SE>
+	  <tr_TR>Adobe Bridge CS6 5.0.2 Güncellemesi</tr_TR>
+	  <uk_UA>Оновлення Adobe Bridge CS6 5.0.2</uk_UA>
+	  <zh_CN>Adobe Bridge CS6 5.0.2 更新</zh_CN>
+	  <zh_TW>Adobe Bridge CS6 5.0.2 更新</zh_TW>
+	</DisplayName>
+	<Description default="en_US">
+	  <en_US>This update includes some fixes for hot issues reported by customers and security vulnerability.</en_US>
+	  <en_AE>This update includes some fixes for hot issues reported by customers and security vulnerability.</en_AE>
+	  <en_IL>This update includes some fixes for hot issues reported by customers and security vulnerability.</en_IL>
+	  <cs_CZ>Tato aktualizace zahrnuje opravy několika problémů nahlášených zákazníky a bezpečnostních hrozeb.</cs_CZ>
+	  <da_DK>Denne opdatering indeholder rettelser til nye problemer, der er rapporteret af kunder, samt til sikkerhedssårbarheder.</da_DK>
+	  <de_DE>Dieses Update beinhaltet Fehlerbehebungen für kritische Probleme, die von Kunden gemeldet wurden und Sicherheitslücken betreffen.</de_DE>
+	  <es_ES>Esta actualización corrige varias vulnerabilidades de seguridad, así como algunos problemas de los que han informado los usuarios.</es_ES>
+	  <es_MX>Esta actualización corrige varias vulnerabilidades de seguridad, así como algunos problemas de los que han informado los usuarios.</es_MX>
+	  <fi_FI>Tämä päivitys sisältää tietoturva-aukon korjauksen sekä korjauksia asiakkaiden ilmoittamiin keskeisiin ongelmiin.</fi_FI>
+	  <fr_FR>Cette mise à jour comprend des correctifs pour des problèmes importants signalés par les clients ou relatifs à des failles de sécurité.</fr_FR>
+	  <fr_MA>Cette mise à jour comprend des correctifs pour des problèmes importants signalés par les clients ou relatifs à des failles de sécurité.</fr_MA>
+	  <hu_HU>Ez a frissítés néhány, a felhasználók által jelentett fontos probléma, valamint biztonsági rés javítását tartalmazza.</hu_HU>
+	  <it_IT>Questo aggiornamento include alcune modifiche relative ai problemi più frequenti segnalati dai clienti e alle vulnerabilità di protezione.</it_IT>
+	  <ja_JP>このアップデートでは、お客様から報告された問題およびセキュリティの脆弱性が修正されています。</ja_JP>
+	  <ko_KR>이 업데이트에는 고객이 보고한 중요한 문제 및 보안 취약성에 대한 일부 수정 사항이 포함되어 있습니다.</ko_KR>
+	  <nb_NO>Denne oppdateringen omfatter noen feilrettinger for sikkerhetsproblemer og vanlige problemer rapportert av kunder.</nb_NO>
+	  <nl_NL>Deze update bevat oplossingen voor urgente problemen die door klanten zijn gerapporteerd en problemen met de beveiliging.</nl_NL>
+	  <pl_PL>Niniejsza aktualizacja zawiera część poprawek ważnych błędów zgłoszonych przez klientów oraz poprawkę luki w zabezpieczeniach.</pl_PL>
+	  <pt_BR>Esta atualização inclui algumas correções de problemas altamente relevantes informados por clientes, bem como de vulnerabilidade de segurança.</pt_BR>
+	  <ru_RU>В этом обновлении устранено несколько важных проблем, обнаруженных пользователями, а также уязвимость системы безопасности.</ru_RU>
+	  <sv_SE>Den här uppdateringen innefattar ett antal korrigeringar av säkerhetsrisker och lösningar till aktuella problem som har rapporterats av kunder.</sv_SE>
+	  <tr_TR>Bu güncelleme müşteriler tarafından bildirilen bazı önemli hatalara ve güvenlik açıklarına çözüm sunar.</tr_TR>
+	  <uk_UA>Це оновлення містить виправлення для вирішення деяких важливих проблем, про які було повідомлено користувачами, та покращення для уразливих місць у захисті.</uk_UA>
+	  <zh_CN>此更新修复了安全性漏洞以及客户报告的一些热点问题。</zh_CN>
+	  <zh_TW>此更新包括資訊安全漏洞及客戶回報之部份熱門問題的錯誤修正。</zh_TW>
+	</Description>
+    <AffectedChannels>
+        <ChannelID>AdobeBridgeCS6-5.0</ChannelID>
+    </AffectedChannels>
+    <InstallFiles>
+    <File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobePatchInstaller.app</ExecutableName>
+      <Size>93681673</Size>
+    </File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+  <UpdatePayloadID>{24B187F6-7743-4EEC-8820-1B7374B6A4A2}</UpdatePayloadID>
+  <OwningPayloadID>{97BA0109-F6BE-4F50-8904-C19442D7216E}</OwningPayloadID>
+  <ConflictingProcesses>
+    <Process processType="Adobe" blocking="1">^[Bb][Rr][Ii][Dd][Gg][Ee] [Cc][Ss]5.5$</Process>
+    <Process processType="Adobe" blocking="1">^[Aa][Dd][Oo][Bb][Ee][Dd][Aa][Nn][Dd][Vv][Ii][Dd][Ee][Oo][Ss][Ee][Rr][Vv][Ee][Rr]$</Process>
+    <Process processType="Adobe" blocking="1">^[Aa][Dd][Oo][Bb][Ee] [Bb][Rr][Ii][Dd][Gg][Ee] [Cc][Ss][23456]$</Process>
+    <Process processType="Adobe" blocking="1">^[Bb][Rr][Ii][Dd][Gg][Ee] [Cc][Ss][23456]$</Process>
+    <Process processType="Adobe" blocking="1">^[Aa][Dd][Oo][Bb][Ee] [Bb][Rr][Ii][Dd][Gg][Ee] [Cc][Ss]5.5$</Process>
+    <Process processType="Adobe" blocking="1">^[cC][oO][mM][mM][uU][nN][iI][tT][yY] [hH][eE][lL][pP] [cC][lL][iI][eE][nN][tT]$</Process>
+    <Process processType="Adobe" blocking="1">^[Pp][Hh][Oo][Tt][Oo] [Dd][Oo][Ww][Nn][Ll][Oo][Aa][Dd][Ee][Rr]$</Process>
+    <Process processType="Adobe" blocking="1">^[Aa][Dd][Oo][Bb][Ee][3][Dd][Aa][Nn][Dd][Vv][Ii][Dd][Ee][Oo][Ss][Ee][Rr][Vv][Ee][Rr]$</Process>
+    <Process processType="Adobe" blocking="1">^[Aa][Dd][Oo][Bb][Ee] [Dd][Nn][Gg] [Cc][Oo][Nn][Vv][Ee][Rr][Tt][Ee][Rr]$</Process>
+  </ConflictingProcesses>
+</Manifest>

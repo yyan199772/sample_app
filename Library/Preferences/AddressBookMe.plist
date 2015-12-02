@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AreaCode</key>
+	<string></string>
+	<key>City</key>
+	<string>Pennsburg</string>
+	<key>Company</key>
+	<string>Perkiomen School</string>
+	<key>CountryName</key>
+	<string>United States</string>
+	<key>ExistingEmailAddress</key>
+	<string>it@perkiomen.org</string>
+	<key>FirstName</key>
+	<string>Technology</string>
+	<key>LastName</key>
+	<string>Department</string>
+	<key>LocalPhoneNumber</key>
+	<string></string>
+	<key>StateProv</key>
+	<string>PA</string>
+	<key>StreetAddr1</key>
+	<string>200 Seminary Street</string>
+	<key>StreetAddr2</key>
+	<string></string>
+	<key>ZipPostal</key>
+	<string>18073</string>
+</dict>
+</plist>

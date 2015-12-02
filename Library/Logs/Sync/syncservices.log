@@ -1,0 +1,23 @@
+2012-07-30 13:37:40:745|SyncServer|323|0x109e16e90|Logging|Info| Logging initialized, engine version 673.4 : log level 3
+2012-07-30 13:37:45:649|DockSyncClient|331|0x104016aa0|Stats|Stats| com.apple.Dock: refresh sync com.apple.dock.itemlist, com.apple.dock.item
+2012-07-30 13:37:45:649|DockSyncClient|331|0x104016aa0|ISyncSession|Info| com.apple.Dock: prepare to refresh com.apple.dock.itemlist,com.apple.dock.item
+2012-07-30 13:37:48:549|AddressBookSync|325|0x107d1b690|Stats|Stats| com.apple.AddressBook: refresh sync com.apple.contacts.ImageTransformationInfo, com.apple.contacts.Related Name, com.apple.contacts.Group, com.apple.contacts.SmartGroup, com.apple.contacts.URL, com.apple.contacts.IM, com.apple.contacts.Street Address, com.apple.contacts.Phone Number, com.apple.contacts.Date, com.apple.contacts.CalendarURI, com.apple.contacts.Contact, com.apple.contacts.Email Address
+2012-07-30 13:37:48:550|AddressBookSync|325|0x107d1b690|ISyncSession|Info| com.apple.AddressBook: prepare to refresh com.apple.contacts.ImageTransformationInfo,com.apple.contacts.Related Name,com.apple.contacts.Group,com.apple.contacts.SmartGroup,com.apple.contacts.URL,com.apple.contacts.IM,com.apple.contacts.Street Address,com.apple.contacts.Phone Number,com.apple.contacts.Date,com.apple.contacts.CalendarURI,com.apple.contacts.Contact,com.apple.contacts.Email Address
+2012-07-30 13:39:49:951|SyncServer|323|0x109e16e90|Server|Info| Cancelling all sync plans.
+2012-07-30 13:39:49:968|SyncServer|323|0x109e16e90|Server|Info| Goodnight, Gracie.
+2012-07-30 14:31:16:001|SyncServer|5321|0x101516e90|Logging|Info| Logging initialized, engine version 673.4 : log level 3
+2012-07-30 14:31:17:232|DockSyncClient|5322|0x10fc16aa0|Stats|Stats| com.apple.Dock: slow sync com.apple.dock.item, com.apple.dock.itemlist
+2012-07-30 14:31:17:232|DockSyncClient|5322|0x10fc16aa0|ISyncSession|Info| com.apple.Dock: prepare to slow sync com.apple.dock.item,com.apple.dock.itemlist
+2012-07-30 14:33:18:114|SyncServer|5321|0x101516e90|Server|Info| Cancelling all sync plans.
+2012-07-30 14:33:18:480|SyncServer|5321|0x101516e90|Server|Info| Goodnight, Gracie.
+2012-07-30 14:44:04:499|SyncServer|5688|0x10b816e90|Logging|Info| Logging initialized, engine version 673.4 : log level 3
+2012-07-30 14:44:07:839|DockSyncClient|5705|0x104316aa0|Stats|Stats| com.apple.Dock: slow sync com.apple.dock.item, com.apple.dock.itemlist
+2012-07-30 14:44:07:839|DockSyncClient|5705|0x104316aa0|ISyncSession|Info| com.apple.Dock: prepare to slow sync com.apple.dock.item,com.apple.dock.itemlist
+2012-07-30 14:46:08:876|SyncServer|5688|0x10b816e90|Server|Info| Cancelling all sync plans.
+2012-07-30 14:46:08:900|SyncServer|5688|0x10b816e90|Server|Info| Goodnight, Gracie.
+2012-07-30 15:21:30:575|SyncServer|300|0x101216ed0|Logging|Info| Logging initialized, engine version 673.6 : log level 3
+2012-07-30 15:21:30:926|SafariSyncClient|299|0x100a18a50|ISyncManager|Info| unregister com.apple.Safari
+2012-07-30 15:21:30:933|SyncServer|300|0x101216ed0|Server|Info| unregister client com.apple.Safari
+2012-07-30 15:21:30:938|SafariSyncClient|299|0x100a18a50|ISyncManager|Info| register client com.apple.Safari from /Applications/Safari.app/Contents/SafariSyncClient.app/Contents/Resources/SafariClientDescription.plist (bundleId = (null), bundleRelativePath = (null))
+2012-07-30 15:23:30:946|SyncServer|300|0x101216ed0|Server|Info| Cancelling all sync plans.
+2012-07-30 15:23:30:965|SyncServer|300|0x101216ed0|Server|Info| Goodnight, Gracie.

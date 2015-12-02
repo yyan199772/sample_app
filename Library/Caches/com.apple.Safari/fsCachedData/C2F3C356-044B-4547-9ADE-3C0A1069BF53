@@ -1,0 +1,443 @@
+// READY
+$j(document).ready(function(){
+	// listens for clicks on the player controls to hide nav
+	$j(document).delegate('.galleria-info, .jp-type-playlist, .jp-play','click', function(event){
+		if($j('#mediaNav').is(':visible')){
+			toggleNav();
+		}
+		/*
+		var pos = $j('#mediaNav').offset();
+		var maxY = pos.top + $j('#mediaNav').outerHeight();
+		var maxX = pos.left + $j('#mediaNav').outerWidth();
+		
+		console.log(event.pageX + ' y: ' + event.pageY);
+		console.log(pos);
+		console.log(maxX + ' y: ' + maxY);
+		if($j('#mediaNav').is(':visible') && !(event.pageX < maxX && event.pageX > pos.left 
+			&& event.pageY > pos.top && event.pageY < maxY)){
+			console.log('hide');
+			toggleNav();
+		}
+		*/
+	});
+	
+	// Submit User Login
+	$j('.protectedMediaHolder').delegate('.fsLoginSubmit', 'click', function(){
+		
+		// Get a reference to the button being clicked for this scope
+		var sourceButton = this;
+		
+		// Show the "spinner" to indicate activity
+		$j(this).closest('div.userlogin').children('p').html('<img src="' + pathprefix + 'images/loading_circles.gif"> Please wait...');
+		
+		$j.post(pathprefix+'userlogin_remote.cfm', 
+			{ 
+				doAction: "login", 
+				username: $j(this).parent().parent().find('#username').val(), 
+				password: $j(this).parent().parent().find('#password').val()
+			}, 
+			function(data){
+				if($j.trim(data) == "SUCCESS"){
+					window.location.reload();
+				} else {
+					$j(sourceButton).closest('div.userlogin').children('p').html('<span style="color:red;">Incorrect username or password.</span>');
+				}
+		});
+		
+		return false;
+	});
+	
+	// Listen for forgot login submission
+	$j('.protectedMediaHolder').delegate('.fsUserRetrieve', 'click', function(){
+		
+		$j(this).closest('.protectedMediaHolder').find('p.tempMsg').remove();
+		
+		$j.post(pathprefix+'userlogin_remote.cfm', 
+			{ 
+				doAction: "sendforgot", 
+				email: $j(this).parent().parent().find('input[name=email]').val()
+			}, 
+			function(data){
+				$j('.fsLoginMessage').after('<p class="tempMsg">Your request for login reminder has been submitted.</p>');
+				setTimeout(function() {
+					$j('.fsLoginForgot .tempMsg').remove();
+				}, 5000);
+			}
+		);
+		
+		
+		return false;
+	});
+	
+	// listen for forgot login toggle
+	$j('.protectedMediaHolder').delegate('.forgotUser', 'click', function(){
+		$j(this).closest('div.fsLogin').hide();
+		$j(this).closest('div.fsLogin').parent().find('.fsLoginForgot').show();
+		
+		return false;
+	});
+	$j('.protectedMediaHolder').delegate('.fsForgotCancel', 'click', function(){
+		$j(this).closest('.protectedMediaHolder').find('div.fsLogin').show();
+		$j(this).closest('.protectedMediaHolder').find('.fsLoginForgot').hide();
+		$j(this).closest('.protectedMediaHolder').find('p.tempMsg').remove();
+		return false;
+	});
+});
+
+/*
+	embedGalleria()
+	find dimensions of target (should be a div)
+	use dimensions and init galleria with objects
+*/
+function embedGalleria(target, autoplay, loop, delay, random, starton, audio_path, siteurl, aspectRatio, specificHeight){
+	//var w = $j('#'+target).width();
+	var w = '100%';
+	var h;
+	if (specificHeight && !isNaN(parseInt(specificHeight))) h = parseInt(specificHeight);
+	else h = Math.round($j('#'+target).width() * aspectRatio); // get height from aspect ratio like (9/16)
+	//var pw = w - 5;
+	var jplay = 'stop';
+	
+	$j('.playlistItemLinks').css({'width': '100%', 'bottom':'auto'});
+	
+	// looking for div with .testg
+	$j('#testg-'+target).width(w);
+	$j('#testg-'+target).css('display','block');
+	
+	// options
+	// thumbnails:false
+	var swf_prefix = '';
+	if(siteurl == ''){
+		if(window.location.href.indexOf('index.cfm') == -1){
+			swf_prefix = 'cf_media/';
+		}
+	} else {
+		// full url needed for embed.cfm
+		swf_prefix = siteurl + '/cf_media/';
+	}
+	
+	if($j('#galleria-'+target).length > 0){
+		$j('#galleria-'+target).css('width', '100%');
+		$j('#galleria-'+target).css('height', h);
+		Galleria.loadTheme(siteurl+'/javascript/pages/media/galleria.finalsite.js');
+		Galleria.ready(function(){
+		  // clone thumbnails for grid
+		  this.bind("thumbnail", function(e) {
+	      cloneThumbsForGrid(e.thumbTarget,e.index);
+	    });
+		});
+		$j('#galleria-'+target).galleria({
+			debug: false,
+			showInfo:true,
+			fullscreenDoubleTap:true,
+			transition: 'fade',
+			width:w,
+			height:h,
+			autoplay: autoplay, // bool for default 5 sec or number of ms
+			carousel:true, // mini-mode only is false
+			fsLoop: loop,
+			fsDelay: delay, // delay time between images
+			fsRandom: random,  // random start
+			fsStartOn: starton, // trumps random
+			extend: function() {
+				var gallery = this;
+				// Autoplay doesn't trigger the play event on its own so we have to do it manually
+				if(autoplay){
+					this.trigger('play');
+					$j('#galleria-'+target+' .galleria-play').addClass('playing');
+				}
+				// Ugly hack to fix Galleria's image resizing problems when using fixed height in responsive designs
+				$j(window).resize(function(){
+					clearTimeout(this.id);
+					this.id = setTimeout(function(){
+						gallery.resize({ width: $j('#galleria-'+target).width(), height: $j('#galleria-'+target).height() });
+					}, 200);
+				});
+			}
+		});
+		
+		if(audio_path != ''){
+			if(autoplay) {
+				jplay = 'play';
+			}
+			$j('#galleria-'+ target +'-audio').jPlayer({
+				swfPath:swf_prefix + "scripts",
+				ready: function (e) {
+					var audioSetting;
+					if (audio_path.indexOf('m4a') >= 0) {
+						audioSetting = {
+							m4a: jQuery.trim(audio_path)
+						};
+					} else {
+						audioSetting = {
+							mp3: jQuery.trim(audio_path)
+						};
+					}
+					$j(this).jPlayer("setMedia", audioSetting).jPlayer(jplay);
+				},
+				error: function (e) {
+				},
+				supplied: audio_path.indexOf('m4a') >= 0 ? 'm4a' : 'mp3',
+				solution:"html,flash",
+				loop:true,
+				noConflict:'$j',
+				wmode:'window'
+			});
+		}
+	}
+}
+
+/*
+	embedVideoplayer()
+	find dimensions of target (should be a div)
+	use dimensions and init jplayer with objects
+*/
+function embedVideoplayer(target, objects, supplied, siteurl, autoplay, loop, random, starton, aspectRatio, specificHeight){
+	//var w = $j('#'+target).width();
+	var w = '100%';
+	var h;
+	if (specificHeight && !isNaN(parseInt(specificHeight))) h = parseInt(specificHeight);
+	else h = Math.round($j('#'+target).width() * aspectRatio); // get height from aspect ratio like (9/16)
+	var ptype = 'video';
+	//console.log('#'+target);
+	
+	
+	// adjust parent div to avoid "blow-out" in pages
+	$j("#jp_container_"+target).parent().css({ 'width': w+'px' });
+	$j("#jquery_jplayer_"+target).parent().css({ 'width': w+'px', 'height': h+'px' });
+	
+	if(supplied.indexOf('mp3') >= 0 || supplied.indexOf('m4a') >= 0){
+		ptype = 'audio';
+	}
+	
+	var swf_prefix = '';
+	if(siteurl == ''){
+		if(window.location.href.indexOf('index.cfm') == -1){
+			swf_prefix = 'cf_media/';
+		}
+	} else {
+		// full url needed for embed.cfm
+		swf_prefix = siteurl + '/cf_media/';
+	}
+	//console.log('w ' + w + ' h ' + h);
+	
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_"+target,
+		cssSelectorAncestor: "#jp_container_"+target
+	}, 
+	objects,
+	{
+		swfPath: swf_prefix + "scripts",
+		supplied: supplied,
+		solution: "html,flash",
+		preload: "none",
+		verticalVolume:false,
+		enableRemoveControls:false,
+		autohide: { restored:false, full:true, fadeIn:200, fadeOut:600, hold:1000 }, // does this work? */
+		loop: loop,
+		fsRandom: random,
+		fsAutoplay: autoplay,
+		fsStartOn: starton, // this trumps random
+		size: {
+			//width: w+"px",
+			width: w,
+			height: h+"px",
+			cssClass: "fs-"+ptype
+		},
+		noConflict:'$j'
+	});
+}
+
+function toggleNav() {
+	if($j("#mediaNav").is(":visible")){
+		$j( "#mediaNav" ).hide( 'blind', { direction: 'vertical' }, 500 );
+	} else {
+		$j( "#mediaNav" ).show( 'blind', {}, 500 );
+	}
+	return $j("#mediaNav").is(":visible");
+}
+function slideLeft(eid){
+	var $marginLefty = $j(eid);
+	$marginLefty.animate({
+      marginLeft: parseInt($marginLefty.css('marginLeft'),10) == 0 ?
+        $marginLefty.outerWidth() :
+        0
+    }, 500);
+}
+function slideRight(eid){
+	var $marginLefty = $j(eid);
+	$marginLefty.animate({
+      marginLeft: 320
+    }, 500);
+}
+function switchIn(parent, current){
+	var tdelay = 500;
+	if(arguments[2] != 'undefined'){
+		tdelay = arguments[2];
+	}
+	$j(parent).hide( 'slide', {}, tdelay);
+	$j(current).show();
+	$j('#mediaNav').height($j(current).outerHeight());
+	slideLeft(current);
+}
+function switchOut(parent, current){
+	var tdelay = 500;
+	if(arguments[2] != 'undefined'){
+		tdelay = arguments[2];
+	}
+	slideRight(current);
+	//$j(current).hide();
+	$j(parent).show('slide', {}, tdelay);
+	$j('#mediaNav').height($j(parent).outerHeight());
+}
+function restoreNav(cid, fid){
+	var marginVal = parseInt($j('#groupList'+fid).css('margin-left'));
+	
+	if($j("#mediaNav").is(":visible")){
+		$j( "#mediaNav" ).hide( 'blind', {}, 500 );
+		
+		$j('.mediaNavList:visible').each(function(){
+			// reset view to allow current group view to be displayed below
+			if(parseInt($j(this).css('marginLeft')) == 0)
+				$j(this).find('.allMediaBtn').trigger('click');
+		});
+	}else{
+		$j( "#mediaNav" ).show( 'blind', {}, 500 );
+	}
+	// not in view when margin is 0, so trigger animation to display
+	if(marginVal != 0){
+		// check if our switchIn list exists
+		if($j('#groupList'+fid).length > 0){
+			if($j('#channelMenu').is(':visible')) switchIn('#channelMenu', '#folderList'+cid, 0);
+			switchIn('#folderList'+cid, '#groupList'+fid, 0);
+		} else {
+			// default to channel list (can happen when embedding hidden channels)
+			$j('#channelMenu').show();
+		}
+	} else {
+		/*
+		switchOut('##folderList'+cid, '##groupList'+fid, 0);
+		switchOut('##channelMenu', '##folderList'+cid, 0);
+		*/
+	}
+}
+
+
+function mediaSearchSubmit(){
+	$j('#media_keyword').val($j('#mediaSearchField').val());
+	$j('#searchDialog').dialog('open');
+	mediaSearch();
+}
+
+function mediaGetImageUrl(){
+	var url = '';
+	
+	// find all the display images and return the one on top
+	$j('.galleria-images .galleria-image').each(function(i) {
+		if($j(this).css('z-index') == 1){
+			url = $j(this).children('img').attr('src');
+		}
+	});
+	
+	// Make sure the URL is not empty
+	if (url.length == 0) return '';
+	
+	// CB 12257 - We have to serve files through servemedia.cfm in order to trigger the download dialog window
+	if (url.indexOf('data.finalsite.com') != -1 || url.indexOf('data2.finalsite.com') != -1) {
+		
+		// The file is being served from the public CDN. Parse out the id to pass to servemedia.cfm
+		var serverPath = document.location.href.substring(0, document.location.href.indexOf('/page.cfm')).replace('https:', 'http:');
+		var filename = url.split('/')[url.split('/').length - 1];
+		var id = filename.split('.')[0];
+		
+		// Build the new download URL
+		url = serverPath + '/cf_media/servemedia.cfm?id=' + id + '&imgtype=3&download=true';
+	}
+	else {
+		
+		// Check to see if the file is already being served by servemedia.cfm
+		if (url.indexOf('/servemedia.cfm?') != -1) {
+			// Just append &download=true to the url
+			url += '&download=true';
+		}
+		else {
+			// Parse out the id and type to pass to servemedia.cfm
+			var serverPath = url.substring(0, url.indexOf('/data/media')).replace('https:', 'http:');
+			var filename = url.split('/')[url.split('/').length - 1];
+			var id = filename.split('.')[0];
+			
+			// Build the new download URL
+			url = serverPath + '/cf_media/servemedia.cfm?id=' + id + '&imgtype=3&download=true';
+		}
+	}
+	
+	// Change the imgtype parameter to 3 to download the full size image
+	url = url.replace('&imgtype=1', '&imgtype=3');
+	
+	return url;
+}
+
+
+function verifyCategoryKey(categoryId,categoryKey, siteurl){
+	$j.ajax({
+		type: "POST",
+		url: siteurl+"/cf_media/ajaxhandler_navigation.cfm",
+		data: "action=verifyCategoryKey&categoryId="+categoryId+"&categoryKey="+categoryKey,
+		success: function(responseText){
+			var rObj = $j.parseJSON(responseText);
+			
+			if (rObj.RESULT == 'true') {
+				// all good
+				window.location.reload();
+			} else {
+				// show error
+				$j('div.verify_media_key p##errorMsg').html('<span style="color:##990000;">PASSWORD IS INCORRECT, TRY AGAIN</span>');
+			}
+		}
+	});
+}
+function verifyChannelKey(channelId,channelKey, siteurl){
+	$j.ajax({
+		type: "POST",
+		url: siteurl+"/cf_media/ajaxhandler_navigation.cfm",
+		data: "action=verifyChannelKey&channelId="+channelId+"&channelKey="+channelKey,
+		success: function(responseText){
+			var rObj = $j.parseJSON(responseText);
+			
+			if (rObj.RESULT == 'true') {
+				// all good
+				window.location.reload();
+			} else {
+				// show error
+				$j('div.verify_media_key p##errorMsg').html('<span style="color:##990000;">PASSWORD IS INCORRECT, TRY AGAIN</span>');
+			}
+		}
+	});
+}
+function cloneThumbsForGrid(img,gridIndex){
+	// clone thumbnails for grid view
+	var imgContainer = '<div id="gridIndex_'+gridIndex+'" class="galleria-image active"><img src="'+img.src+'"></div>';
+  $j('#fs-gallery-grid').append(imgContainer);
+  $j('#gridIndex_'+gridIndex).css({
+      'position':'relative',
+      'overflow':'hidden',
+      'width':'132px',
+      'height':'84px',
+      'visibility':'visible'
+  });
+  $j('#gridIndex_'+gridIndex+' img').css({
+      'width':'124px',
+      'height':'76px', 
+	  	'min-width':'0px',
+	  	'min-height':'0px', 
+	  	'max-width':'none',
+	  	'max-height':'none', 
+      'left':'2px',
+      'top':'2px',
+      'opacity':'1'
+ 	});
+  $j('#gridIndex_'+gridIndex+' img').attr({
+      'width':'124px',
+      'height':'76px'
+  });
+}

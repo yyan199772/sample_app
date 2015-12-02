@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- THIS IS A TEMPLATE FILE WITH SAMPLE VALUES FILLED IN. PLEASE REVIEW AND UPDATE FOR YOUR INSTALLER --><!-- Its Schema is available here public/Common/xplat/schema/CSUManifest.xsd --><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">  
+<UpdateID>12.0.1</UpdateID>
+<TargetBuildType>2</TargetBuildType>
+<OwningChannel>AdobeFireworksCS6-12.0.0-mul</OwningChannel>
+  <DisplayName default="en_US"><en_US>Fireworks CS6 update to improve Mac 10.8 platform compatibility and resolve usability bugs.</en_US>
+          <cs_CZ>Aktualizace Fireworks CS6 pro vylepšení kompatibility na systému Mac 10.8 a odstraňující některé problémy použitelnosti programu.</cs_CZ>
+          <de_DE>Fireworks CS6-Aktualisierung zur Verbesserung der Kompatibilität zur Mac 10.8-Plattform und zur Auflösung von Fehlern in Bezug auf die Benutzerfreundlichkeit.</de_DE>
+          <es_ES>Actualización Fireworks CS6 que mejora la compatibilidad con la plataforma Mac 10.8 y resuelve diversos problemas de uso.</es_ES>
+          <es_MX>Actualización Fireworks CS6 que mejora la compatibilidad con la plataforma Mac 10.8 y resuelve diversos problemas de uso.</es_MX>
+          <fr_FR>Mise à jour de Fireworks CS6 pour améliorer la compatibilité de la plateforme Mac 10.8 et résoudre les bugs d'utilisation.</fr_FR>
+          <fr_CA>Mise à jour de Fireworks CS6 pour améliorer la compatibilité de la plateforme Mac 10.8 et résoudre les bugs d'utilisation.</fr_CA>
+          <it_IT>Aggiornamento di Fireworks CS6 per migliorare la compatibilità della piattaforma Mac 10.8, risolvere alcuni bug e offrire una maggiore facilità d'uso.</it_IT>
+          <ja_JP>Fireworks CS6 アップデート - Mac 10.8 プラットフォームの互換性の改善と操作性に関する不具合の修正</ja_JP>
+          <ko_KR>Fireworks CS6 업데이트는 Mac 10.8 플랫폼 호환성을 개선하고 사용성 버그를 해결합니다.</ko_KR>
+          <nl_NL>Update voor Fireworks CS6 voor verbeterde Mac 10.8-compatibiliteit en gebruiksvriendelijkheid.</nl_NL>
+          <pl_PL>Aktualizacja programu Fireworks CS6 oferująca ulepszoną zgodność z platformą Mac 10.8 i poprawki błędów związanych z użytkowaniem.</pl_PL>
+          <pt_BR>Atualização do Fireworks CS6 para melhorar a compatibilidade com a plataforma Mac 10.8 e resolver bugs de capacidade de utilização.</pt_BR>
+          <ru_RU>Обновление Fireworks CS6 с улучшением совместимости платформы Mac 10.8 и устраненными ошибками использования.</ru_RU>
+          <sv_SE>Fireworks CS6-uppdatering som förbättrar kompatibiliteten med plattformen Mac 10.8 och korrigerar fel som påverkade användarbarheten.</sv_SE>
+          <tr_TR>Mac 10.8 platform uyumluluğunu geliştirmek ve kullanılabilirlik sorunlarını çözmek için Fireworks CS6 güncellemesi.</tr_TR>
+          <zh_CN>改进 Mac 10.8 平台兼容性并解决可用性方面问题的 Fireworks CS6 更新。</zh_CN>
+          <zh_TW>改進 Mac 10.8 平台相容性並解決可用性錯誤的 Fireworks CS6 更新。</zh_TW>
+        </DisplayName>
+  <!-- One for each locale to be displayed in CS Updater-->
+  <Description default="en_US"><en_US>The latest update to Adobe Fireworks CS6 includes Mac 10.8 platform compatibility, performance and stability improvements. There are several usability improvements in the CSS Properties panel.</en_US>
+          <cs_CZ>Nejnovější aktualizace Fireworks CS6 zahrnuje kompatibilitu se systémem Mac 10.8 a zlepšení výkonu a stability. V panelu Vlastnosti CSS bylo provedeno několik změn zlepšujících použitelnost programu.</cs_CZ>
+          <de_DE>Die neueste Aktualisierung zu Fireworks CS6 umfasst die Kompatibilität zur Mac 10.8-Plattform sowie Performance- und Stabilitätsverbesserungen. Zudem gibt es mehrere Verbesserungen im Bedienfeld „CSS-Eigenschaften“.</de_DE>
+          <es_ES>La actualización más reciente de Adobe Fireworks CS6 incluye compatibilidad con la plataforma Mac 10.8 y mejoras de rendimiento y estabilidad. En el panel Propiedades CSS se han realizado diversas mejoras que facilitan su uso.</es_ES>
+          <es_MX>La actualización más reciente de Adobe Fireworks CS6 incluye compatibilidad con la plataforma Mac 10.8 y mejoras de rendimiento y estabilidad. En el panel Propiedades CSS se han realizado diversas mejoras que facilitan su uso.</es_MX>
+          <fr_FR>La dernière mise à jour d'Adobe Fireworks CS6 inclut des améliorations de compatibilité, de performances et de stabilité pour la plateforme Mac 10.8. Vous trouverez plusieurs améliorations d'utilisation dans le panneau des propriétés CSS.</fr_FR>
+          <fr_CA>La dernière mise à jour d'Adobe Fireworks CS6 inclut des améliorations de compatibilité, de performances et de stabilité pour la plateforme Mac 10.8. Vous trouverez plusieurs améliorations d'utilisation dans le panneau des propriétés CSS.</fr_CA>
+          <it_IT>L'ultimo aggiornamento di Adobe Fireworks CS6 include miglioramenti della stabilità, delle prestazioni e della compatibilità della piattaforma Mac 10.8. Il pannello Proprietà CSS presenta molti miglioramenti della facilità d'uso.</it_IT>
+          <ja_JP>Adobe Fireworks CS6 の最新のアップデートには、Mac 10.8 プラットフォームの互換性、パフォーマンスおよび安定性の向上と、CSS プロパティパネルの操作性の改善が含まれています。</ja_JP>
+          <ko_KR>Adobe Fireworks의 최신 업데이트에는 Mac 10.8 플랫폼 호환성, 성능 및 안정성 개선 사항이 포함됩니다. CSS 속성 패널에서의 일부 사용성 개선 사항이 있습니다.</ko_KR>
+          <nl_NL>Dit is de meest recente update voor Adobe Fireworks CS6 voor verbeterde Mac 10.8-compatibiliteit, prestaties en stabiliteit. Ook is het gebruiksgemak in het deelvenster CSS-eigenschappen verbeterd.</nl_NL>
+          <pl_PL>Najnowsza aktualizacja programu Adobe Fireworks CS6 oferuje zgodność z platformą Mac 10.8, ulepszenia działania i stabilności oraz kilka ulepszeń związanych z użytkowaniem panelu Właściwości CSS.</pl_PL>
+          <pt_BR>A atualização mais recente para o Adobe Fireworks CS6 inclui compatibilidade com a plataforma Mac 10.8, bem como melhorias de desempenho e estabilidade. O painel Propriedades de CSS recebeu diversas melhorias.</pt_BR>
+          <ru_RU>Последнее обновление Adobe Fireworks CS6 включает улучшения, связанные с совместимостью платформы Mac 10.8, производительностью и стабильностью работы. Кроме того, реализовано несколько улучшений работы с панелью "Свойства CSS".</ru_RU>
+          <sv_SE>Den senaste uppdateringen av Adobe Fireworks CS6 har plattformskompatibilitet för Mac 10.8, prestanda- och stabilitetsförbättringar samt flera förbättringar av panelen CSS-egenskaper.</sv_SE>
+          <tr_TR>En yeni Adobe Fireworks CS6 güncellemesi Mac 10.8 platform uyumluluğu, performans ve tutarlılık geliştirmeleri sunar. CSS Özellikleri panelinde çeşitli kullanılabilirlik geliştirmeleri vardır.</tr_TR>
+          <zh_CN>Adobe Fireworks CS6 的最新更新包含 Mac 10.8 平台兼容性、性能和稳定性方面的改进。同时有数项针对 CSS 属性面板的可用性改进。</zh_CN>
+          <zh_TW>Adobe Fireworks CS6 的最新更新包括 Mac 10.8 平台相容性、效能和穩定性改進。CSS 屬性面板有數項可用性改進。</zh_TW>
+        </Description>
+  <AffectedChannels><ChannelID>AdobeFireworksCS6-12.0.0-mul</ChannelID>
+  </AffectedChannels>
+  <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobeFireworks-12.0-All-Update/AdobePatchInstaller.app</ExecutableName>
+      <Size>93812713</Size>
+      
+      
+      
+    </File>
+  </InstallFiles>
+  <NeedsReboot>false</NeedsReboot>
+
+
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{A35DC052-B8CC-11E2-9E88-8D16C34F96EF}</UpdatePayloadID>
+  <OwningPayloadID>{39C9FB9C-7A84-11E1-B574-D095DF20721F}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ff][Ii][Rr][Ee][Ww][Oo][Rr][Kk][Ss]*</Process>
+  </ConflictingProcesses>
+<TargetLicensingType>0</TargetLicensingType><RecommendingChannels><ChannelID>AdobeFireworksCS6-12.0.1-mul</ChannelID></RecommendingChannels></Manifest>

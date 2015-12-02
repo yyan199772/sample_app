@@ -1,0 +1,2039 @@
+var ajaxHandlerURL = 'extensions/includes/resource/ajaxhandler.cfm',
+	selectPagePopup, selectFilePopup, selectedSharedFolders = {}, sharedLocationHTML, folderOrder = {}, folderOptionRefresh = false,
+	$existingFileParent, $resourceEditTabs,
+	isGridView = ($j('#fsResourcesGrid').length) ? true : false,
+	isListView = ($j('#fsResourcesList').length) ? true : false,
+	dropzoneArea;
+
+$j(document).ready(function() {
+	'use strict';
+
+	$j('#fsResourcesSelectedFile').css('position','absolute'); // some browsers have an issue if the file input control is "display:hidden"
+	$j('#fsResourcesSelectedFile').css('left','-3500px');
+	// Default error handler for resources ajax calls
+	$j(document).ajaxError(function(event, request, settings) {
+		if (settings.url === ajaxHandlerURL) {
+			try {
+				var error = $j.parseJSON(request.responseText);
+				FS.util.dialog(error.errorMessage);
+			} catch (e) {
+				FS.util.dialog("An error has occurred. Please try your request again.");
+			}
+
+			FS.util.hideLoadingPrompt();
+		}
+	});
+
+	// Initialize all dialogs
+	$j('.dialog').dialog({
+		autoOpen: false,
+		closeOnEscape: true,
+		modal: true,
+		resizable: false,
+		stack: true,
+		buttons: {
+			"OK": function() { $j(this).dialog("close"); }
+		}
+	});
+
+	$j('.resourceDatePicker').datepicker({
+		showOn: 'both',
+		buttonImage: 'images/admin_ui/2.0/calendar.png',
+		buttonImageOnly: true,
+		dateFormat: dateFormat
+	});
+
+	// Toggling between list/grid view
+	$j('#fsResourcesButtons .fsGroupIconBtnList, #fsResourcesButtons .fsGroupIconBtnGrid').on('click', function(e) {
+		$this = $j(this);
+		if (!$this.hasClass('fsInactive')) {
+			if ($this.hasClass('fsGroupIconBtnList')) {
+				FS.util.displayLoadingPrompt('Loading list view');
+			} else {
+				FS.util.displayLoadingPrompt('Loading grid view');
+			}
+		} else {
+			e.preventDefault();
+		}
+	});
+
+	/**************************************
+		RESOURCE LIST
+	**************************************/
+	// Expand/collapse list view folders
+	$j('#fsResources').on('click', '.fsResourcesListFolder', function(e) {
+		$j(this).toggleClass('fsResourcesListFolderOpen');
+		$j(this).children('.fsResourcesListFolderContent:first').toggle();
+		e.stopPropagation();
+	});
+
+	// Hover listener to display action icons or always show for mobile devices
+	if (isMobile) {
+		$j('#fsResources .fsResourcesActions').show();
+	} else {
+		$j('#fsResources').on('mouseenter', '.fsResourcesListItem, .fsResourcesListFolder, .fsResourcesGridFolderContainer, .fsResourcesGridItemContainer', function() {
+			$j(this).find('.fsResourcesActions:first').show();
+		});
+
+		$j('#fsResources').on('mouseleave', '.fsResourcesListItem, .fsResourcesListFolder, .fsResourcesGridFolderContainer, .fsResourcesGridItemContainer', function() {
+			$j(this).find('.fsResourcesActions:first').hide();
+		});
+	}
+
+	// Prevent folder from closing when clicking on child elements
+	$j('#fsResources').on('click', '.fsResourcesActions, .fsResourcesListItem', function(e) {
+		e.stopPropagation();
+	});
+
+	// Move folder/item up
+	$j('#fsResources').on('click', '.fsResourcesSortable .fsResourcesActionsMoveUp', function() {
+		var $this = $j(this),
+			$folderElement = $this.closest('.fsResourcesSortableItem');
+
+		if (!$this.hasClass('fsResourcesIconDisabled') && !$folderElement.is(':first-child')) {
+			var $insertBefore = $folderElement.prev('.fsResourcesSortableItem');
+			$folderElement.insertBefore($insertBefore).hide().fadeIn();
+
+			// Hide the action icons on the div we moved and display them on the one we are now over
+			if (!isMobile) {
+				$insertBefore.find('.fsResourcesActions').show();
+				$this.parent().hide();
+			}
+
+			var $sortableDiv = $this.closest('.fsResourcesSortable');
+			resetSortingArrows($sortableDiv);
+
+			if ($sortableDiv.hasClass('fsResourcesSortableFolder')) {
+				updateFolderOrder($sortableDiv);
+			} else {
+				updateResourceOrder($sortableDiv);
+			}
+		}
+	});
+
+	// Move folder/item down
+	$j('#fsResources').on('click', '.fsResourcesSortable .fsResourcesActionsMoveDown', function() {
+		var $this = $j(this),
+			$folderElement = $this.closest('.fsResourcesSortableItem');
+
+		if (!$this.hasClass('fsResourcesIconDisabled') && !$folderElement.is(':last-child')) {
+			var $insertAfter = $folderElement.next('.fsResourcesSortableItem');
+			$folderElement.insertAfter($insertAfter).hide().fadeIn();
+
+			// Hide the action icons on the div we moved and display them on the one we are now over
+			if (!isMobile) {
+				$insertAfter.find('.fsResourcesActions').show();
+				$this.parent().hide();
+			}
+
+			var $sortableDiv = $this.closest('.fsResourcesSortable');
+			resetSortingArrows($sortableDiv);
+
+			if ($sortableDiv.hasClass('fsResourcesSortableFolder')) {
+				updateFolderOrder($sortableDiv);
+			} else {
+				updateResourceOrder($sortableDiv);
+			}
+		}
+	});
+
+	$j('#fsResourcesGrid').on('click', '.fsResourcesBreadcrumbEdit', function() {
+		var folderID = $j(this).attr('data-rcID');
+		editFolder(folderID);
+	});
+
+	$j('#fsResources').on('click', '.fsResourcesActions a', function() {
+		var action = $j(this).attr('data-action'), resourceID, folderID;
+
+		if (isGridView) {
+			resourceID = parseInt($j(this).closest('div.fsResourcesGridItemContainer').attr('data-rID'), 10);
+			folderID = parseInt($j(this).closest('div.fsResourcesGridFolderContainer').attr('data-rcID'), 10);
+		} else {
+			resourceID = parseInt($j(this).closest('div.fsResourcesListItem').attr('data-rID'), 10);
+			folderID = parseInt($j(this).closest('div.fsResourcesListFolder').attr('data-rcID'), 10);
+		}
+
+		switch (action) {
+			case 'archiveResource':
+				archiveResource(resourceID);
+				break;
+			case 'editResource':
+				editResource(resourceID);
+				break;
+			case 'deleteResource':
+				deleteResource(resourceID);
+				break;
+			case 'restoreResource':
+				restoreResource(resourceID);
+				break;
+			case 'archiveFolder':
+				archiveFolder(folderID);
+				break;
+			case 'editFolder':
+				editFolder(folderID);
+				break;
+			case 'deleteFolder':
+				deleteFolder(folderID);
+				break;
+			case 'removeFolder':
+				removeFolder(folderID);
+				break;
+			case 'restoreFolder':
+				restoreFolder(folderID);
+				break;
+		}
+	});
+
+	/**************************************
+		RESOURCE GRID
+	**************************************/
+	$j('#fsResourcesGrid').on('click', '#fsResourcesBreadcrumbs a:not(.fsResourcesBreadcrumbEdit)', function() {
+		var folderID = parseInt($j(this).attr('data-rcID'), 10);
+		var myURL = 'groups.cfm?groupID=' + groupID + '&tab=resources';
+		if (folderID > 0) {
+			myURL += '&rgid=' + folderID;
+		}
+		window.location.href = myURL;
+	});
+
+	$j('#fsResourcesGrid').on('click', '.fsResourcesGridFolder', function(e) {
+		if (!$j(e.target).parent().hasClass('fsResourcesShowTruncatedText')) {
+			var folderID = parseInt($j(this).closest('.fsResourcesGridFolderContainer').attr('data-rcID'), 10);
+			var myURL = 'groups.cfm?groupID=' + groupID + '&tab=resources';
+			if (folderID > 0) {
+				myURL += '&rgid=' + folderID;
+			}
+			window.location.href = myURL;
+		}
+	});
+
+	$j('#fsResourcesGrid').on('click', '.fsResourcesGridItem', function(e) {
+		if (!$j(e.target).parent().hasClass('fsResourcesShowTruncatedText')) {
+			var $container = $j(this).closest('.fsResourcesGridItemContainer');
+			var link = $container.attr('data-resourceLink');
+
+			if ($container.attr('data-newWindow') == "true") {
+				window.open(link, '_blank');
+			} else {
+				window.location.href = link;
+			}
+		}
+	});
+
+	$j('#fsResourcesEditContentResource').on('click', function() {
+		editResource($j(this).attr('data-rID'));
+	});
+
+	/**************************************
+		ADD/EDIT RESOURCE
+	**************************************/
+	// Add new resource listener
+	$j('#fsResourcesNewResource').on('click', function() {
+		var canAddFolders;
+
+		getFilePickerURL();
+		if (isGridView) {
+			canAddFolders = (parseInt($j('#fsResourcesGridContainer').attr('data-rcParentID'), 10) > 0 || $j('#fsResources .fsResourcesGridFolderContainer').length > 0);
+		} else {
+			canAddFolders = ($j('#fsResources .fsResourcesListFolder').length > 0);
+		}
+
+		if (!canAddFolders) {
+			FS.util.dialog('You must create a resource folder before adding new resources.');
+		} else if (folderOptionRefresh) {
+			FS.util.displayLoadingPrompt();
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				data: {
+					action: "getFolderOptions",
+					pageID: pageid
+				},
+				dataType: "json",
+				success: function(data){
+					updateFolderMenu(data.result);
+					FS.util.hideLoadingPrompt();
+					resourceEditResetForm(true);
+					if (isGridView) {
+						$j('#fsResourcesEditResourceFolder').val(parseInt($j('#fsResourcesGridContainer').attr('data-rcParentID'), 10));
+					}
+					resourceEditDisplay(true);
+				}
+			});
+		} else {
+			resourceEditResetForm(true);
+			if (isGridView) {
+				$j('#fsResourcesEditResourceFolder').val(parseInt($j('#fsResourcesGridContainer').attr('data-rcParentID'), 10));
+			}
+			resourceEditDisplay(true);
+		}
+	});
+
+	// Initialize tabs
+	$resourceEditTabs = $j('#fsResourcesEditTabs').tabs({
+		select: function(event, ui) {
+			resourceEditTabClicked($j(ui.tab).attr('data-tabType'), false);
+		}
+	});
+
+	// Setup the add/edit event tinymce editor
+	if(!window.hasRedactor)
+		$j('#fsResourcesEditContent, #fsResourcesDeprecatedNotesField').tinymce(tinyEditors);
+	else
+		$j('#fsResourcesEditContent, #fsResourcesDeprecatedNotesField').redactor(tinyEditors);
+
+	$j('#fsResourcesEditSelectPage').on('click', function(e) {
+		var url = relativeBasePath + "adminpageselect.cfm?do=refresh&current=&value=";
+		selectPagePopup = window.open(url, 'selectPage', 'toolbar=no,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=440,height=400');
+		selectPagePopup.focus();
+		e.preventDefault();
+	});
+
+	$j('#fsResourcesEditFileUploadButton').on('click', function(e) {
+		$j('#fsFileRadio').prop('checked', true);
+		$j('#fsResourcesEditType').val('file_upload');
+
+		// for firefox only - the label "for" doesn't work for input=file
+		// for IE the input=file can't work via javascript
+		// for IE 9 (not 10) the for label only partially works.. FFFUUUUUUUU IE
+		// BTW, don't debug this in IE 10, or it won't work, just don't ask.
+		if (navigator.userAgent.match(/MSIE \d./)) { // ie <= 9 only
+			return true;
+		}
+		try {
+			if ($j('#fsResourcesEditFileUpload').is(':focus')) {
+				return true;
+			}
+			$j('#fsResourcesEditFileUpload').click();
+		} catch (ex) {
+			return true;
+		}
+		return false; // if it gets here, don't propagate
+	});
+
+	$j('#fsResourcesEditGoogleDriveButton').on('click', function(e) {
+		$j('#fsGoogleDriveRadio').prop('checked', true);
+		$j('#fsResourcesEditType').val('googledrive');
+		window.addEventListener("message", receiveMessage, false);
+		popFilePicker(window.filePickerURL + '/cf_googledrive');
+		e.preventDefault();
+	});
+
+	$j('#fsResourcesEditSelectFile, #fsResourcesEditSelectFileButton').on('click', function(e) {
+		$j('#fsFileManagerRadio').prop('checked', true);
+		$j('#fsResourcesEditType').val('file');
+		var url = relativeBasePath + "cf_filemanager/adminfiles.cfm?do=refresh&opener=resources";
+		selectFilePopup = window.open(url, 'selectFile', 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=750,height=550');
+		selectFilePopup.focus();
+		e.preventDefault();
+	});
+
+	$j('#fsResourcesDeprecatedNotes a').on('click', function() {
+		$j('#fsResourcesDeprecatedNotesDialog')
+			.dialog({
+				title: 'Resource Notes',
+				width: 500,
+				buttons: {
+					'Close': function() {
+						$j(this).dialog('close');
+					}
+				}
+			})
+			.dialog('open');
+	});
+
+	function getFilePickerURL(){
+		$j.ajax({
+			type: "POST",
+			url: "cf_academics/ajax/_integrations.cfm",
+			data: "do=getFilePickerURL",
+			success: function(data){
+				var rObj = $j.parseJSON(data);
+				window.filePickerURL = rObj.result;
+			}
+		});
+	};
+
+	function popFilePicker(popUrl){
+		var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=750,height=550',
+			popupWindow = window.open(popUrl,'pickFile', properties);
+		window.popUrl = popUrl;
+		window.pickerIsReady = false;
+		if (popupWindow == undefined) {
+			alert('It appears that your browser has popup blocking enabled.\nPlease modify this setting to allow for full functionality.');
+		}else{
+			popupWindow.addEventListener('load', postPopupMessage, false);
+			window.popupObj = popupWindow;
+			popupWindow.focus();
+		}
+	};
+
+	function postPopupMessage() {
+		window.popupObj.postMessage("send", window.filePickerURL + '/cf_googledrive');
+	};
+
+	function receiveMessage(event) {
+		var personid = new Number($j('.fsGroupSpaceAdminAction').attr('data-pid')),
+		ajaxData = {
+			'source': 'resources',
+			'personID': personid,
+			'fileMetadata': event.data
+		}
+		if ((window.filePickerURL.indexOf(event.origin) < 0) && (event.origin != window.filePickerURL + '/cf_googledrive') && (event.origin != window.filePickerURL)) {
+			return;
+		}
+		if (event.data == 'ready') {
+			window.pickerIsReady = true;
+			return;
+		}
+		window.googleData = event.data;
+
+		$j.ajax({
+			type: "POST",
+			url: "cf_group/googledrive.cfm?action=downloadFile",
+			data: ajaxData,
+			dataType: 'json',
+			success: function(data) {
+				toggleRadioDiv();
+				$j('#fsResourcesGoogleDriveFileDisplay').val(data.result.originalFileName);
+				$j('#fsResourcesGoogleDrivePath').val(data.result.uniqueFileName);
+
+				displayCurrentFile('googleDrive', data.result.originalFileName);
+			},
+			error: function(data) {
+				toggleRadioDiv();
+				window.driveError = data.error;
+				$j('#fsResourcesGoogleDriveFileDisplay').val(data.error);
+
+				displayCurrentFile('googleDrive', data.error);
+			}
+		});
+	};
+
+	/**************************************
+		ADD/EDIT FOLDER
+	**************************************/
+	// Add new folder listener
+	$j('#fsResourcesNewFolder').on('click', function() {
+		if (folderOptionRefresh) {
+			FS.util.displayLoadingPrompt();
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				data: {
+					action: "getFolderOptions",
+					pageID: pageid
+				},
+				dataType: "json",
+				success: function(data){
+					updateFolderMenu(data.result);
+					FS.util.hideLoadingPrompt();
+					folderEditResetForm(true);
+					if (isGridView) {
+						$j('#fsResourcesEditFolderParent').val(parseInt($j('#fsResourcesGridContainer').attr('data-rcParentID'), 10));
+					}
+					folderEditDisplay(true);
+				}
+			});
+		} else {
+			folderEditResetForm(true);
+			if (isGridView) {
+				$j('#fsResourcesEditFolderParent').val(parseInt($j('#fsResourcesGridContainer').attr('data-rcParentID'), 10));
+			}
+			folderEditDisplay(true);
+		}
+	});
+
+	// Multiselect for shared groups
+	$j('#fsResourcesEditFolderSharedGroups, #fsResourcesSharedFolderSharedGroups').multiselect({
+		noneSelectedText: 'Select groups to share',
+		minWidth: 350
+	});
+
+	// when enabling copy feature
+	$j('#fsResourcesEditFolderEnableSharing').on('change', function() {
+		if ($j(this).prop('checked')) {
+			$j('#fsResourcesEditFolderParent')[0].selectedIndex = 0;
+			$j('#fsResourcesEditFolderParent').prop('disabled', true);
+			$j('#fsResourcesEditFolderEnableSharing').prop('checked', true);
+		} else {
+			if ($j('#fsResourcesEditFolderForm').data('isShared')) {
+				$j('#fsResourcesEditFolderEnableSharing').prop('checked', false);
+			}
+			$j('#fsResourcesEditFolderParent').prop('disabled', $j('#fsResourcesEditFolderForm').data('isShared'));
+		}
+
+		return false;
+	});
+
+	$j('#fsResourcesEditFolderSharedCount').on('click', 'a', function() {
+		FS.util.dialog(sharedLocationHTML, 'Groups/Portals', {'Close' : function() { $j(this).dialog('close'); } });
+	});
+
+	$j('#fsResourcesEditFolderDynamicSelect').on('click', function(e) {
+		var url = relativeBasePath + "cf_filemanager/adminfiles.cfm?do=refresh&opener=resourcefolder&current=" + $j('#fsResourcesEditFolderDynamicPath').val();
+		selectPagePopup = window.open(url, 'selectPage', 'toolbar=no,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width=750,height=550');
+		selectPagePopup.focus();
+		e.preventDefault();
+	});
+
+	$j('#fsResourcesEditFolderDynamic').on('click', function() {
+		toggleShareOrDynamic('dynamic');
+	});
+
+	$j('#fsResourcesEditFolderEnableSharing').on('click', function() {
+		toggleShareOrDynamic('sharing');
+	});
+
+	/**************************************
+		ADD/EDIT RESOURCE/FOLDER SHARED
+	**************************************/
+	// Upload a new thumbnail
+	$j('.fsResourcesThumbnailUploadBtn').on('click', function(e) {
+		$j(this).parent().find('.fsResourcesThumbnailFile').click();
+		e.preventDefault();
+	});
+
+	// Use an existing file
+	$j('.fsResourcesThumbnailExistingBtn').on('click', function(e) {
+		var url = relativeBasePath + "cf_filemanager/adminfiles.cfm?do=refresh&opener=news";
+		var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=750,height=550';
+		var imgpop = window.open(url, 'selectThumbnail', properties);
+		imgpop.focus();
+
+		$existingFileParent = $j(this).closest('.fsResourcesThumbnail');
+		$existingFileParent.find('.fsResourcesThumbnailAction').val('existing');
+		e.preventDefault();
+	});
+
+	// Listener for when a file is selected to be uploaded
+	$j('.fsResourcesThumbnailFile').on('change', function() {
+		var $parent = $j(this).closest('.fsResourcesThumbnail');
+		$parent.find('.fsResourcesThumbnailAction').val('upload');
+		setThumbnailFileName($parent, $j(this).val());
+	});
+
+	// Remove thumbnail
+	$j('.fsResourcesThumbnailClear').on('click', function() {
+		deleteThumbnail($j(this).closest('.fsResourcesThumbnail'));
+	});
+
+	// Delete thumbnail
+	$j('.fsResourcesThumbnailDelete').on('click', function(e) {
+		var $container = $j(this).closest('.fsResourcesThumbnail');
+		$container.find('.fsResourcesThumbnailDisplay').hide();
+		$container.find('.fsResourcesThumbnailNew').show();
+		$container.find('.fsResourcesThumbnailAction').val('delete');
+		e.preventDefault();
+	});
+
+	// Larger thumbnail preview
+	$j('.fsResourcesThumbnailImage').on('click', function() {
+		$j('#fsResourcesThumbnailPreview')
+			.html('<img src="' + $j(this).attr('src') + '">')
+			.dialog({
+				title: 'Thumbnail Preview',
+				width: 300,
+				height: 325,
+				buttons: {
+					'Close' : function() {
+						$j(this).dialog('close');
+					}
+				}
+			})
+			.dialog('open');
+	});
+
+	// Radio toggle listener
+	$j('.fsResourcesToggleButton').on('change', function(){
+		toggleRadioDiv(this);
+	});
+
+	$j('#fsResourcesEditFileUpload').on('change', function(){
+
+		displayCurrentFile('fileUpload', $j(this).val().replace('C:\\fakepath\\', ''));
+
+		toggleRadioDiv(this);
+	});
+
+	/**************************************
+		ADD SHARED FOLDER
+	**************************************/
+	$j('#fsResourcesAddFolder').on('click', function() {
+		addSharedFolderDisplay(1);
+	});
+
+	/**************************************
+		IMPORT FOLDER
+	**************************************/
+	$j('#fsResourcesImportFolder').on('click', function() {
+		addSharedFolderDisplay(2);
+	});
+
+	$j('#fsResourcesSharedFolderResults').on('click', '.fsResourcesSharedFolderGroup > a.fsResourcesSharedFolderGroupName', function() {
+		var $this = $j(this);
+		var $parent = $j(this).parent();
+		var groupsSelected = $parent.find('.fsResourcesSharedFolderItemList input[type="checkbox"]:checked').length;
+
+		$parent.find('.fsResourcesSharedFolderSelectAll').toggle();
+		$parent.find('.fsResourcesSharedFolderItemList').toggle();
+
+		// If we are collapsing, display the number of selected groups
+		if (!$this.next().is(':visible') && groupsSelected) {
+			$parent.append(' <span class="fsResourcesSharedFolderSelectedCount">(' + groupsSelected + ' selected)</span>')
+		} else {
+			$parent.find('.fsResourcesSharedFolderSelectedCount').remove();
+		}
+	});
+
+	$j('#fsResourcesSharedFolderResults').on('click selectAll', '.fsResourcesSharedFolderItem input[type="checkbox"]', function() {
+		var $checkbox = $j(this);
+		var sharedFolderID = $checkbox.val();
+
+		if ($checkbox.prop('checked')) {
+			selectedSharedFolders[sharedFolderID] = true;
+		} else {
+			delete selectedSharedFolders[sharedFolderID]
+		}
+
+		// Make sure at least one checkbox is checked before enabling the Add button
+		var canAddFolders = (!$j.isEmptyObject(selectedSharedFolders));
+		$j('#fsResourcesSharedFolderDialog').parent('.ui-dialog').find('.ui-dialog-buttonpane button:contains("Add")').prop('disabled', !canAddFolders).toggleClass("ui-state-disabled", !canAddFolders);
+	});
+
+	$j('#fsResourcesSharedFolderResults').on('click', '.fsResourcesSharedFolderSelectAll', function() {
+		$j(this).next().find('input[type="checkbox"]').prop('checked', true).trigger('selectAll');
+	});
+
+	$j('#fsResourcesSharedFolderFilter').on('change', function() {
+		loadSharedFolders();
+	});
+
+
+	$j('#fsResourcesEditFolderParent').on('change', function(){
+		var $this = $j(this);
+		toggleSharedOptions($this.val());
+	});
+
+	var dropzoneFileRemoved = false;
+
+	Dropzone.autoDiscover = false;
+	dropzoneArea = new Dropzone('#fsResourcesMultiFileDropzone', {
+		url: 'extensions/includes/resource/ajaxhandler.cfm',
+		action: 'updateResource',
+		paramName: 'file', // The name that will be used to transfer the file
+		addRemoveLinks: true,
+		maxFilesize: $j('#fsResourcesMultiFileDropzone').data('maxsize'), // in mb
+		dictFileTooBig: 'File too large',
+		clickable: true,
+		dictRemoveFile: 'Remove',
+		autoProcessQueue: false,
+		parallelUploads: 25,
+		maxFiles: 25,
+		acceptedFiles: acceptedFileTypeList, // loaded on resourcemgrelement.cfm
+		dictInvalidFileType: 'fileTypeError',
+		error: function(file, msg) {
+			if(msg == this.options.dictInvalidFileType){
+
+				if(this.getQueuedFiles().length == 0){
+					// if there is 0 queued files, we know that this error file was the last file removed and for some reason queuecomplete() will be called
+					// we can use this variable to make sure we don't call reloadResources() in this case
+					dropzoneFileRemoved = true;
+				}
+
+				this.removeFile(file);
+				alert(file.name + ' is not a valid file type.');
+			}
+		},
+		sending: function(file, xhr, formData) {
+		    formData.append('action', 'updateResource');
+		    formData.append('folderid', $j('#fsResourcesEditResourceFolder').val());
+		    formData.append('resourceID', 0);
+		    formData.append('title', 'this will be replaced');
+		    formData.append('resourceType', 'multifile');
+		    formData.append('archiveDate', $j('#fsResourcesEditArchiveDate').val());
+		    formData.append('displayDate', $j('#fsResourcesEditDisplayDate').val());
+		    formData.append('archive', ($j('#fsResourcesEditArchive').is(':checked') ? 1 : 0));
+
+		    dropzoneFileRemoved = false; // set this back to its default
+		},
+		maxfilesexceeded:  function(file){
+		    this.removeFile(file);
+		},
+		queuecomplete: function() {
+			if(dropzoneFileRemoved == false){
+				this.removeAllFiles();
+				reloadResources();
+			}
+		},
+		init: function(){
+			$j('#fsResourcesMultiFileDropzone div').html('Drop files here or click to upload <span>(' + this.options.maxFiles + ' max)</span>');
+		}
+	}).on('uploadprogress', function(file, progress) {
+		// each time 'uploadprogress' is fired, we update the progress meter for that file
+		$j('#saveProgress').find('div[data-name="' + file.name + '"]').html(file.name + ' - ' + parseInt(progress) + '%');
+	}).on('sending', function(file) {
+		// when we process the queue, each file has 'sending' called, and when we do this, we will add a progress div to the waiting message
+		$j('#saveProgress').append('<div data-name="' + file.name + '"></div>');
+	}).on('totaluploadprogress', function(total) {
+		// once uploading is done we hide the waiting message and close the dialog
+		if(total == 100){
+			if ($j("#fsLoadingPrompt").dialog( "isOpen" )===true) {
+				// if the loading prompt is showing, this means that we are uploading files.
+				// once the total gets to 100 we should close the dialog
+				// this is to prevent the dialog from closing after removing files from the upload list manually
+				$j('#fsResourcesEdit').dialog('close');
+				FS.util.hideLoadingPrompt();
+			}
+		}
+	});
+
+});
+
+function toggleShareOrDynamic(method) {
+
+	if(method == 'sharing'){
+		var $box1 = $j('#fsResourcesEditFolderEnableSharing'),
+			$box2 = $j('#fsResourcesEditFolderDynamic');
+	}else if(method == 'dynamic'){
+		var $box2 = $j('#fsResourcesEditFolderEnableSharing'),
+			$box1 = $j('#fsResourcesEditFolderDynamic');
+	}
+
+	if($box1.prop('checked')){
+		if($box2.prop('checked')){
+			$box2.click();
+		}
+		$box1.prop('disabled', false);
+		$box2.prop('disabled', true);
+	}else{
+		$box2.prop('disabled', false);
+	}
+}
+
+function processMultiFileUpload(){
+	FS.util.displayLoadingPrompt('<div id="saveProgress"></div><br>The files are being processed', 400);
+	dropzoneArea.processQueue();
+}
+
+function toggleSharedOptions(parentFolder){
+	if(parentFolder == 0){
+		//allow sharing
+		$j('#sharedOptions').show();
+	}else{
+		//no sharing
+		$j('#sharedOptions').hide();
+	}
+}
+
+/**************************************
+	RESOURCE FUNCTIONS
+**************************************/
+
+function editResource(resourceID) {
+	// Load the resource
+	FS.util.displayLoadingPrompt('Loading resource');
+
+	$j.ajax({
+		type: "POST",
+		url: ajaxHandlerURL,
+		data: {
+			action: "getResource",
+			resourceID: resourceID,
+			getFolderOptions: folderOptionRefresh,
+			pageID: pageid
+		},
+		dataType: "json",
+		success: function(data){
+			if (folderOptionRefresh && data.result.folderOptions) {
+				updateFolderMenu(data.result.folderOptions);
+			}
+
+			FS.util.hideLoadingPrompt();
+			resourceEditPopulateForm(data.result);
+			resourceEditDisplay(false);
+		}
+	});
+}
+
+function resourceEditPopulateForm(resourceObj) {
+	resourceEditResetForm(false);
+
+	$j('#fsResourcesEditID').val(resourceObj.ID);
+	$j('#fsResourcesEditType').val(resourceObj.type);
+	$j('#fsResourcesEditTitle').val(resourceObj.title);
+	$j('#fsResourcesEditResourceFolder').val(resourceObj.folderID);
+	$j('#fsResourcesEditDescription').val(resourceObj.description);
+	$j('#fsResourcesEditNotes').val(resourceObj.notes);
+	$j('#fsResourcesEditDisplayDatepicker').val($j.datepicker.formatDate(dateFormat, $j.datepicker.parseDate('m/d/yy', resourceObj.displayDate)));
+	$j('#fsResourcesEditArchiveDatepicker').val($j.datepicker.formatDate(dateFormat, $j.datepicker.parseDate('m/d/yy', resourceObj.archiveDate)));
+	$j('#fsResourcesEditArchive').prop('checked', resourceObj.isArchived);
+
+	$j('#fsResourcesEditContent').val(resourceObj.content);
+	if(window.hasRedactor)
+		$j('#fsResourcesEditContent').redactor('code.set', resourceObj.content);
+
+	if (resourceObj.hasThumbnail) {
+		setThumbnail($j('#fsResourcesEditThumbnail'), resourceObj.ID + '.resource.jpg');
+	}
+
+	if ($j.trim(resourceObj.notes).length) {
+		$j('#fsResourcesDeprecatedNotesField').val(resourceObj.notes);
+		$j('#fsResourcesDeprecatedNotes').show();
+	}
+
+	//clear out the upload desc field
+	$j('#uploadDesc').html('');
+
+	switch (resourceObj.type) {
+		case 'content':
+			$j('#fsResourcesEditContent').val(resourceObj.content);
+			resourceEditTabClicked('content', true);
+			break;
+		case 'link_ext':
+			$j('#fsResourcesEditLinkExternal').val(resourceObj.url);
+			$j('#fsResourcesEditLinkTab input[name="linkType"][value="link_ext"]').prop('checked', true).trigger('change');
+			resourceEditTabClicked('link', true);
+			break;
+		case 'link_int':
+			$j('#fsResourcesEditLinkInternal').show();
+			$j('#fsResourcesEditLinkInternalDisplay').val(resourceObj.pageName);
+			$j('#fsResourcesEditLinkInternalPageID').val(resourceObj.pageID);
+			$j('#fsResourcesEditLinkTab input[name="linkType"][value="link_int"]').prop('checked', true).trigger('change');
+			resourceEditTabClicked('link', true);
+			break;
+		case 'file':
+			$j('#fsResourcesEditFileDisplay').val(resourceObj.fileName);
+			$j('#fsResourcesEditFilePath').val(resourceObj.file);
+			$j('#fsResourcesEditFileTab input[name="fileType"][value="file"]').prop('checked', true).trigger('change');
+			resourceEditTabClicked('file', true);
+			displayCurrentFile('', resourceObj.fileName);
+			break;
+		case 'file_upload':
+			$j('#fsResourcesEditExistingResourceFileName').val(resourceObj.file);
+			$j('#fsResourcesEditExistingFile')
+				.show()
+				.find('a')
+				.attr('href', siteurl + '/file.cfm?resourceID=' + resourceObj.ID + '&fileName=' + resourceObj.file)
+				.html(resourceObj.file);
+			resourceEditTabClicked('file', true);
+			$j('#fsResourcesEditFileTab input[name="fileType"][value="file_upload"]').prop('checked', true).trigger('change');
+			displayCurrentFile('', resourceObj.file);
+			break;
+		case 'googledrive':
+			$j('#fsResourcesGoogleDriveFileDisplay').val(resourceObj.fileName);
+			$j('#fsResourcesEditExistingFile')
+				.show()
+				.find('a')
+				.attr('href', siteurl + '/file.cfm?resourceID=' + resourceObj.ID + '&fileName=' + resourceObj.file)
+				.html(resourceObj.file);
+			resourceEditTabClicked('file', true);
+			$j('#fsResourcesEditFileTab input[name="fileType"][value="googledrive"]').prop('checked', true).trigger('change');
+			displayCurrentFile('', resourceObj.fileName);
+			break;
+	}
+}
+
+function resourceEditResetForm(resetForNewResource) {
+	// Clear previous values
+	$j('#fsResourcesEdit input[type="text"], #fsResourcesEdit input[type="hidden"], #fsResourcesEdit textarea').not('.fsResourcesDoNotClear').val('');
+	$j('#fsResourcesEditLinkInternal').toggle(($j('#fsResourcesEditSelectPage').length > 0));
+	$j('#fsResourcesEditExistingFile, #fsResourcesDeprecatedNotes').hide();
+	$j('#fsResourcesEditID').val('0');
+	$j('#fsResourcesDeprecatedNotes input[type="checkbox"]').prop('checked', false);
+
+
+	if(window.hasRedactor)
+		$j('#fsResourcesEditContent').val('').redactor('code.set', '');
+
+	// If there is a file in the file upload field, we need to clone and replace to clear it
+	$fileField = $j('#fsResourcesEditFileUpload');
+	if ($fileField.val().length) {
+		$fileField.replaceWith($fileField.val('').clone(true));
+	}
+
+	// Select the first folder
+	$j('#fsResourcesEditResourceFolder')[0].selectedIndex = 0;
+
+	// Select the first radio option and trigger the listener
+	$j('#fsResourcesEditLinkTab .fsResourcesToggleButton:first, #fsResourcesEditFileTab .fsResourcesToggleButton:first').prop('checked', true).change();
+
+	deleteThumbnail($j('#fsResourcesEditThumbnail'));
+
+	if (resetForNewResource) {
+		// Set the display date to today
+		var today = new Date();
+		$j('#fsResourcesEditDisplayDatepicker').val($j.datepicker.formatDate(dateFormat, today));
+
+		// Set the 'Link' tab as the default
+		resourceEditTabClicked('link', true);
+		$j('#fsResourcesEditNotify').hide();
+	} else {
+		$j('#fsResourcesEditNotify')
+			.show()
+			.find('input[type="checkbox"]').prop('checked', true);
+	}
+}
+
+function resourceEditDisplay(isNew) {
+	$j('#fsResourcesEditNotify').toggle(!isNew).find('input[type="checkbox"]').prop('checked', !isNew);
+
+	if(isNew){
+		//clear out the upload desc field
+		$j('#uploadDesc').html('');
+		$j('#fsResoucesEditMultiTab').show();
+	}else{
+		//hide multi tab
+		$j('#fsResoucesEditMultiTab').hide();
+	}
+
+	$j('#fsResourcesEdit').dialog({
+		title: (isNew ? 'New' : 'Edit') + ' Resource',
+		width: 500,
+		buttons: {
+			'Save Resource': function() {
+				// Make sure the required fields are selected
+				var errors = [],
+					resourceType = $j('#fsResourcesEditType').val();
+
+				if (resourceType != 'multifile' && $j.trim($j('#fsResourcesEditTitle').val()).length === 0) {
+					errors.push('Please enter a resource title');
+				}
+
+				if (parseInt($j('#fsResourcesEditResourceFolder').val(), 10) === 0) {
+					errors.push('Please select a folder for this resource');
+				}
+
+				// verify date
+				var verify = verifyDisplayAndArchiveDates(errors, '#fsResourcesEditDisplayDatepicker', '#fsResourcesEditArchiveDatepicker');
+				errors = verify.errors;
+
+				// Verify resource content
+				switch (resourceType) {
+					case 'link_ext':
+						if ($j('#fsResourcesEditLinkExternal').val().length < 10) {
+							errors.push('Please enter a valid external web link');
+						}
+						break;
+					case 'link_int':
+						var resourceValue = parseInt($j('#fsResourcesEditLinkInternalPageID').val(), 10);
+						if (isNaN(resourceValue) || resourceValue <= 0) {
+							errors.push('Please select a valid internal site page');
+						}
+						break;
+					case 'file_upload':
+						if ($j.trim($j('#fsResourcesEditFileUpload').val()).length === 0 && !$j('#fsResourcesEditExistingResourceFileName').val().length) {
+							errors.push('Please select a file to upload');
+						}
+						break;
+					case 'file':
+						if ($j.trim($j('#fsResourcesEditFilePath').val()).length === 0) {
+							errors.push('Please select a file');
+						}
+						break;
+					case 'multifile':
+						//all good - move on!
+						break;
+					case 'googledrive':
+						if ($j.trim($j('#fsResourcesGoogleDriveFileDisplay').val()).length === 0) {
+							errors.push('Please select a file from Google Drive');
+						}
+						break;
+					case 'content':
+						if ($j.trim($j('#fsResourcesEditContent').val()).length === 0) {
+							errors.push('Please enter the content for this resource');
+						}
+						break;
+					default:
+						errors.push('Please select a valid resource type');
+						break;
+				}
+
+				if (errors.length) {
+					displayErrorDialog('The following errors have occurred:', errors);
+				} else {
+
+					if(resourceType == 'multifile'){
+						processMultiFileUpload();
+					}else{
+
+						FS.util.displayLoadingPrompt('Saving resource');
+
+						//add the iframe to the page
+						$j('body').append('<iframe src="javascript:;" id="fsResourcesEditFrame" name="fsResourcesEditFrame" class="fsStyleHidden"></iframe>');
+
+						//listen for when we submit the form on the iframe
+						$j('#fsResourcesEditFrame').load(function() {
+							var response;
+
+							// Attempt to get the contents, unfortunately IE thinks this is a XSS attack when it loads the first time so we have to trap the error
+							try {
+							response = $j.trim($j(this).contents().text().toLowerCase());
+							} catch(e) {
+								return;
+							}
+
+							if (response === "success") {
+								$j('#fsResourcesEdit').dialog('close');
+								reloadResources();
+							} else {
+								FS.util.hideLoadingPrompt();
+								FS.util.dialog('An error occurred while saving this resource. Please try again.');
+							}
+
+							//remove the iframe from the page
+							$j(this).remove();
+
+						});
+
+						$j('#fsResourcesEditForm').submit();
+					}
+				}
+			},
+			'Cancel': function() {
+				$j(this).dialog('close');
+			}
+		}
+	}).dialog('open');
+}
+
+function resourceEditTabClicked(tabType, selectTab) {
+	if (tabType == 'link') {
+		if (selectTab) $resourceEditTabs.tabs('select', 0);
+		$j('#fsResourcesEditType').val($j('#fsResourcesEditLinkTab .fsResourcesToggleButton:checked').val());
+	} else if (tabType == 'file') {
+		if (selectTab) $resourceEditTabs.tabs('select', 1);
+		$j('#fsResourcesEditType').val($j('#fsResourcesEditFileTab .fsResourcesToggleButton:checked').val());
+	} else if (tabType == 'multifile') {
+		if (selectTab) $resourceEditTabs.tabs('select', 3);
+		$j('#fsResourcesEditType').val($j('#fsResourcesEditMultiFileTab .fsResourcesToggleButton').val());
+
+		$j('.hideForMulti').hide();
+		return;
+
+	} else {
+		if (selectTab) $resourceEditTabs.tabs('select', 2);
+		$j('#fsResourcesEditType').val('content');
+	}
+
+	$j('.hideForMulti').show();
+}
+
+function archiveResource(resourceID) {
+	FS.util.dialog('Are you sure you want to archive this resource?', 'Confirm Archive', {
+		'Archive Resource': function() {
+			FS.util.displayLoadingPrompt('Archiving resource');
+
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				global: false,
+				data: {
+					action: "archiveResource",
+					resourceID: resourceID
+				},
+				dataType: "json",
+				success: function() {
+					reloadResources();
+				},
+				error: function() {
+					FS.util.dialog('An error occurred while archiving the resource. Please try again');
+				}
+			});
+			$j(this).dialog('close');
+		},
+		'Cancel': function() {
+			$j(this).dialog('close');
+		}
+	});
+}
+
+function restoreResource(resourceID) {
+	FS.util.dialog('Are you sure you want to restore this resource?', 'Restore Resource', {
+		'Restore Resource': function() {
+			FS.util.displayLoadingPrompt('Restoring resource');
+
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				global: false,
+				data: {
+					action: "restoreResource",
+					resourceID: resourceID
+				},
+				dataType: "json",
+				success: function() {
+					reloadResources();
+				},
+				error: function() {
+					FS.util.dialog('An error occurred while restoring this resource. Please try again');
+				}
+			});
+			$j(this).dialog('close');
+		},
+		'Cancel': function() {
+			$j(this).dialog('close');
+		}
+	});
+}
+
+function deleteResource(resourceID) {
+	FS.util.dialog('Are you sure you want to delete this resource?', 'Delete Resource', {
+		'Delete Resource': function() {
+			FS.util.displayLoadingPrompt('Deleting resource');
+
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				global: false,
+				data: {
+					action: "deleteResource",
+					resourceID: resourceID
+				},
+				dataType: "json",
+				success: function() {
+					reloadResources();
+				},
+				error: function() {
+					FS.util.dialog('An error occurred while deleting this resource. Please try again');
+				}
+			});
+			$j(this).dialog('close');
+		},
+		'Cancel': function() {
+			$j(this).dialog('close');
+		}
+	});
+}
+
+function returnResourceFile(filePath, fileName) {
+
+	$j('#fsResourcesEditFilePath').val(filePath);
+	$j('#fsResourcesEditFileDisplay').val(fileName);
+
+	displayCurrentFile($j('#fsResourcesEditFileUpload'), fileName);
+
+	selectFilePopup.close();
+	toggleRadioDiv();
+}
+
+function returnPage(pageID, displayName) {
+	$j('#fsResourcesEditLinkInternalPageID').val(pageID);
+	$j('#fsResourcesEditLinkInternalDisplay').val(displayName);
+	selectPagePopup.close();
+}
+
+function viewURL(url) {
+	if (url && url.length >= 10) {
+		FS.util.popUp(url, 500, 500, 'viewURL');
+	} else {
+		displayErrorDialog('No URL has been entered');
+	}
+}
+
+function updateResourceOrder($sortableDiv) {
+	// Determine the item order
+	var resourceOrder = $sortableDiv.children('.fsResourcesSortableItem').map(function(){
+		return $j(this).attr('data-rID');
+	}).get().join(',');
+
+	$j.ajax({
+		type: "POST",
+		url: ajaxHandlerURL,
+		global: false,
+		data: {
+			action: "updateResourceOrder",
+			folderID: (isGridView) ? $j('#fsResourcesGridContainer').attr('data-rcParentID') : $sortableDiv.closest('.fsResourcesListFolder').attr('data-rcID'),
+			order: resourceOrder
+		},
+		dataType: "json"
+	});
+}
+
+/**************************************
+	RESOURCE FOLDER FUNCTIONS
+**************************************/
+
+function editFolder(folderID) {
+	// Load the resource
+	FS.util.displayLoadingPrompt('Loading folder');
+
+	$j.ajax({
+		type: "POST",
+		url: ajaxHandlerURL,
+		data: {
+			action: "getFolder",
+			folderID: folderID,
+			getFolderOptions: folderOptionRefresh,
+			pageID: pageid
+		},
+		dataType: "json",
+		success: function(data){
+			if (folderOptionRefresh && data.result.folderOptions) {
+				updateFolderMenu(data.result.folderOptions);
+			}
+
+			FS.util.hideLoadingPrompt();
+			folderEditPopulateForm(data.result);
+			folderEditDisplay(false);
+		}
+	});
+}
+
+function folderEditPopulateForm(folderObj) {
+	folderEditResetForm(false);
+	$j('#fsResourcesEditFolderID').val(folderObj.ID);
+	$j('#fsResourcesEditFolderName').val(folderObj.name);
+	$j('#fsResourcesEditFolderParent').val(parseInt(folderObj.parentFolderID, 10));
+	$j('#fsResourcesEditFolderDescription').val(folderObj.description);
+	$j('#fsResourcesEditFolderDisplayDate').val(folderObj.displayDate);
+	$j('#fsResourcesEditFolderDisplayDatepicker').val($j.datepicker.formatDate(dateFormat, $j.datepicker.parseDate('m/d/yy', folderObj.displayDate)));
+	$j('#fsResourcesEditFolderArchiveDate').val(folderObj.archiveDate);
+	$j('#fsResourcesEditFolderArchiveDatepicker').val($j.datepicker.formatDate(dateFormat, $j.datepicker.parseDate('m/d/yy', folderObj.archiveDate)));
+	$j('#fsResourcesEditFolderArchive').prop('checked', folderObj.isArchived);
+	$j('#fsResourcesEditFolderEnableSharing').prop('checked', folderObj.isShared);
+	$j('#fsResourcesEditFolderParent').prop('disabled', folderObj.isShared);
+	$j("#fsResourcesEditFolderParent option[value='" + folderObj.ID + "']").attr('disabled', true);
+
+	if (folderObj.mySharedGroups.length > 1) {
+		$j.each(folderObj.mySharedGroups, function(index, groupID) {
+			$j('#fsResourcesEditFolderSharedGroups option[value="' + groupID + '"]').prop('selected', true);
+		});
+
+		$j('#fsResourcesEditFolderSharedGroups').multiselect('refresh');
+		$j('#fsResourcesEditFolderIsShared').prop('checked', true).trigger('change');
+	}
+
+	if (folderObj.totalShares > 1) {
+		$j('#fsResourcesEditFolderParent').prop('disabled', true);
+		$j('#fsResourcesEditFolderForm').data('isShared', true);
+
+		$j('#fsResourcesEditFolderSharedCount a').html('Shared with ' + folderObj.totalShares + ' groups/portals').parent().show();
+		sharedLocationHTML = "<p>This folder is currently shared to the following groups/portals:</p>";
+		if (!$j.isEmptyObject(folderObj.allSharedGroups)) {
+			sharedLocationHTML += "<h3>Groups</h3><ul>";
+			$j.each(folderObj.allSharedGroups, function(index, groupName) {
+				sharedLocationHTML += "<li>" + groupName + "</li>";
+			});
+			sharedLocationHTML += "</ul>";
+		}
+		if (!$j.isEmptyObject(folderObj.allSharedElements)) {
+			sharedLocationHTML += "<h3>Portals</h3><ul>";
+			$j.each(folderObj.allSharedElements, function(index, portalName) {
+				sharedLocationHTML += "<li>" + portalName + "</li>";
+			});
+			sharedLocationHTML += "</ul>";
+		}
+	}
+
+	if (folderObj.fileFolder.toString().length) {
+		$j('#fsResourcesEditFolderDynamic').closest('.fsResourcesToggleContainer').show();
+		$j('#fsResourcesEditFolderDynamicPath').val(folderObj.fileFolder);
+		$j('#fsResourcesEditFolderDynamic').prop('checked', true).trigger('change');
+
+		toggleShareOrDynamic('dynamic');
+	}else{
+		toggleShareOrDynamic('sharing');
+	}
+
+	toggleSharedOptions($j('#fsResourcesEditFolderParent').val());
+
+	if (folderObj.hasThumbnail) {
+		setThumbnail($j('#fsResourcesEditFolderThumbnail'), folderObj.ID + '.folder.jpg');
+	}
+}
+
+function folderEditResetForm(resetForNewFolder) {
+	$j('#fsResourcesEditFolderForm').data('isShared', false);
+	$j('#fsResourcesEditFolderForm input[type="text"], #fsResourcesEditFolderForm input[type="hidden"]').not('.fsResourcesDoNotClear').val('');
+	$j('#fsResourcesEditFolderForm input[type="checkbox"]').prop('checked', false).trigger('change');
+	$j('#fsResourcesEditFolderParent')[0].selectedIndex = 0;
+	$j('#fsResourcesEditFolderID').val('0');
+	$j('#fsResourcesEditFolderParent').prop('disabled', false);
+	$j('#fsResourcesEditFolderSharedCount').hide();
+
+	//reset all of the disabled options
+	$j("#fsResourcesEditFolderParent option:disabled").attr('disabled', false);
+
+	sharedLocationHTML = "";
+
+	deleteThumbnail($j('#fsResourcesEditFolderThumbnail'));
+
+	$j('#fsResourcesEditFolderSharedGroups option').not(':disabled').prop('selected', false);
+	$j('#fsResourcesEditFolderSharedGroups').multiselect('refresh');
+
+	$j('#fsResourcesEditFolderDynamic').closest('.fsResourcesToggleContainer').toggle(resetForNewFolder);
+
+	if (resetForNewFolder) {
+		// Set the display date to today
+		var today = new Date();
+		$j('#fsResourcesEditFolderDisplayDate').val($j.datepicker.formatDate('m/d/yy', today));
+		$j('#fsResourcesEditFolderDisplayDatepicker').val($j.datepicker.formatDate(dateFormat, today));
+
+		$j('#fsResourcesEditFolderEnableSharing, #fsResourcesEditFolderDynamic').prop('disabled', false);
+	}
+}
+
+function folderEditDisplay(isNew) {
+
+	toggleSharedOptions($j('#fsResourcesEditFolderParent').val());
+
+	$j('#fsResourcesEditFolderDialog').dialog({
+		title: (isNew ? 'New' : 'Edit') + ' Folder',
+		width: 500,
+		buttons: {
+			'Save Folder': function() {
+				// Make sure the required fields are selected
+				var errors = [];
+
+				if ($j.trim($j('#fsResourcesEditFolderName').val()).length === 0) {
+					errors.push('Please enter a folder name');
+				}
+
+				// Verify date
+				var verify = verifyDisplayAndArchiveDates(errors, '#fsResourcesEditFolderDisplayDatepicker', '#fsResourcesEditFolderArchiveDatepicker');
+				errors = verify.errors;
+
+				if (errors.length) {
+					displayErrorDialog('The following errors have occurred:', errors);
+				} else {
+					folderOptionRefresh = true;
+					FS.util.displayLoadingPrompt('Saving folder');
+
+					//add the iframe to the page
+					$j('body').append('<iframe src="javascript:;" id="fsResourcesEditFolderFrame" name="fsResourcesEditFolderFrame" class="fsStyleHidden"></iframe>');
+
+					//listen for when we submit the form on the iframe
+					$j('#fsResourcesEditFolderFrame').load(function() {
+						var response;
+
+						// Attempt to get the contents, unfortunately IE thinks this is a XSS attack when it loads the first time so we have to trap the error
+						try {
+							response = $j.trim($j(this).contents().text().toLowerCase());
+						} catch(e) {
+							return;
+						}
+
+						if (response === "success") {
+							$j('#fsResourcesEditFolderDialog').dialog('close');
+							reloadResources();
+						} else {
+							var error = (response === "error") ? 'An error has occurred processing your request. Please try again.' : response;
+							FS.util.hideLoadingPrompt();
+							FS.util.dialog(error);
+						}
+
+						//remove the iframe from the page
+						$j(this).remove();
+					});
+
+					$j('#fsResourcesEditFolderForm').submit();
+
+				}
+			},
+			'Cancel': function() {
+				$j(this).dialog('close');
+			}
+		}
+	}).dialog('open');
+}
+
+function deleteFolder(folderID) {
+	var canDelete;
+
+	if (isGridView) {
+		var $container = $j('#fsResourcesGridFolderContainer_' + folderID);
+		canDelete = (parseInt($container.attr('data-subfolderCount'), 10) === 0 && parseInt($container.attr('data-resourceCount'), 10) === 0);
+	} else {
+		canDelete = ($j('#fsResourcesListFolder_' + folderID).find('.fsResourcesListItem, .fsResourcesListFolder').not('.fsResourcesListItemDynamic').length === 0);
+	}
+
+	if (canDelete) {
+		FS.util.dialog('Are you sure you want to delete this folder?', 'Delete Folder', {
+			'Delete Folder': function() {
+				folderOptionRefresh = true;
+				FS.util.displayLoadingPrompt('Deleting folder');
+
+				$j.ajax({
+					type: "POST",
+					url: ajaxHandlerURL,
+					data: {
+						action: "deleteFolder",
+						folderID: folderID
+					},
+					dataType: "json",
+					success: function() {
+						reloadResources();
+					}
+				});
+				$j(this).dialog('close');
+			},
+			'Cancel': function() {
+				$j(this).dialog('close');
+			}
+		});
+	} else {
+		FS.util.dialog('This folder cannot be deleted until all resources and folders contained within are deleted', 'Delete Folder');
+	}
+}
+
+function removeFolder(folderID) {
+	FS.util.dialog('Are you sure you want to remove this folder from this group? The folder will still be available to groups with which it is shared.', 'Remove Folder', {
+		'Remove Folder': function() {
+			folderOptionRefresh = true;
+			FS.util.displayLoadingPrompt('Removing folder');
+
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				global: false,
+				data: {
+					action: "removeFolder",
+					folderID: folderID,
+					pageID: pageid
+				},
+				dataType: "json",
+				success: function() {
+					reloadResources();
+				},
+				error: function() {
+					FS.util.dialog('An error occurred while removing this folder. Please try again');
+				}
+			});
+			$j(this).dialog('close');
+		},
+		'Cancel': function() {
+			$j(this).dialog('close');
+		}
+	});
+}
+
+function archiveFolder(folderID) {
+	FS.util.dialog('Are you sure you want to archive this folder?', 'Confirm Archive', {
+		'Archive Folder': function() {
+			folderOptionRefresh = true;
+			FS.util.displayLoadingPrompt('Archiving folder');
+
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				global: false,
+				data: {
+					action: "archiveFolder",
+					folderID: folderID
+				},
+				dataType: "json",
+				success: function() {
+					reloadResources();
+				},
+				error: function() {
+					FS.util.dialog('An error occurred while archiving the folder. Please try again');
+				}
+			});
+			$j(this).dialog('close');
+		},
+		'Cancel': function() {
+			$j(this).dialog('close');
+		}
+	});
+}
+
+function restoreFolder(folderID) {
+	FS.util.dialog('Are you sure you want to restore this folder?', 'Restore Folder', {
+		'Restore Folder': function() {
+			folderOptionRefresh = true;
+			FS.util.displayLoadingPrompt('Restoring folder');
+
+			$j.ajax({
+				type: "POST",
+				url: ajaxHandlerURL,
+				global: false,
+				data: {
+					action: "restoreFolder",
+					folderID: folderID
+				},
+				dataType: "json",
+				success: function() {
+					reloadResources();
+				},
+				error: function() {
+					FS.util.dialog('An error occurred while restoring this folder. Please try again');
+				}
+			});
+			$j(this).dialog('close');
+		},
+		'Cancel': function() {
+			$j(this).dialog('close');
+		}
+	});
+}
+
+function returnResourceFolder(folder) {
+	$j('#fsResourcesEditFolderDynamicPath').val(folder);
+}
+
+function updateFolderOrder($sortableDiv) {
+	// Determine the folder order
+	var folderOrder = $sortableDiv.children('.fsResourcesSortableItem').map(function(){
+		return $j(this).attr('data-rcID');
+	}).get().join(',');
+
+	$j.ajax({
+		type: "POST",
+		url: ajaxHandlerURL,
+		global: false,
+		data: {
+			action: "updateFolderOrder",
+			pageID: pageid,
+			parentFolderID: $sortableDiv.attr('data-rcParentID'),
+			order: folderOrder
+		},
+		dataType: "json"
+	});
+}
+
+/**************************************
+	RESOURCE/FOLDER FUNCTIONS
+**************************************/
+
+function resetAllSortingArrows() {
+	$j('#fsResources .fsResourcesSortable').each(function() {
+		resetSortingArrows($j(this));
+	});
+}
+
+function resetSortingArrows($sortableDiv) {
+	if (isGridView) {
+		$sortableDiv.find('.fsResourcesActionsMoveUp, .fsResourcesActionsMoveDown').removeClass('fsResourcesIconDisabled');
+		$sortableDiv.find('.fsResourcesSortableItem:first').find('.fsResourcesActionsMoveUp').addClass('fsResourcesIconDisabled');
+		$sortableDiv.find('.fsResourcesSortableItem:last').find('.fsResourcesActionsMoveDown').addClass('fsResourcesIconDisabled');
+	} else {
+		$sortableDiv.children('.fsResourcesSortableItem').children('.fsResourcesActions').find('.fsResourcesActionsMoveUp, .fsResourcesActionsMoveDown').removeClass('fsResourcesIconDisabled');
+		$sortableDiv.children('.fsResourcesSortableItem:first-child').children('.fsResourcesActions').find('.fsResourcesActionsMoveUp').addClass('fsResourcesIconDisabled');
+		$sortableDiv.children('.fsResourcesSortableItem:last-child').children('.fsResourcesActions').find('.fsResourcesActionsMoveDown').addClass('fsResourcesIconDisabled');
+	}
+}
+
+function setThumbnail($container, thumbnailFile) {
+	$container.find('.fsResourcesThumbnailDisplay').show();
+	$container.find('.fsResourcesThumbnailNew').hide();
+	$container.find('.fsResourcesThumbnailImage').attr('src', baseurl + '/data/resources/thumbs/' + thumbnailFile + '?' + Math.floor(Math.random() * 100000) + 1);
+}
+
+function deleteThumbnail($container) {
+	$container.find('.fsResourcesThumbnailDisplay').hide();
+	$container.find('.fsResourcesThumbnailNew').show();
+	$container.find('.fsResourcesThumbnailName').html('').addClass('fsStyleHidden');
+	$container.find('button').show();
+	$container.find('.fsResourcesThumbnailClear').addClass('fsStyleHidden');
+	$container.find('.fsResourcesThumbnailExisting').val('');
+	$container.find('.fsResourcesThumbnailAction').val('none');
+
+	// Replace file input for thumbnail to clear it
+	$fileField = $container.find('.fsResourcesThumbnailFile');
+	if ($fileField.val().length) {
+		$fileField.replaceWith($fileField.val('').clone(true));
+	}
+}
+
+function setThumbnailFileName($parentContainer, filePath) {
+	var filePathArray = filePath.split('\\');
+	$parentContainer.find('.fsResourcesThumbnailName').removeClass('fsStyleHidden').html(filePathArray[filePathArray.length - 1]);
+	$parentContainer.find('button').hide();
+	$parentContainer.find('.fsResourcesThumbnailClear').removeClass('fsStyleHidden');
+}
+
+function returnThumbnail(filePath, fileName) {
+	$existingFileParent.find('.fsResourcesThumbnailExisting').val(filePath);
+	$existingFileParent.find('.fsResourcesThumbnailAction').val('existing');
+	setThumbnailFileName($existingFileParent, fileName);
+}
+
+function reloadResources() {
+	if (isGridView) {
+		reloadResourceGrid();
+	} else if (isListView) {
+		reloadResourceList();
+	} else {
+		window.location.reload();
+	}
+}
+
+function reloadResourceList() {
+	var pagePosition = $j(document).scrollTop();
+	var openFolders = [];
+	$resourceList = $j('#fsResourcesList');
+
+	$resourceList.find('.fsResourcesListFolderOpen').each(function(index, folder) {
+		openFolders.push(parseInt($j(folder).attr('data-rcID'), 10));
+	});
+
+	FS.util.displayLoadingPrompt('Loading resources');
+	$j.ajax({
+		type: "POST",
+		url: ajaxHandlerURL,
+		global: false,
+		data: {
+			action: "reloadList",
+			pageID: pageid,
+			groupID: groupID
+		},
+		dataType: "html",
+		success: function(data) {
+			$resourceList.html(data);
+
+			// Reset the sorting arrows
+			resetAllSortingArrows();
+
+			// Open folders that were previously opened
+			$j.each(openFolders, function(index, folderID) {
+				$resourceList.find('#fsResourcesListFolder_' + folderID).trigger('click');
+			});
+
+			if (isMobile) {
+				$resourceList.find('.fsResourcesActions').show();
+			}
+			makeListSortable();
+			$j(document).scrollTop(pagePosition);
+			FS.util.hideLoadingPrompt();
+		},
+		error: function() {
+			window.location.reload();
+		}
+	});
+}
+
+function reloadResourceGrid(folderID) {
+	$resourceGrid = $j('#fsResourcesGrid');
+	FS.util.displayLoadingPrompt('Loading resources');
+
+	if (typeof folderID === "undefined") {
+		folderID = $j('#fsResourcesGridContainer').attr('data-rcParentID');
+	}
+
+	$j.ajax({
+		type: "POST",
+		url: ajaxHandlerURL,
+		global: false,
+		data: {
+			action: "reloadGrid",
+			pageID: pageid,
+			groupID: groupID,
+			folderID: folderID,
+			pageName: pageName
+		},
+		dataType: "html",
+		success: function(data) {
+			$resourceGrid.html(data);
+
+			// Reset the sorting arrows
+			resetAllSortingArrows();
+
+			if (isMobile) {
+				$resourceGrid.find('.fsResourcesActions').show();
+			}
+
+			makeListSortable();
+			FS.util.hideLoadingPrompt();
+		},
+		error: function() {
+			window.location.reload();
+		}
+	});
+}
+
+function makeListSortable() {
+	// Truncate title/description if we are in the grid view
+	if (isGridView) {
+		$j('#fsResourcesGrid .fsResourcesGridHeader, #fsResourcesGrid .fsResourcesGridNotes').each(function(){
+			var $this = $j(this);
+			if ($this[0].scrollWidth >  $this.innerWidth()) {
+				//Text has over-flowed
+				$this.qtip({
+					content: {
+						text: $this.html()
+					},
+					position: {
+						my: 'left center',
+						at: 'right center',
+						viewport: $j(window),
+						target: (isMobile) ? $this.find('img') : $this,
+						adjust: {
+							method: 'shift'
+						}
+					},
+					style: {
+						classes: 'ui-tooltip-rounded ui-tooltip-shadow'
+					},
+					show: {
+						event: (isMobile) ? 'click' : 'mouseenter'
+					},
+					hide: {
+						event: (isMobile) ? 'click' : 'mouseleave'
+					},
+					events: {
+						render: function(event, api) {
+							$j(this).click(api.hide);
+						}
+					}
+				});
+			}
+
+		});
+	}
+
+	if (!isMobile) {
+		// Sorting folder list when 2 or more folders exist
+		$j('#fsResources .fsResourcesSortableFolder').has('.fsResourcesSortableItem:nth-child(2)')
+			.sortable({
+				axis: isGridView ? false : 'y',
+				cancel: '.fsResourcesListItem',
+				containment: '#fsGroupsBody',
+				cursor: 'move',
+				distance: 15,
+				forcePlaceholderSize: true,
+				items: '> .fsResourcesSortableItem',
+				placeholder: isGridView ? false : "ui-state-highlight",
+				update: function() {
+					var $this = $j(this);
+					resetSortingArrows($this);
+					updateFolderOrder($this);
+				},
+				start: function() {
+					$j(this).addClass('fsResourcesDropTarget');
+				},
+				stop: function() {
+					$j(this).removeClass('fsResourcesDropTarget');
+				}
+			});
+
+		// Sorting resource list when 2 or more folders exist
+		$j('#fsResources .fsResourcesSortable').not('.fsResourcesSortableFolder').has('.fsResourcesSortableItem:nth-child(2)')
+			.sortable({
+				cancel: '.fsResourcesActions',
+				cursor: 'move',
+				distance: 15,
+				forcePlaceholderSize: true,
+				items: '> .fsResourcesSortableItem',
+				update: function() {
+					var $this = $j(this);
+					resetSortingArrows($this);
+					updateResourceOrder($this);
+				},
+				start: function() {
+					$j(this).addClass('fsResourcesDropTarget');
+				},
+				stop: function() {
+					$j(this).removeClass('fsResourcesDropTarget');
+				}
+			});
+	}
+}
+
+function updateFolderMenu(optionHTML) {
+	if (optionHTML && optionHTML.length) {
+		var $resourceSelect = $j('#fsResourcesEditResourceFolder');
+		var $folderSelect = $j('#fsResourcesEditFolderParent');
+
+		$resourceSelect.html(optionHTML);
+		$folderSelect.html('<option value="0">-- main folder --</option>' + optionHTML);
+
+		folderOptionRefresh = false;
+	}
+}
+
+/**************************************
+	ADD SHARED FOLDER FUNCTIONS
+**************************************/
+
+function addSharedFolderDisplay(type) { //type 1: shared folder 2: import folder
+
+	var $filter = $j('#fsResourcesSharedFolderFilter'),
+		typeText;
+
+	if(type == 1){
+		$filter.empty().append('<option value="3">All active groups</option><option value="4">All archived groups</option>');
+		typeText = 'Copy Shared Folders';
+		$j('.fsResourcesImportDates').hide();
+	}else if(type == 2){
+		$filter.empty().append('<option value="1">My active groups</option><option value="2" selected>My archived groups</option>');
+		typeText = 'Import Folders';
+		$j('.fsResourcesImportDates').show();
+	}
+
+	$j('#fsResourcesSharedFolderKeywords').val('');
+	$j('#fsResourcesSharedFolderIsShared').prop('checked', false).trigger('change');
+	selectedSharedFolders = {};
+
+	$j('#fsResourcesSharedFolderSharedGroups option').not(':disabled').prop('selected', false);
+	$j('#fsResourcesSharedFolderSharedGroups').multiselect('refresh');
+
+	loadSharedFolders();
+
+	$j('#fsResourcesSharedFolderDialog')
+		.dialog({
+			title: typeText,
+			width: 600,
+			buttons:
+				[{
+					text: typeText,
+					click: function() {
+						// then add the folders
+						addSharedFolder(selectedSharedFolders, type, 'loadSharedFolders');
+					}
+				},
+				{
+					text: 'Close',
+					click: function() {
+						$j(this).dialog('close');
+					}
+				}]
+		})
+		.dialog('open')
+		.parent('.ui-dialog').find('.ui-dialog-buttonpane button:contains("Add")').prop('disabled', true).addClass("ui-state-disabled");
+}
+
+function addSharedFolder(folderIDObject, type, callbackFunction) {
+
+	folderOptionRefresh = true;
+
+	var postData = {
+			action: "addSharedFolder",
+			groupid: groupID,
+			currpageid: pageid
+		},
+		errors = [];
+
+	if ($j.isEmptyObject(folderIDObject)) {
+		errors.push('Please select a folder to share.');
+	}
+
+	if(type == 1){
+		postData.method = 'copyResources';
+	}else if(type == 2){// only worry about this stuff for type 2 - import folders
+		postData.method = 'importResources';
+
+		var verify = verifyDisplayAndArchiveDates(errors, '#fsResourcesImportFolderDisplayDatepicker', '#fsResourcesImportFolderArchiveDatepicker');
+
+		errors = verify.errors;
+
+		postData.displayDate = $j.trim($j('#fsResourcesImportFolderDisplayDatepicker').val());
+		postData.archiveDate = $j.trim($j('#fsResourcesImportFolderArchiveDatepicker').val());
+
+		// also check if we are doing the archive right off the bat...
+		postData.archive = ($j('#fsResourcesImportFolderArchive').is(':checked')) ? true : false;
+	}
+
+
+	if (errors.length) {
+		displayErrorDialog('The following errors have occurred:', errors);
+	} else {
+
+		FS.util.displayLoadingPrompt('Adding shared folders');
+
+		var folderIDArray = $j.map(folderIDObject, function(i, folderID) {
+			return folderID;
+		});
+
+		postData.folderIDList = folderIDArray.toString(',');
+
+		if ($j('#fsResourcesSharedFolderIsShared').is(':checked')) {
+			postData.groupIDList = $j('#fsResourcesSharedFolderSharedGroups').multiselect('getChecked').map(function() {
+				return this.value;
+			}).get().join(',');
+		} else {
+			postData.pageID = pageid;
+		}
+
+		$j.ajax({
+			type: "POST",
+			url: ajaxHandlerURL,
+			data: postData,
+			dataType: "html",
+			success: function(data) {
+				FS.util.hideLoadingPrompt();
+				reloadResources();
+
+				if (callbackFunction && typeof window[callbackFunction] === "function") {
+					var callback = window[callbackFunction]();
+				}
+
+				$j('#fsResourcesSharedFolderDialog').dialog('close');
+			}
+		});
+
+	}
+}
+
+function loadSharedFolders() {
+	$j('#fsResourcesSharedFolderDialog').parent('.ui-dialog').find('.ui-dialog-buttonpane button:contains("Add")').prop('disabled', true).addClass("ui-state-disabled");
+	selectedSharedFolders = {};
+
+	var $resultsDiv = $j('#fsResourcesSharedFolderResults'),
+		postData = {
+			action: "getSharedFolders",
+			pageID: pageid
+		},
+		filter = parseInt($j('#fsResourcesSharedFolderFilter option:selected').val(), 10),
+		keywords = $j('#fsResourcesSharedFolderKeywords').val();
+
+	$resultsDiv.html('<div class="fsResourcesSharedFolderNoResults"><p><span>Loading</span>, please wait&hellip;<br><img src="images/loadingbar.gif" border="0"></p></div>');
+
+	switch (filter) {
+		case 2:
+			postData.isArchived = true;
+			postData.onlyMyGroups = true;
+			break;
+		case 3:
+			postData.isArchived = false;
+			postData.onlyMyGroups = false;
+			break;
+		case 4:
+			postData.isArchived = true;
+			postData.onlyMyGroups = false;
+			break;
+		default:
+			postData.isArchived = false;
+			postData.onlyMyGroups = true;
+			break;
+	}
+
+	if ($j.trim(keywords).length) {
+		postData.keywords = keywords;
+	}
+
+	$j.ajax({
+		type: "POST",
+		url: ajaxHandlerURL,
+		data: postData,
+		dataType: "html",
+		success: function(data) {
+			$resultsDiv.html(data);
+		}
+	});
+}
+
+/**************************************
+	MISCELLANEOUS FUNCTIONS
+**************************************/
+function verifyDisplayAndArchiveDates(errors, displayID, archiveID){
+ 	var ret = {},
+ 		displayDate = $j.trim($j(displayID).val()),
+		archiveDate = $j.trim($j(archiveID).val());
+
+	if (displayDate) {
+		// If a display date is entered, validate it and optionally validate the archive date
+		var verifyRange = validateDateRange(displayDate, archiveDate, 'display', 'archive');
+		if (!verifyRange.valid) {
+			errors.push(verifyRange.error);
+		}
+	} else if (archiveDate) {
+		// Only the archive date was passed, validate it
+		var verifyArchiveDate = validateDateRange(archiveDate, false, 'archive');
+		if (!verifyArchiveDate.valid) {
+			errors.push(verifyArchiveDate.error);
+		}
+	}
+
+	ret.errors = errors;
+
+	return ret;
+}
+
+function displayErrorDialog(errorMessage, errorArray) {
+	var message = errorMessage;
+
+	if ($j.isArray(errorArray)) {
+		message += "<ul>";
+		$j.each(errorArray, function(index, error) {
+			message += "<li>" + error + "</li>";
+		});
+		message += "</ul>";
+	}
+
+	FS.util.dialog(message);
+}
+
+function toggleRadioDiv(thisToggled) {
+	var $this, $container;
+
+	if(thisToggled === undefined){
+		$this = $j("input[name='fileType']:checked");
+	}else{
+		$this = $j(thisToggled);
+	}
+
+	$container = $this.closest('.fsResourcesToggleContainer');
+
+	$container.find('.fsResourcesToggleDiv').hide();
+	$container.find('input[value="' + $this.val() + '"]:checked').parent().next('.fsResourcesToggleDiv').show();
+
+	if ($this.hasClass('fsResourcesEditResourceType')) {
+		$j('#fsResourcesEditType').val($this.val());
+	}
+}
+
+// Returns an object with the start and end times if the date range is valid, an error otherwise. If no end date is passed, this will simply validate the start date
+function validateDateRange(start, end, startLabel, endLabel) {
+	var startDate = (typeof start === "undefined") ? false : start;
+	var sLabel = (typeof startLabel === "undefined") ? 'start' : startLabel;
+	var endDate = (typeof end === "undefined") ? false : end;
+	var eLabel = (typeof endLabel === "undefined") ? 'end' : endLabel;
+	var startDateParsed, endDateParsed;
+	var returnObj = {valid: true};
+
+	if (!startDate) {
+		return {valid: false, error: 'Please enter a valid ' + startLabel + ' date'};
+	}
+
+	try {
+		startDateParsed = $j.datepicker.parseDate(dateFormat, startDate);
+		if (startDateParsed === null) throw 'Invalid';
+		returnObj.startDate = $j.datepicker.formatDate(dateFormat, startDateParsed);
+		returnObj.startDateServer = $j.datepicker.formatDate('m/d/yy', startDateParsed);
+	} catch (error) {
+		return {valid: false, error: 'Please enter a valid ' + startLabel + ' date'};
+	}
+
+	if (endDate) {
+		try {
+			endDateParsed = $j.datepicker.parseDate(dateFormat, endDate);
+			if (endDateParsed === null) throw 'Invalid';
+			returnObj.endDate = $j.datepicker.formatDate(dateFormat, endDateParsed);
+			returnObj.endDateServer = $j.datepicker.formatDate('m/d/yy', endDateParsed);
+		} catch (error) {
+			return {valid: false, error: 'Please enter a valid ' + endLabel + ' date'};
+		}
+
+		if (endDateParsed <= startDateParsed) {
+			return {valid: false, error: 'The ' + endLabel + ' date cannot occur on or before the ' + startLabel + ' date'};
+		}
+	}
+
+	// If we get here, no errors have occurred
+	return returnObj;
+}
+
+function displayCurrentFile(from, name){
+
+	if(from == 'fileManager'){
+		//clear fileUpload
+		$j('#fsResourcesEditFileUpload').val('');
+		//clear googleDrive
+		$j('#fsResourcesGoogleDriveFileDisplay').val('');
+	}else if(from == 'fileUpload'){
+		//clear fileManager
+		$j('#fsResourcesEditFileDisplay').val('');
+		//clear googleDrive
+		$j('#fsResourcesGoogleDriveFileDisplay').val('');
+	}else if(from == 'googleDrive'){
+		//clear fileUpload
+		$j('#fsResourcesEditFileUpload').val('');
+		//clearFileManager
+		$j('#fsResourcesEditFileDisplay').val('');
+	}
+
+	//then show the name of the file we are going to upload
+	$j('#uploadDesc').html('<strong>File:</strong> ' + name);
+
+}

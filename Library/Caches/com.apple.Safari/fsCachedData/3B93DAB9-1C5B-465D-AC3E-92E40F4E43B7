@@ -1,0 +1,343 @@
+{
+ "kind": "drive#settingList",
+ "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/QHm4aSCB4GD43-EcaVAlvzz83jg\"",
+ "selfLink": "https://www.googleapis.com/drive/v2internal/settings?errorRecovery=false&namespace=DRIVE_BE&openDrive=true&reason=301&syncType=2",
+ "items": [
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/CgXgXRR8lfceNKMVgav4Z5r5on4\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.ndpb?namespace=EXPLORER",
+   "key": "promo.ndpb",
+   "value": "{\"state\":4,\"timestamp\":1418175907781}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/XTU2rXCQAzPBgAB_WaAL1thUXm4\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/doclist.hasSeenAtLeastOneFile?namespace=EXPLORER",
+   "key": "doclist.hasSeenAtLeastOneFile",
+   "value": "true",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/j2gR5Gwrf3X0Rtbf1to2gTS69Ac\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewmanager.view?namespace=EXPLORER",
+   "key": "viewmanager.view",
+   "value": "my-drive",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/2A9HPNKcYxLbuSfL5wIgr9R_wUE\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/doclistFirstVisitDate?namespace=EXPLORER",
+   "key": "doclistFirstVisitDate",
+   "value": "1349800178000",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/iiAr6n2o0mNPMDHTe9TIWcMGZ08\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/linkedFolders?namespace=DRIVE_BE",
+   "key": "linkedFolders",
+   "value": "0",
+   "namespace": "DRIVE_BE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/kv6IyLrEkFLqwp-e9jgKnN7a_rs\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/ShowInMyDrive?namespace=PSYNCHO",
+   "key": "ShowInMyDrive",
+   "value": "false",
+   "namespace": "PSYNCHO"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/sT0tZ22U7GggnhoJD0QP7M8EzWw\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.oipp?namespace=EXPLORER",
+   "key": "promo.oipp",
+   "value": "{\"state\":1,\"timestamp\":1399840612562}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/Phl1YpJwz5cNMWoMlVVIKjHmiEI\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.11?namespace=DRIVE_FE",
+   "key": "promo.11",
+   "value": "true",
+   "namespace": "DRIVE_FE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/C39f02gbw3vVkjczYhaVnEHssrg\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/appCreateCounts?namespace=DRIVE_FE",
+   "key": "appCreateCounts",
+   "value": "619683526622:11,889782162350:2",
+   "namespace": "DRIVE_FE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/jLwdP4osB5s5-0gdHqsVlQCeZC0\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewpref.shared-with-me?namespace=EXPLORER",
+   "key": "viewpref.shared-with-me",
+   "value": "{\"descending\":true,\"sort\":\"14\"}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/Fsiid2bSOLuG2Uyl35VMtjrcn1U\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/density?namespace=DRIVE_FE",
+   "key": "density",
+   "value": "n",
+   "namespace": "DRIVE_FE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/u07mM3_-GNPiqzAWNbooWNzyYPU\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/uiVersion?namespace=EXPLORER",
+   "key": "uiVersion",
+   "value": "SPACECAMP",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/3VprxEQu5NIFlo0X7TK7WqGOmPk\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.2?namespace=DRIVE_FE",
+   "key": "promo.2",
+   "value": "true",
+   "namespace": "DRIVE_FE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/efzKyUX3BYfqZXYFCuqm8QhL-I4\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/redirectToDriveFe?namespace=EXPLORER",
+   "key": "redirectToDriveFe",
+   "value": "true",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/bIDl5cTJzehpJ3pp5BThx0OVEzI\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/experiment.download.pane2.seenStep1?namespace=EXPLORER",
+   "key": "experiment.download.pane2.seenStep1",
+   "value": "1415667674280",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/gqjxfwTyZkaBAPdL-NP41FqAxq8\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/syncClientAndWorkerSharedKey?namespace=EXPLORER",
+   "key": "syncClientAndWorkerSharedKey",
+   "value": "86a9cd165d86f5d6",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/4FryY2aou7yT0Bjv4rDllOV0XAI\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewer.seenPromoCount?namespace=EXPLORER",
+   "key": "viewer.seenPromoCount",
+   "value": "1",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/7kQeCUVuyacmCHTDEZOrAYk6icQ\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.avp?namespace=EXPLORER",
+   "key": "promo.avp",
+   "value": "{\"state\":1,\"timestamp\":1390446233576}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/legjVIXglIbdbFyjoOJIH2spCwk\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewmanager.sortReset?namespace=EXPLORER",
+   "key": "viewmanager.sortReset",
+   "value": "1",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/BSXBCUaw1oQ3WfaKKhJVCoKCZEk\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/infopanel.show?namespace=EXPLORER",
+   "key": "infopanel.show",
+   "value": "true",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/sOQe1__m5ddTY4AWR13K-R8svhE\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.10?namespace=DRIVE_FE",
+   "key": "promo.10",
+   "value": "true",
+   "namespace": "DRIVE_FE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/ln7zktlHXSC5Trn6tvryHOuv394\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/application.hasSeenFloodlightTags?namespace=EXPLORER",
+   "key": "application.hasSeenFloodlightTags",
+   "value": "true",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/nRNtu1gaFf8EhEQ-eIL1IsuGPoc\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/corpusSize?namespace=DRIVE_BE",
+   "key": "corpusSize",
+   "value": "316",
+   "namespace": "DRIVE_BE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/rbprL_vHYyBTePBCp9L8nzmzni0\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.mdpb?namespace=EXPLORER",
+   "key": "promo.mdpb",
+   "value": "true",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/T0WgJ4URO1703JVDa_vv4FFDTy0\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewmanager.sort?namespace=EXPLORER",
+   "key": "viewmanager.sort",
+   "value": "13",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/ds3LzuLPL1DQePE635_Z8uutdKw\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.ndp?namespace=EXPLORER",
+   "key": "promo.ndp",
+   "value": "{\"state\":1,\"timestamp\":1409747116133}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/APwsB25E8uCY0PewNQLSL5xDzwY\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewmanager.layout?namespace=EXPLORER",
+   "key": "viewmanager.layout",
+   "value": "grid",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/_VznCUsycUzIr_LcYeLfI4v89zY\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.ndpbn?namespace=EXPLORER",
+   "key": "promo.ndpbn",
+   "value": "{\"state\":4,\"timestamp\":1432578886158}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/xgmWdZxXVzno-ROTxMuiwISnTpg\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/locale?namespace=EXPLORER",
+   "key": "locale",
+   "value": "",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/7VANnXUA4PlHkiIc5_V6o2xZT0M\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.ropb?namespace=EXPLORER",
+   "key": "promo.ropb",
+   "value": "{\"state\":4,\"timestamp\":1390445892377}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/VCWmaPQvxI_RvYcVJV6yk343mt8\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.suip?namespace=EXPLORER",
+   "key": "promo.suip",
+   "value": "true",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/2FW8Mj0_te5MMrvjbzxbNYJl3BM\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewpref.my-drive?namespace=EXPLORER",
+   "key": "viewpref.my-drive",
+   "value": "{\"descending\":false,\"sort\":\"13\"}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/bdbwU_x2LolAvrFJvIh64hD8TEA\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.ndpba?namespace=EXPLORER",
+   "key": "promo.ndpba",
+   "value": "{\"state\":4,\"timestamp\":1430499371812}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/7AnScH5g-XRgL2bidAFTR3Vb6Z8\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/experiment.download.pane2.seenStep2?namespace=EXPLORER",
+   "key": "experiment.download.pane2.seenStep2",
+   "value": "1391301597359",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/0UygIYyL9sIZcUuIvh9M_vGxVWQ\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/promo.swmpb?namespace=EXPLORER",
+   "key": "promo.swmpb",
+   "value": "{\"state\":4,\"timestamp\":1391448537227}",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/vaBajqI5mi_4Tbp81RBf0jMOsNI\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewmanager.desc?namespace=EXPLORER",
+   "key": "viewmanager.desc",
+   "value": "false",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/H2D2Tozv98ILrgNGWYm_cXo7tEg\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/timezone?namespace=EXPLORER",
+   "key": "timezone",
+   "value": "",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/7I2x_D9bwBEgg1rIiYCGeRfM5Hg\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/infoSidebarState?namespace=DRIVE_FE",
+   "key": "infoSidebarState",
+   "value": "details",
+   "namespace": "DRIVE_FE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/7TkxWyjEY0nRKv8QTKVWMhBfzSs\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/viewmanager.uiReset?namespace=EXPLORER",
+   "key": "viewmanager.uiReset",
+   "value": "19",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/gQHy7DvnnP4NfgOscGhCgkjjOv0\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/linkedItems?namespace=DRIVE_BE",
+   "key": "linkedItems",
+   "value": "104",
+   "namespace": "DRIVE_BE"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/d3078gbyDx8bJLTttiRlv6nfb2A\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/hasSeenDrive?namespace=EXPLORER",
+   "key": "hasSeenDrive",
+   "value": "true",
+   "namespace": "EXPLORER"
+  },
+  {
+   "kind": "drive#setting",
+   "etag": "\"fSyT6ki_QevdlR4nhAHtV-9Csww/yMdfUxily2PT1hJ4FALa7_GE2-M\"",
+   "selfLink": "https://www.googleapis.com/drive/v2internal/settings/currentUserDriveFeDefaultDateMsec?namespace=EXPLORER",
+   "key": "currentUserDriveFeDefaultDateMsec",
+   "value": "1432861575603",
+   "namespace": "EXPLORER"
+  }
+ ]
+}

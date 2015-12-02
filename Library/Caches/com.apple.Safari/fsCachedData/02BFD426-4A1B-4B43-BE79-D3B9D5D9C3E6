@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head><link href='https://nav.heroku.com/v2/header.css' media='all' rel='stylesheet' type='text/css' />
+    <meta charset='utf-8'>
+    <title>Heroku Toolbelt</title>
+    <meta content='Heroku command-line tooling for working with the Heroku platform, on OS X, Windows and Debian/Ubuntu.' name='description'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width' name='viewport'>
+    <link href='https://nav.heroku.com/images/logos/favicon.ico' rel='icon' type='image/x-icon'>
+    <link href='https://statics.herokuapp.com/fonts/fonts.css' rel='stylesheet'>
+    <link href='/screen.css' rel='stylesheet'>
+    <script src='/scripts/jquery.min.js'></script>
+    <script src='/scripts/jquery.pjax.js'></script>
+    <script src='/scripts/modernizr.min.js'></script>
+    <!--[if lte IE 7]>
+      <link href='/ie7.css' rel='stylesheet'>
+    <![endif]-->
+    <script>
+      $(window).ready(function () {
+        $('.tabNavigation a').pjax('#instructions').live('click', function() {
+          $('.tabNavigation a').removeClass('selected');
+          $(this).addClass('selected');
+        });
+        $('.tabNavigation .osx a').addClass('selected');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="heroku-header">
+  <div id="heroku-header-hgroup">
+    <h1><a href="https://www.heroku.com">Heroku</a></h1>
+  </div>
+
+  <div id="heroku-header-nav">
+    <ul>
+      <li><a href="https://www.heroku.com/how/">How It Works</a></li>
+      <li><a href="https://www.heroku.com/pricing/">Pricing</a></li>
+      <li class="last"><a href="https://addons.heroku.com/">Add-ons</a></li>
+    </ul>
+
+    <ul class="group" id="heroku-header-aid">
+      <li><a href="https://devcenter.heroku.com/">Dev Center</a></li>
+      <li class="last"><a href="https://help.heroku.com">Help</a></li>
+    </ul>
+
+    <ul class="last group" id="heroku-header-my-heroku">
+      <li><a href="https://dashboard.heroku.com/apps/">My Apps</a></li>
+      <li><a href="https://dashboard.heroku.com/account/">My Account</a></li>
+      <li class="last"><a href="https://id.heroku.com/logout">Logout</a></li>
+    </ul>
+  </div>
+
+  <div id="heroku-header-quicknav">
+    <select>
+      <optgroup label="About">
+        <option value="https://www.heroku.com/how/">How It Works</option>
+        <option value="https://www.heroku.com/pricing/">Pricing</option>
+        <option value="https://addons.heroku.com/">Add-ons</option>
+      </optgroup>
+
+      <optgroup label="Support">
+        <option value="https://devcenter.heroku.com/">Dev Center</option>
+        <option value="https://help.heroku.com">Help</option>
+      </optgroup>
+
+      <optgroup label="My Heroku">
+        <option value="https://dashboard.heroku.com/apps/">My Apps</option>
+        <option value="https://dashboard.heroku.com/account/">My Account</option>
+        <option value="https://id.heroku.com/logout/">Logout</option>
+      </optgroup>
+    </select>
+
+    <a href="#" onclick="return false;">How It Works</a>
+  </div>
+</div>
+<script>
+(function(){
+
+  function isCurrentLocation(url){
+    return window.location.toString().indexOf(url) == 0;
+  }
+
+  function loggedIn(){
+    return document.cookie.indexOf('heroku_session=') != -1;
+  }
+
+  function setLoginInList(){
+    var ul = document.getElementById('heroku-header-my-heroku');
+    var lis = ul.getElementsByTagName('li');
+    while (lis.length > 1){
+      lis[0].parentNode.removeChild(lis[0]);
+    }
+    var link = lis[0].getElementsByTagName('a')[0];
+    link.setAttribute('href', 'https://id.heroku.com/login');
+    link.innerHTML = 'Login';
+  }
+
+  function setLoginInOptions(){
+    var optgroups = document.getElementById('heroku-header-quicknav').getElementsByTagName('optgroup');
+    var optgroup = optgroups[optgroups.length - 1];
+    var options = optgroup.getElementsByTagName('option');
+    while (options.length > 1){
+      options[0].parentNode.removeChild(options[0]);
+    }
+    options[0].setAttribute('value', 'https://id.heroku.com/login');
+    options[0].innerHTML = 'Login';
+  }
+
+  function markCurrentOptionAndLink(){
+    var currentOption = null;
+    var i = 0;
+    while ((i<navOptions.length) && (currentOption == null)){
+      if (isCurrentLocation(navOptions[i].value)){
+        currentOption = navOptions[i];
+        currentOption.selected = true;
+      }
+      i++;
+    }
+
+    // set current link text
+    if (currentOption){
+      navSelectLink.innerHTML = currentOption.innerHTML;
+    }
+  }
+
+  function markCurrentItem(){
+    var navLis = document.getElementById('heroku-header-nav').getElementsByTagName('li');
+    var i=0;
+    while (i<navLis.length){
+      if (isCurrentLocation(navLis[i].getElementsByTagName('a')[0].getAttribute('href'))){
+        var liClass = navLis[i].getAttribute('class') || '';
+        navLis[i].setAttribute('class', liClass + ' active');
+      }
+      i++;
+    }
+  }
+
+  function optionSelected(){
+    var selectedValue = navSelect.value;
+    var selectedText = navOptions[navSelect.selectedIndex].innerHTML;
+    navSelectLink.innerHTML = selectedText;
+    window.location = navSelect.value;
+    return false;
+  }
+
+  function prefetchLogos(){
+    new Image().src = 'https://nav.heroku.com/images/v2/heroku-header-logo.png';
+    new Image().src = 'https://nav.heroku.com/images/v2/heroku-header-logo-mobile.png';
+  }
+
+  // let's share some variables to save selections
+  var quickNav = document.getElementById('heroku-header-quicknav');
+  var navSelect = quickNav.getElementsByTagName('select')[0];
+  var navSelectLink = quickNav.getElementsByTagName('a')[0];
+  var navOptions = quickNav.getElementsByTagName('option');
+
+  if (!loggedIn()){
+    setLoginInList();
+    setLoginInOptions();
+  }
+  prefetchLogos();
+  markCurrentOptionAndLink();
+  markCurrentItem();
+  navSelect.onchange = optionSelected;
+
+})();
+</script>
+<noscript>
+      <iframe height='0' src='//www.googletagmanager.com/ns.html?id=GTM-JD26' style='display:none;visibility:hidden' width='0'></iframe>
+    </noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-JD26');
+    </script>
+    <div class='wrapper'>
+      <header>
+        <h1>
+          Heroku Toolbelt
+        </h1>
+        <h2>
+          Everything you need to get started using Heroku
+        </h2>
+      </header>
+      <div class='div'>
+        <nav>
+          <ul class='tabNavigation' id='platform'>
+            <li class='osx'>
+              <a href='/osx'>
+                <span class='icon'></span>
+                <span class='title'>
+                  Mac OS X
+                </span>
+              </a>
+            </li>
+            <li class='windows'>
+              <a href='/windows'>
+                <span class='icon'></span>
+                <span class='title'>
+                  Windows
+                </span>
+              </a>
+            </li>
+            <li class='debian'>
+              <a href='/debian'>
+                <span class='icon'></span>
+                <span class='title'>
+                  Debian/Ubuntu
+                </span>
+              </a>
+            </li>
+            <li class='standalone'>
+              <a href='/standalone'>
+                <span class='icon'></span>
+                <span class='title'>
+                  Standalone
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id='instructions'>
+          <p class="download">
+              <a href="/download/osx" class="button">Heroku Toolbelt for Mac OS X</a>
+          </p>
+          
+          
+          <h3>What is it?</h3>
+          
+          <ul>
+          <li><a href="http://github.com/heroku/heroku">Heroku client</a> - CLI tool for creating and managing Heroku apps</li>
+          </ul>
+          
+          
+          <h3>Getting started</h3>
+          
+          <p>Once installed, you'll have access to the heroku command from your command shell. Log in using the email address and password you used when creating your Heroku account:</p>
+          
+          <pre><code><span class="highlight">$ heroku login</span>&#x000A;Enter your Heroku credentials.&#x000A;Email: adam@example.com&#x000A;Password (typing will be hidden):&#x000A;Authentication successful.&#x000A;</code></pre>
+          
+          <p>You're now ready to create your first Heroku app:</p>
+          
+          <pre><code><span class="highlight">$ cd ~/myapp</span>&#x000A;<span class="highlight">$ heroku create</span>&#x000A;Creating stark-fog-398... done, stack is cedar-14&#x000A;http://stark-fog-398.herokuapp.com/ | https://git.heroku.com/stark-fog-398.git&#x000A;Git remote heroku added&#x000A;</code></pre>
+          
+          <h3>Technical details</h3>
+          
+          <p>The <code>heroku</code> command line client will be installed into <code>/usr/local/heroku</code> and <code>/usr/local/heroku/bin</code> will be added to your <code>PATH</code>.</p>
+        </div>
+      </div>
+      <footer>
+        <div class='links'>
+          <a href='https://www.heroku.com'>heroku.com</a>
+          <a class='privacy' href='https://www.heroku.com/policy/privacy'>Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

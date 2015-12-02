@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">
+    <UpdateID>2015.5</UpdateID>
+    <OwningChannel>AdobeDigitalPublishingCS6-2.0</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+
+    <!-- Localized Displayname-->
+    <DisplayName default="en_US"><cs_CZ>DPS Desktop Tools pro Adobe InDesign CS6</cs_CZ>
+	<da_DK>DPS Desktop Tools til Adobe InDesign CS6</da_DK>
+	<de_DE>DPS Desktop Tools für Adobe InDesign CS6</de_DE>
+	<en_AE>DPS Desktop Tools for Adobe InDesign CS6</en_AE>
+	<en_GB>DPS Desktop Tools for Adobe InDesign CS6</en_GB>
+	<en_IL>DPS Desktop Tools for Adobe InDesign CS6</en_IL>
+	<en_US>DPS Desktop Tools for Adobe InDesign CS6</en_US>
+	<es_ES>DPS Desktop Tools para Adobe InDesign CS6</es_ES>
+	<es_MX>DPS Desktop Tools para Adobe InDesign CS6</es_MX>
+	<fi_FI>DPS Desktop Tools Adobe InDesign CS6:ta varten</fi_FI>
+	<fr_CA>DPS Desktop Tools pour Adobe InDesign CS6</fr_CA>
+	<fr_FR>DPS Desktop Tools pour Adobe InDesign CS6</fr_FR>
+	<fr_MA>DPS Desktop Tools pour Adobe InDesign CS6</fr_MA>
+	<hu_HU>Adobe InDesign CS6 szoftverhez tartozó DPS Desktop Tools</hu_HU>
+	<it_IT>DPS Desktop Tools per Adobe InDesign CS6</it_IT>
+	<ja_JP>Adobe InDesign CS6 用 DPS Desktop Tools</ja_JP>
+	<ko_KR>Adobe InDesign CS6용 DPS Desktop Tools</ko_KR>
+	<nb_NO>DPS Desktop Tools for Adobe InDesign CS6</nb_NO>
+	<nl_NL>DPS Desktop Tools voor Adobe InDesign CS6</nl_NL>
+	<pl_PL>DPS Desktop Tools dla InDesign CS6</pl_PL>
+	<pt_BR>DPS Desktop Tools para o Adobe InDesign CS6</pt_BR>
+	<ru_RU>DPS Desktop Tools для Adobe InDesign CS6</ru_RU>
+	<sv_SE>DPS Desktop Tools för Adobe InDesign CS6</sv_SE>
+	<tr_TR>Adobe InDesign CS6 için DPS Desktop Tools</tr_TR>
+	<uk_UA>DPS Desktop Tools для Adobe InDesign CS6</uk_UA>
+	<zh_CN>Adobe InDesign CS6 的 DPS Desktop Tools</zh_CN>
+	<zh_TW>Adobe InDesign CS6 的 DPS Desktop Tools</zh_TW>
+    </DisplayName>
+
+    <!-- Localized Descriptions -->
+    <Description default="en_US"><cs_CZ>Umožňuje aktualizaci aplikace DPS Desktop Tools pro Adobe InDesign CS6.</cs_CZ>
+        <da_DK>Dette opdaterer DPS Desktop Tools til Adobe InDesign CS6.</da_DK>
+        <de_DE>Dies ist ein Update auf DPS Desktop Tools für Adobe InDesign CS6.</de_DE>
+        <en_AE>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_AE>
+        <en_GB>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_GB>
+        <en_IL>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_IL>
+        <en_US>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_US>
+        <es_ES>Esto actualiza DPS Desktop Tools para Adobe InDesign CS6.</es_ES>
+        <es_MX>Esto actualiza DPS Desktop Tools para Adobe InDesign CS6.</es_MX>
+        <fi_FI>Päivittää DPS Desktop Toolsin Adobe InDesign CS6:ta varten.</fi_FI>
+        <fr_CA>Ceci est une mise à jour DPS Desktop Tools pour Adobe InDesign CS6.</fr_CA>
+        <fr_FR>Ceci est une mise à jour DPS Desktop Tools pour Adobe InDesign CS6.</fr_FR>
+        <fr_MA>Ceci est une mise à jour DPS Desktop Tools pour Adobe InDesign CS6.</fr_MA>
+        <hu_HU>Frissíti az Adobe InDesign CS6 szoftverhez tartozó DPS Desktop Tools programot.</hu_HU>
+        <it_IT>Si tratta di un aggiornamento DPS Desktop Tools per Adobe InDesign CS6.</it_IT>
+        <ja_JP>Adobe InDesign CS6 用の DPS Desktop Tools をアップデートします。</ja_JP>
+        <ko_KR>Adobe InDesign CS6용 DPS Desktop Tools 업데이트입니다.</ko_KR>
+        <nb_NO>Dette oppdaterer DPS Desktop Tools for Adobe InDesign CS6.</nb_NO>
+        <nl_NL>Hiermee wordt DPS Desktop Tools voor Adobe InDesign CS6 bijgewerkt.</nl_NL>
+        <pl_PL>Spowoduje to aktualizację narzędzia DPS Desktop Tools dla programu Adobe InDesign CS6.</pl_PL>
+        <pt_BR>Isso atualiza o DPS Desktop Tools para Adobe InDesign CS6.</pt_BR>
+        <ru_RU>Обновление для DPS Desktop Tools для Adobe InDesign CS6.</ru_RU>
+        <sv_SE>Uppdaterar DPS Desktop Tools för Adobe InDesign CS6.</sv_SE>
+        <tr_TR>Bu, Adobe InDesign CS6 için DPS Desktop Tools'u günceller.</tr_TR>
+    	<uk_UA>Оновлення DPS Desktop Tools для Adobe InDesign CS6.</uk_UA>
+        <zh_CN>这是针对 Adobe InDesign CS6 的 DPS Desktop Tools 更新。</zh_CN>
+        <zh_TW>此程式會更新適用於 Adobe InDesign CS6 的 DPS Desktop Tools。</zh_TW>
+      </Description>
+ 
+    <!-- Shared with: --> 
+    <AffectedChannels><ChannelID>AdobeDigitalPublishingCS6-2.0</ChannelID>
+    </AffectedChannels>
+    <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobeDigitalPublishingCS6-AutoUpdate/AdobePatchInstaller.app</ExecutableName>
+      <Size>83187236</Size>
+      
+      
+      
+    </File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{B139C744-9A54-4DE9-8835-E6C7FA365A05}</UpdatePayloadID>
+  <OwningPayloadID>{14688254-5CD1-11E1-8D70-4DBBF019A2FF}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^[Cc][Rr][Ee][Aa][Tt][Ii][Vv][Ee] [Cc][Ll][Oo][Uu][Dd] [Cc][Oo][Nn][Nn][Ee][Cc][Tt][Ii][Oo][Nn]*</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn] [Cc][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Dd][Pp][Ss] [Aa][Pp][Pp] [Bb][Uu][Ii][Ll][Dd][Ee][Rr]*</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Cc][Oo][Nn][Tt][Ee][Nn][Tt] [Vv][Ii][Ee][Ww][Ee][Rr]*</Process>
+    <Process blocking="1" processType="Adobe">^[Vv][Ii][Ee][Ww][Ee][Rr] [Bb][Uu][Ii][Ll][Dd][Ee][Rr]*</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn]*</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn] [Cc][Ss]*</Process>
+  </ConflictingProcesses>
+</Manifest>

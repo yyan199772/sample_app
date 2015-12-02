@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">
+    <UpdateID>8.1.0.419</UpdateID>
+    <OwningChannel>AdobeInDesignCS6-8.0</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+    <TargetLicensingType>1</TargetLicensingType>
+    <RecommendingChannels><ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+	</RecommendingChannels>
+    <DisplayName default="en_US"><en_US>Adobe InDesign CS6 (8.1.0) update</en_US>
+		<zh_TW>Adobe InDesign CS6 (8.1.0) 更新</zh_TW>
+        <zh_CN>Adobe InDesign CS6 (8.1.0) 更新</zh_CN>
+        <ko_KR>Adobe InDesign CS6 (8.1.0) 업데이트</ko_KR>
+		
+        <en_IL>Adobe InDesign CS6 (8.1.0) update</en_IL>
+		
+		<en_AE>Adobe InDesign CS6 (8.1.0) update</en_AE>
+		
+		<da_DK>Opdatering til Adobe InDesign CS6 (8.1.0)</da_DK>
+		
+		<fi_FI>Adobe InDesign CS6 (8.1.0) -päivitys</fi_FI>
+		
+		<ja_JP>Adobe InDesign CS6 (8.1.0) アップデート</ja_JP>
+		
+		<nb_NO>Oppdatering for Adobe InDesign CS6 (8.1.0)</nb_NO>
+		
+		<sv_SE>Uppdatering för Adobe InDesign CS6 (8.1.0)</sv_SE>
+      
+	    <en_GB>Adobe InDesign CS6 (8.1.0) update</en_GB>
+		<fr_FR>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_FR>
+		<fr_MA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_MA>
+		<fr_CA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_CA>
+		<it_IT>Aggiornamento Adobe InDesign CS6 (8.1.0)</it_IT>
+		<de_DE>Adobe InDesign CS6 (8.1.0) – Update</de_DE>
+		<es_ES>Actualización de Adobe InDesign CS6 (8.1.0)</es_ES>
+		<es_MX>Actualización de Adobe InDesign CS6 (8.1.0)</es_MX>
+		<nl_NL>Adobe InDesign CS6 (8.1.0)-update</nl_NL>
+		<pt_BR>Atualização do Adobe InDesign CS6 (8.1.0)</pt_BR>
+		<cs_CZ>Aktualizace Adobe InDesign CS6 (8.1.0)</cs_CZ>
+		<hu_HU>Adobe InDesign CS6 (8.1.0) frissítés</hu_HU>
+		<pl_PL>Adobe InDesign CS6 (8.1.0) — aktualizacja</pl_PL>
+		<uk_UA>Оновлення Adobe InDesign CS6 (8.1.0)</uk_UA>
+		<ru_RU>Обновление Adobe InDesign CS6 (8.1.0)</ru_RU>
+		<tr_TR>Adobe InDesign CS6 (8.1.0) güncellemesi</tr_TR>
+		
+    </DisplayName>
+    <Description default="en_US"><en_US>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_US>
+        <zh_TW>經過本次更新後，您將能比以往更輕鬆地分享 InDesign 文件。您現在可以使用舊版 InDesign CC 將檔案傳送給任何人，無需以手動方式轉存為 IDML 之類的額外步驟。內建的相容性可確保您的檔案總是如您預期地順利開啟。</zh_TW>
+        <zh_CN>经过本次更新，共享 InDesign 文档将比以往更加简单。现在，您可以将文件发送给使用较旧 InDesign CC 版本的任何用户，而且无需执行任何额外的步骤（例如手动将文件导出为 IDML）。其中的内置兼容性能够确保始终顺利打开文件。</zh_CN>
+        <ko_KR>이 업데이트를 사용하여 InDesign 문서 공유가 훨씬 쉬워졌습니다. IDML로 수동으로 내보내는 것과 같은 추가 단계 없이도 파일을 이전 버전의 InDesign CC를 사용하는 모든 사용자에게 보낼 수 있습니다. 사용자가 원하는 대로 파일을 항상 열 수 있도록 호환성이 내장되어 있습니다.</ko_KR>
+		
+        <en_IL>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_IL>
+		
+		<en_AE>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_AE>
+		
+		<da_DK>Med denne opdatering er det blevet nemmere end nogensinde før at dele InDesign-dokumenter med andre. Nu kan du sende filer til alle, der bruger ældre versioner af InDesign CC, uden at skulle gøre yderligere, f.eks. eksportere til IDML manuelt. Kompatibiliteten er indbygget, så dine filer altid åbnes, sådan som du forventer det.</da_DK>
+		
+		<fi_FI>Tämän päivityksen ansiosta InDesign-julkaisujen jakaminen on nyt helpompaa kuin koskaan aikaisemmin. Voit nyt lähettää tiedostoja InDesign CC:n vanhempien versioiden käyttäjille ilman ylimääräisiä vaiheita, kuten sisältöjen manuaalista muuntamista IDML-muotoon. Sovellus on valmiiksi yhteensopiva, joten tiedostosi avautuvat aina odotetulla tavalla.</fi_FI>
+		
+		<ja_JP>このアップデートでは、これまでよりも簡単に InDesign ドキュメントを共有できます。以前のバージョンの InDesign CC を使用しているユーザーに対しても、手動で IDML に書き出すといった余分な手順を行うことなく、ファイルを送信できるようになりました。互換性が組み込まれているため、ファイルは常に期待どおりに開きます。</ja_JP>
+		
+		<nb_NO>Med denne oppdateringen er det enklere å dele InDesign-dokumenter enn noen gang. Nå kan du sende filer til alle som har eldre versjoner av InDesign CC, uten ekstra operasjoner som manuell eksport til IDML. Kompatibiliteten er innebygd, slik at filene åpnes akkurat som forventet.</nb_NO>
+		
+		<sv_SE>Med den här uppdateringen blir det enklare än någonsin att dela InDesign-dokument. Nu kan du skicka filer till personer med äldre versioner av InDesign CC utan några extra steg som att exportera manuellt till IDML. Kompatibiliteten är inbyggd, så dina filer öppnas alltid på det sätt du förväntar dig.</sv_SE>
+        
+		<en_GB>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_GB>
+		<fr_FR>Cette mise à jour simplifie encore davantage le partage de documents InDesign. Vous pouvez désormais envoyer des fichiers en utilisant des versions plus anciennes d’InDesign CC sans aucune étape supplémentaire telle que l’exportation au format IDML. La compatibilité est intégrée : vos fichiers s’ouvrent toujours comme vous le souhaitez.</fr_FR>
+		<fr_MA>Cette mise à jour simplifie encore davantage le partage de documents InDesign. Vous pouvez désormais envoyer des fichiers en utilisant des versions plus anciennes d’InDesign CC sans aucune étape supplémentaire telle que l’exportation au format IDML. La compatibilité est intégrée : vos fichiers s’ouvrent toujours comme vous le souhaitez.</fr_MA>
+		<fr_CA>Cette mise à jour simplifie encore davantage le partage de documents InDesign. Vous pouvez désormais envoyer des fichiers en utilisant des versions plus anciennes d’InDesign CC sans aucune étape supplémentaire telle que l’exportation au format IDML. La compatibilité est intégrée : vos fichiers s’ouvrent toujours comme vous le souhaitez.</fr_CA>
+		<it_IT>Questo aggiornamento facilita ulteriormente la condivisione di documenti InDesign. Ora potete inviare file a chiunque utilizzando le versioni precedenti di InDesign CC senza eseguire passaggi aggiuntivi, come l'esportazione manuale in IDML. La compatibilità è già integrata, per una visualizzazione senza sorprese dei vostri file.</it_IT>
+		<de_DE>Mit diesem Update ist die Freigabe von InDesign-Dokumenten einfacher als je zuvor. Sie können jetzt Dateien an jeden senden, der mit älteren Versionen von InDesign CC arbeitet, ohne zusätzliche Schritte wie beispielsweise den manuellen Export in das IDML-Format ausführen zu müssen. Die eingebaute Kompatibilität sorgt dafür, dass Sie Ihre Dateien immer öffnen können – so wie Sie es erwarten.</de_DE>
+		<es_ES>Gracias a esta actualización, compartir documentos de InDesign es más fácil que nunca. Ahora puede enviar archivos con una versión antigua de InDesign CC sin tener que realizar pasos adicionales como exportar manualmente a IDML. La función de compatibilidad está integrada, así que los archivos siempre se abrirán exactamente como espera.</es_ES>
+		<es_MX>Gracias a esta actualización, compartir documentos de InDesign es más fácil que nunca. Ahora puede enviar archivos con una versión antigua de InDesign CC sin tener que realizar pasos adicionales como exportar manualmente a IDML. La función de compatibilidad está integrada, así que los archivos siempre se abrirán exactamente como espera.</es_MX>
+		<nl_NL>Met deze update is het eenvoudiger dan ooit om InDesign documenten te delen. U kunt nu bestanden verzenden naar iedereen die oudere versies gebruikt van InDesign, zonder daarvoor extra handelingen uit te voeren, zoals exporteren naar IDML. Comptabiliteit is ingebouwd, waardoor uw bestanden altijd openen zoals u verwacht.</nl_NL>
+		<pt_BR>Com esta atualização, compartilhar documentos do InDesign fica ainda mais fácil. Agora você pode enviar arquivos para qualquer pessoa usando versões antigas do InDesign CC sem ter de tomar medidas adicionais, como exportar para IDML. A compatibilidade é direta, garantindo que seus arquivos sempre abrirão do jeito que você espera</pt_BR>
+		<cs_CZ>S touto aktualizací můžete sdílet dokumenty InDesign snadněji než kdykoli předtím. Nyní můžete soubory odesílat také uživatelům se staršími verzemi aplikace InDesign CC, aniž by byl nutný jejich ruční převod do formátu IDML. Vestavěná kompatibilita nově zaručí, že soubory bude možné vždy otevřít podle očekávání.</cs_CZ>
+		<hu_HU>A frissítés telepítése után minden eddiginél egyszerűbb az InDesign dokumentumok megosztása. Ezentúl az InDesign CC régebbi verzióját használóknak is küldhet fájlokat anélkül, hogy külön műveleteket kellene végeznie, mint amilyen például a manuális exportálás IDML-be. A kompatibilitás be van építve, ezért fájljai mindig az elvártaknak megfelelően nyílnak meg.</hu_HU>
+		<pl_PL>Dzięki tej aktualizacji udostępnianie dokumentów programu InDesign jest teraz łatwiejsze niż kiedykolwiek. Możesz teraz wysyłać pliki użytkownikom korzystającym ze starszych wersji programu InDesign CC bez konieczności wykonywania dodatkowych czynności, np. ręcznego eksportowania pliku do formatu IDML. Dzięki skonfigurowanej funkcji zgodności nigdy nie będziesz mieć problemu z otworzeniem swoich plików.</pl_PL>
+		<uk_UA>Це оновлення дозволяє надавати спільний доступ до документів InDesign простіше, ніж будь-коли раніше. Тепер можна надсилати файли користувачам більш старих версій InDesign CC без додаткових операцій, таких як експорт у формат IDML уручну. Вбудовані можливості забезпечують сумісність із різними форматами, завдяки чому файли відкриватимуться саме так, як вам потрібно.</uk_UA>
+		<ru_RU>Благодаря этому обновлению стало проще предоставлять общий доступ к документам InDesign. Теперь вы можете отправлять файлы с помощью предыдущих версий InDesign CC и не экспортировать их вручную в IDML. Благодаря встроенным функциям, обеспечивающим совместимость форматов, ваши файлы будут всегда открываться в том виде, в каком вы их сохранили.</ru_RU>
+		<tr_TR>Bu güncellemeyle InDesign belgelerini paylaşmak her zamankinden daha kolay hale geliyor. Şimdi IDML'ye elle dışa aktarma gibi ekstra adımları uygulamanıza gerek kalmadan InDesign CC'nin önceki sürümlerini kullanan herkese dosya gönderebilirsiniz. Yerleşik olarak sunulan uyumluluk dosyalarınızın her zaman beklediğiniz gibi açılmasını sağlar.</tr_TR>
+    </Description>
+    <AffectedChannels><ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+    </AffectedChannels>
+    <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>InDesignCS6-AdobeUpdate/AdobePatchInstaller.app</ExecutableName>
+      <Size>62743690</Size>
+      
+      
+      
+    </File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+  
+  
+  
+  
+  
+   <UpdatePayloadID>{B09AF434-8A75-11E4-9077-AE1CD8E4B8D1}</UpdatePayloadID>
+  <OwningPayloadID>{327492D4-78EB-11E1-8ABE-84C55623D190}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ii][Nn][Cc][Oo][Pp][Yy] [Cc][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn] [Cc][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Cc][Rr][Aa][Ss][Hh] [Rr][Ee][Pp][Oo][Rr][Tt][Ee][Rr]</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn][Ss][Ee][Rr][Vv][Ee][Rr]</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Cc][Oo][Pp][Yy] [Cc][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn] [Cc][Ss]*</Process>
+  </ConflictingProcesses>
+</Manifest>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">
+
+
+    <UpdateID>8.0.3.419</UpdateID>
+
+
+    <OwningChannel>AdobeInDesignCS6-8.0</OwningChannel>
+
+
+    <TargetBuildType>2</TargetBuildType>
+    <TargetLicensingType>2</TargetLicensingType>
+
+
+    <RecommendingChannels><ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+	</RecommendingChannels>
+
+
+	<DisplayName default="en_US"><en_US>Adobe InDesign CS6 (8.1.0) update</en_US>
+		<zh_TW>Adobe InDesign CS6 (8.1.0) 更新</zh_TW>
+        <zh_CN>Adobe InDesign CS6 (8.1.0) 更新</zh_CN>
+        <ko_KR>Adobe InDesign CS6 (8.1.0) 업데이트</ko_KR>
+		
+        <en_IL>Adobe InDesign CS6 (8.1.0) update</en_IL>
+		
+		<en_AE>Adobe InDesign CS6 (8.1.0) update</en_AE>
+		
+		<da_DK>Opdatering til Adobe InDesign CS6 (8.1.0)</da_DK>
+		
+		<fi_FI>Adobe InDesign CS6 (8.1.0) -päivitys</fi_FI>
+		
+		<ja_JP>Adobe InDesign CS6 (8.1.0) アップデート</ja_JP>
+		
+		<nb_NO>Oppdatering for Adobe InDesign CS6 (8.1.0)</nb_NO>
+		
+		<sv_SE>Uppdatering för Adobe InDesign CS6 (8.1.0)</sv_SE>
+      
+	    <en_GB>Adobe InDesign CS6 (8.1.0) update</en_GB>
+		<fr_FR>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_FR>
+		<fr_MA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_MA>
+		<fr_CA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_CA>
+		<it_IT>Aggiornamento Adobe InDesign CS6 (8.1.0)</it_IT>
+		<de_DE>Adobe InDesign CS6 (8.1.0) – Update</de_DE>
+		<es_ES>Actualización de Adobe InDesign CS6 (8.1.0)</es_ES>
+		<es_MX>Actualización de Adobe InDesign CS6 (8.1.0)</es_MX>
+		<nl_NL>Adobe InDesign CS6 (8.1.0)-update</nl_NL>
+		<pt_BR>Atualização do Adobe InDesign CS6 (8.1.0)</pt_BR>
+		<cs_CZ>Aktualizace Adobe InDesign CS6 (8.1.0)</cs_CZ>
+		<hu_HU>Adobe InDesign CS6 (8.1.0) frissítés</hu_HU>
+		<pl_PL>Adobe InDesign CS6 (8.1.0) — aktualizacja</pl_PL>
+		<uk_UA>Оновлення Adobe InDesign CS6 (8.1.0)</uk_UA>
+		<ru_RU>Обновление Adobe InDesign CS6 (8.1.0)</ru_RU>
+		<tr_TR>Adobe InDesign CS6 (8.1.0) güncellemesi</tr_TR>
+		
+    </DisplayName>
+    <Description default="en_US"><en_US>This update provides key fixes for PDF export, Save, IDML, text and others.</en_US>
+        <zh_TW>此更新提供 PDF 轉存、儲存、IDML、文字及其他的重要修正。</zh_TW>
+        <zh_CN>此更新可修复有关 PDF 导出、存储、IDML、文本以及其他的重要问题。</zh_CN>
+        <ko_KR>이 업데이트는 PDF 내보내기, 저장, IDML, 텍스트 등에 대한 주요 수정사항을 제공합니다.</ko_KR>
+		
+        <en_IL>This update provides key fixes for PDF export, Save, IDML, text and others.</en_IL>
+		
+		<en_AE>This update provides key fixes for PDF export, Save, IDML, text and others.</en_AE>
+		
+		<da_DK>Denne opdatering indeholder væsentlige rettelser af PDF-eksport, Gem, IDML, tekst m.m.</da_DK>
+		
+		<fi_FI>Tämä päivitys sisältää PDF-tiedostojen vientiin, tallennukseen, IDML-tiedostoihin, tekstiin ja muihin toimintoihin liittyviä tärkeitä korjauksia.</fi_FI>
+		
+		<ja_JP>このアップデートには、PDF 書き出し、保存、IDML、テキストなどに関する重要な修正が含まれています。</ja_JP>
+		
+		<nb_NO>Denne oppdateringen gir økt stabilitet for PDF-eksport, lagring, IDML, tekst og annet.</nb_NO>
+		
+		<sv_SE>Den här uppdateringen innehåller viktiga korrigeringar för PDF-export, Spara-funktionen, text och annat.</sv_SE>
+        
+		<en_GB>This update provides key fixes for PDF export, Save, IDML, text and others.</en_GB>
+		<fr_FR>Cette mise à jour contient des correctifs essentiels pour l’exportation au format PDF, l’enregistrement, le format IDML, le texte, etc.</fr_FR>
+		<fr_MA>Cette mise à jour contient des correctifs essentiels pour l’exportation au format PDF, l’enregistrement, le format IDML, le texte, etc.</fr_MA>
+		<fr_CA>Cette mise à jour contient des correctifs essentiels pour l’exportation au format PDF, l’enregistrement, le format IDML, le texte, etc.</fr_CA>
+		<it_IT>Questo aggiornamento fornisce importanti correzioni per Esporta PDF, Salva, IDML, testo e molto altro.</it_IT>
+		<de_DE>Dieses Update liefert grundlegende Fehlerbehebungen für den PDF-Export, Speichern, IDML, Text und anderes.</de_DE>
+		<es_ES>Esta actualización incluye correcciones clave para la exportación a PDF, la función de guardar, IDML o texto, entre otras funciones.</es_ES>
+		<es_MX>Esta actualización incluye correcciones clave para la exportación a PDF, la función de guardar, IDML o texto, entre otras funciones.</es_MX>
+		<nl_NL>Deze update bevat oplossingen voor problemen met het exporteren naar PDF, met opslaan, IDML, tekst, enz.</nl_NL>
+		<pt_BR>Esta atualização fornece correções importantes para exportação para PDF, salvar, IDML, texto e outros itens.</pt_BR>
+		<cs_CZ>Tato aktualizace poskytuje důležité opravy exportu do PDF, ukládání, formátu IDML, zpracování textu a dalších funkcí.</cs_CZ>
+		<hu_HU>Ez a frissítés a PDF-létrehozás, a Mentés, az IDML, a szöveg stb. alapvető javításait tartalmazza.</hu_HU>
+		<pl_PL>Aktualizacja zawiera kluczowe poprawki związane z eksportowaniem plików PDF, zapisywaniem, formatem IDML, tekstem itd.</pl_PL>
+		<uk_UA>У цьому оновленні надано ключові виправлення для експорту у PDF, збереження, IDML, тексту та інших функцій.</uk_UA>
+		<ru_RU>В этом обновлении содержатся ключевые исправления, связанные с сохранением и экспортом файлов PDF, IDML, текстовых файлов и др.</ru_RU>
+		<tr_TR>Bu güncelleme, PDF dışa aktarma, Kaydetme, IDML, metin ve diğer özellikler için önemli düzeltmeler sağlar.</tr_TR>
+    </Description>
+    <AffectedChannels><ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+    </AffectedChannels>
+
+
+    <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>InDesignCS6-AdobeUpdate/AdobePatchInstaller.app</ExecutableName>
+      <Size>62100523</Size>
+      
+      
+      
+    </File>
+  </InstallFiles>
+
+
+    <NeedsReboot>false</NeedsReboot>
+
+
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{50D8C6F2-8A70-11E4-B872-6BD5D7E4B8D1}</UpdatePayloadID>
+  <OwningPayloadID>{327492D4-78EB-11E1-8ABE-84C55623D190}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ii][Nn][Cc][Oo][Pp][Yy] [Cc][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn] [Cc][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Cc][Rr][Aa][Ss][Hh] [Rr][Ee][Pp][Oo][Rr][Tt][Ee][Rr]</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn][Ss][Ee][Rr][Vv][Ee][Rr]</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Cc][Oo][Pp][Yy] [Cc][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Ii][Nn][Dd][Ee][Ss][Ii][Gg][Nn] [Cc][Ss]*</Process>
+  </ConflictingProcesses>
+</Manifest>

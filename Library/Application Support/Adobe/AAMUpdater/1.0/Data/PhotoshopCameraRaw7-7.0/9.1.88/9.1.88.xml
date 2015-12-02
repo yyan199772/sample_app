@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">
+    <UpdateID>9.1.88</UpdateID>
+    <OwningChannel>PhotoshopCameraRaw7-7.0</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+    <DisplayName default="en_US"><en_US>Photoshop Camera Raw 9.1.1(CS6)</en_US>
+		<fr_FR>Mise à jour 9.1.1(CS6) de Photoshop Camera Raw</fr_FR>
+		<de_DE>Photoshop Camera Raw 9.1.1(CS6)-Update</de_DE>
+		<it_IT>Aggiornamento di Photoshop Camera Raw 9.1.1(CS6)</it_IT>
+		<ja_JP>Photoshop Camera Raw 9.1.1(CS6) アップデート</ja_JP>
+		<es_ES>Actualización Photoshop Camera Raw 9.1.1(CS6)</es_ES>
+		<sv_SE>Uppdatering till Photoshop Camera Raw 9.1.1(CS6)</sv_SE>
+		<zh_CN>Photoshop Camera Raw 9.1.1(CS6) 更新</zh_CN>
+		<zh_TW>Photoshop Camera Raw 9.1.1(CS6) 更新</zh_TW>
+		<nl_NL>Photoshop Camera Raw 9.1.1(CS6)-update</nl_NL>
+		<ko_KR>Photoshop Camera Raw 9.1.1(CS6) 업데이트</ko_KR>
+		<nb_NO>Oppdatering for Photoshop Camera Raw 9.1.1(CS6)</nb_NO>
+		<da_DK>Photoshop Camera Raw 9.1.1(CS6)-opdatering</da_DK>
+		<fi_FI>Photoshop Camera Raw 9.1.1(CS6) -päivitys</fi_FI>
+		<pl_PL>Photoshop Camera Raw 9.1.1(CS6) – aktualizacja</pl_PL>
+		<cs_CZ>Aktualizace Photoshop Camera Raw 9.1.1(CS6)</cs_CZ>
+		<ro_RO>Actualizare Photoshop Camera Raw 9.1.1(CS6)</ro_RO>
+		<hu_HU>Photoshop Camera Raw 9.1.1(CS6) frissítés</hu_HU>
+		<ru_RU>Обновление Photoshop Camera Raw 9.1.1(CS6)</ru_RU>
+		<pt_BR>Atualização do Photoshop Camera Raw 9.1.1(CS6)</pt_BR>
+		<uk_UA>Оновлення Photoshop Camera Raw 9.1.1(CS6)</uk_UA>
+		<tr_TR>Photoshop Camera Raw 9.1.1(CS6) Güncellemesi</tr_TR>
+    </DisplayName>
+    <Description default="en_US"><en_US>Update to the Camera Raw plug-in that ships with Photoshop CS6.  Adds raw support for new camera models.</en_US>
+		<fr_FR>Mise à jour du module externe Camera Raw fourni avec Photoshop CS6.  Ajoute la prise en charge des fichiers Raw pour les nouveaux modèles d'appareils photo.</fr_FR>
+		<de_DE>Update für das Camera Raw-Zusatzmodul, das im Lieferumfang von Photoshop CS6 enthalten ist.  Zusätzliche Unterstützung für Raw-Dateien aus neuen Kameramodellen.</de_DE>
+		<it_IT>Eseguite l'aggiornamento del plug-in di Camera Raw in dotazione con Photoshop CS6.  Consente il supporto per i file raw per nuovi modelli di fotocamere.</it_IT>
+		<ja_JP>Photoshop CS6 に同梱されている Camera Raw プラグインに更新します。  新しいカメラモデル対応の Raw サポートが追加されます。</ja_JP>
+		<es_ES>Actualización para el plugin Camera Raw suministrado con Photoshop CS6.  Permite la compatibilidad con los archivos RAW de los nuevos modelos de cámara.</es_ES>
+		<sv_SE>Uppdatera plugin-programmet Camera Raw som levereras med Photoshop CS6.  Lägger till stöd för raw-format för nya kameramodeller.</sv_SE>
+		<zh_CN>Photoshop CS6 随附的 Camera Raw 插件的更新。针对新相机型号增加 raw 文件格式支持。</zh_CN>
+		<zh_TW>更新 Photoshop CS6 隨附的 Camera Raw 增效模組。  新增對新相機機型的原生支援。</zh_TW>
+		<nl_NL>Update voor de Camera Raw-plug-in die bij Photoshop CS6 wordt geleverd.  Voegt RAW-ondersteuning toe voor nieuwe cameramodellen.</nl_NL>
+		<cs_CZ>Aktualizace zásuvného modulu Camera Raw, dodávaného s aplikací Photoshop CS6.  Přidává podporu formátu raw u nových modelů fotoaparátů.</cs_CZ>
+		<nb_NO>Oppdatering for tilleggsmodulen Camera Raw som leveres med Photoshop CS6.  Legger til ekte støtte for nye kameramodeller.</nb_NO>
+		<da_DK>Opdatering til Camera Raw-ekstramodulet, der leveres sammen med Photoshop CS6.  Føjer Raw-understøttelse til nye kameramodeller.</da_DK>
+		<fi_FI>Photoshop CS6:n mukana toimitettavan Camera Raw -laajennuksen päivitys.  Lisää raw-tuen uusille kameramalleille.</fi_FI>
+		<pl_PL>Aktualizacja wtyczki Camera Raw, która jest dołączona do programu Photoshop CS6.  Dodaje obsługę RAW dla nowych modeli aparatów.</pl_PL>
+		<ko_KR>Photoshop CS6와 함께 제공된 Camera Raw 플러그인을 업데이트합니다.  새 카메라 모델의 raw 파일 지원 추가.</ko_KR>
+		<ro_RO>Actualizaţi la plugin-ul Camera Raw livrat cu Photoshop CS6.  Acesta adaugă compatibilitate cu formate brute de la noi modele de camere foto.</ro_RO>
+		<hu_HU>A Photoshop CS6 verzióhoz tartozó Camera Raw bővítmény frissítése.  Biztosítja a raw-formátum támogatását újabb fényképezőgép-típusok esetében is.</hu_HU>
+		<ru_RU>Обновление внешнего модуля Camera Raw, который входит в комплект поставки Photoshop CS6.  Добавлена поддержка формата raw для новых моделей камер.</ru_RU>
+		<pt_BR>Atualização do plug-in do Camera Raw fornecido com o Photoshop CS6.  Inclusão de suporte adicional para novos modelos de câmeras.</pt_BR>
+		<uk_UA>Оновлення для модуля Camera Raw, що постачається з пакетом Photoshop CS6.  Додано підтримку формату raw для нових моделей фотокамер.</uk_UA>
+		<tr_TR>Photoshop CS6 ile birlikte verilen Camera Raw eklentisine güncelleyin.  Yeni fotoğraf makinesi modelleri için raw desteği sağlar.</tr_TR>
+    </Description>
+    <AffectedChannels><ChannelID>PhotoshopCameraRaw7-7.0</ChannelID>
+    </AffectedChannels>
+    <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobePatchInstaller.app</ExecutableName>
+      <Size>209093467</Size>
+      
+      
+      <CompareType name="OSPlatformLookup"><TargetValue>10.6.12</TargetValue>
+        <Operator>GreaterThan</Operator>
+      </CompareType>
+    </File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{B306E604-6439-49B9-B5D1-07503AF3E553}</UpdatePayloadID>
+  <OwningPayloadID>{CFC3110A-491C-4DBF-A97D-66C567600A2F}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Pp][Hh][Oo][Tt][Oo][Ss][Hh][Oo][Pp] [Cc][Ss]5.1$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Pp][Hh][Oo][Tt][Oo][Ss][Hh][Oo][Pp] [Cc][Ss][456]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Bb][Rr][Ii][Dd][Gg][Ee] [Cc][Cc]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Ff][Tt][Ee][Rr] [Ee][Ff][Ff][Ee][Cc][Tt][Ss][456]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Bb][Rr][Ii][Dd][Gg][Ee] [Cc][Ss][456]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ee][Ll][Ee][Mm][Ee][Nn][Tt][Ss] .+ [Oo][Rr][Gg][Aa][Nn][Ii][Zz][Ee][Rr]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Aa][Ff][Tt][Ee][Rr] [Ee][Ff][Ff][Ee][Cc][Tt][Ss] [Cc][Ss]5.5$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Aa][Ff][Tt][Ee][Rr] [Ee][Ff][Ff][Ee][Cc][Tt][Ss] [Cc][Ss][456]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Pp][Rr][Ee][Mm][Ii][Ee][Rr][Ee] [Ee][Ll][Ee][Mm][Ee][Nn][Tt][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Pp][Hh][Oo][Tt][Oo] [Dd][Oo][Ww][Nn][Ll][Oo][Aa][Dd][Ee][Rr]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Pp][Hh][Oo][Tt][Oo][Ss][Hh][Oo][Pp] [Ee][Ll][Ee][Mm][Ee][Nn][Tt][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Ll][Ii][Gg][Hh][Tt][Rr][Oo][Oo][Mm]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Aa][Ff][Tt][Ee][Rr] [Ee][Ff][Ff][Ee][Cc][Tt][Ss] [Cc][Cc]$</Process>
+    <Process blocking="1" processType="Adobe">^[Pp][Hh][Oo][Tt][Oo][Ss][Hh][Oo][Pp] [Ee][Ll][Ee][Mm][Ee][Nn][Tt][Ss]*</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Pp][Hh][Oo][Tt][Oo][Ss][Hh][Oo][Pp] [Cc][Cc]*</Process>
+    <Process blocking="1" processType="Adobe">^[Ee][Ll][Ee][Mm][Ee][Nn][Tt][Ss][Aa][Uu][Tt][Oo][Aa][Nn][Aa][Ll][Yy][Zz][Ee][Rr]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Dd][Nn][Gg] [Cc][Oo][Nn][Vv][Ee][Rr][Tt][Ee][Rr]$</Process>
+    <Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Bb][Rr][Ii][Dd][Gg][Ee] [Cc][Ss]5.1$</Process>
+  </ConflictingProcesses>
+</Manifest>

@@ -1,0 +1,128 @@
+
+/dev/rdisk2s2: fsck_hfs run at Mon Jul 30 13:42:43 2012
+** /dev/rdisk2s2 (NO WRITE)
+   Executing fsck_hfs (version diskdev_cmds-540.1~25).
+** Checking non-journaled HFS Plus Volume.
+   The volume name is CS6 DesWebPrm
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume CS6 DesWebPrm appears to be OK.
+
+/dev/rdisk2s3: fsck_hfs run at Mon Jul 30 14:34:07 2012
+** /dev/rdisk2s3 (NO WRITE)
+   Executing fsck_hfs (version diskdev_cmds-540.1~25).
+** Checking non-journaled HFS Plus Volume.
+   The volume name is Java for OS X 2012-004
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume Java for OS X 2012-004 appears to be OK.
+
+/dev/rdisk2s2: fsck_hfs run at Mon Jul 30 14:40:10 2012
+** /dev/rdisk2s2 (NO WRITE)
+   Executing fsck_hfs (version diskdev_cmds-540.1~25).
+** Checking non-journaled HFS Plus Volume.
+   The volume name is Loginox 1.0.6b5 disk
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume Loginox 1.0.6b5 disk appears to be OK.
+
+/dev/rdisk2s2: fsck_hfs run at Mon Jul 30 15:23:27 2012
+** /dev/rdisk2s2 (NO WRITE)
+   Executing fsck_hfs (version diskdev_cmds-540.1~25).
+** Checking Journaled HFS Plus volume.
+   The volume name is PPD Installer
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume PPD Installer appears to be OK.
+
+/dev/rdisk2s2: fsck_hfs run at Mon Jul 30 15:28:50 2012
+** /dev/rdisk2s2 (NO WRITE)
+   Executing fsck_hfs (version diskdev_cmds-540.1~25).
+** Checking Journaled HFS Plus volume.
+   The volume name is MPEG Streamclip 1.9.3b7
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume MPEG Streamclip 1.9.3b7 appears to be OK.
+
+/dev/rdisk2s1: fsck_hfs run at Wed Aug  1 10:18:01 2012
+** /dev/rdisk2s1 (NO WRITE)
+   Executing fsck_hfs (version diskdev_cmds-540.1~25).
+** Checking non-journaled HFS Plus Volume.
+   The volume name is Carbon Copy Cloner
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume Carbon Copy Cloner appears to be OK.
+
+/dev/rdisk1s2: fsck_hfs run at Thu Jan 17 15:03:53 2013
+** /dev/rdisk1s2 (NO WRITE)
+   Executing fsck_hfs (version diskdev_cmds-540.1~25).
+** Checking non-journaled HFS Plus Volume.
+   The volume name is Adobe Shockwave 11
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume Adobe Shockwave 11 appears to be OK.
+
+fsck_hfs started at Fri Sep 18 11:11:10 2015
+** /dev/rdisk1s2 (NO WRITE)
+   Executing fsck_hfs (version hfs-285).
+** Checking non-journaled HFS Plus Volume.
+   The volume name is Google Chrome
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume Google Chrome appears to be OK.
+fsck_hfs completed at Fri Sep 18 11:11:10 2015
+
+
+fsck_hfs started at Tue Oct 13 12:48:50 2015
+** /dev/rdisk1s2 (NO WRITE)
+   Executing fsck_hfs (version hfs-285).
+** Checking Journaled HFS Plus volume.
+   The volume name is Sublime Text 2
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume Sublime Text 2 appears to be OK.
+fsck_hfs completed at Tue Oct 13 12:48:50 2015
+

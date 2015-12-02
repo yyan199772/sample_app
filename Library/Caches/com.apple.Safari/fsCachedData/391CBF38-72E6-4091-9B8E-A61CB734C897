@@ -1,0 +1,456 @@
+/* line 17, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /app/vendor/bundle/ruby/2.1.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, /app/web/views/screen.sass */
+html {
+  -webkit-text-size-adjust: none;
+}
+
+/* line 10, /app/web/views/screen.sass */
+body {
+  background: #1b1b24;
+  color: #8487af;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-size: 100%;
+}
+
+/* line 17, /app/web/views/screen.sass */
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* line 22, /app/web/views/screen.sass */
+header {
+  font-family: "CorbelRegular", "helvetica neue", helvetica, arial, geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  padding: 50px 0;
+  text-align: center;
+  text-shadow: 0 1px 1px black;
+  text-transform: lowercase;
+}
+/* line 31, /app/web/views/screen.sass */
+header h1 {
+  color: white;
+  font-size: 2.1875em;
+  margin-bottom: 0.51429em;
+}
+/* line 36, /app/web/views/screen.sass */
+header h2 {
+  color: #a292ff;
+  font-size: 1.5625em;
+  line-height: 1.2em;
+}
+
+/* line 41, /app/web/views/screen.sass */
+footer {
+  font-family: "CorbelRegular", "helvetica neue", helvetica, arial, geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  padding: 30px 0;
+  text-align: left;
+}
+/* line 47, /app/web/views/screen.sass */
+footer .links {
+  border-top: 1px solid #444763;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+/* line 51, /app/web/views/screen.sass */
+footer .links a, footer .links a:visited {
+  color: #5c5f80;
+  text-decoration: none;
+}
+/* line 54, /app/web/views/screen.sass */
+footer .links .privacy {
+  float: right;
+}
+
+/* line 57, /app/web/views/screen.sass */
+nav {
+  text-align: center;
+}
+/* line 60, /app/web/views/screen.sass */
+nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+/* line 64, /app/web/views/screen.sass */
+nav li a {
+  color: #5c5f80;
+  display: block;
+  font-family: "CorbelRegular", "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-size: 1.25em;
+  text-decoration: none;
+  text-shadow: 0 0 1px black;
+  width: 150px;
+}
+/* line 74, /app/web/views/screen.sass */
+nav li a span {
+  display: block;
+}
+/* line 77, /app/web/views/screen.sass */
+nav li a .icon {
+  background-image: url("/images/os_logos.png");
+  height: 148px;
+  margin-bottom: 0.75em;
+}
+/* line 82, /app/web/views/screen.sass */
+nav li a:hover {
+  color: #a6a6ff;
+  text-shadow: 0 0 6px rgba(120, 120, 255, 0.4);
+}
+/* line 86, /app/web/views/screen.sass */
+nav li a.selected {
+  color: #8fbfff;
+  text-shadow: 0 0 6px rgba(56, 187, 253, 0.7);
+}
+/* line 90, /app/web/views/screen.sass */
+nav li:last-child {
+  margin-right: 0;
+}
+/* line 93, /app/web/views/screen.sass */
+nav li.osx a:hover .icon {
+  background-position: 0 -148px;
+}
+/* line 96, /app/web/views/screen.sass */
+nav li.osx a.selected .icon {
+  background-position: 0 -296px;
+}
+/* line 99, /app/web/views/screen.sass */
+nav li.windows .icon {
+  background-position: -150px 0;
+}
+/* line 102, /app/web/views/screen.sass */
+nav li.windows a:hover .icon {
+  background-position: -150px -148px;
+}
+/* line 105, /app/web/views/screen.sass */
+nav li.windows a.selected .icon {
+  background-position: -150px -296px;
+}
+/* line 108, /app/web/views/screen.sass */
+nav li.debian .icon {
+  background-position: -300px 0;
+}
+/* line 111, /app/web/views/screen.sass */
+nav li.debian a:hover .icon {
+  background-position: -300px -148px;
+}
+/* line 114, /app/web/views/screen.sass */
+nav li.debian a.selected .icon {
+  background-position: -300px -296px;
+}
+/* line 117, /app/web/views/screen.sass */
+nav li.standalone .icon {
+  background-position: -450px 0;
+}
+/* line 120, /app/web/views/screen.sass */
+nav li.standalone a:hover .icon {
+  background-position: -448px -147px;
+}
+/* line 123, /app/web/views/screen.sass */
+nav li.standalone a.selected .icon {
+  background-position: -448px -297px;
+}
+
+/* line 126, /app/web/views/screen.sass */
+#instructions {
+  margin: 0 auto;
+  padding: 50px 0;
+}
+/* line 130, /app/web/views/screen.sass */
+#instructions a:link,
+#instructions a:visited {
+  color: #9782ff;
+  text-decoration: none;
+}
+/* line 135, /app/web/views/screen.sass */
+#instructions a:hover,
+#instructions a:active {
+  text-decoration: underline;
+}
+/* line 139, /app/web/views/screen.sass */
+#instructions h3 {
+  color: #d4d4ff;
+  font-family: "CorbelRegular", "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 1.2em;
+}
+/* line 146, /app/web/views/screen.sass */
+#instructions p {
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  margin-bottom: 1.71429em;
+}
+/* line 151, /app/web/views/screen.sass */
+#instructions p:last-child {
+  margin-bottom: 0;
+}
+/* line 154, /app/web/views/screen.sass */
+#instructions p.download {
+  margin-bottom: 2.85714em;
+  text-align: center;
+}
+/* line 159, /app/web/views/screen.sass */
+#instructions p.download * {
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  -ms-border-radius: 41px;
+  -o-border-radius: 41px;
+  border-radius: 41px;
+  display: inline-block;
+}
+/* line 163, /app/web/views/screen.sass */
+#instructions p.download a:link.button,
+#instructions p.download a:visited.button {
+  background: #7b5ae0;
+  background-position: 1.71429em center, 0 0;
+  background-repeat: no-repeat;
+  background-image: url(/images/download_glyph.png), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9372f7), color-stop(100%, #6443c9));
+  background-image: url(/images/download_glyph.png), -webkit-linear-gradient(top, #9372f7, #6443c9);
+  background-image: url(/images/download_glyph.png), -moz-linear-gradient(top, #9372f7, #6443c9);
+  background-image: url(/images/download_glyph.png), -o-linear-gradient(top, #9372f7, #6443c9);
+  background-image: url(/images/download_glyph.png), linear-gradient(top, #9372f7, #6443c9);
+  border: none;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.25) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.25) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(255, 255, 255, 0.25) inset;
+  color: #100f14;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  min-width: 5.71429em;
+  padding: 0.64286em 1.71429em 0.64286em 3em;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+/* line 180, /app/web/views/screen.sass */
+#instructions p.download code {
+  background: #111116;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+  color: #8487af;
+  text-align: center;
+  width: 42.69231em;
+}
+/* line 187, /app/web/views/screen.sass */
+#instructions p.download code span {
+  padding: 0.64286em 1.71429em;
+}
+/* line 190, /app/web/views/screen.sass */
+#instructions ul {
+  list-style: disc;
+  margin-bottom: 1.71429em;
+  padding-left: 1.14286em;
+}
+/* line 195, /app/web/views/screen.sass */
+#instructions ul:last-child {
+  margin-bottom: 0;
+}
+/* line 198, /app/web/views/screen.sass */
+#instructions ul li {
+  font-size: 0.875em;
+  line-height: 1.28571em;
+}
+/* line 202, /app/web/views/screen.sass */
+#instructions pre {
+  background: #111116;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02), 0 1px 2px rgba(0, 0, 0, 0.25) inset;
+  font-size: 0.875em;
+  line-height: 1.28571em;
+  margin-bottom: 1.71429em;
+  overflow: auto;
+  padding: 0.92308em;
+}
+/* line 212, /app/web/views/screen.sass */
+#instructions pre:last-child {
+  margin-bottom: 0;
+}
+/* line 215, /app/web/views/screen.sass */
+#instructions pre .highlight {
+  color: #9588fc;
+}
+/* line 218, /app/web/views/screen.sass */
+#instructions code {
+  font-family: "MesloRegular", monaco, monospace;
+  font-size: 0.92857em;
+}
+/* line 224, /app/web/views/screen.sass */
+#instructions p code {
+  color: #d4d4ff;
+  font-weight: bold;
+  letter-spacing: -0.09em;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 231, /app/web/views/screen.sass */
+  nav li {
+    margin-right: 20px;
+  }
+  /* line 234, /app/web/views/screen.sass */
+  nav li a {
+    width: 75px;
+  }
+  /* line 237, /app/web/views/screen.sass */
+  nav li a .title {
+    display: none;
+  }
+  /* line 240, /app/web/views/screen.sass */
+  nav li a .icon {
+    background-size: 225px 222px;
+    height: 74px;
+  }
+  /* line 244, /app/web/views/screen.sass */
+  nav li.osx a:hover .icon {
+    background-position: 0 -74px;
+  }
+  /* line 247, /app/web/views/screen.sass */
+  nav li.osx a.selected .icon {
+    background-position: 0 -148px;
+  }
+  /* line 250, /app/web/views/screen.sass */
+  nav li.windows .icon {
+    background-position: -75px 0;
+  }
+  /* line 253, /app/web/views/screen.sass */
+  nav li.windows a:hover .icon {
+    background-position: -75px -74px;
+  }
+  /* line 256, /app/web/views/screen.sass */
+  nav li.windows a.selected .icon {
+    background-position: -75px -148px;
+  }
+  /* line 259, /app/web/views/screen.sass */
+  nav li.debian .icon {
+    background-position: -150px 0;
+  }
+  /* line 262, /app/web/views/screen.sass */
+  nav li.debian a:hover .icon {
+    background-position: -150px -74px;
+  }
+  /* line 265, /app/web/views/screen.sass */
+  nav li.debian a.selected .icon {
+    background-position: -150px -148px;
+  }
+  /* line 268, /app/web/views/screen.sass */
+  nav li.standalone .icon {
+    background-position: -150px 0;
+  }
+  /* line 271, /app/web/views/screen.sass */
+  nav li.standalone a:hover .icon {
+    background-position: -150px -74px;
+  }
+  /* line 274, /app/web/views/screen.sass */
+  nav li.standalone a.selected .icon {
+    background-position: -150px -148px;
+  }
+
+  /* line 277, /app/web/views/screen.sass */
+  #instructions {
+    padding: 30px 0;
+  }
+  /* line 280, /app/web/views/screen.sass */
+  #instructions p.download code {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  /* line 288, /app/web/views/screen.sass */
+  select {
+    font-size: 16px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 293, /app/web/views/screen.sass */
+  #instructions p.download a:link.button,
+  #instructions p.download a:visited.button {
+    background-image: url(/images/download_glyph_2x.png), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #9372f7), color-stop(100%, #6443c9));
+    background-image: url(/images/download_glyph_2x.png), -webkit-linear-gradient(top, #9372f7, #6443c9);
+    background-image: url(/images/download_glyph_2x.png), -moz-linear-gradient(top, #9372f7, #6443c9);
+    background-image: url(/images/download_glyph_2x.png), -o-linear-gradient(top, #9372f7, #6443c9);
+    background-image: url(/images/download_glyph_2x.png), linear-gradient(top, #9372f7, #6443c9);
+    background-size: 11px 15px, 100%;
+  }
+}
+/* line 303, /app/web/views/screen.sass */
+.no-multiplebgs #instructions p.download a:link.button,
+.no-multiplebgs #instructions p.download a:visited.button, .no-cssgradients #instructions p.download a:link.button,
+.no-cssgradients #instructions p.download a:visited.button {
+  background-image: url("/images/download_glyph.png");
+  background-position: 1.71429em center;
+}

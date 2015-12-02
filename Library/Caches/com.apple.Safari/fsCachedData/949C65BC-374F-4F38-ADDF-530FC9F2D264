@@ -1,0 +1,150 @@
+
+			<div class="calendarPortlet_toolbar" style="text-align:right;">
+				
+					<a href="javascript:fsElements.getElement(286).popCustomize(286)" style="margin-right: 5px; margin-top: 0px;"><img src="http://newimages.finalsite.com/151103/images/calendar/options.gif" border="0" alt="Calendar Options" title="Calendar Options"></a>
+				
+			</div>
+			
+		<!-- loopFrom: 0 loopTo: 30 step: 1 -->
+		<div id="calpor286" class="portalcon calStyle8">
+			<ul class="text_misc" style="">
+			
+			
+
+		<li class="caldata" id="day_20151116">
+								
+			<ul class="eventobj calendar2136" id="event_86142_127553" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate"><span class="event_stackdayname event_stackdayname_Mon">Mon</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_16">16</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_127553"><a class="desclinks" href="javascript:popEvent('pagecalpop.cfm?p=2116&bid=0&portal_eid=286&verbose=127553')" title="Click here for event details">Foundations of the ModernWorld - Mr. Richard Irven - Per. G: End of term exam<br />(HIS-100-1, p G)</a></span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj " id="event_84670_125113" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate event_stackrepeat"><span class="event_stackdayname event_stackdayname_Mon">Mon</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_16">16</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_125113">Exams</span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj calendar2136" id="event_87782_133600" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate event_stackrepeat"><span class="event_stackdayname event_stackdayname_Mon">Mon</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_16">16</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_133600"><a class="desclinks" href="javascript:popEvent('pagecalpop.cfm?p=2116&bid=0&portal_eid=286&verbose=133600')" title="Click here for event details">Foundations of the ModernWorld - Mr. Richard Irven - Per. G: Revise for the end of term exam<br />(HIS-100-1, p G)</a></span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj calendar2027" id="event_89211_136729" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate event_stackrepeat"><span class="event_stackdayname event_stackdayname_Mon">Mon</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_16">16</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_136729"><a class="desclinks" href="javascript:popEvent('pagecalpop.cfm?p=2116&bid=0&portal_eid=286&verbose=136729')" title="Click here for event details">Spanish II - Mr. Zachary R Abeles - Per. F: Study for the Fall final exam<br />(WOL-210-1, p F)</a></span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj " id="event_84669_125112" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate event_stackrepeat"><span class="event_stackdayname event_stackdayname_Mon">Mon</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_16">16</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_125112">Parents Hall</span>
+						<span class="event_time">5:30 PM</span></span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj " id="event_84671_125114" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate"><span class="event_stackdayname event_stackdayname_Tue">Tue</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_17">17</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_125114">Exams</span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj calendar2094" id="event_88286_134789" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate event_stackrepeat"><span class="event_stackdayname event_stackdayname_Tue">Tue</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_17">17</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_134789"><a class="desclinks" href="javascript:popEvent('pagecalpop.cfm?p=2116&bid=0&portal_eid=286&verbose=134789')" title="Click here for event details">Biology - Ms. Brianna J Graham - Per. E: Study for End of Term Exam<br />(SCI-100-4, p E)</a></span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj calendar2027" id="event_89212_136730" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate event_stackrepeat"><span class="event_stackdayname event_stackdayname_Tue">Tue</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_17">17</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_136730"><a class="desclinks" href="javascript:popEvent('pagecalpop.cfm?p=2116&bid=0&portal_eid=286&verbose=136730')" title="Click here for event details">Spanish II - Mr. Zachary R Abeles - Per. F: Study for the Fall final exam<br />(WOL-210-1, p F)</a></span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj " id="event_84672_125115" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate"><span class="event_stackdayname event_stackdayname_Wed">Wed</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_18">18</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_125115">Exams</span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+			<ul class="eventobj calendar2027" id="event_89213_136731" >
+				
+					<li class="eventcol eventcol_short">
+						<span class="event_stackdate event_stackrepeat"><span class="event_stackdayname event_stackdayname_Wed">Wed</span><span class="event_stackmonname event_stackmonname_Nov">Nov</span><span class="event_stackdaynum event_stackdaynum_18">18</span></span> 
+						<span class="eventcon"><span class="etitle" id="cal_e_136731"><a class="desclinks" href="javascript:popEvent('pagecalpop.cfm?p=2116&bid=0&portal_eid=286&verbose=136731')" title="Click here for event details">Spanish II - Mr. Zachary R Abeles - Per. F: Fall Final Exam!!!<br />(WOL-210-1, p F)</a></span>
+				</span>
+					</li><!-- test -->
+				<ul style="clear: both; height: 0;"><!-- --></ul>
+			</ul> <!-- end eventobj -->
+			<ul style="clear: both; height: 0;"><!-- --></ul>
+			
+			<span class="eventspacer"><!-- --></span>
+						
+		</li>
+				
+		</ul>
+	</div>
+			

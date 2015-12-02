@@ -1,0 +1,720 @@
+.ui-dialog{
+	max-width: 600px !important;
+	width: 80% !important;
+}
+
+#fsResources {
+	max-width: 1200px;
+	min-width: 800px;
+	background: #FFF;
+}
+
+#fsResourcesNewFolder, #fsResourcesNewFolder.fsInactive:hover{
+	background-image:url('../../images/lms/resources/add-folder.png');
+}
+
+#fsResourcesNewResource, #fsResourcesAddFolder.fsInactive:hover{
+	background-image:url('../../images/lms/resources/add-resource.png');
+}
+
+/* Header */
+#fsResources .fsGroupSpaceElementHeader {
+	float: left;
+}
+
+#fsResourcesButtons {
+	float: right;
+	margin: 10px 15px 0 0;
+}
+
+#fsResourcesMultiFileDropzone {
+	border: 2px dashed #DDD;
+	color: #777;
+	min-height:75px;
+	text-align: center;
+}
+#fsResourcesMultiFileDropzone,
+.dz-remove {
+	-webkit-transition: all ease .2s;
+	-o-transition: all ease .2s;
+	-moz-transition: all ease .2s;
+	transition: all ease .2s;
+}
+#fsResourcesMultiFileDropzone:hover {
+	background-color: #F2F2F2;
+}
+#fsResourcesMultiFileDropzone > .maxLimit{
+	display:none;
+	background-color: #FFEEE5;
+	color: #F26B25;
+	margin-bottom: 10px;
+	margin-left: -19px;
+	margin-top: -19px;
+	padding: 10px;
+	width: 106%;
+}
+#fsResourcesMultiFileDropzone.dz-max-files-reached > .maxLimit{
+	display:block;
+}
+#fsResourcesMultiFileDropzone.dz-max-files-reached{
+	border: 3px solid red;
+}
+.dropzone .dz-message {
+	color: #444;
+	font-size: 1.3em;
+}
+.dropzone .dz-message > span {
+	color: #777;
+	display: block;
+	font-size: .77em;
+	margin-top: 3px;
+}
+
+#fsResourcesMultiFileDropzone.dropzone .dz-preview.dz-image-preview {
+  background: transparent;
+}
+
+#fsResourcesMultiFileDropzone.dropzone .dz-preview .dz-remove {
+	background-color: #B2B2B2;
+	border-radius: 12px;
+	color: #FFF;
+	font-size: 13px;
+	margin-top: 3px;
+	padding: 4px;
+	text-decoration: none;
+	text-shadow: 1px 0 0 #777;
+}
+
+#fsResourcesMultiFileDropzone.dropzone .dz-preview .dz-remove:hover {
+	background-color: #888;
+	text-decoration: none;
+}
+
+.dz-hidden-input { /* this is a hack to fix the click to open file explorer when the dropzone is in a modal*/
+    z-index: 10000;
+}
+
+.fsGroupIconBtnList {
+    font-weight:bold;
+    color:#636872 !important;
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius:0 !important;
+	padding-left:14px;
+	margin-left:20px;
+	border-color:#DEDEE2;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e9ef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e9ef));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e9ef 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e9ef',GradientType=0 );
+	text-shadow: 0px 1px 0px #ffffff;
+    filter: dropshadow(color=#ffffff, offx=0, offy=1);
+}
+
+.fsGroupIconBtnGrid {
+    font-weight:bold;
+    color:#636872 !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius:0 !important;
+	padding-left:14px;
+	border-color:#DEDEE2;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e9ef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e9ef));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e9ef 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e9ef',GradientType=0 );
+	text-shadow: 0px 1px 0px #ffffff;
+    filter: dropshadow(color=#ffffff, offx=0, offy=1);
+}
+
+.fsGroupIconBtnGrid:hover, .fsGroupIconBtnList:hover{
+    background:#F2F3F6;
+}
+
+.fsGroupIconBtnGrid.fsInactive, .fsGroupIconBtnGrid.fsInactive:hover {
+    font-weight:bold;
+    color:#252830 !important;
+	border-left: 0;
+	padding-left:14px;
+	-webkit-box-shadow: inset 0px 3px 3px 0px #888;
+    box-shadow: inset 0px 3px 3px 0px #888;
+    opacity:1;
+    border-color:#A2A8B1;
+    background: #999da6;
+	background: -moz-linear-gradient(top,  #999da6 0%, #c2c4c9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999da6), color-stop(100%,#c2c4c9));
+	background: -webkit-linear-gradient(top,  #999da6 0%,#c2c4c9 100%);
+	background: -o-linear-gradient(top,  #999da6 0%,#c2c4c9 100%);
+	background: -ms-linear-gradient(top,  #999da6 0%,#c2c4c9 100%);
+	background: linear-gradient(to bottom,  #999da6 0%,#c2c4c9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999da6', endColorstr='#c2c4c9',GradientType=0 );
+    text-shadow: 0px 1px 0px #ccc;
+    filter: dropshadow(color=#ccc, offx=0, offy=1);
+}
+
+.fsGroupIconBtnList.fsInactive, .fsGroupIconBtnList.fsInactive:hover {
+    font-weight:bold;
+    color:#252830 !important;
+    padding-left:14px;
+	border-right: 0;
+	-webkit-box-shadow: inset 0px 3px 3px 0px #888;
+    box-shadow: inset 0px 3px 3px 0px #888;
+    opacity:1;
+    border-color:#A2A8B1;
+    background: #999da6;
+	background: -moz-linear-gradient(top,  #999da6 0%, #c2c4c9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#999da6), color-stop(100%,#c2c4c9));
+	background: -webkit-linear-gradient(top,  #999da6 0%,#c2c4c9 100%);
+	background: -o-linear-gradient(top,  #999da6 0%,#c2c4c9 100%);
+	background: -ms-linear-gradient(top,  #999da6 0%,#c2c4c9 100%);
+	background: linear-gradient(to bottom,  #999da6 0%,#c2c4c9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999da6', endColorstr='#c2c4c9',GradientType=0 );
+    text-shadow: 0px 1px 0px #ccc;
+    filter: dropshadow(color=#ccc, offx=0, offy=1);
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-fsLoadingPrompt"] #fsLoadingPrompt {
+	color: #777;
+	font-weight: normal;
+	height: auto !important;
+	padding: 1em 2em 2em 2em;
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-fsLoadingPrompt"] img {
+	margin-top: 8px;
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-fsLoadingPrompt"] #saveProgress {
+	background-color: #DEF3FA;
+	color: #222;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 30px 10px;
+}
+
+/* List Folder */
+.fsResourcesListFolder {
+	background: #FFFFFF url('../../images/lms/resources/listFolder.png') 5px 15px no-repeat;
+	border: 2px solid transparent;
+	border-bottom: 1px solid #eee;
+	display: block;
+	margin: 0;
+	padding: 15px 15px 15px 70px;
+	vertical-align: middle;
+}
+
+.fsResourcesListFolderOpen {
+	background: #FFFFFF url('../../images/lms/resources/listFolderOpen.png') 5px 15px no-repeat;
+}
+
+.fsResourcesListFolderContent {
+	display: none;
+}
+
+.fsResourcesListFolder.fsResourcesListFolderOpen:hover {
+	background-color: #f8f8f8;
+}
+
+.fsResourcesListFolder:hover {
+	background-color: #eee;
+}
+
+.fsResourcesListFolder h3,
+.fsResourcesListItem h3 {
+	color: #BBB;
+	margin: 0;
+}
+
+.fsGroupSpaceElementContent h3 a{
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-weight:bold;
+}
+
+.fsResourcesActions img {
+	border: none;
+	width: 16px;
+	opacity:.5;
+	margin-left:5px;
+}
+
+.fsResourcesActions img:hover {
+	opacity:1;
+}
+
+.fsResourcesActions {
+	float: right;
+	height: 14px;
+	margin: -5px -5px 0 0;
+	display: none;
+}
+
+.fsResourcesActions a{
+    display:inline-block;
+    padding:3px 4px 0 0;
+    background-color:#00B0FF;
+    border:1px solid #DEDEE2;
+    border-radius:2px;
+	background: #e7e9ef;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e9ef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e9ef));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e9ef 100%);
+}
+
+.fsResourcesActions a:hover{
+    background:#fafafa;
+}
+
+#fsResourcesGrid .fsResourcesActions {
+	padding: 5px;
+}
+
+.fsResourcesDropTarget {
+	background-color: #FCF3D4;
+}
+
+.fsResourcesListArchivedFolder {
+	opacity: 0.5;
+}
+
+.fsResourcesListFolderDescription{
+	display: block;
+    padding-top: 4px;
+    margin-bottom: 10px;
+}
+
+/* List Item */
+.fsResourcesListItem {
+	border: 2px solid transparent;
+	float: left;
+	display: inline-block;
+	margin: 0 2px 15px;
+	padding: 15px 15px 15px 75px;
+	width: 400px;
+	height: 45px;
+	line-height:1.5em;
+}
+
+.fsResourcesListItem:hover {
+	background-color:#eee;
+	border-radius:2px;
+}
+
+.fsResourcesListItemTypeLink {
+	background:url('../../images/lms/resources/listLink.png') 5px 15px no-repeat;
+}
+
+.fsResourcesListItemTypeContent {
+	background:url('../../images/lms/resources/listContent.png') 5px 15px no-repeat;
+}
+
+.fsResourcesListItemTypeFile {
+	background:url('../../images/lms/resources/listAttach.png') 5px 15px no-repeat;
+}
+
+.fsResourcesListArchivedContent {
+	border-top: 2px solid #CCCCCC;
+	opacity: 0.5;
+}
+
+.fsResourcesListItem h3,
+.fsResourcesListItemDescription{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.fsResourcesListItemDescription.weak,
+.fsResourcesListFolderDescription.weak {
+	color: #DDDDDD;
+	font-style: italic;
+}
+
+.fsResourcesListItemDate {
+	display: block;
+	font-size: 11px;
+	color:#999999;
+}
+
+/* Grid Folder */
+#fsResourcesGridFolderDescription {
+	margin: 10px 0 5px 0;
+}
+
+.fsResourcesGridFolderContainer,
+.fsResourcesGridItemContainer {
+	display: block;
+	float: left;
+	margin: 12px 34px 10px 0;
+	width: 200px;
+	height: 226px;
+}
+
+.fsResourcesGridFolder, .fsResourcesGridItem {
+	border: 0;
+	cursor: pointer;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	border-radius:4px
+}
+
+.fsResourcesGridFolder {
+	background-color: #f8deb5;
+	border-radius:2px;
+}
+
+.fsResourcesGridFolder:hover{
+    background-color:#f7d8a6;
+}
+
+.fsResourcesGridDate {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	display: inline-block;
+	font-size: .75em;
+	margin: 0;
+	padding: 3px 6px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-border-top-left-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.fsResourcesGridDateFuture {
+	background: rgb(235,147, 5);
+	background: rgba(235,147, 5, 0.6);
+}
+
+.fsResourcesGridItemFile {
+	background-color: #c9ddbc;
+}
+
+.fsResourcesGridItemFile:hover {
+	background-color: #bed7af;
+}
+
+.fsResourcesGridItemContent{
+    background-color:#c4bede
+}
+
+.fsResourcesGridItemContent:hover{
+    background-color:#b9b1d7;
+}
+
+.fsResourcesGridItemLink{
+    background-color:#bcdcdd
+}
+
+.fsResourcesGridItemLink:hover{
+    background-color:#afd6d7;
+}
+
+
+.fsResourcesGridFolder .fsResourcesGridIcon {
+    background: #f2be6b url(../../images/lms/resources/folder.png) no-repeat 8px 8px;
+	padding:8px;
+	border-radius:2px;
+	opacity:.9;
+}
+
+.fsResourcesGridItemContent .fsResourcesGridIcon {
+    background: #8478b7 url(../../images/lms/resources/content.png) no-repeat 9px 8px;
+	padding:8px;
+	border-radius:16px;
+	opacity:.9;
+}
+
+.fsResourcesGridItemFile .fsResourcesGridIcon {
+    background: #93ba7f url(../../images/lms/resources/file.png) no-repeat 8px 8px;
+	padding:8px;
+	border-radius:16px;
+	opacity:.9;
+}
+
+.fsResourcesGridItemLink .fsResourcesGridIcon {
+    background: #75b6b8 url(../../images/lms/resources/link.png) no-repeat 8px 8px;
+	padding:8px;
+	border-radius:16px;
+	opacity:.9;
+}
+
+
+.fsResourcesGridIcon {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.fsResourcesGridText {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 180px;
+	max-height: 125px;
+	text-shadow:0 -1px 0 #333;
+	border-radius:0px 0px 2px 2px;
+}
+
+.fsResourcesGridHeader {
+	font-size: 1.1em;
+	line-height: 1.3em;
+	margin-bottom:4px;
+	max-height: 2.6em;
+	font-weight: bold;
+}
+
+.fsResourcesGridNotes {
+	font-size: .9em;
+	line-height: 1.2em;
+	max-height: 3.6em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.fsResourcesGridHeader{
+	color: #FFF;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.fsResourcesGridNotes {
+	color: #ddd;
+	overflow: hidden;
+}
+
+.fsResourcesGridInfoBar {
+	height: 26px;
+	margin-top:2px;
+}
+
+.fsResourcesBreadcrumbEdit img {
+	vertical-align: top;
+	opacity:.8;
+}
+
+.fsResourcesBreadcrumbEdit img:hover {
+    opacity:1;
+}
+
+/* Update Resource/Folder */
+#fsResourcesEditThumbnail div, #fsResourcesEditFolderThumbnail div {
+	display: inline;
+}
+
+#fsResourcesEditFolderSharedCount {
+	margin: 5px 0 0 90px;
+}
+
+.fsResourcesThumbnailName {
+	font-size: .85em;
+	font-weight: bold;
+}
+
+/* Add Shared Folder */
+#fsResourcesSharedFolderResults {
+	background-color: #F6F6F6;
+	border: 1px solid #DDD;
+	padding: 5px;
+	width: 95%;
+	height: 250px;
+	overflow: auto;
+}
+
+.fsResourcesSharedFolderGroup {
+	padding: 3px;
+}
+
+.fsResourcesSharedFolderGroup:hover {
+	background-color: #FFF;
+}
+
+.fsResourcesArchivedDate {
+	font-size:9px;
+	float:right;
+}
+
+.fsResourcesSharedFolderItemList {
+	margin-left: 16px;
+}
+
+.fsResourcesSharedFolderItem {
+	padding: 2px;
+	margin: 2px;
+}
+
+.fsResourcesSharedFolderItem label, .fsResourcesSharedFolderItem input {
+	cursor: pointer;
+}
+
+.fsResourcesSharedFolderItemSelected {
+	background-color: #DDD;
+}
+
+.fsResourcesSharedFolderNoResults {
+	color: #999;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.fsResourcesSharedFolderGroupName {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.fsResourcesSharedFolderSelectAll {
+	display: none;
+	font-size: 0.9em;
+	font-weight: bold;
+	min-height: 16px;
+	padding: 2px 6px;
+	margin-left:3px;
+	background: #F6F6F6 url(images/ui-bg_flat_75_eeeeee_40x100.png) 50% 50% repeat-x;
+}
+.fsResourcesSharedFolderSelectAll span {
+    display:inline-block;
+    min-height:16px;
+}
+.fsResourcesSharedFolderSelectAll .ui-icon-check {
+     background-position-y: -142px;
+}
+.fsResourcesSharedFolderSelectedCount {
+	font-size: 0.9em; margin-left:3px;   color:#666;
+}
+.fsResourcesSharedFolderSelectAll:hover span {
+    text-decoration:underline;
+}
+
+/* Thumbnails */
+#fsResourcesThumbnailPreview {
+	text-align: center;
+}
+
+.fsResourcesThumbnailImage {
+	cursor: pointer;
+}
+
+.fsResourcesWidth50 {
+	width: 50%;
+}
+
+.fsResourcesWidth80 {
+	width: 80%;
+}
+
+.fsResourcesIconDisabled {
+	opacity: .25;
+	-moz-opacity: 0.25;
+	filter: alpha(opacity=25);
+	cursor: default !important;
+}
+
+.fsResourcesFormRow {
+	margin: 1em 0;
+}
+
+.fsResourcesFormIndent {
+	margin-left: 30px;
+}
+
+.dialog {
+	display: none;
+}
+
+/* Resource Content */
+#fsResourcesDescription {
+	margin-top: 15px;
+}
+
+#fsResourcesContent {
+	margin-top: 15px;
+}
+
+#fsResourcesPostDate {
+	margin-top: 15px;
+}
+
+/* Media Queries */
+@media (min-width: 180px) {
+	#wrapper {
+		min-width: 80px;
+		max-width: 420px;
+	}
+	.pageActions {
+		float: none;
+	}
+}
+
+@media (min-width: 320px) {
+
+	#fsResources {
+		min-width: 300px;
+		max-width: 680px;
+	}
+
+	#fsResourcesButtons{
+	    margin-left:10px;
+	}
+
+	#fsResourcesButtons a{
+	    margin-bottom:10px;
+	}
+
+	.fsGroupIconBtnList{
+	    margin-left:5px;
+	}
+
+}
+
+@media (min-width: 420px) {
+	#fsResources {
+		min-width: 420px;
+		max-width: 680px;
+	}
+	.pageActions {
+
+	}
+}
+
+@media (min-width: 680px) {
+	#fsResources {
+		min-width: 680px;
+		max-width: 960px;
+	}
+	.pageActions {
+
+	}
+}
+
+@media (min-width: 960px) {
+	#fsResources {
+		min-width: 960px;
+		max-width: 1160px;
+	}
+}
+
+@media (min-width: 1160px) {
+	#fsResources {
+		min-width: 1160px;
+		max-width: 1200px;
+	}
+}

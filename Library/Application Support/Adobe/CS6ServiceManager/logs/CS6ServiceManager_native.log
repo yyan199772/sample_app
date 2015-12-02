@@ -1,0 +1,68 @@
+﻿2015-11-04 12:54:24 : ERROR vcfoundation::system::VCSysError: send() failed <32: Broken pipe>
+Trace: 0   CS6ServiceManager                   0x00005035 _ZN12vcfoundation4base11VCExceptionC2EPNS_4data9IVCStringE + 71
+1   CS6ServiceManager                   0x00005a06 _ZN12vcfoundation6system10VCSysErrorC1EPNS_4data9IVCStringEPKci + 36
+2   CS6ServiceManager                   0x000060a9 _ZN12vcfoundation6system10PosixError5ThrowEPNS_4data9IVCStringEi + 487
+3   CS6ServiceManager                   0x0000613a _ZN12vcfoundation6system10PosixError5ThrowEPKci + 104
+4   CS6ServiceManager                   0x0003b0c8 _ZN12vcfoundation6system10VCSysErrorD0Ev + 0
+5   CS6ServiceManager                   0x00041ba4 _ZN12vcfoundation3net3Bsd4SendEiPKvii + 64
+6   CS6ServiceManager                   0x000401e4 _ZN12vcfoundation2io12BSDNamedPipe5WriteEPKvm + 48
+7   CS6ServiceManager                   0x0003e3ad _ZN12vcfoundation2io14BufferedWriter5FlushEv + 71
+8   CS6ServiceManager                   0x0003ed1e _ZN12vcfoundation5ncomm6NCHost6Worker13HandleRequestEv + 208
+9   CS6ServiceManager                   0x0003edf1 _ZN12vcfoundation5ncomm6NCHost6Worker3RunEv + 49
+10  CS6ServiceManager                   0x0003d86d _ZN12vcfoundation6thread14AbstractThread3RunEv + 53
+11  CS6ServiceManager                   0x00041777 _ZN12vcfoundation6thread6Thread10ThreadProcEPv + 17
+12  libsystem_pthread.dylib             0x98802e13 _pthread_body + 138
+13  libsystem_pthread.dylib             0x98802d89 _pthread_body + 0
+14  libsystem_pthread.dylib             0x98800e52 thread_start + 34
+
+2015-11-09 14:44:26 : ERROR vcfoundation::system::VCSysError: send() failed <32: Broken pipe>
+Trace: 0   CS6ServiceManager                   0x00005035 _ZN12vcfoundation4base11VCExceptionC2EPNS_4data9IVCStringE + 71
+1   CS6ServiceManager                   0x00005a06 _ZN12vcfoundation6system10VCSysErrorC1EPNS_4data9IVCStringEPKci + 36
+2   CS6ServiceManager                   0x000060a9 _ZN12vcfoundation6system10PosixError5ThrowEPNS_4data9IVCStringEi + 487
+3   CS6ServiceManager                   0x0000613a _ZN12vcfoundation6system10PosixError5ThrowEPKci + 104
+4   CS6ServiceManager                   0x0003b0c8 _ZN12vcfoundation6system10VCSysErrorD0Ev + 0
+5   CS6ServiceManager                   0x00041ba4 _ZN12vcfoundation3net3Bsd4SendEiPKvii + 64
+6   CS6ServiceManager                   0x000401e4 _ZN12vcfoundation2io12BSDNamedPipe5WriteEPKvm + 48
+7   CS6ServiceManager                   0x0003e3ad _ZN12vcfoundation2io14BufferedWriter5FlushEv + 71
+8   CS6ServiceManager                   0x0003ed1e _ZN12vcfoundation5ncomm6NCHost6Worker13HandleRequestEv + 208
+9   CS6ServiceManager                   0x0003edf1 _ZN12vcfoundation5ncomm6NCHost6Worker3RunEv + 49
+10  CS6ServiceManager                   0x0003d86d _ZN12vcfoundation6thread14AbstractThread3RunEv + 53
+11  CS6ServiceManager                   0x00041777 _ZN12vcfoundation6thread6Thread10ThreadProcEPv + 17
+12  libsystem_pthread.dylib             0x98802e13 _pthread_body + 138
+13  libsystem_pthread.dylib             0x98802d89 _pthread_body + 0
+14  libsystem_pthread.dylib             0x98800e52 thread_start + 34
+
+2015-11-11 11:57:46 : ERROR vcfoundation::system::VCSysError: send() failed <32: Broken pipe>
+Trace: 0   CS6ServiceManager                   0x00005035 _ZN12vcfoundation4base11VCExceptionC2EPNS_4data9IVCStringE + 71
+1   CS6ServiceManager                   0x00005a06 _ZN12vcfoundation6system10VCSysErrorC1EPNS_4data9IVCStringEPKci + 36
+2   CS6ServiceManager                   0x000060a9 _ZN12vcfoundation6system10PosixError5ThrowEPNS_4data9IVCStringEi + 487
+3   CS6ServiceManager                   0x0000613a _ZN12vcfoundation6system10PosixError5ThrowEPKci + 104
+4   CS6ServiceManager                   0x0003b0c8 _ZN12vcfoundation6system10VCSysErrorD0Ev + 0
+5   CS6ServiceManager                   0x00041ba4 _ZN12vcfoundation3net3Bsd4SendEiPKvii + 64
+6   CS6ServiceManager                   0x000401e4 _ZN12vcfoundation2io12BSDNamedPipe5WriteEPKvm + 48
+7   CS6ServiceManager                   0x0003e3ad _ZN12vcfoundation2io14BufferedWriter5FlushEv + 71
+8   CS6ServiceManager                   0x0003ed1e _ZN12vcfoundation5ncomm6NCHost6Worker13HandleRequestEv + 208
+9   CS6ServiceManager                   0x0003edf1 _ZN12vcfoundation5ncomm6NCHost6Worker3RunEv + 49
+10  CS6ServiceManager                   0x0003d86d _ZN12vcfoundation6thread14AbstractThread3RunEv + 53
+11  CS6ServiceManager                   0x00041777 _ZN12vcfoundation6thread6Thread10ThreadProcEPv + 17
+12  libsystem_pthread.dylib             0x98802e13 _pthread_body + 138
+13  libsystem_pthread.dylib             0x98802d89 _pthread_body + 0
+14  libsystem_pthread.dylib             0x98800e52 thread_start + 34
+
+2015-11-16 10:36:54 : ERROR vcfoundation::system::VCSysError: send() failed <32: Broken pipe>
+Trace: 0   CS6ServiceManager                   0x00005035 _ZN12vcfoundation4base11VCExceptionC2EPNS_4data9IVCStringE + 71
+1   CS6ServiceManager                   0x00005a06 _ZN12vcfoundation6system10VCSysErrorC1EPNS_4data9IVCStringEPKci + 36
+2   CS6ServiceManager                   0x000060a9 _ZN12vcfoundation6system10PosixError5ThrowEPNS_4data9IVCStringEi + 487
+3   CS6ServiceManager                   0x0000613a _ZN12vcfoundation6system10PosixError5ThrowEPKci + 104
+4   CS6ServiceManager                   0x0003b0c8 _ZN12vcfoundation6system10VCSysErrorD0Ev + 0
+5   CS6ServiceManager                   0x00041ba4 _ZN12vcfoundation3net3Bsd4SendEiPKvii + 64
+6   CS6ServiceManager                   0x000401e4 _ZN12vcfoundation2io12BSDNamedPipe5WriteEPKvm + 48
+7   CS6ServiceManager                   0x0003e3ad _ZN12vcfoundation2io14BufferedWriter5FlushEv + 71
+8   CS6ServiceManager                   0x0003ed1e _ZN12vcfoundation5ncomm6NCHost6Worker13HandleRequestEv + 208
+9   CS6ServiceManager                   0x0003edf1 _ZN12vcfoundation5ncomm6NCHost6Worker3RunEv + 49
+10  CS6ServiceManager                   0x0003d86d _ZN12vcfoundation6thread14AbstractThread3RunEv + 53
+11  CS6ServiceManager                   0x00041777 _ZN12vcfoundation6thread6Thread10ThreadProcEPv + 17
+12  libsystem_pthread.dylib             0x98802e13 _pthread_body + 138
+13  libsystem_pthread.dylib             0x98802d89 _pthread_body + 0
+14  libsystem_pthread.dylib             0x98800e52 thread_start + 34
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../oobe/6.0/installertech/public/Common/xplat/schema/CSUManifest.xsd" CSUVersion="1.0">
+	<UpdateID>6.0.2</UpdateID>
+	<OwningChannel>AdobeMediaEncoderCS6-6</OwningChannel>
+	<TargetBuildType>2</TargetBuildType>
+	<DisplayName default="en_US">
+		<en_US>Adobe Media Encoder CS6 6.0.2 Update</en_US>
+		<cs_CZ>Aktualizace Adobe Media Encoder CS6 6.0.2</cs_CZ>
+		<de_DE>Adobe Media Encoder CS6 6.0.2-Update</de_DE>
+		<es_ES>Actualización de Adobe Media Encoder CS6 6.0.2</es_ES>
+		<es_MX>Actualización de Adobe Media Encoder CS6 6.0.2</es_MX>
+		<fr_FR>Mise à jour d'Adobe Media Encoder CS6 6.0.2</fr_FR>
+		<fr_CA>Mise à jour d'Adobe Media Encoder CS6 6.0.2</fr_CA>
+		<fr_MA>Mise à jour d'Adobe Media Encoder CS6 6.0.2</fr_MA>
+		<it_IT>Aggiornamento di Adobe Media Encoder CS6 6.0.2</it_IT>
+		<ja_JP>Adobe Media Encoder CS6 6.0.2 アップデート</ja_JP>
+		<ko_KR>Adobe Media Encoder CS6 6.0.2 업데이트</ko_KR>
+		<nl_NL>Adobe Media Encoder CS6 6.0.2-update</nl_NL>
+		<pl_PL>Adobe Media Encoder CS6 — aktualizacja 6.0.2</pl_PL>
+		<pt_BR>Atualização 6.0.2 do Adobe Media Encoder CS6</pt_BR>
+		<ru_RU>Обновление Adobe Media Encoder CS6 6.0.2</ru_RU>
+		<sv_SE>Adobe Media Encoder CS6 6.0.2-uppdatering</sv_SE>
+		<tr_TR>Adobe Media Encoder CS6 6.0.2 Güncellemesi</tr_TR>
+		<zh_CN>Adobe Media Encoder CS6 6.0.2 更新</zh_CN>		
+		<zh_TW>Adobe Media Encoder CS6 6.0.2 更新</zh_TW>
+	</DisplayName>
+	<Description default="en_US">
+		<en_US>This update provides Smart Rendering functionality as well as several bug fixes.</en_US>
+		<cs_CZ>Tato aktualizace opravuje nalezené chyby.</cs_CZ>
+		<de_DE>Dieses Update stellt Fehlerkorrekturen bereit.</de_DE>
+		<es_ES>Esta actualización corrige varios errores.</es_ES>
+		<es_MX>Esta actualización corrige varios errores.</es_MX>
+		<fr_FR>Cette mise à jour corrige plusieurs bogues.</fr_FR>
+		<fr_CA>Cette mise à jour corrige plusieurs bogues.</fr_CA>
+		<fr_MA>Cette mise à jour corrige plusieurs bogues.</fr_MA>
+		<it_IT>Questo aggiornamento corregge alcuni problemi.</it_IT>
+		<ja_JP>このアップデートには不具合の修正が含まれます。</ja_JP>
+		<ko_KR>이 업데이트에서는 버그 수정 사항이 제공됩니다.</ko_KR>
+		<nl_NL>Deze update bevat foutoplossingen.</nl_NL>
+		<pl_PL>Ta aktualizacja zawiera poprawki błędów.</pl_PL>
+		<pt_BR>Esta atualização fornece correções de bugs.</pt_BR>
+		<ru_RU>В этом обновлении устранены ранее обнаруженные проблемы.</ru_RU>
+		<sv_SE>Den här uppdateringen innehåller felkorrigeringar.</sv_SE>
+		<tr_TR>Bu güncelleme hata düzeltmeleri sunar.</tr_TR>
+		<zh_CN>此更新将提供修补程序。</zh_CN>		
+		<zh_TW>此更新將提供錯誤修正。</zh_TW>
+	</Description>
+	<AffectedChannels>
+		<ChannelID>AdobeMediaEncoderCS6-6</ChannelID>
+	</AffectedChannels>
+	<InstallFiles>
+    <File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobePatchInstaller.app</ExecutableName>
+      <Size>100107893</Size>
+    </File>
+  </InstallFiles>
+	<NeedsReboot>false</NeedsReboot>
+</Manifest>

@@ -1,0 +1,208 @@
+// Button & Menu Options ---------------------------------//
+
+// Use animation menus
+// Requires scriptaculous
+	var anim_menus = 1;
+
+//Auto link buttons to overview pages
+	var use_overview_pages = 1;
+
+//Show sub-menus for current section( 0=no, 1=yes)
+	var section_subs = 0;
+
+//Other button definitions
+//"btn_name,menu_name(|menu_direction),section_id,img_src,img_src_on"
+//Ex. "ql_btn,ql_menu,0,uploaded/images/ql_btn.gif,uploaded/images/ql_btn.gif"
+var otherBtns = new Array( );
+
+// List other images that need to be pre-loaded
+var otherImages = new Array();
+
+//other JS functions to run onLoad
+function loadJS(){
+	
+	$j(".corner-img .close-me").on("click", function(){
+		$j(".corner-img").fadeOut();
+	});
+	
+	
+	if(pageid===1){
+		//$j('.slider').fsSlider({});
+
+		$j('#contentdiv #text2 a').hover(function() {
+			$j(this).find('img').animate({opacity: 0.25}, 300);
+			$j(this).find('span').fadeIn(300);
+		}, function() {
+			$j(this).find('img').animate({opacity: 1}, 300);
+			$j(this).find('span').fadeOut(300);
+		});
+
+		$j('.moreNews').appendTo('.homeNews #newscon');
+		$j('.moreCal').appendTo('.homeCal .listonly_block');
+		$j('.moreAth').appendTo('.homeAth .listonly_block');
+
+		$j('.infoCard').wrapAll('<div class="infoContain"><div class="infoWrap"></div></div>');
+
+
+	}
+	
+	/*$j('.topContain form[name="userlogin"] .fsLoginPass').on('focus', function() {
+
+	}).on('blur', function() {
+
+	});
+
+	$j('.topContain form[name="userlogin"] .fsLoginUser').on('focus', function() {
+
+	}).on('blur', function() {
+
+	});	*/
+
+
+	$j('.leftNav .bannermodtd').shrinkToBtn({
+		 btnHTML : '<div class="stbBtn"><span>In This Section</span></div>',
+		 containerID : 'nav5',
+		 animate : true
+	});
+
+	$j('.mainNav').shrinkToBtn({
+		 btnHTML : '<div class="stbBtn2"><span></span></div>',
+		 containerID : 'nav4',
+		 animate : true
+	});
+
+
+	var topMove = function() {
+		if ($j("#topcontainer").css("float") == 'none' ){
+			$j('.topPhoto').insertAfter('.mainNav');
+			$j('#bottombanner').appendTo('#bottomcontainer');
+			//$j('#topcontainer').removeClass('ipad');
+		} else if ($j("#topcontainer").css("float") == 'left') {
+			$j('.topPhoto').prependTo('#mainmiddle');
+			$j('#bottombanner').appendTo('#topbanner');
+			/*if($j('#topcontainer').hasClass('ipad')){
+				// do nothing
+			} else {
+				$j('#topcontainer').addClass('ipad');
+			}*/
+		}
+	}	
+	topMove();
+
+	$j(window).resize(function() {
+		topMove();
+	});
+
+
+
+	// College Counseling Mashup Page 
+	if(pageid==2311) {
+		$j('.slider').fsSlider({
+			pageNum: 2321,
+			prevNext: true,
+			prevNextBtns: 'custom',
+			effect: 'slide',
+			responsive: true,
+			separateText: true,
+			delay: 8000,
+			callback: function() {
+				$j('.sliderContainer .controls').appendTo('.slider-title .bannermodcontent div[id*="content"]');
+
+				function titleFunc() {
+					$j('.titleContain .contentElementDesc').each(function() {
+						var descHeight = $j(this).outerHeight();
+						$j('.titleContain').css('height', descHeight);
+
+					});
+				}
+				titleFunc();
+				$j(window).resize(function() {
+					titleFunc();
+				});
+
+			}
+		});
+	}
+
+	// Social Media Mashup Page 
+	if(pageid==2237) {
+		$j('.slider').fsSlider({
+			pageNum: 2342,
+			prevNext: true,
+			prevNextBtns: 'custom',
+			effect: 'slide',
+			responsive: true,
+			separateText: true,
+			delay: 8000,
+			callback: function() {
+				$j('.controls').appendTo('#h_555 .portlet_title');
+
+				$j('.titleContain .contentElementDesc').each(function() {
+					$j(this).append('<div class="clearFix">');
+				});
+
+				function titleFunc() {
+					$j('.titleContain .contentElementDesc').each(function() {
+						var descHeight = $j(this).outerHeight();
+						$j('.titleContain').css('height', descHeight+12);
+
+					});
+				}
+				titleFunc();
+				$j(window).resize(function() {
+					titleFunc();
+				});
+
+			}
+		});
+	}
+
+	// Alumni Mashup Page 
+	if(pageid==2380) {
+		$j('.slider').fsSlider({
+			pageNum: 2381,
+			prevNext: true,
+			prevNextBtns: 'custom',
+			effect: 'slide',
+			responsive: true,
+			separateText: true,
+			delay: 8000,
+			callback: function() {
+				$j('.controls').appendTo('#h_603 .portlet_title');
+
+				$j('.titleContain .contentElementDesc').each(function() {
+					$j(this).append('<div class="clearFix">');
+				});
+
+				function titleFunc() {
+					$j('.titleContain .contentElementDesc').each(function() {
+						var descHeight = $j(this).outerHeight();
+						$j('.titleContain').css('height', descHeight+12);
+
+					});
+				}
+				titleFunc();
+				$j(window).resize(function() {
+					titleFunc();
+				});
+
+			}
+		});
+	}
+
+
+	$j('.fsGraphCurrent').wrapInner('<span>Current Total:<span>');
+
+
+	document.getElementById('keywords').onfocus= function(){ if(this.value == "Search"){this.value=""};}
+	document.getElementById('keywords').onblur= function(){ if(this.value == ""){this.value="Search"};}
+
+	document.getElementById('username').onfocus= function(){ if(this.value == "Username"){this.value=""};}
+	document.getElementById('username').onblur= function(){ if(this.value == ""){this.value="Username"};}
+
+	document.getElementById('password').onfocus= function(){ if(this.value == "Password"){this.value=""};}
+	document.getElementById('password').onblur= function(){ if(this.value == ""){this.value="Password"};}
+
+
+
+}

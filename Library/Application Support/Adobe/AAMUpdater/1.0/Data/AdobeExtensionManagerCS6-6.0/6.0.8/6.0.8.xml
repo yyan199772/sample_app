@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">
+    <UpdateID>6.0.8</UpdateID>
+    <OwningChannel>AdobeExtensionManagerCS6-6.0</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+    <DisplayName default="en_US"><en_US>Extension Manager 6.0.8 Update</en_US>
+		<cs_CZ>Aktualizace aplikace Extension Manager 6.0.8</cs_CZ>
+		<da_DK>Extension Manager 6.0.8 - opdatering</da_DK>
+		<de_DE>Extension Manager 6.0.8-Update</de_DE>
+		<es_ES>Actualización de Extension Manager 6.0.8</es_ES>
+		<fi_FI>Extension Manager 6.0.8 -päivitys</fi_FI>
+		<fr_FR>Mise à jour d’Extension Manager 6.0.8</fr_FR>
+		<hu_HU>Extension Manager 6.0.8 frissítés</hu_HU>
+		<it_IT>Aggiornamento di Extension Manager 6.0.8</it_IT>
+		<ja_JP>Extension Manager 6.0.8 アップデート</ja_JP>
+		<ko_KR>Extension Manager 6.0.8 업데이트</ko_KR>
+		<nb_NO>Extension Manager 6.0.8-oppdatering</nb_NO>
+		<nl_NL>Update van Extension Manager 6.0.8</nl_NL>
+		<pl_PL>Extension Manager 6.0.8 — aktualizacja</pl_PL>
+		<pt_BR>Atualização do Extension Manager 6.0.8</pt_BR>
+		<ru_RU>обновление Extension Manager 6.0.8</ru_RU>
+		<sv_SE>Extension Manager 6.0.8-uppdatering</sv_SE>
+		<tr_TR>Extension Manager 6.0.8 güncellemesi</tr_TR>
+		<uk_UA>Оновлення Extension Manager 6.0.8</uk_UA>
+		<zh_CN>Extension Manager 6.0.8 更新</zh_CN>
+		<zh_TW>Extension Manager 6.0.8 更新</zh_TW>
+	</DisplayName>
+	<Description default="en_US"><en_US>This update fixes an issue that can occur when installing from the Adobe Exchange panel.</en_US>
+		<cs_CZ>Součástí této aktualizace je oprava problému, ke kterému někdy docházelo při instalaci panelu Adobe Exchange.</cs_CZ>
+		<da_DK>Denne opdatering retter en fejl, der kan forekomme under installation via Adobe Exchange-panelet.</da_DK>
+		<de_DE>Mit diesem Update wird ein mögliches Problem bei der Installation über das Adobe Exchange-Bedienfeld korrigiert.</de_DE>
+		<es_ES>Esta actualización soluciona un problema que puede darse al realizar la instalación desde el panel de Adobe Exchange.</es_ES>
+		<fi_FI>Tämä päivitys korjaa ongelman, joka voi ilmetä, kun suoritat asennuksen Adobe Exchange -paneelista.</fi_FI>
+		<fr_FR>Cette mise à jour corrige un problème pouvant se produire à l’installation du panneau Adobe Exchange.</fr_FR>
+		<hu_HU>Ez a frissítés egy olyan hibát javít ki, amely az Adobe Exchange panelről történő telepítéskor jelentkezhet.</hu_HU>
+		<it_IT>Questo aggiornamento corregge un errore che può verificarsi quando si esegue l’installazione dal pannello Adobe Exchange.</it_IT>
+		<ja_JP>本アップデートは、Adobe Exchange パネルからのインストールの際に発生する問題を修正します。</ja_JP>
+		<ko_KR>이 업데이트는 Adobe Exchange 패널에서 설치할 때 발생할 수 있는 문제를 수정합니다.</ko_KR>
+		<nb_NO>Denne oppdateringen retter et problem som kan oppstå når du installerer fra Adobe Exchange-panelet.</nb_NO>
+		<nl_NL>Met deze update wordt een probleem hersteld dat kan optreden wanneer u installeert vanuit het deelvenster Adobe Exchange.</nl_NL>
+		<pl_PL>W tej aktualizacji poprawiono błąd występujący niekiedy podczas instalowania z panelu Adobe Exchange.</pl_PL>
+		<pt_BR>Esta atualização corrige um problema que pode ocorrer na instalação do painel do Adobe Exchange.</pt_BR>
+		<ru_RU>В обновлении исправлена ошибка, возникающая при установке программ с панели Adobe Exchange.</ru_RU>
+		<sv_SE>Den här uppdateringen korrigerar ett fel som kan uppstå vid installation från Adobe Exchange-panelen.</sv_SE>
+		<tr_TR>Bu güncelleme Adobe Exchange panelinden yükleme yapılırken oluşabilecek bir sorunu düzeltir.</tr_TR>
+		<uk_UA>В оновленні виправлено помилку, що виникає під час встановлення програм із панелі Adobe Exchange.</uk_UA>
+		<zh_CN>此更新可修复从 Adobe Exchange 面板安装时出现的问题。</zh_CN>
+		<zh_TW>此更新可修正從 Adobe Exchange 面板進行安裝時發生的問題。</zh_TW>
+	</Description>
+    <AffectedChannels><ChannelID>AdobeExtensionManagerCS6-6.0</ChannelID>
+    </AffectedChannels>
+    <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobePatchInstaller.app</ExecutableName>
+      <Size>6493717</Size>
+      
+      
+      
+    </File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{BF667E23-0186-41F1-ACAE-5786D4B34F56}</UpdatePayloadID>
+  <OwningPayloadID>{83463106-DD1C-4FE5-A61C-DF6715472AD4}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^[Aa][Dd][Oo][Bb][Ee] [Ee][Xx][Tt][Ee][Nn][Ss][Ii][Oo][Nn] [Mm][Aa][Nn][Aa][Gg][Ee][Rr] [Cc][Ss]6$</Process>
+  </ConflictingProcesses>
+</Manifest>

@@ -1,0 +1,541 @@
+/*
+*	File: accountbar.js
+*	Author: Robert Widmer
+*	Date: 12/3/09
+*	Description: This file contains the functions necessary to make the account bar and element library work
+*	Requires: jQuery, jGrowl
+*/	
+
+//Let's us know the library hasn't been loaded the first time
+var elementLibraryLoaded = false,
+
+//Let's make some global references to the element library so we don't have to find them every time we need to use them
+$elementLibrary = $j("#element_library"),
+$elementLibraryLoadingTD = $j("#element_library_loading_td"),
+$addElementsDiv = $j("#add_elements_menu_div"),
+$accountBar = $j("#acct_bar"),
+$accountBarMenus = $j("div.acct_menus");
+
+//Store code to make addable elements draggable to prevent duping
+function initializeAddableElements(){
+	var lastEl,
+		qtipParams = {
+			content: {
+				attr: 'alt'
+			},
+			show: {
+				delay: 250,
+				solo: true,
+				event: "mouseenter"
+			},
+			hide: {
+				event: "mouseleave"
+			},
+			position: {
+				adjust: {
+					x: 20,
+					method: "flip flip"
+				},
+				at: "top left",
+				my: "bottom center",
+				viewport: $j(window)
+			},
+			style: {
+				width: 250,
+				tip: "bottomMiddle",
+				classes: "ui-account-bar"
+			}
+		};
+	$j(".addable_element", $elementLibrary).draggable({
+			appendTo: "#contentdiv",
+			connectToSortable: ".portal_column",
+			cursorAt: {top: 5, left: 5},
+			helper: "clone",
+			// opacity: 0.6,
+			revert: "invalid",
+			revertDuration: 0,
+			start : function(e,u){
+				lastEl = $j(this);
+				lastEl.trigger('mouseleave');
+				lastEl.qtip('disable');
+				u.helper.find('.saved_element_controls').hide();
+			},
+			stop : function(e,u){
+				lastEl.qtip('enable');
+			}
+		}).qtip(qtipParams);
+}
+
+//Make the add elements library work
+function loadElementLibrary(searchString, refresh){
+	if(!searchString){
+		searchString = "";
+	}
+	if(!refresh){
+		refresh = false;
+	}
+	$elementLibrary.stop();
+	$j(".addable_element", $elementLibrary).qtip('hide');
+	if(searchString !== "" || !elementLibraryLoaded || refresh){
+		if(refresh){
+			$j("td:not(#element_library_loading_td)", $elementLibrary).remove();
+			searchString = "";
+		}else{
+			$j("td", $elementLibrary).hide().removeClass("element_library_first");
+		}
+		$elementLibraryLoadingTD.show();
+		$j("td.element_search_results", $elementLibrary).remove();
+		$elementLibrary.css("left", $elementLibraryLoadingTD.position().left);
+		$j.ajax({
+			cache: false,
+			data: {method: "getElementLibrary", searchString: searchString, isAdmin: $j("#acct_menu").length === 0},
+			dataType: "html",
+			type: "POST",
+			url: "cf_elements/elementremote.cfc",
+			error: function(){$j.jGrowl("There was an error loading the element library. Please refresh the page and try again.");},
+			success: function(data, textStatus){
+					if(textStatus.search(/success/) > -1){
+						$j("#element_library_loading_td").hide();
+						$j("tr:first", $elementLibrary).prepend(data);
+						initializeAddableElements();
+						if(searchString === ""){
+							elementLibraryLoaded = true;
+						}
+					}else{
+						$j.jGrowl("There was an error loading the element library. Please refresh the page and try again.");
+					}
+				}
+		});
+	}else{
+		$j("td.element_search_results", $elementLibrary).remove();
+		$j("#element_library_loading_td").hide();
+		$j("td:not(#element_library_loading_td)", $elementLibrary).show().removeClass("element_library_first");
+		$j("td:first:visible",$elementLibrary).addClass("element_library_first");
+		leftAdjuster = $j("td.element_library_first",$elementLibrary);
+		if(leftAdjuster.length > 0){
+			$elementLibrary.css({"left": leftAdjuster.position().left});
+		}
+	}	
+}
+
+
+//All new development should be done inside this function if possible
+(function(window,$j,undefined){
+	var mouseMoved = true, //Indicates if the mouse has moved for updating the message count, initialized to true on page load because we know the user is there
+		selectedString = 'selected',
+		unreadMessageUpdateInterval = 15000; // The time between updates, currently 15 seconds
+	
+	//Position the menu's divs
+	$j(".acct_buttons:not(#add_elements_menu)").each(function(){
+			var $menuTab = $j(this);
+			$j("#"+$menuTab.attr("id")+"_div").css("left", $menuTab.position().left);
+			if($menuTab.attr("id") == 'acct_menu'){
+				// the margin-left css attr on this causes wrong position
+				$j("#"+$menuTab.attr("id")+"_div").css("left", 24);
+			} 
+		});
+		
+	//Resize the element library if the window is resized, may not need to do this
+	$j(window).resize(function(){$j("#element_library_viewport").width($j("#add_elements_menu_div").width()-64);});			
+			
+	//Make the close button work on the element library
+	$j("#element_library_close").click(function(){$j('#add_elements_menu').click();});
+	
+	//This function is for rotating carousel oldEl and newEl must be jQuery objects
+	function elementLibraryRotate($oldEl, $newEl){
+		if($newEl.length){
+			$elementLibrary.stop();
+			$elementLibrary.animate({"left": -$newEl.position().left}, 1000);
+			$oldEl.removeClass("element_library_first");
+			$newEl.addClass("element_library_first");
+		}
+		$j(".addable_element", $elementLibrary).qtip('hide');
+	}
+		
+	//Make the scroll buttons work
+	$j("#element_library_next").click(function(){
+			var $currentEl = $j(".element_library_first", $elementLibrary);
+			elementLibraryRotate($currentEl, $currentEl.next("td:visible"));
+		});
+	
+	$j("#element_library_prev").click(function(){
+			var $currentEl = $j(".element_library_first", $elementLibrary);
+			elementLibraryRotate($currentEl, $currentEl.prev("td:visible"));
+		});
+		
+	//Make control buttons work
+	$j("#add_elements_menu_div td.element_library_control").click(function(){
+			var $currentEl = $j(".element_library_first", $elementLibrary),
+				$nextEl = $j("."+$j(this).text()+"_elements_start:visible:first", $elementLibrary);
+			if($nextEl.length){
+				elementLibraryRotate($currentEl, $nextEl);
+			}else{
+				elementLibraryRotate($currentEl, $currentEl.nextAll("td:visible:last"));
+			}
+		});
+	
+	//Make search function work
+	$j("#element_search_button").click(function(){
+			//$j("#element_search_clear").fadeIn();
+			$j("#element_search_clear").animate({opacity:1},150);
+			loadElementLibrary($j("#element_search_box").val());
+		});
+		
+	//Make search function run on "enter" keypress
+	$j("#element_search_form").submit(function(){
+			//$j("#element_search_clear").fadeIn();
+			$j("#element_search_clear").animate({opacity:1},150);
+			loadElementLibrary($j("#element_search_box").val());
+			return false;
+		});
+
+	//Make the menus work
+	$j(".acct_buttons:not(#logoff_button)").click(function(){
+			var $menuTab = $j(this),
+				tabID = $menuTab.attr("id"),
+				$menuDiv = $j("#"+tabID+"_div");
+			$j(".portal_column").removeClass("portal_column_bottom");
+			if($menuTab.hasClass(selectedString)){
+				$j(".acct_buttons").removeClass(selectedString);
+				$menuDiv.slideUp();
+			}else{
+				$j(".acct_menus,#add_elements_menu_div").slideUp();
+				$j(".acct_buttons").removeClass(selectedString);
+				$menuTab.addClass(selectedString);
+				$menuDiv.slideDown();
+			}
+			if(tabID === "add_elements_menu"){
+				$j("body").addClass("body_shift_up");
+				if($menuTab.hasClass(selectedString)){
+					$j(".portal_column").addClass("portal_column_bottom");
+				}
+				if(!elementLibraryLoaded){
+					$j("#element_library_viewport").width($j("#add_elements_menu_div").width()-64);
+					loadElementLibrary();
+				}
+			}
+		});
+		
+		
+	//Take care of updating the message counts
+	function requestUnreadMessageCount(){
+		if(mouseMoved){
+			$j.ajax({
+				data : {
+					method : 'getUnreadMessageCount'
+				},
+				dataType : 'json',
+				error : function(){
+						mouseMoved = false;
+				},
+				success : function(data){
+					mouseMoved = false;
+					if(data.count !== undefined){
+						$j('.unreadMessageCount').trigger('updateMessageCount',[data.count]);
+					}
+					setTimeout(requestUnreadMessageCount,unreadMessageUpdateInterval);
+					/* Set up the mousemove handler so that we know that the mouse was moved
+						if it gets more complicated than this the handler should be a seperately defined function */
+					$j(window).one('mousemove',function(){ mouseMoved = true;});
+				},
+				type : 'post',
+				url : 'cf_social/endpoints/messaging.cfm'
+			});
+		}else{
+			// The mouse hasn't moved in a while set it so that we update the message count the next time the mouse moves
+			$j(window).one('mousemove',function(){
+				mouseMoved = true;
+				setTimeout(requestUnreadMessageCount,2000); // Set it to run 2 seconds after the mouse is moved in case they are just clicking on a link
+			});
+		}
+	};
+	
+	// If the messages button exists, start the timer for the message count, currently set to 15 seconds
+	if($j('.unreadMessageCount').length){
+		setTimeout(requestUnreadMessageCount,unreadMessageUpdateInterval);
+	}
+	
+	// I turned this in to an event so that we can update the count from anywhere without having to know what happens when we update it
+	// newCount is the actual count that will be set
+	$j('.unreadMessageCount').on('updateMessageCount',function(event, newCount){
+			var $this = $j(this),
+				oldCount = parseInt($this.text(), 10),
+				newCount = newCount?newCount:0; //Make sure newCount is >= 0
+			$this.text(newCount);
+			// add a class to hide count if it's 0
+			if(newCount >= 1 && $this.hasClass('hideMsgCnt')){ 
+				$this.removeClass('hideMsgCnt'); 
+			} else if(newCount == 0 && !$this.hasClass('hideMsgCnt')) { 
+				$this.addClass('hideMsgCnt');
+			}
+			if(newCount - oldCount > 0){
+				// We have new messages so we need to deal with updating the "inbox" if it is on the page
+				$j('#conversationList').trigger('loadNewMessages');
+			}
+		})
+		// reduceCount is how much to reduce the count by
+		.on('reduceMessageCount',function(event, reduceCount){
+			var $this = $j(this);
+			reduceCount = reduceCount?reduceCount:0; //Make sure reduceCount is >= 0
+			var newCount = Math.max(0, parseInt($this.text(), 10) - reduceCount);
+			// add a class to hide count if it's 0
+			if(newCount >= 1 && $this.hasClass('hideMsgCnt')){ 
+				$this.removeClass('hideMsgCnt'); 
+			} else if(newCount == 0 && !$this.hasClass('hideMsgCnt')) { 
+				$this.addClass('hideMsgCnt');
+			}
+			$this.text(newCount);
+		});
+	
+
+	//If this is IE, we get to adjust everything
+	if($j.browser.msie && parseInt($j.browser.version, 10) === 6){
+		$accountBar.css({position:"absolute"});
+		$addElementsDiv.css({position:"absolute"});
+		$accountBarMenus.css({position:"absolute"});
+		$j.fx.off = true;
+		$j(window).scroll(function(){
+			var theVal = $j(window).height()-26+ $j(document).scrollTop();
+			$accountBar.css({top: theVal+'px'});
+			$addElementsDiv.css({top: (theVal-5-$addElementsDiv.height())+'px'});
+			$accountBarMenus.filter(":visible").css("top",function(){
+					return theVal - $j(this).height();
+				});
+		});
+	}
+	
+})(window,jQuery);
+
+// This is the functionality for attaching files and links to social pieces
+(function($j){
+	var numAttachments = 0, // The number of attachments on the current post
+		socialPrefix = 'fsSocial',
+		socialPostAttachPrefix = socialPrefix + 'PostAttach',
+		fileAttachmentOptionsClass = socialPostAttachPrefix + 'Option',
+		deleteIconClass = 'fsGlyphRedX',
+		$selectFileLocationMarker,
+		FS = window.FS = window.FS || {};
+		
+		// Make sure we have an FS.social
+		FS.social = FS.social || {}
+	
+	// Make the attachments stuff work
+	function attachFileComponentHandler(e){
+		var $this = $j(this),
+			$target = $j(e.target),
+			$attachments,
+			ret = false,
+			txt;
+		
+		if($target.hasClass(fileAttachmentOptionsClass)){
+			$attachments = $this.find('.' + socialPostAttachPrefix + 'ments').show();
+			
+			// Build the entry row to attach
+			txt = '<div class="' + socialPostAttachPrefix + 'FileEntry"><input type="text" name="attachmentLabel_@i" placeholder="Display Name"><input type="hidden" name="attachmentType_@i" value="';
+			if($target.hasClass(socialPostAttachPrefix + 'URL')){
+				txt += 'url"><input type="text" placeholder="url"';
+			}else if($target.hasClass(socialPostAttachPrefix + 'Selected')){
+				txt += 'selectedfile"><button class="' + socialPostAttachPrefix + 'SelectFile">My Files</button><input class="'
+					+ socialPostAttachPrefix + 'SelectFileName" type="text" name="attachmentFileName_@i" value="No file selected" readonly><input type="hidden"';
+			}else{
+				txt += 'upload"><input type="hidden" name="attachmentOriginalFileName_@i" value=""><input type="file"';
+			}
+			txt += ' name="attachment_@i"><a href="#" title="Remove Attachment" class="' + deleteIconClass + '"></a></div>';
+			
+			// Increment the number of attachments, append the attachment number to the input names, attach the html and make sure placeholders work
+			$j(txt.replace(/@i/g,++numAttachments)).appendTo($attachments).find('input').placeholder();
+			
+		}else if($target.hasClass(socialPostAttachPrefix + 'SelectFile')){
+			$selectFileLocationMarker = $target;
+			popFileManager();
+		}else if($target.hasClass(deleteIconClass)){
+			$target.parent().remove();
+			$attachments = $this.find('.' + socialPostAttachPrefix + 'ments');
+			if($attachments.children().length == 0){
+				$attachments.hide();
+				numAttachments = 0;
+			}
+		}else{
+			ret = true;
+		}
+		return ret;
+	};
+			
+	function popFileManager(){
+		var popUrl = "cf_filemanager/adminfiles.cfm?do=refresh&opener=social",
+			properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=750,height=550',
+			popup = window.open(popUrl,'pickFile', properties);
+		if (popup == undefined) {
+			alert('It appears that your browser has popup blocking enabled.\nPlease modify this setting to allow for full functionality.');
+		}else{
+			popup.focus();
+		}
+	};
+	
+	// Need this function for returning files from file manager
+	FS.social.selectFile = function(path, name){
+		$selectFileLocationMarker.next().val(name).next().val(path);
+	};
+
+	$j.fn.socialAttachFile = function(cmd) { 
+		cmd = cmd || 'init';
+		switch(cmd){
+			case 'clear':
+				// Clears the list of files and urls that have been added
+				this.each(function(){
+					$j(this).find("."+socialPostAttachPrefix+"ments").hide().empty();
+					numAttachments = 0;
+				});
+				break;
+			default:
+				this.each(function() {
+					// Attach the click handler and a handler for when files are to be uploaded
+					$j(this).click(attachFileComponentHandler)
+						.on('change', 'input[type="file"]', function(e){
+							var $target = $j(e.target);
+							$target.prev().val($target.val().replace("C:\\fakepath\\", ""));
+						})
+						.on('keydown', function(e){
+							return e.keyCode !== 13;
+						});
+				});
+		}
+		
+		return this;
+	};
+})(jQuery);
+
+//Clear search
+function clearElementSearch(){
+	$j("#element_search_box").val("");
+	$j("#element_search_button").click();
+	//$j("#element_search_clear").fadeOut();
+	$j("#element_search_clear").animate({opacity:0},150);
+}
+
+function bookmarkPage() {
+	$j.getJSON("extensions/components/page.cfc", {method: "bookmarkPage", id: pageid}, function(data, textStatus){
+			if(textStatus.search(/success/) > -1){
+				switch(data){
+					case 4:
+						$j.jGrowl("This page was successfully bookmarked");
+						break;
+					case 1:
+						$j.jGrowl("You must be logged in to bookmark a page");
+						break;
+					case 2:
+						$j.jGrowl("The page you are trying to bookmark is not a valid page");
+						break;
+					case 3:
+						$j.jGrowl("You have already bookmarked this page");
+						break;
+					default:
+						$j.jGrowl("There was an error bookmarking this page. Please try again or contact your administrator.");
+				}
+			}else{
+				$j.jGrowl("There was an error connecting to the server. Please try again.");
+			}
+		});
+}
+
+function unbookmark(id){
+	var $lis = $j("li[id^=bookmark_"+id+"]").hide();
+	$j.post("extensions/components/page.cfc", {method: "unbookmarkPage", id: id}, function(data, textStatus){
+			if(textStatus.search(/success/) == -1){
+				$j.jGrowl("There was an error deleting the bookmark. Please try again");
+				$lis.show();
+			}
+		});
+}
+
+function personalFiles() {
+	popUp('cf_filemanager/adminfiles.cfm?opener=personal',750,550);
+}
+
+function myClassrooms() {
+	popUp('cf_group/admingrouppop.cfm?classmanager=my',810,600);
+}
+
+/*
+var quizWinClosed = true;
+
+function myQuizzes(id){
+
+	myAnswer = true;
+
+	// alert("accountbar.js:" + quizWinClosed);
+
+	if(id =='new') {
+		if(!quizWinClosed) {
+			myAnswer = confirm('If you create a new quiz, any changes in Quiz Manager that haven\'t been saved will be lost.\nAre you sure you want to create a new quiz?');
+			if(myAnswer == false) {				
+				return false;
+			}
+		}
+		
+		quizWin = popUpQuizMgr('cf_quiz/admin.cfm?createquiz=1',990,700);
+		
+	}	
+		
+	else {
+		quizWin = popUpQuizMgr('cf_quiz/admin.cfm',990,700);
+	}
+	
+}
+*/
+
+function updateProfile() {
+	popUp('cf_directory/cp.cfm',620,600);
+}
+
+function changePassword() {
+	popUp('cf_directory/cp.cfm?tab=account',620,600);
+}
+
+function mySubscriptions() {
+	popUp('cf_directory/cp.cfm?tab=subscr',620,600);
+}
+
+function popContact(id){
+	popUp('cf_directory/dirprofile.cfm?p=1&id='+id,535,500);
+}
+
+function deleteContact(id){
+	$j.post("extensions/components/person.cfc", {method: "deleteContact", id: id}, function(data, textStatus){
+			var $div;
+			if(textStatus.search(/success/) > -1){
+				$j("#user_contact_"+id).hide();
+				$div = $j('#contacts_menu_div');
+				if(!$div.find('li:visible').length){
+					$div.hide();
+					$j('#contacts_menu').hide();
+				}
+			}else{
+				$j.jGrowl("There was an error deleting the contact. Please try again");
+			}
+		});
+}
+
+function addContactToMenu(id,fName,lName){
+	var idNum = parseInt(id,10),
+		$menu = $j('#contacts_menu');
+	if(isNaN(idNum) || idNum == 0) return;
+	$menu.show();
+	$j('#contacts_menu_div').css("left", $menu.offset().left).children('ul').append('<li id="user_contact_'+id+'"><a href="javascript:void(0);" onClick="popContact('+id+')">'+fName+' '+lName+'</a><img src="images/x.gif" style="float:right;cursor:pointer;" onclick="deleteContact('+id+');"></li>');
+}
+
+//Select color functions, including them here because users can now select colors as well
+function selectColor(field,formName) {
+	holdColorField = field;
+	if (formName == undefined){formName = 'element_settings_form'};
+	holdColor = [field,formName];holdColorFormName = formName;
+	window.open("editor/colorcube.cfm?thisvalue="+document[formName][field].value,
+				'selColor', 
+				'toolbar=no,location=no,directories=no,status=no,menubar=yes,scrollbars=no,resizable=yes,width=400,height=280')
+				.focus();
+}
+	
+function returnColor(theColor) {
+	document[holdColorFormName][holdColorField].value = theColor;
+	document.getElementById(holdColorField+'_preview').style.backgroundColor = "#"+theColor;
+}

@@ -1,0 +1,3470 @@
+.csimgbg
+{
+	background-image:url('csssprites.png');
+}
+.csimg
+{
+	overflow:hidden;
+}
+.sprites-themes-gif
+{
+	background-position:0px 0px;
+	width: 36px;
+	height: 36px;
+}
+.sprites-email-xlg-gif
+{
+	background-position:-38px 0px;
+	width: 36px;
+	height: 36px;
+}
+.sprites-preview-lg-gif
+{
+	background-position:-76px 0px;
+	width: 36px;
+	height: 36px;
+}
+.sprites-ctrlpnl-gif
+{
+	background-position:-114px 0px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-datebook-gif
+{
+	background-position:-148px 0px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-sp-dict-gif
+{
+	background-position:-182px 0px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-sp-opts-gif
+{
+	background-position:-216px 0px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-pda-gif
+{
+	background-position:-250px 0px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-bdi_qst-gif
+{
+	background-position:-284px 0px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-cal-proc-gif
+{
+	background-position:-318px 0px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-junkemailbig-gif
+{
+	background-position:0px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-oof-gif
+{
+	background-position:-34px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-notjunkbig-png
+{
+	background-position:-68px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-miss_c-gif
+{
+	background-position:-102px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-postreplybig-png
+{
+	background-position:-136px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-cal-rsc-priv-gif
+{
+	background-position:-170px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-calendar-gif
+{
+	background-position:-204px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-calwrkwk-gif
+{
+	background-position:-238px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-cal-rsc-msg-gif
+{
+	background-position:-272px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-scr-opt-gif
+{
+	background-position:-306px -38px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-cal-rsc-perm-gif
+{
+	background-position:0px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-changepass-gif
+{
+	background-position:-34px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-reminder-gif
+{
+	background-position:-68px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-rcvdelitms-gif
+{
+	background-position:-102px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-rules-gif
+{
+	background-position:-136px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-replybig-png
+{
+	background-position:-170px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-sig-lg-gif
+{
+	background-position:-204px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-replyallbig-png
+{
+	background-position:-238px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-emptydel-gif
+{
+	background-position:-272px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-attachitem-png
+{
+	background-position:-306px -72px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-emptyfolderbig-png
+{
+	background-position:0px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-anropts-gif
+{
+	background-position:-34px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-email-lg-gif
+{
+	background-position:-68px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-forwardbig-png
+{
+	background-position:-102px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-globe-gif
+{
+	background-position:-136px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-accsblty-gif
+{
+	background-position:-170px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-excal-png
+{
+	background-position:-204px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-about-gif
+{
+	background-position:-238px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-format-gif
+{
+	background-position:-272px -106px;
+	width: 32px;
+	height: 32px;
+}
+.sprites-obdv-gif
+{
+	background-position:-306px -106px;
+	width: 1px;
+	height: 26px;
+}
+.sprites-vm_optr-gif
+{
+	background-position:-309px -106px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-busy-png
+{
+	background-position:-335px -106px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-dnd-png
+{
+	background-position:0px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-blocked-png
+{
+	background-position:-26px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-avlbl-png
+{
+	background-position:-52px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-away-png
+{
+	background-position:-78px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-eml-png
+{
+	background-position:-104px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-pf-gif
+{
+	background-position:-130px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-cntct-png
+{
+	background-position:-156px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-unkwn-png
+{
+	background-position:-182px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-vm_optur-gif
+{
+	background-position:-208px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-dcmnt-gif
+{
+	background-position:-234px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-offline-png
+{
+	background-position:-260px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-maybe-busy-png
+{
+	background-position:-286px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-bdi_inf-gif
+{
+	background-position:-312px -140px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-clndr-png
+{
+	background-position:0px -166px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-tui_f-gif
+{
+	background-position:-26px -166px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-exbig-maybe-av-png
+{
+	background-position:-52px -166px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-tsklg-png
+{
+	background-position:-78px -166px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-bdi_wrn-gif
+{
+	background-position:-104px -166px;
+	width: 24px;
+	height: 24px;
+}
+.sprites-backcolor-png
+{
+	background-position:-130px -166px;
+	width: 34px;
+	height: 22px;
+}
+.sprites-forecolor-png
+{
+	background-position:-166px -166px;
+	width: 34px;
+	height: 22px;
+}
+.sprites-justifyleft-png
+{
+	background-position:-202px -166px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-removeformat-png
+{
+	background-position:-227px -166px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-insertorderedlistrtl-png
+{
+	background-position:-252px -166px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-insertunorderedlist-png
+{
+	background-position:-277px -166px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-insertunorderedlistrtl-png
+{
+	background-position:-302px -166px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-insertorderedlist-png
+{
+	background-position:-327px -166px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-indent-png
+{
+	background-position:0px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-indentrtl-png
+{
+	background-position:-25px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-inserthorizontalrule-png
+{
+	background-position:-50px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-outdentrtl-png
+{
+	background-position:-75px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-createlink-png
+{
+	background-position:-100px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-redo-png
+{
+	background-position:-125px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-customize-png
+{
+	background-position:-150px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-justifycenter-png
+{
+	background-position:-175px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-justifyright-png
+{
+	background-position:-200px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-outdent-png
+{
+	background-position:-225px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-blockdirltr-png
+{
+	background-position:-250px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-unlink-png
+{
+	background-position:-275px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-superscript-png
+{
+	background-position:-300px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-strikethrough-png
+{
+	background-position:-325px -192px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-undo-png
+{
+	background-position:0px -216px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-blockdirrtl-png
+{
+	background-position:-25px -216px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-subscript-png
+{
+	background-position:-50px -216px;
+	width: 23px;
+	height: 22px;
+}
+.sprites-lgnexlogo-gif
+{
+	background-position:-75px -216px;
+	width: 22px;
+	height: 22px;
+}
+.sprites-down-b-gif
+{
+	background-position:-99px -216px;
+	width: 10px;
+	height: 20px;
+}
+.sprites-dwn-gry-gif
+{
+	background-position:-111px -216px;
+	width: 10px;
+	height: 20px;
+}
+.sprites-recover-png
+{
+	background-position:-123px -216px;
+	width: 19px;
+	height: 19px;
+}
+.sprites-bcnclsrch-gif
+{
+	background-position:-144px -216px;
+	width: 19px;
+	height: 19px;
+}
+.sprites-bsearch-gif
+{
+	background-position:-165px -216px;
+	width: 19px;
+	height: 19px;
+}
+.sprites-evt-break-gif
+{
+	background-position:-186px -216px;
+	width: 3px;
+	height: 19px;
+}
+.sprites-go2-gif
+{
+	background-position:-191px -216px;
+	width: 18px;
+	height: 18px;
+}
+.sprites-tbdv-gif
+{
+	background-position:-211px -216px;
+	width: 1px;
+	height: 18px;
+}
+.sprites-close-gif
+{
+	background-position:-214px -216px;
+	width: 18px;
+	height: 17px;
+}
+.sprites-bbdvwht-gif
+{
+	background-position:-234px -216px;
+	width: 1px;
+	height: 17px;
+}
+.sprites-bbdvblk-gif
+{
+	background-position:-237px -216px;
+	width: 1px;
+	height: 17px;
+}
+.sprites-bbdv25gry-gif
+{
+	background-position:-240px -216px;
+	width: 1px;
+	height: 17px;
+}
+.sprites-tbdvnb-gif
+{
+	background-position:-243px -216px;
+	width: 1px;
+	height: 17px;
+}
+.sprites-bbdv75gry-gif
+{
+	background-position:-246px -216px;
+	width: 1px;
+	height: 17px;
+}
+.sprites-bbdv50gry-gif
+{
+	background-position:-249px -216px;
+	width: 1px;
+	height: 17px;
+}
+.sprites-implow-gif
+{
+	background-position:-252px -216px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ip-fwd-gif
+{
+	background-position:-270px -216px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ignorecnv-png
+{
+	background-position:-288px -216px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-imphigh-gif
+{
+	background-position:-306px -216px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-impnorm-gif
+{
+	background-position:-324px -216px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tsk-shared-out-gif
+{
+	background-position:-342px -216px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-info-gif
+{
+	background-position:0px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-inbox-png
+{
+	background-position:-18px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tsk-shared-to-gif
+{
+	background-position:-36px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ip-rpl-gif
+{
+	background-position:-54px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-move-gif
+{
+	background-position:-72px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mrkcmplt-gif
+{
+	background-position:-90px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-encyptd-fwd-gif
+{
+	background-position:-108px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-minusrtl-png
+{
+	background-position:-126px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ml-gif
+{
+	background-position:-144px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-move-folder-gif
+{
+	background-position:-162px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-fwd-gif
+{
+	background-position:-180px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-irm-fwd-gif
+{
+	background-position:-198px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-irm-rd-gif
+{
+	background-position:-216px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-encyptd-rd-gif
+{
+	background-position:-234px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-encyptd-rpl-gif
+{
+	background-position:-252px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-encyptd-gif
+{
+	background-position:-270px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-junkemail-gif
+{
+	background-position:-288px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tsk-rcvd-gif
+{
+	background-position:-306px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tsk-rcr-gif
+{
+	background-position:-324px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ip-gif
+{
+	background-position:-342px -240px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-journal-gif
+{
+	background-position:0px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-jrnl-gif
+{
+	background-position:-18px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-lvlogo-png
+{
+	background-position:-36px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-maps-gif
+{
+	background-position:-54px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-minus-png
+{
+	background-position:-72px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tsk-dlg-gif
+{
+	background-position:-90px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-lp-gif
+{
+	background-position:-108px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-lpg-gif
+{
+	background-position:-126px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-vm-irm-rpl-gif
+{
+	background-position:-144px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-opn-gif
+{
+	background-position:-162px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-shared-out-gif
+{
+	background-position:-180px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-vm-unrd-gif
+{
+	background-position:-198px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-vm-rd-gif
+{
+	background-position:-216px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-vm-irm-gif
+{
+	background-position:-234px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-png
+{
+	background-position:-252px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-vm-irm-rd-gif
+{
+	background-position:-270px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-up-gif
+{
+	background-position:-288px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-shared-to-gif
+{
+	background-position:-306px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-tsks-gif
+{
+	background-position:-324px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-web-gif
+{
+	background-position:-342px -258px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-cntcts-gif
+{
+	background-position:0px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-jrnl-gif
+{
+	background-position:-18px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-nts-png
+{
+	background-position:-36px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fax_fwd-gif
+{
+	background-position:-54px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fax_reply-gif
+{
+	background-position:-72px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fldr-clndr-gif
+{
+	background-position:-90px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-warn-png
+{
+	background-position:-108px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-vm_reply-gif
+{
+	background-position:-126px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-vm_fwd-gif
+{
+	background-position:-144px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-yellowshield-gif
+{
+	background-position:-162px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-yahoo-png
+{
+	background-position:-180px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-warning-png
+{
+	background-position:-198px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fpg-gif
+{
+	background-position:-216px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fvdoc-gif
+{
+	background-position:-234px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fvrfltr-gif
+{
+	background-position:-252px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tskreq-dec-gif
+{
+	background-position:-270px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-forwardsms-gif
+{
+	background-position:-288px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fp-gif
+{
+	background-position:-306px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-help-png
+{
+	background-position:-324px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-icon-doc-gif
+{
+	background-position:-342px -276px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-icon-flag-gif
+{
+	background-position:0px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fwdattach-gif
+{
+	background-position:-18px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tskreq-acc-gif
+{
+	background-position:-36px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tsk-gif
+{
+	background-position:-54px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-undo-gif
+{
+	background-position:-72px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-flg-empty-gif
+{
+	background-position:-90px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-flg-sender-gif
+{
+	background-position:-108px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-flg-compl-dsbl-gif
+{
+	background-position:-126px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-flg-compl-gif
+{
+	background-position:-144px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-flg-dsbl-gif
+{
+	background-position:-162px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-typng-gif
+{
+	background-position:-180px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-tskreq-gif
+{
+	background-position:-198px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-forward-gif
+{
+	background-position:-216px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fltr-addfav-png
+{
+	background-position:-234px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fltr-clr-gif
+{
+	background-position:-252px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fltr-gif
+{
+	background-position:-270px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-recur-gif
+{
+	background-position:-288px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sl-gif
+{
+	background-position:-306px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-reject-gif
+{
+	background-position:-324px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sms-conv-forward-gif
+{
+	background-position:-342px -294px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-recallflr-gif
+{
+	background-position:0px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-recallsuc-gif
+{
+	background-position:-18px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-siginvalid-gif
+{
+	background-position:-36px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-reply-gif
+{
+	background-position:-54px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-replyall-gif
+{
+	background-position:-72px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rem-sm-png
+{
+	background-position:-90px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sigwarning-gif
+{
+	background-position:-108px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sigvalid-gif
+{
+	background-position:-126px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-prev-gif
+{
+	background-position:-144px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sms-conv-gif
+{
+	background-position:-162px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-print-gif
+{
+	background-position:-180px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-post-gif
+{
+	background-position:-198px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-pp-gif
+{
+	background-position:-216px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ppg-gif
+{
+	background-position:-234px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rd-sel-gif
+{
+	background-position:-252px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rd-unsel-gif
+{
+	background-position:-270px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-recall-gif
+{
+	background-position:-288px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-pst-gif
+{
+	background-position:-306px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sms-conv-reply-gif
+{
+	background-position:-324px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rcvdelitms_small-png
+{
+	background-position:-342px -312px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpt-dr-gif
+{
+	background-position:0px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpt-ipnnrn-gif
+{
+	background-position:-18px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpt-ipnrn-gif
+{
+	background-position:-36px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpo_rtl-gif
+{
+	background-position:-54px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpr-gif
+{
+	background-position:-72px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpr_rtl-gif
+{
+	background-position:-90px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-save-png
+{
+	background-position:-108px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rss-gif
+{
+	background-position:-126px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rul-sml-gif
+{
+	background-position:-144px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpt-ndr-gif
+{
+	background-position:-162px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-search-png
+{
+	background-position:-180px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-scr-rcpt-gif
+{
+	background-position:-198px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-replyphone-gif
+{
+	background-position:-216px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-replysms-gif
+{
+	background-position:-234px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-root-png
+{
+	background-position:-252px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sig-gif
+{
+	background-position:-270px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-replyallsms-gif
+{
+	background-position:-288px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-showcalendar-gif
+{
+	background-position:-306px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpo-gif
+{
+	background-position:-324px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sendsms-gif
+{
+	background-position:-342px -330px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-send-gif
+{
+	background-position:0px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpb-gif
+{
+	background-position:-18px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-rpb_rtl-gif
+{
+	background-position:-36px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sentitems-png
+{
+	background-position:-54px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtgreq-cancel-gif
+{
+	background-position:-72px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtgreq-gif
+{
+	background-position:-90px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtgrsp-accept-gif
+{
+	background-position:-108px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtg-decline-png
+{
+	background-position:-126px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtg-tent-png
+{
+	background-position:-144px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtgrcpnt-gif
+{
+	background-position:-162px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-newchat-gif
+{
+	background-position:-180px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-newemail-png
+{
+	background-position:-198px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-newfldr-gif
+{
+	background-position:-216px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtgrsp-decline-gif
+{
+	background-position:-234px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtgrsp-tent-gif
+{
+	background-position:-252px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-new-png
+{
+	background-position:-270px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-rpl-gif
+{
+	background-position:-288px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-sgnd-fwd-gif
+{
+	background-position:-306px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-sgnd-rd-gif
+{
+	background-position:-324px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-irm-rpl-gif
+{
+	background-position:-342px -348px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-irm-gif
+{
+	background-position:0px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-rd-png
+{
+	background-position:-18px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msgdtls-gif
+{
+	background-position:-36px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msgopts-gif
+{
+	background-position:-54px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-mtg-accept-png
+{
+	background-position:-72px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-sgnd-rpl-gif
+{
+	background-position:-90px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-sgnd-gif
+{
+	background-position:-108px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-msg-unrd-png
+{
+	background-position:-126px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-paste-gif
+{
+	background-position:-144px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-perfmon-gif
+{
+	background-position:-162px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-spelling-gif
+{
+	background-position:-180px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-stkynt-gif
+{
+	background-position:-198px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-srchfdr-png
+{
+	background-position:-216px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sr-png
+{
+	background-position:-234px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-plus-png
+{
+	background-position:-252px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-plusrtl-png
+{
+	background-position:-270px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-pl_ont-gif
+{
+	background-position:-288px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-pfsmll-gif
+{
+	background-position:-306px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-sms-gif
+{
+	background-position:-324px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-phone-gif
+{
+	background-position:-342px -366px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-np-gif
+{
+	background-position:0px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-npg-gif
+{
+	background-position:-18px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-oc-png
+{
+	background-position:-36px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-next-gif
+{
+	background-position:-54px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-noterr-gif
+{
+	background-position:-72px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-notes-png
+{
+	background-position:-90px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-options-gif
+{
+	background-position:-108px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-oth-act-gif
+{
+	background-position:-126px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-outbox-gif
+{
+	background-position:-144px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-office-png
+{
+	background-position:-162px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-oof-sml-gif
+{
+	background-position:-180px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-opdlvrp-gif
+{
+	background-position:-198px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-dll-gif
+{
+	background-position:-216px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-docx-gif
+{
+	background-position:-234px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-css-gif
+{
+	background-position:-252px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-dnd-png
+{
+	background-position:-270px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-cs-gif
+{
+	background-position:-288px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-dot-gif
+{
+	background-position:-306px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-gif-gif
+{
+	background-position:-324px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-htc-gif
+{
+	background-position:-342px -384px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-exe-gif
+{
+	background-position:0px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-dotx-gif
+{
+	background-position:-18px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-dwt-gif
+{
+	background-position:-36px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-aspx-gif
+{
+	background-position:-54px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-avi-gif
+{
+	background-position:-72px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-aspc-gif
+{
+	background-position:-90px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-offline-png
+{
+	background-position:-108px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-asp-gif
+{
+	background-position:-126px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-bmp-gif
+{
+	background-position:-144px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-maybe-busy-png
+{
+	background-position:-162px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-maybe-av-png
+{
+	background-position:-180px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-cpp-gif
+{
+	background-position:-198px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-cab-gif
+{
+	background-position:-216px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-chm-gif
+{
+	background-position:-234px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-html-gif
+{
+	background-position:-252px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mpx-gif
+{
+	background-position:-270px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-msg-gif
+{
+	background-position:-288px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mpw-gif
+{
+	background-position:-306px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mpnt-gif
+{
+	background-position:-324px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-clear-gif
+{
+	background-position:-342px -402px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-odc-gif
+{
+	background-position:0px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-png-gif
+{
+	background-position:-18px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-pot-gif
+{
+	background-position:-36px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-pblsh-gif
+{
+	background-position:-54px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-one-gif
+{
+	background-position:-72px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-onp-gif
+{
+	background-position:-90px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-checkname-gif
+{
+	background-position:-108px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-jpg-gif
+{
+	background-position:-126px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-ini-gif
+{
+	background-position:-144px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-htt-gif
+{
+	background-position:-162px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-hxx-gif
+{
+	background-position:-180px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-js-gif
+{
+	background-position:-198px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mp3-gif
+{
+	background-position:-216px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mpg-gif
+{
+	background-position:-234px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mov-gif
+{
+	background-position:-252px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-master-gif
+{
+	background-position:-270px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mht-gif
+{
+	background-position:-288px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-shared-to-gif
+{
+	background-position:-306px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-shared-out-gif
+{
+	background-position:-324px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-contact-gif
+{
+	background-position:-342px -420px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-mtg-gif
+{
+	background-position:0px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-conflict-gif
+{
+	background-position:-18px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-contactdl-gif
+{
+	background-position:-36px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnt-shared-out-gif
+{
+	background-position:-54px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnclsrch-gif
+{
+	background-position:-72px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnt-shared-to-gif
+{
+	background-position:-90px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-copy-folder-gif
+{
+	background-position:-108px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-copy-to-folder-gif
+{
+	background-position:-126px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-irm-fwd-gif
+{
+	background-position:-144px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-irm-rd-gif
+{
+	background-position:-162px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-fwd-gif
+{
+	background-position:-180px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cntctsmll-gif
+{
+	background-position:-198px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-his-gif
+{
+	background-position:-216px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-irm-rpl-gif
+{
+	background-position:-234px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-rpl-gif
+{
+	background-position:-252px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-unrd-gif
+{
+	background-position:-270px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-rd-gif
+{
+	background-position:-288px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-week-gif
+{
+	background-position:-306px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cnv-msg-irm-unrd-gif
+{
+	background-position:-324px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cmpl_chk-gif
+{
+	background-position:-342px -438px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-btbcheckname-gif
+{
+	background-position:0px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-accdb-gif
+{
+	background-position:-18px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cut-gif
+{
+	background-position:-36px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-chat-gif
+{
+	background-position:-54px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ctgrs-gif
+{
+	background-position:-72px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-btbattach-png
+{
+	background-position:-90px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-ascx-gif
+{
+	background-position:-108px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-asf-gif
+{
+	background-position:-126px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-acs-gif
+{
+	background-position:-144px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-accde-gif
+{
+	background-position:-162px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-unkwn-png
+{
+	background-position:-180px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-wk-week-gif
+{
+	background-position:-198px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-month-gif
+{
+	background-position:-216px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-next-png
+{
+	background-position:-234px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-prev-png
+{
+	background-position:-252px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-copy-gif
+{
+	background-position:-270px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-mnupriv-gif
+{
+	background-position:-288px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cal-day-gif
+{
+	background-position:-306px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-clndrsmll-gif
+{
+	background-position:-324px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-canmtg-gif
+{
+	background-position:-342px -456px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-ctgrs-hdr-gif
+{
+	background-position:0px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-cmpldd-gif
+{
+	background-position:-18px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dl-user-gif
+{
+	background-position:-36px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_fwd_app-gif
+{
+	background-position:-54px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dl-other-gif
+{
+	background-position:-72px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_op_app-gif
+{
+	background-position:-90px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_fwd_rej-gif
+{
+	background-position:-108px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-chk-prtl-gif
+{
+	background-position:-126px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-drafts-png
+{
+	background-position:-144px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-doc-gif
+{
+	background-position:-162px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_cl_rej-gif
+{
+	background-position:-180px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-chk-unchk-gif
+{
+	background-position:-198px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-deleted-gif
+{
+	background-position:-216px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xslt-gif
+{
+	background-position:-234px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xsn-gif
+{
+	background-position:-252px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xsl-gif
+{
+	background-position:-270px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_rep_rej-gif
+{
+	background-position:-288px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_rep_app-gif
+{
+	background-position:-306px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-delayed_dlvr-gif
+{
+	background-position:-324px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-delete-png
+{
+	background-position:-342px -474px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dcmntsmll-gif
+{
+	background-position:0px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_op_rej-gif
+{
+	background-position:-18px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-zip-gif
+{
+	background-position:-36px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_rsp_cl_app-gif
+{
+	background-position:-54px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-addrbook-disabled-png
+{
+	background-position:-72px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-addct-gif
+{
+	background-position:-90px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-favrt-png
+{
+	background-position:-108px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-chk-chkd-gif
+{
+	background-position:-126px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-addrbook-png
+{
+	background-position:-144px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fax-unrd-gif
+{
+	background-position:-162px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-mpt-gif
+{
+	background-position:-180px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-fax-rd-gif
+{
+	background-position:-198px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-chgperm-gif
+{
+	background-position:-216px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-addcalendar-png
+{
+	background-position:-234px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-exclaim-gif
+{
+	background-position:-252px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-emlsmll-png
+{
+	background-position:-270px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-encrypted-gif
+{
+	background-position:-288px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-emailcontact-gif
+{
+	background-position:-306px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-elcfldr-gif
+{
+	background-position:-324px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-email-png
+{
+	background-position:-342px -492px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-appt-gif
+{
+	background-position:0px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-approve-gif
+{
+	background-position:-18px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_req-gif
+{
+	background-position:-36px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-error2-gif
+{
+	background-position:-54px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-apv_req_rep-gif
+{
+	background-position:-72px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xsd-gif
+{
+	background-position:-90px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-bddy-lst-gif
+{
+	background-position:-108px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-txt-gif
+{
+	background-position:-126px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-tif-gif
+{
+	background-position:-144px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-bdeleted-gif
+{
+	background-position:-162px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-rtf-gif
+{
+	background-position:-180px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-url-gif
+{
+	background-position:-198px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-potx-gif
+{
+	background-position:-216px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vsd-gif
+{
+	background-position:-234px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vdx-gif
+{
+	background-position:-252px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vbs-gif
+{
+	background-position:-270px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-bddeleted-gif
+{
+	background-position:-288px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-blocked-png
+{
+	background-position:-306px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-away-png
+{
+	background-position:-324px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-busy-png
+{
+	background-position:-342px -510px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-pps-gif
+{
+	background-position:0px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-ppt-gif
+{
+	background-position:-18px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-pptx-gif
+{
+	background-position:-36px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-chkbxhdr-gif
+{
+	background-position:-54px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-big-avlbl-png
+{
+	background-position:-72px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-rpmsg-gif
+{
+	background-position:-90px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-prj-gif
+{
+	background-position:-108px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-ptm-gif
+{
+	background-position:-126px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-wrd-gif
+{
+	background-position:-144px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-wv-gif
+{
+	background-position:-162px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-wmz-gif
+{
+	background-position:-180px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-wms-gif
+{
+	background-position:-198px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-wmv-gif
+{
+	background-position:-216px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xltx-gif
+{
+	background-position:-234px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xml-gif
+{
+	background-position:-252px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xlt-gif
+{
+	background-position:-270px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xcl-gif
+{
+	background-position:-288px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-xlsx-gif
+{
+	background-position:-306px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vsu-gif
+{
+	background-position:-324px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vsw-gif
+{
+	background-position:-342px -528px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-attach-png
+{
+	background-position:0px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vsl-gif
+{
+	background-position:-18px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vss-gif
+{
+	background-position:-36px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vst-gif
+{
+	background-position:-54px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-wmd-gif
+{
+	background-position:-72px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-wma-gif
+{
+	background-position:-90px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vtx-gif
+{
+	background-position:-108px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-dc-vsx-gif
+{
+	background-position:-126px -546px;
+	width: 16px;
+	height: 16px;
+}
+.sprites-drparw-gif
+{
+	background-position:-144px -546px;
+	width: 14px;
+	height: 16px;
+}
+.sprites-dc-gif
+{
+	background-position:-160px -546px;
+	width: 13px;
+	height: 16px;
+}
+.sprites-brwsfld-gif
+{
+	background-position:-175px -546px;
+	width: 7px;
+	height: 16px;
+}
+.sprites-chvrnup-gif
+{
+	background-position:-184px -546px;
+	width: 7px;
+	height: 16px;
+}
+.sprites-rmbdy-gif
+{
+	background-position:-193px -546px;
+	width: 16px;
+	height: 15px;
+}
+.sprites-adbdy-gif
+{
+	background-position:-211px -546px;
+	width: 16px;
+	height: 15px;
+}
+.sprites-view-orig-png
+{
+	background-position:-229px -546px;
+	width: 14px;
+	height: 14px;
+}
+.sprites-view-orig-h-png
+{
+	background-position:-245px -546px;
+	width: 14px;
+	height: 14px;
+}
+.sprites-cal-mtg-gif
+{
+	background-position:-261px -546px;
+	width: 14px;
+	height: 14px;
+}
+.sprites-mslogo-gif
+{
+	background-position:-277px -546px;
+	width: 77px;
+	height: 13px;
+}
+.sprites-addtsk-gif
+{
+	background-position:0px -564px;
+	width: 15px;
+	height: 13px;
+}
+.sprites-minibarexpand-gif
+{
+	background-position:-17px -564px;
+	width: 13px;
+	height: 13px;
+}
+.sprites-minibarcollapse-gif
+{
+	background-position:-32px -564px;
+	width: 13px;
+	height: 13px;
+}
+.sprites-fax-gif
+{
+	background-position:-47px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-work-gif
+{
+	background-position:-61px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-priv-gif
+{
+	background-position:-75px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-priv-w-gif
+{
+	background-position:-89px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-recur-gif
+{
+	background-position:-103px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-recur-w-gif
+{
+	background-position:-117px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-attach-gif
+{
+	background-position:-131px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-attach-w-gif
+{
+	background-position:-145px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-excep-gif
+{
+	background-position:-159px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-cal-excep-w-gif
+{
+	background-position:-173px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-priph-gif
+{
+	background-position:-187px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-ovf-exp-gif
+{
+	background-position:-201px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-ovf-col-rtl-gif
+{
+	background-position:-215px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-joinchat-gif
+{
+	background-position:-229px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-mobile-gif
+{
+	background-position:-243px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-ovf-exp-rtl-gif
+{
+	background-position:-257px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-home-gif
+{
+	background-position:-271px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-ovf-col-gif
+{
+	background-position:-285px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-leftchat-gif
+{
+	background-position:-299px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-failinv-gif
+{
+	background-position:-313px -564px;
+	width: 12px;
+	height: 12px;
+}
+.sprites-il-gif
+{
+	background-position:-327px -564px;
+	width: 9px;
+	height: 12px;
+}
+.sprites-ih-gif
+{
+	background-position:-338px -564px;
+	width: 9px;
+	height: 12px;
+}
+.sprites-pkrarwr-gif
+{
+	background-position:-349px -564px;
+	width: 6px;
+	height: 12px;
+}
+.sprites-pkrarwl-gif
+{
+	background-position:0px -579px;
+	width: 6px;
+	height: 12px;
+}
+.sprites-cal-busy-png
+{
+	background-position:-8px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-outofoffice-png
+{
+	background-position:-21px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-tntv-gif
+{
+	background-position:-34px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-free-png
+{
+	background-position:-47px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-reqd-gif
+{
+	background-position:-60px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-stop-gif
+{
+	background-position:-73px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-nodata70-png
+{
+	background-position:-86px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-opt-gif
+{
+	background-position:-99px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-org-gif
+{
+	background-position:-112px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-play-gif
+{
+	background-position:-125px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-res-gif
+{
+	background-position:-138px -579px;
+	width: 11px;
+	height: 11px;
+}
+.sprites-addricn-gif
+{
+	background-position:-151px -579px;
+	width: 12px;
+	height: 10px;
+}
+.sprites-dl-gif
+{
+	background-position:-165px -579px;
+	width: 12px;
+	height: 10px;
+}
+.sprites-maybe-busy-png
+{
+	background-position:-179px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-busy-png
+{
+	background-position:-191px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-org-up-arrow-gif
+{
+	background-position:-203px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-blocked-png
+{
+	background-position:-215px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-avlbl-png
+{
+	background-position:-227px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-offline-png
+{
+	background-position:-239px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-unkwn-png
+{
+	background-position:-251px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-dnd-png
+{
+	background-position:-263px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-maybe-av-png
+{
+	background-position:-275px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-away-png
+{
+	background-position:-287px -579px;
+	width: 10px;
+	height: 10px;
+}
+.sprites-delete_small-gif
+{
+	background-position:-299px -579px;
+	width: 9px;
+	height: 10px;
+}
+.sprites-attch-png
+{
+	background-position:-310px -579px;
+	width: 7px;
+	height: 10px;
+}
+.sprites-tntgtr-gif
+{
+	background-position:-319px -579px;
+	width: 5px;
+	height: 10px;
+}
+.sprites-evtto-gif
+{
+	background-position:-326px -579px;
+	width: 9px;
+	height: 9px;
+}
+.sprites-fb-tnt70-png
+{
+	background-position:-337px -579px;
+	width: 9px;
+	height: 9px;
+}
+.sprites-fb-tnt-gif
+{
+	background-position:-348px -579px;
+	width: 9px;
+	height: 9px;
+}
+.sprites-evtfrom-w-gif
+{
+	background-position:0px -593px;
+	width: 9px;
+	height: 9px;
+}
+.sprites-evtfrom-gif
+{
+	background-position:-11px -593px;
+	width: 9px;
+	height: 9px;
+}
+.sprites-evtto-w-gif
+{
+	background-position:-22px -593px;
+	width: 9px;
+	height: 9px;
+}
+.sprites-shw-tr-png
+{
+	background-position:-33px -593px;
+	width: 8px;
+	height: 9px;
+}
+.sprites-shw-bl-png
+{
+	background-position:-43px -593px;
+	width: 8px;
+	height: 9px;
+}
+.sprites-shw-br-png
+{
+	background-position:-53px -593px;
+	width: 8px;
+	height: 9px;
+}
+.sprites-cllps-gif
+{
+	background-position:-63px -593px;
+	width: 7px;
+	height: 9px;
+}
+.sprites-expnd-gif
+{
+	background-position:-72px -593px;
+	width: 7px;
+	height: 9px;
+}
+.sprites-pm-gif
+{
+	background-position:-81px -593px;
+	width: 6px;
+	height: 9px;
+}
+.sprites-nm-gif
+{
+	background-position:-89px -593px;
+	width: 6px;
+	height: 9px;
+}
+.sprites-cal-up-hl-gif
+{
+	background-position:-97px -593px;
+	width: 15px;
+	height: 8px;
+}
+.sprites-cal-up-gif
+{
+	background-position:-114px -593px;
+	width: 15px;
+	height: 8px;
+}
+.sprites-cal-down-gif
+{
+	background-position:-131px -593px;
+	width: 15px;
+	height: 8px;
+}
+.sprites-cal-down-hl-gif
+{
+	background-position:-148px -593px;
+	width: 15px;
+	height: 8px;
+}
+.sprites-closedlg-gif
+{
+	background-position:-165px -593px;
+	width: 9px;
+	height: 8px;
+}
+.sprites-fbtntbk-gif
+{
+	background-position:-176px -593px;
+	width: 8px;
+	height: 8px;
+}
+.sprites-fbtntbkea-gif
+{
+	background-position:-186px -593px;
+	width: 8px;
+	height: 8px;
+}
+.sprites-cal-sel-gif
+{
+	background-position:-196px -593px;
+	width: 8px;
+	height: 8px;
+}
+.sprites-tntwrk-gif
+{
+	background-position:-206px -593px;
+	width: 8px;
+	height: 8px;
+}
+.sprites-tntevnt-gif
+{
+	background-position:-216px -593px;
+	width: 8px;
+	height: 8px;
+}
+.sprites-tntnnwrk-gif
+{
+	background-position:-226px -593px;
+	width: 8px;
+	height: 8px;
+}
+.sprites-todobarhide-gif
+{
+	background-position:-236px -593px;
+	width: 7px;
+	height: 8px;
+}
+.sprites-todobarshow-gif
+{
+	background-position:-245px -593px;
+	width: 7px;
+	height: 8px;
+}
+.sprites-pnrsz-gif
+{
+	background-position:-254px -593px;
+	width: 35px;
+	height: 7px;
+}
+.sprites-wunderbar_resize-gif
+{
+	background-position:-291px -593px;
+	width: 35px;
+	height: 7px;
+}
+.sprites-arrow-ltr-gif
+{
+	background-position:-328px -593px;
+	width: 10px;
+	height: 7px;
+}
+.sprites-arrow-rtl-gif
+{
+	background-position:-340px -593px;
+	width: 10px;
+	height: 7px;
+}
+.sprites-nodata-gif
+{
+	background-position:-352px -593px;
+	width: 7px;
+	height: 7px;
+}
+.sprites-mnu-r-gif
+{
+	background-position:0px -604px;
+	width: 5px;
+	height: 7px;
+}
+.sprites-mnu-l-gif
+{
+	background-position:-7px -604px;
+	width: 5px;
+	height: 7px;
+}
+.sprites-lt-gif
+{
+	background-position:-14px -604px;
+	width: 3px;
+	height: 7px;
+}
+.sprites-rt-gif
+{
+	background-position:-19px -604px;
+	width: 3px;
+	height: 7px;
+}
+.sprites-wunderbar_top-gif
+{
+	background-position:-24px -604px;
+	width: 1px;
+	height: 7px;
+}
+.sprites-red-ul-gif
+{
+	background-position:-27px -604px;
+	width: 15px;
+	height: 5px;
+}
+.sprites-bsd-gif
+{
+	background-position:-44px -604px;
+	width: 6px;
+	height: 5px;
+}
+.sprites-bsa-gif
+{
+	background-position:-52px -604px;
+	width: 6px;
+	height: 5px;
+}
+.sprites-pipe-stop-l-png
+{
+	background-position:-60px -604px;
+	width: 5px;
+	height: 5px;
+}
+.sprites-filter-gif
+{
+	background-position:-67px -604px;
+	width: 3px;
+	height: 5px;
+}
+.sprites-chat-arw-gif
+{
+	background-position:-72px -604px;
+	width: 3px;
+	height: 5px;
+}
+.sprites-sa-gif
+{
+	background-position:-77px -604px;
+	width: 8px;
+	height: 4px;
+}
+.sprites-sd-gif
+{
+	background-position:-87px -604px;
+	width: 8px;
+	height: 4px;
+}
+.sprites-squiggly-gif
+{
+	background-position:-97px -604px;
+	width: 5px;
+	height: 4px;
+}
+.sprites-userdropdown-gif
+{
+	background-position:-104px -604px;
+	width: 5px;
+	height: 4px;
+}
+.sprites-alertdropdown-gif
+{
+	background-position:-111px -604px;
+	width: 5px;
+	height: 4px;
+}
+.sprites-crvbtmrt-gif
+{
+	background-position:-118px -604px;
+	width: 4px;
+	height: 4px;
+}
+.sprites-crvtplt-gif
+{
+	background-position:-124px -604px;
+	width: 4px;
+	height: 4px;
+}
+.sprites-crvtprt-gif
+{
+	background-position:-130px -604px;
+	width: 4px;
+	height: 4px;
+}
+.sprites-today-gif
+{
+	background-position:-136px -604px;
+	width: 4px;
+	height: 4px;
+}
+.sprites-crvbtmlt-gif
+{
+	background-position:-142px -604px;
+	width: 4px;
+	height: 4px;
+}
+.sprites-dot-gif
+{
+	background-position:-148px -604px;
+	width: 4px;
+	height: 4px;
+}
+.sprites-dwn-gif
+{
+	background-position:-154px -604px;
+	width: 5px;
+	height: 3px;
+}
+.sprites-dn_mblgn-gif
+{
+	background-position:-161px -604px;
+	width: 5px;
+	height: 3px;
+}
+.sprites-up-arrw-gif
+{
+	background-position:-168px -604px;
+	width: 5px;
+	height: 3px;
+}
+.sprites-pipe-stop-s-png
+{
+	background-position:-175px -604px;
+	width: 3px;
+	height: 3px;
+}
+.sprites-dash-gif
+{
+	background-position:-180px -604px;
+	width: 3px;
+	height: 1px;
+}
+.sprites-clear1x1-gif
+{
+	background-position:-185px -604px;
+	width: 1px;
+	height: 1px;
+}

@@ -1,0 +1,4745 @@
+/* System styles */
+.fsStyleAutoclear:after {
+	clear:both;
+	content:" ";
+	display:block;
+	font-size:0;
+	height:0;
+	visibility:hidden;
+}
+
+.fsStyleBorderBoxSizing{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.fsStyleLoadingBar{
+	background:transparent url('../../images/loadingbar.gif') center center no-repeat;
+}
+
+.fsStyleThreeColumn{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding: 0 .5%;
+	width: 32.6%;
+}
+
+.fsStyleTwoColumn {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	padding: 0 .5%;
+	width: 49%;
+}
+
+.fsStyleOneColumn {
+	padding: 0 .5%;
+	width: 97%;
+}
+
+/* Classes that can be used to hide/show, these shouldn't be used by themselves
+	because the !important will override later styles */
+.fsStyleDisplayBlock{
+	display: block !important;
+}
+
+.fsStyleDisplayInline{
+	display: inline !important;
+}
+
+.fsStyleDisplayInlineBlock{
+	display: inline-block !important;
+}
+
+.fsStyleHidden{
+	display: none !important;
+}
+
+
+/* "Reset" styles */
+body{
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size:13px;
+	margin:0;
+	background:transparent url('../../images/admin_ui/2.0/page-bg.png');
+}
+
+input[type=text], textarea{
+    border:1px solid #ccc;
+    padding:4px;
+   	-webkit-border-radius:3px;
+	border-radius:3px;
+    outline: 0;
+}
+
+input[type=text]:hover, textarea:hover{
+    border:1px solid #AAA;
+    box-shadow: 0px 0px 4px #EEE;
+}
+
+input[type=text]:focus {
+    border:1px solid #8EB7DF;
+}
+
+a img, img a{
+	border:0;
+}
+
+/* Center? */
+
+#fsGroupsBody, #fsGroupsBanner, #fsGroupsNav, #fsGroupSpaceHeader, #fsGroupSpaceNav, #fsGroupsFooter{
+	max-width:1200px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0 20px;
+}
+
+#fsGroupSpaceTitleContainer{
+	padding:0 12px 0 2px;
+}
+
+#fsGroupsFooter{
+    max-width:1165px;
+}
+
+/* Had to put this here so it didn't override the icon style */
+.fsGroupsNavTabIcon{
+	display: inline-block;
+	height: 32px;
+	vertical-align: top;
+	width: 5px;
+}
+
+
+/* Glyph images */
+.fsGlyphChatBubble,
+.fsGlyphDarkGrayX,
+.fsGlyphDrive,
+.fsGlyphGrayX,
+.fsGlyphGroup,
+.fsGlyphInbox,
+.fsGlyphList,
+.fsGlyphMail,
+.fsGlyphOpenFolder,
+.fsGlyphPlus,
+.fsGlyphProfile,
+.fsGlyphRedX,
+.fsGlyphReturnArrow,
+.fsGlyphSearch,
+.fsGlyphUpArrow,
+.fsGlyphWorld {
+	background: url('../../images/glyphsprite.png') no-repeat;
+	display: inline-block;
+	margin-right: 5px; /* This might be better to put in specific stylesheets if we find we need to customize it alot */
+}
+
+.fsGlyphChatBubble {
+	background-position: -35px -14px;
+	width: 12px;
+	height: 11px;
+}
+
+.fsGlyphDarkGrayX {
+	background-position: -12px -43px;
+	width: 10px;
+	height: 10px;
+}
+
+.fsGlyphDrive {
+	background-position: -36px -41px;
+	width: 17px;
+	height: 14px;
+	margin-bottom: -2px;
+	margin-right: 0;
+}
+
+.fsGlyphGrayX {
+	background-position: 0px -43px;
+	width: 10px;
+	height: 10px;
+}
+
+.fsGlyphGroup {
+	background-position: 0px 0px;
+	width: 16px;
+	height: 14px;
+}
+
+.fsGlyphInbox {
+	background-position: 0px -29px;
+	width: 12px;
+	height: 12px;
+}
+
+.fsGlyphList {
+	background-position: 0px -16px;
+	width: 12px;
+	height: 11px;
+}
+
+.fsGlyphMail {
+	background-position: -14px -16px;
+	width: 12px;
+	height: 10px;
+}
+
+.fsGlyphOpenFolder {
+	background-position: -18px 0px;
+	width: 15px;
+	height: 11px;
+}
+
+.fsGlyphPlus {
+	background-position: -35px 0px;
+	width: 12px;
+	height: 12px;
+}
+
+.fsGlyphProfile {
+	background-position: -14px -29px;
+	width: 12px;
+	height: 12px;
+}
+
+.fsGlyphRedX {
+	background-position: -24px -43px;
+	width: 10px;
+	height: 10px;
+}
+
+.fsGlyphReturnArrow {
+	background-position: -28px -29px;
+	width: 12px;
+	height: 9px;
+}
+
+.fsGlyphSearch {
+	background-position: -49px 0px;
+	width: 12px;
+	height: 12px;
+}
+
+.fsGlyphUpArrow {
+	background-position: -49px -14px;
+	width: 9px;
+	height: 12px;
+}
+
+.fsGlyphWorld {
+	background-position: -49px -28px;
+	width: 12px;
+	height: 12px;
+}
+/* End Glyphs */
+
+
+
+
+/* LMS Icons */
+.fsIconAdd,
+.fsIconAdvisory,
+.fsIconAlumni,
+.fsIconAlumniBlackSmall,
+.fsIconArrowLeftWhite,
+.fsIconArrowRightWhite,
+.fsIconAsterisk,
+.fsIconAthleticsEvents,
+.fsIconAthleticsScores,
+.fsIconBackArrowBlack,
+.fsIconBlackArrowDown,
+.fsIconBlackX,
+.fsIconBlog,
+.fsIconBookshelf,
+.fsIconBulletList,
+.fsIconCalendar,
+.fsIconChatBubble,
+.fsIconClipboard,
+.fsIconClubs,
+.fsIconDashboard,
+.fsIconDepartments,
+.fsIconDiscussions,
+.fsIconDocument,
+.fsIconDrive,
+.fsIconEmail,
+.fsIconEmbed,
+.fsIconFacebook,
+.fsIconFlickr,
+.fsIconFolder,
+.fsIconGearLarge,
+.fsIconGrayX,
+.fsIconHelp,
+.fsIconInbox,
+.fsIconActivity,
+.fsIconLocations,
+.fsIconLock,
+.fsIconNewAssignment,
+.fsIconNewBlog,
+.fsIconNewQuiz,
+.fsIconPaintbrushLarge,
+.fsIconPassword,
+.fsIconPicture,
+.fsIconPlusLarge,
+.fsIconProfile,
+.fsIconProfileGray,
+.fsIconQuestionLarge,
+.fsIconRSS,
+.fsIconReel,
+.fsIconSave,
+.fsIconSpeechBubble,
+.fsIconSubscriptions,
+.fsIconTrophy,
+.fsIconVimeo,
+.fsIconWorld,
+.fsIconXWhite,
+.fsIconYoutube {
+	background-image: url(../../images/lmssprite.png);
+	display: inline-block;
+}
+
+.fsIconAdd {
+	background-position: -154px -132px;
+	width: 12px;
+	height: 16px;
+}
+
+.fsIconAdvisory {
+	background-position: -38px 0px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconAlumni {
+	background-position: -112px 0px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconAlumniBlackSmall {
+	background-position: -75px -155px;
+	width: 19px;
+	height: 16px;
+}
+
+.fsIconArrowLeftWhite {
+	background-position: -192px 0px;
+	width: 10px;
+	height: 13px;
+}
+
+.fsIconArrowRightWhite {
+	background-position: -192px -18px;
+	width: 10px;
+	height: 13px;
+}
+
+.fsIconAsterisk {
+	background-position: -99px -155px;
+	width: 14px;
+	height: 16px;
+}
+
+.fsIconAthleticsEvents {
+	background-position: -189px -63px;
+	width: 13px;
+	height: 16px;
+}
+
+.fsIconAthleticsScores {
+	background-position: -118px -155px;
+	width: 14px;
+	height: 16px;
+}
+
+.fsIconBackArrowBlack {
+	background-position: -112px -74px;
+	width: 27px;
+	height: 21px;
+}
+
+.fsIconBlackArrowDown {
+	background-position: -33px -155px;
+	width: 13px;
+	height: 11px;
+}
+
+.fsIconBlackX {
+	background-position: -171px -105px;
+	width: 14px;
+	height: 16px;
+}
+
+.fsIconBlog {
+	background-position: -134px -155px;
+	width: 15px;
+	height: 16px;
+}
+
+.fsIconBookshelf {
+	background-position: 0px -37px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconBulletList {
+	background-position: 0px -111px;
+	width: 20px;
+	height: 16px;
+}
+
+.fsIconCalendar {
+	background-position: -171px -126px;
+	width: 13px;
+	height: 16px;
+}
+
+.fsIconChatBubble {
+	background-position: -50px -111px;
+	width: 17px;
+	height: 16px;
+}
+
+.fsIconClipboard {
+	background-position: 0px -155px;
+	width: 11px;
+	height: 16px;
+}
+
+.fsIconClubs {
+	background-position: -37px -37px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconDashboard {
+	background-position: -75px 0px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconDepartments {
+	background-position: -74px -74px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconDiscussions {
+    background-position: -154px -155px;
+    width: 20px;
+    height: 16px;
+}
+
+.fsIconDocument {
+	background-position: -171px -63px;
+	width: 14px;
+	height: 16px;
+}
+
+.fsIconDrive {
+	background-position: -190px -105px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconEmail {
+	background-position: -44px -132px;
+	width: 17px;
+	height: 17px;
+}
+
+.fsIconEmbed {
+	background-position: -25px -111px;
+	width: 20px;
+	height: 16px;
+}
+
+.fsIconFacebook {
+	background-position: -192px -36px;
+	width: 8px;
+	height: 16px;
+}
+
+.fsIconFlickr {
+	background-position: -171px -21px;
+	width: 16px;
+	height: 16px;
+}
+
+.fsIconFolder {
+	background-position: -149px 0px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconGearLarge {
+	background-position: -75px -37px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconGrayX {
+	background-position: -149px -23px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconHelp {
+	background-position: 15px -297px;
+	width: 14px;
+	height: 32px;
+	margin-left: 6px;
+}
+
+.fsIconInbox {
+	background-position: -149px -46px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconActivity {
+	background-position: -190px -82px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconLocations {
+	background-position: -37px -74px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconLock {
+	background-position: -22px -132px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconNewAssignment {
+	background-position: -72px -111px;
+	width: 17px;
+	height: 16px;
+}
+
+.fsIconNewBlog {
+	background-position: -94px -111px;
+	width: 17px;
+	height: 16px;
+}
+
+.fsIconNewQuiz {
+	background-position: -116px -111px;
+	width: 17px;
+	height: 16px;
+}
+
+.fsIconPaintbrushLarge {
+	background-position: -112px -37px;
+	width: 24px;
+	height: 32px;
+}
+
+.fsIconPassword {
+	background-position: -149px -69px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconPicture {
+	background-position: -149px -92px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconPlusLarge {
+	background-position: 0px 0px;
+	width: 33px;
+	height: 32px;
+}
+
+.fsIconProfile {
+	background-position: -66px -132px;
+	width: 17px;
+	height: 17px;
+}
+
+.fsIconProfileGray {
+	background-position: 0px -132px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconQuestionLarge {
+	background-position: -174px -144px;
+	width: 24px;
+	height: 32px;
+}
+
+.fsIconRSS {
+	background-position: -171px 0px;
+	width: 16px;
+	height: 16px;
+}
+
+.fsIconReel {
+	background-position: -132px -132px;
+	width: 17px;
+	height: 16px;
+}
+
+.fsIconSave {
+	background-position: -149px -115px;
+	width: 12px;
+	height: 12px;
+}
+
+.fsIconSpeechBubble {
+	background-position: -88px -132px;
+	width: 17px;
+	height: 17px;
+}
+
+.fsIconSubscriptions {
+	background-position: -51px -155px;
+	width: 17px;
+	height: 18px;
+}
+
+.fsIconTrophy {
+	background-position: 0px -74px;
+	width: 32px;
+	height: 32px;
+}
+
+.fsIconVimeo {
+	background-position: -171px -84px;
+	width: 14px;
+	height: 16px;
+}
+
+.fsIconWorld {
+	background-position: -110px -132px;
+	width: 17px;
+	height: 17px;
+}
+
+.fsIconXWhite {
+	background-position: -16px -155px;
+	width: 12px;
+	height: 12px;
+}
+
+.fsIconYoutube {
+	background-position: -171px -42px;
+	width: 15px;
+	height: 16px;
+}
+
+
+/* LMS high res images */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1),only screen and (min-device-pixel-ratio: 2),only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx){
+	.fsIconAdd,
+	.fsIconAdvisory,
+	.fsIconAlumni,
+	.fsIconAlumniBlackSmall,
+	.fsIconArrowLeftWhite,
+	.fsIconArrowRightWhite,
+	.fsIconAsterisk,
+	.fsIconAthleticsEvents,
+	.fsIconAthleticsScores,
+	.fsIconBackArrowBlack,
+	.fsIconBlackArrowDown,
+	.fsIconBlackX,
+	.fsIconBlog,
+	.fsIconBookshelf,
+	.fsIconBulletList,
+	.fsIconCalendar,
+	.fsIconChatBubble,
+	.fsIconClipboard,
+	.fsIconClubs,
+	.fsIconDashboard,
+	.fsIconDepartments,
+	.fsIconDocument,
+	.fsIconDrive,
+	.fsIconEmail,
+	.fsIconEmbed,
+	.fsIconFacebook,
+	.fsIconFlickr,
+	.fsIconFolder,
+	.fsIconGearLarge,
+	.fsIconGrayX,
+	.fsIconHelp,
+	.fsIconInbox,
+	.fsIconLocations,
+	.fsIconLock,
+	.fsIconNewAssignment,
+	.fsIconNewBlog,
+	.fsIconNewQuiz,
+	.fsIconPaintbrushLarge,
+	.fsIconPassword,
+	.fsIconPicture,
+	.fsIconPlusLarge,
+	.fsIconProfile,
+	.fsIconProfileGray,
+	.fsIconQuestionLarge,
+	.fsIconRSS,
+	.fsIconReel,
+	.fsIconSave,
+	.fsIconSpeechBubble,
+	.fsIconSubscriptions,
+	.fsIconTrophy,
+	.fsIconVimeo,
+	.fsIconWorld,
+	.fsIconXWhite,
+	.fsIconYoutube {
+		background-image: url(../../images/lmssprite@2.png);
+		background-size: 207px 176px;
+	}
+}
+
+/* Embed Options */
+.Prezi,
+.GoAnimate,
+.issuu,
+.localizeus,
+.noteflight,
+.fold3,
+.GoodReads,
+.KhanAcademy,
+.Brainpop,
+.Blip,
+.Answerscom,
+.ClockLink,
+.Google-more,
+.TokBox,
+.Twitpic,
+.DiscoveryChannel,
+.Picasa,
+.Twitter,
+.SlideBoom,
+.Google,
+.eSchoolNews,
+.Animoto,
+.Vimeo,
+.Ted,
+.YouTube,
+.Voicethread,
+.Viddy,
+.AcademicEarth,
+.SurveyMonkey,
+.BarnesNoble,
+.flickr,
+.s9Slides,
+.icharts,
+.Jing,
+.CNN,
+.PBSActivityPack,
+.ThisAmericanLife,
+.Gliffy,
+.GlogsterEDU,
+.LibraryThing{
+	display:	inline-block;
+	background-repeat:	no-repeat;
+	background-image:	url( '../../images/lmsembedicons.png' );
+}
+
+.Prezi{
+	background-position:	0 0;
+	width:	35px;
+	height:	35px;
+}
+
+.GoAnimate{
+	background-position:	-35px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.issuu{
+	background-position:	-70px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.localizeus{
+	background-position:	-105px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.noteflight{
+	background-position:	-140px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.fold3{
+	background-position:	-175px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.GoodReads{
+	background-position:	-210px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.KhanAcademy{
+	background-position:	-1365px 2px;
+	width:	35px;
+	height:	35px;
+}
+
+.Brainpop{
+	background-position:	-245px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Blip{
+	background-position:	-280px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Answerscom{
+	background-position:	-315px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.ClockLink{
+	background-position:	-350px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Google-more{
+	background-position:	-385px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.TokBox{
+	background-position:	-420px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Twitpic{
+	background-position:	-455px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.DiscoveryChannel{
+	background-position:	-1330px 0;
+	width:	35px;
+	height:	33px;
+}
+
+.Picasa{
+	background-position:	-490px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Twitter{
+	background-position:	-525px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.SlideBoom{
+	background-position:	-560px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Google{
+	background-position:	-595px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.eSchoolNews{
+	background-position:	-630px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Animoto{
+	background-position:	-665px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Vimeo{
+	background-position:	-700px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Ted{
+	background-position:	-735px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.YouTube{
+	background-position:	-770px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Voicethread{
+	background-position:	-805px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Viddy{
+	background-position:	-840px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.AcademicEarth{
+	background-position:	-875px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.SurveyMonkey{
+	background-position:	-910px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.BarnesNoble{
+	background-position:	-945px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.flickr{
+	background-position:	-980px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.s9Slides{
+	background-position:	-1015px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.icharts{
+	background-position:	-1050px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Jing{
+	background-position:	-1085px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.CNN{
+	background-position:	-1120px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.PBSActivityPack{
+	background-position:	-1155px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.ThisAmericanLife{
+	background-position:	-1190px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.Gliffy{
+	background-position:	-1225px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.GlogsterEDU{
+	background-position:	-1260px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.LibraryThing{
+	background-position:	-1295px 0;
+	width:	35px;
+	height:	35px;
+}
+
+.fsGroupSpaceDashboardEmbedIconsContainer{
+    padding:1.5em 0em 0em 1em;
+    border-top:1px solid #eee;
+}
+
+.fsGroupSpaceDashboardEmbedTextInput,
+.fsGroupSpaceDashboardEmbedTextarea {
+    display: inline-block;
+    width: 80% !important;
+    margin-top:8px;
+}
+
+.fsGroupSpaceDashboardEmbedIconsContainer .fsGroupSpaceDashboardEmbedIcon{
+    border:4px solid #f3f3f3;
+    margin:0 23px 20px 0;
+}
+
+.fsGroupSpaceDashboardEmbedIconsContainer .fsGroupSpaceDashboardEmbedIcon:hover{
+    border:4px solid #f6f6f6;
+}
+
+.fsGroupSpaceDashboardEmbedSettingsInstructions{
+    padding:1em;
+}
+
+.fsGroupSpaceDashboardEmbedSettingsContainer label {
+    display: block;
+}
+
+.fsGroupSpaceDashboardEmbedSettingsContainer label span {
+  width: 12%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 6px;
+}
+
+.fsGroupSpaceDashboardEmbedSettingsContainer label input[type="text"],
+.fsGroupSpaceDashboardEmbedSettingsContainer label textarea {
+  width: 80%;
+  display: inline-block;
+  margin: 0px;
+}
+
+.fsGroupSpaceDashboardEmbedSettingsInstructionsTitle{
+    padding:.5em 0;
+    font-weight:bold;
+}
+
+.fsGroupSpaceDashboardEmbedSettings form{
+    padding:.5em 1em;
+    font-weight:bold;
+}
+
+.fsGroupSpaceDashboardEmbedIcon a{
+    display:block;
+    width:35px;
+    height:35px;
+}
+
+
+/* LMS style defaults */
+
+/* Account Menu */
+
+#fsGroupsAccountMenu{
+	background: #444;
+	border: 1px solid #181818;
+	border-top: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: none;
+	margin-top:-3px;
+	position: absolute;
+	width: 100%;
+	z-index: 101;
+	font-size:.9em;
+	-webkit-border-radius: 0px 0px 3px 3px;
+    border-radius: 0px 0px 3px 3px;
+}
+
+#fsGroupsAccountMenuAvatar{
+	height: 25px;
+	width: 25px;
+	vertical-align:top;
+}
+
+#fsGroupsAccountMenuAvatarContainer{
+	border: 1px solid #d9d9d9;
+	border-radius: 2px;
+	display: inline-block;
+	margin: 2px 6px 2px 4px;
+	position: relative;
+	vertical-align:middle;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 5px #000;
+	float: left;
+}
+
+#fsGroupsAccountMenuAvatarContainer + span{
+	display: inline-block;
+	padding: 8px 0 0 5px;
+}
+
+#fsGroupsAccountMenuAvatarContainer .fsUnreadMessageCount{
+	background: #ec2127;
+	border:1px solid #a5000d;
+	-webkit-border-radius:8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 1px #000;
+	font-size: 9px;
+	padding: 2px 3px;
+	position: absolute;
+	right: -7px;
+	top: -5px;
+	line-height:1;
+}
+
+#fsGroupsAccountMenuAvatarContainer .fsUnreadActivityCount{
+	background: #4575c7;
+	border:1px solid #19408c;
+	-webkit-border-radius:8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 5px #000;
+	box-shadow: 0px 0px 1px #000;
+	font-size: 9px;
+	padding: 2px 3px;
+	position: absolute;
+	right: -7px;
+	top: 18px;
+	line-height:1;
+}
+
+#fsGroupsAccountMenuButton{
+	background: #444444;
+	background: -moz-linear-gradient(top, #444444 0%, #303030 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(100%,#303030));
+	background: -webkit-linear-gradient(top, #444444 0%,#303030 100%);
+	background: -o-linear-gradient(top, #444444 0%,#303030 100%);
+	background: -ms-linear-gradient(top, #444444 0%,#303030 100%);
+	background: linear-gradient(to bottom, #444444 0%,#303030 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#303030',GradientType=0 );
+	-webkit-box-shadow: inset 0px 1px 1px 0px #555;
+	box-shadow: inset 0px 1px 1px 0px #555;
+	border: 1px solid #111;
+	border-radius:2px;
+	-webkit-border-radius:2px;
+	color: #FFF;
+	cursor: pointer;
+	min-width: 160px;
+	padding: 5px 30px 5px 5px;
+	width: 100%;
+	text-align:left;
+	white-space: normal;
+}
+
+#fsGroupsAccountMenuButton:hover{
+    background:#3A3A3A;
+}
+
+.fsIconBlackArrowDown {
+	position:absolute;
+	right:10px;
+	top:40%;
+}
+
+.unreadMessageCount{
+    position:absolute;
+    top:-5px;
+    right:-5px;
+    background:#d01a1a;
+    line-height:1;
+    padding:2px 3px;
+    border:1px solid #781f1f;
+   -webkit-box-shadow: 0px 0px 3px #222;
+    box-shadow: 0px 0px 3px #222;
+    border-radius:3px;
+	-webkit-border-radius:3px;
+	opacity:.85;
+}
+
+#fsGroupsAccountMenuContainer{
+	clear: right;
+	float: right;
+	margin-top: 15px;
+	max-width: 220px;
+	position: relative;
+}
+
+#fsGroupsAccountMenuContainer.fsStateHasPortalPage{
+	margin-top: 0;
+}
+
+.fsGroupsAccountMenuItem, .fsGroupsAccountMenuItem:visited{
+	border-top: 1px solid #181818;
+	color: white;
+	display: block;
+	padding: 4px 6px 4px 14px;
+	text-decoration: none;
+	vertical-align:middle;
+	background: #3f4245;
+	background: -moz-linear-gradient(top, #3f4245 0%, #363636 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4245), color-stop(100%,#363636));
+	background: -webkit-linear-gradient(top, #3f4245 0%,#363636 100%);
+	background: -o-linear-gradient(top, #3f4245 0%,#363636 100%);
+	background: -ms-linear-gradient(top, #3f4245 0%,#363636 100%);
+	background: linear-gradient(to bottom, #3f4245 0%,#363636 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4245', endColorstr='#363636',GradientType=0 );
+	-webkit-box-shadow: inset 0px 1px 1px 0px #555;
+	box-shadow: inset 0px 1px 1px 0px #555;
+	-webkit-text-shadow: 1px -1px 0px #111;
+	text-shadow: 1px -1px 0px #111;
+}
+
+.fsGroupsAccountMenuItem:hover{
+	background: #3f4245;
+}
+
+.fsGroupsAccountMenuItem .fsUnreadMessageCount,
+.fsGroupsAccountMenuItem .fsUnreadActivityCount{
+	background: #000;
+	border-radius: 10px;
+	float: right;
+	font-size: .9em;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	padding: 2px 8px;
+}
+
+.fsGroupsAccountMenuItemIcon{
+	margin: 0px 10px 0 0;
+	display:inline-block;
+	vertical-align:bottom;
+}
+
+#fsGroupsBanner{
+	height:80px;
+	padding-right: 30px;
+}
+
+#fsGroupsBannerPortalLink{
+	border: 1px solid rgba(0,0,0,.5);
+	cursor: pointer;
+	color: #FFF;
+	float: right;
+	font-size: 10px;
+	height: 41px;
+	margin-right: 8px;
+	margin-top: 17px;
+	text-align: center;
+	text-decoration: none;
+	width: 46px;
+	background: #999;
+	background: -moz-linear-gradient(top, rgba(206,220,231,.3) 0%, rgba(89,106,114,.3) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,220,231,.3)), color-stop(100%,rgba(89,106,114,.3)));
+	background: -webkit-linear-gradient(top, rgba(206,220,231,.3) 0%,rgba(89,106,114,.3) 100%);
+	background: -o-linear-gradient(top, rgba(206,220,231,.3) 0%,rgba(89,106,114,.3) 100%);
+	background: -ms-linear-gradient(top, rgba(206,220,231,.3) 0%,rgba(89,106,114,.3) 100%);
+	background: linear-gradient(to bottom, rgba(206,220,231,.3) 0%,rgba(89,106,114,.3) 100%);
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	-webkit-box-shadow: inset 0px 1px 1px 0px #999;
+	box-shadow: inset 0px 1px 1px 0px #999;
+	-webkit-text-shadow: 1px 1px 0px #444;
+	text-shadow: 1px 1px 0px #444;
+}
+
+#fsGroupsBannerPortalLink:hover{
+	background: rgba(89,106,114,.3);
+}
+
+#fsGroupsBranding{
+	height: 100%;
+	overflow: hidden;
+	line-height:82px;
+}
+
+#fsGroupsBranding img{
+	vertical-align:middle;
+	border:0;
+}
+
+#fsGroupsDashboardActivityStream{
+	float:left;
+	width: 60%;
+}
+
+#fsGroupsDashboardCalendar, #fsGroupsDashboardFacultyCentral{
+	clear: right;
+	float: right;
+	width: 37%;
+}
+
+.fc-grid .fc-first.fc-last th,
+.fc-view .fc-agenda-days th,
+.fc-view .fc-agenda-axis.fc-widget-header.fc-first {
+  background: #737272;
+}
+
+#fsGroupsDashboardWelcomeMessageText.fsStateOneMessage #fsGroupsDashboardWelcomeMessagePlural{
+	display:none;
+}
+
+#fsGroupsDashboardWelcomeMessageText.fsStateNoMessages{
+	display:none;
+}
+
+#fsGroupsNavWrapper {
+	padding: 0;
+	background: #ebebeb;
+	background: -moz-linear-gradient(top, #ebebeb 0%, #dddddd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#dddddd));
+	background: -webkit-linear-gradient(top, #ebebeb 0%,#dddddd 100%);
+	background: -o-linear-gradient(top, #ebebeb 0%,#dddddd 100%);
+	background: -ms-linear-gradient(top, #ebebeb 0%,#dddddd 100%);
+	background: linear-gradient(to bottom, #ebebeb 0%,#dddddd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#dddddd',GradientType=0 );
+	border-top:1px solid #a3a3a3;
+	-webkit-box-shadow: inset 0px 1px 1px 0px #fafafa;
+	box-shadow: inset 0px 1px 1px 0px #fafafa;
+}
+
+.fsGroupsTab_1 {
+	margin-left: 10px;
+}
+
+.fsGroupsTab_2 {
+	margin-left: 20px;
+}
+
+.fsGroupsTab_3 {
+	margin-left: 30px;
+}
+
+.fsGroupsTab_4 {
+	margin-left: 40px;
+}
+
+.fsGroupsTab_5 {
+	margin-left: 50px;
+}
+
+.fsGroupsTab_6 {
+	margin-left: 60px;
+}
+
+.fsGroupsNavMenu{
+	background: #fcfcfc;
+	display: none;
+	padding: 2px 5px 5px 5px;
+	position: absolute;
+	left:-1px;
+	margin-top:4px;
+	z-index: 900;
+	width: 190px;
+	border:1px solid #a8a8a8;
+	text-shadow: 0px 1px 0px #fff;
+	border-radius:0 0 4px 4px;
+}
+
+.fsGroupsNavMenuSubmenu.fsStateOpen .fsGroupsNavMenuAttendee{
+    background: #ebebeb;
+	background: -moz-linear-gradient(top,  #ebebeb 0%, #dddddd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#dddddd));
+	background: -webkit-linear-gradient(top,  #ebebeb 0%,#dddddd 100%);
+	background: -o-linear-gradient(top,  #ebebeb 0%,#dddddd 100%);
+	background: -ms-linear-gradient(top,  #ebebeb 0%,#dddddd 100%);
+	background: linear-gradient(to bottom,  #ebebeb 0%,#dddddd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#dddddd',GradientType=0 );
+    font-weight:bold;
+}
+
+.fsGroupsNavMenuAttendee{
+	background: #eee;
+	padding: 5px 5px 5px 15px;
+	border-radius:4px;
+	position: relative;
+	margin-top:4px;
+}
+
+.fsGroupsNavMenuAttendee:hover{
+    background:#ddd;
+}
+
+.fsGroupsNavMenuAttendee:before{
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid grey;
+	content: '';
+	height: 0;
+	position: absolute;
+	left: 6px;
+	top: 10px;
+	width: 0;
+}
+
+.fsGroupsNavMenuLink, .fsGroupsNavMenuLink:visited{
+	display:block;
+	padding: 5px 10px 5px 10px;
+	text-decoration: none;
+	color:#222;
+	background: transparent;
+	border-bottom:1px solid #ddd;
+	-webkit-box-shadow: inset 0px 1px 1px 0px #fafafa;
+	box-shadow: inset 0px 1px 1px 0px #fafafa;
+	text-shadow: 0px 1px 0px #fff;
+	font-size:12px;
+}
+
+.fsGroupsNavMenuLink:hover{
+	background: #ebebeb;
+}
+
+.fsGroupsNavMenuSubmenu .fsGroupsNavMenuLink{
+	display:none;
+}
+
+.fsGroupsNavMenuSubmenu{
+    border-top: 0;
+}
+
+.fsGroupsNavMenuSubmenu.fsStateOpen .fsGroupsNavMenuLink{
+	display:block;
+	padding-left:16px;
+}
+
+.fsGroupsNavMenuSubmenu.fsStateOpen .fsGroupsNavMenuLink:hover{
+    background:#f3f3f3;
+}
+
+.fsGroupsNavMenuSubmenu.fsStateOpen .fsGroupsNavMenuAttendee:before{
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid grey;
+	left: 4px;
+	top: 12px;
+}
+
+.fsGroupsNavTab{
+	border-right: 1px solid #a8a8a8;
+	cursor: pointer;
+	float: left;
+	padding: 4px 10px 4px 3px;
+	position: relative;
+	-webkit-box-shadow: inset 0px 1px 1px 0px #ffffff;
+	box-shadow: inset 0px 1px 1px 0px #ffffff;
+}
+
+.fsGroupsNavTab:first-child{
+	border-left: 1px solid #a8a8a8;
+	padding-left: 6px;
+}
+
+.fsGroupsNavTab.fsStateSelected{
+	background: #fcfcfc;
+}
+
+.fsGroupsNavTab:hover{
+    background-color:#ECECEC;
+    text-shadow: 2px 2px 2px #fff;
+}
+
+.fsGroupsNavTab.fsStyleFloatRight:last-child {
+	border-left: 1px solid #A8A8A8;
+	margin-right: 5px;
+}
+
+.fsGroupsNavTab.fsStyleFloatRight:last-child .fsGroupsNavMenu {
+	margin-left: -132px;
+}
+
+.fsGroupsNavTabArrow{
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid grey;
+	display: inline-block;
+	height: 0;
+	margin-left:3px;
+	width: 0;
+}
+
+.fsGroupsNavTopLevelGroup{
+	display: inline-block;
+	margin-top: 7px;
+}
+
+.fsGroupsNavTopLevelLink, .fsGroupsNavTopLevelLink:visited{
+	text-decoration: none;
+	color:#111;
+}
+
+#fsGroupsBody{
+	padding-top:15px;
+}
+
+#fsGroupsBody a{
+    color:#1071D1;
+    text-decoration:none;
+}
+
+#fsGroupsBody a:hover{
+    color:#044b92;
+}
+
+#fsGroupsBody a:visited{
+    color:#0f61b2;
+}
+
+#fsGroupsBody a:visited:hover{
+    color:#1071D1;
+}
+
+#fsGroupsBody .redactor-box a {
+	color: #333;
+}
+
+#fsGroupsBody .redactor-toolbar li a:hover {
+	color: #FFF;
+}
+
+.fsGroupSpaceAdmin{
+	display: inline-block;
+	position: relative;
+    padding-bottom:1em;
+    float: left;
+    padding-left: 8px;
+}
+
+#fsGroupSpaceAdminInfo .fsGroupSpaceAdmin:first-child {
+	padding-left: 0;
+}
+
+.fsGroupSpaceAdminAction{
+	color: #FFF;
+	display: inline-block;
+	font-size: 9px;
+	padding: 4px 2px 4px 2px;
+	text-align: center;
+	text-decoration: none;
+	width: 34px;
+}
+
+.sendMessageLink{
+    width: 40px;
+}
+
+.fsGroupSpaceAdminActions{
+	background: #000;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-top: 7px;
+	padding-right: 3px;
+	white-space: nowrap;
+	-webkit-box-shadow: 0px 0px 5px 0px #333;
+	box-shadow: 0px 0px 5px 0px #333;
+}
+
+.fsGroupSpaceAdminActions:before{
+	border-bottom: 8px solid black;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	content: '';
+	height: 0;
+	left: 43%;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+
+.fsGroupSpaceAdminActionsContainer{
+	display: none;
+	position: absolute;
+	z-index: 101;
+	opacity:.8;
+}
+
+.fsGroupSpaceAdminActionsSquare{
+	white-space: normal;
+	width: 87px;
+	padding-left:2px;
+}
+
+.fsGroupSpaceAdminActionsSquare .fsGroupAdminEmail{
+    padding-left:4px;
+}
+
+#fsGroupSpaceAdminInfo{
+	display: inline-block;
+	margin-top: 19px;
+	vertical-align: top;
+	float: left;
+}
+
+/* Group Space Avatar */
+
+#fsGroupSpaceAvatarWrapper{
+	display: inline-block;
+	float: left;
+	padding: 10px 5px 5px 0;
+	vertical-align:middle;
+    }
+
+#fsGroupSpaceAvatar{
+    width:35px;
+    margin-right:10px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    -webkit-box-shadow:0 0 10px #333;
+    box-shadow:0 0 10px #333;
+}
+
+#fsGroupSpaceControls {
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+	position: relative;
+}
+
+.fsGroupSpaceDialogInstructions{
+    background: #D9EDF7;
+    border: 1px solid #BCE8F1;
+    border-radius: 4px 4px 4px 4px;
+    color: #3A87AD;
+    padding: 8px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.fsGroupSpaceDialogAlert{
+    background: #F2DEDE;
+    border: 1px solid #EED3D7;
+    border-radius: 4px 4px 4px 4px;
+    color: #B94A48;
+    padding: 8px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+#fsGroupSpaceEditPageButton{
+    margin-left:5px;
+}
+
+.fsGroupSpaceDashboardButton {
+	border: 1px solid #aaa;
+	border-radius: 6px;
+	color: #444;
+	cursor: pointer;
+	margin: 5px 5px 5px 0;
+	padding: 4px 8px;
+	background: #ebebeb;
+	background: -moz-linear-gradient(top, #ebebeb 0%, #dddddd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#dddddd));
+	background: -webkit-linear-gradient(top, #ebebeb 0%,#dddddd 100%);
+	background: -o-linear-gradient(top, #ebebeb 0%,#dddddd 100%);
+	background: -ms-linear-gradient(top, #ebebeb 0%,#dddddd 100%);
+	background: linear-gradient(to bottom, #ebebeb 0%,#dddddd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#dddddd',GradientType=0 );
+	border-top:1px solid #a3a3a3;
+	-webkit-box-shadow: inset 0px 1px 1px 0px #fafafa;
+	box-shadow: inset 0px 1px 1px 0px #fafafa;
+	-webkit-text-shadow: 1px 1px 0px #fafafa;
+	text-shadow: 1px 1px 0px #fafafa;
+}
+
+.fsGroupSpaceDashboardButton:hover{
+	background:#dddddd;
+}
+
+#fsGroupSpaceDashboardControls{
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 8px;
+	color:#555;
+	-webkit-border-radius:8px;
+	-webkit-text-shadow: 1px 1px 0px #ddd;
+	text-shadow: 1px 1px 0px #ddd;
+	display: inline-block;
+	padding-left:8px;
+	margin-right:28px;
+	font-size:.88em;
+}
+
+#fsGroupSpaceDashboardControlsContainer{
+	text-align: right;
+	width:100%;
+	padding-bottom:1em;
+}
+
+/* Customize Dashboard */
+
+#fsGroupSpaceDashboardCustomizeAvailable{
+	margin-top:.5em;
+	background:#ddd;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	-webkit-box-shadow: inset 0px 0px 10px 0px #bbb;
+    box-shadow: inset 0px 0px 10px 0px #bbb;
+}
+
+.fsGroupSpaceDashboardCustomizeAvailableItem{
+    color:#1071D1;
+    background:#fff;
+    border-radius:3px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: move;
+	display: inline-block;
+	margin: 10px 0 0 10px;
+	padding: 5px;
+	width: 130px;
+	font-size:13px;
+    -webkit-box-shadow: 0px 0px 3px 0px #999;
+    box-shadow: 0px 0px 3px 0px #999;
+   }
+
+.fsGroupSpaceDashboardCustomizeAvailableItem.fsStateDisabled{
+	cursor: default;
+	opacity: .5;
+}
+
+.fsGroupSpaceDashboardCustomizeAvailableItem.fsStateDisabled .fsGroupSpaceDashboardCustomizeCounter{
+	display: none;
+}
+
+#fsGroupSpaceDashboardCustomizeButtonPane{
+	border:none;
+}
+
+.fsGroupSpaceDashboardCustomizeColumn{
+	height: 200px;
+	margin-left: 10px;
+	padding: 5px 5px 0 5px;
+	overflow-y: auto;
+	background:#eee;
+}
+
+.fsGroupSpaceDashboardCustomizeColumn.fsStyleTwoColumn{
+	width: 289px;
+}
+
+.fsGroupSpaceDashboardCustomizeColumn.fsStyleThreeColumn{
+	width: 189px;
+}
+
+#fsGroupSpaceDashboardCustomizeColumnOne{
+	margin-left: 0;
+}
+
+#fsGroupSpaceDashboardCustomizeColumnTwo, #fsGroupSpaceDashboardCustomizeColumnThree{
+	display: none;
+}
+
+#fsGroupSpaceDashboardCustomizeColumnTwo.fsStyleTwoColumn,
+#fsGroupSpaceDashboardCustomizeColumnTwo.fsStyleThreeColumn{
+	display: block;
+}
+
+#fsGroupSpaceDashboardCustomizeColumnThree.fsStyleThreeColumn{
+	display: block;
+	margin-left: 11px;
+}
+
+#fsGroupSpaceDashboardCustomizeColumnSelectContainer{
+	float: left;
+	margin-left: 10px;
+	padding: 3px 0;
+	vertical-align: middle;
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size:13px;
+}
+
+.fsGroupSpaceDashboardCustomizeCounter{
+	border-radius: 10px;
+	float: right;
+	font-size: 12px;
+	padding: 1px 5px;
+	background:#b8e3ff;
+	border:1px solid #94d3fb;
+	color:#1a7cba;
+}
+
+.fsIconBlackX{
+	float: right;
+	text-decoration: none;
+	opacity:.4;
+}
+
+.fsIconBlackX:hover{
+    opacity:1;
+}
+
+
+#fsGroupSpaceDashboardCustomizeDialog{
+	display: none;
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size:16px;
+	overflow:hidden;
+}
+
+#fsGroupSpaceDashboardCustomizeInstructions{
+    font-size:13px;
+}
+
+/* DPad */
+
+#fsGroupSpaceDashboardCustomizeDPad{
+	display: none;
+	float: left;
+	height: 70px;
+	margin-left: 88px;
+	padding: 5px;
+	vertical-align: middle;
+	width: 100px;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadDown{
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+	border-top: 20px solid #135b89;
+	cursor: pointer;
+	margin: 17px auto 0 auto;
+	width: 0;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadDown.fsStateDisabled{
+	cursor: default;
+	opacity: .5;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadLeft{
+	border-bottom: 18px solid transparent;
+	border-right: 20px solid #2f94d4;
+	border-top: 18px solid transparent;
+	cursor: pointer;
+	float: left;
+	margin-top: -9px;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadLeft.fsStateDisabled{
+	cursor: default;
+	opacity: .5;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadRight{
+	border-bottom: 18px solid transparent;
+	border-left: 20px solid #2f94d4;
+	border-top: 18px solid transparent;
+	cursor: pointer;
+	float: right;
+	margin-top: -9px;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadRight.fsStateDisabled{
+	cursor: default;
+	opacity: .5;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadUp{
+	border-bottom: 20px solid #135b89;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+	cursor: pointer;
+	margin: 0 auto;
+	width: 0;
+}
+
+#fsGroupSpaceDashboardCustomizeDPadUp.fsStateDisabled{
+	cursor: default;
+	opacity: .5;
+}
+
+.fsGroupSpaceDashboardCustomizeElementIcon{
+	margin-right: 5px;
+    min-width:18px;
+    vertical-align:top;
+}
+
+
+.fsGroupSpaceDashboardCustomizeElementIcon.fsIconClipboard{
+    margin-left:4px;
+    margin-right:2px;
+    width:11px;
+}
+
+.fsGroupSpaceDashboardCustomizeElementIcon.fsIconFacebook{
+    margin-left:4px;
+    margin-right:2px;
+}
+
+#fsGroupSpaceDashboardCustomizeOverview{
+	border-radius:3px;
+	-webkit-box-shadow: 0px 0px 3px 0px #999;
+    box-shadow: 0px 0px 3px 0px #999;
+    color:#1071D1;
+	padding: 5px;
+	margin-bottom: 10px;
+    font-size:13px;
+}
+
+#fsGroupSpaceDashboardCustomizeOverview.fsStateDisabled{
+    background:#eee;
+	box-shadow:none;
+	color: #999;
+}
+
+#fsGroupSpaceDashboardCustomizeOverviewShowHide{
+	float: right;
+	text-decoration: none;
+	width: 16px;
+}
+
+.fsGroupSpaceDashboardCustomizeSelectedItem{
+    background:#fff;
+    font-size:13px;
+    cursor: move;
+	margin-bottom: 5px;
+	padding: 5px;
+	position: relative;
+	border-radius:3px;
+	-webkit-box-shadow: 0px 0px 3px 0px #ccc;
+    box-shadow: 0px 0px 3px 0px #ccc;
+    color:#1071D1;
+}
+
+.fsGroupSpaceDashboardCustomizeSelectedItem.fsStateSelected{
+	background: #2f94d4;
+	color:#fff;
+	-webkit-box-shadow: 0px 0px 5px 0px #4ea9e3;
+    box-shadow: 0px 0px 5px 0px #4ea9e3;
+}
+
+
+/* Copy To... modal */
+
+#fsGroupSpaceDashboardCopyDialog{
+	display:none;
+	padding-top:12px;
+}
+
+#fsGroupSpaceDashboardCopyForm{
+	border-radius: 4px;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.fsGroupSpaceDashboardCopyGroup{
+    padding-bottom:2px;
+    font-weight:normal;
+}
+
+.fsGroupSpaceDashboardCopyGroups{
+	cursor: default;
+	display: none;
+	padding-top:8px;
+}
+
+#fsGroupSpaceDashboardCopySavingDialog{
+	display: none;
+	text-align: center;
+}
+
+#ui-dialog-title-fsGroupSpaceDashboardCopySavingDialog{
+	margin-right: 0;
+}
+
+.fsGroupSpaceDashboardCopyTLG{
+	cursor: pointer;
+	padding-left: 18px;
+	position: relative;
+	font-weight:bold;
+}
+
+.fsGroupSpaceDashboardCopyTLG:before{
+	border-bottom: 5px solid transparent;
+	border-left: 6px solid #656565;
+	border-top: 5px solid transparent;
+	content: '';
+	height: 0;
+	left: 2px;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+
+.fsGroupSpaceDashboardCopyTLG.fsStateOpen:before{
+	border-bottom:none;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid #656565;
+	left:0;
+	top: 5px;
+}
+
+.fsGroupSpaceDashboardCopyTLG.fsStateOpen .fsGroupSpaceDashboardCopyGroups{
+	display: block;
+}
+
+.fsGroupSpaceDashboardEmbedSettings{
+	display: none;
+}
+
+.fsGroupSpaceDashboardEmbedTextarea{
+	height: 100px;
+}
+
+/* Content Elements */
+
+.fsGroupSpaceElement, .dbMgr, #fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent{
+	background:#fff;
+	margin-bottom: 1em;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-box-shadow:0 0 10px #ddd;
+	box-shadow:0 0 10px #ddd;
+	padding-bottom: 1px;
+}
+
+#fsGroupSpaceDashboardOverview {
+    width:98.2%;
+}
+
+#fsGroupSpaceDashboardControlsContainer ~ #fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent{
+	padding: 0.8em;
+}
+
+.fsGroupSpaceElementContent{
+	overflow-x: auto;
+	padding:0 1em 1em 1em;
+}
+
+.fsGroupSpaceElementContent .athNextEvent{
+    padding:0;
+}
+
+.fsGroupSpaceElementContent table,
+.fsGroupSpaceElementContent table td {
+    border-color:#eee !important;
+}
+.fsGroupSpaceElementContent td {
+	border-top: 1px solid #E8E8E8;
+}
+
+.fsGroupSpaceScoreboard .fsGroupSpaceElementContent td {
+  border-top: 0;
+}
+
+.fsGroupSpaceScoreboard > div > table:first-child {
+	padding: 6px 0;
+}
+
+.fsGroupSpaceScoreboard a.fsAthleticsEventLink {
+	padding: 3px 6px;
+	background: #0F61B2;
+	border-radius: 4px;
+	font-weight: normal;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#fsGroupsBody .fsGroupSpaceScoreboard a.fsAthleticsEventLink {
+	color: #FFF;
+}
+
+.fsGroupSpaceScoreboard .fsAthleticsEventLink:hover {
+	background-color: #0A4C8E;
+}
+
+.fsGroupSpaceScoreboard .fsGroupSpaceElementContent td {
+  border-top: 0;
+}
+
+.fsGroupSpaceScoreboard > div > table {
+	padding: 6px 0;
+}
+
+.fsGroupSpaceScoreboard a.fsAthleticsEventLink {
+	padding: 3px 6px;
+	background: #0F61B2;
+	border-radius: 4px;
+	font-weight: normal;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#fsGroupsBody .fsGroupSpaceScoreboard a.fsAthleticsEventLink {
+	color: #FFF;
+}
+
+.fsGroupSpaceScoreboard .fsAthleticsEventLink:hover {
+	background-color: #0A4C8E;
+}
+
+#fsGroupsDashboardWelcomeBox{
+    padding-top:1em;
+    font-weight:bold;
+}
+
+.facultyCentralInfo p {
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.facultyCentralInfo span a{
+	font-size: 14px;
+}
+
+.facultyCentralInfo span {
+	display: block;
+	margin-bottom: 3px;
+}
+
+#facultyCentralTable + div {
+	float: right;
+}
+
+#facultyCentralTable + div a.fsGroupIconLink {
+	background-position: 6px 4px;
+	font-size: 11px;
+	padding: 5px 6px 5px 26px;
+}
+
+.facultyCentralDate {
+	color: #666;
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+#fsGroupsDashboardWelcomeMessageText{
+    font-weight:normal;
+    padding-left:.5em;
+}
+
+#fsGroupsBody .fsGroupSpaceElementControls a{
+  color:#999;
+  font-size:.8em;
+}
+
+#fsGroupsBody .fsGroupSpaceElementControls a:hover{
+  color:#1071D1;
+}
+
+.fsGroupSpaceElementControls{
+	background-color:inherit;
+	text-align:right;
+	position:absolute;
+	top:2px; right:0;
+	padding:0 4px;
+	font-size:14px;
+}
+
+.fsGroupSpaceElementFooter{
+	color:#666;
+	border:0;
+	padding:0.3em;
+	text-align: right;
+}
+
+.fsGroupSpaceElementFooter a{
+    font-size:11px;
+	background: #e7e9ef;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e9ef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e9ef));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e9ef 100%);
+	padding:5px 12px;
+    border:1px solid #DEDEE2;
+    border-radius:4px;
+	display: inline-block;
+	text-decoration:none;
+	text-transform:capitalize;
+}
+
+.fsGroupSpaceElementFooter a:hover{
+    background:#fafafa;
+}
+
+.fsGroupSpaceElementHeader{
+	padding: 1em .8em 12px;
+	min-height: 18px;
+	font-size:1.3em;
+	position:relative;
+}
+
+.fsGroupSpaceElementTitle{
+  font-family: "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-size:20px;
+  letter-spacing:.04em;
+  color:#939393;
+  font-weight:normal;
+}
+
+.fsGroupSpaceElementTitle div{
+	font-size: 14px;
+}
+
+.fsGroupSpaceFilters{
+	padding: 0 1em 1em 1em;
+}
+
+.facultyCentralAvatar{
+	vertical-align: top;
+	padding: 10px 10px 0 0;
+}
+
+.facultyCentralInfo {
+	padding: 8px 0;
+}
+
+.facultyCentralAvatar img{
+	width: 48px;
+	height: 48px;
+}
+
+.facultyCentralInfo span a {
+	font-weight: bold;
+}
+
+#facultyCentralToggle{
+	width:20px;
+	height:20px;
+	float:right;
+	background-image: url("../../images/arrow1.gif");
+	background-repeat: no-repeat;
+}
+
+#facultyCentralToggle:hover{
+	cursor: pointer;
+}
+
+#facultyCentralToggle.expanded{
+	background-image: url("../../images/arrow2.gif");
+}
+
+.dbMgr h1, .fc-header-title h2, .fsGroupSpaceElement h1, #quizGroupAjaxDiv h1{
+  font-family: "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-size:24px;
+  letter-spacing:.04em;
+  color:#939393;
+  font-weight:normal;
+  margin:5px 0;
+}
+
+.fsGroupSpaceElement h1{
+  margin:1em 0;
+}
+
+#fsGroupsDashboardActivityStream h1{
+  margin:.5em 0;
+}
+
+.fsGroupSpaceElementContent h1,
+.fsGroupSpaceElementContent h2,
+.fsGroupSpaceElementContent h3,
+.fsGroupSpaceElementContent h4,
+.fsGroupSpaceElementContent h5,
+.fsGroupSpaceElementContent h6,
+.fsGroupSpaceElementLeft h1,
+.fsGroupSpaceElementLeft h2,
+.fsGroupSpaceElementLeft h3,
+.fsGroupSpaceElementLeft h4,
+.fsGroupSpaceElementLeft h5,
+.fsGroupSpaceElementLeft h6{
+    letter-spacing:.04em;
+	color:#939393;
+	font-family: "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+	font-weight:normal;
+	margin:.5em 0;
+}
+
+#fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent h1,
+#fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent h2,
+#fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent h3,
+#fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent h4,
+#fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent h5,
+#fsGroupSpaceDashboardOverview .fsGroupSpaceElementContent h6{
+	margin:0;
+}
+
+#fsGroupsFooter{
+    padding:1em;
+}
+
+
+/* Group Space Elements - Settings */
+
+.fsGroupSpaceElementSettingsPane{
+	background-color: white;
+	border:0;
+	background:#eee;
+	display:none;
+	padding:10px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow: inset 0px 0px 10px 0px #cccccc;
+    box-shadow: inset 0px 0px 10px 0px #cccccc;
+    text-shadow:0 1px 0px #fff;
+    font-size:.9em;
+}
+
+.fsGroupSpaceElementSettingsPane input[type="text"], .fsGroupSpaceElementSettingsPane textarea{
+    border:1px solid #ccc;
+    padding:5px;
+   	-webkit-border-radius:3px;
+	border-radius:3px;
+	margin-bottom:5px;
+	width:95% !important;
+}
+
+.fsGroupSpaceElementSettingsPane input[type="submit"]{
+    background-image: url("../../../images/admin_ui/2.0/white/clone.png");
+    color:#fff !important;
+    background-color: #49AFCD;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-style:solid;
+    border-width:1px;
+    -webkit-text-shadow:0 0 1px #008000;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+   	-webkit-border-radius:3px;
+	border-radius:3px;
+	cursor:pointer;
+}
+
+/* RSS Element */
+
+.fsGroupSpaceElementRSSEntryDate{
+	color: #bbb;
+	font-size:.9em;
+	}
+
+.fsGroupSpaceElementRSSEntry{
+    margin-bottom:1em;
+}
+
+.fsGroupSpaceElementUnconfiguredMessage{
+	font-size: .75em;
+}
+
+#fsGroupSpaceHead{
+	padding-left: 5px;
+}
+
+#fsGroupSpaceHeaderWrapper{
+	background: #5e5d5d;
+	background: -moz-linear-gradient(top, #5e5d5d 0%, #4f4b46 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e5d5d), color-stop(100%,#4f4b46));
+	background: -webkit-linear-gradient(top, #5e5d5d 0%,#4f4b46 100%);
+	background: -o-linear-gradient(top, #5e5d5d 0%,#4f4b46 100%);
+	background: -ms-linear-gradient(top, #5e5d5d 0%,#4f4b46 100%);
+	background: linear-gradient(to bottom, #5e5d5d 0%,#4f4b46 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5d5d', endColorstr='#4f4b46',GradientType=0 );
+	border-top:1px solid #343434;
+	border-bottom:1px solid #343434;
+	-webkit-box-shadow: inset 0px 1px 1px 0px #787470;
+	box-shadow: inset 0px 1px 1px 0px #787470;
+}
+
+#fsGroupSpaceNavWrapper{
+	background:#373737;
+	-webkit-box-shadow: inset 0px 1px 20px 1px rgba(0, 0, 0, .3);
+	box-shadow: inset 0px 1px 20px 1px rgba(0, 0, 0, .3);
+}
+
+#fsGroupSpaceNavBar {
+	background: lightblue;
+}
+
+.fsGroupSpaceNavButton, .fsGroupSpaceNavButton:visited{
+	background: #5e5d5d;
+	background: -moz-linear-gradient(top, #939393 0%, #7c7c7c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#939393), color-stop(100%,#7c7c7c));
+	background: -webkit-linear-gradient(top, #939393 0%,#7c7c7c 100%);
+	background: -o-linear-gradient(top, #939393 0%,#7c7c7c 100%);
+	background: -ms-linear-gradient(top, #939393 0%,#7c7c7c 100%);
+	background: linear-gradient(to bottom, #939393 0%,#7c7c7c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939393', endColorstr='#7c7c7c',GradientType=0 );
+	border-bottom: 1px solid #232323;
+	border-left: 1px solid #232323;
+	border-top: 1px solid #232323;
+	color: #FFF;
+	display: inline-block;
+	margin: 6px 0 6px 0;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-shadow: 0px -1px 0px #666;
+	filter: dropshadow(color=#666, offx=0, offy=-1);
+	-webkit-box-shadow: inset 0px 1px 1px 0px #bbb;
+	box-shadow: inset 0px 1px 1px 0px #bbb;
+}
+
+.fsGroupSpaceNavButton.fsStateFirst{
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.fsGroupSpaceNavButton.fsStateLast{
+	border-right: 1px solid #232323;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	margin-right: 12px;
+	position: relative;
+}
+
+.fsGroupSpaceNavButton:hover{
+	background:#7c7c7c;
+}
+
+.fsGroupSpaceNavButton.fsStateSelected{
+	background: #bebebe;
+	background: -moz-linear-gradient(top, #bebebe 0%, #7c7c7c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bebebe), color-stop(100%,#7c7c7c));
+	background: -webkit-linear-gradient(top, #bebebe 0%,#7c7c7c 100%);
+	background: -o-linear-gradient(top, #bebebe 0%,#7c7c7c 100%);
+	background: -ms-linear-gradient(top, #bebebe 0%,#7c7c7c 100%);
+	background: linear-gradient(to bottom, #bebebe 0%,#7c7c7c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bebebe', endColorstr='#7c7c7c',GradientType=0 );
+	color:#333;
+	text-shadow: 0px 1px 0px #b5b5b5;
+	filter: dropshadow(color=#b5b5b5, offx=0, offy=1);
+}
+
+.fsGroupSpaceNavButton.fsStateSelected.fsStateLast.fsStateFirst{
+	-webkit-box-shadow: 0px 0px 5px 0px #222;
+	box-shadow: 0px 0px 5px 0px #222;
+}
+
+#fsGroupSpacePeriod{
+	display: inline;
+	float: left;
+	margin: 18px 0 0 0;
+}
+
+#fsGroupSpaceQuickAddMenu{
+	background: #FFF;
+	border: 1px solid #BEBEBE;
+	border-radius: 3px;
+	display: none;
+	left: -55px;
+	margin-top: 7px;
+    padding:0 10px 10px 10px;
+    width:150px;
+	position: absolute;
+	z-index: 101;
+}
+
+#fsGroupSpaceQuickAddMenu:before{
+	border-bottom: 9px solid #BEBEBE;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	content: '';
+	height: 0;
+	left: 64px;
+	position: absolute;
+	top: -10px;
+	width: 0;
+}
+
+#fsGroupSpaceQuickAddMenu:after{
+	border-bottom: 8px solid #FFF;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	content: '';
+	height: 0;
+	left: 65px;
+	position: absolute;
+	top: -8px;
+	width: 0;
+}
+
+.fsGroupSpaceQuickAddMenuItemIcon{
+    width:17px;
+    vertical-align:top;
+    display:inline-block;
+    margin:0 10px 0 5px;
+}
+
+#fsGroupSpaceQuickAddMenuButton{
+	margin-right: 5px;
+}
+
+#fsGroupSpaceQuickAddMenuItem .fsIconClipboard{
+    margin-left:8px;
+    margin-right:6px;
+}
+
+#fsGroupSpaceQuickAddMenuItem .fsIconNewAssignment{
+    margin-left:4px;
+    margin-right:12px;
+}
+
+#fsGroupSpaceQuickAddMenuButton{
+	margin-right: 5px;
+}
+
+
+#fsGroupSpaceQuickAddMenuTitle{
+	color: #999;
+	font-weight:bold;
+	padding: 10px;
+	font-size:.9em;
+}
+
+.fsGroupSpaceQuickAddMenuItem{
+	border-top: 1px solid #ECECEC;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 5px;
+	text-decoration: none;
+	white-space: nowrap;
+	width: 100%;
+    color:#0f61b2;
+}
+
+.fsGroupSpaceQuickAddMenuItem:hover{
+    background:#eee;
+}
+
+.fsGroupSpaceQuickAddMenuItem:first-child{
+	border: none;
+}
+
+.fsGroupSpaceQuickAddMenuItemDark{
+	border-top: 1px solid #ccc;
+}
+
+##fsGroupSpaceQuickAddMenuTitle{
+	color: #909090;
+	padding: 10px;
+	font-weight:bold;
+	font-size:12px;
+}
+
+#fsGroupSpaceThemeMenu{
+	background: #2a2a2a;
+	color: white;
+	display: none;
+	height: 120px;
+	padding: 0 55px;
+	position: relative;
+}
+
+.fsGroupSpaceThemeMenuActionButtons{
+    background-color: #555;
+    background-image: -moz-linear-gradient(center top , #555, #404040);
+    background-image: -moz-linear-gradient(top, #555 0%, #404040 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555), color-stop(100%,#404040)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #555 0%,#404040 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, #555 0%,#404040 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, #555 0%,#404040 100%); /* IE10+ */
+	background-image: linear-gradient(top, #555 0%,#404040 100%); /* W3C */
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 18px;
+	margin-right: 15px;
+	padding: 2px 10px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	float: right;
+}
+
+.fsGroupSpaceThemeMenuActionButtons .fsIconXWhite{
+    margin-bottom:-1px;
+}
+
+.fsGroupSpaceThemeMenuActionButtons:hover{
+    background:#404040;
+}
+
+.fsGroupSpaceThemeMenuActionButtons span{
+	margin-right: 5px;
+}
+
+#fsGroupSpaceThemeMenuButton{
+	margin-right: 5px;
+}
+
+#fsGroupSpaceThemeMenuHeader{
+    font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size:13px;
+	color: #9d9d9d;
+	padding: 20px 5px 0 20px;
+}
+
+#fsGroupSpaceThemeMenuHeaderTitle{
+	color: #FFF;
+	font-size: 1.5em;
+	padding-right:.5em;
+}
+
+.fsGroupSpaceThemeMenuItem{
+	display: inline-block;
+	height: 40px;
+	margin: 10px 5px;
+	padding: 4px;
+	box-shadow:0 0 20px #000;
+	background:#000;
+}
+
+.fsGroupSpaceThemeMenuItem.fsStateSelected{
+	border: 3px solid #fafafa;
+	border-radius: 5px;
+	margin-left: 2px;
+	margin-right:2px;
+}
+
+.fsGroupSpaceThemeMenuItemColumn{
+	display: inline-block;
+	height: 100%;
+	width: 40px;
+}
+
+#fsGroupSpaceThemeMenuItemContainer{
+	position: absolute;
+	white-space: nowrap;
+}
+
+#fsGroupSpaceThemeMenuItemContainer.fsStyleLoadingBar{
+	height:70px;
+	width: 100%;
+}
+
+#fsGroupSpaceThemeMenuLeft{
+	left: 15px;
+}
+
+
+#fsGroupSpaceThemeMenuRight{
+	right: 15px;
+}
+
+#fsGroupSpaceThemeMenuSaveButton{
+    background-color: #5BB75B;
+    background-image: -moz-linear-gradient(center top , #62C462, #51A351);
+    background-image: -moz-linear-gradient(top, #62C462 0%, #51A351 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#62C462), color-stop(100%,#51A351)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #62C462 0%,#51A351 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, #62C462 0%,#51A351 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, #62C462 0%,#51A351 100%); /* IE10+ */
+	background-image: linear-gradient(top, #62C462 0%,#51A351 100%); /* W3C */
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+#fsGroupSpaceThemeMenuSaveButton:hover{
+    background:#62C462;
+}
+
+#fsGroupSpaceThemeMenuSaveButton .fsIconSave {
+    margin-bottom:-1px;
+}
+
+.fsGroupSpaceThemeMenuScrollButtons {
+	border: none;
+	border-radius: 20px;
+	bottom: 25px;
+	cursor: pointer;
+	opacity: .85;
+	width:30px;
+	height:30px;
+	position: absolute;
+	z-index: 100;
+	-webkit-box-shadow: 0px 0px 10px 0px #000000;
+    box-shadow: 0px 0px 10px 0px #000000;
+    background: #404040;
+	background: -moz-linear-gradient(left,  #404040 0%, #626262 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#404040), color-stop(100%,#626262));
+	background: -webkit-linear-gradient(left,  #404040 0%,#626262 100%);
+	background: -o-linear-gradient(left,  #404040 0%,#626262 100%);
+	background: -ms-linear-gradient(left,  #404040 0%,#626262 100%);
+	background: linear-gradient(to right,  #404040 0%,#626262 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#626262',GradientType=1 );
+}
+
+.fsGroupSpaceThemeMenuScrollButtons:hover {
+    background: #505050;
+}
+
+.fsGroupSpaceThemeMenuScrollButtons .fsIconArrowLeftWhite {
+    margin-right:2px;
+    margin-top:2px;
+}
+
+.fsGroupSpaceThemeMenuScrollButtons .fsIconArrowRightWhite {
+    margin-left:2px;
+    margin-top:2px;
+}
+
+#fsGroupSpaceThemeMenuViewport{
+	background:#222;
+	-webkit-box-shadow: inset 0px 0px 30px 0px #000000;
+	box-shadow: inset 0px 0px 30px 0px #000000;
+	display: inline-block;
+	float: left;
+	height: 100%;
+	left: 55px;
+	margin: 17px .5em 0 0px;
+	overflow: hidden;
+	position: absolute;
+	right: 55px;
+}
+
+#fsGroupSpaceTitle{
+	display: inline-block;
+	font-size:1.8em;
+	font-family: "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    font-weight:normal;
+    float: left;
+    margin: 16px .5em 15px 0;
+}
+
+#fsGroupSpaceTitleContainer{
+	display: inline-block;
+	color:#fff;
+	text-shadow: 0px -1px 0px #111111;
+	filter: dropshadow(color=#111111, offx=0, offy=-1);
+	padding-right:1em;
+	float: left;
+}
+
+.fsGroupSpaceSportSeasonLabel{
+	border-right: 1px solid rgba(255, 255, 255, 0.4);
+	color:#ccc;
+	filter: dropshadow(color=#111111, offx=0, offy=-1);
+	float: left;
+	padding: 0 8px 0 4px;
+	text-shadow: 0px -1px 0px #111111;
+}
+
+a.fsGroupSpaceAdminName, #fsGroupSpaceAdminShowHide{
+	color:#fff;
+    padding-bottom:2px;
+	text-shadow: 0px -1px 0px #111111;
+	filter: dropshadow(color=#111111, offx=0, offy=-1);
+	text-decoration:none;
+    border-bottom:1px dotted #7F7F7F;
+}
+
+/* Tooltips */
+
+.ui-tooltip-default .ui-tooltip-titlebar, .ui-tooltip-default .ui-tooltip-content {
+    background-color: #395778 !important;
+    background-color: rgba(57,87,120,.9) !important;
+    border:0 !important;
+    color: #fff !important;
+    line-height:1.4 !important;
+    font-size:12px;
+}
+
+/* Ajax table style defaults */
+
+.fsGroupAjaxTable table.itemList {
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #fff;
+}
+
+.fsGroupAjaxTable table.itemList th, .fsGroupAjaxTable table.itemList td {
+	padding: .5em;
+	border: 1px solid #eee;
+	text-align: left;
+	vertical-align: top;
+}
+
+.fsGroupAjaxTable table.itemList th {
+	color: #fff;
+	font-size: 1em;
+	border: 0;
+	text-shadow: -1px 0 1px #333;
+	background: #848484;
+	background: -moz-linear-gradient(top, #848484 0%, #666666 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#848484), color-stop(100%,#666666));
+	background: -webkit-linear-gradient(top, #848484 0%,#666666 100%);
+	background: -ms-linear-gradient(top, #848484 0%,#666666 100%);
+	background: linear-gradient(to bottom, #848484 0%,#666666 100%);
+}
+
+.fsGroupAjaxTable table.itemList table.rowHighlight td {
+	background-color: red;
+	border: 6px dotted purple;
+}
+
+.fsGroupAjaxTable table.itemList tr:nth-child(even) { background-color:#eee; }
+.fsGroupAjaxTable table.itemList tr:nth-child(even) td { border-right-color:#ddd; }
+
+.fsGroupAjaxTable table.itemList tr:hover td { background-color:#fffbc0; } /* hilight table rows on hover */
+
+.fsGroupAjaxTable table.itemList a.sortColumn {
+	background: url("../../images/admin_ui/2.0/bullet_arrow_down.png") center center no-repeat;
+	float: right;
+	text-indent: -9999px;
+	width: 14px;
+	height: 14px;
+	opacity: 0.4;
+}
+
+.fsGroupAjaxTable table.itemList .tableAlignCenter { text-align: center }
+.fsGroupAjaxTable table.itemList th:hover a.sortColumn { opacity:1; }
+.fsGroupAjaxTable table.itemList th:hover a.sortColumnUp { opacity:1; }
+.fsGroupAjaxTable table.itemList th.sorted { background:#555; }
+.fsGroupAjaxTable table.itemList th.sorted a.sortColumn { opacity:1; }
+.fsGroupAjaxTable table.itemList th.sorted a.sortColumnUp { opacity:1; }
+.fsGroupAjaxTable table.itemList a.sortColumnUp {
+	background: url("../../images/admin_ui/2.0/bullet_arrow_up.png") center center no-repeat;
+	float: right;
+	text-indent: -9999px;
+	width: 14px;
+	height: 14px;
+	opacity: 0.4;
+}
+
+.fsGroupAjaxTable .itemListOptions {
+	padding: .5em 0;
+	position: relative;
+	min-height: 2em;
+}
+
+.fsGroupAjaxTable .itemListOptions a { text-decoration:none; }
+.fsGroupAjaxTable .itemListOptions a:hover { text-decoration:underline; }
+
+.fsGroupAjaxTable .listPager {
+	position:absolute;
+	right:0; bottom:-0.5em;
+	background-color: #eee;
+	border-width:1px 1px 0 1px;
+	border-color:#ddd;
+	border-style:solid;
+	color: #666;
+	padding: 0.5em 1em;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.fsGroupAjaxTable .itemListContainer {
+	margin:.5em 0;
+	clear:both;
+}
+
+.fsGroupAjaxTable .selectCol {
+	width: 20px;
+}
+
+.nextPage, .prevPage{
+    font-weight:bold;
+}
+
+.fsInactive {
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: default;
+}
+
+.fsGroupIconLink, .fsGroupIconLink.fsInactive:hover {
+	background-color: #F5F5F5;
+	display:inline-block;
+	line-height:1;
+	background-position: 0.35em center;
+	background-repeat: no-repeat;
+	border-radius: 4px 4px 4px 4px;
+	border-width:1px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+	color: #003158 !important;
+	font-weight: normal;
+	line-height: 1;
+	padding: 6px 10px 5px 25px;
+	text-shadow: 0 -1px 0 rgba(225, 225, 225, 0.25);
+	text-decoration: none;
+	font:inherit; /*this should fix any buttons that it gets applied to*/
+	-webkit-transition: background-color .2s;
+	-moz-transition: background-color .2s;
+	transition: background-color .2s;
+}
+
+.fsGroupIconLink:hover,.fsGroupIconLink.on{
+	background-color:#e6e6e6;
+	text-decoration:none !important;
+}
+
+.fsGroupIconBtnCheck,.fsGroupIconBtnCheck.fsInactive:hover{
+	background-image:url('../../images/admin_ui/2.0/white/check.png');
+	color:#fff !important;
+	background-color: #5BB75B;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-style:solid;
+	border-width:1px;
+	-webkit-text-shadow:0 0 1px #008000;
+	text-shadow:0 0 1px #008000;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+.fsGroupIconBtnView {
+	background-image:url('../../images/admin_ui/2.0/black/glasses.png');
+	padding: 5px 15px 5px 30px;
+	background-position: 7px 5px;
+	color: #333 !important;
+}
+
+.fsGroupIconBtnAdd,.fsGroupIconBtnAdd.fsInactive:hover{
+	background-image:url('../../images/admin_ui/2.0/white/plus.png');
+	color:#fff !important;
+	background-color: #5BB75B;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-style:solid;
+	border-width:1px;
+	-webkit-text-shadow:0 0 1px #008000;
+	text-shadow:0 0 1px #008000;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+.fsGroupIconBtnDelete,.fsGroupIconBtnDelete.fsInactive:hover,
+.fsGroupIconBtnRestore{
+	background-image:url('../../images/admin_ui/2.0/white/trash.png');
+	color:#fff !important;
+	background-position: 0.15em center;
+	border-color: #333;
+	border-style:solid;
+	border-width:1px;
+	-webkit-text-shadow:0 0 1px #008000;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #555;
+	color: #FFFFFF;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.fsGroupIconBtnDelete:hover{
+	background-color:#282828;
+	color:#fff !important;
+}
+
+.fsGroupIconBtnSave, .fsGroupIconBtnSave.fsInactive:hover {
+	background-image: url("../../images/admin_ui/2.0/white/save.png");
+	background-position: 0.5em center;
+	color: white !important;
+	background-color: #5BB75B;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-style: solid;
+	border-width: 1px;
+	-webkit-text-shadow: 0 0 1px #008000;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.fsGroupIconBtnSave:hover {
+	background-color: #55AA55;
+}
+
+.fsGroupIconBtnBack, .fsGroupIconBtnBack.fsInactive:hover {
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size:13px;
+	background-image: url("../../images/admin_ui/2.0/black/back.png");
+	padding-left:28px;
+	background-position: 0.5em center;
+	color:#444 !important;
+	background-color:#ddd;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-style: solid;
+	border-width: 1px;
+	-webkit-text-shadow: 0 1px 0 #eee;
+	text-shadow: 0 1px 0 #eee;
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.fsGroupIconBtnEdit, .fsGroupIconBtnEdit.fsInactive:hover{
+	color:#fff !important;
+	background-color: #49AFCD;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-style:solid;
+	border-width:1px;
+	-webkit-text-shadow:0 0 1px #008000;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+.fsGroupIconBtnSettings, .fsGroupIconBtnSettings.fsInactive:hover{
+	color:#fff !important;
+	background-color: #666;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-style:solid;
+	border-width:1px;
+	-webkit-text-shadow:0 0 1px #008000;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+.fsGroupIconBtnSettings{
+	background-image:url('../../images/admin_ui/2.0/white/gears.png');
+}
+
+.fsGroupIconBtnSettings:hover{
+	background-color:#555;
+}
+
+.fsGroupIconBtnEdit{
+	background-image:url('../../images/pencil.png');
+}
+
+.fsGroupIconBtnEdit:hover {
+	background-color:#3097B5;
+}
+
+.fsGroupIconBtnView:hover{
+	background-color: #DDD;
+}
+
+.fsGroupIconBtnAdd:hover,
+.fsGroupIconBtnCheck:hover{
+	background-color:#53A753;
+	color:#fff !important;
+}
+
+.fsGroupIconBtnAddSm, .fsGroupIconBtnAddSm.fsInactive:hover{
+	background:transparent url('../../images/admin_ui/2.0/plus_blue.png') 0.5em center no-repeat;
+	display:inline-block;
+	padding:5px 8px 4px 28px;
+	line-height:1;
+	color:#1071D1;
+}
+.fsGroupIconBtnAddSm.fsInactive:hover{ color:#19408C ; background-image: url('../../images/admin_ui/2.0/plus_navy.png');}
+
+.fsGroupIconBtnClone {
+	background:#F5F5F5 url('../../images/admin_ui/2.0/black/copy.png') 0.5em center no-repeat;
+	color: #222 !important;
+	padding:5px 8px 4px 28px;
+	line-height:1;
+	font-size: .9em;
+}
+
+#fsGroupsBody .fsGroupIconBtnViewSm {
+	background: rgba(0, 0, 0, 0) url('../../images/admin_ui/2.0/black/eye.png') 0.5em center no-repeat;
+	display: inline-block;
+	padding: 5px 8px 4px 26px;
+	line-height: 1;
+	color: #111;
+	opacity: .5;
+}
+
+#fsGroupsBody .fsGroupIconBtnViewSm:hover {
+	opacity: 1;
+	color: #111;
+}
+
+/* recent activity */
+.fsActivityList{ list-style-type:none; padding:0; margin:0; }
+.fsActivityList ul{ padding: 0; margin: 0; list-style-type:none;}
+.fsActivityItem{ border-bottom:1px solid #ccc; padding:0.5em 1em; }
+.fsActivityItem:nth-of-type(even){ background-color:#eee; }
+.fsActivityItemGroup{ color:#c00; font-weight:bold; }
+.fsActivityItemDesc{ }
+.fsActivityItemName{ font-weight:bold; }
+.fsActivityItemTime{ color:#666; font-style:italic; }
+.fsActivityExpandLink{
+	display:block; float:left; position:relative;
+	width:12px; height:12px;
+	background:transparent url('../../images/bullet_expand_black.gif');
+	text-indent:-9999px;
+	margin:1px 3px 0 0;
+	cursor: pointer;
+}
+.fsActivityExpandLink.fsActivityExpandLinkOpen{
+	background:transparent url('../../images/bullet_collapse_black.gif');
+}
+.fsActivitySublist {
+	display : none;
+	list-style: none;
+}
+
+.fsActivityOlder {
+	/* these colors should be set to match the portal_header class */
+	display:block;
+	background-color: #eee;
+	color: #666;
+	padding: 0.3em 1em;
+	text-align:center;
+	cursor:pointer;
+}
+.fsActivityNoRecent {
+	text-align: center;
+}
+
+/* Customize Dashboard Dialog Styles */
+#dashboardCustomize{
+	padding: 5px;
+	display: none;
+	overflow: hidden;
+}
+#dashboardCustomize ul {
+	list-style: none;
+	padding: 4px 0;
+	border: 1px solid grey;
+	margin: 0 0 10px 0;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	overflow:auto;
+}
+#dashboardCustomize li {
+	padding:3px 6px;
+	cursor: move;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+
+#dashboardCustomize li:hover{
+	background-color:#ddd;
+}
+
+#dashboardCustomize .clickControlsEnabled li:hover{
+	background-color:transparent;
+	cursor:default;
+}
+
+#dashboardCustomize li.ui-sortable-placeholder{
+	border: 1px dotted darkgrey;
+	background-color: lightgrey;
+	visibility: visible !important;
+}
+
+#controlsHeader{
+	margin-bottom:1em;
+	color:#666;
+}
+
+#dashboardCustomize .clickControls {
+	display:block;
+	margin-bottom:4px;
+	padding:4px 8px;
+	background-color:#eee;
+	border:1px solid #ccc;
+	text-decoration:none;
+	float:right;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+#dashboardSelectedElementsLeft{
+	padding-right: 5px;
+	float:left;
+	width:300px;
+}
+#dashboardElementsLeft{
+	height:160px;
+}
+#dashboardSelectedElementsRight{
+	padding-left: 5px;
+	float:left;
+	width:300px;
+}
+#dashboardElementsRight{
+	height:160px;
+}
+
+#dashboardSelectedElementsLeft.empty, #dashboardSelectedElementsRight.empty{
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
+#dashboardElementsUnused{
+	width: 608px;
+	height:120px;
+	margin-bottom: 24px;
+	overflow:auto;
+}
+
+.dashboardCustomizeMoveLeft,
+.dashboardCustomizeMoveRight,
+.dashboardCustomizeMoveUnused,
+.dashboardCustomizeMoveUp,
+.dashboardCustomizeMoveDown{
+	display:none;
+}
+
+.clickControlsEnabled .dashboardCustomizeDrag,
+#dashboardElementsRight .dashboardCustomizeMoveRight,
+#dashboardElementsLeft .dashboardCustomizeMoveLeft,
+#dashboardElementsUnused .dashboardCustomizeMoveUp,
+#dashboardElementsUnused .dashboardCustomizeMoveDown,
+#dashboardElementsUnused .dashboardCustomizeMoveUnused{ display:none; }
+
+#dashboardElementsLeft li:first-child .dashboardCustomizeMoveUp,
+#dashboardElementsLeft li:last-child .dashboardCustomizeMoveDown,
+#dashboardElementsRight li:first-child .dashboardCustomizeMoveUp,
+#dashboardElementsRight li:last-child .dashboardCustomizeMoveDown{ opacity:0.4; }
+
+.dashboardCustomizeDrag,
+.clickControlsEnabled .dashboardCustomizeMoveRight,
+.clickControlsEnabled .dashboardCustomizeMoveLeft,
+.clickControlsEnabled .dashboardCustomizeMoveUp,
+.clickControlsEnabled .dashboardCustomizeMoveDown,
+.clickControlsEnabled .dashboardCustomizeMoveUnused{
+	display: block;
+	float:left;
+	width:16px; height:16px;
+	margin-right:2px;
+	background-color:#ddd;
+	background-image:url('../../javascript/jQuery/themes/finalsite/images/ui-icons_222222_256x240.png');
+	text-indent:-9999px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+}
+
+.dashboardCustomizeDrag{ background-position: 0 -80px;}
+.dashboardCustomizeMoveUp{ background-position:0 -48px; }
+.dashboardCustomizeMoveDown{ background-position:-64px -48px; }
+.dashboardCustomizeMoveRight{ background-position:-32px -48px; }
+.dashboardCustomizeMoveLeft{ background-position:-96px -48px; }
+.dashboardCustomizeMoveUnused{ background-position:-80px -128px; }
+
+
+/* End Customize Dashboard */
+
+.notify-circle {
+	width: 18px;
+	height: 18px;
+	background: red;
+	border: 1px solid #992626;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	font-size: 11px;
+	color: white;
+	position: absolute;
+	right: -12px;
+	top: 0px;
+}
+.notify-circle span{
+	vertical-align: middle;
+}
+
+
+/* Members Page */
+
+
+#fsGroupSpaceMembersPane .mainGroup .subGroup {
+    padding:10px 10px 10px 0;
+}
+
+.iconBtnEmail{
+    background:transparent url('../../images/email.gif') no-repeat 0px 2px;
+    padding-left:24px;
+    text-transform:capitalize;
+}
+
+.iconBtnEdit{
+    background:transparent url('../../images/admin_ui/2.0/black/pencil.png') no-repeat 0px 0px;
+    padding-left:19px;
+    margin-left:20px;
+    text-transform:capitalize;
+}
+
+.fsGroupSpaceMembersEntryContactInfo{
+    color:#999;
+}
+
+.fsGroupSpaceMembersEntry{
+    padding-top:1em;
+	border-bottom:1px solid #eee;
+	margin: 0 1%;
+    width: 48%;
+}
+
+.fsGroupSpaceMembersEntryDetails{
+    line-height:1.6em;
+    margin-bottom:1.5em;
+}
+
+.fsGroupSpaceMembersEntryImageWrapper{
+    float:left;
+}
+
+.fsGroupSpaceMembersEntryImageWrapper img{
+    margin:0 1em 1em 0;
+    padding:2px;
+    border:1px solid #ddd;
+    border-radius:2px;
+    max-width:140px;
+    height:auto;
+}
+
+.fsGroupSpaceMembersEntryName{
+    font-size: 1.4em;
+    font-family: "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    color:#444;
+}
+
+.fsGroupSpaceMembersEntryRoles{
+    font-weight:bold;
+    color:#888;
+}
+
+.fsGroupSpaceMembersEntryProfile{
+    background-image: url('../../images/glyphsprite.png');
+    background-position: -14px -29px;
+	width: 12px;
+	height: 12px;
+	display:inline-block;
+	text-indent:-100%;
+	overflow:hidden;
+}
+
+.fsGroupSpaceMembersPaging{
+    text-align:center;
+    margin:1em 0 2em 0;
+    padding:1em 0;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+}
+
+#fsGroupSpaceMembersPagingBottom{
+    clear:both;
+}
+
+#fsGroupSpaceMembersPane form {
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	padding: 2px 7px 0px 7px;
+	margin-left:1em;
+	margin-top:-10px;
+}
+
+#fsGroupSpaceMembersPane form input[type=text]{
+    border:0;
+}
+
+#fsGroupSpaceMembersPane form input[type="submit"]{
+    background-image: url('../../images/glyphsprite.png');
+    background-repeat:no-repeat;
+    background-position: -49px 0px;
+    width: 14px !important;
+    height: 12px !important;
+    background-color:transparent;
+    border:0;
+    overflow:hidden;
+    text-indent:-120px;
+}
+
+/* Facebook Element Styles */
+#fsGroupSpaceElementFacebookId ul {
+	list-style: none;
+	padding: 0 5px;
+	margin: 0;
+}
+#fsGroupSpaceElementFacebookId  li {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	word-wrap: break-word;
+}
+#fsGroupSpaceElementFacebookId  li:not(:first-child) {
+	padding-top: 10px;
+}
+#fsGroupSpaceElementFacebookId li a {
+	word-break: break-all;
+}
+#fsGroupSpaceElementFacebookId img.fsGroupSpaceElementFacebookElement_thumb {
+    display:inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	max-width: 100%;
+	margin:5px 0;
+}
+.fsGroupSpaceElementFacebookElement_title{
+    display:block;
+}
+.fsGroupSpaceElementFacebookElement_extras {
+	margin-top: 10px;
+	padding-left:25px;
+
+}
+div.fsGroupSpaceElementFacebookElement_extras a {
+	word-break: normal;
+}
+.fsGroupSpaceElementFacebookElement_from {
+	font-weight: bold;
+    padding-right:10px;
+	font-size: 1.1em;
+}
+
+.fsGroupSpaceElementFacebookElement_likes{
+	margin-top: 10px;
+	color:#666;
+}
+
+#fsGroupSpaceElementFacebookId  li.fsGroupSpaceElementFacebookElement_follow{
+	color:#666;
+	border:0;
+	padding:0.3em;
+	text-align: right;
+}
+
+.fsGroupSpaceElementFacebookElement_follow a{
+    font-size:11px;
+	background: #e7e9ef;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e7e9ef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e7e9ef));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e7e9ef 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#e7e9ef 100%);
+	padding:5px 12px;
+    border:1px solid #DEDEE2;
+    border-radius:4px;
+	display: inline-block;
+	text-decoration:none;
+	text-transform:capitalize;
+}
+
+.fsGroupSpaceElementFacebookElement_follow a:hover{
+    background:#fafafa;
+}
+
+
+/* YouTube Element Styles */
+
+ul.fsGroupSpaceDashboardYouTube {
+	list-style: none;
+	padding: 0 5px;
+	margin: 0;
+}
+li.fsGroupSpaceDashboardYouTube {
+	border-bottom: 1px solid #eee;
+	padding: 10px 0 10px 20px;
+	cursor: pointer;
+	min-height: 90px;
+	margin:0;
+}
+li.fsGroupSpaceDashboardYouTube:hover {
+	background:#eee;
+}
+li.fsGroupSpaceDashboardYouTube a {
+	word-break: break-all;
+}
+.fsGroupSpaceDashboardYouTube_title{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.fsGroupSpaceDashboardYouTube_desc{
+	color:#666;
+}
+.fsGroupSpaceDashboardYouTube_thumb {
+	max-width: 40%;
+	max-height: auto;
+	margin-right: 11px;
+	float: left;
+}
+.fsGroupSpaceDashboardYouTube_views {
+	font-size: .9em;
+}
+.fsGroupSpaceYouTubePlayerResponsiveContainer {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+}
+.fsGroupSpaceYouTubePlayer {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* Resources */
+
+.fsGroupSpaceResourceFolder {
+	padding: 10px 2px 13px 34px;
+	border-bottom: 1px solid #eee;
+	background: transparent url(../../images/lms/resources/folder-home.png) no-repeat 8px 10px;
+}
+
+/* Elements that use the old pencil and delete icon */
+
+.editBulletinIcon, .deleteBulletinIcon, #fsGroupSpaceDashboardEditOverviewLink img{
+    opacity:.7;
+    filter:alpha(opacity=70);
+}
+
+.editBulletinIcon:hover, .deleteBulletinIcon:hover, #fsGroupSpaceDashboardEditOverviewLink img:hover{
+    opacity:1;
+}
+
+
+/* Calendar Styles */
+
+.monthhead{
+    font-weight:normal !important;
+}
+
+.fsTodaysWeather {
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.fsTodaysWeather span {
+	display: block;
+	font-weight: normal;
+	padding: 3px;
+}
+
+.event_stackdate{
+	border-radius: 2px;
+	margin:0 1em 0 0;
+    width: 55px;
+    border: 1px dotted #DDD;
+    text-shadow: 0 1px 1px #FFF;
+}
+
+.event_stackdate span.event_stackdayname, .event_stackdate span.event_stackmonname {
+    display: block;
+    text-align: center;
+    padding: 0;
+    text-transform:none;
+    background:transparent;
+    color:#D0152B;
+}
+
+.event_stackdate span.event_stackdayname{
+	background: #E8E8E8;
+    padding: 3px;
+    color: #AAA;
+    font-size: .95em;
+    text-transform: uppercase;
+}
+
+.event_stackdate span.event_stackmonname{
+    display:none;
+}
+
+.event_stackdate span.event_stackdaynum{
+    background: transparent;
+    padding: 4px;
+    color: #777;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.eventcon{
+    line-height:1.3em;
+}
+
+.caldata .monthhead {
+    color: #999;
+	padding: .5em 0 0 .3em;
+	text-transform: uppercase;
+}
+
+.eventobj{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1em;
+    padding: .4em 0 1em !important;
+}
+
+.fsTodaysWeather span:first-child {
+  color: #AAA;
+  padding: .7em 0 0 .3em;
+  text-transform: uppercase;
+}
+
+.etitle{
+    padding-bottom:.2em;
+}
+
+.lmsEventClasses {
+	font-weight: normal;
+}
+
+.event_time{
+    color:#666;
+    padding-bottom:.2em;
+}
+
+.event_notes{
+    font-size:.9em;
+}
+
+/* Calendar event colors */
+
+.fcGroupSpaceCalendar .fc-event, .fcGroupSpaceCalendar .fc-agenda .fc-event-time,
+.fcGroupSpaceCalendar .fc-event a {
+	border: 1px solid #7C7C7C !important;
+	background-color: #7C7C7C !important;
+	color: #fff;
+}
+
+/* Activity Stream */
+
+.fsStyleThreeColumn .fsSocialPostSubmit {
+    float:none;
+    margin-top:.5em;
+}
+
+
+/* These are carryovers from pagegroupheader.cfm, not sure if they are necessary anymore */
+#classOverview{padding:0.5em;}
+
+.alumni_status {font-weight: bold; display: inline;}
+.class_roster_key {display:hidden; position: absolute;}
+
+/*
+.blogpost {clear: both; margin-bottom:1em; padding-bottom: 1em; padding-left: 1em; padding-right: 1em;}
+.blogpostinfo {color: #999999; margin-top: 2px; font-size:.8em;}
+*/
+
+/* Athletics Styles */
+.athNextEvent { padding:1em; }
+
+/* End old */
+
+/* dialogs */
+.ui-dialog {
+	background-color: #FFF;
+	border: 0 !important;
+	left: 0 !important;
+	margin: auto;
+	max-width: 480px;
+	min-width: 320px;
+	padding: 0 !important;
+	position: absolute;
+	right: 0 !important;
+	width: 80% !important;
+}
+
+.ui-dialog .mainGroupTitle {
+	background: rgba(0, 0, 0, 0);
+	margin: 0.8em 0 0.8em 0.2em;
+	padding: 0;
+}
+
+.ui-dialog.ui-draggable .ui-dialog-titlebar {
+	background: #333;
+	border: 1px solid #EEE;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	color: #FFF;
+	cursor: default;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: .7em 1em;
+}
+
+.ui-draggable .ui-dialog-titlebar:hover,
+.ui-draggable .ui-dialog-titlebar {
+	cursor: default !important;
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-fcBulkAction"] {
+	max-width: 700px;
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-fsAthleticsEventDetails"],
+.ui-dialog[aria-labelledby="ui-dialog-title-fsGroupSpaceDashboardCustomizeDialog"] {
+	max-width: 620px;
+}
+
+.ui-dialog .ui-dialog-title {
+	color: #EEE;
+	font-family:"Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+	font-size: 1.3em;
+	font-weight: normal;
+	letter-spacing: .02em;
+	margin: .4em 16px .2em 0 !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	border-top: 1px dotted #DDD;
+}
+
+.ui-dialog .ui-widget-header:not(.ui-datepicker-header) .ui-icon {
+	background: url('../../images/admin_ui/2.0/white/x-thick.png') no-repeat;
+	backface-visibility: hidden;
+	opacity: .5;
+}
+
+.ui-dialog .ui-widget-header:not(.ui-datepicker-header) .ui-icon:hover {
+	opacity: 1;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	margin-right: 4px !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+	background: transparent;
+	border: 0;
+	border-radius: 50%;
+	padding: 1px !important;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 0;
+	background: transparent;
+}
+
+.ui-dialog[aria-labelledby*="fsGroupSpaceDashboardEmbedSettings"] {
+	max-width: 900px;
+	width: 97% !important;
+}
+
+/* COMPOSE MESSAGE STYLES */
+#fsComposeMessageInlineContainer { display: none; margin:10px 0;}
+#composeMsg{ margin-left:2em; }
+.composeMsgToLabel{margin-left:-36px;margin-top:3px;position:absolute;text-align:right;width:30px;}
+#composeMsgTo{ display:inline-block; width:386px; min-height:14px; border:1px solid #666; padding:0.25em; vertical-align:middle; }
+.toName{background-color:#cef; display:inline-block; margin:2px 4px; padding:4px 6px 2px; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;  }
+.removeName{ display:inline-block; width:16px; height:16px; background:transparent url("../../admin_ui/1.0/images/cross.png") no-repeat left center; margin-right:2px; text-indent:-9999px; cursor:pointer; }
+.composeMsgFilter{ clear: both; display: block;  margin: 0.25em 0; padding: 5px 0 3px;}
+.composeMsgFilter a{ border-radius: 4px 4px 4px 4px; display: inline-block; padding: 0 3px; text-decoration: none;  text-transform: uppercase; }
+.composeMsgFilter a:hover{ background-color:#eee; }
+.composeMsgFilter a.on{ background-color: #333333;  color: #FFFFFF; }
+#composeMsgPicker{display:block; margin-top:0.5em; }
+#composeMsgResults{ max-height:200px; overflow:auto; border:1px solid #CCCCCC; padding:0 1em 0 0.5em; margin-bottom:1em;list-style: none;  }
+#composeMsgResults ul{ margin: 0; padding: 0; }
+#composeMsgResults li{ position:relative; margin:1px 0; }
+#composeMsgResults .composeMsgPersonLink{ position:absolute; top:0.5em; text-indent:-9999px; opacity: 0.5; -moz-opacity: 0.5; filter:alpha(opacity=50); }
+#composeMsgResults .composeMsgPersonLink:hover{opacity:1;-moz-opacity:1;filter:alpha(opacity=1);}
+#composeMsgContent{ width:450px; }
+.pplName i { font-size: .85em; font-weight: normal; font-style:italic; color: #666666;}
+.pplName{ border-radius: 4px 4px 4px 4px; cursor: pointer; display: block; margin-left: 20px; padding: 0.25em 0.5em; font-weight:bold;}
+.pplName:hover{ background-color:#eee; }
+#attachBar{ margin:0.5em 0; }
+#attachNewForm, #attachLinkForm{display:none;}
+#attachNewForm label, #attachLinkForm label{ display:block; float:left; width:80px; text-align:right; padding-right:1em; }
+.attachBtns{ margin:0.5em 0 0.5em 90px; }
+.attachedLink{ min-height:16px; background:transparent url('../../images/link_333333.png') no-repeat; padding-left:22px; margin-bottom:0.5em;}
+.attachedFile{ min-height:16px; background:transparent url('../../images/file_333333.png') no-repeat; padding-left:22px; margin-bottom:0.5em;}
+.attachControls{ display:none; }
+.attachControls a{ color:#666; }
+.attachItem:hover .attachControls{ display:inline; }
+
+/* Loading dialog */
+#fsLoadingPrompt {
+	text-align: center;
+	font-weight: bold;
+}
+
+.noDialogTitlebar .ui-dialog-titlebar {
+	display: none !important;
+}
+
+/* Athletic Event Dialog */
+.fsAthleticsLabel {
+	width: 125px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.fsAthleticsContent {
+	width: 385px;
+	display: inline-block;
+}
+
+.fsAthleticsContainer > div{
+	margin: 10px 0;
+}
+
+/* Calendar Event Dialog */
+.fsCalendarEventTitle span {
+	font-size: 1.15em;
+	font-weight:bold;
+	line-height: 1.5em;
+	color:#487d0f;
+}
+
+.fsCalendarEventClass {
+	font-size: 1.1em;
+	line-height: 1.4em;
+	color:#676767;
+}
+
+.fsCalendarEventDate, .fsCalendarEventLocation {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.fsCalendarEventDescription {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin: 15px 0 15px 0;
+}
+
+/* Gradebook */
+#fsGradebookNew {
+	margin-top: 10px;
+}
+
+#fsGradebookEntryTitle {
+	width:95%;
+}
+
+#fsGradebookEntryForm label, #fsGradebookEntrySettings label {
+	font-weight: bold;
+}
+
+#fsGradebookEntryGroups th, #fsGradebookEntrySettings th {
+	text-align: left;
+}
+
+/* Gradebook New Entry Modal */
+#fsGradebookEntryForm {
+	padding-top: 1em;
+}
+
+#fsGradebookEntryForm select {
+	font-size: 13px;
+}
+
+#fsGradebookEntryGroups td:first-child {
+	padding-right: 25px;
+}
+
+#fsGradebookEntryGroups, #fsGradebookEntryForm .fsGradebookEntryCol, #fsGradebookEntryForm .fsGradebookEntryColSm, #fsGradebookEntryForm .fsGradebookEntryColLg {
+	float: left;
+	display: inline-block;
+	-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+#fsGradebookEntryGroups {
+	padding-bottom: 15px;
+	padding-right: 20px;
+	width: auto;
+}
+
+#fsGradebookEntryForm .fsGradebookEntryCol, #fsGradebookEntryForm .fsGradebookEntryColSm, #fsGradebookEntryForm .fsGradebookEntryColLg  {
+	margin: 0;
+	padding: 0;
+	width: 36%;
+}
+
+#fsGradebookEntryForm .fsGradebookEntryCol {
+	padding-bottom: 5px;
+}
+
+#fsGradebookEntryForm a.fsGroupIconLink {
+	clear: both;
+	display: inline-block;
+	text-align: right;
+	padding: 5px 5px 5px 27px;
+	margin: 25px 0 0;
+	float: right;
+	border-radius: 3px;
+	text-decoration: none;
+	background-image:url('../../images/admin_ui/2.0/white/calendar.png');
+}
+
+#fsGradebookEntryForm .fsGradebookEntryRow {
+	clear: both;
+	display: block;
+	padding: 5px 0 12px;
+}
+
+#fsGradebookEntryForm .fsGradebookEntryColSm {
+	padding-right: 15px;
+	width: 27%;
+}
+
+#fsGradebookEntryForm .fsGradebookEntryColLg {
+	width: 50%;
+	margin-left: 30px;
+}
+
+#fsGradebookEntryForm .ui-datepicker-trigger {
+	cursor: pointer;
+	padding: 6px 0 0 3px;
+	vertical-align: top;
+}
+
+label .ui-datepicker-trigger {
+	display: inline-block;
+	margin-left: 3px;
+	margin-top: 4px;
+	vertical-align: top;
+}
+
+#fsGradebookEntryForm label {
+	margin: 0 0 4px 0;
+	display: inline-block;
+}
+
+#fsGradebookEntryForm + .ui-dialog-buttonpane button:first-child,
+#fsGradebookSettings + .ui-dialog-buttonpane button:first-child,
+#fsGradebookFeedback + .ui-dialog-buttonpane button:first-child,
+#fsAttendanceAdminExport + .ui-dialog-buttonpane button:last-child,
+#fcQuickAddEvent + .ui-dialog-buttonpane button:first-child,
+.fsGroupSpaceDashboardEmbedSettings + .ui-dialog-buttonpane button:last-child,
+#fsResourcesEdit + .ui-dialog-buttonpane button:first-child,
+#adminBulletinModal ~ .ui-dialog-buttonpane button:first-child {
+	background: #5BB75B;
+	color: #fff;
+	text-shadow: 0 0 1px #008000;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	border-style: solid;
+	border-width: 1px;
+}
+
+#fsGradebookEntryForm label {
+	margin-top: 4px;
+}
+
+#fsGradebookEntryForm + .ui-dialog-buttonpane button:first-child:hover,
+#fsGradebookSettings + .ui-dialog-buttonpane button:first-child:hover,
+#fsGradebookFeedback + .ui-dialog-buttonpane button:first-child:hover,
+#fsAttendanceAdminExport + .ui-dialog-buttonpane button:last-child:hover,
+#fcQuickAddEvent + .ui-dialog-buttonpane button:first-child:hover,
+.fsGroupSpaceDashboardEmbedSettings + .ui-dialog-buttonpane button:last-child:hover,
+#fsResourcesEdit + .ui-dialog-buttonpane button:first-child:hover,
+#adminBulletinModal ~ .ui-dialog-buttonpane button:first-child:hover {
+	background-color: #53A753;
+}
+
+.ui-dialog .ui-dialog-title {
+	font-size: 1.3em;
+	letter-spacing: .02em;
+	font-family:"Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+	font-weight: normal;
+	margin: .4em 16px .2em 0 !important;
+	color: #CCC;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	background: transparent;
+	border: 0;
+	border-bottom: 1px dotted #DDD;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+	border-top: 1px dotted #DDD;
+}
+
+#fsGradebookEntryForm + .ui-dialog-buttonpane button,
+#fsGradebookSettings + .ui-dialog-buttonpane button {
+	float: right;
+}
+
+#fsAttendanceAdminExport + .ui-dialog-buttonpane button,
+.fsGroupSpaceDashboardEmbedSettings + .ui-dialog-buttonpane button:first-child {
+	float: left;
+}
+
+.mpNotification {
+	border-radius: 4px;
+	border: 1px solid #BCE8F1;
+	color: #3A87AD;
+	font-size: .9em;
+	font-weight: bold;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+	vertical-align: top;
+	background: none repeat scroll 0 0 #D9EDF7;
+	margin-top: 1.5em;
+	padding: .5em;
+	width: 125px;
+}
+#weightInfo {
+	color: red;
+	font-size: .9em;
+	font-weight: bold;
+	padding-top:3px;
+	font-style: italic;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.fsSocialButton {
+	background: #F5F5F5; /* Old browsers */
+	background-image: -moz-linear-gradient(top, #FFF 0%, #E6E6E6 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#E6E6E6)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* IE10+ */
+	background-image: linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* W3C */
+	border: 1px solid;
+	border-color: #E6E6E6 #E6E6E6 #B3B3B3 #E6E6E6;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E6E6E6',GradientType=0 ); /* IE6-9 */
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 0;
+	padding: 4px 10px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+}
+.fsSocialButton:hover {
+	background: #E7E7E7;
+}
+.fsSocialButton.markAllAsReadBtn {
+	display: none;
+	float: right;
+}
+.fsSocialPostAttachOption {
+	margin-left: 5px;
+}
+#uploadDesc {
+	color: #555;
+	display: inline-block;
+	font-size: .95em;
+	padding: 10px 0 0 6px;
+}
+#fsGradebookEntryForm a.inactive {
+    background-color: #777;
+    color:#bbb !important;
+    cursor: no-drop;
+}
+
+
+
+.streamEntryDetail .commentDate {
+	color: #BBB;
+	font-size: .9em;
+	font-weight: normal;
+	margin: 4px 0 0;
+}
+
+.activityStream .etitle {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.activityStream .streamEntry {
+	padding: 12px;
+}
+
+.streamEntryDetail {
+  margin-left: 64px;
+}
+
+.streamEntryCommentSection .streamEntryTitle,
+.streamEntryCommentSection .streamEntryBody {
+	font-size: 0.923em;
+}
+
+.streamEntryComments .streamEntryComment.streamEntryCommentUnread,
+.streamEntryHiddenComments .streamEntryComment.streamEntryCommentUnread {
+	position: relative;
+}
+
+.streamEntryCommentUnread::before {
+	background-color: #9CF;
+	bottom: 0;
+	color: #FFF;
+	content: 'unread';
+	font-size: .8em;
+	padding: 5px;
+	position: absolute;
+	right: 0;
+}
+
+.streamEntryImage {
+  float: left;
+  max-width: 48px;
+  max-height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.activityStream  .blogTeaserText {
+	margin: 1px 0 3px;
+}
+
+.activityStream  .blogTeaserText p {
+	margin: 0;
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-fsResourcesEdit"] {
+	max-width: 750px;
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-adminBulletinModal"] {
+	max-width: 785px;
+}
+
+.ui-dialog[aria-labelledby="ui-dialog-title-fsResourcesEdit"] select {
+	min-height: 30px;
+	max-width: 215px;
+	display: block;
+}
+
+#fsResourcesDeprecatedNotes,
+#fsResourcesEditThumbnail {
+	clear: both;
+}
+
+#fsResourcesEditForm .fsResourcesFormRow:nth-of-type(1),
+#fsResourcesEditForm .fsResourcesFormRow:nth-of-type(2),
+#fsResourcesEditForm .fsResourcesFormRow:nth-of-type(3) {
+	display: inline-block;
+	float: left;
+	width: 33%;
+}
+#fsResourcesEditTitle {
+	display: block;
+}
+
+#fsResourcesEditThumbnail ~ .fsResourcesFormRow,
+#fsResourcesEditTabs {
+	  padding-top: 5px;
+}
+
+.fsResourcesThumbnailClear img {
+	opacity: .5;
+	vertical-align: bottom;
+}
+
+.fsResourcesThumbnailClear img:hover {
+	opacity: 1;
+}
+
+
+#helpMenu, #helpMenu > a {
+    float: right;
+}
+#helpMenu > div {
+    clear: both;
+    display: none;
+    background-color: #fff;
+    padding: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+#helpMenu:hover > div {
+    display: block;
+}
+
+#helpMenu ul {
+    list-style: none;
+    padding: 3px;
+    margin: 3px;
+}
+#helpMenu li {
+    padding: 3px;
+}
+
+#helpMenu li>a,
+#helpMenu li>a:visited {
+    font-style: normal;
+    color: #222;
+    text-decoration: none;
+}
+
+#helpMenu li:hover {
+    background-color: #eee;
+    color: #1071d1;
+}
+#helpMenu li:hover>a {
+    color: #1071d1;
+}
+
+.fsStyleFloatRight {
+	float: right;
+}
+
+.fsGroupSpaceElementHeader .fsGroupSpaceElementTitle + span {
+	color: #8B8B8B;
+	font-size: .7692em;
+}
+
+.newFlag {
+	background-color: rgba(44, 44, 44, 0.6);
+	border-radius: 6px;
+	color: #EEE;
+	float: right;
+	font-family: arial;
+	font-size: 10px;
+	font-weight: normal;
+	letter-spacing: .05em;
+	margin: -13px -6px 0 -36px;
+	padding: 2px 5px;
+	position: relative;
+	text-shadow: 0px 1px 0px #000;
+}
+
+/*  Responsive!!!
+---------------------------------------------------------
+--------------------------------------------------------- */
+
+/* Disable iOS/WinMobile font size changes */
+ @media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+	html {
+		-ms-text-size-adjust: none;
+		-webkit-text-size-adjust: none;
+	}
+
+	input, textarea {
+		font-size: 14px;
+	}
+}
+
+
+
+
+/*  XLarge Screen
+--------------------------------------------------------- */
+
+@media only screen
+and (max-width : 1100px){
+
+    .fc-header-left, .fc-header-right, .fc-header-center{
+	    display: table-row;
+	    width: 100% !important;
+	    float: left;
+	    white-space: normal !important;
+	}
+
+	.ui-helper-reset.ui-tooltip .ui-tooltip-content {
+		left: -75%;
+		max-width: 100px;
+	}
+
+	.ui-tooltip-tip {
+		opacity: 0;
+	}
+
+	.ui-helper-reset.ui-tooltip {
+		max-width: 100px !important;
+	}
+
+}
+
+
+/*  Large Screen
+--------------------------------------------------------- */
+
+@media only screen
+and (max-width : 920px){
+
+/* Layout */
+
+    .fsStyleThreeColumn{
+    	width:50%;
+    }
+
+
+/* Content - Activity Stream */
+
+	.fsStyleTwoColumn .fsSocialPostSubmit {
+	    float:none !important;
+	    margin-top:.5em;
+	}
+
+/* Add Resource Modal */
+#fsResourcesEditForm .fsResourcesFormRow:nth-of-type(1),
+#fsResourcesEditForm .fsResourcesFormRow:nth-of-type(2),
+#fsResourcesEditForm .fsResourcesFormRow:nth-of-type(3) {
+	display: block;
+	float: none;
+	width: auto;
+}
+
+}
+
+
+
+
+/*  Medium Screen
+--------------------------------------------------------- */
+
+@media only screen
+and (max-width : 840px){
+
+	#fsGroupsDashboardActivityStream {
+		float:none;
+		width: 100%;
+	}
+
+	#fsGroupsDashboardCalendar, #fsGroupsDashboardFacultyCentral {
+		float: none;
+		width: 100%;
+	}
+
+/* Content - Calendars */
+
+    .fc-header-left, .fc-header-right, .fc-header-center{
+	    display:table-row;
+	    width:100% !important;
+	    float: left;
+	    white-space:normal !important;
+	}
+
+	.fc-button-today{
+	    float:left !important;
+	}
+
+	.fc-button-addevent{
+	    float:right;
+	}
+
+	.fcFilters, .fcFilterContainer, #fcFilters{
+	    width:99% !important;
+	}
+
+	.fc-header-title{
+	    width:100%;
+	}
+
+/* Content - Calendars - Edit & Add Events */
+	#calendarWrapper, #calendar, #fcFilters {
+		margin-left: 0 !important;
+		float: none !important;
+	}
+
+	#calendarWrapper, #fcFilters {
+		float: none !important;
+	}
+
+	#calendar, #fcFilters {
+		margin-left: 0 !important;
+	}
+
+	#fcEditEvent #fcEditEventStartDateSection,
+	#fcEditEvent #fcEditEventStartEndTimeSection,
+	#fcEditEvent #fcEditEventDescriptionSection,
+	#fcEditEvent #fcEditEventCalendarSection,
+	#fcEditEvent #fcEditEventCalendarRightCol{
+	    float:none;
+	    width:100%;
+	    display:block;
+	    clear:both;
+	    min-height:0;
+	}
+
+	#fcEditEventSelectedCalendars {
+		width: 100% !important;
+	}
+
+}
+
+
+/*  Small Screen
+--------------------------------------------------------- */
+
+@media only screen
+and (max-width : 630px){
+
+/* Body */
+
+	#fsGroupsBanner, #fsGroupsNav, #fsGroupSpaceHeader{
+		padding:0 5px;
+	}
+
+	#fsGroupsBody{
+	    padding:20px 10px 0px 10px;
+	}
+
+/* Top Banner */
+
+	#fsGroupsBanner{
+		height:133px;
+		padding-right: 10px;
+	}
+
+	#fsGroupsBranding{
+		clear: both;
+		width:100%;
+		padding:0;
+	}
+
+	#fsGroupsBranding img{
+	    border:0;
+	    max-width:100%;
+	    height:auto;
+    }
+
+	#fsGroupsBannerPortalLink{
+		float: left;
+		font-size: 12px;
+		height: 10px;
+		margin-right: 8px;
+		margin-top: 12px;
+		margin-left:4px;
+		text-align: right;
+		width: 20%;
+		padding:13px 16px;
+		line-height:1;
+	}
+
+	.fsIconBackArrowBlack{
+		position:absolute;
+		left:14px;
+		top:20px;
+	}
+
+	#fsGroupsAccountMenuContainer {
+		width:60%;
+		margin-top:10px;
+	}
+
+	#fsGroupsAccountMenuButton{
+		font-size:12px;
+		padding:2px 0;
+	}
+
+	#fsGroupsAccountMenu{
+	    top:38px;
+	}
+
+/* Top Banner - Main Nodes */
+
+	.fsGroupsNavTab{
+		border: 1px solid #b9b9b9;
+		margin:3px 3px 0px 0px;
+		padding:0 4px;
+		border-radius:2px;
+	}
+
+	.fsGroupsNavMenu{
+	    margin-top:0;
+	}
+
+	#fsGroupsNav{
+		 padding-bottom:3px !important;
+	}
+
+	.fsGroupsNavTab:first-child .fsGroupsNavTopLevelLink{
+		display:none;
+	}
+
+	#fsGroupSpaceThemeMenuButton, #fsGroupSpaceSettingsMenuButton{
+	    display:none;
+	}
+
+/* Top Banner - Classroom Level */
+
+    #fsGroupSpaceAvatarWrapper{
+        width:23px;
+        margin-right:5px;
+    }
+
+    #fsGroupSpaceAvatar{
+    	width:100%;
+    }
+
+	#fsGroupSpaceControls {
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+
+    #fsGroupSpaceAdminInfo{
+        padding-left:12px;
+        font-size:11px;
+    }
+
+    #fsGroupSpaceTitleContainer h1{
+		margin-bottom:.4em;
+		font-size:1.4em;
+	}
+
+	#fsGroupSpaceTitleContainer h3{
+		font-size:1em;
+	}
+
+/* Top Banner - Quick Add Menu */
+
+    #fsGroupSpaceQuickAddMenu{
+		left: -110px;
+	}
+
+	#fsGroupSpaceQuickAddMenu:before{
+		left: 120px;
+	}
+
+	#fsGroupSpaceQuickAddMenu:after{
+		left: 121px;
+	}
+
+/* Top Banner - Classroom Nav */
+
+	.fsGroupSpaceNavButton.fsStateLast, .fsGroupSpaceNavButton.fsStateFirst{
+	    margin:0;
+    }
+
+    .notify-circle {
+		margin-left: -13px;
+		position: relative;
+		margin-top: -8px;
+		vertical-align: top;
+    }
+
+    .fsGroupSpaceNavButton{
+        border-radius:4px;
+        margin: 4px 4px 0 0 !important;
+        padding: 4px 8px;
+        font-size:11px;
+    }
+
+    #fsGroupSpaceNav{
+        padding:5px 0 4px 4px;
+    }
+
+/* Content - Layout */
+
+    .fsStyleTwoColumn, .fsStyleThreeColumn{
+	    width:100%;
+	}
+
+	#fsGroupSpaceDashboardControlsContainer{
+	    display:none;
+	}
+
+/* Content - Members*/
+
+	#fsGroupSpaceMembersPane table{
+	    padding-left:10px;
+	}
+
+	#fsGroupSpaceMembersPane td{
+	    display:table-row;
+	    text-align:left !important;
+	    width:100% !important;
+	    border-bottom:1px solid #ccc !important;
+	}
+
+	#fsGroupSpaceMembersPane td div:first-child{
+	    margin-top:20px;
+	}
+
+    #fsGroupSpaceMembersPane td img{
+        margin:20px 0 -30px 10px;
+	}
+
+	#fsGroupSpaceMembersPane td div img{
+        margin:0;
+	}
+
+	#fsGroupSpaceMembersPane td div{
+	    width:100% !important;
+	}
+
+	.fsGroupSpaceMembersEntryDetails{
+		margin-bottom:.5em;
+	}
+
+	#fsGroupSpaceMembersPane form {
+		margin-top:5px;
+	}
+
+	#fsGroupSpaceMembersPane .iconBtnEdit{
+	    margin-left:0px;
+	    margin-top:10px;
+	    display:block;
+	}
+
+	#fcWorkloadRight{
+	    margin-left:0 !important;
+	}
+
+	#fcWorkloadLeft{
+	    float:none !important;
+	    width:100% !important;
+	}
+
+	#fcWorkloadAddEvent{
+	    float:none !important;
+	    display:block;
+	    margin-bottom:1em;
+	}
+
+	#fcWorkloadWeek {
+		display: block !important;
+		padding:.5em 0;
+		width:100% !important;
+	}
+
+
+/* Content - Calendars */
+
+    .fc-header-left, .fc-header-right, .fc-header-center{
+	    display:table-row;
+	    width:100% !important;
+	    float: left;
+	    white-space:normal !important;
+	}
+
+	.fc-day-number{
+	    font-size:1.9em;
+	    float:none;
+	    display:block;
+	    width:100%;
+	    text-align:center;
+	    color:#666;
+	}
+
+	#calendar td.fc-day:hover > div:before {
+		content: none !important;
+	}
+
+	.fc .fc-header-space {
+		padding-left: 2px;
+	}
+
+	.fc-view-month .fc-event {
+		display: none;
+	}
+
+	.fc-content .fc-view table td.event-day{
+		background: #ebf3fb;
+		color:#244060 !important;
+		box-shadow:inset 0 0 20px #d7e7f8;
+	}
+
+	.fc-content .fc-view table td.event-day.fc-state-highlight {
+	    background:#334C65;
+	 	box-shadow:inset 0 0 20px #071d34;
+	}
+
+	.fc-content .fc-view table td.event-day.fc-state-highlight .fc-day-number{
+	    color:#fff;
+	}
+
+	.fc-content .fc-view table td.event-day .fc-day-number{
+		color:#395778;
+	}
+
+/* Content - Activity Stream */
+
+	.fsSocialPostSubmit {
+	    float:none !important;
+	    margin-top:.5em;
+	}
+
+/* Content - Calendars - Add & Edit Event */
+
+	#fcEditEvent #fcEditEventLocationSection,
+	#fcEditEvent #fcEditEventTypeSection,
+	#fcEditEvent #fcEditEventTitleSection,
+	#fcEditEvent #fcEditEventNoteSection,
+	#fcEditEvent #fcEditEventCalendarLeftCol{
+	    float:none;
+	    width:100%;
+	    display:block;
+	    clear:both;
+	    min-height:0;
+	}
+
+	.fcEditEventSection {
+		min-height: 0 !important;
+		margin:10px 0 0 0 !important;
+		clear: both;
+	}
+
+	#fcEditEventFileSection {
+	padding-bottom: 10px;
+	}
+
+	#fcEditEventTitle{
+		width:100% !important;
+	}
+
+	#fcEditEventRepeatSection{
+	    margin-bottom:10px;
+	}
+
+	.fc-button {
+		padding: 0 .3em;
+		font-size:12px;
+	}
+
+/* Content - Table tools */
+
+	.fsGroupAjaxTable .listPager {
+		position:relative;
+		margin-top:40px;
+		border-width:1px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+
+/* DB Table Icons */
+
+	.deleteDropboxTrigger,
+	.dlDropboxTrigger,
+	.publishDropboxTrigger{
+	    margin-top:10px;
+	}
+
+	.fsGroupSpaceElementEditEmbedLink,
+	.fsGroupSpaceElementEditContentLink,
+	.fsGroupSpaceDashboardEditOverviewLink,
+	.adminDiscussionBtn,
+	.fcToggleCalendarPlanner,
+	#fsResourcesNewResource,
+	#fsResourcesNewFolder,
+	#fsResourcesAddFolder,
+	#fsResourcesImportFolder,
+	#createFormBtn,
+	#mngQuizzesBtn,
+	#blogSettingsBtn,
+	#alert_badge,
+	#fsGroupSpaceMembersPane .iconBtnEmail,
+	#fsGroupSpaceMembersPane .iconBtnEdit{
+		display:none !important;
+	}
+
+	.fsGradebookSettingsCategoryName {
+		text-align: left;
+		width: 70%;
+		margin-right: 5px;
+	}
+
+	/* dialogs */
+	#fsGradebookEntryForm .fsGradebookEntryCol, #fsGradebookEntryForm .fsGradebookEntryColSm, .ui-dialog #fsGradebookEntryGroups  {
+		display: block;
+		padding: 10px 0;
+		width: 95%;
+	}
+
+	.ui-dialog #fsGradebookEntryForm p {
+		margin: 0;
+	}
+
+	.fsResourcesFormRow > div {
+		display: block !important;
+		margin-bottom: 5px;
+	}
+
+ }
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	#fsGroupSpaceMembersPane .iconBtnEmail,
+	#fsGroupSpaceMembersPane .iconBtnEdit{
+	    display:none !important;
+	}
+
+	.fsGroupSpaceMembersPaging{
+		margin-top:3em;
+	}
+}

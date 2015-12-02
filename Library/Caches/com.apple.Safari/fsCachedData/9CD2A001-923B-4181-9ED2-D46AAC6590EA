@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+  <title>04.05.03 Finding the Average Rate of Change From a Data Set (PreCalc) | Utah Electronic High School</title>
+  <link type="text/css" rel="stylesheet" media="all" href="/modules/book/book.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/ckeditor/ckeditor.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/glossary/glossary.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/img_assist/img_assist.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/jquerymenu/jquerymenu.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/modules/fieldgroup/fieldgroup.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/print/css/printlinks.css?Z" />
+<link type="text/css" rel="stylesheet" media="all" href="/themes/pushbutton/style.css?Z" />
+  <script type="text/javascript" src="/misc/jquery.js?Z"></script>
+<script type="text/javascript" src="/misc/drupal.js?Z"></script>
+<script type="text/javascript" src="/sites/all/modules/iframe/iframe.js?Z"></script>
+<script type="text/javascript" src="/sites/all/modules/img_assist/img_assist.js?Z"></script>
+<script type="text/javascript" src="/sites/all/modules/jquerymenu/jquerymenu.js?Z"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var BASE_URL = "/";
+//--><!]]>
+</script>
+</head>
+
+<body>
+
+<div class="hide"><a href="#content" title="Skip navigation." accesskey="2">Skip navigation</a>.</div>
+
+<table id="primary-menu" summary="Navigation elements." border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td id="home" width="10%">
+          </td>
+
+    <td id="site-info" width="20%">
+                </td>
+    <td class="primary-links" width="70%" align="center" valign="middle">
+          </td>
+  </tr>
+</table>
+
+<table id="secondary-menu" summary="Navigation elements." border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td class="secondary-links" width="75%"  align="center" valign="middle">
+          </td>
+    <td width="25%" align="center" valign="middle">
+          </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div></div></td>
+  </tr>
+</table>
+
+<table id="content" border="0" cellpadding="15" cellspacing="0" width="100%">
+  <tr>
+    
+    <td valign="top">
+      
+      <div id="main">
+                  <div class="breadcrumb"><a href="/">Home</a></div>          <h1 class="title">04.05.03 Finding the Average Rate of Change From a Data Set (PreCalc)</h1>
+
+          
+        
+        
+        
+      <!-- start main content -->
+      <div class="node">
+        <span class="submitted"></span>
+    <div class="taxonomy"><ul class="links inline"><li class="taxonomy_term_27 first"><a href="/category/course-names/pre-calculus" rel="tag" title="This course fills the minimum mathematics course requirement for students who plan to participate in post-secondary education. It also serves as the prerequisite for Advanced Placement Calculus or Statistics courses. In preparation for this course, students should have mastered linear and quadratic functions, concepts from discrete mathematics involving sequences and series, and data analysis and probability techniques. Students should also be able to confidently work with expressions containing rational exponents and radical and rational terms. "> Pre-calculus OLD</a></li>
+<li class="taxonomy_term_162"><a href="/category/course-quarter/2nd-quarter" rel="tag" title="">2nd Quarter</a></li>
+<li class="taxonomy_term_188"><a href="/taxonomy/term/188" rel="tag" title="">Unit 04</a></li>
+<li class="taxonomy_term_240 last"><a href="/taxonomy/term/240" rel="tag" title="">Lesson 05</a></li>
+</ul></div>
+    <div class="content"><span class="print-link"><span class="print_html"><a href="https://share.ehs.uen.org/print/17653" title="Display a printer-friendly version of this page." class="print-page" target="_blank" rel="nofollow">Printer-friendly version</a></span></span><p>So, James wanted to find his average speed for the first 15 feet of his run. If you recall, he used a video to measure his distance and time as he ran from home plate to first base. He used this data to make the graph as shown.</p>
+<dl>
+<p><br /></p>
+<dd><span class="inline inline-none"><img src="https://share.ehs.uen.org/sites/default/files/images/unit4l5.3_graph1.img_assist_custom.png" alt="" title=""  class="image image-img_assist_custom " width="320" height="220" /></span></dd>
+<p><br /></p>
+<p>He can find his average speed by calculating the average rate of change with this data set. But how does he do this? The equation we used earlier to find the average slope of a function won't work here, because James doesn't know what the actual equation of this function. Well, he knows it is of the form</p>
+<blockquote><p>
+<em>&#131;(t) = <span class="inline inline-none"><img src="https://share.ehs.uen.org/sites/default/files/images/unit4l5.3_a.png" alt="" title=""  class="image image-_original " width="11" height="10" /></span> t<sup>2</sup></em>
+</p></blockquote>
+<p><br /><br />
+But he doesn't know the value of the constant <span class="inline inline-left"><img src="https://share.ehs.uen.org/sites/default/files/images/unit4l5.3_a.png" alt="" title=""  class="image image-_original " width="11" height="10" /></span>. So he will have a hard time evaluating the function at any point. Fortunately, he doesn't need to do that.</p>
+<p>Because he has a set of data, he can use the data to find the average rate of change. </p>
+<p>His actual data is shown below</p>
+<dl>
+<dd>
+<span class="inline inline-none"><img src="https://share.ehs.uen.org/sites/default/files/images/PreCalc_4l5.3_FirstBase.png" alt="" title=""  class="image image-_original " width="212" height="206" /></span><br />
+</dd>
+</dl>
+<p><br /><br />
+To find the average speed from <em>t</em> = 0 <em>s</em> to <em>t</em> = 1.52 <em>s</em> he simply calculates the slope with the equation</p>
+<blockquote><p>
+<span class="inline inline-none"><img src="https://share.ehs.uen.org/sites/default/files/images/unit4l5.3_eq1.img_assist_custom.png" alt="" title=""  class="image image-img_assist_custom " width="220" height="40" /></span>
+</p></blockquote>
+<p><br /><br />
+This is the slope of the line shown here.</p>
+<p><br /></p>
+<dd><span class="inline inline-none"><img src="https://share.ehs.uen.org/sites/default/files/images/unit4l5.3_graph3.img_assist_custom.png" alt="" title=""  class="image image-img_assist_custom " width="319" height="220" /></span></dd>
+<p><br /></p>
+<p>But, as you can see, Jamie is accelerating as he runs, so his instantaneous speed initially is zero, but later his instantaneous speed is more the 9.87 ft/s.</p>
+<p>To better approximate his final speed after 1.52 <em>s</em>, he can find the average speed between the last two data points, that is the average speed from <em>t</em> = 1.36 <em>s</em> to <em>t</em> = 1.52 <em>s</em> in the same way as before.</p>
+<blockquote><p>
+<span class="inline inline-none"><img src="https://share.ehs.uen.org/sites/default/files/images/unit4l5.3_eq2.img_assist_custom.png" alt="" title=""  class="image image-img_assist_custom " width="258" height="40" /></span>
+</p></blockquote>
+<p><br /><br />
+This is the value of the slope of the line shown here. It is also a lot faster than his average speed over the entire interval.</p>
+<p><br /></p>
+<dd><span class="inline inline-none"><img src="https://share.ehs.uen.org/sites/default/files/images/unit4l5.3_graph4.img_assist_custom.png" alt="" title=""  class="image image-img_assist_custom " width="321" height="220" /></span></dd>
+<p><br /><br />
+</p></dl>
+<p>Can you use this data set to find the average speed for the first 0.96 s?<br />
+<br /><br />
+<br /></p>
+<div class="image-clear"></div></div>
+        <div class="links">&raquo; <ul class="links inline"><li class="comment_forbidden first last"><span><a href="/user/login?destination=comment%2Freply%2F17653%23comment-form">Login</a> or <a href="/user/register?destination=comment%2Freply%2F17653%23comment-form">register</a> to post comments</span></li>
+</ul></div>
+    </div>
+            <!-- end main content -->
+
+      </div><!-- main -->
+    </td>
+      </tr>
+</table>
+
+<table id="footer-menu" summary="Navigation elements." border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center" valign="middle">
+                                </td>
+  </tr>
+</table>
+
+<div id="footer-message">
+    <HR>
+<i><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" src="https://share.ehs.uen.org/sites/default/files/images/80x15.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License</a>.</i> Math formulas use: <a href="http://www.codecogs.com" target="_blank"><img src="http://www.codecogs.com/images/poweredbycodecogs.png" border="0" title="CodeCogs - An Open Source Scientific Library" alt="CodeCogs - An Open Source Scientific Library"></a> </div>
+</body>
+</html>

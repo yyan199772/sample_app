@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Updates CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUTracker.xsd">
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeCSXSInfrastructureCS6-3/3.0.2" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+<LEID>InDesign-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+<LEID>Dreamweaver-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeDreamweaverCS6LangPacken_US-12</ChannelID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeDreamweaverWidgetBrowser-1.0</ChannelID>
+</Recommendation>
+<Recommendation>
+<ChannelID>FlashPro12.0</ChannelID>
+<LEID>FlashPro-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>FlashPro12.0en_US</ChannelID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobePhotoshopCS6-13.0</ChannelID>
+<LEID>Photoshop-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeFireworksCS6-12.0.0-mul</ChannelID>
+<LEID>Fireworks-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeIllustrator16-mul</ChannelID>
+<LEID>Illustrator-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+		<en_US>Adobe CSXS InfrastructureCS6</en_US>
+</DisplayName>
+<Description default="en_US">
+		<en_US>CSXS is the platform that delivers extensibility within Creative Suite products. This update, provides the following: 1) Resolves an issue where certain characters contained in a user&apos;s Adobe ID, caused a login failure. 2) Update to CS6ServiceManager that improves the performance of authenticating against the Adobe Identity Management Service. 3) Resolves an issue in CS6ServiceManager with application signature validation, causing any Keychain access to fail the signature validation step. The result of which invalidates the &quot;Always Allow&quot; option so an alert will always be shown on attempting to access the Keychain.</en_US>
+</Description>
+<AffectedChannels>
+        <ChannelID>AdobeCSXSInfrastructureCS6-3</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>1185481</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeMediaEncoderCS6-6/6.0.2" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeMediaEncoderCS6-6</ChannelID>
+<LEID>AdobeMediaEncoder-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+		<en_US>Adobe Media Encoder CS6 6.0.2 Update</en_US>
+<cs_CZ>Aktualizace Adobe Media Encoder CS6 6.0.2</cs_CZ>
+<de_DE>Adobe Media Encoder CS6 6.0.2-Update</de_DE>
+<es_ES>Actualización de Adobe Media Encoder CS6 6.0.2</es_ES>
+<es_MX>Actualización de Adobe Media Encoder CS6 6.0.2</es_MX>
+<fr_FR>Mise à jour d&apos;Adobe Media Encoder CS6 6.0.2</fr_FR>
+<fr_CA>Mise à jour d&apos;Adobe Media Encoder CS6 6.0.2</fr_CA>
+<fr_MA>Mise à jour d&apos;Adobe Media Encoder CS6 6.0.2</fr_MA>
+<it_IT>Aggiornamento di Adobe Media Encoder CS6 6.0.2</it_IT>
+<ja_JP>Adobe Media Encoder CS6 6.0.2 アップデート</ja_JP>
+<ko_KR>Adobe Media Encoder CS6 6.0.2 업데이트</ko_KR>
+<nl_NL>Adobe Media Encoder CS6 6.0.2-update</nl_NL>
+<pl_PL>Adobe Media Encoder CS6 — aktualizacja 6.0.2</pl_PL>
+<pt_BR>Atualização 6.0.2 do Adobe Media Encoder CS6</pt_BR>
+<ru_RU>Обновление Adobe Media Encoder CS6 6.0.2</ru_RU>
+<sv_SE>Adobe Media Encoder CS6 6.0.2-uppdatering</sv_SE>
+<tr_TR>Adobe Media Encoder CS6 6.0.2 Güncellemesi</tr_TR>
+<zh_CN>Adobe Media Encoder CS6 6.0.2 更新</zh_CN>
+<zh_TW>Adobe Media Encoder CS6 6.0.2 更新</zh_TW>
+</DisplayName>
+<Description default="en_US">
+		<en_US>This update provides Smart Rendering functionality as well as several bug fixes.</en_US>
+<cs_CZ>Tato aktualizace opravuje nalezené chyby.</cs_CZ>
+<de_DE>Dieses Update stellt Fehlerkorrekturen bereit.</de_DE>
+<es_ES>Esta actualización corrige varios errores.</es_ES>
+<es_MX>Esta actualización corrige varios errores.</es_MX>
+<fr_FR>Cette mise à jour corrige plusieurs bogues.</fr_FR>
+<fr_CA>Cette mise à jour corrige plusieurs bogues.</fr_CA>
+<fr_MA>Cette mise à jour corrige plusieurs bogues.</fr_MA>
+<it_IT>Questo aggiornamento corregge alcuni problemi.</it_IT>
+<ja_JP>このアップデートには不具合の修正が含まれます。</ja_JP>
+<ko_KR>이 업데이트에서는 버그 수정 사항이 제공됩니다.</ko_KR>
+<nl_NL>Deze update bevat foutoplossingen.</nl_NL>
+<pl_PL>Ta aktualizacja zawiera poprawki błędów.</pl_PL>
+<pt_BR>Esta atualização fornece correções de bugs.</pt_BR>
+<ru_RU>В этом обновлении устранены ранее обнаруженные проблемы.</ru_RU>
+<sv_SE>Den här uppdateringen innehåller felkorrigeringar.</sv_SE>
+<tr_TR>Bu güncelleme hata düzeltmeleri sunar.</tr_TR>
+<zh_CN>此更新将提供修补程序。</zh_CN>
+<zh_TW>此更新將提供錯誤修正。</zh_TW>
+</Description>
+<AffectedChannels>
+		<ChannelID>AdobeMediaEncoderCS6-6</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>100107893</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" ReFetch="0" RefID="FlashPro12.0/12.0.2" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>FlashPro12.0</ChannelID>
+<UpdateID>12.0.2</UpdateID>
+<OwningID>FlashPro12.0en_US</OwningID>
+<LEID>FlashPro-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>FlashPro12.0</ChannelID>
+<LEID>FlashPro-CS6-Mac-GM</LEID>
+<UpdateID>12.0.2</UpdateID>
+<OwningID>FlashPro12.0</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+        <en_US>Flash Pro CS6 update 2</en_US>
+<de_DE>Update 2 zu Flash Pro CS6</de_DE>
+<fr_FR>Mise à jour 2 de Flash Pro CS6</fr_FR>
+<fr_CA>Mise à jour 2 de Flash Pro CS6</fr_CA>
+<it_IT>Aggiornamento 2 di Flash Pro CS6</it_IT>
+<es_ES>Flash Pro CS6, actualización 2</es_ES>
+<es_LA>Flash Pro CS6, actualización 2</es_LA>
+<ja_JP>Flash Pro CS6 アップデート 2</ja_JP>
+<zh_CN>Flash Pro CS6 更新 2</zh_CN>
+<zh_TW>Flash Pro CS6 更新 2</zh_TW>
+<ko_KR>Flash Pro CS6 업데이트 2</ko_KR>
+<nl_NL>Update 2 van Flash Pro CS6</nl_NL>
+<pt_BR>Flash Pro CS6 atualização 2</pt_BR>
+<sv_SE>Flash Pro CS6 uppdatering 2</sv_SE>
+<cs_CZ>Flash Pro CS6 aktualizace 2</cs_CZ>
+<pl_PL>Flash Pro CS6 aktualizacja 2</pl_PL>
+<ru_RU>Обновление 2 Flash Pro CS6</ru_RU>
+<tr_TR>Flash Pro CS6 güncellemesi 2</tr_TR>
+</DisplayName>
+<Description default="en_US">
+        <en_US>This update enables Flash Professional CS6 to support the following features exposed by AIR 3.4: 
+ 
+• High-resolution Retina Display Support for AIR Applications on iPad3
+• Direct deployment of AIR Applications to iOS devices without using iTunes
+• Native iOS simulator support
+
+This update also contains several critical bug fixes. For more information, see Release Notes.
+</en_US>
+<de_DE>Durch dieses Update wird Flash Professional CS6 die folgenden AIR 3.4-Funktionen unterstützen: 
+ 
+• Unterstützung hochauflösender Retinaanzeige für AIR-Anwendungen auf iPad3
+• Direkte Bereitstellung von AIR-Anwendungen für iOS-Geräte ohne die Verwendung von iTunes
+• Native iOS-Simulator-Unterstützung
+
+Dieses Update enthält auch mehrere wichtige Bugfixes. Weitere Informationen finden Sie in den Versionshinweisen.
+</de_DE>
+<fr_FR>Cette mise à jour permet à Flash Professional CS6 de prendre en charge les fonctionnalités suivantes, mises à disposition par AIR 3.4 : 
+ 
+• Prise en charge des écrans Retina haute résolution pour les applications AIR sur iPad3
+• Déploiement direct d&apos;applications AIR sur les périphériques iOS sans passer par iTunes
+• Prise en charge du simulateur iOS natif
+
+Cette mise à jour corrige également plusieurs bogues critiques. Pour plus d&apos;informations, consultez les notes de mise à jour.
+</fr_FR>
+<fr_CA>Cette mise à jour permet à Flash Professional CS6 de prendre en charge les fonctionnalités suivantes, mises à disposition par AIR 3.4 : 
+ 
+• Prise en charge des écrans Retina haute résolution pour les applications AIR sur iPad3
+• Déploiement direct d&apos;applications AIR sur les périphériques iOS sans passer par iTunes
+• Prise en charge du simulateur iOS natif
+
+Cette mise à jour corrige également plusieurs bogues critiques. Pour plus d&apos;informations, consultez les notes de mise à jour.</fr_CA>
+<it_IT>Questo aggiornamento aggiunge a Flash Professional CS6 il supporto delle seguenti funzioni esposte da AIR 3.4: 
+ 
+• Supporto del display ad alta risoluzione Retina per le applicazioni AIR su iPad3
+• Distribuzione diretta delle applicazioni AIR ai dispositivi iOS senza utilizzare iTunes
+• Supporto nativo di iOS Simulator
+
+Questo aggiornamento contiene anche varie correzioni di bug critici. Per ulteriori informazioni, consultate le Note sulla versione.
+</it_IT>
+<es_ES>Esta actualización permite que Flash Professional CS6 sea compatible con las siguientes funciones expuestas por AIR 3.4: 
+ 
+• Compatibilidad con pantalla Retina de alta resolución para aplicaciones de AIR en iPad3
+• Despliegue directo de aplicaciones AIR en dispositivos iOS sin utilizar iTunes
+• Compatibilidad nativa con simulador iOS
+
+Esta actualización también incluye soluciones a diversos problemas críticos. Para más información, consulte las Notas de la versión.</es_ES>
+<es_LA>Esta actualización permite que Flash Professional CS6 sea compatible con las siguientes funciones expuestas por AIR 3.4: 
+ 
+• Compatibilidad con pantalla Retina de alta resolución para aplicaciones de AIR en iPad3
+• Despliegue directo de aplicaciones AIR en dispositivos iOS sin utilizar iTunes
+• Compatibilidad nativa con simulador iOS
+
+Esta actualización también incluye soluciones a diversos problemas críticos. Para más información, consulte las Notas de la versión.</es_LA>
+<ja_JP>このアップデートによって、Flash Professional CS6 は AIR 3.4 によって実現する以下の機能をサポートできるようになります。 
+ 
+• iPad3 上の AIR アプリケーションに対応する高解像度 Retina ディスプレイのサポート
+• iTunes を使用せずに AIR アプリケーションを iOS デバイスに直接デプロイ
+• ネイティブ iOS シミュレーターのサポート
+
+このアップデートには、いくつかの重要なバグの修正も含まれます。詳しくは、リリースノートを参照してください。</ja_JP>
+<zh_CN>此更新可使 Flash Professional CS6 支持由 AIR 3.4 公开的下列功能： 
+ 
+• 对 iPad3 上 AIR 应用程序的高分辨率 Retina 显示屏支持
+• 在不使用 iTunes 的情况下，将 AIR 应用程序直接部署至 iOS 设备
+• 本机 iOS 模拟器支持
+
+此更新还包含几种重要的修补程序。有关详细信息，请参见&quot;发行说明&quot;。</zh_CN>
+<zh_TW>此更新可讓 Flash Professional CS6 支援由 AIR 3.4 公開的下列功能： 
+ 
+• 對 iPad3 上的 AIR 應用程式的高解析度 Retina 顯示器支援
+• 在不使用 iTunes 的情況下，將 AIR 應用程式直接部署到 iOS 裝置
+• 原生 iOS 模擬器支援
+
+此更新還包含數種重要的錯誤修正。如需詳細資訊，請參閱「版本說明」。
+
+</zh_TW>
+<ko_KR>이 업데이트를 사용하면 Flash Professional CS6에서 AIR 3.4의 다음 기능을 지원할 수 있습니다. 
+ 
+• iPad3의 AIR 응용 프로그램에 대한 고해상도 Retina 디스플레이 지원
+• iTunes를 사용하지 않고 iOS 장치에 AIR 응용 프로그램 직접 배포
+• 기본 iOS 시뮬레이터 지원
+
+또한 이 업데이트에는 몇 가지 중요한 버그 수정 사항이 포함되어 있습니다. 자세한 내용은 릴리스 정보를 참조하십시오.
+</ko_KR>
+<nl_NL>Dankzij deze update biedt Flash Professional CS6 ondersteuning voor de volgende functies van AIR 3.4: 
+ 
+• Ondersteuning voor het Retina-display met hoge resolutie voor AIR-toepassingen op iPad3
+• Rechtstreekse implementatie van AIR-toepassingen op iOS-apparaten, zonder iTunes te hoeven gebruiken
+• Geïntegreerde ondersteuning voor iOS-simulator
+
+Deze update bevat ook enkele belangrijke foutoplossingen. Zie de Release-aantekeningen voor meer informatie.</nl_NL>
+<pt_BR>Esta atualização permite que o Flash Professional CS6 oferece suporte aos seguintes recursos expostos pelo AIR 3.4: 
+ 
+• Suporte à tela Retina de alta resolução para aplicativos AIR do iPad3
+• Implantação direta de aplicativos AIR em dispositivos iOS sem o uso do iTunes
+• Suporte ao simulador de iOS nativo
+
+Esta atualização também contém diversas correções de bug. Para obter mais informações, consulte as Notas da versão.</pt_BR>
+<sv_SE>Uppdateringen gör att Flash Professional CS6 stöder följande funktioner i AIR 3.4: 
+ 
+• Stöd för högupplöst Retina-skärm för AIR-program på iPad3
+• Direktdistribution av AIR-program till iOS-enheter utan att använda iTunes
+• Inbyggt stöd för iOS-simulator
+
+Uppdateringen innehåller även flera kritiska buggfixar. Mer information finns i filen med viktig information.
+</sv_SE>
+<cs_CZ>Tato aktualizace umožňuje v aplikaci Flash Professional CS6 podporu následujících funkcí používaných v prostředí AIR 3.4: 
+ 
+• Podporu displejů Retina s vysokým rozlišením pro aplikace prostředí AIR na zařízení iPad3
+• Přímé nasazení aplikací prostředí AIR do zařízení se systémem iOS bez použití služby iTunes
+• Nativní podporu simulátoru systému iOS
+
+Tato aktualizace také obsahuje několik oprav závažných chyb. Další informace najdete v dokumentu Poznámky k vydání.</cs_CZ>
+<pl_PL>Ta aktualizacja umożliwia używanie następujących funkcji środowiska AIR 3.4 przez program Flash Professional CS6: 
+ 
+• Obsługa wyświetlaczy o wysokiej rozdzielczości Retina w aplikacjach AIR na tabletach iPad 3
+• Bezpośrednie wdrażanie aplikacji AIR na urządzeniach z systemem iOS (bez używania programu iTunes)
+• Obsługa natywnego symulatora systemu iOS
+
+Ta aktualizacja usuwa również szereg krytycznych błędów. Więcej informacji można uzyskać w uwagach na temat wersji.
+</pl_PL>
+<ru_RU>Это обновление позволяет Flash Professional CS6 поддерживать следующие функции, предоставляемые AIR 3.4: 
+ 
+• Поддержка дисплея высокого разрешения Retina для приложений AIR на iPad3
+• Непосредственное развертывание приложений AIR на устройства iOS без использования iTunes
+• Встроенная поддержка симулятора iOS
+
+В этом обновлении также содержатся несколько критично важных исправлений ошибок. Дополнительные сведения см. в заметках о выпуске.
+</ru_RU>
+<tr_TR>Bu güncelleme Flash Professional CS6&apos;nın AIR 3.4 tarafından sunulan aşağıdaki özellikleri desteklemesini sağlar: 
+ 
+• iPad3&apos;teki AIR Uygulamaları için yüksek çözünürlüklü Retina Ekran Desteği
+• iTunes kullanmadan AIR Uygulamalarını doğrudan iOS cihazlarına dağıtma
+• Yerel iOS simulator desteği
+
+Bu güncelleme ayrıca çeşitli önemli hata düzeltmeleri de içermektedir. Daha fazla bilgi için bkz. Sürüm Notları.
+</tr_TR>
+</Description>
+<AffectedChannels>
+        <ChannelID>FlashPro12.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>Adobe Flash Professional CS6 Update 2/AdobePatchInstaller.app</ExecutableName>
+<Size>588082019</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeDynamicLinkMediaServer-1.0/1.0.1" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobePhotoshopCS6-13.0</ChannelID>
+<LEID>Photoshop-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+		<en_US>Dynamic Link Media Server CS6 1.0.1 Update</en_US>
+<cs_CZ>Dynamic Link Media Server CS6  1.0.1 - aktualizace</cs_CZ>
+<de_DE>Update zu Dynamic Link Media Server CS6 1.0.1</de_DE>
+<es_ES>Actualización de Dynamic Link Media Server CS6 1.0.1</es_ES>
+<es_MX>Actualización de Dynamic Link Media Server CS6 1.0.1</es_MX>
+<fr_FR>Mise à jour Dynamic Link Media Server CS6 1.0.1</fr_FR>
+<fr_CA>Mise à jour Dynamic Link Media Server CS6 1.0.1</fr_CA>
+<fr_MA>Mise à jour Dynamic Link Media Server CS6 1.0.1</fr_MA>
+<it_IT>Aggiornamento Dynamic Link Media Server CS6 1.0.1</it_IT>
+<ja_JP>Dynamic Link Media Server CS6 1.0.1 アップデート</ja_JP>
+<ko_KR>Dynamic Link Media Server CS6 1.0.1 업데이트</ko_KR>
+<nl_NL>Dynamic Link Media Server CS6 1.0.1 Update</nl_NL>
+<pl_PL>Dynamic Link Media Server CS6  1.0.1 — aktualizacja</pl_PL>
+<pt_BR>Atualização do Dynamic Link Media Server CS6 1.0.1</pt_BR>
+<ru_RU>Обновление Dynamic Link Media Server CS6  1.0.1</ru_RU>
+<sv_SE>Uppdatering för Dynamic Link Media Server CS6 1.0.1</sv_SE>
+<tr_TR>Dynamic Link Media Server CS6  1.0.1 Güncellemesi</tr_TR>
+<zh_CN>Dynamic Link Media Server CS6 1.0.1 更新</zh_CN>
+<zh_TW>Dynamic Link Media Server CS6 1.0.1 更新</zh_TW>
+</DisplayName>
+<Description default="en_US">
+		<en_US>This update provides several bug fixes and resolves a colorspace issue when Photoshop imports a file created with Canon 5D Mark III camera.</en_US>
+<cs_CZ>Tato aktualizace obsahuje několik oprav chyb a řeší problém barevného prostoru při importu souboru vytvořeného ve fotoaparátu Canon 5D Mark III do aplikace Photoshop.</cs_CZ>
+<de_DE>Dieses Update behebt mehrere Fehler und löst ein Farbraumproblem, das auftritt, wenn Photoshop ein mit einer Kamera der Serie Canon 5D Mark III aufgenommenes Foto importiert.</de_DE>
+<es_ES>Esta actualización ofrece varias soluciones a errores y resuelve un problema de espacio de color cuando Photoshop importa un archivo creado con una cámara Canon 5D Mark III.</es_ES>
+<es_MX>Esta actualización ofrece varias soluciones a errores y resuelve un problema de espacio de color cuando Photoshop importa un archivo creado con una cámara Canon 5D Mark III.</es_MX>
+<fr_FR>Cette mise à jour corrige plusieurs bogues et résout un problème d’espace colorimétrique qui se produit lorsque Photoshop importe un fichier créé avec un appareil photo Canon 5D Mark III.</fr_FR>
+<fr_CA>Cette mise à jour corrige plusieurs bogues et résout un problème d’espace colorimétrique qui se produit lorsque Photoshop importe un fichier créé avec un appareil photo Canon 5D Mark III.</fr_CA>
+<fr_MA>Cette mise à jour corrige plusieurs bogues et résout un problème d’espace colorimétrique qui se produit lorsque Photoshop importe un fichier créé avec un appareil photo Canon 5D Mark III.</fr_MA>
+<it_IT>Questo aggiornamento corregge alcuni bug e risolve un problema di spazio colore che si verificava durante l&apos;importazione in Photoshop di un file creato con la fotocamera Canon 5D Mark III.</it_IT>
+<ja_JP>このアップデートではバグが数件修正されています。キヤノン EOS 5D Mark III カメラで作成したファイルを Photoshop に読み込む際のカラースペースの問題も解決されています。</ja_JP>
+<ko_KR>이 업데이트에서는 Canon 5D Mark III 카메라로 만든 파일을 Photoshop으로 가져올 때 발생했던 색상 공간 문제가 해결되었으며 여러 버그 수정 사항이 제공됩니다.</ko_KR>
+<nl_NL>Deze update bevat verschillende probleemoplossingen en biedt een oplossing voor een probleem met de kleurruimte dat optreedt wanneer Photoshop een bestand importeert dat is gemaakt met de Canon 5D Mark III-camera.</nl_NL>
+<pl_PL>Ta aktualizacja zawiera kilka poprawek błędów oraz rozwiązuje problem dotyczący przestrzeni kolorów podczas importu pliku utworzonego za pomocą aparatu Canon 5D Mark III do programu Photoshop.</pl_PL>
+<pt_BR>Essa atualização fornece várias correções de bugs e resolve um problema com o espaço de cores quando o Photoshop importa um arquivo criado com a câmera Canon 5D Mark III.</pt_BR>
+<ru_RU>В этом обновлении исправлено несколько ошибок и устранена проблема цветового пространства, возникающая при импорте в Photoshop файла, созданного на камере Canon 5D Mark III.</ru_RU>
+<sv_SE>Den här uppdateringen innehåller flera felkorrigeringar och en lösning för ett problem med färgrymden vid import av filer från kameran Canon 5D Mark III till Photoshop.</sv_SE>
+<tr_TR>Bu güncelleme bazı hatalar için çözüm sunar ve Canon 5D Mark III fotoğraf makinesiyle oluşturulmuş dosyaların Photoshop&apos;a içe aktarılmasında oluşan renk uzayı sorunlarını çözer. </tr_TR>
+<zh_CN>此更新将提供多种修补程序，并解决 Photoshop 导入由 Canon 5D Mark III 相机创建的文件时的色彩空间问题。</zh_CN>
+<zh_TW>此更新將提供數種錯誤修正，並解決 Photoshop 匯入由 Canon 5D Mark III 相機建立之檔案時的色域問題。</zh_TW>
+</Description>
+<AffectedChannels>
+		<ChannelID>AdobeDynamicLinkMediaServer-1.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>62256469</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" ReFetch="0" RefID="AdobeDreamweaverCS6-12/12.0.3" Viewed="0" WaitingForProductEvent="1">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+<UpdateID>12.0.3</UpdateID>
+<OwningID>AdobeDreamweaverCS6LangPacken_US-12</OwningID>
+<LEID>Dreamweaver-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+<LEID>Dreamweaver-CS6-Mac-GM</LEID>
+<UpdateID>12.0.3</UpdateID>
+<OwningID>AdobeDreamweaverCS6-12</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>2</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Dreamweaver CS6 (to version 12.0.3) to address HiDPI-compliance and resolve critical bugs.</en_US>
+<cs_CZ>Aktualizace Dreamweaver CS6 (až po verzi 12.0.3) zaměřená na soulad se standardem HiDPI a řešení závažných chyb.</cs_CZ>
+<de_DE>Dreamweaver CS6 (bis Version 12.0.3) zur HiDPI-Kompatibilität und zur Lösung kritischer Bugs.</de_DE>
+<es_ES>Dreamweaver CS6 (a la versión 12.0.3) para resolver la compatibilidad con HiDPI y problemas críticos.</es_ES>
+<es_MX>Dreamweaver CS6 (a la versión 12.0.3) para resolver la compatibilidad con HiDPI y problemas críticos.</es_MX>
+<fr_FR>Dreamweaver CS6 (jusqu&apos;à la version 12.0.3) pour assurer la conformité HiDPI et corriger des bogues critiques.</fr_FR>
+<fr_MA>Dreamweaver CS6 (jusqu&apos;à la version 12.0.3) pour assurer la conformité HiDPI et corriger des bogues critiques.</fr_MA>
+<fr_CA>Dreamweaver CS6 (jusqu&apos;à la version 12.0.3) pour assurer la conformité HiDPI et corriger des bogues critiques.</fr_CA>
+<it_IT>Dreamweaver CS6 (fino alla versione 12.0.3) implementa la conformità HiDPI e risolve alcuni bug critici.</it_IT>
+<ja_JP>（バージョン 12.0.3 までの）Dreamweaver CS6 は、HiDPI 準拠に対応し、重大なバグを解決します。</ja_JP>
+<ko_KR>Dreamweaver CS6(12.0.3 버전까지)의 HiDPI-호환성을 다루고 심각한 버그를 해결합니다.</ko_KR>
+<nl_NL>Dreamweaver CS6-update (naar versie 12.0.3) verhelpt HiDPI-compatibiliteitsproblemen en kritieke fouten.</nl_NL>
+<pl_PL>Aktualizacja programu Dreamweaver CS6 do wersji 12.0.3 rozwiązuje problemy z obsługą technologii HiDPI oraz usuwa błędy krytyczne.</pl_PL>
+<pt_BR>Dreamweaver CS6 (para a versão 12.0.3) para abordar conformidade com HiDPI e resolver bugs críticos.</pt_BR>
+<ru_RU>Dreamweaver CS6 (до версии 12.0.3) для обеспечения поддержки режима HiDPI и устранения критических неполадок.</ru_RU>
+<sv_SE>Dreamweaver CS6 (till version 12.0.3) för att hantera HiDPI-kompatibilitet och åtgärda viktiga fel.</sv_SE>
+<tr_TR>Dreamweaver CS6 12.0.3 güncellemesinde HiDPI uyumluluğu ele alınır ve önemli hatalar çözülür.</tr_TR>
+<zh_CN>Dreamweaver CS6（至 12.0.3 版）解决了 HiDPI 兼容性问题和严重错误。</zh_CN>
+<zh_TW>Dreamweaver CS6 (至版本 12.0.3) 能夠解決 HiDPI 相容性問題與排除嚴重錯誤。</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<en_US>The latest update to Adobe Dreamweaver CS6 includes optimizations for HiDPI displays, improves performance in Code View, Live View rendering and addresses FTP transfer permission issues. This update to Adobe Dreamweaver ensures continued compatibility with the Adobe PhoneGap Build service.</en_US>
+<cs_CZ>Nejnovější aktualizace k softwaru Adobe Dreamweaver CS6 nabízí optimalizaci displejů HiDPI, zajišťuje kvalitnější vykreslování ve Zobrazení kódu a Živém zobrazení a zaměřuje se na potíže s oprávněním pro přenos prostřednictvím protokolu FTP. Tato aktualizace softwaru Adobe Dreamweaver zajišťuje trvající kompatibilitu se službou Adobe PhoneGap Build.</cs_CZ>
+<de_DE>Die neueste Aktualisierung für Adobe Dreamweaver CS6 umfasst Optimierungen für die HiDPI-Anzeige, verbessert die Performance in der Codeansicht und der Live View-Wiedergabe und behebt Probleme mit FTP-Übertragungsrechten. Diese Adobe Dreamweaver-Aktualisierung stellt sicher, dass die Kompatibilität mit dem Adobe PhoneGap Build-Service weiterhin gewährleistet ist.</de_DE>
+<es_ES>La actualización más reciente para Adobe Dreamweaver CS6 incluye optimizaciones para pantallas HiDPI, mejora el rendimiento en la Vista de código y la representación en la Vista en vivo y resuelve problemas de permisos para transferencias FTP. Esta actualización de Adobe Dreamweaver garantiza que se mantenga la compatibilidad con el servicio Adobe PhoneGap Build.</es_ES>
+<es_MX>La actualización más reciente para Adobe Dreamweaver CS6 incluye optimizaciones para pantallas HiDPI, mejora el rendimiento en la Vista de código y la representación en la Vista en vivo y resuelve problemas de permisos para transferencias FTP. Esta actualización de Adobe Dreamweaver garantiza que se mantenga la compatibilidad con el servicio Adobe PhoneGap Build.</es_MX>
+<fr_FR>La plus récente mise à niveau d&apos;Adobe Dreamweaver CS6 comporte des optimisations pour les écrans HiDPI, améliore les performances en mode Code et le rendu en mode En direct, et corrige les problèmes d&apos;autorisations de transfert FTP. Cette mise à  niveau d&apos;Adobe Dreamweaver garantit la compatibilité avec le service Adobe PhoneGap Build.</fr_FR>
+<fr_MA>La plus récente mise à niveau d&apos;Adobe Dreamweaver CS6 comporte des optimisations pour les écrans HiDPI, améliore les performances en mode Code et le rendu en mode En direct, et corrige les problèmes d&apos;autorisations de transfert FTP. Cette mise à  niveau d&apos;Adobe Dreamweaver garantit la compatibilité avec le service Adobe PhoneGap Build.</fr_MA>
+<fr_CA>La plus récente mise à niveau d&apos;Adobe Dreamweaver CS6 comporte des optimisations pour les écrans HiDPI, améliore les performances en mode Code et le rendu en mode En direct, et corrige les problèmes d&apos;autorisations de transfert FTP. Cette mise à  niveau d&apos;Adobe Dreamweaver garantit la compatibilité avec le service Adobe PhoneGap Build.</fr_CA>
+<it_IT>L&apos;ultimo aggiornamento di Adobe Dreamweaver CS6 include ottimizzazioni per i display HiDPI, migliora le prestazioni nella vista Codice, il rendering nella vista Dal vivo e risolve alcuni problemi relativi alle autorizzazioni per il trasferimento FTP. Questo aggiornamento di Adobe Dreamweaver garantisce la compatibilità ininterrotta con il servizio Adobe PhoneGap Build.</it_IT>
+<ja_JP>Adobe Dreamweaver CS6 の最新アップデートは、HiDPI 表示を最適化し、コードビューやライブビューのレンダリングでのパフォーマンスを向上させ、FTP 転送のアクセス許可の問題に対処します。Adobe Dreamweaver のこのアップデートにより、Adobe PhoneGap Build サービスとの継続した互換性が保証されます。</ja_JP>
+<ko_KR>Adobe Dreamweaver CS6의 최신 업데이트는 HiDPI 디스플레이를 위한 최적화를 포함하고 있으며, 코드 뷰, 라이브 뷰 렌더링 기능을 개선하고, FTP 전송 권한 문제를 다루었습니다. 이 Adobe Dreamweaver 업데이트를 통해 Adobe PhoneGap Build 서비스로 지속적인 호환성을 보장합니다.</ko_KR>
+<nl_NL>De nieuwste update voor Adobe Dreamweaver CS6 biedt optimalisaties voor HiDPI-schermen, verbeterde prestaties voor Codeweergave en Live View-rendering en verhelpt machtigingsproblemen voor FTP-overdracht. Deze update zorgt ervoor dat Adobe Dreamweaver compatibel blijft met de service Adobe PhoneGap Build.</nl_NL>
+<pl_PL>Najnowsza aktualizacja programu Adobe Dreamweaver CS6 obejmuje optymalizację działania wyświetlaczy w technologii HiDPI, zwiększa wydajność pracy w widoku Kod, usprawnia renderowanie w widoku aktywnym i rozwiązuje problemy z uprawnieniami do przesyłania plików przez serwer FTP. Zapewnia również nieprzerwaną zgodność z usługą Adobe PhoneGap Build.</pl_PL>
+<pt_BR>A atualização mais recente para a Adobe Dreamweaver CS6 inclui otimizações das exibições HiDPI, aumento de desempenho na renderização do Visualizador de código e da Visualização dinâmica e corrige problemas de permissão nas transferências do FTP.</pt_BR>
+<ru_RU>Последнее обновление Adobe Dreamweaver CS6 включает оптимизацию для отображения в разрешении HiDPI, улучшает производительность в представлении кода, обработку в режиме интерактивного просмотра и позволяет устранить проблемы с разрешениями на передачу данных на FTP. Это обновление Adobe Dreamweaver гарантирует постоянную совместимость со службой Adobe PhoneGap Build.</ru_RU>
+<sv_SE>Den senaste uppdateringen av Adobe Dreamweaver CS6 innehåller optimeringar för HiDPI-skärmar, Live-vy-rendering och förbättrad prestanda i kodvyn samt hanterar behörighetsproblem vid FTP-överföring. Den här uppdateringen av Adobe Dreamweaver säkerställer fortsatt kompatibilitet med Adobe PhoneGap Build-tjänsten.</sv_SE>
+<tr_TR>Adobe Dreamweaver CS6&apos;ya yönelik en son güncelleme HiDPI ekranlarına yönelik en iyileştirmeler içerir, Kod Görünümü ile Canlı Görünüm&apos;de görüntü oluşturma performansını geliştirir ve FTP aktarım izniyle ilgili sorunları ele alır. Bu Adobe Dreamweaver güncellemesi, Adobe PhoneGap Build hizmetiyle uyumluluğun devam etmesini sağlar.</tr_TR>
+<zh_CN>Adobe Dreamweaver CS6 的最新更新包括优化 HiDPI 显示、提高代码视图和实时视图中的呈现性能并解决 FTP 传输权限问题。该项 Adobe Dreamweaver 更新确保能够继续兼容 Adobe PhoneGap Build 服务。</zh_CN>
+<zh_TW>Adobe Dreamweaver CS6 最新更新包括 HiDPI 顯示最佳化，改善程式碼檢視效能、即時檢視呈現及解決 FTP 傳送權限問題。此項 Adobe Dreamweaver 更新確保與 Adobe PhoneGap Build 服務持續的相容性。</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobeDreamweaver-12.0-All-Update/AdobePatchInstaller.app</ExecutableName>
+<Size>104690211</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeBridgeCS6-5.0/5.0.2" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeBridgeCS6-5.0</ChannelID>
+<LEID>Bridge-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+	  <en_US>Adobe Bridge CS6 5.0.2 Update</en_US>
+<en_AE>Adobe Bridge CS6 5.0.2 Update</en_AE>
+<en_IL>Adobe Bridge CS6 5.0.2 Update</en_IL>
+<cs_CZ>Adobe Bridge CS6 5.0.2 – aktualizace</cs_CZ>
+<da_DK>Adobe Bridge CS6 5.0.2 opdatering</da_DK>
+<de_DE>Aktualisierung für Adobe Bridge CS6 5.0.2</de_DE>
+<es_ES>Actualización de Adobe Bridge CS6 5.0.2</es_ES>
+<es_MX>Actualización de Adobe Bridge CS6 5.0.2</es_MX>
+<fi_FI>Adobe Bridge CS6 5.0.2 -päivitys</fi_FI>
+<fr_FR>Mise à jour 5.0.2 d&apos;Adobe Bridge CS6</fr_FR>
+<fr_MA>Mise à jour 5.0.2 d&apos;Adobe Bridge CS6</fr_MA>
+<hu_HU>Adobe Bridge CS6 5.0.2 frissítés</hu_HU>
+<it_IT>Aggiornamento di Adobe Bridge CS6 5.0.2</it_IT>
+<ja_JP>Adobe Bridge CS6 5.0.2 アップデート</ja_JP>
+<ko_KR>Adobe Bridge CS6 5.0.2 업데이트</ko_KR>
+<nb_NO>Adobe Bridge CS6 5.0.2-oppdatering</nb_NO>
+<nl_NL>Adobe Bridge CS6 5.0.2-update</nl_NL>
+<pl_PL>Adobe Bridge CS6 5.0.2 – Aktualizacja</pl_PL>
+<pt_BR>Atualização Adobe Bridge CS6 5.0.2</pt_BR>
+<ru_RU>Обновление Adobe Bridge CS6 5.0.2</ru_RU>
+<sv_SE>Uppdatering av Adobe Bridge CS6 5.0.2</sv_SE>
+<tr_TR>Adobe Bridge CS6 5.0.2 Güncellemesi</tr_TR>
+<uk_UA>Оновлення Adobe Bridge CS6 5.0.2</uk_UA>
+<zh_CN>Adobe Bridge CS6 5.0.2 更新</zh_CN>
+<zh_TW>Adobe Bridge CS6 5.0.2 更新</zh_TW>
+</DisplayName>
+<Description default="en_US">
+	  <en_US>This update includes some fixes for hot issues reported by customers and security vulnerability.</en_US>
+<en_AE>This update includes some fixes for hot issues reported by customers and security vulnerability.</en_AE>
+<en_IL>This update includes some fixes for hot issues reported by customers and security vulnerability.</en_IL>
+<cs_CZ>Tato aktualizace zahrnuje opravy několika problémů nahlášených zákazníky a bezpečnostních hrozeb.</cs_CZ>
+<da_DK>Denne opdatering indeholder rettelser til nye problemer, der er rapporteret af kunder, samt til sikkerhedssårbarheder.</da_DK>
+<de_DE>Dieses Update beinhaltet Fehlerbehebungen für kritische Probleme, die von Kunden gemeldet wurden und Sicherheitslücken betreffen.</de_DE>
+<es_ES>Esta actualización corrige varias vulnerabilidades de seguridad, así como algunos problemas de los que han informado los usuarios.</es_ES>
+<es_MX>Esta actualización corrige varias vulnerabilidades de seguridad, así como algunos problemas de los que han informado los usuarios.</es_MX>
+<fi_FI>Tämä päivitys sisältää tietoturva-aukon korjauksen sekä korjauksia asiakkaiden ilmoittamiin keskeisiin ongelmiin.</fi_FI>
+<fr_FR>Cette mise à jour comprend des correctifs pour des problèmes importants signalés par les clients ou relatifs à des failles de sécurité.</fr_FR>
+<fr_MA>Cette mise à jour comprend des correctifs pour des problèmes importants signalés par les clients ou relatifs à des failles de sécurité.</fr_MA>
+<hu_HU>Ez a frissítés néhány, a felhasználók által jelentett fontos probléma, valamint biztonsági rés javítását tartalmazza.</hu_HU>
+<it_IT>Questo aggiornamento include alcune modifiche relative ai problemi più frequenti segnalati dai clienti e alle vulnerabilità di protezione.</it_IT>
+<ja_JP>このアップデートでは、お客様から報告された問題およびセキュリティの脆弱性が修正されています。</ja_JP>
+<ko_KR>이 업데이트에는 고객이 보고한 중요한 문제 및 보안 취약성에 대한 일부 수정 사항이 포함되어 있습니다.</ko_KR>
+<nb_NO>Denne oppdateringen omfatter noen feilrettinger for sikkerhetsproblemer og vanlige problemer rapportert av kunder.</nb_NO>
+<nl_NL>Deze update bevat oplossingen voor urgente problemen die door klanten zijn gerapporteerd en problemen met de beveiliging.</nl_NL>
+<pl_PL>Niniejsza aktualizacja zawiera część poprawek ważnych błędów zgłoszonych przez klientów oraz poprawkę luki w zabezpieczeniach.</pl_PL>
+<pt_BR>Esta atualização inclui algumas correções de problemas altamente relevantes informados por clientes, bem como de vulnerabilidade de segurança.</pt_BR>
+<ru_RU>В этом обновлении устранено несколько важных проблем, обнаруженных пользователями, а также уязвимость системы безопасности.</ru_RU>
+<sv_SE>Den här uppdateringen innefattar ett antal korrigeringar av säkerhetsrisker och lösningar till aktuella problem som har rapporterats av kunder.</sv_SE>
+<tr_TR>Bu güncelleme müşteriler tarafından bildirilen bazı önemli hatalara ve güvenlik açıklarına çözüm sunar.</tr_TR>
+<uk_UA>Це оновлення містить виправлення для вирішення деяких важливих проблем, про які було повідомлено користувачами, та покращення для уразливих місць у захисті.</uk_UA>
+<zh_CN>此更新修复了安全性漏洞以及客户报告的一些热点问题。</zh_CN>
+<zh_TW>此更新包括資訊安全漏洞及客戶回報之部份熱門問題的錯誤修正。</zh_TW>
+</Description>
+<AffectedChannels>
+        <ChannelID>AdobeBridgeCS6-5.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>93681673</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobePhotoshopCS6Support-13.0/13.1.2" Viewed="0" WaitingForProductEvent="1">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobePhotoshopCS6-13.0</ChannelID>
+<LEID>Photoshop-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>1</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+		<en_US>Photoshop 13.1.2 for Creative Cloud</en_US>
+<cs_CZ>Aktualizace aplikace Photoshop 13.1.2 pro službu Creative Cloud</cs_CZ>
+<da_DK>Photoshop 13.1.2 til Creative Cloud-opdatering</da_DK>
+<de_DE>Update für Photoshop 13.1.2 für Creative Cloud</de_DE>
+<es_ES>Actualización de Photoshop 13.1.2 para Creative Cloud</es_ES>
+<fi_FI>Photoshop 13.1.2 -päivitys Creative Cloud -käyttäjille</fi_FI>
+<fr_FR>Mise à jour Photoshop 13.1.2 pour Creative Cloud</fr_FR>
+<fr_MA>Mise à jour Photoshop 13.1.2 pour Creative Cloud</fr_MA>
+<fr_CA>Mise à jour Photoshop 13.1.2 pour Creative Cloud</fr_CA>
+<hu_HU>Photoshop 13.1.2 a Creative Cloud frissítéséhez</hu_HU>
+<it_IT>Aggiornamento Photoshop 13.1.2 per Creative Cloud</it_IT>
+<ja_JP>Creative Cloud アップデート向け Photoshop 13.1.2</ja_JP>
+<ko_KR>Creative Cloud 용 Photoshop 13.1.2 업데이트</ko_KR>
+<nb_NO>Photoshop 13.1.2 for Creative Cloud-oppdatering</nb_NO>
+<nl_NL>Update Photoshop 13.1.2 voor Creative Cloud</nl_NL>
+<pl_PL>Aktualizacja Photoshop 13.1.2 dla usługi Creative Cloud</pl_PL>
+<pt_BR>Atualização do Photoshop 13.1.2 para Creative Cloud</pt_BR>
+<ru_RU>Обновление Photoshop 13.1.2 для Creative Cloud</ru_RU>
+<sv_SE>Uppdatering av Photoshop 13.1.2 för Creative Cloud</sv_SE>
+<tr_TR>Creative Cloud için Photoshop 13.1.2 güncellemesi</tr_TR>
+<uk_UA>Оновлення Photoshop 13.1.2 для Creative Cloud</uk_UA>
+<zh_CN>Creative Cloud 适用的 Photoshop 13.1.2 更新</zh_CN>
+<zh_TW>Creative Cloud 適用的 Photoshop 13.1.2 更新</zh_TW>
+<en_AE>Photoshop 13.1.2 for Creative Cloud</en_AE>
+<en_IL>Photoshop 13.1.2 for Creative Cloud</en_IL>
+</DisplayName>
+<Description default="en_US">
+		<en_US>This Adobe® Photoshop® and Photoshop Extended 13.1.2 update installs new features for Adobe Creative Cloud members and Photoshop subscribers. It offers exciting new capabilities for design, photography and more, including the freedom to nondestructively edit with Blur Gallery and Liquify using new Smart Object support, the ability to export text and shapes as CSS, the option to create Conditional Actions, and support for new HiDPI displays that enable a dramatic improvement in image fidelity and resolution. Other new workflow timesavers are also included. Customers with Photoshop Extended will also receive new 3D options including improved live previews that simplify the creation of shadows and reflections in 3D artwork and a 32-bit color picker for better illumination control, and more.</en_US>
+<cs_CZ>Tato aktualizace aplikací Adobe® Photoshop® a Photoshop Extended 13.1.2 slouží k instalaci nových funkcí pro členy služby Adobe Creative Cloud a předplatitele aplikace Photoshop. Nabízí zajímavé nové možnosti pro návrhy, fotografování atd., mimo jiné nedestruktivní úpravy pomocí galerie rozostření a efektu Zkapalnění s použitím nové podpory inteligentních objektů, schopnost exportovat text a tvary jako šablony stylů CSS, možnost vytváření podmíněných akcí a podporu nových displejů HiDPI, které umožňují výrazné zvýšení věrnosti obrazu a rozlišení. Jsou zde rovněž zahrnuty další nové nástroje pro úsporu času v pracovních postupech. Zákazníci, kteří vlastní aplikaci Photoshop Extended, také získají nové 3D volby včetně živých náhledů, které zjednodušují vytváření stínů a odrazů ve 3D kresbách, výběr 32bitových barev pro lepší ovládání osvětlení a podobně.</cs_CZ>
+<da_DK>Denne opdatering til Adobe® Photoshop® og Photoshop Extended 13.1.2 installerer nye funktioner til Adobe Creative Cloud-medlemmer og Photoshop-abonnenter. Den indeholder spændende nye muligheder til design, fotografering og meget mere, herunder friheden til at redigere med Sløringsgalleri og Blødgør uden at ødelægge indholdet, ved hjælp af Smart Object-understøttelse, mulighed for at eksportere tekst og former som CSS, mulighed for at oprette betingede handlinger og support til nye HiDPI-skærme, der dramatisk forbedret billedets naturtrohed og opløsning. Den indeholder også andre funktioner til forkortelse af arbejdsforløbet. Kunder med Photoshop Extended får også nye muligheder til 3D, herunder forbedrede live-eksempler, der gør det nemmere at oprette skygger og refleksioner i 3D-illustrationer samt en 32-bit farvevælger til bedre belysningskontrol og meget mere.</da_DK>
+<de_DE>Bei diesem Update für Adobe® Photoshop® und Photoshop Extended 13.1.2 werden neue Funktionen für Adobe Creative Cloud-Mitglieder und Photoshop-Abonnenten installiert. Es bietet interessante neue Funktionen für Design, Fotografie und mehr, darunter die Möglichkeit, mit der Weichzeichnergalerie und Verflüssigen Bilder mithilfe der neuen Unterstützung für Smart-Objekt nicht-destruktiv zu bearbeiten, Text und Formen als CSS zu exportieren und bedingte Aktionen zu erstellen. Außerdem werden neue HiDPI-Displays unterstützt, die eine enorme Verbesserung in Bezug auf Bildgenauigkeit und Auflösung ermöglichen. Andere Neuigkeiten, die eine Zeitersparnis beim Arbeitsablauf ermöglichen, wurden auch hinzugefügt. Kunden, die Photoshop Extended erworben haben, können sich auch über neue 3D-Optionen freuen, darunter eine verbesserte Live-Vorschau zur einfacheren Erstellung von Schatten und Spiegelungen bei 3D-Bildmaterial, einen 32-bit-Farbwähler für bessere Beleuchtungskontrolle und mehr. </de_DE>
+<es_ES>Esta actualización de Adobe® Photoshop® y Photoshop Extended 13.1.2 instala nuevas funciones para los abonados al programa Adobe Creative Cloud y los suscriptores de Photoshop. Incluye una serie de increíbles funciones nuevas de diseño y fotografía, entre otras, como la libertad de editar de una manera no destructiva con la Galería de efectos de desenfoque y la función Licuar gracias a la nueva compatibilidad con objetos inteligentes; la posibilidad de exportar texto y formas como CSS; la opción de crear acciones condicionales; y la compatibilidad con pantallas HiDPI, lo que supone una enorme mejora en fidelidad y resolución de la imagen. Además, se incluyen más métodos nuevos para ahorrar tiempo en los flujos de trabajo. Los clientes de Photoshop Extended también recibirán nuevas opciones 3D como la previsualización de sombras, que simplifica la creación de sombras y reflejos en imágenes en 3D; y un selector de color de 32 bits que consigue un mayor control de la iluminación, entre otras ventajas. </es_ES>
+<fi_FI>Tämä Adobe® Photoshop®- ja Photoshop Extended 13.1.2 -päivitys sisältää Adobe Creative Cloud -jäsenille ja Photoshop-tilaajille asennettavia uusia toimintoja. Päivitys tarjoaa suunnitteluun, valokuvaukseen ja muuhun työskentelyyn sopivia uusia toimintoja. Esimerkiksi hienovaraiset Sumennusgallerian muokkaukset ja sulatus ovat mahdollisia älykkäiden objektien tuella. Lisäksi tekstiä ja muotoja voi viedä CSS-muodossa, ehdollisten makrojen luominen on mahdollista ja uusia kuvatarkkuutta huomattavasti parantavia HiDPI-näyttöjä tuetaan. Myös muita työnkulkua nopeuttavia toimintoja on mukana. Photoshop Extended -asiakkaat saavat lisäksi uusia 3D-toimintoja, kuten parannetun ajantasaisen esikatselutoiminnon, joka helpottaa varjojen ja heijastusten luomista kolmiulotteisiin teoksiin, ja valaistuksen säätämistä parantavan 32-bittisen värivalitsimen.</fi_FI>
+<fr_FR>Cette mise à jour Adobe® Photoshop® et Adobe Photoshop Extended 13.1.2 installe de nouvelles fonctionnalités pour les adhérents à Adobe Creative Cloud et les abonnés Photoshop. Elle élargit les possibilités en matière de dessin, de photographie et autres, en permettant notamment d&apos;effectuer des retouches non destructrices à l&apos;aide de la Galerie d&apos;effets de flou et de la fonction Fluidité grâce à la nouvelle prise en charge d&apos;objet dynamique, d&apos;exporter du texte et des formes en CSS et de créer des actions conditionnelles. Elle prend également en charge les nouveaux écrans HiDPI pour une plus grande fidélité de l&apos;image et une meilleure résolution. De nouveaux mécanismes d&apos;accélération des flux de travail ont également été ajoutés. Les clients utilisant Photoshop Extended auront également accès à de nouvelles options 3D, dont des aperçus directs améliorés qui simplifient le processus de création d&apos;ombres et de reflets dans les illustrations en 3D et un sélecteur de couleurs 32 bits pour un meilleur contrôle de l&apos;éclairage, entre autres améliorations.</fr_FR>
+<fr_MA>Cette mise à jour Adobe® Photoshop® et Adobe Photoshop Extended 13.1.2 installe de nouvelles fonctionnalités pour les adhérents à Adobe Creative Cloud et les abonnés Photoshop. Elle élargit les possibilités en matière de dessin, de photographie et autres, en permettant notamment d&apos;effectuer des retouches non destructrices à l&apos;aide de la Galerie d&apos;effets de flou et de la fonction Fluidité grâce à la nouvelle prise en charge d&apos;objet dynamique, d&apos;exporter du texte et des formes en CSS et de créer des actions conditionnelles. Elle prend également en charge les nouveaux écrans HiDPI pour une plus grande fidélité de l&apos;image et une meilleure résolution. De nouveaux mécanismes d&apos;accélération des flux de travail ont également été ajoutés. Les clients utilisant Photoshop Extended auront également accès à de nouvelles options 3D, dont des aperçus directs améliorés qui simplifient le processus de création d&apos;ombres et de reflets dans les illustrations en 3D et un sélecteur de couleurs 32 bits pour un meilleur contrôle de l&apos;éclairage, entre autres améliorations.</fr_MA>
+<fr_CA>Cette mise à jour Adobe® Photoshop® et Adobe Photoshop Extended 13.1.2 installe de nouvelles fonctionnalités pour les adhérents à Adobe Creative Cloud et les abonnés Photoshop. Elle élargit les possibilités en matière de dessin, de photographie et autres, en permettant notamment d&apos;effectuer des retouches non destructrices à l&apos;aide de la Galerie d&apos;effets de flou et de la fonction Fluidité grâce à la nouvelle prise en charge d&apos;objet dynamique, d&apos;exporter du texte et des formes en CSS et de créer des actions conditionnelles. Elle prend également en charge les nouveaux écrans HiDPI pour une plus grande fidélité de l&apos;image et une meilleure résolution. De nouveaux mécanismes d&apos;accélération des flux de travail ont également été ajoutés. Les clients utilisant Photoshop Extended auront également accès à de nouvelles options 3D, dont des aperçus directs améliorés qui simplifient le processus de création d&apos;ombres et de reflets dans les illustrations en 3D et un sélecteur de couleurs 32 bits pour un meilleur contrôle de l&apos;éclairage, entre autres améliorations.</fr_CA>
+<hu_HU>Ez az Adobe® Photoshop® és Photoshop Extended 13.1.2 frissítés az Adobe Creative Cloud-tagok és a Photoshop-előfizetők számára telepíti az új funkciókat. Izgalmas új képességeket kínál többek között a tervezők és fényképészek számára: például az új intelligens objektumok támogatják az Életlenítési galéria és Cseppfolyósítás eszközökkel történő visszafordítható képszerkesztést, a szövegek és alakzatok CSS formában exportálhatók, feltételes műveletek hozhatók létre, és támogatja a képhűségben és felbontásban drámai növekedést jelentő új HiDPI kijelzőket. További munkaidő-megtakarítási funkciókkal bővült. A Photoshop Extended szoftert vásárló ügyfelek új 3D funkciókhoz is jutnak, köztük a 3D rajzelemek árnyékainak és tükröződéseinek létrehozását egyszerűsítő javított élő előnézetekkel és a megvilágítás tökéletesebb szabályozását biztosító 32 bites pipettával.</hu_HU>
+<it_IT>Con questo aggiornamento ad Adobe® Photoshop® e Photoshop Extended 13.1.2 vengono installate nuove funzioni per i membri Adobe Creative Cloud e gli utenti iscritti a Photoshop. L&apos;aggiornamento offre nuove funzionalità per design, fotografia e altro ancora, quali: modifica non distruttiva con Galleria sfocatura e Fluidifica e il nuovo supporto per oggetti avanzati; esportazione di testo e forme come CSS; creazione di azioni condizionali; supporto per la nuova visualizzazione HiDPI con notevole miglioramento a livello di fedeltà dell&apos;immagine e risoluzione. Sono inoltre incluse altre funzioni per velocizzare i flussi di lavoro. I clienti con Photoshop Extended riceveranno inoltre le nuove opzioni 3D, quali: anteprime dinamiche per una più facile creazione di ombre e riflessi nella grafica 3D; selettore colore a 32 bit per controllare meglio l&apos;illuminazione; e altro ancora.</it_IT>
+<ja_JP>この Adobe® Photoshop® および Photoshop Extended 13.1.2 アップデートでは、Adobe Creative Cloud メンバーと Photoshop サブスクリプション利用者を対象に新機能をインストールします。デザインや写真などの編集に最適な新機能を備えています。例えば、新しいスマートオブジェクトサポートを利用したぼかしギャラリーやゆがみを使用して、自由な非破壊編集が可能です。テキストやシェイプを CSS として書き出したり、条件付きアクションを作成することもできます。また、画像をより鮮明に表示する新しい HiDPI ディスプレイもサポートしています。他にも、ワークフローを簡素化する便利な機能が含まれています。Photoshop Extended をご利用のお客様には、3D アートワークでシャドウや反射を簡単に作成するライブプレビュー（改良済み）や、より美しいイルミネーション制御を行う 32 bit カラーピッカーなどの新しい 3D オプションも提供されます。</ja_JP>
+<ko_KR>이 Adobe® Photoshop® 및 Photoshop Extended 13.1.2 업데이트는 Adobe Creative Cloud 회원 및 Photoshop 구독자를 위한 새로운 기능을 설치합니다. 이 업데이트는 디자인, 사진 등을 위한 새로운 놀라운 기능을 제공합니다. 이러한 기능에는 새로운 고급 개체 지원을 통해 흐림 효과 갤러리와 픽셀 유동화를 사용하여 비파괴적으로 자유롭게 편집하는 기능, 텍스트와 모양을 CSS로 내보내는 기능, 조건부 액션 만들기 옵션 및 이미지 충실도와 해상도를 대폭 향상시키는 새 HiDPI 디스플레이 지원 기능이 포함되어 있습니다. 작업 과정의 시간을 절약해 주는 기타 새로운 기능도 포함되어 있습니다. Photoshop Extended를 사용하는 고객은 그림자 만들기 및 3D 아트웍의 반사를 용이하게 하는 향상된 실시간 미리 보기, 더 나은 조명 제어를 위한 32비트 색상 피커 등을 포함하는 새로운 3D 옵션을 받게 됩니다. </ko_KR>
+<nb_NO>Denne oppdateringen for Adobe® Photoshop® og Photoshop Extended 13.1.2 installerer nye funksjoner for Adobe Creative Cloud-medlemmer og Photoshop-abonnenter. Den gir nye muligheter for design, fotografi og mye annet, inkludert friheten til å redigere med Gjør mindre skarpt-galleri og Gjør flytende med den nye støtten for smarte objekter, muligheten til å eksportere tekst og former som CSS, et alternativ for å opprette betingede handlinger, og støtte for nye HiDPI-skjermer som gir en drastisk forbedring av bildekvalitet og oppløsning. Flere nye, tidsbesparende funksjoner for arbeidsflyt er også inkludert. Kunder med Photoshop Extended får også nye 3D-muligheter, som bedre live-forhåndsvisning som forenkler opprettelsen av skygger og refleksjoner i 3D-prosjekter samt en 32-biters fargevelger for bedre lyskontroll m.m.</nb_NO>
+<nl_NL>Met deze update voor Adobe® Photoshop® en Adobe Photoshop Extended 13.1.2 worden nieuwe functies geïnstalleerd voor Adobe Creative Cloud-leden en Photoshop-abonnees. De update bevat interessante nieuwe mogelijkheden voor ontwerp, fotografie en nog veel meer. Zo zorgt de nieuwe ondersteuning voor slimme objecten ervoor dat u in alle vrijheid bewerkingen met de galerie Vervagen en de functie Uitvloeien kunt uitvoeren zonder dat de oorspronkelijke afbeelding verloren gaat, kunt u tekst en vormen exporteren als CSS en kunt u voorwaardelijke acties maken. Ook worden HiDPI-schermen nu ondersteund, hetgeen zorgt voor een enorme verbetering in de beeldgetrouwheid en resolutie. Ook zijn er nieuwe, tijdbesparende workflows in de update opgenomen. Gebruikers van Photoshop Extended profiteren bovendien van nieuwe 3D-opties, zoals verbeterde live-voorvertoningen waarmee het maken van schaduwen en reflecties in 3D-objecten eenvoudiger wordt, een 32-bits kleurkiezer voor verbeterde belichtinginstelling, en nog veel meer.</nl_NL>
+<pl_PL>Ta aktualizacja programów Adobe® Photoshop® i Photoshop Extended 13.1.2 instaluje nowe funkcje przeznaczone dla członków usługi Adobe Creative Cloud i osób subskrybujących program Photoshop. Oferuje ona wspaniałe nowe rozwiązania ułatwiające projektowanie, obróbkę fotografii i wykonywanie innych zadań. Dzięki obsłudze nowych obiektów inteligentnych umożliwia swobodne, bezpieczne edytowanie przy użyciu narzędzi Galeria rozmyć i Skraplanie. Zapewnia możliwość eksportowania tekstu i kształtów jako kodu CSS oraz opcję tworzenia operacji warunkowych. Obsługuje też nowe wyświetlacze HiDPI — technologii zapewniającej niedoścignioną jakość obrazu i najwyższe rozdzielczości. Aktualizacja obejmuje także inne nowości przyspieszające obiegi pracy. Klienci posiadający program Photoshop Extended otrzymają również dostęp do nowych opcji 3D — takich jak ulepszony aktywny podgląd ułatwiający projektowanie cieni i odbić w kompozycjach 3D oraz 32-bitowy próbnik kolorów gwarantujący precyzyjną kontrolę nad oświetleniem. </pl_PL>
+<pt_BR>Esta atualização para o Adobe® Photoshop® e o Photoshop Extended 13.1.2 instalará novos recursos para os membros do Adobe Creative Cloud e os assinantes do Photoshop. A atualização fornece novas e incríveis capacidades para design, fotografia e muito mais, incluindo liberdade para editar de forma não-destrutiva com a Galeria de desfoque e o filtro Dissolver, utilizando o novo suporte a Objeto inteligente, capacidade de exportar texto e formas como CSS, a opção de criar Ações condicionais, e suporte para novos monitores HiDPI, possibilitando um sensível aumento da fidelidade e da resolução da imagem. Também estão incluídos novos recursos para poupar tempo nos fluxos de trabalho. Os clientes com o Photoshop Extended também receberão novas opções 3D, tais como visualizações ao vivo aprimoradas para simplificar a criação de sombras e reflexos em artes 3D, e um seletor de cores de 32 bits para um maior controle da iluminação, e muito mais.</pt_BR>
+<ru_RU>Данное обновление Adobe® Photoshop® и Photoshop Extended 13.1.2 устанавливает новые функции для пользователей Adobe Creative Cloud и подписчиков Photoshop. Оно обеспечивает новые интересные возможности для дизайна, фотографии и других направлений, в том числе свободу безопасного редактирования с помощью галереи размытия и фильтра «Пластика» благодаря новой поддержке смарт-объектов, возможность экспорта текста и фигур в виде CSS, возможность создания условных действий и поддержу новых дисплеев HiDPI, которая значительно улучшает качество и разрешение изображения. Также включены новые автоматические рабочие процессы. Пользователи Photoshop Extended также получат новые возможности работы в среде 3D, включая улучшенный просмотр в реальном времени, который упрощает создание теней и отражений в 3D-проектов, и 32-битную палитру цветов для улучшения управления освещением, а также многое другое. </ru_RU>
+<sv_SE>Den här uppdateringen för Adobe® Photoshop® och Photoshop Extended 13.1.2 installerar nya funktioner för Adobe Creative Cloud-medlemmar och Photoshop-prenumeranter. Den erbjuder nya spännande funktioner för design, fotografi och annat, exempelvis möjlighet att redigera icke-destruktivt med Oskärpegalleri och Gör flytande via nytt stöd för smarta objekt, möjlighet att exportera text och former som CSS, ett alternativ för att skapa villkorliga villkorliga funktionsmakron och stöd för nya HiDPI-skärmar som ger en drastisk förbättring av bildåtergivningen och upplösningen. Andra nya funktioner som sparar tid i arbetsflödet ingår också. Kunder med Photoshop Extended får också nya 3D-alternativ, bland annat förbättrade liveförhandsgranskningar som gör det enklare att skapa skuggor och reflektioner i 3D-grafik, och en 32-bitars färgväljare som ger bättre belysningskontroll.</sv_SE>
+<tr_TR>Bu Adobe® Photoshop® ve Photoshop Extended 13.1.2 güncellemesi, Adobe Creative Cloud üyeleri ve Photoshop aboneleri için yeni özellikler yükler. Yeni Akıllı Nesne desteğinin kullanımıyla Bulanıklaştırma Galerisi ve Sıvılaştırma özelliği sayesinde zarar vermeden düzenleme özgürlüğü, metni ve şekilleri CSS olarak dışa aktarabilme, Koşullu Eylemler oluşturma seçeneği ve görüntünün aslına uygunluğu ile çözünürlüğünün önemli ölçüde artırılmasını sağlayan yeni HiDPI ekranları desteği dahil olmak üzere tasarım, fotoğrafçılık ve daha fazlasına yönelik heyecan verici yeni özellikler sunar. İş akışına yönelik olarak bunun dışında yeni, zaman kazandıran özellikler de eklenmiştir. Photoshop Extended&apos;a sahip olan müşteriler, 3B resimde gölge ve yansıma oluşturmayı kolaylaştıran geliştirilmiş canlı önizlemelerin dahil olduğu yeni 3B seçenekleri ve daha iyi aydınlatma kontrolü için 32 bit renk seçici vb. özellikleri de elde eder.</tr_TR>
+<uk_UA>Це оновлення Adobe® Photoshop® і Photoshop Extended 13.1.2 інсталює нові можливості для учасників Adobe Creative Cloud і передплатників Photoshop. Воно надає чудові нові функції для оформлення, фотографії тощо, зокрема можливість неруйнівної правки за допомогою галереї розмиття й інструмента «Пластика» з новою функцією підтримки смарт-об’єктів, можливість експортувати текст і фігури як каскадні таблиці стилів (CSS), можливість створення умовних дій і підтримку нових дисплеїв HiDPI, які істотно покращують точність і роздільну здатність зображення. Оновлення також містить інші нові функції, що спрощують і пришвидшують робочий процес. Користувачі Photoshop Extended також отримають нові параметри 3D, зокрема покращений попередній перегляд у реальному часі, який спрощує створення тіней і відображень у 3D-ілюстраціях, 32-бітову палітру кольорів для кращого керування освітленням тощо.</uk_UA>
+<zh_CN>此 Adobe® Photoshop® 和 Photoshop Extended 13.1.2 更新会为 Adobe Creative Cloud 成员及 Photoshop 用户安装新功能，提供令人激动的适用于设计、摄影等的新能力，包括可使用最新的智能对象支持的模糊画廊和液化，自由地进行非破坏性编辑、将文字和形状导出为 CSS 的能力、可建立条件动作的选项，以及支持新 HiDPI 显示以大幅改进图像的真实度和分辨率。另含其他可节省时间的新工作流程。还为 Photoshop Extended 的客户提供新的 3D 选项，包括改进的实时预览，可简化在 3D 作品中建立阴影和反射的流程，以及可提供更好的光照控制的 32 位拾色器，还有其他更多功能。</zh_CN>
+<zh_TW>此 Adobe® Photoshop® 和 Photoshop Extended 13.1.2 更新會為 Adobe Creative Cloud 成員及 Photoshop 訂閱者安裝新功能，提供令人興奮的設計、攝影等新能力，包括可使用最新的智慧型物件支援的模糊收藏館和液化，自由地進行非破壞性編輯、將文字和形狀匯出為 CSS 的能力、可建立條件式動作的選項，以及支援新 HiDPI 顯示以大幅改進影像的真實度和解析度。另包含其他可節省時間的新工作流程。Photoshop Extended 的客戶也會收到新的 3D 選項，包括改良的即時預覽，可簡化在 3D 作品中建立陰影和反射的流程，以及一個可提供更佳照明控制的 32 位元檢色器，還有其他更多功能。</zh_TW>
+<en_AE>This Adobe® Photoshop® and Photoshop Extended 13.1.2 update installs new features for Adobe Creative Cloud members and Photoshop subscribers. It offers exciting new capabilities for design, photography and more, including the freedom to nondestructively edit with Blur Gallery and Liquify using new Smart Object support, the ability to export text and shapes as CSS, the option to create Conditional Actions, and support for new HiDPI displays that enable a dramatic improvement in image fidelity and resolution. Other new workflow timesavers are also included. Customers with Photoshop Extended will also receive new 3D options including improved live previews that simplify the creation of shadows and reflections in 3D artwork and a 32-bit color picker for better illumination control, and more.</en_AE>
+<en_IL>This Adobe® Photoshop® and Photoshop Extended 13.1.2 update installs new features for Adobe Creative Cloud members and Photoshop subscribers. It offers exciting new capabilities for design, photography and more, including the freedom to nondestructively edit with Blur Gallery and Liquify using new Smart Object support, the ability to export text and shapes as CSS, the option to create Conditional Actions, and support for new HiDPI displays that enable a dramatic improvement in image fidelity and resolution. Other new workflow timesavers are also included. Customers with Photoshop Extended will also receive new 3D options including improved live previews that simplify the creation of shadows and reflections in 3D artwork and a 32-bit color picker for better illumination control, and more.</en_IL>
+</Description>
+<AffectedChannels>
+		<ChannelID>AdobePhotoshopCS6-13.0</ChannelID>
+<ChannelID>AdobePhotoshopCS664Bit-13.0</ChannelID>
+</AffectedChannels>
+<RequiredChannels>
+	</RequiredChannels>
+<InstallFiles>
+<File RIBSBased="1">
+			<Name>Setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>Adobe Photoshop CS6/AdobePatchInstaller.app</ExecutableName>
+<Size>135017053</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeIllustrator16-mul/16.7" Viewed="0" WaitingForProductEvent="1">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeIllustrator16-mul</ChannelID>
+<LEID>Illustrator-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>2</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Adobe Illustrator CS6 Update (version 16.0.4)</en_US>
+<en_GB>Adobe Illustrator CS6 Update (version 16.0.4)</en_GB>
+<cs_CZ>Adobe Illustrator CS6 - aktualizace (verze 16.0.4)</cs_CZ>
+<da_DK>Adobe Illustrator CS6 – opdatering (version 16.0.4)</da_DK>
+<de_DE>Adobe Illustrator CS6-Aktualisierung (Version 16.0.4)</de_DE>
+<es_ES>Actualización de Adobe Illustrator CS6 (versión 16.0.4)</es_ES>
+<es_MX>Actualización de Adobe Illustrator CS6 (versión 16.0.4)</es_MX>
+<fr_FR>Mise à jour d&apos;Adobe Illustrator CS6 (version 16.0.4)</fr_FR>
+<fr_CA>Mise à jour d&apos;Adobe Illustrator CS6 (version 16.0.4)</fr_CA>
+<fr_MA>Mise à jour d&apos;Adobe Illustrator CS6 (version 16.0.4)</fr_MA>
+<fi_FI>Adobe Illustrator CS6 Update (version 16.0.4)</fi_FI>
+<hu_HU>Adobe Illustrator CS6 frissítés (16.0.4 verzió)</hu_HU>
+<it_IT>Aggiornamento Adobe Illustrator CS6 (versione 16.0.4)</it_IT>
+<ja_JP>Adobe Illustrator CS6 アップデート (バージョン 16.0.4)</ja_JP>
+<ko_KR>Adobe Illustrator CS6 업데이트(버전 16.0.4)</ko_KR>
+<nl_NL>Adobe Illustrator CS6-update (versie 16.0.4)</nl_NL>
+<pl_PL>Adobe Illustrator CS6 — uaktualnienie (wersja 16.0.4)</pl_PL>
+<pt_BR>Atualização do Adobe Illustrator CS6 (Versão 16.0.4)</pt_BR>
+<ru_RU>Обновление Adobe Illustrator CS6 (версия 16.0.4)</ru_RU>
+<sv_SE>Adobe Illustrator CS6-uppdatering (version 16.0.4)</sv_SE>
+<tr_TR>Adobe Illustrator CS6 Güncellemesi (sürüm 16.0.4)</tr_TR>
+<uk_UA>Оновлення Adobe Illustrator CS6 (версія 16.0.4)</uk_UA>
+<zh_CN>Adobe Illustrator CS6 更新（版本 16.0.4）</zh_CN>
+<zh_TW>Adobe Illustrator CS6 更新 (版本 16.0.4)</zh_TW>
+<en_AE>Adobe Illustrator CS6 Update (version 16.0.4)</en_AE>
+<en_IL>Adobe Illustrator CS6 Update (version 16.0.4)</en_IL>
+</DisplayName>
+<Description default="en_US">
+<en_US>The Adobe Illustrator 16.0.4 update provides several stability fixes.</en_US>
+<en_GB>The Adobe Illustrator 16.0.4 update provides several stability fixes.</en_GB>
+<cs_CZ>Aktualizace Adobe Illustrator 16.0.4 obsahuje několik oprav v oblasti stability.</cs_CZ>
+<da_DK>Opdateringen til Adobe Illustrator 16.0.4 indeholder adskillige rettelser af problemer med stabiliteten.</da_DK>
+<de_DE>Die Adobe Illustrator 16.0.4-Aktualisierung behebt mehrere Stabilitätsprobleme.</de_DE>
+<es_ES>La actualización 16.0.4 de Adobe Illustrator soluciona varios problemas de estabilidad.</es_ES>
+<es_MX>La actualización 16.0.4 de Adobe Illustrator soluciona varios problemas de estabilidad.</es_MX>
+<fr_FR>La mise à jour 16.0.4 d’Adobe Illustrator fournit plusieurs correctifs de stabilité.</fr_FR>
+<fr_CA>La mise à jour 16.0.4 d’Adobe Illustrator fournit plusieurs correctifs de stabilité.</fr_CA>
+<fr_MA>La mise à jour 16.0.4 d’Adobe Illustrator fournit plusieurs correctifs de stabilité.</fr_MA>
+<fi_FI>The Adobe Illustrator 16.0.4 update provides several stability fixes.</fi_FI>
+<hu_HU>Az Adobe Illustrator 16.0.4 frissítés számos stabilitást növelő javítást tartalmaz.</hu_HU>
+<it_IT>L&apos;aggiornamento Adobe Illustrator 16.0.4 corregge diversi problemi di stabilità.</it_IT>
+<ja_JP>Adobe Illustrator 16.0.4 アップデートには、いくつかの安定性に関する修正事項が含まれています。</ja_JP>
+<ko_KR>Adobe Illustrator 16.0.4 업데이트는 여러 가지 안정성 관련 수정 사항을 제공합니다.</ko_KR>
+<nl_NL>De Adobe Illustrator 16.0.4-update bevat verschillende stabiliteitsverbeteringen.</nl_NL>
+<pl_PL>Uaktualnienie Adobe Illustrator 16.0.4 zawiera kilka poprawek dotyczących stabilności pracy programu.</pl_PL>
+<pt_BR>A versão 16.0.4 do Adobe Illustrator fornece diversas correções de estabilidade.</pt_BR>
+<ru_RU>В обновлении Adobe Illustrator 16.0.4 исправлено несколько важных проблем, связанных со стабильностью работы приложения.</ru_RU>
+<sv_SE>Uppdateringen Adobe Illustrator 16.0.4 innehåller flera stabilitetskorrigeringar.</sv_SE>
+<tr_TR>Adobe Illustrator 16.0.4 güncellemesi bazı stabilite sorunlarına çözüm sunar.</tr_TR>
+<uk_UA>Оновлення Adobe Illustrator 16.0.4 надає деякі виправлення для забезпечення стабільності роботи.</uk_UA>
+<zh_CN>Adobe Illustrator 16.0.4 更新修复了几个稳定性问题。</zh_CN>
+<zh_TW>Adobe Illustrator 16.0.4 更新提供數項穩定性修正。</zh_TW>
+<en_AE>The Adobe Illustrator 16.0.4 update provides several stability fixes.</en_AE>
+<en_IL>The Adobe Illustrator 16.0.4 update provides several stability fixes.</en_IL>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeIllustrator16-mul</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>93588583</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeIllustrator16-mul/16.8" Viewed="0" WaitingForProductEvent="1">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeIllustrator16-mul</ChannelID>
+<LEID>Illustrator-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>1</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Adobe Illustrator CS6 Update (version 16.2.1)</en_US>
+<en_GB>Adobe Illustrator CS6 Update (version 16.2.1)</en_GB>
+<cs_CZ>Adobe Illustrator CS6 - aktualizace (verze 16.2.1)</cs_CZ>
+<da_DK>Adobe Illustrator CS6 – opdatering (version 16.2.1)</da_DK>
+<de_DE>Adobe Illustrator CS6-Aktualisierung (Version 16.2.1)</de_DE>
+<es_ES>Actualización de Adobe Illustrator CS6 (versión 16.2.1)</es_ES>
+<es_MX>Actualización de Adobe Illustrator CS6 (versión 16.2.1)</es_MX>
+<fr_FR>Mise à jour d&apos;Adobe Illustrator CS6 (version 16.2.1)</fr_FR>
+<fr_CA>Mise à jour d&apos;Adobe Illustrator CS6 (version 16.2.1)</fr_CA>
+<fr_MA>Mise à jour d&apos;Adobe Illustrator CS6 (version 16.2.1)</fr_MA>
+<fi_FI>Adobe Illustrator CS6 Update (version 16.2.1)</fi_FI>
+<hu_HU>Adobe Illustrator CS6 frissítés (16.2.1 verzió)</hu_HU>
+<it_IT>Aggiornamento Adobe Illustrator CS6 (versione 16.2.1)</it_IT>
+<ja_JP>Adobe Illustrator CS6 アップデート (バージョン 16.2.1)</ja_JP>
+<ko_KR>Adobe Illustrator CS6 업데이트(버전 16.2.1)</ko_KR>
+<nl_NL>Adobe Illustrator CS6-update (versie 16.2.1)</nl_NL>
+<pl_PL>Adobe Illustrator CS6 — uaktualnienie (wersja 16.2.1)</pl_PL>
+<pt_BR>Atualização do Adobe Illustrator CS6 (Versão 16.2.1)</pt_BR>
+<ru_RU>Обновление Adobe Illustrator CS6 (версия 16.2.1)</ru_RU>
+<sv_SE>Adobe Illustrator CS6-uppdatering (version 16.2.1)</sv_SE>
+<tr_TR>Adobe Illustrator CS6 Güncellemesi (sürüm 16.2.1)</tr_TR>
+<uk_UA>Оновлення Adobe Illustrator CS6 (версія 16.2.1)</uk_UA>
+<zh_CN>Adobe Illustrator CS6 更新（版本 16.2.1）</zh_CN>
+<zh_TW>Adobe Illustrator CS6 更新 (版本 16.2.1)</zh_TW>
+<en_AE>Adobe Illustrator CS6 Update (version 16.2.1)</en_AE>
+<en_IL>Adobe Illustrator CS6 Update (version 16.2.1)</en_IL>
+</DisplayName>
+<Description default="en_US">
+<en_US>The Adobe Illustrator 16.2.1 update provides several stability fixes.</en_US>
+<en_GB>The Adobe Illustrator 16.2.1 update provides several stability fixes.</en_GB>
+<cs_CZ>Aktualizace Adobe Illustrator 16.2.1 obsahuje několik oprav v oblasti stability.</cs_CZ>
+<da_DK>Opdateringen til Adobe Illustrator 16.2.1 indeholder adskillige rettelser af problemer med stabiliteten.</da_DK>
+<de_DE>Die Adobe Illustrator 16.2.1-Aktualisierung behebt mehrere Stabilitätsprobleme.</de_DE>
+<es_ES>La actualización 16.2.1 de Adobe Illustrator soluciona varios problemas de estabilidad.</es_ES>
+<es_MX>La actualización 16.2.1 de Adobe Illustrator soluciona varios problemas de estabilidad.</es_MX>
+<fr_FR>La mise à jour 16.2.1 d’Adobe Illustrator fournit plusieurs correctifs de stabilité.</fr_FR>
+<fr_CA>La mise à jour 16.2.1 d’Adobe Illustrator fournit plusieurs correctifs de stabilité.</fr_CA>
+<fr_MA>La mise à jour 16.2.1 d’Adobe Illustrator fournit plusieurs correctifs de stabilité.</fr_MA>
+<fi_FI>The Adobe Illustrator 16.2.1 update provides several stability fixes.</fi_FI>
+<hu_HU>Az Adobe Illustrator 16.2.1 frissítés számos stabilitást növelő javítást tartalmaz.</hu_HU>
+<it_IT>L&apos;aggiornamento Adobe Illustrator 16.2.1 corregge diversi problemi di stabilità.</it_IT>
+<ja_JP>Adobe Illustrator 16.2.1 アップデートには、いくつかの安定性に関する修正事項が含まれています。</ja_JP>
+<ko_KR>Adobe Illustrator 16.2.1 업데이트는 여러 가지 안정성 관련 수정 사항을 제공합니다.</ko_KR>
+<nl_NL>De Adobe Illustrator 16.2.1-update bevat verschillende stabiliteitsverbeteringen.</nl_NL>
+<pl_PL>Uaktualnienie Adobe Illustrator 16.2.1 zawiera kilka poprawek dotyczących stabilności pracy programu.</pl_PL>
+<pt_BR>A versão 16.2.1 do Adobe Illustrator fornece diversas correções de estabilidade.</pt_BR>
+<ru_RU>В обновлении Adobe Illustrator 16.2.1 исправлено несколько важных проблем, связанных со стабильностью работы приложения.</ru_RU>
+<sv_SE>Uppdateringen Adobe Illustrator 16.2.1 innehåller flera stabilitetskorrigeringar.</sv_SE>
+<tr_TR>Adobe Illustrator 16.2.1 güncellemesi bazı stabilite sorunlarına çözüm sunar.</tr_TR>
+<uk_UA>Оновлення Adobe Illustrator 16.2.1 надає деякі виправлення для забезпечення стабільності роботи.</uk_UA>
+<zh_CN>Adobe Illustrator 16.2.1 更新修复了几个稳定性问题。</zh_CN>
+<zh_TW>Adobe Illustrator 16.2.1 更新提供數項穩定性修正。</zh_TW>
+<en_AE>The Adobe Illustrator 16.2.1 update provides several stability fixes.</en_AE>
+<en_IL>The Adobe Illustrator 16.2.1 update provides several stability fixes.</en_IL>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeIllustrator16-mul</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>91508484</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" ReFetch="0" RefID="AdobeDreamweaverCS6-12/12.2.0" Viewed="0" WaitingForProductEvent="1">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+<UpdateID>12.2.0</UpdateID>
+<OwningID>AdobeDreamweaverCS6LangPacken_US-12</OwningID>
+<LEID>Dreamweaver-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+<LEID>Dreamweaver-CS6-Mac-GM</LEID>
+<UpdateID>12.2.0</UpdateID>
+<OwningID>AdobeDreamweaverCS6-12</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>1</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Dreamweaver CS6 Creative Cloud release – Feb. 2013</en_US>
+<cs_CZ>Vydání sady Dreamweaver CS6 Creative Cloud – únor 2013</cs_CZ>
+<de_DE>Dreamweaver CS6 Creative Cloud-Aktualisierung – Feb. 2013</de_DE>
+<es_ES>Publicación de Dreamweaver CS6 Creative Cloud – Febrero de 2013</es_ES>
+<es_MX>Publicación de Dreamweaver CS6 Creative Cloud – Febrero de 2013</es_MX>
+<fr_FR>Dreamweaver CS6 version Creative Cloud - Février 2013</fr_FR>
+<fr_MA>Dreamweaver CS6 version Creative Cloud - Février 2013</fr_MA>
+<fr_CA>Dreamweaver CS6 version Creative Cloud - Février 2013</fr_CA>
+<it_IT>Dreamweaver CS6 versione Creative Cloud – Febbraio 2013</it_IT>
+<ja_JP>Dreamweaver CS6 Creative Cloud リリース – 2013 年 2 月</ja_JP>
+<ko_KR>Dreamweaver CS6 Creative Cloud 릴리스 - 2013년 2월</ko_KR>
+<nl_NL>Release van Dreamweaver CS6 Creative Cloud – Feb. 2013</nl_NL>
+<pl_PL>Aktualizacja programu Dreamweaver CS6 Creative Cloud — luty 2013</pl_PL>
+<pt_BR>Versão da Dreamweaver CS6 Creative Cloud – fevereiro de 2013</pt_BR>
+<ru_RU>Выпуск Dreamweaver CS6 Creative Cloud — февраль 2013</ru_RU>
+<sv_SE>Dreamweaver CS6 Creative Cloud – februari 2013</sv_SE>
+<tr_TR>Dreamweaver CS6 Creative Cloud sürümü – Şubat 2013</tr_TR>
+<zh_CN>Dreamweaver CS6 Creative Cloud 发布 — 2013 年 2 月</zh_CN>
+<zh_TW>Dreamweaver CS6 Creative Cloud 發行 – 2013 年 2 月</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<en_US>The latest Dreamweaver update integrates Adobe Edge Web Fonts and features an improved Font Management workflow. Also, significant improvements to the Fluid Grid Layouts feature make it easier to create professional-quality responsive web pages. The update includes added support for HTML5 Form elements. Finally, the update restores Expanded Table View options (removed in the last CS6 Creative Cloud release on Sept 24th) and includes critical bug fixes.</en_US>
+<cs_CZ>Nejnovější aktualizace aplikace Dreamweaver integruje písma Adobe Edge Web Fonts a přináší vylepšený pracovní postup pro správu písem. Významná vylepšení funkce Rozvržení plovoucích mřížek usnadňuje vytváření rychlých webových stránek profesionální kvality. Tato aktualizace zahrnuje přidanou podporu elementů formulářů HTML5. Aktualizace také obnovuje možnosti zobrazení režimu rozšířených tabulek (odebrané ve verzi CS6 Creative Cloud z 24. září) a obsahuje opravy závažných chyb.</cs_CZ>
+<de_DE>Die neueste Dreamweaver-Aktualisierung integriert Adobe Edge-Webschriften und führt einen verbesserten Arbeitsablauf für die Schriftenverwaltung ein. Auch signifikante Verbesserungen der fließenden Rasterlayouts erleichtern die Erstellung ansprechender Webseiten in professioneller Qualität. Die Aktualisierung umfasst  die zusätzliche Unterstützung von HTML5-Formularelementen. Schließlich stellt diese Aktualisierung die Optionen des erweiterten Tabellenmodus wieder her (die in der letzten CS6 Creative Cloud-Aktualisierung am 24. Sept. entfernt worden sind) und enthält einige wichtige Bugkorrekturen.</de_DE>
+<es_ES>La actualización más reciente de Dreamweaver integra Fuentes Web de Adobe Edge y cuenta con un flujo de trabajo mejorado para administración de fuentes. Asimismo, las mejoras significativas realizadas en la función Diseños de cuadrículas fluidas facilitan la creación de páginas Web funcionales de calidad profesional. La actualización incluye compatibilidad adicional para elementos de formulario HTML5. Por último, la actualización restaura las opciones de vista expandida de tabla (eliminadas en la última versión de CS6 Creative Cloud, publicada el 24 de septiembre) e incluye soluciones a errores críticos.</es_ES>
+<es_MX>La actualización más reciente de Dreamweaver integra Fuentes Web de Adobe Edge y cuenta con un flujo de trabajo mejorado para administración de fuentes. Asimismo, las mejoras significativas realizadas en la función Diseños de cuadrículas fluidas facilitan la creación de páginas Web funcionales de calidad profesional. La actualización incluye compatibilidad adicional para elementos de formulario HTML5. Por último, la actualización restaura las opciones de vista expandida de tabla (eliminadas en la última versión de CS6 Creative Cloud, publicada el 24 de septiembre) e incluye soluciones a errores críticos.</es_MX>
+<fr_FR>La plus récente mise à jour de Dreamweaver comprend les polices Web Adobe Edge et un flux de gestion des polices amélioré. En outre, des améliorations significatives de la fonctionnalité Mises en forme de grille fluide facilitent la création de pages Web réactives de qualité professionnelle. La mise à niveau ajoute une prise en charge des éléments de formulaire HTML5. Enfin, la mise à niveau rétablit les options de mode Tableaux développés (supprimées de la dernière version de CS6 Creative Cloud publiée le 24 septembre) et corrige des bogues critiques.</fr_FR>
+<fr_MA>La plus récente mise à jour de Dreamweaver comprend les polices Web Adobe Edge et un flux de gestion des polices amélioré. En outre, des améliorations significatives de la fonctionnalité Mises en forme de grille fluide facilitent la création de pages Web réactives de qualité professionnelle. La mise à niveau ajoute une prise en charge des éléments de formulaire HTML5. Enfin, la mise à niveau rétablit les options de mode Tableaux développés (supprimées de la dernière version de CS6 Creative Cloud publiée le 24 septembre) et corrige des bogues critiques.</fr_MA>
+<fr_CA>La plus récente mise à jour de Dreamweaver comprend les polices Web Adobe Edge et un flux de gestion des polices amélioré. En outre, des améliorations significatives de la fonctionnalité Mises en forme de grille fluide facilitent la création de pages Web réactives de qualité professionnelle. La mise à niveau ajoute une prise en charge des éléments de formulaire HTML5. Enfin, la mise à niveau rétablit les options de mode Tableaux développés (supprimées de la dernière version de CS6 Creative Cloud publiée le 24 septembre) et corrige des bogues critiques.</fr_CA>
+<it_IT>L&apos;ultimo aggiornamento di Dreamweaver include i caratteri Web Adobe Edge e presenta un flusso di lavoro migliorato per la gestione dei caratteri. Inoltre, contiene importanti miglioramenti della funzione Layout a griglia fluida che rendono più facile la creazione di pagine Web interattive di qualità professionale. L&apos;aggiornamento include un supporto più esteso degli elementi modulo HTML5. Infine, l&apos;aggiornamento ripristina le opzioni di visualizzazione della modalità Tabelle espanse (rimosse nell&apos;ultima versione di CS6 Creative Cloud del 24 settembre) e include le correzioni di alcuni bug critici.</it_IT>
+<ja_JP>最新の Dreamweaver アップデートでは、Adobe Edge Web Fonts を取り入れて、フォント管理ワークフローを改善することができます。 また、可変グリッドレイアウト機能が大幅に改善されているため、プロ並みのレスポンシブな Web ページを簡単に作成できるようになります。 アップデートには、HTML5 フォームエレメントのサポート強化が含まれています。また最終的に、（9 月 24 日の最後の CS6 Creative Cloud リリースで削除された）Expanded Table View オプションが復元されており、重大なバグ修正も含まれています。</ja_JP>
+<ko_KR>최신 Dreamweaver 업데이트에 Adobe Edge Web Fonts와 개선된 글꼴 관리 워크플로 기능이 통합되었습니다. 또한, 유동 격자 레이아웃 기능에 큰 개선을 통해 전문가급의 응답력 있는 웹페이지를 쉽게 만들 수 있게 되었습니다. 이번 업데이트에는 HTML5 Form 요소에 대한 추가적인 지원이 포함되어 있습니다. 마지막으로 이번 업데이트는 확장된 표 보기 옵션(9월 24일의 최근 CS6 Creative Cloud 릴리스에서 삭제됨)을 복원하였으며, 중대한 버그도 수정하였습니다.</ko_KR>
+<nl_NL>De laatste Dreamweaver-update integreert Adobe Edge Web Fonts en biedt een verbeterde workflow voor Lettertypenbeheer. Daarnaast is het dankzij aanzienlijke verbeteringen aan de functie Dynamische rasterlay-outs eenvoudiger om responsieve webpagina&apos;s van professionele kwaliteit te maken. De update bevat toegevoegde ondersteuning voor HTML5-formulierelementen. Tot slot herstelt de update de opties voor Uitgebreide tabelweergave (die in de vorige release van CS6 Creative Cloud op 24 september was verwijderd) en beschikt de nieuwe release over essentiële oplossingen voor bepaalde problemen.</nl_NL>
+<pl_PL>Najnowsza aktualizacja programu Dreamweaver umożliwia integrację czcionek Adobe Edge Web Fonts i obejmuje ulepszone zarządzanie czcionkami. Wprowadza również istotne usprawnienia działania płynnych układów siatek, co przekłada się na łatwiejsze tworzenie profesjonalnych, interaktywnych stron internetowych. Aktualizacja zapewnia także obsługę elementów formularzy HTML5 oraz przywraca opcje widoku rozszerzonego tabeli (usunięte w ostatniej wersji programu CS6 Creative Cloud udostępnionej 24 września) i usuwa błędy krytyczne.</pl_PL>
+<pt_BR>A atualização mais recente do Dreamweaver integra o Adobe Edge Web Fonts e fornece um fluxo de trabalho aprimorado do Font Management. Além disso, as melhorias significativas no recurso Layouts de grade fluídos facilitam a criação de páginas da Web receptivas e com qualidade profissional. A atualização inclui suporte adicional para elementos de formulário HTML 5. Por fim, a atualização restaura as opções de visualização em tabela expandida (removida na última versão da CS6 Creative Cloud em 24 de setembro) e inclui correções de bugs críticos.</pt_BR>
+<ru_RU>Последнее обновление Dreamweaver включает Adobe Edge Web Fonts и улучшенные функции управления шрифтами. Также значительно улучшены «резиновые» макеты, что позволяет с легкостью создавать адаптивные веб-страницы профессионального качества. Обновление включает добавленную поддержку для элементов форм HTML5. Наконец, в обновлении восстановлен режим просмотра развернутых таблиц (удаленный в последнем выпуске CS6 Creative Cloud от 24 сентября) и включены исправления критических неполадок.</ru_RU>
+<sv_SE>Den senaste Dreamweaver-uppdateringen integrerar Adobe Edge Web Fonts och ger en förbättrad teckensnittshantering. Den innehåller också förbättringar för funktionen Flytande stödrasterlayout som gör det enklare att skapa proffsiga webbsidor. Uppdateringen omfattar stöd för HTML5-formulärelement. Uppdateringen återställer också alternativen för utökad tabellvy (borttaget i senaste CS6 Creative Cloud från 24 september) och innehåller viktiga korrigeringar för att åtgärda buggar.</sv_SE>
+<tr_TR>En son Dreamweaver güncellemesinde, Adobe Edge Web Fonts tümleştirilir ve gelişmiş bir Font Yönetimi iş akışı özelliği bulunur. Ayrıca, Değişken Izgara Mizanpajları özelliğinde yapılan önemli geliştirmeler profesyonel kalitede dinamik web sayfaları oluşturmayı kolaylaştırır. Güncelleme, HTML5 Form öğeleri için eklenen desteği içerir. Son olarak, güncellemede Genişletilmiş Tablo Görünümü seçenekleri (24 Eylül&apos;de son CS6 Creative Cloud sürümünde kaldırılmıştır) geri yüklenmektedir ve önemli hata düzeltmeleri bulunmaktadır.</tr_TR>
+<zh_CN>最新的 Dreamweaver 更新集成了 Adobe Edge Web Fonts 并改善了字体管理工作流程。此外，还对“流体网格布局”功能进行了显著的改进，便于更轻松地创建专业品质的响应网页。更新包括增加了对 HTML5 表单元素的支持。最后一点，本次更新恢复了“扩展表格视图”选项（该选项于 9 月 24 日从上一次 CS6 Creative Cloud 发布中移除）并包括关键的缺陷修复。</zh_CN>
+<zh_TW>最新的 Dreamweaver 更新整合了 Adobe Edge Web Fonts，強調字體管理工作流程的改善。同時，流變格線版面功能的大幅改善讓它能輕鬆建立專業質感且回應快速的網頁。此更新包括對 HTML5 表單元素的新增支援。最後，此更新恢復了「展開表格模式」選項 (在上次 9 月 24 日的 CS6 Creative Cloud 發行中移除) 並包含嚴重錯誤修正。</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobeDreamweaver-12.2-All-Update/AdobePatchInstaller.app</ExecutableName>
+<Size>110180460</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeFireworksCS6-12.0.0-mul/12.0.1" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeFireworksCS6-12.0.0-mul</ChannelID>
+<LEID>Fireworks-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Fireworks CS6 update to improve Mac 10.8 platform compatibility and resolve usability bugs.</en_US>
+<cs_CZ>Aktualizace Fireworks CS6 pro vylepšení kompatibility na systému Mac 10.8 a odstraňující některé problémy použitelnosti programu.</cs_CZ>
+<de_DE>Fireworks CS6-Aktualisierung zur Verbesserung der Kompatibilität zur Mac 10.8-Plattform und zur Auflösung von Fehlern in Bezug auf die Benutzerfreundlichkeit.</de_DE>
+<es_ES>Actualización Fireworks CS6 que mejora la compatibilidad con la plataforma Mac 10.8 y resuelve diversos problemas de uso.</es_ES>
+<es_MX>Actualización Fireworks CS6 que mejora la compatibilidad con la plataforma Mac 10.8 y resuelve diversos problemas de uso.</es_MX>
+<fr_FR>Mise à jour de Fireworks CS6 pour améliorer la compatibilité de la plateforme Mac 10.8 et résoudre les bugs d&apos;utilisation.</fr_FR>
+<fr_CA>Mise à jour de Fireworks CS6 pour améliorer la compatibilité de la plateforme Mac 10.8 et résoudre les bugs d&apos;utilisation.</fr_CA>
+<it_IT>Aggiornamento di Fireworks CS6 per migliorare la compatibilità della piattaforma Mac 10.8, risolvere alcuni bug e offrire una maggiore facilità d&apos;uso.</it_IT>
+<ja_JP>Fireworks CS6 アップデート - Mac 10.8 プラットフォームの互換性の改善と操作性に関する不具合の修正</ja_JP>
+<ko_KR>Fireworks CS6 업데이트는 Mac 10.8 플랫폼 호환성을 개선하고 사용성 버그를 해결합니다.</ko_KR>
+<nl_NL>Update voor Fireworks CS6 voor verbeterde Mac 10.8-compatibiliteit en gebruiksvriendelijkheid.</nl_NL>
+<pl_PL>Aktualizacja programu Fireworks CS6 oferująca ulepszoną zgodność z platformą Mac 10.8 i poprawki błędów związanych z użytkowaniem.</pl_PL>
+<pt_BR>Atualização do Fireworks CS6 para melhorar a compatibilidade com a plataforma Mac 10.8 e resolver bugs de capacidade de utilização.</pt_BR>
+<ru_RU>Обновление Fireworks CS6 с улучшением совместимости платформы Mac 10.8 и устраненными ошибками использования.</ru_RU>
+<sv_SE>Fireworks CS6-uppdatering som förbättrar kompatibiliteten med plattformen Mac 10.8 och korrigerar fel som påverkade användarbarheten.</sv_SE>
+<tr_TR>Mac 10.8 platform uyumluluğunu geliştirmek ve kullanılabilirlik sorunlarını çözmek için Fireworks CS6 güncellemesi.</tr_TR>
+<zh_CN>改进 Mac 10.8 平台兼容性并解决可用性方面问题的 Fireworks CS6 更新。</zh_CN>
+<zh_TW>改進 Mac 10.8 平台相容性並解決可用性錯誤的 Fireworks CS6 更新。</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<en_US>The latest update to Adobe Fireworks CS6 includes Mac 10.8 platform compatibility, performance and stability improvements. There are several usability improvements in the CSS Properties panel.</en_US>
+<cs_CZ>Nejnovější aktualizace Fireworks CS6 zahrnuje kompatibilitu se systémem Mac 10.8 a zlepšení výkonu a stability. V panelu Vlastnosti CSS bylo provedeno několik změn zlepšujících použitelnost programu.</cs_CZ>
+<de_DE>Die neueste Aktualisierung zu Fireworks CS6 umfasst die Kompatibilität zur Mac 10.8-Plattform sowie Performance- und Stabilitätsverbesserungen. Zudem gibt es mehrere Verbesserungen im Bedienfeld „CSS-Eigenschaften“.</de_DE>
+<es_ES>La actualización más reciente de Adobe Fireworks CS6 incluye compatibilidad con la plataforma Mac 10.8 y mejoras de rendimiento y estabilidad. En el panel Propiedades CSS se han realizado diversas mejoras que facilitan su uso.</es_ES>
+<es_MX>La actualización más reciente de Adobe Fireworks CS6 incluye compatibilidad con la plataforma Mac 10.8 y mejoras de rendimiento y estabilidad. En el panel Propiedades CSS se han realizado diversas mejoras que facilitan su uso.</es_MX>
+<fr_FR>La dernière mise à jour d&apos;Adobe Fireworks CS6 inclut des améliorations de compatibilité, de performances et de stabilité pour la plateforme Mac 10.8. Vous trouverez plusieurs améliorations d&apos;utilisation dans le panneau des propriétés CSS.</fr_FR>
+<fr_CA>La dernière mise à jour d&apos;Adobe Fireworks CS6 inclut des améliorations de compatibilité, de performances et de stabilité pour la plateforme Mac 10.8. Vous trouverez plusieurs améliorations d&apos;utilisation dans le panneau des propriétés CSS.</fr_CA>
+<it_IT>L&apos;ultimo aggiornamento di Adobe Fireworks CS6 include miglioramenti della stabilità, delle prestazioni e della compatibilità della piattaforma Mac 10.8. Il pannello Proprietà CSS presenta molti miglioramenti della facilità d&apos;uso.</it_IT>
+<ja_JP>Adobe Fireworks CS6 の最新のアップデートには、Mac 10.8 プラットフォームの互換性、パフォーマンスおよび安定性の向上と、CSS プロパティパネルの操作性の改善が含まれています。</ja_JP>
+<ko_KR>Adobe Fireworks의 최신 업데이트에는 Mac 10.8 플랫폼 호환성, 성능 및 안정성 개선 사항이 포함됩니다. CSS 속성 패널에서의 일부 사용성 개선 사항이 있습니다.</ko_KR>
+<nl_NL>Dit is de meest recente update voor Adobe Fireworks CS6 voor verbeterde Mac 10.8-compatibiliteit, prestaties en stabiliteit. Ook is het gebruiksgemak in het deelvenster CSS-eigenschappen verbeterd.</nl_NL>
+<pl_PL>Najnowsza aktualizacja programu Adobe Fireworks CS6 oferuje zgodność z platformą Mac 10.8, ulepszenia działania i stabilności oraz kilka ulepszeń związanych z użytkowaniem panelu Właściwości CSS.</pl_PL>
+<pt_BR>A atualização mais recente para o Adobe Fireworks CS6 inclui compatibilidade com a plataforma Mac 10.8, bem como melhorias de desempenho e estabilidade. O painel Propriedades de CSS recebeu diversas melhorias.</pt_BR>
+<ru_RU>Последнее обновление Adobe Fireworks CS6 включает улучшения, связанные с совместимостью платформы Mac 10.8, производительностью и стабильностью работы. Кроме того, реализовано несколько улучшений работы с панелью &quot;Свойства CSS&quot;.</ru_RU>
+<sv_SE>Den senaste uppdateringen av Adobe Fireworks CS6 har plattformskompatibilitet för Mac 10.8, prestanda- och stabilitetsförbättringar samt flera förbättringar av panelen CSS-egenskaper.</sv_SE>
+<tr_TR>En yeni Adobe Fireworks CS6 güncellemesi Mac 10.8 platform uyumluluğu, performans ve tutarlılık geliştirmeleri sunar. CSS Özellikleri panelinde çeşitli kullanılabilirlik geliştirmeleri vardır.</tr_TR>
+<zh_CN>Adobe Fireworks CS6 的最新更新包含 Mac 10.8 平台兼容性、性能和稳定性方面的改进。同时有数项针对 CSS 属性面板的可用性改进。</zh_CN>
+<zh_TW>Adobe Fireworks CS6 的最新更新包括 Mac 10.8 平台相容性、效能和穩定性改進。CSS 屬性面板有數項可用性改進。</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeFireworksCS6-12.0.0-mul</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobeFireworks-12.0-All-Update/AdobePatchInstaller.app</ExecutableName>
+<Size>93812713</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" ReFetch="0" RefID="AdobePhotoshopCS6Support-13.0/13.0.6" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobePhotoshopCS6Support-13.0</ChannelID>
+<UpdateID>13.0.6</UpdateID>
+<OwningID>AdobePhotoshopCS6-13.0</OwningID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobePhotoshopCS6Support-13.0</ChannelID>
+<UpdateID>13.0.6</UpdateID>
+<OwningID>AdobePhotoshopCS6Support-13.0</OwningID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobePhotoshopCS6-13.0</ChannelID>
+<LEID>Photoshop-CS6-Mac-GM</LEID>
+<UpdateID>13.0.6</UpdateID>
+<OwningID>AdobePhotoshopCS6Support-13.0</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>2</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Adobe Photoshop 13.0.6</en_US>
+<cs_CZ>Adobe Photoshop 13.0.6</cs_CZ>
+<da_DK>Adobe Photoshop 13.0.6</da_DK>
+<de_DE>Adobe Photoshop 13.0.6</de_DE>
+<es_ES>Adobe Photoshop 13.0.6</es_ES>
+<fi_FI>Adobe Photoshop 13.0.6</fi_FI>
+<fr_FR>Adobe Photoshop 13.0.6</fr_FR>
+<hu_HU>Adobe Photoshop 13.0.6</hu_HU>
+<it_IT>Adobe Photoshop 13.0.6</it_IT>
+<ja_JP>Adobe Photoshop 13.0.6</ja_JP>
+<ko_KR>Adobe Photoshop 13.0.6</ko_KR>
+<nb_NO>Adobe Photoshop 13.0.6</nb_NO>
+<nl_NL>Adobe Photoshop 13.0.6</nl_NL>
+<pl_PL>Adobe Photoshop 13.0.6</pl_PL>
+<pt_BR>Adobe Photoshop 13.0.6</pt_BR>
+<ru_RU>Adobe Photoshop 13.0.6</ru_RU>
+<sv_SE>Adobe Photoshop 13.0.6</sv_SE>
+<tr_TR>Adobe Photoshop 13.0.6</tr_TR>
+<uk_UA>Adobe Photoshop 13.0.6</uk_UA>
+<zh_CN>Adobe Photoshop 13.0.6</zh_CN>
+<zh_TW>Adobe Photoshop 13.0.6</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<en_US>The Adobe(R) Photoshop(R) CS6 13.0.6 update addresses a number of issues discovered after Adobe Photoshop CS6 (13.0) software was released. For details, please see: http://www.adobe.com/go/photoshop_cs6_update_info</en_US>
+<cs_CZ>Aktualizace softwaru Adobe(R) Photoshop(R) CS6 13.0.6 řeší řadu potíží zjištěných po vydání verze Adobe Photoshop CS6 (13.0). Další informace najdete na webu http://www.adobe.com/go/photoshop_cs6_update_info</cs_CZ>
+<da_DK>Opdateringen til Adopbe(R) Photoshop(R) CS6 13.0.6 løser en række problemer, der blev registreret, efter at Adobe Photoshop CS6 (13.0)-softwaren blev udgivet. Du kan finde flere oplysninger her: http://www.adobe.com/go/photoshop_cs6_update_info</da_DK>
+<de_DE>Mit der Adobe(R) Photoshop(R) CS6 13.0.6-Aktualisierung werden mehrere Probleme behoben, die nach der Veröffentlichung von Adobe Photoshop CS6 (13.0) aufgetreten sind. Weitere Hinweise finden Sie unter http://www.adobe.com/go/photoshop_cs6_update_info.</de_DE>
+<es_ES>La actualización Adobe(R) Photoshop(R) CS6 13.0.6 soluciona diversos problemas observados tras la publicación del software Adobe Photoshop CS6 (13.0). Para conocer más detalles, visite: http://www.adobe.com/go/photoshop_cs6_update_inf</es_ES>
+<fi_FI>Adobe(R) Photoshop(R) CS6 13.0.6 -päivitys korjaa useita Adobe Photoshop CS6 (13.0) -ohjelmistosta löytyneitä ongelmia. Saat lisätietoja osoitteesta http://www.adobe.com/go/photoshop_cs6_update_info.</fi_FI>
+<fr_FR>La mise à jour Adobe(R) Photoshop(R) CS6 13.0.6 corrige un certain nombre de problèmes détectés dans Adobe Photoshop CS6 (13.0) après sa sortie. Pour en savoir plus, reportez-vous à la page : http://www.adobe.com/go/photoshop_cs6_update_info</fr_FR>
+<hu_HU>Az Adobe(R) Photoshop(R) CS6 13.0.6 frissítés az Adobe Photoshop CS6 (13.0) szoftver számos, a kibocsátást követően felfedezett hibáját javítja. További részletek: http://www.adobe.com/go/photoshop_cs6_update_in</hu_HU>
+<it_IT>L’aggiornamento di Adobe(R) Photoshop(R) CS6 13.0.6 fa’ riferimento a un numero di problemi rilevati dopo il rilascio del software Adobe Photoshop CS6 (13.0). Per ulteriori dettagli, visitare: http://www.adobe.com/go/photoshop_cs6_update_info</it_IT>
+<ja_JP>Adobe(R) Photoshop(R) CS6 13.0.6 のアップデートは Adobe Photoshop CS6 (13.0) ソフトウェアのリリース以降発見されたさまざまな問題を解決します。詳細についてはこちらをご覧ください: http://www.adobe.com/go/photoshop_cs6_update_info</ja_JP>
+<ko_KR>Adobe(R) Photoshop(R) CS6 13.0.6 업데이트는 Adobe Photoshop CS6 (13.0) 소프트웨어가 릴리즈된 후 발견된 여러 문제들을 다루었습니다. 자세한 내용을 원하시면 다음 웹페이지를 참조해 주십시오: http://www.adobe.com/go/photoshop_cs6_update_info</ko_KR>
+<nb_NO>Adobe(R) Photoshop(R) CS6 13.0.6-oppdateringen løser flere problemer som ble oppdaget etter at Adobe Photoshop CS6 (13.0) ble utgitt. For mer informasjon gå til: http://www.adobe.com/go/photoshop_cs6_update_info</nb_NO>
+<nl_NL>In de Adobe(R) Photoshop(R) CS6 13.0.6-update wordt een aantal problemen opgelost die zijn ontdekt na de release van Adobe Photoshop CS6 (13.0)-software. Raadpleeg voor meer informatie: http://www.adobe.com/go/photoshop_cs6_update_info</nl_NL>
+<pl_PL>Aktualizacja programu Adobe(R) Photoshop(R) CS6 13.0.6 usuwa szereg problemów wykrytych po wprowadzeniu programu Adobe Photoshop CS6 w wersji 13.0. Szczegółowe informacje na ten temat są dostępne pod adresem: http://www.adobe.com/go/photoshop_cs6_update_info</pl_PL>
+<pt_BR>A atualização do Adobe(R) Photoshop(R) CS6 13.0.6 soluciona vários problemas observados após a publicação do Adobe Photoshop CS6 (13.0).  Para maiores detalhes, visite: http://www.adobe.com/go/photoshop_cs6_update_info</pt_BR>
+<ru_RU>В обновлении Adobe(R) Photoshop(R) CS6 13.0.6 исправлен ряд проблем, обнаруженных после выпуска Adobe Photoshop CS6 (13.0). Дополнительные сведения см. на странице http://www.adobe.com/go/photoshop_cs6_update_info</ru_RU>
+<sv_SE>Uppdateringen Adobe(R) Photoshop(R) CS6 13.0.6 åtgärdar en rad problem som upptäcktes efter att Adobe Photoshop CS6 (13.0) hade lanserats. Mer information finns på sidan: http://www.adobe.com/go/photoshop_cs6_update_info</sv_SE>
+<tr_TR>Adobe(R) Photoshop(R) CS6 13.0.6 güncellemesinde, Adobe Photoshop CS6 (13.0) yazılımı kullanıma sunulduktan sonra bulunan çeşitli sorunlar ele alınır. Ayrıntılar için bkz. http://www.adobe.com/go/photoshop_cs6_update_info</tr_TR>
+<uk_UA>Оновлення Adobe(R) Photoshop(R) CS6 13.0.6 усуває декілька проблем, які були виявлені після виходу графічного редактора Adobe Photoshop CS6 (13.0). Докладніші відомості містяться на сторінці http://www.adobe.com/go/photoshop_cs6_update_info</uk_UA>
+<zh_CN>Adobe(R) Photoshop(R) CS6 13.0.6 更新版解决了 Adobe Photoshop CS6 (13.0) 软件发布后发现的诸多问题。有关详细信息，请参见：http://www.adobe.com/go/photoshop_cs6_update_info</zh_CN>
+<zh_TW>Adobe(R) Photoshop(R) CS6 13.0.6 更新解決了自 Adobe Photoshop CS6 (13.0) 軟體發佈以來發現的各種問題。有關詳細資料，請造訪：http://www.adobe.com/go/photoshop_cs6_update_info</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobePhotoshopCS6Support-13.0</ChannelID>
+<ChannelID>AdobePhotoshopCS6-13.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>Adobe Photoshop CS6/AdobePatchInstaller.app</ExecutableName>
+<Size>135385970</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeExtensionManagerCS6-6.0/6.0.8" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeExtensionManagerCS6-6.0</ChannelID>
+<LEID>ExMan-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Extension Manager 6.0.8 Update</en_US>
+<cs_CZ>Aktualizace aplikace Extension Manager 6.0.8</cs_CZ>
+<da_DK>Extension Manager 6.0.8 - opdatering</da_DK>
+<de_DE>Extension Manager 6.0.8-Update</de_DE>
+<es_ES>Actualización de Extension Manager 6.0.8</es_ES>
+<fi_FI>Extension Manager 6.0.8 -päivitys</fi_FI>
+<fr_FR>Mise à jour d’Extension Manager 6.0.8</fr_FR>
+<hu_HU>Extension Manager 6.0.8 frissítés</hu_HU>
+<it_IT>Aggiornamento di Extension Manager 6.0.8</it_IT>
+<ja_JP>Extension Manager 6.0.8 アップデート</ja_JP>
+<ko_KR>Extension Manager 6.0.8 업데이트</ko_KR>
+<nb_NO>Extension Manager 6.0.8-oppdatering</nb_NO>
+<nl_NL>Update van Extension Manager 6.0.8</nl_NL>
+<pl_PL>Extension Manager 6.0.8 — aktualizacja</pl_PL>
+<pt_BR>Atualização do Extension Manager 6.0.8</pt_BR>
+<ru_RU>обновление Extension Manager 6.0.8</ru_RU>
+<sv_SE>Extension Manager 6.0.8-uppdatering</sv_SE>
+<tr_TR>Extension Manager 6.0.8 güncellemesi</tr_TR>
+<uk_UA>Оновлення Extension Manager 6.0.8</uk_UA>
+<zh_CN>Extension Manager 6.0.8 更新</zh_CN>
+<zh_TW>Extension Manager 6.0.8 更新</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<en_US>This update fixes an issue that can occur when installing from the Adobe Exchange panel.</en_US>
+<cs_CZ>Součástí této aktualizace je oprava problému, ke kterému někdy docházelo při instalaci panelu Adobe Exchange.</cs_CZ>
+<da_DK>Denne opdatering retter en fejl, der kan forekomme under installation via Adobe Exchange-panelet.</da_DK>
+<de_DE>Mit diesem Update wird ein mögliches Problem bei der Installation über das Adobe Exchange-Bedienfeld korrigiert.</de_DE>
+<es_ES>Esta actualización soluciona un problema que puede darse al realizar la instalación desde el panel de Adobe Exchange.</es_ES>
+<fi_FI>Tämä päivitys korjaa ongelman, joka voi ilmetä, kun suoritat asennuksen Adobe Exchange -paneelista.</fi_FI>
+<fr_FR>Cette mise à jour corrige un problème pouvant se produire à l’installation du panneau Adobe Exchange.</fr_FR>
+<hu_HU>Ez a frissítés egy olyan hibát javít ki, amely az Adobe Exchange panelről történő telepítéskor jelentkezhet.</hu_HU>
+<it_IT>Questo aggiornamento corregge un errore che può verificarsi quando si esegue l’installazione dal pannello Adobe Exchange.</it_IT>
+<ja_JP>本アップデートは、Adobe Exchange パネルからのインストールの際に発生する問題を修正します。</ja_JP>
+<ko_KR>이 업데이트는 Adobe Exchange 패널에서 설치할 때 발생할 수 있는 문제를 수정합니다.</ko_KR>
+<nb_NO>Denne oppdateringen retter et problem som kan oppstå når du installerer fra Adobe Exchange-panelet.</nb_NO>
+<nl_NL>Met deze update wordt een probleem hersteld dat kan optreden wanneer u installeert vanuit het deelvenster Adobe Exchange.</nl_NL>
+<pl_PL>W tej aktualizacji poprawiono błąd występujący niekiedy podczas instalowania z panelu Adobe Exchange.</pl_PL>
+<pt_BR>Esta atualização corrige um problema que pode ocorrer na instalação do painel do Adobe Exchange.</pt_BR>
+<ru_RU>В обновлении исправлена ошибка, возникающая при установке программ с панели Adobe Exchange.</ru_RU>
+<sv_SE>Den här uppdateringen korrigerar ett fel som kan uppstå vid installation från Adobe Exchange-panelen.</sv_SE>
+<tr_TR>Bu güncelleme Adobe Exchange panelinden yükleme yapılırken oluşabilecek bir sorunu düzeltir.</tr_TR>
+<uk_UA>В оновленні виправлено помилку, що виникає під час встановлення програм із панелі Adobe Exchange.</uk_UA>
+<zh_CN>此更新可修复从 Adobe Exchange 面板安装时出现的问题。</zh_CN>
+<zh_TW>此更新可修正從 Adobe Exchange 面板進行安裝時發生的問題。</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeExtensionManagerCS6-6.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>6493717</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" ReFetch="0" RefID="AdobeInDesignCS6-8.0/8.1.0.419" Viewed="0" WaitingForProductEvent="1">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+<UpdateID>8.1.0.419</UpdateID>
+<OwningID>AdobeInDesignCS6ApplicationLanguageFilesen_US-8.0</OwningID>
+<LEID>InDesign-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+<UpdateID>8.1.0.419</UpdateID>
+<OwningID>AdobeInDesignCS6ApplicationBaseFiles2-8.0</OwningID>
+<LEID>InDesign-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+<LEID>InDesign-CS6-Mac-GM</LEID>
+<UpdateID>8.1.0.419</UpdateID>
+<OwningID>AdobeInDesignCS6-8.0</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>1</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Adobe InDesign CS6 (8.1.0) update</en_US>
+<zh_TW>Adobe InDesign CS6 (8.1.0) 更新</zh_TW>
+<zh_CN>Adobe InDesign CS6 (8.1.0) 更新</zh_CN>
+<ko_KR>Adobe InDesign CS6 (8.1.0) 업데이트</ko_KR>
+<en_IL>Adobe InDesign CS6 (8.1.0) update</en_IL>
+<en_AE>Adobe InDesign CS6 (8.1.0) update</en_AE>
+<da_DK>Opdatering til Adobe InDesign CS6 (8.1.0)</da_DK>
+<fi_FI>Adobe InDesign CS6 (8.1.0) -päivitys</fi_FI>
+<ja_JP>Adobe InDesign CS6 (8.1.0) アップデート</ja_JP>
+<nb_NO>Oppdatering for Adobe InDesign CS6 (8.1.0)</nb_NO>
+<sv_SE>Uppdatering för Adobe InDesign CS6 (8.1.0)</sv_SE>
+<en_GB>Adobe InDesign CS6 (8.1.0) update</en_GB>
+<fr_FR>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_FR>
+<fr_MA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_MA>
+<fr_CA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_CA>
+<it_IT>Aggiornamento Adobe InDesign CS6 (8.1.0)</it_IT>
+<de_DE>Adobe InDesign CS6 (8.1.0) – Update</de_DE>
+<es_ES>Actualización de Adobe InDesign CS6 (8.1.0)</es_ES>
+<es_MX>Actualización de Adobe InDesign CS6 (8.1.0)</es_MX>
+<nl_NL>Adobe InDesign CS6 (8.1.0)-update</nl_NL>
+<pt_BR>Atualização do Adobe InDesign CS6 (8.1.0)</pt_BR>
+<cs_CZ>Aktualizace Adobe InDesign CS6 (8.1.0)</cs_CZ>
+<hu_HU>Adobe InDesign CS6 (8.1.0) frissítés</hu_HU>
+<pl_PL>Adobe InDesign CS6 (8.1.0) — aktualizacja</pl_PL>
+<uk_UA>Оновлення Adobe InDesign CS6 (8.1.0)</uk_UA>
+<ru_RU>Обновление Adobe InDesign CS6 (8.1.0)</ru_RU>
+<tr_TR>Adobe InDesign CS6 (8.1.0) güncellemesi</tr_TR>
+</DisplayName>
+<Description default="en_US">
+<en_US>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_US>
+<zh_TW>經過本次更新後，您將能比以往更輕鬆地分享 InDesign 文件。您現在可以使用舊版 InDesign CC 將檔案傳送給任何人，無需以手動方式轉存為 IDML 之類的額外步驟。內建的相容性可確保您的檔案總是如您預期地順利開啟。</zh_TW>
+<zh_CN>经过本次更新，共享 InDesign 文档将比以往更加简单。现在，您可以将文件发送给使用较旧 InDesign CC 版本的任何用户，而且无需执行任何额外的步骤（例如手动将文件导出为 IDML）。其中的内置兼容性能够确保始终顺利打开文件。</zh_CN>
+<ko_KR>이 업데이트를 사용하여 InDesign 문서 공유가 훨씬 쉬워졌습니다. IDML로 수동으로 내보내는 것과 같은 추가 단계 없이도 파일을 이전 버전의 InDesign CC를 사용하는 모든 사용자에게 보낼 수 있습니다. 사용자가 원하는 대로 파일을 항상 열 수 있도록 호환성이 내장되어 있습니다.</ko_KR>
+<en_IL>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_IL>
+<en_AE>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_AE>
+<da_DK>Med denne opdatering er det blevet nemmere end nogensinde før at dele InDesign-dokumenter med andre. Nu kan du sende filer til alle, der bruger ældre versioner af InDesign CC, uden at skulle gøre yderligere, f.eks. eksportere til IDML manuelt. Kompatibiliteten er indbygget, så dine filer altid åbnes, sådan som du forventer det.</da_DK>
+<fi_FI>Tämän päivityksen ansiosta InDesign-julkaisujen jakaminen on nyt helpompaa kuin koskaan aikaisemmin. Voit nyt lähettää tiedostoja InDesign CC:n vanhempien versioiden käyttäjille ilman ylimääräisiä vaiheita, kuten sisältöjen manuaalista muuntamista IDML-muotoon. Sovellus on valmiiksi yhteensopiva, joten tiedostosi avautuvat aina odotetulla tavalla.</fi_FI>
+<ja_JP>このアップデートでは、これまでよりも簡単に InDesign ドキュメントを共有できます。以前のバージョンの InDesign CC を使用しているユーザーに対しても、手動で IDML に書き出すといった余分な手順を行うことなく、ファイルを送信できるようになりました。互換性が組み込まれているため、ファイルは常に期待どおりに開きます。</ja_JP>
+<nb_NO>Med denne oppdateringen er det enklere å dele InDesign-dokumenter enn noen gang. Nå kan du sende filer til alle som har eldre versjoner av InDesign CC, uten ekstra operasjoner som manuell eksport til IDML. Kompatibiliteten er innebygd, slik at filene åpnes akkurat som forventet.</nb_NO>
+<sv_SE>Med den här uppdateringen blir det enklare än någonsin att dela InDesign-dokument. Nu kan du skicka filer till personer med äldre versioner av InDesign CC utan några extra steg som att exportera manuellt till IDML. Kompatibiliteten är inbyggd, så dina filer öppnas alltid på det sätt du förväntar dig.</sv_SE>
+<en_GB>With this update sharing InDesign documents is easier than ever. Now you can send files to anyone using older versions of InDesign CC without extra steps like manually exporting to IDML. Compatibility is built right in, ensuring that your files always open just as you’d expect.</en_GB>
+<fr_FR>Cette mise à jour simplifie encore davantage le partage de documents InDesign. Vous pouvez désormais envoyer des fichiers en utilisant des versions plus anciennes d’InDesign CC sans aucune étape supplémentaire telle que l’exportation au format IDML. La compatibilité est intégrée : vos fichiers s’ouvrent toujours comme vous le souhaitez.</fr_FR>
+<fr_MA>Cette mise à jour simplifie encore davantage le partage de documents InDesign. Vous pouvez désormais envoyer des fichiers en utilisant des versions plus anciennes d’InDesign CC sans aucune étape supplémentaire telle que l’exportation au format IDML. La compatibilité est intégrée : vos fichiers s’ouvrent toujours comme vous le souhaitez.</fr_MA>
+<fr_CA>Cette mise à jour simplifie encore davantage le partage de documents InDesign. Vous pouvez désormais envoyer des fichiers en utilisant des versions plus anciennes d’InDesign CC sans aucune étape supplémentaire telle que l’exportation au format IDML. La compatibilité est intégrée : vos fichiers s’ouvrent toujours comme vous le souhaitez.</fr_CA>
+<it_IT>Questo aggiornamento facilita ulteriormente la condivisione di documenti InDesign. Ora potete inviare file a chiunque utilizzando le versioni precedenti di InDesign CC senza eseguire passaggi aggiuntivi, come l&apos;esportazione manuale in IDML. La compatibilità è già integrata, per una visualizzazione senza sorprese dei vostri file.</it_IT>
+<de_DE>Mit diesem Update ist die Freigabe von InDesign-Dokumenten einfacher als je zuvor. Sie können jetzt Dateien an jeden senden, der mit älteren Versionen von InDesign CC arbeitet, ohne zusätzliche Schritte wie beispielsweise den manuellen Export in das IDML-Format ausführen zu müssen. Die eingebaute Kompatibilität sorgt dafür, dass Sie Ihre Dateien immer öffnen können – so wie Sie es erwarten.</de_DE>
+<es_ES>Gracias a esta actualización, compartir documentos de InDesign es más fácil que nunca. Ahora puede enviar archivos con una versión antigua de InDesign CC sin tener que realizar pasos adicionales como exportar manualmente a IDML. La función de compatibilidad está integrada, así que los archivos siempre se abrirán exactamente como espera.</es_ES>
+<es_MX>Gracias a esta actualización, compartir documentos de InDesign es más fácil que nunca. Ahora puede enviar archivos con una versión antigua de InDesign CC sin tener que realizar pasos adicionales como exportar manualmente a IDML. La función de compatibilidad está integrada, así que los archivos siempre se abrirán exactamente como espera.</es_MX>
+<nl_NL>Met deze update is het eenvoudiger dan ooit om InDesign documenten te delen. U kunt nu bestanden verzenden naar iedereen die oudere versies gebruikt van InDesign, zonder daarvoor extra handelingen uit te voeren, zoals exporteren naar IDML. Comptabiliteit is ingebouwd, waardoor uw bestanden altijd openen zoals u verwacht.</nl_NL>
+<pt_BR>Com esta atualização, compartilhar documentos do InDesign fica ainda mais fácil. Agora você pode enviar arquivos para qualquer pessoa usando versões antigas do InDesign CC sem ter de tomar medidas adicionais, como exportar para IDML. A compatibilidade é direta, garantindo que seus arquivos sempre abrirão do jeito que você espera</pt_BR>
+<cs_CZ>S touto aktualizací můžete sdílet dokumenty InDesign snadněji než kdykoli předtím. Nyní můžete soubory odesílat také uživatelům se staršími verzemi aplikace InDesign CC, aniž by byl nutný jejich ruční převod do formátu IDML. Vestavěná kompatibilita nově zaručí, že soubory bude možné vždy otevřít podle očekávání.</cs_CZ>
+<hu_HU>A frissítés telepítése után minden eddiginél egyszerűbb az InDesign dokumentumok megosztása. Ezentúl az InDesign CC régebbi verzióját használóknak is küldhet fájlokat anélkül, hogy külön műveleteket kellene végeznie, mint amilyen például a manuális exportálás IDML-be. A kompatibilitás be van építve, ezért fájljai mindig az elvártaknak megfelelően nyílnak meg.</hu_HU>
+<pl_PL>Dzięki tej aktualizacji udostępnianie dokumentów programu InDesign jest teraz łatwiejsze niż kiedykolwiek. Możesz teraz wysyłać pliki użytkownikom korzystającym ze starszych wersji programu InDesign CC bez konieczności wykonywania dodatkowych czynności, np. ręcznego eksportowania pliku do formatu IDML. Dzięki skonfigurowanej funkcji zgodności nigdy nie będziesz mieć problemu z otworzeniem swoich plików.</pl_PL>
+<uk_UA>Це оновлення дозволяє надавати спільний доступ до документів InDesign простіше, ніж будь-коли раніше. Тепер можна надсилати файли користувачам більш старих версій InDesign CC без додаткових операцій, таких як експорт у формат IDML уручну. Вбудовані можливості забезпечують сумісність із різними форматами, завдяки чому файли відкриватимуться саме так, як вам потрібно.</uk_UA>
+<ru_RU>Благодаря этому обновлению стало проще предоставлять общий доступ к документам InDesign. Теперь вы можете отправлять файлы с помощью предыдущих версий InDesign CC и не экспортировать их вручную в IDML. Благодаря встроенным функциям, обеспечивающим совместимость форматов, ваши файлы будут всегда открываться в том виде, в каком вы их сохранили.</ru_RU>
+<tr_TR>Bu güncellemeyle InDesign belgelerini paylaşmak her zamankinden daha kolay hale geliyor. Şimdi IDML&apos;ye elle dışa aktarma gibi ekstra adımları uygulamanıza gerek kalmadan InDesign CC&apos;nin önceki sürümlerini kullanan herkese dosya gönderebilirsiniz. Yerleşik olarak sunulan uyumluluk dosyalarınızın her zaman beklediğiniz gibi açılmasını sağlar.</tr_TR>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>InDesignCS6-AdobeUpdate/AdobePatchInstaller.app</ExecutableName>
+<Size>62743690</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" ReFetch="0" RefID="AdobeInDesignCS6-8.0/8.0.3.419" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+<UpdateID>8.0.3.419</UpdateID>
+<OwningID>AdobeInDesignCS6ApplicationLanguageFilesen_US-8.0</OwningID>
+<LEID>InDesign-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+<UpdateID>8.0.3.419</UpdateID>
+<OwningID>AdobeInDesignCS6ApplicationBaseFiles2-8.0</OwningID>
+<LEID>InDesign-CS6-Mac-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+<LEID>InDesign-CS6-Mac-GM</LEID>
+<UpdateID>8.0.3.419</UpdateID>
+<OwningID>AdobeInDesignCS6-8.0</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>2</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Adobe InDesign CS6 (8.1.0) update</en_US>
+<zh_TW>Adobe InDesign CS6 (8.1.0) 更新</zh_TW>
+<zh_CN>Adobe InDesign CS6 (8.1.0) 更新</zh_CN>
+<ko_KR>Adobe InDesign CS6 (8.1.0) 업데이트</ko_KR>
+<en_IL>Adobe InDesign CS6 (8.1.0) update</en_IL>
+<en_AE>Adobe InDesign CS6 (8.1.0) update</en_AE>
+<da_DK>Opdatering til Adobe InDesign CS6 (8.1.0)</da_DK>
+<fi_FI>Adobe InDesign CS6 (8.1.0) -päivitys</fi_FI>
+<ja_JP>Adobe InDesign CS6 (8.1.0) アップデート</ja_JP>
+<nb_NO>Oppdatering for Adobe InDesign CS6 (8.1.0)</nb_NO>
+<sv_SE>Uppdatering för Adobe InDesign CS6 (8.1.0)</sv_SE>
+<en_GB>Adobe InDesign CS6 (8.1.0) update</en_GB>
+<fr_FR>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_FR>
+<fr_MA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_MA>
+<fr_CA>Mise à jour Adobe InDesign CS6 (8.1.0)</fr_CA>
+<it_IT>Aggiornamento Adobe InDesign CS6 (8.1.0)</it_IT>
+<de_DE>Adobe InDesign CS6 (8.1.0) – Update</de_DE>
+<es_ES>Actualización de Adobe InDesign CS6 (8.1.0)</es_ES>
+<es_MX>Actualización de Adobe InDesign CS6 (8.1.0)</es_MX>
+<nl_NL>Adobe InDesign CS6 (8.1.0)-update</nl_NL>
+<pt_BR>Atualização do Adobe InDesign CS6 (8.1.0)</pt_BR>
+<cs_CZ>Aktualizace Adobe InDesign CS6 (8.1.0)</cs_CZ>
+<hu_HU>Adobe InDesign CS6 (8.1.0) frissítés</hu_HU>
+<pl_PL>Adobe InDesign CS6 (8.1.0) — aktualizacja</pl_PL>
+<uk_UA>Оновлення Adobe InDesign CS6 (8.1.0)</uk_UA>
+<ru_RU>Обновление Adobe InDesign CS6 (8.1.0)</ru_RU>
+<tr_TR>Adobe InDesign CS6 (8.1.0) güncellemesi</tr_TR>
+</DisplayName>
+<Description default="en_US">
+<en_US>This update provides key fixes for PDF export, Save, IDML, text and others.</en_US>
+<zh_TW>此更新提供 PDF 轉存、儲存、IDML、文字及其他的重要修正。</zh_TW>
+<zh_CN>此更新可修复有关 PDF 导出、存储、IDML、文本以及其他的重要问题。</zh_CN>
+<ko_KR>이 업데이트는 PDF 내보내기, 저장, IDML, 텍스트 등에 대한 주요 수정사항을 제공합니다.</ko_KR>
+<en_IL>This update provides key fixes for PDF export, Save, IDML, text and others.</en_IL>
+<en_AE>This update provides key fixes for PDF export, Save, IDML, text and others.</en_AE>
+<da_DK>Denne opdatering indeholder væsentlige rettelser af PDF-eksport, Gem, IDML, tekst m.m.</da_DK>
+<fi_FI>Tämä päivitys sisältää PDF-tiedostojen vientiin, tallennukseen, IDML-tiedostoihin, tekstiin ja muihin toimintoihin liittyviä tärkeitä korjauksia.</fi_FI>
+<ja_JP>このアップデートには、PDF 書き出し、保存、IDML、テキストなどに関する重要な修正が含まれています。</ja_JP>
+<nb_NO>Denne oppdateringen gir økt stabilitet for PDF-eksport, lagring, IDML, tekst og annet.</nb_NO>
+<sv_SE>Den här uppdateringen innehåller viktiga korrigeringar för PDF-export, Spara-funktionen, text och annat.</sv_SE>
+<en_GB>This update provides key fixes for PDF export, Save, IDML, text and others.</en_GB>
+<fr_FR>Cette mise à jour contient des correctifs essentiels pour l’exportation au format PDF, l’enregistrement, le format IDML, le texte, etc.</fr_FR>
+<fr_MA>Cette mise à jour contient des correctifs essentiels pour l’exportation au format PDF, l’enregistrement, le format IDML, le texte, etc.</fr_MA>
+<fr_CA>Cette mise à jour contient des correctifs essentiels pour l’exportation au format PDF, l’enregistrement, le format IDML, le texte, etc.</fr_CA>
+<it_IT>Questo aggiornamento fornisce importanti correzioni per Esporta PDF, Salva, IDML, testo e molto altro.</it_IT>
+<de_DE>Dieses Update liefert grundlegende Fehlerbehebungen für den PDF-Export, Speichern, IDML, Text und anderes.</de_DE>
+<es_ES>Esta actualización incluye correcciones clave para la exportación a PDF, la función de guardar, IDML o texto, entre otras funciones.</es_ES>
+<es_MX>Esta actualización incluye correcciones clave para la exportación a PDF, la función de guardar, IDML o texto, entre otras funciones.</es_MX>
+<nl_NL>Deze update bevat oplossingen voor problemen met het exporteren naar PDF, met opslaan, IDML, tekst, enz.</nl_NL>
+<pt_BR>Esta atualização fornece correções importantes para exportação para PDF, salvar, IDML, texto e outros itens.</pt_BR>
+<cs_CZ>Tato aktualizace poskytuje důležité opravy exportu do PDF, ukládání, formátu IDML, zpracování textu a dalších funkcí.</cs_CZ>
+<hu_HU>Ez a frissítés a PDF-létrehozás, a Mentés, az IDML, a szöveg stb. alapvető javításait tartalmazza.</hu_HU>
+<pl_PL>Aktualizacja zawiera kluczowe poprawki związane z eksportowaniem plików PDF, zapisywaniem, formatem IDML, tekstem itd.</pl_PL>
+<uk_UA>У цьому оновленні надано ключові виправлення для експорту у PDF, збереження, IDML, тексту та інших функцій.</uk_UA>
+<ru_RU>В этом обновлении содержатся ключевые исправления, связанные с сохранением и экспортом файлов PDF, IDML, текстовых файлов и др.</ru_RU>
+<tr_TR>Bu güncelleme, PDF dışa aktarma, Kaydetme, IDML, metin ve diğer özellikler için önemli düzeltmeler sağlar.</tr_TR>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeInDesignCS6-8.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>InDesignCS6-AdobeUpdate/AdobePatchInstaller.app</ExecutableName>
+<Size>62100523</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="1" ReFetch="0" RefID="PhotoshopCameraRaw7-7.0/9.1.88" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>PhotoshopCameraRaw7-7.0</ChannelID>
+<UpdateID>9.1.88</UpdateID>
+<OwningID>CameraProfilesInstaller-7.0</OwningID>
+<LEID>Camera_Raw-7-MAC-GM</LEID>
+</Recommendation>
+<Recommendation>
+<ChannelID>PhotoshopCameraRaw7-7.0</ChannelID>
+<LEID>Camera_Raw-7-MAC-GM</LEID>
+<UpdateID>9.1.88</UpdateID>
+<OwningID>PhotoshopCameraRaw7-7.0</OwningID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<en_US>Photoshop Camera Raw 9.1.1(CS6)</en_US>
+<fr_FR>Mise à jour 9.1.1(CS6) de Photoshop Camera Raw</fr_FR>
+<de_DE>Photoshop Camera Raw 9.1.1(CS6)-Update</de_DE>
+<it_IT>Aggiornamento di Photoshop Camera Raw 9.1.1(CS6)</it_IT>
+<ja_JP>Photoshop Camera Raw 9.1.1(CS6) アップデート</ja_JP>
+<es_ES>Actualización Photoshop Camera Raw 9.1.1(CS6)</es_ES>
+<sv_SE>Uppdatering till Photoshop Camera Raw 9.1.1(CS6)</sv_SE>
+<zh_CN>Photoshop Camera Raw 9.1.1(CS6) 更新</zh_CN>
+<zh_TW>Photoshop Camera Raw 9.1.1(CS6) 更新</zh_TW>
+<nl_NL>Photoshop Camera Raw 9.1.1(CS6)-update</nl_NL>
+<ko_KR>Photoshop Camera Raw 9.1.1(CS6) 업데이트</ko_KR>
+<nb_NO>Oppdatering for Photoshop Camera Raw 9.1.1(CS6)</nb_NO>
+<da_DK>Photoshop Camera Raw 9.1.1(CS6)-opdatering</da_DK>
+<fi_FI>Photoshop Camera Raw 9.1.1(CS6) -päivitys</fi_FI>
+<pl_PL>Photoshop Camera Raw 9.1.1(CS6) – aktualizacja</pl_PL>
+<cs_CZ>Aktualizace Photoshop Camera Raw 9.1.1(CS6)</cs_CZ>
+<ro_RO>Actualizare Photoshop Camera Raw 9.1.1(CS6)</ro_RO>
+<hu_HU>Photoshop Camera Raw 9.1.1(CS6) frissítés</hu_HU>
+<ru_RU>Обновление Photoshop Camera Raw 9.1.1(CS6)</ru_RU>
+<pt_BR>Atualização do Photoshop Camera Raw 9.1.1(CS6)</pt_BR>
+<uk_UA>Оновлення Photoshop Camera Raw 9.1.1(CS6)</uk_UA>
+<tr_TR>Photoshop Camera Raw 9.1.1(CS6) Güncellemesi</tr_TR>
+</DisplayName>
+<Description default="en_US">
+<en_US>Update to the Camera Raw plug-in that ships with Photoshop CS6.  Adds raw support for new camera models.</en_US>
+<fr_FR>Mise à jour du module externe Camera Raw fourni avec Photoshop CS6.  Ajoute la prise en charge des fichiers Raw pour les nouveaux modèles d&apos;appareils photo.</fr_FR>
+<de_DE>Update für das Camera Raw-Zusatzmodul, das im Lieferumfang von Photoshop CS6 enthalten ist.  Zusätzliche Unterstützung für Raw-Dateien aus neuen Kameramodellen.</de_DE>
+<it_IT>Eseguite l&apos;aggiornamento del plug-in di Camera Raw in dotazione con Photoshop CS6.  Consente il supporto per i file raw per nuovi modelli di fotocamere.</it_IT>
+<ja_JP>Photoshop CS6 に同梱されている Camera Raw プラグインに更新します。  新しいカメラモデル対応の Raw サポートが追加されます。</ja_JP>
+<es_ES>Actualización para el plugin Camera Raw suministrado con Photoshop CS6.  Permite la compatibilidad con los archivos RAW de los nuevos modelos de cámara.</es_ES>
+<sv_SE>Uppdatera plugin-programmet Camera Raw som levereras med Photoshop CS6.  Lägger till stöd för raw-format för nya kameramodeller.</sv_SE>
+<zh_CN>Photoshop CS6 随附的 Camera Raw 插件的更新。针对新相机型号增加 raw 文件格式支持。</zh_CN>
+<zh_TW>更新 Photoshop CS6 隨附的 Camera Raw 增效模組。  新增對新相機機型的原生支援。</zh_TW>
+<nl_NL>Update voor de Camera Raw-plug-in die bij Photoshop CS6 wordt geleverd.  Voegt RAW-ondersteuning toe voor nieuwe cameramodellen.</nl_NL>
+<cs_CZ>Aktualizace zásuvného modulu Camera Raw, dodávaného s aplikací Photoshop CS6.  Přidává podporu formátu raw u nových modelů fotoaparátů.</cs_CZ>
+<nb_NO>Oppdatering for tilleggsmodulen Camera Raw som leveres med Photoshop CS6.  Legger til ekte støtte for nye kameramodeller.</nb_NO>
+<da_DK>Opdatering til Camera Raw-ekstramodulet, der leveres sammen med Photoshop CS6.  Føjer Raw-understøttelse til nye kameramodeller.</da_DK>
+<fi_FI>Photoshop CS6:n mukana toimitettavan Camera Raw -laajennuksen päivitys.  Lisää raw-tuen uusille kameramalleille.</fi_FI>
+<pl_PL>Aktualizacja wtyczki Camera Raw, która jest dołączona do programu Photoshop CS6.  Dodaje obsługę RAW dla nowych modeli aparatów.</pl_PL>
+<ko_KR>Photoshop CS6와 함께 제공된 Camera Raw 플러그인을 업데이트합니다.  새 카메라 모델의 raw 파일 지원 추가.</ko_KR>
+<ro_RO>Actualizaţi la plugin-ul Camera Raw livrat cu Photoshop CS6.  Acesta adaugă compatibilitate cu formate brute de la noi modele de camere foto.</ro_RO>
+<hu_HU>A Photoshop CS6 verzióhoz tartozó Camera Raw bővítmény frissítése.  Biztosítja a raw-formátum támogatását újabb fényképezőgép-típusok esetében is.</hu_HU>
+<ru_RU>Обновление внешнего модуля Camera Raw, который входит в комплект поставки Photoshop CS6.  Добавлена поддержка формата raw для новых моделей камер.</ru_RU>
+<pt_BR>Atualização do plug-in do Camera Raw fornecido com o Photoshop CS6.  Inclusão de suporte adicional para novos modelos de câmeras.</pt_BR>
+<uk_UA>Оновлення для модуля Camera Raw, що постачається з пакетом Photoshop CS6.  Додано підтримку формату raw для нових моделей фотокамер.</uk_UA>
+<tr_TR>Photoshop CS6 ile birlikte verilen Camera Raw eklentisine güncelleyin.  Yeni fotoğraf makinesi modelleri için raw desteği sağlar.</tr_TR>
+</Description>
+<AffectedChannels>
+<ChannelID>PhotoshopCameraRaw7-7.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobePatchInstaller.app</ExecutableName>
+<Size>209093467</Size>
+<CompareType name="OSPlatformLookup">
+<TargetValue>10.6.12</TargetValue>
+<Operator>GreaterThan</Operator>
+</CompareType>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeApplicationManager-1.0/update14" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeApplicationManager-1.0</ChannelID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<ar_AE>Adobe Application Manager</ar_AE>
+<bg_BG>Adobe Application Manager</bg_BG>
+<cs_CZ>Adobe Application Manager</cs_CZ>
+<da_DK>Adobe Application Manager</da_DK>
+<de_DE>Adobe Application Manager</de_DE>
+<el_GR>Adobe Application Manager</el_GR>
+<en_US>Adobe Application Manager</en_US>
+<es_ES>Adobe Application Manager</es_ES>
+<et_EE>Adobe Application Manager</et_EE>
+<fi_FI>Adobe Application Manager</fi_FI>
+<fr_FR>Adobe Application Manager</fr_FR>
+<he_IL>Adobe Application Manager</he_IL>
+<hr_HR>Adobe Application Manager</hr_HR>
+<hu_HU>Adobe Application Manager</hu_HU>
+<it_IT>Adobe Application Manager</it_IT>
+<ja_JP>Adobe Application Manager</ja_JP>
+<ko_KR>Adobe Application Manager</ko_KR>
+<lt_LT>Adobe Application Manager</lt_LT>
+<lv_LV>Adobe Application Manager</lv_LV>
+<nb_NO>Adobe Application Manager</nb_NO>
+<nl_NL>Adobe Application Manager</nl_NL>
+<pl_PL>Adobe Application Manager</pl_PL>
+<pt_BR>Adobe Application Manager</pt_BR>
+<ro_RO>Adobe Application Manager</ro_RO>
+<ru_RU>Adobe Application Manager</ru_RU>
+<sk_SK>Adobe Application Manager</sk_SK>
+<sl_SI>Adobe Application Manager</sl_SI>
+<sv_SE>Adobe Application Manager</sv_SE>
+<tr_TR>Adobe Application Manager</tr_TR>
+<uk_UA>Adobe Application Manager</uk_UA>
+<zh_CN>Adobe Application Manager</zh_CN>
+<zh_TW>Adobe Application Manager</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<en_US>Required to keep Adobe applications up to date, includes Adobe Software Integrity Service</en_US>
+<cs_CZ>Nezbytný nástroj k zajištění aktualizací pro aplikace Adobe. Součástí je služba Adobe Software Integrity Service</cs_CZ>
+<da_DK>Påkrævet for at holde Adobe-programmer opdateret, omfatter Adobe Software Integrity Service</da_DK>
+<de_DE>Erforderlich, um Adobe-Applikationen auf dem neuesten Stand zu halten. Umfasst Adobe Software Integrity Service</de_DE>
+<es_ES>Necesario para mantener las aplicaciones de Adobe actualizadas. Incluye Adobe Software Integrity Service.</es_ES>
+<es_MX>Necesario para mantener las aplicaciones de Adobe actualizadas. Incluye Adobe Software Integrity Service.</es_MX>
+<fi_FI>Tarvitaan Adoben sovellusten pitämiseksi ajan tasalla, sisältää Adobe Software Integrity Servicen</fi_FI>
+<fr_FR>Nécessaire pour garder les applications Adobe à jour, y compris Adobe Software Integrity Service</fr_FR>
+<fr_CA>Nécessaire pour garder les applications Adobe à jour, y compris Adobe Software Integrity Service</fr_CA>
+<it_IT>Richiesto per mantenere le applicazioni Adobe aggiornate. Comprende Adobe Software Integrity Service</it_IT>
+<ja_JP>Adobe Software Integrity Service を含むアドビアプリケーションを最新の状態に保つ必要があります</ja_JP>
+<ko_KR>Adobe 응용 프로그램을 최신 상태로 유지하기 위해 필요하며, Adobe Software Integrity Service를 포함합니다</ko_KR>
+<nb_NO>Nødvendig for å holde Adobe-applikasjoner oppdatert, inkludert Adobe Software Integrity Service</nb_NO>
+<nl_NL>Vereist om Adobe-toepassingen up-to-date te houden. Bevat Adobe Software Integrity Service</nl_NL>
+<pl_PL>Wymagany do aktualizacji aplikacji Adobe. Zawiera usługę Adobe Software Integrity Service</pl_PL>
+<pt_BR>Necessário para manter os aplicativos da Adobe atualizados, inclui o Adobe Software Integrity Service</pt_BR>
+<ru_RU>Необходим для поддержки актуальности приложений Adobe. Включает службу Adobe Software Integrity Service.</ru_RU>
+<sv_SE>Krävs för att hålla Adobe-program uppdaterade, inklusive Adobe Software Integrity Service</sv_SE>
+<tr_TR>Adobe uygulamalarının güncel tutulması için gereklidir, Adobe Software Integrity Service&apos;ı içerir</tr_TR>
+<zh_CN>需要始终将 Adobe 应用程序保持为最新版本，包括 Adobe Software Integrity Service</zh_CN>
+<zh_TW>必須讓 Adobe 應用程式保持最新狀態，包含 Adobe Software Integrity Service</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeApplicationManager-1.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File>
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>Install.app/Contents/MacOS/Install</ExecutableName>
+<SilentExecutableArgs>--action=update</SilentExecutableArgs>
+<Size>76826629</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+<UpdateRef Combo="0" ReFetch="0" RefID="AdobeDigitalPublishingCS6-2.0/2015.5" Viewed="0" WaitingForProductEvent="0">
+<RecommendationList>
+<Recommendation>
+<ChannelID>AdobeDigitalPublishingCS6-2.0</ChannelID>
+<LEID>DigitalPublishing-CS6-Mac-GM</LEID>
+</Recommendation>
+</RecommendationList>
+<TargetBuildType>2</TargetBuildType>
+<TargetLicensingType>0</TargetLicensingType>
+<State>0</State>
+<Error>0</Error>
+<DisplayName default="en_US">
+<cs_CZ>DPS Desktop Tools pro Adobe InDesign CS6</cs_CZ>
+<da_DK>DPS Desktop Tools til Adobe InDesign CS6</da_DK>
+<de_DE>DPS Desktop Tools für Adobe InDesign CS6</de_DE>
+<en_AE>DPS Desktop Tools for Adobe InDesign CS6</en_AE>
+<en_GB>DPS Desktop Tools for Adobe InDesign CS6</en_GB>
+<en_IL>DPS Desktop Tools for Adobe InDesign CS6</en_IL>
+<en_US>DPS Desktop Tools for Adobe InDesign CS6</en_US>
+<es_ES>DPS Desktop Tools para Adobe InDesign CS6</es_ES>
+<es_MX>DPS Desktop Tools para Adobe InDesign CS6</es_MX>
+<fi_FI>DPS Desktop Tools Adobe InDesign CS6:ta varten</fi_FI>
+<fr_CA>DPS Desktop Tools pour Adobe InDesign CS6</fr_CA>
+<fr_FR>DPS Desktop Tools pour Adobe InDesign CS6</fr_FR>
+<fr_MA>DPS Desktop Tools pour Adobe InDesign CS6</fr_MA>
+<hu_HU>Adobe InDesign CS6 szoftverhez tartozó DPS Desktop Tools</hu_HU>
+<it_IT>DPS Desktop Tools per Adobe InDesign CS6</it_IT>
+<ja_JP>Adobe InDesign CS6 用 DPS Desktop Tools</ja_JP>
+<ko_KR>Adobe InDesign CS6용 DPS Desktop Tools</ko_KR>
+<nb_NO>DPS Desktop Tools for Adobe InDesign CS6</nb_NO>
+<nl_NL>DPS Desktop Tools voor Adobe InDesign CS6</nl_NL>
+<pl_PL>DPS Desktop Tools dla InDesign CS6</pl_PL>
+<pt_BR>DPS Desktop Tools para o Adobe InDesign CS6</pt_BR>
+<ru_RU>DPS Desktop Tools для Adobe InDesign CS6</ru_RU>
+<sv_SE>DPS Desktop Tools för Adobe InDesign CS6</sv_SE>
+<tr_TR>Adobe InDesign CS6 için DPS Desktop Tools</tr_TR>
+<uk_UA>DPS Desktop Tools для Adobe InDesign CS6</uk_UA>
+<zh_CN>Adobe InDesign CS6 的 DPS Desktop Tools</zh_CN>
+<zh_TW>Adobe InDesign CS6 的 DPS Desktop Tools</zh_TW>
+</DisplayName>
+<Description default="en_US">
+<cs_CZ>Umožňuje aktualizaci aplikace DPS Desktop Tools pro Adobe InDesign CS6.</cs_CZ>
+<da_DK>Dette opdaterer DPS Desktop Tools til Adobe InDesign CS6.</da_DK>
+<de_DE>Dies ist ein Update auf DPS Desktop Tools für Adobe InDesign CS6.</de_DE>
+<en_AE>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_AE>
+<en_GB>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_GB>
+<en_IL>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_IL>
+<en_US>This updates DPS Desktop Tools for Adobe InDesign CS6.</en_US>
+<es_ES>Esto actualiza DPS Desktop Tools para Adobe InDesign CS6.</es_ES>
+<es_MX>Esto actualiza DPS Desktop Tools para Adobe InDesign CS6.</es_MX>
+<fi_FI>Päivittää DPS Desktop Toolsin Adobe InDesign CS6:ta varten.</fi_FI>
+<fr_CA>Ceci est une mise à jour DPS Desktop Tools pour Adobe InDesign CS6.</fr_CA>
+<fr_FR>Ceci est une mise à jour DPS Desktop Tools pour Adobe InDesign CS6.</fr_FR>
+<fr_MA>Ceci est une mise à jour DPS Desktop Tools pour Adobe InDesign CS6.</fr_MA>
+<hu_HU>Frissíti az Adobe InDesign CS6 szoftverhez tartozó DPS Desktop Tools programot.</hu_HU>
+<it_IT>Si tratta di un aggiornamento DPS Desktop Tools per Adobe InDesign CS6.</it_IT>
+<ja_JP>Adobe InDesign CS6 用の DPS Desktop Tools をアップデートします。</ja_JP>
+<ko_KR>Adobe InDesign CS6용 DPS Desktop Tools 업데이트입니다.</ko_KR>
+<nb_NO>Dette oppdaterer DPS Desktop Tools for Adobe InDesign CS6.</nb_NO>
+<nl_NL>Hiermee wordt DPS Desktop Tools voor Adobe InDesign CS6 bijgewerkt.</nl_NL>
+<pl_PL>Spowoduje to aktualizację narzędzia DPS Desktop Tools dla programu Adobe InDesign CS6.</pl_PL>
+<pt_BR>Isso atualiza o DPS Desktop Tools para Adobe InDesign CS6.</pt_BR>
+<ru_RU>Обновление для DPS Desktop Tools для Adobe InDesign CS6.</ru_RU>
+<sv_SE>Uppdaterar DPS Desktop Tools för Adobe InDesign CS6.</sv_SE>
+<tr_TR>Bu, Adobe InDesign CS6 için DPS Desktop Tools&apos;u günceller.</tr_TR>
+<uk_UA>Оновлення DPS Desktop Tools для Adobe InDesign CS6.</uk_UA>
+<zh_CN>这是针对 Adobe InDesign CS6 的 DPS Desktop Tools 更新。</zh_CN>
+<zh_TW>此程式會更新適用於 Adobe InDesign CS6 的 DPS Desktop Tools。</zh_TW>
+</Description>
+<AffectedChannels>
+<ChannelID>AdobeDigitalPublishingCS6-2.0</ChannelID>
+</AffectedChannels>
+<InstallFiles>
+<File RIBSBased="1">
+<Name>setup.dmg</Name>
+<Type>2</Type>
+<ExecutableName>AdobeDigitalPublishingCS6-AutoUpdate/AdobePatchInstaller.app</ExecutableName>
+<Size>83187236</Size>
+<State>0</State>
+<Error>0</Error>
+</File>
+</InstallFiles>
+<NeedsReboot>0</NeedsReboot>
+</UpdateRef>
+</Updates>

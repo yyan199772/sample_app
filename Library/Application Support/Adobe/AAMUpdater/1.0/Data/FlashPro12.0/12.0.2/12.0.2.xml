@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd" CSUVersion="1.0">
+    <UpdateID>12.0.2</UpdateID>
+    <OwningChannel>FlashPro12.0</OwningChannel>
+    <TargetBuildType>2</TargetBuildType>
+    <DisplayName default="en_US">
+        <en_US>Flash Pro CS6 update 2</en_US>
+		<de_DE>Update 2 zu Flash Pro CS6</de_DE>
+		<fr_FR>Mise à jour 2 de Flash Pro CS6</fr_FR>
+		<fr_CA>Mise à jour 2 de Flash Pro CS6</fr_CA>
+		<it_IT>Aggiornamento 2 di Flash Pro CS6</it_IT>
+		<es_ES>Flash Pro CS6, actualización 2</es_ES>
+		<es_LA>Flash Pro CS6, actualización 2</es_LA>
+		<ja_JP>Flash Pro CS6 アップデート 2</ja_JP>
+		<zh_CN>Flash Pro CS6 更新 2</zh_CN>
+		<zh_TW>Flash Pro CS6 更新 2</zh_TW>
+		<ko_KR>Flash Pro CS6 업데이트 2</ko_KR>
+		<nl_NL>Update 2 van Flash Pro CS6</nl_NL>
+		<pt_BR>Flash Pro CS6 atualização 2</pt_BR>
+		<sv_SE>Flash Pro CS6 uppdatering 2</sv_SE>
+		<cs_CZ>Flash Pro CS6 aktualizace 2</cs_CZ>
+		<pl_PL>Flash Pro CS6 aktualizacja 2</pl_PL>
+		<ru_RU>Обновление 2 Flash Pro CS6</ru_RU>
+		<tr_TR>Flash Pro CS6 güncellemesi 2</tr_TR>
+    </DisplayName>
+    <Description default="en_US">
+        <en_US>This update enables Flash Professional CS6 to support the following features exposed by AIR 3.4: 
+ 
+• High-resolution Retina Display Support for AIR Applications on iPad3
+• Direct deployment of AIR Applications to iOS devices without using iTunes
+• Native iOS simulator support
+
+This update also contains several critical bug fixes. For more information, see Release Notes.
+</en_US>
+<de_DE>Durch dieses Update wird Flash Professional CS6 die folgenden AIR 3.4-Funktionen unterstützen: 
+ 
+• Unterstützung hochauflösender Retinaanzeige für AIR-Anwendungen auf iPad3
+• Direkte Bereitstellung von AIR-Anwendungen für iOS-Geräte ohne die Verwendung von iTunes
+• Native iOS-Simulator-Unterstützung
+
+Dieses Update enthält auch mehrere wichtige Bugfixes. Weitere Informationen finden Sie in den Versionshinweisen.
+</de_DE>
+<fr_FR>Cette mise à jour permet à Flash Professional CS6 de prendre en charge les fonctionnalités suivantes, mises à disposition par AIR 3.4 : 
+ 
+• Prise en charge des écrans Retina haute résolution pour les applications AIR sur iPad3
+• Déploiement direct d'applications AIR sur les périphériques iOS sans passer par iTunes
+• Prise en charge du simulateur iOS natif
+
+Cette mise à jour corrige également plusieurs bogues critiques. Pour plus d'informations, consultez les notes de mise à jour.
+</fr_FR>
+<fr_CA>Cette mise à jour permet à Flash Professional CS6 de prendre en charge les fonctionnalités suivantes, mises à disposition par AIR 3.4 : 
+ 
+• Prise en charge des écrans Retina haute résolution pour les applications AIR sur iPad3
+• Déploiement direct d'applications AIR sur les périphériques iOS sans passer par iTunes
+• Prise en charge du simulateur iOS natif
+
+Cette mise à jour corrige également plusieurs bogues critiques. Pour plus d'informations, consultez les notes de mise à jour.</fr_CA>
+<it_IT>Questo aggiornamento aggiunge a Flash Professional CS6 il supporto delle seguenti funzioni esposte da AIR 3.4: 
+ 
+• Supporto del display ad alta risoluzione Retina per le applicazioni AIR su iPad3
+• Distribuzione diretta delle applicazioni AIR ai dispositivi iOS senza utilizzare iTunes
+• Supporto nativo di iOS Simulator
+
+Questo aggiornamento contiene anche varie correzioni di bug critici. Per ulteriori informazioni, consultate le Note sulla versione.
+</it_IT>
+<es_ES>Esta actualización permite que Flash Professional CS6 sea compatible con las siguientes funciones expuestas por AIR 3.4: 
+ 
+• Compatibilidad con pantalla Retina de alta resolución para aplicaciones de AIR en iPad3
+• Despliegue directo de aplicaciones AIR en dispositivos iOS sin utilizar iTunes
+• Compatibilidad nativa con simulador iOS
+
+Esta actualización también incluye soluciones a diversos problemas críticos. Para más información, consulte las Notas de la versión.</es_ES>
+<es_LA>Esta actualización permite que Flash Professional CS6 sea compatible con las siguientes funciones expuestas por AIR 3.4: 
+ 
+• Compatibilidad con pantalla Retina de alta resolución para aplicaciones de AIR en iPad3
+• Despliegue directo de aplicaciones AIR en dispositivos iOS sin utilizar iTunes
+• Compatibilidad nativa con simulador iOS
+
+Esta actualización también incluye soluciones a diversos problemas críticos. Para más información, consulte las Notas de la versión.</es_LA>
+<ja_JP>このアップデートによって、Flash Professional CS6 は AIR 3.4 によって実現する以下の機能をサポートできるようになります。 
+ 
+• iPad3 上の AIR アプリケーションに対応する高解像度 Retina ディスプレイのサポート
+• iTunes を使用せずに AIR アプリケーションを iOS デバイスに直接デプロイ
+• ネイティブ iOS シミュレーターのサポート
+
+このアップデートには、いくつかの重要なバグの修正も含まれます。詳しくは、リリースノートを参照してください。</ja_JP>
+<zh_CN>此更新可使 Flash Professional CS6 支持由 AIR 3.4 公开的下列功能： 
+ 
+• 对 iPad3 上 AIR 应用程序的高分辨率 Retina 显示屏支持
+• 在不使用 iTunes 的情况下，将 AIR 应用程序直接部署至 iOS 设备
+• 本机 iOS 模拟器支持
+
+此更新还包含几种重要的修补程序。有关详细信息，请参见"发行说明"。</zh_CN>
+<zh_TW>此更新可讓 Flash Professional CS6 支援由 AIR 3.4 公開的下列功能： 
+ 
+• 對 iPad3 上的 AIR 應用程式的高解析度 Retina 顯示器支援
+• 在不使用 iTunes 的情況下，將 AIR 應用程式直接部署到 iOS 裝置
+• 原生 iOS 模擬器支援
+
+此更新還包含數種重要的錯誤修正。如需詳細資訊，請參閱「版本說明」。
+
+</zh_TW>
+<ko_KR>이 업데이트를 사용하면 Flash Professional CS6에서 AIR 3.4의 다음 기능을 지원할 수 있습니다. 
+ 
+• iPad3의 AIR 응용 프로그램에 대한 고해상도 Retina 디스플레이 지원
+• iTunes를 사용하지 않고 iOS 장치에 AIR 응용 프로그램 직접 배포
+• 기본 iOS 시뮬레이터 지원
+
+또한 이 업데이트에는 몇 가지 중요한 버그 수정 사항이 포함되어 있습니다. 자세한 내용은 릴리스 정보를 참조하십시오.
+</ko_KR>
+<nl_NL>Dankzij deze update biedt Flash Professional CS6 ondersteuning voor de volgende functies van AIR 3.4: 
+ 
+• Ondersteuning voor het Retina-display met hoge resolutie voor AIR-toepassingen op iPad3
+• Rechtstreekse implementatie van AIR-toepassingen op iOS-apparaten, zonder iTunes te hoeven gebruiken
+• Geïntegreerde ondersteuning voor iOS-simulator
+
+Deze update bevat ook enkele belangrijke foutoplossingen. Zie de Release-aantekeningen voor meer informatie.</nl_NL>
+<pt_BR>Esta atualização permite que o Flash Professional CS6 oferece suporte aos seguintes recursos expostos pelo AIR 3.4: 
+ 
+• Suporte à tela Retina de alta resolução para aplicativos AIR do iPad3
+• Implantação direta de aplicativos AIR em dispositivos iOS sem o uso do iTunes
+• Suporte ao simulador de iOS nativo
+
+Esta atualização também contém diversas correções de bug. Para obter mais informações, consulte as Notas da versão.</pt_BR>
+<sv_SE>Uppdateringen gör att Flash Professional CS6 stöder följande funktioner i AIR 3.4: 
+ 
+• Stöd för högupplöst Retina-skärm för AIR-program på iPad3
+• Direktdistribution av AIR-program till iOS-enheter utan att använda iTunes
+• Inbyggt stöd för iOS-simulator
+
+Uppdateringen innehåller även flera kritiska buggfixar. Mer information finns i filen med viktig information.
+</sv_SE>
+<cs_CZ>Tato aktualizace umožňuje v aplikaci Flash Professional CS6 podporu následujících funkcí používaných v prostředí AIR 3.4: 
+ 
+• Podporu displejů Retina s vysokým rozlišením pro aplikace prostředí AIR na zařízení iPad3
+• Přímé nasazení aplikací prostředí AIR do zařízení se systémem iOS bez použití služby iTunes
+• Nativní podporu simulátoru systému iOS
+
+Tato aktualizace také obsahuje několik oprav závažných chyb. Další informace najdete v dokumentu Poznámky k vydání.</cs_CZ>
+<pl_PL>Ta aktualizacja umożliwia używanie następujących funkcji środowiska AIR 3.4 przez program Flash Professional CS6: 
+ 
+• Obsługa wyświetlaczy o wysokiej rozdzielczości Retina w aplikacjach AIR na tabletach iPad 3
+• Bezpośrednie wdrażanie aplikacji AIR na urządzeniach z systemem iOS (bez używania programu iTunes)
+• Obsługa natywnego symulatora systemu iOS
+
+Ta aktualizacja usuwa również szereg krytycznych błędów. Więcej informacji można uzyskać w uwagach na temat wersji.
+</pl_PL>
+<ru_RU>Это обновление позволяет Flash Professional CS6 поддерживать следующие функции, предоставляемые AIR 3.4: 
+ 
+• Поддержка дисплея высокого разрешения Retina для приложений AIR на iPad3
+• Непосредственное развертывание приложений AIR на устройства iOS без использования iTunes
+• Встроенная поддержка симулятора iOS
+
+В этом обновлении также содержатся несколько критично важных исправлений ошибок. Дополнительные сведения см. в заметках о выпуске.
+</ru_RU>
+<tr_TR>Bu güncelleme Flash Professional CS6'nın AIR 3.4 tarafından sunulan aşağıdaki özellikleri desteklemesini sağlar: 
+ 
+• iPad3'teki AIR Uygulamaları için yüksek çözünürlüklü Retina Ekran Desteği
+• iTunes kullanmadan AIR Uygulamalarını doğrudan iOS cihazlarına dağıtma
+• Yerel iOS simulator desteği
+
+Bu güncelleme ayrıca çeşitli önemli hata düzeltmeleri de içermektedir. Daha fazla bilgi için bkz. Sürüm Notları.
+</tr_TR>
+    </Description>
+    <AffectedChannels>
+        <ChannelID>FlashPro12.0</ChannelID>
+    </AffectedChannels>
+    <InstallFiles>
+    <File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>Adobe Flash Professional CS6 Update 2/AdobePatchInstaller.app</ExecutableName>
+      <Size>588082019</Size>
+    </File>
+  </InstallFiles>
+    <NeedsReboot>false</NeedsReboot>
+</Manifest>

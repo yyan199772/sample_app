@@ -1,0 +1,794 @@
+.cats {font: 11px arial; color: #ffffff}
+.header {font: 11px arial; color: #ffffff}
+.top {font: 11px arial; color: #003366; font-weight: bold}
+.topictitle {float: left;}
+.topicicon {float: left; margin-right: 5px; margin-top: 2px;}
+
+
+.foruminput {width:250px; border: #999 1px solid; padding: 2px; font-weight: bold; }
+div.quotebox {margin: 5px; padding: 8px; border-style: solid; border-width: 1px; background-color : #EFEFEF; border-color : #bec8ce; }
+blockquote {margin: 5px; padding: 8px; border-style: solid; border-width: 1px; background-color : #EFEFEF; border-color : #bec8ce; }
+
+.blockquote {
+    background: #D9EDF7;
+    border: 1px solid #BCE8F1;
+    border-radius: 4px 4px 4px 4px;
+    color: #3A87AD;
+    padding: 8px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.commentContainer {border: #CCC 1px solid; margin-bottom: 10px;}
+.commentTop {padding: 4px 4px 4px 4px; background-color: #eee;}
+.commentTopLeft {float: left;}
+.commentTopRight {float: right;}
+.commentContent {padding: 14px 4px 4px 4px; border-top: #eee 1px solid; }
+.text2 {color: #777}
+.selectContainer { margin-bottom: 10px; }
+.selectLeft {float: left;}
+.selectRight {float: right;}
+
+.blogunpublished {padding: 6px; background-color: #FFF; color: #990000; font-weight: bold; border-top: #CCC 1px solid;}
+.blogunpublished a {color: #ddaa00;}
+
+.buttonLocation {float: right; padding-top: 4px; vertical-align:bottom;}
+.commentProperties { float: left; margin-top: 6px;}
+
+.blogButtonsDisabled {
+    opacity: 0.5;
+}
+
+.floatRight,
+.tab_actions,
+.order_actions {
+    float: right;
+}
+
+#discussionPostsPage{
+    padding-bottom:0;
+}
+
+.forumTitleHeader,
+.forumAlertsButton {
+    float: left;
+    margin-right: 10px;
+    font-weight:bold;
+}
+
+.unPublished {
+    background:#ddd !important;
+    border-color:#ddd !important;
+}
+
+.replyPost {
+    margin-bottom:20px;
+}
+
+td.forumTitle {
+    width: 40%;
+}
+td.forumComments {
+    width: 7%;
+}
+td.forumTopics {
+    width: 7%;
+}
+td.forumLastPost {
+    width: 20%;
+}
+td.forumLastAuthor img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    padding-right:4px;
+}
+
+.discussionTopicTable{
+    margin-bottom:20px;
+    border:0;
+    background:transparent;
+}
+
+.discussionTopicTable tr{
+    background:transparent;
+}
+
+.discussionTopicTable td{
+    border-width:0 0 1px 0;
+    border-color:#eee;
+    border-style:solid;
+    background:transparent;
+}
+
+.discussionTopicTable td.forumLastAuthor{
+    text-align:left;
+}
+
+.fsGroupSpaceElementContent h2 {
+        display: inline;
+    }
+
+span.forumViewIcon,
+span.forumCommentIcon,
+span.forumLastPostIcon {
+    margin-right: 2px;
+    width:18px;
+    overflow:hidden;
+    text-indent:-40px;
+    display:inline-block;
+}
+
+span.forumViewIcon{
+    background:transparent url(../../images/admin_ui/2.0/black/eye.png)no-repeat 0 0 ;
+    width:16px;
+    filter: alpha(opacity=20);
+    opacity:.2;
+    display:inline-block;
+}
+
+span.forumCommentIcon{
+    background:transparent url(../../images/admin_ui/2.0/white/chat.png) no-repeat 0 0;
+    display:inline-block;
+}
+
+span.forumLastPostIcon{
+    background:transparent url(../../images/admin_ui/2.0/black/clock.png) no-repeat 0 0;
+    width:16px;
+    filter: alpha(opacity=20);
+    opacity:.2;
+    display:inline-block;
+}
+
+.newTopic{
+    display:inline-block;
+    text-indent:-120px;
+    overflow:hidden;
+    width:18px;
+    height:16px;
+    vertical-align:top;
+    margin-left:4px;
+    padding:2px 2px;
+    border-color: #489548;
+    border-style:solid;
+    border-width:1px;
+    background:#5BB75B url(../../images/admin_ui/2.0/black/plus.png) no-repeat 3px 2px;
+    border-radius:2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.newTopic:hover{
+    background-color:#51a751;
+}
+
+.editTopic{
+    display:inline-block;
+    text-indent:-120px;
+    overflow:hidden;
+    width:18px;
+    height:16px;
+    vertical-align:top;
+    margin-left:4px;
+    padding:2px 1px;
+    border-color: #E7B42D;
+    border-style:solid;
+    border-width:1px;
+    background:#ffdb59 url(../../images/admin_ui/2.0/black/pencil.png) no-repeat 2px 2px;
+    border-radius:2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.editTopic:hover{
+    background-color:#f2c943;
+}
+
+.deleteTopic{
+    display:inline-block;
+    text-indent:-120px;
+    overflow:hidden;
+    width:18px;
+    height:16px;
+    vertical-align:top;
+    margin-left:4px;
+    margin-right:14px;
+    padding:2px;
+    border-color: #999;
+    border-style:solid;
+    border-width:1px;
+    background:#ccc url(../../images/admin_ui/2.0/black/trash.png) no-repeat 3px 1px;
+    border-radius:2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.deleteTopic:hover{
+    background-color:#bbb;
+}
+
+.archiveTopic{
+    display:inline-block;
+    text-indent:-120px;
+    overflow:hidden;
+    width:18px;
+    height:16px;
+    vertical-align:top;
+    margin-left:4px;
+    padding:2px;
+    border-color: #999;
+    border-style:solid;
+    border-width:1px;
+    background:#ccc url(../../images/lms/resources/archive.png) no-repeat 3px 1px;
+    border-radius:2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.archiveTopic:hover{
+    background-color:#bbb;
+}
+
+.collapseTopic{
+    width:11px;
+    overflow:hidden;
+    text-indent:-50px;
+    height:116x;
+    display:inline-block;
+    margin-right:12px;
+    margin-top:3px;
+    background:url(../../images/admin_ui/2.0/black/expand-close.png) no-repeat 0 3px;
+    filter: alpha(opacity=90);
+    opacity:.9;
+}
+
+.topicCollapsed {
+     background:url(../../images/admin_ui/2.0/black/expand-open.png) no-repeat 0 3px !important;
+}
+
+.collapseTopic:hover{
+    filter: alpha(opacity=100);
+    opacity:1;
+}
+
+.tabActionsContainer{
+    background:#eee;
+    padding:7px 0 4px 6px;
+    border-radius:2px;
+}
+
+.tab_actions{
+    margin:-10px 0 4px 0;
+}
+
+.classcontainer .tab_actions{
+    margin:0px 0 4px 0;
+}
+
+div.fsGroupSpaceElementLeft {
+    float: left;
+    width: 25%;
+    padding:10px 20px;
+}
+
+.fsGroupSpaceElementContent{
+    padding-top:10px;
+}
+
+#fsGroupSpaceDashboardControlsContainer ~ div .fsGroupSpaceElementContent {
+    padding-top: 0;
+}
+
+.fsGroupSpaceElementContent.righted{
+    padding-top:0px;
+}
+
+div.fsGroupSpaceElementContent righted {
+    float: right;
+    width: 70%
+}
+div.fsGroupSpaceElementClear {
+    width: 95%;
+    clear: both;
+    height: 0px;
+}
+div.commentActivityName {
+    font-weight: bold;
+}
+.commentDate{
+    color:#999;
+    font-size:.85em;
+}
+div.commentActivityName img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align:middle;
+    border-radius:3px;
+}
+ul.activityList {
+    list-style: none;
+    padding: 0px;
+    margin-left: 0px;
+}
+ul.activityList li {
+    border-bottom: #eee 1px solid;
+    margin: 0px 15px 10px 0px;
+    padding-bottom:1em;
+}
+
+div.fsGroupSpaceElementContent div.selectContainer {
+    float: right;
+}
+
+div.fsGroupSpaceElementContent div.selectContainer div.selectLeft {
+    float: right;
+}
+
+div.commentAvatar {
+    float: left;
+    margin-right: -30px;
+}
+
+div.commentAvatar img {
+    width: 30px;
+}
+
+#commentTable div.mainPost{
+    font-size:1.1em;
+    background: #eee;
+    border: 1px solid #e3e3e3;
+    border-radius:2px;
+    padding:15px;
+}
+
+.mainPost div.commentBody{
+}
+
+.mainPost .commentAuthor{
+    font-weight:bold;
+}
+
+#discussionTopic{
+    margin:2em .2em 3em .2em;
+}
+
+.topicContainer{
+    margin-top:1em;
+}
+
+#discussionTopic .commentAuthor{
+    font-size:1.1em;
+}
+
+div.commentBody {
+    margin-top: -3px;
+    padding: 0;
+    margin-left: 45px;
+    margin-right: 45px;
+    border-radius:3px;
+}
+
+div.commentBody.noAvatar {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div.fsGroupSpaceElementContent div.commentContainer,
+div.fsGroupSpaceElementContent div.commentTop {
+    padding: 0px;
+    background-color: inherit;
+    border: 0px solid black;
+}
+
+div.fsGroupSpaceElementContent div.commentPrivate div.commentTop.replyPost:before{
+    background:#F2BE6B;
+    border:1px solid #f1b14b;
+    border-radius:2px;
+    content: "Private";
+    color:#fff;
+    font-size:.8em;
+    padding:4px;
+    position:absolute;
+    margin-top:-25px;
+    margin-left:-25px;
+}
+
+div.fsGroupSpaceElementContent div.commentTop.replyPost {
+    background: #fbfbfb;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius:2px;
+}
+
+div.fsGroupSpaceElementContent div.commentContainer {
+    margin: 20px 0 20px 25px;
+}
+
+div.fsGroupSpaceElementContent div.commentContainer div.commentContent {
+    border-top: 1px dotted #eee;
+    margin-top:0px;
+    padding: 5px;
+}
+
+.commentContent p:first-child {
+    margin-top: 0;
+}
+
+/*Discussions*/
+.fsGroupSpaceElementContent tr.archived_discussions {
+    display: block;
+    padding-top: 15px;
+}
+.fsGroupSpaceElementContent tr.archived_discussions > td {
+    border-top: 0;
+}
+.fsGroupSpaceElementContent tr.archived_discussions .forumTitleHeader {
+    color: #939393;
+    font-family: "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.fsGroupSpaceElementContent table.archived_discussions {
+    opacity: .6;
+}
+.fsGroupSpaceElementContent table.archived_discussions:hover {
+    opacity: 1;
+}
+.fsGroupSpaceElementContent .archived_discussions .tab_actions .archiveTopic {
+    background: #CCC url(../../images/lms/resources/unarchive.png) no-repeat 3px 1px;
+}
+.fsGroupSpaceElementContent table.classcontainer > tbody > tr > td,
+.fsGroupSpaceElementContent #discussionTable > tr > td {
+    border-top: 0;
+}
+.fsGroupSpaceElementContent .forumTitleHeader, .forumAlertsButton {
+  margin-top: 4px;
+}
+
+/*End Discussions*/
+
+div.fsGroupSpaceElementContent div.commentAuthorDate {
+    float: left;
+}
+
+div.fsGroupSpaceElementContent div.commentTools {
+    float: right;
+    padding-bottom: 5px;
+}
+
+div.fsGroupSpaceElementContent div.commentTools a {
+    margin-left: 10px;
+}
+
+div.fsGroupSpaceElementContent div.commentAuthorDate span.commentDate {
+    color: #878787;
+    margin-left: 15px;
+}
+
+.fsGroupSpaceDialogInstructions, .fsGroupSpaceDialogAlert {
+    margin: 10px 0;
+}
+
+.dbActions {
+    margin-right: 10px;
+}
+
+.commentAuthor{
+    color:#878787;
+    font-weight:bold;
+    font-size:.85em
+}
+
+.commentReply{
+    font-size:11px;
+    background:#fff url(../../images/admin_ui/2.0/black/reply.png) no-repeat 4px 3px;
+    padding:4px 8px 5px 24px;
+    border:1px solid #DEDEE2;
+    border-radius:4px;
+    text-decoration:none;
+}
+
+.commentReply:hover{
+    background-color:#fafafa;
+}
+
+.commentApprove{
+    display:inline-block;
+    text-indent:-120px;
+    overflow:hidden;
+    width:18px;
+    vertical-align:top;
+    margin-left:4px;
+    padding:2px 1px;
+    border-color: #489548;
+    border-style:solid;
+    border-width:1px;
+    background:#5BB75B url(../../images/admin_ui/2.0/black/check.png) no-repeat 2px 2px;
+    border-radius:2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.commentApprove:hover{
+    background-color:#51a751;
+}
+
+.commentEdit{
+    display:inline-block;
+    text-indent:-120px;
+    overflow:hidden;
+    width:18px;
+    vertical-align:top;
+    margin-left:4px;
+    padding:2px 1px;
+    border-color: #E7B42D;
+    border-style:solid;
+    border-width:1px;
+    background:#ffdb59 url(../../images/admin_ui/2.0/black/pencil.png) no-repeat 2px 2px;
+    border-radius:2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.commentEdit:hover{
+    background-color:#f2c943;
+}
+
+.commentDelete{
+    display:inline-block;
+    text-indent:-120px;
+    overflow:hidden;
+    width:18px;
+    vertical-align:top;
+    margin-left:4px;
+    padding:2px 1px;
+    border-color: #999;
+    border-style:solid;
+    border-width:1px;
+    background:#ccc url(../../images/admin_ui/2.0/black/trash.png) no-repeat 2px 1px;
+    border-radius:2px;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.225) inset, 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.commentDelete:hover{
+    background-color:#bbb;
+}
+
+.commentToggle{
+    display:none;
+}
+
+.forumCommentEdit {
+    display:inline-block;
+    width:18px;
+    height: 18px;
+    margin-left:4px;
+    padding:2px 1px;
+    background: url(../../images/admin_ui/2.0/black/pencil.png) no-repeat 50% 50%;
+}
+
+.forumCommentDelete {
+    display:inline-block;
+    width:18px;
+    height: 18px;
+    margin-left:4px;
+    padding:2px 1px;
+    background: url(../../images/admin_ui/2.0/black/x.png) no-repeat 50% 50%;
+}
+
+.forumCommentApprove {
+    display:inline-block;
+    width:18px;
+    height: 18px;
+    margin-left:4px;
+    padding:2px 1px;
+    background: url(../../images/admin_ui/2.0/black/check.png) no-repeat 50% 50%;
+}
+
+.forumError {
+    background: #F2DEDE;
+    border: 1px solid #EED3D7;
+    border-radius: 4px 4px 4px 4px;
+    color: #B94A48;
+    margin: 10px;
+    padding: 8px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+#saveButtonPublish{
+    cursor:pointer;
+    background-position: 0.5em center;
+    border-radius:2px;
+    color:#fff !important;
+    background-color: #49AFCD;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-style:solid;
+    border-width:1px;
+    margin-right:5px;
+    -webkit-text-shadow:0 0 1px #008000;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+#saveButtonPublish:hover{
+    background-color:#3097B5;
+}
+
+#saveButtonDraft{
+    cursor:pointer;
+    background-position: 0.5em center;
+    border-radius:2px;
+    color:#fff !important;
+    background-color: #5BB75B;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-style:solid;
+    border-width:1px;
+    margin-right:5px;
+    -webkit-text-shadow:0 0 1px #008000;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+#saveButtonDraft:hover{
+    background-color: #55AA55;
+}
+
+#saveButtonCancel{
+    cursor:pointer;
+    background-position: 0.5em center;
+    border-radius:2px;
+    color:#333 !important;
+    background-color: #ddd;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-style:solid;
+    border-width:1px;
+    margin-right:5px;
+    -webkit-text-shadow:0 1px 0 #ddd;
+    text-shadow: 0 1px 0 #ddd;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05)
+}
+
+#saveButtonCancel:hover{
+    background-color:#ccc;
+}
+
+.deleteDiscussionTopicBtn{
+    background:url('../../images/admin_ui/2.0/black/trash.png') no-repeat;
+    padding:0 5px 0 20px;
+}
+
+#commentTable h2{
+    display: inline-block;
+    margin-top:0px;
+    padding-bottom:10px;
+}
+
+.commentTitle {font-weight:bold; padding-right:1em; padding-left:4px; font-size:1.1em;}
+
+#newDiscBtn, .iconBtnAdd.adminDiscussionBtn {
+    cursor:pointer;
+    background-image:url('../../images/admin_ui/2.0/white/plus.png');
+    background-repeat:no-repeat;
+    background-position:5px 3px;
+    border-radius:2px;
+    padding:3px 10px 3px 26px;
+    color:#fff !important;
+    background-color: #5BB75B;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-style:solid;
+    border-width:1px;
+    -webkit-text-shadow:0 0 1px #008000;
+    text-shadow:0 0 1px #008000;
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.125) inset, 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    float:right;
+    margin-left:10px;
+    margin-bottom:10px;
+    margin-top:-20px;
+}
+
+#newDiscBtn:hover, .iconBtnAdd.adminDiscussionBtn:hover{
+    background-color:#53A753;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 0;
+}
+
+#adminBulletinModal div.formcontainer table {
+    width: 98% !important;
+}
+
+#adminBulletinModal div.formcontainer table td.forminput span.mceEditor {
+    display: block !important;
+}
+
+#bulletinTitleFld {
+    width: 95% !important;
+}
+#adminBulletinModal .formtitle input {
+    width: 22%;
+}
+
+.discussionEditBtn {
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: -20px;
+    padding: 3px 10px 3px 26px;
+}
+
+.discussionEditBtn:not(.fsGroupIconBtnSave) {
+    padding-left: 8px;
+}
+
+.discussionEditBtn:not(.fsGroupIconBtnSave)::before {
+    background-image: url(../../javascript/jQuery/themes-1.8/finalsite/images/ui-icons_222222_256x240.png);
+    background-position: -128px -48px;
+    content: ' ';
+    display: inline-block;
+    height: 16px;
+    vertical-align: top;
+    width: 16px;
+}
+
+
+/* Respond */
+
+@media only screen
+and (max-width : 840px){
+
+    div.fsGroupSpaceElementHeader,
+    div.fsGroupSpaceElementContent {
+        width: 88%;
+        float: none;
+        margin-left:8px;
+    }
+
+    div.fsGroupSpaceElementLeft {
+        float: none;
+        width: 90%;
+        padding:0 18px;
+    }
+
+    td.forumTitle {
+    width: 30%;
+    }
+
+    td.forumComments {
+        width: 18%;
+    }
+    td.forumTopics {
+        width: 18%;
+    }
+
+    td.forumLastPost, .forumAlertsButton {
+        display:none;
+    }
+
+    .fsGroupSpaceElementContent h2 {
+        display: block;
+    }
+
+    #newDiscBtn, .discussionEditBtn, .iconBtnAdd.adminDiscussionBtn {
+        display:block;
+        margin:0 0 10px 0;
+        clear:both;
+    }
+
+    .commentTitle, .commentAuthor, .commentDate{
+         display:block;
+         padding-left:0;
+         padding-right:0;
+         margin:0 !important;
+         line-height:1.5em;
+    }
+}
+
+.bulletinExpired { color:red; text-transform: uppercase; font-weight: bold; }
+.bulletinIsExpired { background-color: #EEEEEE; }
+
+@media only screen
+and (max-width : 630px){
+
+    .tab_actions a{
+        display:none;
+    }
+}

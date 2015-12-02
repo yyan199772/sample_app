@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- THIS IS A TEMPLATE FILE WITH SAMPLE VALUES FILLED IN. PLEASE REVIEW AND UPDATE FOR YOUR INSTALLER --><!-- Its Schema is available here public/Common/xplat/schema/CSUManifest.xsd --><Manifest CSUVersion="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CSUManifest.xsd">  
+<UpdateID>12.2.0</UpdateID>
+<TargetBuildType>2</TargetBuildType>
+<OwningChannel>AdobeDreamweaverCS6-12</OwningChannel>
+  <DisplayName default="en_US"><en_US>Dreamweaver CS6 Creative Cloud release – Feb. 2013</en_US>
+          <cs_CZ>Vydání sady Dreamweaver CS6 Creative Cloud – únor 2013</cs_CZ>
+          <de_DE>Dreamweaver CS6 Creative Cloud-Aktualisierung – Feb. 2013</de_DE>
+          <es_ES>Publicación de Dreamweaver CS6 Creative Cloud – Febrero de 2013</es_ES>
+          <es_MX>Publicación de Dreamweaver CS6 Creative Cloud – Febrero de 2013</es_MX>
+          <fr_FR>Dreamweaver CS6 version Creative Cloud - Février 2013</fr_FR>
+	  <fr_MA>Dreamweaver CS6 version Creative Cloud - Février 2013</fr_MA>
+          <fr_CA>Dreamweaver CS6 version Creative Cloud - Février 2013</fr_CA>
+          <it_IT>Dreamweaver CS6 versione Creative Cloud – Febbraio 2013</it_IT>
+          <ja_JP>Dreamweaver CS6 Creative Cloud リリース – 2013 年 2 月</ja_JP>
+          <ko_KR>Dreamweaver CS6 Creative Cloud 릴리스 - 2013년 2월</ko_KR>
+          <nl_NL>Release van Dreamweaver CS6 Creative Cloud – Feb. 2013</nl_NL>
+          <pl_PL>Aktualizacja programu Dreamweaver CS6 Creative Cloud — luty 2013</pl_PL>
+          <pt_BR>Versão da Dreamweaver CS6 Creative Cloud – fevereiro de 2013</pt_BR>
+          <ru_RU>Выпуск Dreamweaver CS6 Creative Cloud — февраль 2013</ru_RU>
+          <sv_SE>Dreamweaver CS6 Creative Cloud – februari 2013</sv_SE>
+          <tr_TR>Dreamweaver CS6 Creative Cloud sürümü – Şubat 2013</tr_TR>
+          <zh_CN>Dreamweaver CS6 Creative Cloud 发布 — 2013 年 2 月</zh_CN>
+          <zh_TW>Dreamweaver CS6 Creative Cloud 發行 – 2013 年 2 月</zh_TW>
+        </DisplayName>
+  <!-- One for each locale to be displayed in CS Updater-->
+  <Description default="en_US"><en_US>The latest Dreamweaver update integrates Adobe Edge Web Fonts and features an improved Font Management workflow. Also, significant improvements to the Fluid Grid Layouts feature make it easier to create professional-quality responsive web pages. The update includes added support for HTML5 Form elements. Finally, the update restores Expanded Table View options (removed in the last CS6 Creative Cloud release on Sept 24th) and includes critical bug fixes.</en_US>
+          <cs_CZ>Nejnovější aktualizace aplikace Dreamweaver integruje písma Adobe Edge Web Fonts a přináší vylepšený pracovní postup pro správu písem. Významná vylepšení funkce Rozvržení plovoucích mřížek usnadňuje vytváření rychlých webových stránek profesionální kvality. Tato aktualizace zahrnuje přidanou podporu elementů formulářů HTML5. Aktualizace také obnovuje možnosti zobrazení režimu rozšířených tabulek (odebrané ve verzi CS6 Creative Cloud z 24. září) a obsahuje opravy závažných chyb.</cs_CZ>
+          <de_DE>Die neueste Dreamweaver-Aktualisierung integriert Adobe Edge-Webschriften und führt einen verbesserten Arbeitsablauf für die Schriftenverwaltung ein. Auch signifikante Verbesserungen der fließenden Rasterlayouts erleichtern die Erstellung ansprechender Webseiten in professioneller Qualität. Die Aktualisierung umfasst  die zusätzliche Unterstützung von HTML5-Formularelementen. Schließlich stellt diese Aktualisierung die Optionen des erweiterten Tabellenmodus wieder her (die in der letzten CS6 Creative Cloud-Aktualisierung am 24. Sept. entfernt worden sind) und enthält einige wichtige Bugkorrekturen.</de_DE>
+          <es_ES>La actualización más reciente de Dreamweaver integra Fuentes Web de Adobe Edge y cuenta con un flujo de trabajo mejorado para administración de fuentes. Asimismo, las mejoras significativas realizadas en la función Diseños de cuadrículas fluidas facilitan la creación de páginas Web funcionales de calidad profesional. La actualización incluye compatibilidad adicional para elementos de formulario HTML5. Por último, la actualización restaura las opciones de vista expandida de tabla (eliminadas en la última versión de CS6 Creative Cloud, publicada el 24 de septiembre) e incluye soluciones a errores críticos.</es_ES>
+          <es_MX>La actualización más reciente de Dreamweaver integra Fuentes Web de Adobe Edge y cuenta con un flujo de trabajo mejorado para administración de fuentes. Asimismo, las mejoras significativas realizadas en la función Diseños de cuadrículas fluidas facilitan la creación de páginas Web funcionales de calidad profesional. La actualización incluye compatibilidad adicional para elementos de formulario HTML5. Por último, la actualización restaura las opciones de vista expandida de tabla (eliminadas en la última versión de CS6 Creative Cloud, publicada el 24 de septiembre) e incluye soluciones a errores críticos.</es_MX>
+          <fr_FR>La plus récente mise à jour de Dreamweaver comprend les polices Web Adobe Edge et un flux de gestion des polices amélioré. En outre, des améliorations significatives de la fonctionnalité Mises en forme de grille fluide facilitent la création de pages Web réactives de qualité professionnelle. La mise à niveau ajoute une prise en charge des éléments de formulaire HTML5. Enfin, la mise à niveau rétablit les options de mode Tableaux développés (supprimées de la dernière version de CS6 Creative Cloud publiée le 24 septembre) et corrige des bogues critiques.</fr_FR>
+	  <fr_MA>La plus récente mise à jour de Dreamweaver comprend les polices Web Adobe Edge et un flux de gestion des polices amélioré. En outre, des améliorations significatives de la fonctionnalité Mises en forme de grille fluide facilitent la création de pages Web réactives de qualité professionnelle. La mise à niveau ajoute une prise en charge des éléments de formulaire HTML5. Enfin, la mise à niveau rétablit les options de mode Tableaux développés (supprimées de la dernière version de CS6 Creative Cloud publiée le 24 septembre) et corrige des bogues critiques.</fr_MA>
+          <fr_CA>La plus récente mise à jour de Dreamweaver comprend les polices Web Adobe Edge et un flux de gestion des polices amélioré. En outre, des améliorations significatives de la fonctionnalité Mises en forme de grille fluide facilitent la création de pages Web réactives de qualité professionnelle. La mise à niveau ajoute une prise en charge des éléments de formulaire HTML5. Enfin, la mise à niveau rétablit les options de mode Tableaux développés (supprimées de la dernière version de CS6 Creative Cloud publiée le 24 septembre) et corrige des bogues critiques.</fr_CA>
+          <it_IT>L'ultimo aggiornamento di Dreamweaver include i caratteri Web Adobe Edge e presenta un flusso di lavoro migliorato per la gestione dei caratteri. Inoltre, contiene importanti miglioramenti della funzione Layout a griglia fluida che rendono più facile la creazione di pagine Web interattive di qualità professionale. L'aggiornamento include un supporto più esteso degli elementi modulo HTML5. Infine, l'aggiornamento ripristina le opzioni di visualizzazione della modalità Tabelle espanse (rimosse nell'ultima versione di CS6 Creative Cloud del 24 settembre) e include le correzioni di alcuni bug critici.</it_IT>
+          <ja_JP>最新の Dreamweaver アップデートでは、Adobe Edge Web Fonts を取り入れて、フォント管理ワークフローを改善することができます。 また、可変グリッドレイアウト機能が大幅に改善されているため、プロ並みのレスポンシブな Web ページを簡単に作成できるようになります。 アップデートには、HTML5 フォームエレメントのサポート強化が含まれています。また最終的に、（9 月 24 日の最後の CS6 Creative Cloud リリースで削除された）Expanded Table View オプションが復元されており、重大なバグ修正も含まれています。</ja_JP>
+          <ko_KR>최신 Dreamweaver 업데이트에 Adobe Edge Web Fonts와 개선된 글꼴 관리 워크플로 기능이 통합되었습니다. 또한, 유동 격자 레이아웃 기능에 큰 개선을 통해 전문가급의 응답력 있는 웹페이지를 쉽게 만들 수 있게 되었습니다. 이번 업데이트에는 HTML5 Form 요소에 대한 추가적인 지원이 포함되어 있습니다. 마지막으로 이번 업데이트는 확장된 표 보기 옵션(9월 24일의 최근 CS6 Creative Cloud 릴리스에서 삭제됨)을 복원하였으며, 중대한 버그도 수정하였습니다.</ko_KR>
+          <nl_NL>De laatste Dreamweaver-update integreert Adobe Edge Web Fonts en biedt een verbeterde workflow voor Lettertypenbeheer. Daarnaast is het dankzij aanzienlijke verbeteringen aan de functie Dynamische rasterlay-outs eenvoudiger om responsieve webpagina's van professionele kwaliteit te maken. De update bevat toegevoegde ondersteuning voor HTML5-formulierelementen. Tot slot herstelt de update de opties voor Uitgebreide tabelweergave (die in de vorige release van CS6 Creative Cloud op 24 september was verwijderd) en beschikt de nieuwe release over essentiële oplossingen voor bepaalde problemen.</nl_NL>
+          <pl_PL>Najnowsza aktualizacja programu Dreamweaver umożliwia integrację czcionek Adobe Edge Web Fonts i obejmuje ulepszone zarządzanie czcionkami. Wprowadza również istotne usprawnienia działania płynnych układów siatek, co przekłada się na łatwiejsze tworzenie profesjonalnych, interaktywnych stron internetowych. Aktualizacja zapewnia także obsługę elementów formularzy HTML5 oraz przywraca opcje widoku rozszerzonego tabeli (usunięte w ostatniej wersji programu CS6 Creative Cloud udostępnionej 24 września) i usuwa błędy krytyczne.</pl_PL>
+          <pt_BR>A atualização mais recente do Dreamweaver integra o Adobe Edge Web Fonts e fornece um fluxo de trabalho aprimorado do Font Management. Além disso, as melhorias significativas no recurso Layouts de grade fluídos facilitam a criação de páginas da Web receptivas e com qualidade profissional. A atualização inclui suporte adicional para elementos de formulário HTML 5. Por fim, a atualização restaura as opções de visualização em tabela expandida (removida na última versão da CS6 Creative Cloud em 24 de setembro) e inclui correções de bugs críticos.</pt_BR>
+          <ru_RU>Последнее обновление Dreamweaver включает Adobe Edge Web Fonts и улучшенные функции управления шрифтами. Также значительно улучшены «резиновые» макеты, что позволяет с легкостью создавать адаптивные веб-страницы профессионального качества. Обновление включает добавленную поддержку для элементов форм HTML5. Наконец, в обновлении восстановлен режим просмотра развернутых таблиц (удаленный в последнем выпуске CS6 Creative Cloud от 24 сентября) и включены исправления критических неполадок.</ru_RU>
+          <sv_SE>Den senaste Dreamweaver-uppdateringen integrerar Adobe Edge Web Fonts och ger en förbättrad teckensnittshantering. Den innehåller också förbättringar för funktionen Flytande stödrasterlayout som gör det enklare att skapa proffsiga webbsidor. Uppdateringen omfattar stöd för HTML5-formulärelement. Uppdateringen återställer också alternativen för utökad tabellvy (borttaget i senaste CS6 Creative Cloud från 24 september) och innehåller viktiga korrigeringar för att åtgärda buggar.</sv_SE>
+          <tr_TR>En son Dreamweaver güncellemesinde, Adobe Edge Web Fonts tümleştirilir ve gelişmiş bir Font Yönetimi iş akışı özelliği bulunur. Ayrıca, Değişken Izgara Mizanpajları özelliğinde yapılan önemli geliştirmeler profesyonel kalitede dinamik web sayfaları oluşturmayı kolaylaştırır. Güncelleme, HTML5 Form öğeleri için eklenen desteği içerir. Son olarak, güncellemede Genişletilmiş Tablo Görünümü seçenekleri (24 Eylül'de son CS6 Creative Cloud sürümünde kaldırılmıştır) geri yüklenmektedir ve önemli hata düzeltmeleri bulunmaktadır.</tr_TR>
+          <zh_CN>最新的 Dreamweaver 更新集成了 Adobe Edge Web Fonts 并改善了字体管理工作流程。此外，还对“流体网格布局”功能进行了显著的改进，便于更轻松地创建专业品质的响应网页。更新包括增加了对 HTML5 表单元素的支持。最后一点，本次更新恢复了“扩展表格视图”选项（该选项于 9 月 24 日从上一次 CS6 Creative Cloud 发布中移除）并包括关键的缺陷修复。</zh_CN>
+          <zh_TW>最新的 Dreamweaver 更新整合了 Adobe Edge Web Fonts，強調字體管理工作流程的改善。同時，流變格線版面功能的大幅改善讓它能輕鬆建立專業質感且回應快速的網頁。此更新包括對 HTML5 表單元素的新增支援。最後，此更新恢復了「展開表格模式」選項 (在上次 9 月 24 日的 CS6 Creative Cloud 發行中移除) 並包含嚴重錯誤修正。</zh_TW>
+        </Description>
+  <AffectedChannels><ChannelID>AdobeDreamweaverCS6-12</ChannelID>
+  </AffectedChannels>
+  <InstallFiles><File RIBSBased="1"><Name>setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobeDreamweaver-12.2-All-Update/AdobePatchInstaller.app</ExecutableName>
+      <Size>110180460</Size>
+      
+      
+      
+    </File>
+  </InstallFiles>
+  <NeedsReboot>false</NeedsReboot>
+
+
+
+  
+  
+  
+  
+  
+  
+  <UpdatePayloadID>{A9861095-6F8C-11E2-B313-84E4FE4B0A47}</UpdatePayloadID>
+  <OwningPayloadID>{8ACD4814-788B-11E1-AC70-A860A781E0D9}</OwningPayloadID>
+  <ConflictingProcesses><Process blocking="1" processType="Adobe">^Dreamweaver$</Process>
+  </ConflictingProcesses>
+<TargetLicensingType>1</TargetLicensingType><RecommendingChannels><ChannelID>AdobeDreamweaverCS6-12</ChannelID></RecommendingChannels></Manifest>

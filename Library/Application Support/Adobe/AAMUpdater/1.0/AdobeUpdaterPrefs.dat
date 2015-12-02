@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Preferences>
+<NotificationLogFile>/Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamun.log</NotificationLogFile>
+<LogLevel>2</LogLevel>
+<StartupLogFile>/Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamul.log</StartupLogFile>
+<LastDateCheck>2015-12-02T13:04:54</LastDateCheck>
+<IsScheduledTaskAdded>1</IsScheduledTaskAdded>
+<IsScheduledTaskNeeded>0</IsScheduledTaskNeeded>
+<SilentNotificationLogFile>/Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamus.log</SilentNotificationLogFile>
+<WebFeedEtag>&quot;25163-525cce039e540&quot;</WebFeedEtag>
+<WebFeedSize>151907</WebFeedSize>
+<WebFeedSeqNo>1</WebFeedSeqNo>
+<CSUVersion>6.0</CSUVersion>
+<OSVersion>10.9.3</OSVersion>
+<IsFirstRun>0</IsFirstRun>
+<ChannelsInstalled>
+<MapPrefEntry MapPrefKey="AIRForAppleIOSFlashPro12.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AcrobatXPro-10.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeAPE3.3_Mac_NoLocale">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeApplicationManager-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeBridgeCS6-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeCMapsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeCSXSExtensionsCS6-3">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeCSXSInfrastructureCS6-3">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColor-PhotoshopSpecificCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetCMYK-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetRGB-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorEUExtraSettingsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorJAExtraSettingsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorNARecommendedSettingsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorVideoProfilesCSCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDigitalPublishingCS6-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDreamweaverCS6-12">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDreamweaverCS6LangPacken_US-12">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDreamweaverWidgetBrowser-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDynamicLinkMediaServer-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDynamiclinkSupport-6">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeESTKCS6-3.8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeExtensionManagerCS6-6.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFireworksCS6-12.0.0-en_US">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFireworksCS6-12.0.0-mul">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFontsRecommended-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFontsRequired-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeHunspellLinguisticsPluginCS6-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator16-enUS">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator16-mul">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustratorCS6Support-16.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6ApplicationBaseFiles2-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6ApplicationFeatureSetFilesRoman-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6ApplicationLanguageFilesen_US-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6CommonBaseFiles-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6CommonLanguageFilesen_US-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeLinguisticsCS6-6.0.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeMediaEncoderCS6-6">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeMiniBridgeCS6-2">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeNPSPanel1.0-1.0.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePDFLibraryFilesCS6-10.9">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePhotoshopCS6-13.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePhotoshopCS6EnglishLanguagePack-13.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePhotoshopCS6Support-13.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeSwitchBoard2.0-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeToolhintsCS6-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeTypeSupportCS6-11.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeUtilitiesCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeWinSoftLinguisticsPluginCS6-1.3">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeXMPPanels-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="CSTI_CS6-3.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="CameraProfilesInstaller-7.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="FlashPro12.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="FlashPro12.0en_US">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="IdeasPluginforAICS6-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="LocalizationIdeasPluginCS6-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="PDFSettings-10.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="PDFSettings-11.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="PhotoshopCameraRaw7-7.0">1</MapPrefEntry>
+</ChannelsInstalled>
+<ChannelsEnabled>
+<MapPrefEntry MapPrefKey="AIRForAppleIOSFlashPro12.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AcrobatXPro-10.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeAPE3.3_Mac_NoLocale">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeApplicationManager-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeBridgeCS6-5.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeCMapsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeCSXSExtensionsCS6-3">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeCSXSInfrastructureCS6-3">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColor-PhotoshopSpecificCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetCMYK-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorCommonSetRGB-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorEUExtraSettingsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorJAExtraSettingsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorNARecommendedSettingsCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeColorVideoProfilesCSCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDigitalPublishingCS6-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDreamweaverCS6-12">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDreamweaverCS6LangPacken_US-12">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDreamweaverWidgetBrowser-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDynamicLinkMediaServer-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeDynamiclinkSupport-6">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeESTKCS6-3.8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeExtensionManagerCS6-6.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFireworksCS6-12.0.0-en_US">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFireworksCS6-12.0.0-mul">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFontsRecommended-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeFontsRequired-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeHunspellLinguisticsPluginCS6-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator16-enUS">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustrator16-mul">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeIllustratorCS6Support-16.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6ApplicationBaseFiles2-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6ApplicationFeatureSetFilesRoman-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6ApplicationLanguageFilesen_US-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6CommonBaseFiles-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeInDesignCS6CommonLanguageFilesen_US-8.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeLinguisticsCS6-6.0.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeMediaEncoderCS6-6">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeMiniBridgeCS6-2">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeNPSPanel1.0-1.0.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePDFLibraryFilesCS6-10.9">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePhotoshopCS6-13.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePhotoshopCS6EnglishLanguagePack-13.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobePhotoshopCS6Support-13.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeSwitchBoard2.0-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeToolhintsCS6-2.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeTypeSupportCS6-11.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeUtilitiesCS6-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeWinSoftLinguisticsPluginCS6-1.3">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="AdobeXMPPanels-4.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="CSTI_CS6-3.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="CameraProfilesInstaller-7.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="FlashPro12.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="FlashPro12.0en_US">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="IdeasPluginforAICS6-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="LocalizationIdeasPluginCS6-1.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="PDFSettings-10.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="PDFSettings-11.0">1</MapPrefEntry>
+<MapPrefEntry MapPrefKey="PhotoshopCameraRaw7-7.0">1</MapPrefEntry>
+</ChannelsEnabled>
+</Preferences>

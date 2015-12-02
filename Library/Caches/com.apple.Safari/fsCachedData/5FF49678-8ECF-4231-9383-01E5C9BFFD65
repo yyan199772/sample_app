@@ -1,0 +1,620 @@
+/*-  LAYOUT
+----------------------------------------------------------------------*/
+
+.hasTopbanner.hasBottombanner #contentdiv{
+    width:96%;
+}
+
+.hasTopbanner.hasBottombanner.hasLeftbanner #contentdiv{
+    width:74%;
+}
+
+.hasTopbanner.hasBottombanner.hasRightbanner #contentdiv{
+    width:74%;
+}
+
+.hasTopbanner.hasBottombanner.hasRightbanner.hasLeftbanner #contentdiv{
+    width:52%;
+}
+
+
+#mainmiddle{    
+    margin:0 auto;
+    max-width: 990px;
+    padding: 30px 2% 70px 2%;
+    width: 96%;
+}
+
+
+img {
+    max-width: 100%;
+    height:auto;
+    max-height:100%;
+}
+
+td > img { 
+    max-height: initial; 
+    max-width: initial; 
+} 
+
+#bodydiv{
+    margin:auto;
+}
+
+object {
+    width:100%;
+}
+
+.embedded-fsplayer div:first-child {
+    width:100% !important;
+    height:auto;
+}
+
+/*-  TOP BANNER
+----------------------------------------------------------------------*/
+#topbanner{
+    margin:0;
+    display:block;
+    max-width:100% !important;
+    padding:0;
+}
+
+
+/*-  HOMEPAGE STYLES
+------------------------------------------------
+------------------------------------------------*/
+
+
+
+/* 
+   LEFT BANNER
+----------------------------------------------------------------------*/
+#leftbanner{
+    clear: both;
+    float: left;
+    width: 22%;
+    margin:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/* 
+   RIGHT BANNER
+----------------------------------------------------------------------*/
+#rightbanner {
+    float: left;
+    width: 26%;
+    margin: 0;
+    padding-top:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*-  BOTTOM BANNER
+----------------------------------------------------------------------*/
+#bottombanner{
+    margin: 0 auto;
+    display:block;
+    max-width: 990px;
+}
+
+
+
+/*-  MEDIA QUERIES
+----------------------------------------------------------------------
+---------------------------------------------------------------------- */
+
+/* Disable iOS/WinMobile font size changes */
+@media screen and (max-width: 600px),
+screen and (max-device-width: 480px) {
+    html {
+        -ms-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+/*-  IPAD  //  TABLET  (Portrait)
+----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+@media only screen
+and (max-width : 1685px) {
+    #homeVideo {top: -180px;}
+    /*video::-webkit-media-controls-enclosure {margin-bottom: -350px !important;}*/
+}
+@media only screen
+and (max-width : 1501px) {
+    #homeVideo {top: 0; position: relative;}
+    /*video::-webkit-media-controls-enclosure {margin-bottom: -400px !important;}*/
+}
+@media only screen
+and (max-width : 1170px) {
+
+}
+
+@media only screen
+and (max-width : 1055px) {
+    .top {
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 96%;
+    }
+}
+
+@media only screen
+and (max-width : 960px) {
+    .topTitle {padding: 0;}
+    .topTitle .bannermodcontent {font-size: 40px;}
+}
+
+@media only screen
+and (max-width : 950px) {
+    .page_1 .mission {
+        width: 96%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+}
+
+
+@media only screen
+and (max-width : 768px), (max-device-width : 768px) and (max-device-width : 1024px) {
+
+.pagetype_directory #contentdiv table[cellspacing="0"] tr {
+    text-align: center;
+    width: auto;
+    display: table;
+    margin: 0 auto;
+    border: 0 none;
+}
+.pagetype_directory #contentdiv table[cellspacing="0"] td {
+    display:block;
+    width: 100%;
+    text-align: center;
+}
+.pagetype_directory #contentdiv table[cellspacing="0"] td img {display: none;}
+.pagetype_directory #contentdiv .fsDirEntry {border: 0 none !important;}
+.pagetype_directory #contentdiv .fsDirEntryName {float: none !important;}
+
+.pagetype_directory #contentdiv table[cellspacing="0"] td:nth-child(even) {margin-bottom: 20px;}
+
+.targetForm, .targetForm .elementColumn, .targetForm textarea{ width:100% !important; }
+
+.two_column, 
+.three_column, 
+.four_column {width: 100%;}
+
+.gridTable .contentElementTD {
+    display: block !important;
+    width: 100% !important;
+} /* Use display:block to stack them at w/e screen size */
+
+body {background: transparent url('../images3/mainBG.jpg') 0 0 repeat;}
+
+/*-  LAYOUT
+-----------------------------------------*/
+.hasTopbanner.hasBottombanner #contentdiv{
+    width:100%;
+}
+
+.hasTopbanner.hasBottombanner.hasLeftbanner #contentdiv{
+    width:70%;
+}
+
+.hasTopbanner.hasBottombanner.hasRightbanner #contentdiv{
+    width:70%;
+}
+
+.hasTopbanner.hasBottombanner.hasRightbanner.hasLeftbanner #contentdiv{
+    width:70%;
+}
+
+#contentdiv{
+    padding:0 3%;
+    float:none;
+    clear: both;
+    width: 100% !important;
+}
+
+
+/*-  LAYOUT - Homepage
+-----------------------------------------*/
+.topContain form[name*='userlogin'] {
+    float: none;
+    margin: 10px auto 0 auto !important;
+}
+.page_1 .topContain form[name="userlogin"] input {
+    float: left;
+    display: block;
+    margin: 0 0 5px 0;
+}
+.page_1 .topContain form[name="userlogin"] .fsLoginPass {
+    margin-bottom: 10px;
+}
+
+.page_1 h1 {font-size: 50px;}
+
+.page_1 #leftbanner {
+    width: 100% !important;
+    padding: 0;
+    margin-top: 0 !important;
+}
+
+.page_1 #leftbanner .mission {
+    margin: 20px 3% 0 3% !important;
+    padding:0 0 30px 0 !important;
+    border-bottom: 1px solid #373637 !important;
+}
+
+.page_1 #contentdiv, .page_1 .athInfo {display: none !important;}
+
+.page_1 #rightbanner {padding: 0 3% !important;}
+
+.page_1 #rightbanner > div {
+    padding: 0 !important;
+    border: 0 none !important;
+}
+.page_1 .homeNews {
+    width: 100%;
+    margin-right: 0 !important;
+}
+.page_1 .homeCal {
+    width: 100%;
+    margin-top: 30px !important;
+}
+
+.infoCard {
+    max-width: 215px;
+    width: 44%;
+    margin: 45px 0 50px 0 !important;
+    padding: 15px 2%;
+}
+.infoCard:first-child {margin-right: 4% !important;}
+
+.page_1 #rightbanner .divider {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #373637 !important;
+    margin-bottom: 30px !important;
+}
+
+.page_1 .homeAth {
+    width: 100%;
+    margin-right: 0 !important;
+}
+
+/*-  TOP BANNER
+-----------------------------------------*/
+#topcontainer, #mainmiddle {
+    float: left;
+    max-width: inherit;
+    width: 33%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+#topcontainer {
+    background: url('../images3/topBG.jpg') 0 0 repeat;
+    padding: 2%; 
+    -webkit-box-shadow:  0px 0px 5px 1px rgba(000, 000, 000, 75);
+    box-shadow:  0px 0px 5px 1px rgba(000, 000, 000, 75);
+    float: left;
+}
+.page_1 #topcontainer.ipad {
+    position: fixed;
+    height: 100%;
+}
+.page_1 #topbanner {height: 100%;}
+
+.top {background: transparent;}
+
+.translate {padding: 0;}
+.translate #google_translate_element {float: none;}
+.goog-te-gadget-simple {
+    background-size: 100% 100% !important;
+    max-width: 214px;
+    width: 100%;
+}
+
+.top .logo {
+    float: none;
+    margin: 17px auto 0 auto !important;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #180910;
+    box-shadow: 0 1px 1px 0px #341a26;
+}
+
+.top .topContain ul {margin: 5px auto 0 auto;}
+.top .topContain ul li:nth-child(even) {display: none;}
+.top .topContain ul li {padding: 2px 8px;}
+.top .topContain ul li:last-child {padding-right: 8px;}
+.top .topContain ul li a {font-size: 13px;}
+
+.topContain form {
+    display: table;
+    float: none;
+    margin: 10px auto 0 auto;
+    max-width: 174px;
+    width: 100%;
+}
+
+.topContain .fsLoginPass {
+    margin-left: 0;
+    margin-top: 3px;
+}
+.topContain .fsLoginSubmit {margin-top: 3px;}
+
+.mainNav {
+    padding: 0;
+    box-shadow: none;
+    border-top: 1px solid #1d0c14;
+    border-bottom: 1px solid #3c1e2c;
+}
+.mainNav ul li {
+    margin: 0;
+    width: 100%;
+}
+.mainNav ul li a {
+    padding: 8px 0;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #1d0c13;
+    border-top: 1px solid #3c1e2c;
+}
+
+.topTitle {display: none;}
+
+.hier-tools {background: transparent;}
+.hier-tools .bannermodcontent div[id*="content"] {
+    display: table;
+    margin: 10px auto 0 auto;
+}
+
+/*MIDDLE*/
+#midcontainer {
+    width: 67%;
+    margin-left: 33%;
+}
+#mainmiddle {
+    max-width: inherit;
+    width: 100%;
+    padding: 0;
+}
+
+/*- LEFT BANNER
+-----------------------------------------*/
+#leftbanner{
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 0 3%;
+    margin: 20px 0 30px 0;
+    border-right: 0 none;
+}
+
+.leftNav {margin-right: 0 !important;}
+
+/*- RIGHT BANNER
+-----------------------------------------*/
+#rightbanner{
+    float:none;
+    width: 100% !important;
+    clear:both;
+    padding:0 3%;
+    margin:0;
+    border-left: 0 none;
+}
+
+#rightbanner > div {
+    margin: 0 !important;
+    padding: 20px 0;
+    border-top: 1px solid #353436;
+}
+
+#rightbanner .bannermodtitle {
+    background: transparent;
+    padding: 8px 0 6px 0;
+}
+#rightbanner .bannermodtitle a {color: #8e6b7b;}
+#rightbanner .bannermodtd {
+    border: 0 none;
+    padding: 0 !important;
+}
+
+#rightbanner .button1, #rightbanner .button2 {
+    margin: 15px 0 !important;
+    border: 0 none;
+    padding: 0;
+}
+#rightbanner .button1 .bannermodtitle, #rightbanner .button2 .bannermodtitle {display: none;}
+#rightbanner > .button {
+    margin: 0 !important;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #353436 !important;
+}
+#rightbanner > .button ~ .button {
+    margin: 15px 0 !important;
+    border: 0 none !important;
+    padding: 0 !important;
+}
+
+
+#rightbanner .barGraph, #rightbanner .contributeBtn {
+    border: 0 none;
+    padding: 0;
+}
+
+/*- BOTTOM BANNER
+-----------------------------------------*/
+#bottombanner {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.info {float: none;}
+.info br {display: block;}
+.info span {display: none !important;}
+.info a {
+    display: inline-block;
+    margin: 10px 0 0 0;
+}
+
+
+.mashup {
+    float: none;
+    margin: 20px auto 10px auto !important;
+    max-width: 180px;
+}
+.mashup a {
+    display: block;
+}
+
+
+}
+
+
+
+
+/*-  IPHONE  //  MOBILE (Portrait + Landscape)
+----------------------------------------------------------------------
+---------------------------------------------------------------------- */
+
+@media only screen
+and (max-width : 640px), (min-device-width : 320px) and (max-device-width : 480px) {
+ 
+body {background: #341522;}
+
+div[aria-labelledby="ui-dialog-title-pagePopModal"] {
+    width: 300px !important;
+    margin-left: 50%;
+    left: -150px !important;
+}
+#pagePopModal {max-height: inherit !important;}
+.pagePopSlide, #pagePopModal .sliderContainer, #pagePopModal #loopedSlider {width: 260px !important;}
+
+/*-  LAYOUT
+-----------------------------------------*/
+#contentdiv form{
+     width:auto;
+}
+
+
+ /*-  LAYOUT - Homepage
+-----------------------------------------*/
+.page_1 #topcontainer.ipad {
+    position: relative;
+    height: 100%;
+}
+
+.page_1 #mainmiddle {padding-bottom: 30px !important;}
+
+.page_1 h1 {
+    font-family: 'proxima-nova-n3', proxima-nova, sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1em;
+    margin: 0 0 .5em 0;
+    text-align: left;
+    font-size: 30px;
+}
+
+.page_1 #leftbanner .mission {padding: 0 0 20px 0 !important;}
+
+.page_1 #contentdiv{
+    display: block !important;
+    border: 0 none !important;
+    width: 94% !important;
+    padding: 35px 0 10px 0 !important;
+    border-bottom: 1px solid #373637 !important;
+}
+
+#contentdiv #text2 a {
+    width: 37.4%;
+    margin: 0 6% 30px 6%;
+}
+
+.page_1 #rightbanner {padding-top: 20px !important;}
+
+.page_1 .infoCard {
+    margin: 30px 0 0 0 !important;
+    max-width: inherit;
+    width: 96%;
+}
+
+.page_1 .listonly_block, .page_1 #newscon {
+    margin-top: 0px;
+    padding-bottom: 0;
+}
+
+.page_1 #rightbanner .divider {
+    margin-bottom: 15px !important;
+    margin-top: 35px !important;
+}
+
+/*-  TOP BANNER
+-----------------------------------------*/
+#topcontainer {position: relative;}
+
+#nav_menus, #ql_menu, .topPhoto, .translate, .top, .hier-tools  {display:none !important;}
+
+#topcontainer, #midcontainer, #leftbanner, #rightbanner, #mainmiddle {
+    float: none;
+    width: 100% !important;
+}
+#topcontainer {
+    background: url('../images3/topBG.jpg') 0 0 repeat;
+    box-shadow: none;
+    padding: 2% 3%;
+}
+
+#midcontainer {margin-left: 0;}
+#contentdiv {
+    width: 100% !important;
+    padding: 0 3%;
+}
+
+.mobileLogo {
+    display: block;
+    float: left;
+}
+.mobileLinks {
+    display: block;
+}
+
+.topTitle {
+    background: none;
+    clear: both;
+    margin: 0;
+    height: 1px;
+    position: static;
+    overflow: hidden;
+    display: block;
+}
+
+/*-  LEFT BANNER
+-----------------------------------------*/
+#leftbanner {
+    margin: 0;
+    padding: 20px 3% 30px 3%;
+}
+
+/*-  RIGHT BANNER
+-----------------------------------------*/
+#rightbanner .contributeBtn {margin-bottom: 50px !important;}
+
+/*-  BOTTOM BANNER
+-----------------------------------------*/
+#bottombanner {padding: 0;}
+
+}
+
+@media only screen
+and (min-device-width : 320px) and (max-device-width : 480px) {
+    #contentdiv #text2 a {
+        width: 47.4%;
+        margin: 0 0 30px 0;
+    }
+    #contentdiv #text2 a:nth-child(odd) {margin-right: 3.9%;}
+}
+
+ 

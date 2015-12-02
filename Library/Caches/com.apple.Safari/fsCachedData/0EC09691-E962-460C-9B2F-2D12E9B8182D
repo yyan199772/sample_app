@@ -1,0 +1,339 @@
+basepath = '';
+
+/////////////////////////////////////////////////////////////////////
+//For determining if the Quiz Manager pop-up is already loaded
+
+function quizMgrConfig() {
+	window.opener.quizWinClosed = false;
+	// alert("fs_global_admin.js:" + window.opener.quizWinClosed);
+	window.onbeforeunload = setQuizMgrClosed;
+}
+function setQuizMgrClosed() {
+	window.opener.quizWinClosed = true;
+}
+
+if(window.opener != null && window.opener.quizWinClosed != null) {
+	addOnloadEvent(quizMgrConfig);
+}
+
+/////////////////////////////////////////////////////////////////////
+
+// Use this to add a function to the onload event
+function addOnloadEvent(fnc){
+  if ( typeof window.addEventListener != "undefined" )
+    window.addEventListener( "load", fnc, false );
+  else if ( typeof window.attachEvent != "undefined" ) {
+    window.attachEvent( "onload", fnc );
+  }
+  else {
+    if ( window.onload != null ) {
+      var oldOnload = window.onload;
+      window.onload = function ( e ) {
+        oldOnload( e );
+        window[fnc]();
+      };
+    }
+    else
+      window.onload = fnc;
+  }
+}
+
+function popUp(url,w,h,windowname) {
+	if (windowname == undefined){windowname = 'name'};
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=yes,scrollbars=yes,resizable=yes,width='+w+',height='+h+'';
+	mypopup = window.open(url,windowname, properties);
+	mypopup.focus();
+}
+
+function loadHelpPanel () {
+	helpPanel = new YAHOO.widget.Panel("helpPanel");
+	helpPanel.render(document.body);
+
+	helpPanel.cfg.setProperty('visible',false);
+	helpPanel.cfg.setProperty('width','300px');
+	helpPanel.cfg.setProperty('constraintoviewport',true);
+	helpPanel.cfg.setProperty('modal',true);
+	helpPanel.cfg.setProperty('zIndex',900);
+}
+
+
+function showHelpPanel(ctxt,file) {
+
+	var callback =
+	{
+	  success: function(o) {
+		//body = o.responseText;
+		helpPanel.setHeader('finalsite help');
+		helpPanel.setBody(o.responseText);
+		//helpPanel.setFooter('<a href="http://support.finalsite.com/">Visit the knowledgebase</a>');
+
+		helpPanel.cfg.setProperty('context',[ctxt,'tr','br']);
+		helpPanel.render();
+		helpPanel.show();
+
+		},
+	  failure: function(o) {alert("A help file could not be found.") }
+	}
+
+	transaction = YAHOO.util.Connect.asyncRequest('GET', file, callback, null);
+
+}
+
+function selectFile(field,fileType,formName) {
+	editorCall = false;
+	holdField = field;
+	if (fileType == undefined){fileType = 'getimage'};
+	if (formName == undefined){formName = 'update'};
+	holdFormName = formName;
+	currentValue = document.forms[formName].elements[field].value;
+	var url = relativeBasePath + "cf_filemanager/adminfiles.cfm?do=refresh&opener=" + fileType + "&current=" + currentValue;
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=750,height=550';
+	imgpop = window.open(url,'popImage', properties);
+	imgpop.focus();
+}
+
+function returnFile(filePath, name) {
+	if (editorCall == true) {
+		editorReturnImage(filePath, name);
+	}
+	else {
+		document.forms[holdFormName].elements[holdField].value = filePath;
+		if (document.forms[holdFormName].elements[holdField+'_display'] != undefined) {
+			document.forms[holdFormName].elements[holdField+'_display'].value = filePath;
+		}
+	}
+}
+
+function clearFile(field,formName) {
+	if (formName == undefined){formName = 'update'};
+	document.forms[formName].elements[field].value = '';
+	document.forms[formName].elements[field+'_display'].value = '';
+}
+
+function viewFile(field,formName) {
+	if (formName == undefined){formName = 'update'};
+	currentValue = document.forms[formName].elements[field].value;
+	if(currentValue != "") {
+		var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500';
+		if (currentValue.indexOf('file.cfm?') != -1) {pathprefix = ''}
+		else {pathprefix = 'uploaded/'}
+		imagesrc = relativeBasePath +pathprefix + currentValue;
+		imagepopup = window.open(imagesrc,'name', properties);
+		imagepopup.focus();
+	}
+	else{alert('No image has been selected.')}
+}
+
+function selectPage(field,formName) {
+	holdPageField = field;
+	if (formName == undefined){formName = 'update'};
+	holdPageFormName = formName;
+	if (document.forms[formName].elements[field] == undefined) {value = ''}
+	else {value = document.forms[formName].elements[field].value}
+	url = relativeBasePath + "adminpageselect.cfm?do=refresh&current="+field+"&value="+value;
+	if (typeof adminpageid != 'undefined') {url = url + '&id=' + adminpageid};
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=440,height=400';
+	imgpop = window.open(url,'popImage', properties);
+	imgpop.focus();
+}
+
+function returnPage(thepageid,thepagename,thepagelanguage) {
+	if (thepageid != null) {
+		document.forms[holdPageFormName].elements[holdPageField].value = thepageid;
+		document.forms[holdPageFormName].elements[holdPageField+'_display'].value = unescape(thepagename);
+		document.forms[holdPageFormName].elements[holdPageField].onchange();
+	}
+}
+
+function clearPage(field,formName) {
+	if (formName == undefined){formName = 'update'};
+	document.forms[formName].elements[field].value = '';
+	document.forms[formName].elements[field+'_display'].value = '';
+	document.forms[formName].elements[field].onchange();
+}
+
+function viewPage(field,formName){
+	if (formName == undefined){formName = 'update'};
+	currentValue = document.forms[formName].elements[field].value;
+	if(currentValue != "") {
+		var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500';
+		url = '../page.cfm?p=' + currentValue;
+		pagepopup = window.open(url,'name', properties);
+		pagepopup.focus();
+	}
+	else{alert('No page has been selected.   ')}
+}
+
+// --- Form Picker Functions --- \\
+var formDataField = '';
+var formDisplayField = '';
+
+// popFormPicker
+// arg1 = return field name, arg2 = url prefix for picker path, arg3 = form type
+function popFormPicker(){
+	var urlPrefix = '', formType = 'forms';
+	var returnField = arguments[0];
+	if(arguments[1] != undefined){
+		urlPrefix = arguments[1];
+	}
+	if(arguments[2] != undefined){
+		formType = arguments[2];
+	}
+
+	formDataField = arguments[0];
+	formDisplayField = arguments[0] + '_display';
+
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=650,height=500';
+	var	url = urlPrefix + 'cf_'+formType+'/adminplugin_pop.cfm';
+	formpickerPopup = window.open(url,'formPickerPopup',properties);
+}
+
+// Called from Pop-up return, updates the form fields in the parent window
+function returnFormValues(){
+	var formName = arguments[0];
+	var formID = arguments[1];
+
+	// Update form fields
+	if(document.getElementById(formDataField)){
+		document.getElementById(formDataField).value = formID;
+	}
+	if(document.getElementById(formDisplayField)){
+		document.getElementById(formDisplayField).value = formName;
+	}
+}
+
+// clearFormPicker
+// empties the input fields
+// arg1 = return field name
+function clearFormPicker(){
+	var returnField = arguments[0];
+	formDataField = arguments[0];
+	formDisplayField = arguments[0] + '_display';
+
+	document.getElementById(formDataField).value = '';
+	document.getElementById(formDisplayField).value = '-- select a form --';
+}
+
+// Editor functions
+function editpopUp(id,text,layout,bgcolor,path,width){
+	if (path == undefined){path = ''}
+	idString = '';
+	if (id != 'undefined') {idString = '&id='+id};
+	var url = path + "editor/tinymce/popup.cfm?redactorSafe&whichelement="+text+idString;
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=650,height=500';
+	editpop = window.open(url,'mceEditor', properties);
+	if (editpop == null) {alert('Sorry, but we have noticed that your popup-blocker has disabled a window that provides application functionality. You will need to disable popup blocking on this site in order to fully utilize this tool.');}
+	else {editpop.focus();}
+}
+
+function editorFileBrowser(field_name, url, type, win) {
+	// This is where you insert your custom filebrowser logic
+	// alert("Example of filebrowser callback: field_name: " + field_name + ", url: " + url + ", type: " + type);
+	which_field_name = field_name;
+	holdField = field_name;
+	which_win = win;
+	which_type = type;
+	if (type == 'image') {theOpener = 'getimage'; pathprefix = 'uploaded/';}
+	else {theOpener = 'editor', pathprefix = '';};
+	editorCall = true;
+
+	if(typeof baseURL === 'undefined')
+		baseURL = '../../../../../..'
+
+	popUrl = baseURL+"/cf_filemanager/adminfiles.cfm?do=refresh&opener="+theOpener;
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=750,height=550';
+	filelinksel = window.open(popUrl,'popFilelink', properties);
+	if (filelinksel == null) {alert(tinyMCELang['lang_popup_blocked']);}
+	else {filelinksel.focus();}
+}
+
+function editorReturnImage(which_image) {
+	if (which_image != '') {
+		if (typeof pathprefix === 'undefined') { pathprefix = '' };
+		if (which_image.indexOf('file.cfm?') != -1) {pathprefix = ''};
+		if( typeof which_win == 'object' ) {
+			which_win.document.forms[0].elements[which_field_name].value = pathprefix+which_image;
+		} else {
+			// for media manager file import (which_win was undefined for those calls)
+			$j('input##importfm_file').val(pathprefix+which_image);
+			$j('input##importfm_file_display').val(pathprefix+which_image);
+		}
+		if (holdField == 'src' && which_type == 'image') {
+			which_win.ImageDialog.showPreviewImage(pathprefix+which_image);
+		}
+	}
+}
+
+function editorUrlConverter(url, node, on_save) {
+	//leave a tags alone
+	if(node == 'a' || (typeof node == "object" && "nodeName" in node && node.nodeName === 'A')) return url;
+
+	if (url.indexOf(siteurl) == 0) {
+		url = url.replace(siteurl+'/','');
+		url = url.replace(siteurl,'');
+	}
+	if (url.indexOf('http://') == -1) {
+		url = url.replace('/#','#');
+	}
+	return url;
+}
+
+function selectColor(field,formName) {
+	holdColorField = field;
+	if (formName == undefined){formName = 'update'};
+	holdColorFormName = formName;
+	thisValue = document.forms[formName].elements[field].value;
+	var url = relativeBasePath + "editor/colorcube.cfm?thisvalue="+thisValue;
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=yes,scrollbars=no,resizable=yes,width=400,height=280';
+	colorpop = window.open(url,'selColor', properties);
+	colorpop.focus();
+}
+
+function returnColor(theColor) {
+	document.forms[holdColorFormName].elements[holdColorField].value = theColor;
+	// If using <DOCTYPE HTML> (HTML 5), the leading hash symbol is required
+	document.getElementById(holdColorField+'_preview').style.backgroundColor = '#' +theColor;
+}
+
+function valuevalidation(entered, min, max, alertbox, datatype) {
+	// Value Validation by Henrik Petersen / NetKontoret
+	// Explained at www.echoecho.com/jsforms.htm
+	// Please do not remove this line and the two lines above.
+	with (entered)
+	{
+	checkvalue=parseFloat(value);
+	if (datatype)
+	{smalldatatype=datatype.toLowerCase();
+	if (smalldatatype.charAt(0)=="i") {checkvalue=parseInt(value)};
+	}
+	if ((parseFloat(min)==min && checkvalue<min) || (parseFloat(max)==max && checkvalue>max) || value!=checkvalue)
+	{if (alertbox!="") {alert(alertbox);} return false;}
+	else {return true;}
+	}
+}
+// ----------------------------------------------
+// Cookie functions
+// ----------------------------------------------
+
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = ";expires="+date.toGMTString();
+  }
+  else expires = "";
+  document.cookie = name+"="+value+expires+";path=/;";
+}
+
+// ----------------------------------------------
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}

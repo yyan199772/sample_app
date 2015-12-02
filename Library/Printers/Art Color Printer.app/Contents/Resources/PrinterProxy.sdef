@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary xmlns:xi="http://www.w3.org/2001/XInclude">
+	<xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>	
+	<suite name="Printer Proxy Suite" code="ppxy" description="Terms and Events for controlling printer and their queues of jobs">
+		<class name="printer" plural="printers" code="prnt" description="A printer">
+			<cocoa class="PMProxyPrinter" />
+			<property type="text" name="name" code="pnam" description="the name that identifies this printer on the network">
+				<cocoa key="printerName" />
+			</property>
+			<property type="text" name="status description" code="stad" access="r" description="a description of the activity, if any, currently being performed by this printer">
+				<cocoa key="printerStateString" />
+			</property>
+			<property type="boolean" name="printer paused" code="ppoz" description="whether this printer is paused and whether to resume / pause the printer">
+				<cocoa key="isStopped" />
+			</property>
+			<property type="boolean" name="include completed jobs" code="icpl" description="whether to include completed jobs in the member list">
+				<cocoa key="showCompletedJobs" />
+			</property>
+			<element type="job" access="r">
+				<cocoa key="pendingJobs" />
+			</element>
+		</class>
+		<class name="job" plural="jobs" code="pjob" description="A print job">
+			<cocoa class="PMProxyJob" />
+			<property type="text" name="priority" code="prio" access="r" description="the order of precedence of this job in the print queue">
+				<cocoa key="priority" />
+			</property>
+			<property type="text" name="name" code="pnam" access="r" description="the name that identifies this job in the print queue">
+				<cocoa key="name" />
+			</property>
+			<property type="text" name="user name" code="pusr" access="r" description="the user who submitted this job into the print queue">
+				<cocoa key="user" />
+			</property>
+			<property type="text" name="submit time" code="ptme" access="r" description="the time when this job was submitted">
+				<cocoa key="when" />
+			</property>
+			<property type="text" name="printing application" code="papl" access="r" description="the application where this job was printed from">
+				<cocoa key="applicationName" />
+			</property>
+			<property type="text" name="status" code="stat" access="r" description="a description of the activity, if any, currently being performed on this job">
+				<cocoa key="stateStr" />
+			</property>
+		</class>
+		<class-extension extends="application">
+			<property type="printer" name="represented printer" code="rprn" description="the printer represented by this printer proxy">
+				<cocoa key="printer" />
+			</property>
+		</class-extension>
+	</suite>
+</dictionary>

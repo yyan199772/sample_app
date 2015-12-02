@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AlarmsDisabled</key>
+	<false/>
+	<key>Checked</key>
+	<integer>1</integer>
+	<key>Color</key>
+	<string>#0E61B9FF</string>
+	<key>Editable</key>
+	<true/>
+	<key>Enabled</key>
+	<true/>
+	<key>EventContainer</key>
+	<true/>
+	<key>Key</key>
+	<string>DED7E9A4-F5C6-4EB6-B870-2B81C059AD7F</string>
+	<key>Order</key>
+	<integer>1</integer>
+	<key>TaskContainer</key>
+	<false/>
+	<key>Title</key>
+	<string>Home</string>
+	<key>Type</key>
+	<string>Local</string>
+</dict>
+</plist>

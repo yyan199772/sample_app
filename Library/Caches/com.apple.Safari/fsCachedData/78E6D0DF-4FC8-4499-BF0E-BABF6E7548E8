@@ -1,0 +1,201 @@
+<style type="text/css"></style>
+		<div id="div_281" style=" " class=" ">
+			
+		<div id="div_1666" style=" " class="twothirds_column ">
+			
+		<div id="div_282" style=" " class="portal_column ">
+			
+            <div id="e_285" data-eid="285" style=" " class="portlet fsEl_My_Groups docked">
+                
+                    <div id="h_285" class="portlet_header " style="">
+                        <div class="portlet_title">My Classes</div>
+						<div class="portlet_actions_container">
+	                        
+		                        	<img src="http://newimages.finalsite.com/151103/images/toggle_arrow_down.png" alt="Collapse" title="Collapse"
+		                        		class="portlet_actions portlet_collapse" onclick="togglePortlet(this);">
+		                        							
+						</div>
+	                    <div class="floatfix"></div>
+                    </div>
+                
+                <div id="c_285" class="portlet_content c_285_395" style=" ">
+		
+    		<script type="text/javascript">
+    			
+    				$j('<style type="text/css">.RoleGroupHeader {color: #234372;}</style>').appendTo('head');
+    			
+    		</script>
+    	
+				<div style="padding: 5px;">Loading groups...</div>
+				
+		<script type="text/javascript">
+		
+			loadPortletContent(285,'My Classes'
+				
+				, false
+				
+				);
+		
+		</script>
+	
+			<script type="text/javascript">
+				$j(function(){fsElements.addElement(285,'myGroups');});
+			</script>	
+		
+				</div>
+			</div>
+        
+            <div id="e_286" data-eid="286" style=" " class="portlet fsEl_Calendar ">
+                
+                    <div id="h_286" class="portlet_header hand_cursor " style="">
+                        <div class="portlet_title">School Events</div>
+						<div class="portlet_actions_container">
+	                        
+		                        	<img src="http://newimages.finalsite.com/151103/images/toggle_arrow_down.png" alt="Collapse" title="Collapse"
+		                        		class="portlet_actions portlet_collapse" onclick="togglePortlet(this);">
+		                        
+	            				<img src="http://newimages.finalsite.com/151103/images/famfam/arrow_refresh.png" alt="Refresh" title="Refresh" class="portlet_actions portlet_refresh"
+									onclick="refreshPortlet(286);">
+	            										
+						</div>
+	                    <div class="floatfix"></div>
+                    </div>
+                
+                <div id="c_286" class="portlet_content c_286_932" style=" ">
+		
+			<script type="text/javascript">
+				$j(function(){
+					fsElements.addElement(286,'calendar');
+					var hmm = function(){
+						$j('#h_286').find('img[src$="disk.png"]').remove();
+					};
+					setTimeout(hmm,5);
+				});
+			</script>
+			<div style="padding: 5px;">Loading events...</div>
+			
+    		<script type="text/javascript">
+    			
+    				$j('<link rel="stylesheet" href="cf_calendar/scripts/displaybanner.css.cfm?css_id=8&por_id=286" type="text/css" />').appendTo('head');
+    			
+    		</script>
+    	
+    		<script type="text/javascript">
+    			
+    				$j('<link rel="stylesheet" href="http://newcss.finalsite.com/151103/css/calendar/structure.css" type="text/css" />').appendTo('head');
+    			
+    		</script>
+    	
+		<script type="text/javascript">
+		
+			loadPortletContent(286,'School Events'
+				
+				, false
+				
+				);
+		
+		</script>
+	
+				</div>
+			</div>
+        
+		</div>
+		
+		<div id="div_1667" style=" " class=" ">
+			
+		<div id="div_284" style=" " class="portal_column two_column ">
+			
+		</div>
+		
+		<div id="div_1665" style=" " class="portal_column two_column ">
+			
+		</div>
+		
+		</div>
+		
+		</div>
+		
+		<div id="div_283" style=" " class="portal_column three_column ">
+			
+            <div id="e_389" data-eid="389" style=" " class="portlet fsEl_Content docked">
+                
+                    <div id="h_389" class="portlet_header " style="">
+                        <div class="portlet_title">Email</div>
+						<div class="portlet_actions_container">
+	                        
+		                        	<img src="http://newimages.finalsite.com/151103/images/toggle_arrow_left.png" alt="Expand" title="Expand"
+		                        		class="portlet_actions portlet_collapse" onclick="togglePortlet(this);">
+		                        							
+						</div>
+	                    <div class="floatfix"></div>
+                    </div>
+                
+                <div id="c_389" class="portlet_content c_389_121" style=" display:none;">
+		
+			<div style="margin: 5px">
+				<p><a target="_blank" href="https://mail.perkiomen.org/owa/auth/logon.aspx?replaceCurrent=1&amp;url=https%3a%2f%2fmail.perkiomen.org%2fowa%2f"><img style="display: block; margin-left: auto; margin-right: auto;" src="uploaded/WEBSITE2012/BUTTONS/NEW_BUTTONS/email-icon-2.png" height="71" width="100"></a></p>
+			</div>
+		
+				</div>
+			</div>
+        
+            <div id="e_372" data-eid="372" style=" " class="portlet fsEl_Activity_Stream ">
+                
+                    <div id="h_372" class="portlet_header hand_cursor " style="">
+                        <div class="portlet_title">Activity Stream</div>
+						<div class="portlet_actions_container">
+	                        
+		                        	<img src="http://newimages.finalsite.com/151103/images/toggle_arrow_down.png" alt="Collapse" title="Collapse"
+		                        		class="portlet_actions portlet_collapse" onclick="togglePortlet(this);">
+		                        
+	            				<img src="http://newimages.finalsite.com/151103/images/famfam/arrow_refresh.png" alt="Refresh" title="Refresh" class="portlet_actions portlet_refresh"
+									onclick="refreshPortlet(372);">
+	            										
+						</div>
+	                    <div class="floatfix"></div>
+                    </div>
+                
+                <div id="c_372" class="portlet_content c_372_167" style=" ">
+		
+				<div style="padding: 5px;">Loading activity stream...</div>
+				
+		<script type="text/javascript">
+		
+			loadPortletContent(372,'Activity Stream'
+				
+				, false
+				
+				);
+		
+		</script>
+	
+				</div>
+			</div>
+        
+		</div>
+		
+    			<div class="floatfix"></div>
+    		
+			<script type="text/javascript">
+			//<![CDATA[
+				$j(function(){initSortable(null, "#div_281");});
+			//]]>
+			</script>
+		
+		</div>
+		
+			<script type="text/javascript">
+				$j(".portal_column").dequeue("ajax");
+			</script>	
+		
+				<script type="text/javascript" src="http://newjs.finalsite.com/151103/javascript/yui/utilities/utilities.js"></script>
+			
+			<script type="text/javascript">
+				var relativeBasePath = '';
+				var siteurl = 'http://www.perkiomen.org';
+				var siteSSLurl = 'https://www.perkiomen.org';
+				var baseurl = '';
+				
+				$j(function(){ fsElements.addElement(372,'activityStream',{i:372});}); 
+			</script>
+		

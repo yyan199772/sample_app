@@ -1,0 +1,251 @@
+if(typeof(dropbox_basepath) == "undefined"){
+	dropbox_basepath = '';
+}
+
+// onready
+$j(function(){
+	// MODALS
+	/* deprecated?
+	$j("body").append('<div id="archive-confirm"><p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>This dropbox will be archived and new submissions will not be allowed. Are you sure?</p></div>');
+	$j("#archive-confirm").dialog({
+		width: 250,
+		modal: true,
+		autoOpen: false,
+		title: 'Confirm',
+		buttons: {
+			'Archive Dropbox': function() {
+				$j(this).dialog('close');
+			},
+			Cancel: function() {
+				$j(this).dialog('close');
+			}
+		}
+	});
+	
+	$j("body").append('<div id="unarchive-confirm"><p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>This dropbox will be unarchived. Are you sure?</p></div>');
+	$j("#unarchive-confirm").dialog({
+		width: 250,
+		modal: true,
+		autoOpen: false,
+		title: 'Confirm',
+		buttons: {
+			'Unarchive Dropbox': function() {
+				$j(this).dialog('close');
+			},
+			Cancel: function() {
+				$j(this).dialog('close');
+			}
+		}
+	}); */
+	
+	var delete_msg = '<div id="delete-confirm"><p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>';
+	delete_msg += 'Deleting this assignment will remove the assignment from the calendar and delete submissions, including files.  <strong>This data will be unrecoverable.</strong></p>';
+	delete_msg += '<p>You can delete only the dropbox and leave the assignment on the calendar by editing the assignment.</p></div>';
+	$j("body").append(delete_msg);
+	try {
+		$j("#delete-confirm").dialog({
+			width: 450,
+			modal: true,
+			autoOpen: false,
+			title: 'Confirm',
+			buttons: {
+				'YES, Delete Assignment': function() {
+					$j.post(dropbox_basepath+"cf_calendar/ajaxhandler.cfm", { rem_occurId: $j(this).data('rem_occurId') },
+						function(data){
+							//alert("Data Loaded: " + data);
+							$j(this).dialog('close');
+							window.location.reload();
+						});
+				},
+				'Edit Assignment': function() {
+					editDropbox($j(this).data('eventId'));
+					$j(this).dialog('close');
+				},
+				Cancel: function() {
+					$j(this).removeData('eventId');
+					$j(this).removeData('rem_occurId');
+					$j(this).dialog('close');
+				}
+			}
+		});
+	}
+	catch (error) {
+		$j("#delete-confirm").remove();
+	}
+	
+	var publish_msg = '<div id="publish-confirm"><p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>';
+	publish_msg += 'Are you sure you want to publish this assignment?</p>';
+	publish_msg += '</div>';
+	$j("body").append(publish_msg);
+	try {
+		$j("#publish-confirm").dialog({
+			width: 450,
+			modal: true,
+			autoOpen: false,
+			title: 'Confirm',
+			buttons: {
+				'YES, Publish Assignment': function() {
+					$j.post(dropbox_basepath+"cf_calendar/ajaxhandler.cfm", { pubId: $j(this).data('occurId') },
+						function(data){
+							//alert("Data Loaded: " + data);
+							$j(this).dialog('close');
+							window.location.reload();
+						});
+				},
+				Cancel: function() {
+					$j(this).removeData('eventId');
+					$j(this).dialog('close');
+				}
+			}
+		});
+	}
+	catch (error) {
+		$j("#publish-confirm").remove();
+	}
+	
+	var loading_msg = '<div id="dialog-loading"><div id="loadingmsg"></div><div><img src="'+dropbox_basepath+'images/loadingbar.gif" alt="loading" border="0" title="Loading..."></div></div>';
+	$j("body").append(loading_msg);
+	try {
+		$j("#dialog-loading").dialog({
+			width: 450,
+			modal: true,
+			autoOpen: false,
+			title: 'Loading...'
+			}
+		);
+	}
+	catch (error) {
+		$j("#dialog-loading").remove();
+	}
+
+});
+
+function popDropboxMngr(){
+	var url = 'extensions/includes/dropbox/plugin_dropbox_manager.cfm';
+	
+	if(arguments[0]){
+		url += '?pgid='+arguments[0];
+	}
+	if(arguments[2]){
+		if(arguments[0]){
+			url += '&';
+		} else { url += '?'; }
+		url += 'vm=610';
+	}
+	if(arguments[3]){
+		url += '&viewdb='+arguments[3];
+	}
+	if(arguments[1]){
+		url += '#'+arguments[1];
+	}
+	
+	var dropboxwin = window.open(url, 'dropboxMngr', 'height=550,width=600,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes');
+	dropboxwin.focus();
+}
+
+
+// This function exists in fs_global.js also.
+// Check if defined before duplicating it.
+if(typeof popDropboxUpload != 'function') {
+	function popDropboxUpload(pageId, occurId){
+		var url = 'extensions/includes/dropbox/dropbox_upload.cfm';
+		if(window.location.href.indexOf('extensions/includes/dropbox') != -1){
+			url = 'dropbox_upload.cfm';
+		}
+		
+		url += '?pageId=' + pageId;
+		url += '&occurId=' + occurId;
+		
+		if(arguments[2]){
+			url += '#submissions';
+		}
+		
+		var dropboxup = window.open(url, 'dropboxUpload', 'height=550,width=425,status=no,toolbar=no,menubar=no,location=no,scrollbars=yes');
+		dropboxup.focus();
+	}
+}
+
+
+function newDropbox(eid){
+	var url = 'cf_calendar/admin.cfm?eventid=0&eventType=assignment';
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=900,height=620';
+	
+	if(window.location.href.indexOf('page.cfm') != -1){
+		url = '' + url;
+	} else {
+		url = '../../../' + url;
+	}
+	
+	if(arguments[1]){
+		url += arguments[1];
+	}
+	
+	pagecalpop = window.open(url,'pagecalpop',properties);
+	pagecalpop.focus();
+}
+function editDropbox(eid){
+	var url = 'cf_calendar/admin.cfm?eventid='+eid;
+	var properties = 'toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=900,height=620';
+	
+	if(window.location.href.indexOf('page.cfm') != -1){
+		url = '' + url;
+	} else {
+		url = '../../../' + url;
+	}
+	
+	if(arguments[1]){
+		url += arguments[1];
+	}
+	
+	pagecalpop = window.open(url,'pagecalpop',properties);
+	pagecalpop.focus();
+}
+
+function deleteAssignment(eventId, occurId){
+	//Set up data for user's action 
+	$j("#delete-confirm").data("eventId", eventId);
+	$j("#delete-confirm").data("rem_occurId", occurId);
+	$j("#delete-confirm").dialog('open');
+}
+
+function publishAssignment(occurId){
+	//Set up data for user's action 
+	$j("#publish-confirm").data("occurId", occurId);
+	$j("#publish-confirm").dialog('open');
+}
+
+function downloadAssignment(calendarId, occurId){
+	$j('#loadingmsg').html('Please wait while we prepare your download...');
+	$j('#dialog-loading').dialog('open');
+	
+	$j.post(dropbox_basepath+"extensions/includes/dropbox/ajaxhandler.cfm", { requestAction: 'downloadALL', calendarId: calendarId, occurId: occurId },
+		function(data){
+			window.location.href = data;
+			$j('#dialog-loading').dialog('close');
+		});
+}
+
+// Highlight Rows
+function dropbox_hiOn(thisrow){
+	$j(thisrow).addClass("highlightRow");
+}
+function dropbox_hiOff(thisrow,offcolor){
+	$j(thisrow).removeClass("highlightRow");
+}
+
+/*** DEPRECATED ***/
+
+function archiveDropbox(){
+	// Ajax call to archive?
+	// reload page
+	//alert('Are you sure you want to Archive this dropbox?');
+	$j("#archive-confirm").dialog('open');
+}
+
+function unarchiveDropbox(){
+	// Ajax call to archive?
+	// reload page
+	//alert('Are you sure you want to Unarchive this dropbox?');
+	$j("#unarchive-confirm").dialog('open');
+}
+

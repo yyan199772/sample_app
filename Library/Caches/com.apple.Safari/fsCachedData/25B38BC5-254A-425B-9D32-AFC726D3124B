@@ -1,0 +1,171 @@
+
+.fs_style_19, stylename_blue__link {color: #2d83ce !important;}
+
+.fs_style_14, stylename_camp__details__heading {color: #694252;}
+
+.fs_style_13, stylename_camp__details_cell__margin {padding-left: 1em;
+display: block;}
+
+.fs_style_28, stylename_Dark__Purple {color: #6D2040;}
+
+.fs_style_20, stylename_dropcap {font-size: 75px;
+float: left;
+line-height: 1;
+margin: 0 20px 20px 0;
+width: 80px;
+height: 68px;
+display: block;
+background: #674051;
+text-transform: uppercase;
+color: #f4f0e3;
+font-family: 'proxima-nova, Arial, Helvetica, sans-serif';
+text-align: center;
+padding-top: 4px;}
+
+.fs_style_9, stylename_dropword_first {font-size:xx-large;
+font-weight:bold;
+font-color:#665A5F;
+font-family: Times New Roman, serif;
+text-transform:uppercase;}
+
+.fs_style_10, stylename_dropword_second {font-size:medium;
+font-color:#665A5F;
+text-transform:uppercase;}
+
+.fs_style_6, stylename_enotify_section1 {font-size:30px;
+color:#665a5f;
+font-weight:bold;
+font-family:   proxima-nova, Arial, Helvetica, sans-serif;
+
+}
+
+.fs_style_7, stylename_enotify_section2 {font-size:21px;
+color:#641b39;
+line-height: 1em;
+font-weight:bold;
+font-family:  Myriad, Myriad Pro, Arial, Helvetica, sans-serif;}
+
+.fs_style_8, stylename_enotify_section3 {font-size:16px;
+color:#641b39;
+text-transform:uppercase;
+font-weight:bold;
+font-family:  Myriad, Myriad Pro, Arial, Helvetica, sans-serif;}
+
+.fs_style_16, stylename_enotify_section4 {font-size:14px;
+color:#c9a742;
+line-height: 2.5em;
+text-transform:uppercase;
+font-weight:bold;
+font-family:  Myriad, Myriad Pro, Arial, Helvetica, sans-serif;}
+
+.fs_style_17, stylename_enotify_section5 {font-size:14px;
+color:#4A318C;
+text-transform:uppercase;
+font-weight:bold;
+font-family:  Myriad, Myriad Pro, Arial, Helvetica, sans-serif;}
+
+.fs_style_11, stylename_gold__font__ {color: #c9a742; }
+
+.fs_style_18, stylename_Grey__Link {color: #333333 !important;
+text-decoration:underline !important;}
+
+.fs_style_15, stylename_horizontal__Line__ {size: 1px;
+color: #2d83ce;}
+
+.fs_style_21, stylename_image__frame__-__left__ {background-color: #fff;
+border: 1px solid #ccc7b1;
+padding: 7px;
+margin:0 28px 39px 0px; float:left;
+clear:both;
+}
+
+.fs_style_1, stylename_large__text {font-size:18px;
+font-weight:bold;
+color:#f00;}
+
+.fs_style_24, stylename_lead__paragraph {line-height: 180%;}
+
+.fs_style_4, stylename_Light__Purple {color: #977ac0;}
+
+.fs_style_30, stylename_Orange__Btn {background-color:#e5562f;
+border:1px solid #eb8f6d;
+color:#cdc6c0 !important;
+text-transform:uppercase;
+text-decoration:none !important;
+font-family:"Roboto Condensed", sans-serif;
+display: inline-block;
+text-align: center;
+padding: 25px 10px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+font-size: 1.65em;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.4);}
+
+.fs_style_29, stylename_PERK__Summer {font-family: 'blackjackregular';
+color:#2e92d7;
+font-size:2.75rem;}
+
+.fs_style_22, stylename_Profile__Heading__ {display: block;
+font-size: 21px;
+border-left: 8px solid #674051;
+padding-left: 16px;
+margin-left: 350px;
+line-height: 30px; 
+font-family: proxima-nova, Arial, Helvetica, sans-serif';
+color: #674051;}
+
+.fs_style_26, stylename_Profile__Heading__-__Special {display: block;
+font-size: 21px;
+border-left: 8px solid #674051;
+padding-left: 16px;
+margin-left: 230px;
+line-height: 30px; 
+font-family: proxima-nova, Arial, Helvetica, sans-serif';
+color: #674051;}
+
+.fs_style_23, stylename_Profile__Sub-Heading {font-size: 17px;
+line-height: 30px; 
+font-family: proxima-nova, Arial, Helvetica, sans-serif';
+color: #674051;}
+
+.fs_style_31, stylename_Purple__Button {background-color:#341522;
+border:1px solid #5b3e4c;
+color:#f05a30 !important;
+text-transform:uppercase;
+text-decoration:none !important;
+font-family:"Roboto Condensed", sans-serif;
+display: inline-block;
+text-align: center;
+padding: 25px 10px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+font-size: 1.65em;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.4);}
+
+.fs_style_12, stylename_Sub_heading {font-size: 1.5em;
+color:#665A5F;
+font-family: proxima-nova,Arial,Helvetica,sans-serif;}
+
+.fs_style_27, stylename_testimonials {font-family: news-gothic-std,news-gothic-std-n4,myriad pro,helvetica;
+font-size: 15px;}
+
+.fs_style_3, stylename_text__button {display:block;
+text-align:right;
+text-decoration:none;
+padding:2px 4px;
+color:#6e613a;
+background-color:#f2eee3;
+border:1px solid #b3a98a;}
+
+.fs_style_25, stylename_Timeline__ {font-size: 17px;
+line-height: 1;
+font-weight: bold;
+color: #674051;
+font-family: proxima-nova, Arial, Helvetica, sans-serif;
+text-align: center;
+text-transform: uppercase;
+}
+
+.fs_style_5, stylename_yellow__text {color: #dfd48e !important;}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../oobe/6.0/installertech/public/Common/xplat/schema/CSUManifest.xsd" CSUVersion="1.0">
+	<UpdateID>1.0.1</UpdateID>
+	<OwningChannel>AdobeDynamicLinkMediaServer-1.0</OwningChannel>
+	<TargetBuildType>2</TargetBuildType>
+	<DisplayName default="en_US">
+		<en_US>Dynamic Link Media Server CS6 1.0.1 Update</en_US>
+		<cs_CZ>Dynamic Link Media Server CS6  1.0.1 - aktualizace</cs_CZ>
+		<de_DE>Update zu Dynamic Link Media Server CS6 1.0.1</de_DE>
+		<es_ES>Actualización de Dynamic Link Media Server CS6 1.0.1</es_ES>
+		<es_MX>Actualización de Dynamic Link Media Server CS6 1.0.1</es_MX>
+		<fr_FR>Mise à jour Dynamic Link Media Server CS6 1.0.1</fr_FR>
+		<fr_CA>Mise à jour Dynamic Link Media Server CS6 1.0.1</fr_CA>
+		<fr_MA>Mise à jour Dynamic Link Media Server CS6 1.0.1</fr_MA>
+		<it_IT>Aggiornamento Dynamic Link Media Server CS6 1.0.1</it_IT>
+		<ja_JP>Dynamic Link Media Server CS6 1.0.1 アップデート</ja_JP>
+		<ko_KR>Dynamic Link Media Server CS6 1.0.1 업데이트</ko_KR>
+		<nl_NL>Dynamic Link Media Server CS6 1.0.1 Update</nl_NL>
+		<pl_PL>Dynamic Link Media Server CS6  1.0.1 — aktualizacja</pl_PL>
+		<pt_BR>Atualização do Dynamic Link Media Server CS6 1.0.1</pt_BR>
+		<ru_RU>Обновление Dynamic Link Media Server CS6  1.0.1</ru_RU>
+		<sv_SE>Uppdatering för Dynamic Link Media Server CS6 1.0.1</sv_SE>
+		<tr_TR>Dynamic Link Media Server CS6  1.0.1 Güncellemesi</tr_TR>
+		<zh_CN>Dynamic Link Media Server CS6 1.0.1 更新</zh_CN>		
+		<zh_TW>Dynamic Link Media Server CS6 1.0.1 更新</zh_TW>
+	</DisplayName>
+	<Description default="en_US">
+		<en_US>This update provides several bug fixes and resolves a colorspace issue when Photoshop imports a file created with Canon 5D Mark III camera.</en_US>
+		<cs_CZ>Tato aktualizace obsahuje několik oprav chyb a řeší problém barevného prostoru při importu souboru vytvořeného ve fotoaparátu Canon 5D Mark III do aplikace Photoshop.</cs_CZ>
+		<de_DE>Dieses Update behebt mehrere Fehler und löst ein Farbraumproblem, das auftritt, wenn Photoshop ein mit einer Kamera der Serie Canon 5D Mark III aufgenommenes Foto importiert.</de_DE>
+		<es_ES>Esta actualización ofrece varias soluciones a errores y resuelve un problema de espacio de color cuando Photoshop importa un archivo creado con una cámara Canon 5D Mark III.</es_ES>
+		<es_MX>Esta actualización ofrece varias soluciones a errores y resuelve un problema de espacio de color cuando Photoshop importa un archivo creado con una cámara Canon 5D Mark III.</es_MX>
+		<fr_FR>Cette mise à jour corrige plusieurs bogues et résout un problème d’espace colorimétrique qui se produit lorsque Photoshop importe un fichier créé avec un appareil photo Canon 5D Mark III.</fr_FR>
+		<fr_CA>Cette mise à jour corrige plusieurs bogues et résout un problème d’espace colorimétrique qui se produit lorsque Photoshop importe un fichier créé avec un appareil photo Canon 5D Mark III.</fr_CA>
+		<fr_MA>Cette mise à jour corrige plusieurs bogues et résout un problème d’espace colorimétrique qui se produit lorsque Photoshop importe un fichier créé avec un appareil photo Canon 5D Mark III.</fr_MA>
+		<it_IT>Questo aggiornamento corregge alcuni bug e risolve un problema di spazio colore che si verificava durante l'importazione in Photoshop di un file creato con la fotocamera Canon 5D Mark III.</it_IT>
+		<ja_JP>このアップデートではバグが数件修正されています。キヤノン EOS 5D Mark III カメラで作成したファイルを Photoshop に読み込む際のカラースペースの問題も解決されています。</ja_JP>
+		<ko_KR>이 업데이트에서는 Canon 5D Mark III 카메라로 만든 파일을 Photoshop으로 가져올 때 발생했던 색상 공간 문제가 해결되었으며 여러 버그 수정 사항이 제공됩니다.</ko_KR>
+		<nl_NL>Deze update bevat verschillende probleemoplossingen en biedt een oplossing voor een probleem met de kleurruimte dat optreedt wanneer Photoshop een bestand importeert dat is gemaakt met de Canon 5D Mark III-camera.</nl_NL>
+		<pl_PL>Ta aktualizacja zawiera kilka poprawek błędów oraz rozwiązuje problem dotyczący przestrzeni kolorów podczas importu pliku utworzonego za pomocą aparatu Canon 5D Mark III do programu Photoshop.</pl_PL>
+		<pt_BR>Essa atualização fornece várias correções de bugs e resolve um problema com o espaço de cores quando o Photoshop importa um arquivo criado com a câmera Canon 5D Mark III.</pt_BR>
+		<ru_RU>В этом обновлении исправлено несколько ошибок и устранена проблема цветового пространства, возникающая при импорте в Photoshop файла, созданного на камере Canon 5D Mark III.</ru_RU>
+		<sv_SE>Den här uppdateringen innehåller flera felkorrigeringar och en lösning för ett problem med färgrymden vid import av filer från kameran Canon 5D Mark III till Photoshop.</sv_SE>
+		<tr_TR>Bu güncelleme bazı hatalar için çözüm sunar ve Canon 5D Mark III fotoğraf makinesiyle oluşturulmuş dosyaların Photoshop'a içe aktarılmasında oluşan renk uzayı sorunlarını çözer. </tr_TR>
+		<zh_CN>此更新将提供多种修补程序，并解决 Photoshop 导入由 Canon 5D Mark III 相机创建的文件时的色彩空间问题。</zh_CN>		
+		<zh_TW>此更新將提供數種錯誤修正，並解決 Photoshop 匯入由 Canon 5D Mark III 相機建立之檔案時的色域問題。</zh_TW>
+	</Description>
+	<AffectedChannels>
+		<ChannelID>AdobeDynamicLinkMediaServer-1.0</ChannelID>
+	</AffectedChannels>
+	<InstallFiles>
+    <File RIBSBased="1">
+      <Name>Setup.dmg</Name>
+      <Type>2</Type>
+      <ExecutableName>AdobePatchInstaller.app</ExecutableName>
+      <Size>62256469</Size>
+    </File>
+  </InstallFiles>
+	<NeedsReboot>false</NeedsReboot>
+</Manifest>

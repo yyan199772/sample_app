@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- Copyright (c) 2006 Microsoft Corporation.  All rights reserved. -->
+<!-- OwaPage = ASP.forms_premium_editmessage_aspx -->
+
+<html dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8">
+<title>Untitled Message</title>
+<link type="text/css" rel="stylesheet" href="14.0.722.0/themes/base/premium.css"><link type="text/css" rel="stylesheet" href="14.0.722.0/themes/base/owafont.css"><link type="text/css" rel="stylesheet" href="14.0.722.0/themes/base/csssprites.css"><script type="text/javascript">var g_fOwa=1;var onWL=0;var oJS = new Object(); function isJS(f) {return oJS[f]?1:0;}; function stJS(f){oJS[f]=true;}; var _wl=0; function _e(_this, s, event) {if (_wl) eval(s);}; var a_fEnbSMm=1;function _htmlDec(s){var o=document.createElement("DIV");o.innerHTML=s;return o.innerText||o.textContent;}function chkEn(){var s1 = "你好A";
+if(_htmlDec("&#20320;&#22909;&#65;")!=s1){alert(_htmlDec("&#79;&#117;&#116;&#108;&#111;&#111;&#107;&#32;&#87;&#101;&#98;&#32;&#65;&#112;&#112;&#32;&#114;&#101;&#113;&#117;&#105;&#114;&#101;&#115;&#32;&#121;&#111;&#117;&#114;&#32;&#98;&#114;&#111;&#119;&#115;&#101;&#114;&#32;&#116;&#111;&#32;&#117;&#115;&#101;&#32;&#85;&#84;&#70;&#45;&#56;&#32;&#101;&#110;&#99;&#111;&#100;&#105;&#110;&#103;&#46;&#32;&#70;&#111;&#114;&#32;&#121;&#111;&#117;&#114;&#32;&#112;&#114;&#111;&#116;&#101;&#99;&#116;&#105;&#111;&#110;&#44;&#32;&#121;&#111;&#117;&#39;&#108;&#108;&#32;&#98;&#101;&#32;&#115;&#105;&#103;&#110;&#101;&#100;&#32;&#111;&#117;&#116;&#46;&#32;&#80;&#108;&#101;&#97;&#115;&#101;&#32;&#115;&#101;&#116;&#32;&#121;&#111;&#117;&#114;&#32;&#98;&#114;&#111;&#119;&#115;&#101;&#114;&#32;&#101;&#110;&#99;&#111;&#100;&#105;&#110;&#103;&#32;&#116;&#111;&#32;&#85;&#84;&#70;&#45;&#56;&#32;&#97;&#110;&#100;&#32;&#115;&#105;&#103;&#110;&#32;&#105;&#110;&#32;&#97;&#103;&#97;&#105;&#110;&#46;"));try{window.top.document.location="/owa/logoff.owa";}catch(e){}}}chkEn();</script><script id=_scr0 _sid="clientstrings.aspx" type="text/javascript" src="forms/premium/clientstrings.aspx?v=14.0.722.0&amp;l=en-US"></script>
+<script id=_scr1 _sid="uglobal.js" type="text/javascript" src="14.0.722.0/scripts/premium/uglobal.js"></script>
+<script id=_scr2 _sid="fedtmsg.js" type="text/javascript" src="14.0.722.0/scripts/premium/fedtmsg.js"></script>
+<script id=_scr3 _sid="owaeditor.js" type="text/javascript" src="14.0.722.0/scripts/premium/owaeditor.js"></script>
+
+<script type="text/javascript">
+	var fEnbSmime = 0;
+	var I_LO = 0;
+	var I_N = 1;
+	var I_HI = 2;
+	var a_iNit = 0;
+	var a_fEdtMsg = 1;
+	var a_fRichTextEditorSupported = 1; 
+	var a_fTxt = 0;
+	var a_fIsIrmProtected = 0;
+	var a_fCopyRestricted = 0;
+	var a_fPrintRestricted = 0;	
+	var a_fRecipientWellRestricted = 0;	
+var L_AttNtPtbl = "Only documents in .doc, .ppt, .xls, .docx, .pptx, .xlsx, or .xps formats created in Office 2003 or later versions will be protected. Protection will not be applied to documents in other formats.";
+var L_ClsPmpt = "You will lose all changes made since your last save.";
+var L_Cntnu = "Continue";
+var L_AddrBk = "Address Book...";
+var L_OtrEml = "Other e-mail address...";
+
+	var a_iSens = 0;
+	var a_fDvRcp = 0;
+	var a_fRdRcp = 0;
+	var a_iABW = 990;
+	var a_iABH = 641;
+	var a_iT = 9;
+	var a_IT_RSP = 12;
+	var a_IT_INV = 11;
+	var a_IT_CAN = 13;
+	var a_IT_APV_RP = 27;
+	var a_iFmtBrSt = 109;
+var a_sMruFnts = "";
+var a_sInitFntNm = "Tahoma";
+
+	var a_sInitFntSz = 2;
+	var a_sDefFntMkp = "\<div dir=\"ltr\"\>\<font face=\"Tahoma\" color=\"#000000\" size=\"2\"\>&nbsp;\<\/font\>\<\/div\>";
+	var a_sDefFntBIUStyl = "";
+	var a_sDefFntStyl = "direction: ltr;font-family: Tahoma;color: #000000;font-size: 13px;";
+	var a_fAEnc = 0;
+	var a_fASgn = 0;
+	var a_fSgn = 0;
+	var a_fEnc = 0;
+	var a_iCBS = 1;
+	var a_sLV = "14.0.639.19";
+
+	var a_fMstUpd = 1;
+	
+	var a_iSp = 7;
+	var a_fSpSn = 0;
+	var a_fSp = 1;
+	
+	var a_iMaxRcp = 2000;
+	var a_iSeg = 4022599679;
+	var a_fIsReplyAllBcc = 0;
+</script>
+
+</head>
+<body class="frmBody" _PageType="EditMessagePage">
+<div id=divThm style=display:none _fn="base" _def="14.0.722.0/themes/base/"></div>
+<textarea id="txtBdy" class="whPlainText txtBdy" style="display:none">
+</textarea>
+
+<script type="text/javascript">
+
+	var a_sId = null;
+	var a_sCK = null;
+
+</script>
+<div class="offscreen"><object id="dlgHelper" classid="clsid:3050f819-98b5-11cf-bb82-00aa00bdce0b" width="0px" height="0px" viewastext></object></div>
+<div id="divHdrMessage" class="hdrMessage">
+	<div class="ts">
+		<div id="divTB" class="tfFrm tfHeight tfPosBefore"><div class="tbf fltAfter tbfHvr"><a _tbb=1 id="help" class="tba" name="lnkB" href="http://help.outlook.com/en-US/140/ms.exch.owap.MailPremium.aspx?v=14.0.702.0&amp;l=0"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-help-png tbLh tbBefore tbAfter" title="Help" ><img class="tbVASp"><span id="spnhlpLnk" style="display:none">./help/default.htm?MailPremium</span></a></div><div id="divToolbarButtonsend" class="tbf fltBefore tbfHvr"><a _tbb=1 class="tba" id="send" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-send-gif tbLh tbBefore" id="imgToolbarButtonIcon" ><span class="tbLh tbBtwn tbAfter">Send</span><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div id="divToolbarButtonsave" class="tbf fltBefore tbfHvr" title="Save"><a _tbb=1 class="tba" id="save" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-save-png tbLh tbBefore tbAfter" id="imgToolbarButtonIcon" ><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div id="divToolbarButtonattachfile" class="tbf fltBefore tbfHvr" title="Attach File"><a _tbb=1 class="tba" id="attachfile" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-attach-png tbLh tbBefore tbAfter" id="imgToolbarButtonIcon" ><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div id="divToolbarButtonaddressbook" class="tbf fltBefore tbfHvr" title="Address Book"><a _tbb=1 class="tba" id="addressbook" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-addrbook-png tbLh tbBefore tbAfter" id="imgToolbarButtonIcon" ><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div id="divToolbarButtonchecknames" class="tbf fltBefore tbfHvr" title="Check Names"><a _tbb=1 class="tba" id="checknames" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-checkname-gif tbLh tbBefore tbAfter" id="imgToolbarButtonIcon" ><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div id="divToolbarButtonimphigh" class="tbf fltBefore tbfHvr" title="Importance: High"><a _tbb=1 class="tba" id="imphigh" name="lnkB" _stky="1" _tgl="implow" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-imphigh-gif tbLh tbBefore tbAfter" id="imgToolbarButtonIcon" ><img class="tbVASp"></a></div><div id="divToolbarButtonimplow" class="tbf fltBefore tbfHvr" title="Importance: Low"><a _tbb=1 class="tba" id="implow" name="lnkB" _stky="1" _tgl="imphigh" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-implow-gif tbLh tbBefore tbAfter" id="imgToolbarButtonIcon" ><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div id="divToolbarButtoninsertsignature" class="tbf fltBefore tbfHvr" title="Insert Signature"><a _tbb=1 class="tba" id="insertsignature" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-sig-gif tbLh tbBefore tbAfter" id="imgToolbarButtonIcon" ><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div id="divToolbarButtonmessageoptions" class="tbf fltBefore tbfHvr"><a _tbb=1 class="tba" id="messageoptions" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-msgopts-gif tbLh tbBefore" id="imgToolbarButtonIcon" ><span class="tbLh tbBtwn tbAfter">Options...</span><img class="tbVASp"></a></div><div class="tbSpN fltBefore"></div><div class="fltBefore tbfNoH"><div id="divCmbFrmt" class="cmb"  fEnbld=1 fd=1 style="cursor:default;" oV="0"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-drparw-gif" id="divCmbDd" tabIndex="0" ><div class="cmbVis"><div class="cmbCont"><img class="cmbVASp"><span id="spanCmbSel">HTML</span></div></div><div id="divCmbList" style="display:none" class="frmtList"><div tabIndex=0 oV="0"><span id="spanListItm" class="listItm">HTML</span></div><div tabIndex=0 oV="1"><span id="spanListItm" class="listItm">Plain text</span></div></div></div></div><div id="divToolbarButtonmailTips" class="tbf fltBefore tbfHvr" style="display:none;"><a _tbb=1 class="tba" id="mailTips" name="lnkB" href="#"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-info-gif tbLh tbBefore" id="imgToolbarButtonIcon" ><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-alertdropdown-gif tbLh tbBtwnDD" id="imgToolbarButtonDropdownIcon" ><img class="tbVASp"></a></div></div>
+	</div>
+
+	<div id="divInfobar" class="infobarEdit" style="display:none"><div id="divInfobarColor" class=""></div><div id="divIB"><div id=divErr style="display:none" iType=10><div id=divEIB><table cellpadding=0 cellspacing=0><tr><td id=tdIcon valign=top><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-warn-png" ></td><td id=tdMsg style="width:100%;"></td><td id=tdEISnd style="display:none;vertical-align:top;"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-send-gif" id=imgEISnd style=cursor:hand onclick='_e(this,this.getAttribute("_e_onclick"), event)' _e_onclick="onClkEISnd();" _msgSent="Report Sent" title="Send Error Report"></td><td id=tdEICpy style="display:none;vertical-align:top;"><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-copy-gif" id=imgEICpy style="cursor:hand" onclick='_e(this,this.getAttribute("_e_onclick"), event)' _e_onclick="onClkEICpy();" title="Copy error details to clipboard"></td></tr></table></div></div></div></div>
+
+	<div id="divWellFrom" class="wellRow"  style="display:none" >
+		<div id="divFromL" class="wellLabel mwCLbl">
+			<a id="btnFrom" class="formHeaderButton l" onclick='_e(this,this.getAttribute("_e_onclick"), event)' _e_onclick="showFromMenu();" _tbb="1" name="lnkB" href="#"><div class="tbf tbfHvr"><span class="tbLh tbBefore nowrap">From:</span><img class="csimg csimgbg sprites-alertdropdown-gif tbLh tbBtwnDD" src="14.0.722.0/themes/base/alertdropdown.gif" /><img class="tbVASp" /></div></a>
+		</div>
+		<div class="wellWrap">
+			<div id="divFieldFrom" class="wellField">
+				<div id=divFH>M</div><div id="divFrom" class="rwW" contentEditable="true" spellcheck="false" ></div>
+			</div>
+		</div>
+	</div>
+	<div id="divWellTo" class="wellRow" >
+		<div id="divToL" class="wellLabel mwCLbl">
+			<div id="divToBtn" class="hdrBf tbf tbfHvr">
+				<a id="btnTo" class="formHeaderButton l" onclick='_e(this,this.getAttribute("_e_onclick"), event)' _e_onclick="shwABM(&quot;divTo&quot;);" hidefocus="true" tabindex="-1" _tbb="1" href="#">
+					<span class="nowrap">
+						<img align="absmiddle" src="14.0.722.0/themes/base/addrbook.png">
+						To...
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="wellWrap">
+			<div  id="divFieldTo" class="wellField">
+				<div id=divFH>M</div><div id="divTo" class="rwW" contentEditable="true" spellcheck="false" ></div>
+			</div>
+		</div>
+	</div>
+	<div id="divWellCc" class="wellRow" >
+		<div id="divCcL" class="wellLabel mwCLbl">
+			<div id="divCcBtn" class="hdrBf tbf tbfHvr">
+				<a id="btnCc" class="formHeaderButton l" onclick='_e(this,this.getAttribute("_e_onclick"), event)' _e_onclick="shwABM(&quot;divCc&quot;);" hidefocus="true" tabindex="-1" _tbb="1" href="#">
+					<span class="nowrap">
+						<img align="absmiddle" src="14.0.722.0/themes/base/addrbook.png">
+						Cc...
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="wellWrap">
+			<div id="divFieldCc" class="wellField">
+				<div id=divFH>M</div><div id="divCc" class="rwW" contentEditable="true" spellcheck="false" ></div>
+			</div>
+		</div>
+	</div>
+	<div id="divWellBcc" class="wellRow"  style="display:none" >
+		<div id="divBccL" class="wellLabel mwCLbl">
+			<div id="divBccBtn" class="hdrBf tbf tbfHvr">
+				<a id="btnBcc" class="formHeaderButton l" onclick='_e(this,this.getAttribute("_e_onclick"), event)' _e_onclick="shwABM(&quot;divBcc&quot;);" hidefocus="true" tabindex="-1" _tbb="1" href="#">
+					<span class="nowrap">
+						<img align="absmiddle" src="14.0.722.0/themes/base/addrbook.png">
+						Bcc...
+					</span>
+				</a>
+			</div>
+		</div>
+		<div class="wellWrap">
+			<div id="divFieldBcc" class="wellField">
+				<div id=divFH>M</div><div id="divBcc" class="rwW" contentEditable="true" spellcheck="false" ></div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="divWellSubject" class="subjRow">
+		<div id="divSubjL" class="subjLTxtLabel mwCLbl">
+			Subject:
+		</div>
+		<div id="divSubjWrap" class="subjTxtWrap">
+			<div id="divFieldSubject" class="txtField">
+				<input id="txtSubj" class="txtWell" type="text" maxlength="255" value="">
+			</div>
+		</div>
+	</div>
+	<div id="divWellAttach" class="wellRow"   style="display:none"  >
+		<div id="divAttachL" class="wellLabel mwCLbl">
+			<div class="hdrBf tbf tbfHvr">
+				<a id="btnAttach" class="formHeaderButton l" 
+					onclick='_e(this,this.getAttribute("_e_onclick"), event)' _e_onclick="shwAttchDlg();" 
+				hidefocus="true" tabindex="-1" _tbb="1" href="#">
+					Attach...
+				</a>
+			</div>
+		</div>
+		<div class="wellWrap rwAttMaxH">
+			<div id="divAttachF" class="wellField">
+				<div id="divAtch" _isRW="1" class="awRW" _isEventAttach="1" ></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="divFmtBr">
+	&nbsp;
+	</div>
+	
+</div>
+<div id=divBdy class="messageBody">
+
+	<iframe id="ifBdy" class="w100" frameborder="0" src=14.0.722.0/scripts/premium/blank.htm></iframe>
+
+</div>
+<div id=divScm class="ctxMnu" style=display:none><div id=nSg class="sttd" nowrap>&#x200E;(No Suggestions)&#x200E;</div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div _lnk=1 class="cmLnk" id=divSg cmd="replace"><span id=spnT></span></div><div id=divS1 class="cmDvdr" _isMnuDvdr=1><span>&nbsp;</span></div><div _lnk=1 class="cmLnk" id=divDdw cmd="delete"><span id=spnT>Delete repeated word</span></div><div _lnk=1 class="cmLnk" id=divIg cmd="ignore"><span id=spnT>Ignore</span></div><div _lnk=1 class="cmLnk" id=divIgA cmd="ignoreall"><span id=spnT>Ignore All</span></div><div style="display:none;"><img src="14.0.722.0/themes/base/squiggly.gif"></div></div><div id=divEcm class="ctxMnu ctxMnuIco" style=display:none><div _lnk=1 class="cmLnk" id=divUndo cmd="Undo"><span class="cmIco" id=spnImg><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-undo-gif" id=imgI ></span><img style="height:1px;width:12px" src="14.0.722.0/themes/base/clear1x1.gif"><span id=spnT>Undo</span></div><div id=divS1 class="cmDvdr" _isMnuDvdr=1><span>&nbsp;</span></div><div _lnk=1 class="cmLnk" id=divCut cmd="Cut"><span class="cmIco" id=spnImg><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-cut-gif" id=imgI ></span><img style="height:1px;width:12px" src="14.0.722.0/themes/base/clear1x1.gif"><span id=spnT>Cut</span></div><div _lnk=1 class="cmLnk" id=divCpy cmd="Copy"><span class="cmIco" id=spnImg><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-copy-gif" id=imgI ></span><img style="height:1px;width:12px" src="14.0.722.0/themes/base/clear1x1.gif"><span id=spnT>Copy</span></div><div _lnk=1 class="cmLnk" id=divPst cmd="Paste"><span class="cmIco" id=spnImg><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-paste-gif" id=imgI ></span><img style="height:1px;width:12px" src="14.0.722.0/themes/base/clear1x1.gif"><span id=spnT>Paste</span></div><div _lnk=1 class="cmLnk" id=divDel cmd="Delete"><span class="cmIco" id=spnImg><img src="14.0.722.0/themes/base/clear1x1.gif" class="csimg csimgbg sprites-delete-png" id=imgI ></span><img style="height:1px;width:12px" src="14.0.722.0/themes/base/clear1x1.gif"><span id=spnT>Delete</span></div><div id=divS2 class="cmDvdr" _isMnuDvdr=1><span>&nbsp;</span></div><div _lnk=1 class="cmLnk" id=divSlA cmd="SelectAll"><span class="cmIco" id=spnImg><img id="imgI" style="height:1px;width:16px" src="14.0.722.0/themes/base/clear1x1.gif"></span><img style="height:1px;width:12px" src="14.0.722.0/themes/base/clear1x1.gif"><span id=spnT>Select All</span></div></div><div id=divEOF style=display:none></div>
+</body>
+</html> 

@@ -1,0 +1,863 @@
+/*
+ * Playlist Object for the jPlayer Plugin
+ * http://www.jplayer.org
+ *
+ * Copyright (c) 2009 - 2011 Happyworm Ltd
+ * Dual licensed under the MIT and GPL licenses.
+ *  - http://www.opensource.org/licenses/mit-license.php
+ *  - http://www.gnu.org/copyleft/gpl.html
+ *
+ * Author: Mark J Panaghiston
+ * Version: 2.1.0 (jPlayer 2.1.0)
+ * Date: 1st September 2011
+ */
+
+/* Code verified using http://www.jshint.com/ */
+/*jshint asi:false, bitwise:false, boss:false, browser:true, curly:true, debug:false, eqeqeq:true, eqnull:false, evil:false, forin:false, immed:false, jquery:true, laxbreak:false, newcap:true, noarg:true, noempty:true, nonew:true, nomem:false, onevar:false, passfail:false, plusplus:false, regexp:false, undef:true, sub:false, strict:false, white:false */
+/*global  jPlayerPlaylist: true, jQuery:false, alert:false */
+
+(function($, undefined) {
+
+	jPlayerPlaylist = function(cssSelector, playlist, options) {
+		var self = this;
+
+		this.current = 0;
+		this.checkDuration = true;
+		this.fallbackAttempted = false;
+		this.movingToNewMedia = false;
+		this.gaTrackedObjectID = 0;
+		this.loop = false; // Flag used with the jPlayer repeat event
+		this.shuffled = false;
+		this.removing = false; // Flag is true during remove animation, disabling the remove() method until complete.
+
+		this.cssSelector = $.extend({}, this._cssSelector, cssSelector); // Object: Containing the css selectors for jPlayer and its cssSelectorAncestor
+		this.options = $.extend(true, {}, this._options, options); // Object: The jPlayer constructor options for this playlist and the playlist options
+
+		this.playlist = []; // Array of Objects: The current playlist displayed (Un-shuffled or Shuffled)
+		this.original = []; // Array of Objects: The original playlist
+
+		this._initPlaylist(playlist); // Copies playlist to this.original. Then mirrors this.original to this.playlist. Creating two arrays, where the element pointers match. (Enables pointer comparison.)
+
+		// Setup the css selectors for the extra interface items used by the playlist.
+		this.cssSelector.title = this.cssSelector.cssSelectorAncestor + " .jp-title"; // Note that the text is written to the decendant li node.
+		this.cssSelector.playlist = this.cssSelector.cssSelectorAncestor + " .jp-playlist";
+		this.cssSelector.next = this.cssSelector.cssSelectorAncestor + " .jp-next";
+		this.cssSelector.previous = this.cssSelector.cssSelectorAncestor + " .jp-previous";
+		this.cssSelector.shuffle = this.cssSelector.cssSelectorAncestor + " .jp-shuffle";
+		this.cssSelector.shuffleOff = this.cssSelector.cssSelectorAncestor + " .jp-shuffle-off";
+		this.cssSelector.videoq = this.cssSelector.cssSelectorAncestor + " .jp-videoq";
+		this.cssSelector.infolink = this.cssSelector.cssSelectorAncestor + " .jp-info-link";
+		this.cssSelector.playbtn = this.cssSelector.cssSelectorAncestor + " .jp-video-play";
+		this.cssSelector.interface = this.cssSelector.cssSelectorAncestor + " .jp-interface";
+		this.cssSelector.typeplaylist = this.cssSelector.cssSelectorAncestor + " .jp-type-playlist";
+		this.cssSelector.volumebtn = this.cssSelector.cssSelectorAncestor + " .jp-mute";
+		this.cssSelector.gui = this.cssSelector.cssSelectorAncestor + " .jp-gui";
+		this.cssSelector.fullplayerBtn = this.cssSelector.cssSelectorAncestor + " .jp-fullplayer";
+		this.cssSelector.gotonext = this.cssSelector.cssSelectorAncestor + " .jp-gotonext";
+		this.cssSelector.playbackerror = this.cssSelector.cssSelectorAncestor + " .jp-playbackerror";
+		this.cssSelector.hdplaybackerror = this.cssSelector.cssSelectorAncestor + " .jp-hdplaybackerror";
+		
+		// Override the cssSelectorAncestor given in options
+		this.options.cssSelectorAncestor = this.cssSelector.cssSelectorAncestor;
+
+		// Override the default repeat event handler
+		this.options.repeat = function(event) {
+			self.loop = event.jPlayer.options.loop;
+		};
+		
+		var isMiniMode = $(self.cssSelector.jPlayer).parent().parent().parent().hasClass('mini-fsplayer');
+		
+		// Hack to properly resize poster images
+		$(window).resize(function(){
+			clearTimeout(this.id);
+			this.id = setTimeout(function(){
+				self.resizePoster();
+			}, 200);
+		});
+		
+		// Create an error event handler
+		$(this.cssSelector.jPlayer).bind($.jPlayer.event.error, function(event){
+			
+			// The original iPad has trouble playing some HD videos because of decoding problems. These will throw a $.jPlayer.error.URL error.
+			if (event.jPlayer.error.type == $.jPlayer.error.URL && self.playlist[self.current].location.indexOf('.flv') == -1 && self.playlist[self.current].location.indexOf('.swf') == -1) {
+				
+				// Show message to end user letting them know why the SD version is being used and then fade out the message after several seconds
+				//$(self.cssSelector.hdplaybackerror).fadeIn(1000).delay(5000).fadeOut(1000);
+				if (self.fallbackAttempted) {
+					$(self.cssSelector.playbackerror).fadeIn(1000);
+					self.fallbackAttempted = false;
+				}
+				else {
+					
+					// We are attempting to fall back to the SD version
+					self.fallbackAttempted = true;
+					
+					// Use the setMedia() method to switch to the SD version of the file
+					$(self.cssSelector.jPlayer).jPlayer('setMedia', {
+						m4v: self.playlist[self.current].path_360p,
+						path_360p: self.playlist[self.current].path_360p,
+						path_480p: self.playlist[self.current].path_480p,
+						path_720p: self.playlist[self.current].path_720p,
+						path_1080p: self.playlist[self.current].path_1080p,
+						poster: self.playlist[self.current].poster,
+						thumb: self.playlist[self.current].thumb,
+						quality: self.playlist[self.current].quality,
+						path_prefix: self.playlist[self.current].path_prefix
+					});
+					
+					// Start playing immediately if we moved on to another video or if player is set to auto play
+					if (self.movingToNewMedia || self.options.fsAutoplay) {
+						self.play();
+					}
+					
+					// Make sure to change the selected quality to let the user know it's playing in SD
+					$(self.cssSelector.videoq + ' a').html('360p');
+					
+				}
+			}
+		});
+		
+		// Create a handler for time updates and determine whether we should show hours or not
+		$(this.cssSelector.jPlayer).bind($.jPlayer.event.timeupdate, function(event) {
+			if (self.checkDuration && parseInt(event.jPlayer.status.duration) > 0) {
+				// Check to see if the duration is greater than or equal to an hour (3600 seconds) and if we are not showing the hour
+				if (parseInt(event.jPlayer.status.duration) >= 3600 && !$.jPlayer.timeFormat.showHour) {
+					$.jPlayer.timeFormat.showHour = true; // Show the hour
+				}
+				// Check to see if the duration is less than an hour (3600 seconds) and if we are showing the hour
+				else if (parseInt(event.jPlayer.status.duration) < 3600 && $.jPlayer.timeFormat.showHour) {
+					$.jPlayer.timeFormat.showHour = false; // Hide the hour
+				}
+				self.checkDuration = false;
+			}
+		});
+		
+		// Create a handler for load start so we can re-initialize certain variables
+		$(this.cssSelector.jPlayer).bind($.jPlayer.event.loadstart, function(event) {
+			self.checkDuration = true; // We want to check the duration again in the timeupdate event (see above)
+			$(self.cssSelector.playbackerror).hide(); // Make sure the playback error message is hidden
+		});
+		
+		// Create a ready event handler to initialize the playlist
+		$(this.cssSelector.jPlayer).bind($.jPlayer.event.ready, function(event) {
+			self._init();
+			
+			// Set Random Start
+			if(options.fsStartOn){
+				self.select(options.fsStartOn);
+			} else if(options.fsRandom){
+				var ranNum = Math.floor(Math.random()*(self.playlist.length+1));
+				self.select(ranNum);
+			}
+			
+			// resize poster to avoid stretching
+			self.resizePoster();
+			
+			// Resize Play Button
+			$(self.cssSelector.playbtn).css({'width': $(self.cssSelector.jPlayer).width(), 'height': $(self.cssSelector.jPlayer).height() });
+			$(self.cssSelector.playbtn).show();
+			
+			// when playlist is hidden, change stage height to reveal player interface: jp_container_
+			if($(self.cssSelector.playlist).is(':visible')){
+				$(self.cssSelector.typeplaylist).css('height','auto');
+			} else {
+				$(self.cssSelector.jPlayer).parent().parent().css('height', $(self.cssSelector.jPlayer).height() + $(self.cssSelector.interface).height());
+			}
+			
+			// hide the playlist for the miniMode players
+			if(isMiniMode){
+				$(self.cssSelector.playlist).hide();
+				
+				// adjust description position
+				$(self.cssSelector.title + ' .fs-media-description').css('bottom', '65px');
+			} else {
+				// Fix dimension of title/desc div to avoid overlap with playlistItemLinks
+				var playlistW = $(self.cssSelector.playlist + ' ul li').width();
+				var linksBoxW = $(self.cssSelector.cssSelectorAncestor + ' .playlistItemLinksBox').width();
+				var thumbW = $(self.cssSelector.cssSelectorAncestor + ' .playlistListItemThumb').width();
+				//$(self.cssSelector.cssSelectorAncestor + ' .playlistListItemTitleDesc').width(playlistW - linksBoxW - thumbW);
+			}
+			
+			// Autoplay
+			if(options.fsAutoplay){
+				self.play();
+			}
+		});
+
+		// Create an ended event handler to move to the next item
+		$(this.cssSelector.jPlayer).bind($.jPlayer.event.ended, function(event) {
+			// Reset the tracked object ID to 0 so we can track the event if the user plays this media again (possible if it's the last media item)
+			self.gaTrackedObjectID = 0;
+			// Note that we are moving to new media
+			self.movingToNewMedia = true;
+			self.next();
+		});
+
+		// Create a play event handler to pause other instances
+		$(this.cssSelector.jPlayer).bind($.jPlayer.event.play, function(event) {
+			$(this).jPlayer("pauseOthers");
+			if($j('#mediaNav').is(':visible')){
+				toggleNav(); // function in player_html.js
+			}
+			// Track event using Google Analytics (if available and if we are not on the same media)
+			if (typeof(_gaq) == 'object' && self.gaTrackedObjectID != parseInt(self.playlist[self.current].obj)) {
+				// Update the tracked object ID so we aren't constantly recording media events for it if they switch resolutions
+				self.gaTrackedObjectID = parseInt(self.playlist[self.current].obj);
+				// Parse out the media's title and type
+				var mediaTitle = self.playlist[self.current].name;
+				var mediaType = (typeof(self.playlist[self.current].mp3) != 'undefined') ? 'Audio' : 'Video';
+				// Push the _trackEvent method which will cause the request to be made to Google Analytics
+				_gaq.push(['_trackEvent', 'Media', 'View ' + mediaType, mediaTitle]);
+			}
+		});
+		
+		// Create a resize event handler to show the title in full screen mode.
+		$(this.cssSelector.jPlayer).bind($.jPlayer.event.resize, function(event) {
+			if(event.jPlayer.options.fullScreen) {
+				$(self.cssSelector.title).show();
+				
+				showPlayerFeedback();
+			} else {
+				//$(self.cssSelector.title).hide();
+			}
+			self.resizePoster();
+		});
+		
+		// Create click handlers for the extra buttons that do playlist functions.
+		$(this.cssSelector.previous).click(function() {
+			self.movingToNewMedia = true;
+			self.previous();
+			$(this).blur();
+			return false;
+		});
+
+		$(this.cssSelector.next).click(function() {
+			self.movingToNewMedia = true;
+			self.next();
+			$(this).blur();
+			return false;
+		});
+		
+		$(this.cssSelector.gotonext).click(function(){
+			$(self.cssSelector.next).click();
+		});
+
+		$(this.cssSelector.shuffle).click(function() {
+			self.shuffle(true);
+			return false;
+		});
+		$(this.cssSelector.shuffleOff).click(function() {
+			self.shuffle(false);
+			return false;
+		}).hide();
+		
+		$(this.cssSelector.fullplayerBtn).click(function() {
+			self.pause();
+			popMedia('obj='+self.playlist[self.current].obj);
+			return false;
+		});
+		
+		// Put the title in its initial display state
+		if(!this.options.fullScreen) {
+			//$(this.cssSelector.title).hide();
+		}
+		
+		if(this.options.supplied.indexOf('m4a') >= 0 || this.options.supplied.indexOf('mp3') >= 0) {
+			// Hide quality selection for audio playlists
+			$(this.cssSelector.videoq).css('display','none');
+		}
+		
+		$(this.cssSelector.videoq).click(function() {
+			if($(self.cssSelector.videoq + " ul").is(":visible")){
+				$(self.cssSelector.videoq + " ul").slideUp();
+			} else {
+				$(self.cssSelector.videoq + " ul").slideDown();
+			}
+			
+			return false;
+		});
+		$(this.cssSelector.videoq + ' li').click(function() {
+			var selectedQ = $(this).attr('data-value');
+			var currentObj = self.playlist[self.current];
+			var newLocation = currentObj.location;
+			
+			switch(selectedQ) {
+				case '1080p':
+					newLocation = currentObj.path_1080p;
+					break;
+				case '720p':
+					newLocation = currentObj.path_720p;
+					break;
+				case '480p':
+					newLocation = currentObj.path_480p;
+					break;
+				default:
+					newLocation = currentObj.path_360p;
+					break;
+			}
+			
+			// Save Q as preference
+			//document.cookie = 'fs_mediaplayer_quality='+selectedQ+'; expires=Fri, 3 Mar 2100 00:00:00 UTC; path=/';
+			$.cookie("fs_mediaplayer_quality", selectedQ);
+			
+			//console.log($(self.cssSelector.jPlayer).data("jPlayer").status);
+			//console.log(newLocation);
+			
+			var newTime = Math.floor($(self.cssSelector.jPlayer).data("jPlayer").status.currentTime);
+			//console.log(newTime);
+			/* start video at current point */
+			$(self.cssSelector.jPlayer).jPlayer("setMedia", { // Set the media
+				m4v: newLocation
+			}).jPlayer("play", newTime);
+    		
+    		// Update display with selection
+    		$(self.cssSelector.videoq + " a").html(selectedQ);
+    		
+    		// hide menu
+			$(self.cssSelector.videoq + " ul").slideUp();
+			return false;
+		});
+		
+		/* show/hide volume - was for vertical slider
+		$(this.cssSelector.volumebtn).mouseover(function() {
+			$(self.cssSelector.cssSelectorAncestor + " .jp-volume-box").slideDown();
+		});
+		$(this.cssSelector.cssSelectorAncestor + " .jp-volume-box").mouseout(function() {
+			$(self.cssSelector.cssSelectorAncestor + " .jp-volume-box").slideUp();
+		});
+		*/
+		$(this.cssSelector.cssSelectorAncestor + " .jp-volume-box").mouseover(function() {
+			$(self.cssSelector.cssSelectorAncestor + " .jp-volume-box").width(100);
+			/*var options = { to: { width: 108 } };
+			if($(self.cssSelector.cssSelectorAncestor + " .jp-volume-box").width() < 108){
+				$(self.cssSelector.cssSelectorAncestor + " .jp-volume-box").stop(true, true).animate({ width: 108 }, { queue: true, duration: 500 });
+			}*/
+		});
+		$(this.cssSelector.cssSelectorAncestor + " .jp-volume-box").mouseout(function() {
+			$(self.cssSelector.cssSelectorAncestor + " .jp-volume-box").width(20);
+			//var options = { to: { width: 20 } };
+			//$(self.cssSelector.cssSelectorAncestor + " .jp-volume-box").stop(true, true).animate({ width: 20 }, { queue: true, duration: 500 });
+		});
+		
+		
+		$(this.cssSelector.infolink).click(function() {
+			if($(self.cssSelector.title + ' .fs-media-description').is(":visible")){
+				$(self.cssSelector.title + ' .fs-media-description').hide();
+			} else {
+				$(self.cssSelector.title + ' .fs-media-description').show();
+			}
+		});
+		
+		// ESC button - trigger exit full screen
+		$(window).keyup(function(event){
+			try{
+				if(event.keyCode == 27){
+					$('.jp-restore-screen').trigger('click');
+				}
+			}
+			catch (e) {
+			
+			}
+		});
+		
+		/* Hover events for player
+		$(this.cssSelector.cssSelectorAncestor).bind("mouseleave mouseenter", function(event) {
+			// toggles controls on hover
+			if(event.type == 'mouseleave'){
+				$(self.cssSelector.gui).hide();
+				console.log('hide ' + self.cssSelector.cssSelectorAncestor);
+			} else {
+				$(self.cssSelector.gui).show();
+			}
+		}); */
+		
+		// Remove the empty <li> from the page HTML. Allows page to be valid HTML, while not interfereing with display animations
+		$(this.cssSelector.playlist + " ul").empty();
+
+		// Create .live() handlers for the playlist items along with the free media and remove controls.
+		this._createItemHandlers();
+
+		// Instance jPlayer
+		$(this.cssSelector.jPlayer).jPlayer(this.options);
+	};
+
+	jPlayerPlaylist.prototype = {
+		_cssSelector: { // static object, instanced in constructor
+			jPlayer: "#jquery_jplayer_1",
+			cssSelectorAncestor: "#jp_container_1"
+		},
+		_options: { // static object, instanced in constructor
+			playlistOptions: {
+				autoPlay: false,
+				loopOnPrevious: false,
+				shuffleOnLoop: true,
+				enableRemoveControls: false,
+				displayTime: 'slow',
+				addTime: 'fast',
+				removeTime: 'fast',
+				shuffleTime: 'slow',
+				itemClass: "jp-playlist-item",
+				freeGroupClass: "jp-free-media",
+				freeItemClass: "jp-playlist-item-free",
+				removeItemClass: "jp-playlist-item-remove"
+			}
+		},
+		option: function(option, value) { // For changing playlist options only
+			if(value === undefined) {
+				return this.options.playlistOptions[option];
+			}
+
+			this.options.playlistOptions[option] = value;
+
+			switch(option) {
+				case "enableRemoveControls":
+					this._updateControls();
+					break;
+				case "itemClass":
+				case "freeGroupClass":
+				case "freeItemClass":
+				case "removeItemClass":
+					this._refresh(true); // Instant
+					this._createItemHandlers();
+					break;
+			}
+			return this;
+		},
+		_init: function() {
+			var self = this;
+			this._refresh(function() {
+				if(self.options.playlistOptions.autoPlay) {
+					self.play(self.current);
+				} else {
+					self.select(self.current);
+				}
+			});
+		},
+		_initPlaylist: function(playlist) {
+			this.current = 0;
+			this.shuffled = false;
+			this.removing = false;
+			this.original = $.extend(true, [], playlist); // Copy the Array of Objects
+			this._originalPlaylist();
+		},
+		_originalPlaylist: function() {
+			var self = this;
+			this.playlist = [];
+			// Make both arrays point to the same object elements. Gives us 2 different arrays, each pointing to the same actual object. ie., Not copies of the object.
+			$.each(this.original, function(i,v) {
+				self.playlist[i] = self.original[i];
+			});
+		},
+		_refresh: function(instant) {
+			/* instant: Can be undefined, true or a function.
+			 *	undefined -> use animation timings
+			 *	true -> no animation
+			 *	function -> use animation timings and excute function at half way point.
+			 */
+			var self = this;
+
+			if(instant && !$.isFunction(instant)) {
+				$(this.cssSelector.playlist + " ul").empty();
+				$.each(this.playlist, function(i,v) {
+					$(self.cssSelector.playlist + " ul").append(self._createListItem(self.playlist[i]));
+				});
+				this._updateControls();
+			} else {
+				var displayTime = $(this.cssSelector.playlist + " ul").children().length ? this.options.playlistOptions.displayTime : 0;
+
+				$(this.cssSelector.playlist + " ul").slideUp(displayTime, function() {
+					var $this = $(this);
+					$(this).empty();
+					
+					$.each(self.playlist, function(i,v) {
+						$this.append(self._createListItem(self.playlist[i]));
+					});
+					self._updateControls();
+					if($.isFunction(instant)) {
+						instant();
+					}
+					
+					// the slide doesn't work correctly for IE7 and lower, so skip it
+					if(self.playlist.length && !($.browser.msie && $.browser.version <= 7.5) ) {
+						$(this).slideDown(self.options.playlistOptions.displayTime);
+					} else {
+						$(this).show();
+					}
+				});
+			}
+		},
+		_createListItem: function(media) {
+			var self = this;
+			var dlURL = '';
+			var dQuality = '';
+			
+			if(self.options.supplied == "mp3"){
+				dQuality = self.options.supplied;
+				dlURL = media.mp3;
+			} else if (media.quality != '') {
+				dQuality = media.quality;
+				dlURL = media.m4v;
+			} else {
+				dQuality = 'flv';
+				dlURL = media.m4v;
+			}
+			
+			// Wrap the <li> contents in a <div>
+			var listItem = '<li data-quality="' + dQuality + '">';
+			
+			listItem += '<div class="playlistItemLinksBox"><p class="playlistItemLinks"';
+			if(self.options.supplied == "mp3") listItem += ' style="position: absolute; right: 0; top: 0;"';
+			listItem += '>';
+			if(media.showS) { listItem += '<span><a class="shareLink" href="javascript:void 0;" onclick="openShare('+ media.chnl +','+ media.cat +','+ media.grp +','+ media.obj +', event);">Share</a></span>'; }
+			if(media.showE) { listItem += '<span><a class="embedLink" href="javascript:void 0;" onclick="openEmbed(\''+ mediaUrl +'\','+ media.chnl +','+ media.cat +','+ media.grp +','+ media.obj +', null, event)">Embed</a></span>'; }
+			if(media.showD) { listItem += '<span class="jp-download-link"><a class="downloadLink" href="javascript:void 0;" onclick="openDownload(event, \'' + dlURL + '\');">Download</a></span>'; }
+			listItem += '</p></div>';
+			
+			listItem += "<a href='#player' class='" + this.options.playlistOptions.itemClass + "' title='"+ media.name + "' tabindex='1'>";
+			
+			if(self.options.supplied == "mp3"){
+				// Audio doesn't have thumbnails
+				listItem += '<div style="margin-left: -25px; width:750px">';
+			} else {
+				listItem += '<div class="playlistListItemThumb" style="width:150px; height:100px; background:url(\''+ media.thumb +'\') 50% 0 no-repeat; position:absolute; left:5px; top: 4px;"></div>';
+				listItem += '<div class="playlistListItemTitleDesc">';
+			}
+
+			// Create remove control
+			// listItem += "<a href='javascript:;' class='" + this.options.playlistOptions.removeItemClass + "'>&times;</a>";
+			
+			
+			
+			// Create links to free media
+			if(media.free) {
+				var first = true;
+				listItem += "<span class='" + this.options.playlistOptions.freeGroupClass + "'>(";
+				$.each(media, function(property,value) {
+					if($.jPlayer.prototype.format[property]) { // Check property is a media format.
+						if(first) {
+							first = false;
+						} else {
+							listItem += " | ";
+						}
+						listItem += "<a class='" + self.options.playlistOptions.freeItemClass + "' href='" + value + "' tabindex='1'>" + property + "</a>";
+					}
+				});
+				listItem += ")</span>";
+			}
+
+			// The title is given next in the HTML otherwise the float:right on the free media corrupts in IE6/7
+			//listItem += "<a href='javascript:;' class='" + this.options.playlistOptions.itemClass + "' tabindex='1'>" + media.title + (media.artist ? " <span class='jp-artist'>by " + media.artist + "</span>" : "") + "</a>";
+			listItem += '<div class="playlistListItemTitle">' + media.title + '</div>';
+			listItem += (media.artist ? " <div class='playlistArtist'>by " + media.artist + "</div>" : "");
+			listItem += '<div class="playlistDesc">' + media.desc + '</div>';
+			
+			if(self.options.supplied != "mp3"){
+				listItem += '</div><div style="display: block">';
+			}
+			
+			
+
+			listItem += "</div></a>";
+			listItem += "</li>";
+			
+			return listItem;
+		},
+		_createItemHandlers: function() {
+			var self = this;
+			
+			// Create .live() handlers for the playlist items
+			$(this.cssSelector.playlist + " a." + this.options.playlistOptions.itemClass).die("click").live("click", function() {
+				var index = $(this).parent('li').index();
+				
+				if(self.current !== index) {
+					self.play(index);
+				} else {
+					$(self.cssSelector.jPlayer).jPlayer("play");
+				}
+				
+				$(this).blur();
+				// return false;
+			});
+
+			// Create .live() handlers that disable free media links to force access via right click
+			$(self.cssSelector.playlist + " a." + this.options.playlistOptions.freeItemClass).die("click").live("click", function() {
+				$(this).parent().parent().find("." + self.options.playlistOptions.itemClass).click();
+				$(this).blur();
+				return false;
+			});
+
+			// Create .live() handlers for the remove controls
+			$(self.cssSelector.playlist + " a." + this.options.playlistOptions.removeItemClass).die("click").live("click", function() {
+				var index = $(this).parent().parent().index();
+				self.remove(index);
+				$(this).blur();
+				return false;
+			});
+		},
+		_updateControls: function() {
+			if(this.options.playlistOptions.enableRemoveControls) {
+				$(this.cssSelector.playlist + " ." + this.options.playlistOptions.removeItemClass).show();
+			} else {
+				$(this.cssSelector.playlist + " ." + this.options.playlistOptions.removeItemClass).hide();
+			}
+			if(this.shuffled) {
+				$(this.cssSelector.shuffleOff).show();
+				$(this.cssSelector.shuffle).hide();
+			} else {
+				$(this.cssSelector.shuffleOff).hide();
+				$(this.cssSelector.shuffle).show();
+			}
+		},
+		_highlight: function(index) {
+			if(this.playlist.length && index !== undefined) {
+				$(this.cssSelector.playlist + " .jp-playlist-current").removeClass("jp-playlist-current");
+				$(this.cssSelector.playlist + " li:nth-child(" + (index + 1) + ")").addClass("jp-playlist-current").find(".jp-playlist-item").addClass("jp-playlist-current");
+				$(this.cssSelector.title + " li").html(this.playlist[index].title + '<div class="fs-media-description">' + this.playlist[index].desc + '</div>' + (this.playlist[index].artist ? " <span class='jp-artist'>by " + this.playlist[index].artist + "</span>" : ""));
+			}
+		},
+		setPlaylist: function(playlist) {
+			this._initPlaylist(playlist);
+			this._init();
+		},
+		add: function(media, playNow) {
+			$(this.cssSelector.playlist + " ul").append(this._createListItem(media)).find("li:last-child").hide().slideDown(this.options.playlistOptions.addTime);
+			this._updateControls();
+			this.original.push(media);
+			this.playlist.push(media); // Both array elements share the same object pointer. Comforms with _initPlaylist(p) system.
+
+			if(playNow) {
+				this.play(this.playlist.length - 1);
+			} else {
+				if(this.original.length === 1) {
+					this.select(0);
+				}
+			}
+		},
+		remove: function(index) {
+			var self = this;
+
+			if(index === undefined) {
+				this._initPlaylist([]);
+				this._refresh(function() {
+					$(self.cssSelector.jPlayer).jPlayer("clearMedia");
+				});
+				return true;
+			} else {
+
+				if(this.removing) {
+					return false;
+				} else {
+					index = (index < 0) ? self.original.length + index : index; // Negative index relates to end of array.
+					if(0 <= index && index < this.playlist.length) {
+						this.removing = true;
+
+						$(this.cssSelector.playlist + " li:nth-child(" + (index + 1) + ")").slideUp(this.options.playlistOptions.removeTime, function() {
+							$(this).remove();
+
+							if(self.shuffled) {
+								var item = self.playlist[index];
+								$.each(self.original, function(i,v) {
+									if(self.original[i] === item) {
+										self.original.splice(i, 1);
+										return false; // Exit $.each
+									}
+								});
+								self.playlist.splice(index, 1);
+							} else {
+								self.original.splice(index, 1);
+								self.playlist.splice(index, 1);
+							}
+
+							if(self.original.length) {
+								if(index === self.current) {
+									self.current = (index < self.original.length) ? self.current : self.original.length - 1; // To cope when last element being selected when it was removed
+									self.select(self.current);
+								} else if(index < self.current) {
+									self.current--;
+								}
+							} else {
+								$(self.cssSelector.jPlayer).jPlayer("clearMedia");
+								self.current = 0;
+								self.shuffled = false;
+								self._updateControls();
+							}
+
+							self.removing = false;
+						});
+					}
+					return true;
+				}
+			}
+		},
+		select: function(index) {
+			this.fallbackAttempted = false;
+			index = (index < 0) ? this.original.length + index : index; // Negative index relates to end of array.
+			if(0 <= index && index < this.playlist.length) {
+				this.current = index;
+				this._highlight(index);
+				this.setQuality();
+				$(this.cssSelector.jPlayer).jPlayer("setMedia", this.playlist[this.current]);
+			} else {
+				this.current = 0;
+			}
+		},
+		setQuality: function() {
+			// We shouldn't do anything for audio files
+			if (this.playlist[this.current].mp3 || this.playlist[this.current].m4a) {
+				return;
+			}
+			var cookie_quality = $.cookie('fs_mediaplayer_quality');
+			$(this.cssSelector.videoq + ' li[data-value="720p"]').show();
+			$(this.cssSelector.videoq + ' li[data-value="1080p"]').show();
+			if (this.playlist[this.current].path_1080p.length == 0) {
+				// There is no 1080p version of this video
+				$(this.cssSelector.videoq + ' li[data-value="1080p"]').hide();
+				// Downscale the cookie quality
+				if (cookie_quality == '1080p') {
+					cookie_quality = '720p';
+				}
+			}
+			if (this.playlist[this.current].path_720p.length == 0) {
+				// There is no 720p version of this video
+				$(this.cssSelector.videoq + ' li[data-value="720p"]').hide();
+				// Downscale the cookie quality
+				if (cookie_quality == '720p') {
+					cookie_quality = '480p';
+				}
+			}
+			switch (cookie_quality) {
+				case '1080p':
+				case '720p':
+				case '480p':
+					// We need to make sure the m4v attribute is set to the correct resolution
+					this.playlist[this.current].m4v = this.playlist[this.current]['path_' + cookie_quality];
+					$(this.cssSelector.videoq + ' a').html(cookie_quality);
+					break;
+				default:
+					// Default the m4v attribute to the 360p version
+					this.playlist[this.current].m4v = this.playlist[this.current]['path_360p'];
+					$(this.cssSelector.videoq + ' a').html('360p');
+					break;
+			}
+		},
+		play: function(index) {
+			index = (index < 0) ? this.original.length + index : index; // Negative index relates to end of array.
+			if(0 <= index && index < this.playlist.length) {
+				if(this.playlist.length) {
+					this.select(index);
+					$(this.cssSelector.jPlayer).jPlayer("play");
+				}
+			} else if(index === undefined) {
+				$(this.cssSelector.jPlayer).jPlayer("play");
+			}
+		},
+		pause: function() {
+			$(this.cssSelector.jPlayer).jPlayer("pause");
+		},
+		next: function() {
+			var index = (this.current + 1 < this.playlist.length) ? this.current + 1 : 0;
+			this.fallbackAttempted = false;
+			if(this.loop) {
+				// See if we need to shuffle before looping to start, and only shuffle if more than 1 item.
+				if(index === 0 && this.shuffled && this.options.playlistOptions.shuffleOnLoop && this.playlist.length > 1) {
+					this.shuffle(true, true); // playNow
+				} else {
+					this.play(index);
+				}
+			} else {
+				// The index will be zero if it just looped round
+				if(index > 0) {
+					this.play(index);
+				}
+			}
+		},
+		previous: function() {
+			var index = (this.current - 1 >= 0) ? this.current - 1 : this.playlist.length - 1;
+			this.fallbackAttempted = false;
+			if(this.loop && this.options.playlistOptions.loopOnPrevious || index < this.playlist.length - 1) {
+				this.play(index);
+			}
+		},
+		shuffle: function(shuffled, playNow) {
+			var self = this;
+
+			if(shuffled === undefined) {
+				shuffled = !this.shuffled;
+			}
+
+			if(shuffled || shuffled !== this.shuffled) {
+
+				$(this.cssSelector.playlist + " ul").slideUp(this.options.playlistOptions.shuffleTime, function() {
+					self.shuffled = shuffled;
+					if(shuffled) {
+						self.playlist.sort(function() {
+							return 0.5 - Math.random();
+						});
+					} else {
+						self._originalPlaylist();
+					}
+					self._refresh(true); // Instant
+
+					if(playNow || !$(self.cssSelector.jPlayer).data("jPlayer").status.paused) {
+						self.play(0);
+					} else {
+						self.select(0);
+					}
+
+					$(this).slideDown(self.options.playlistOptions.shuffleTime);
+				});
+			}
+		},
+		resizePoster: function(){
+			
+			// Resize poster to avoid stretching
+			var self = this;
+			var posterSelector = self.cssSelector.jPlayer + ' img';
+			
+			// Set the poster image's size to 0x0 so we can get an accurate reading of the size of the player
+			$(posterSelector).css('width', 0);
+			$(posterSelector).css('height', 0);
+			
+			// Calculate the player width, height, and aspect ratio before setting the poster image's width and height to auto
+			var playerWidth = $(self.cssSelector.jPlayer).width();
+			var playerHeight = $(self.cssSelector.jPlayer).height();
+			var playerAspectRatio = playerWidth / playerHeight;
+			
+			// Set the poster image's width and height to auto to get its real size
+			$(posterSelector).css('width', 'auto');
+			$(posterSelector).css('height', 'auto');
+			
+			// Retrieve the real width and height from the image
+			var posterWidth = $(posterSelector).width();
+			var posterHeight = $(posterSelector).height();
+			
+			// If width or height are 0 then the image hasn't loaded yet and we can't get its aspect ratio so we need to wait until the image has loaded
+			if (posterWidth == 0 || posterHeight == 0) {
+				// Bind to the 'load' event and recursively call this method again so its dimensions will be available
+				$(posterSelector).load(function(){
+					self.resizePoster();
+				});
+				// Do not continue any further
+				return;
+			}
+			
+			// Calculate the aspect ratio of the poster
+			var posterAspectRatio = posterWidth / posterHeight;
+			
+			if (posterAspectRatio <= playerAspectRatio) {
+				// If the poster's aspect ratio is less than or equal to the player's aspect ratio,
+				// set its height equal to the player height and set the top margin to 0 (will center due to text-align:center on a parent element).
+				$(posterSelector).css('height', playerHeight);
+				var posterMargin = (playerHeight - $(posterSelector).height()) / 2;
+				$(posterSelector).css('margin-top', 0);
+			} else {
+				// If the poster's aspect ratio is greater than the player's aspect ratio,
+				// set its width equal to the player width and set the top margin to half the distance between the height of the player and the height of the resized poster.
+				$(posterSelector).css('width', playerWidth);
+				$(posterSelector).css('height','auto');
+				var posterMarginTop = (playerHeight - $(posterSelector).height()) / 2;
+				$(posterSelector).css('margin-top', posterMarginTop);
+			}
+		}
+	};
+})(jQuery);

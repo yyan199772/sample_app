@@ -1,0 +1,221 @@
+2015-09-18 11:16:36.892 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=3] -[KSAgentApp(KeystoneThread) runKeystonesInThreadWithArg:] Failed to connect to system engine.
+2015-09-18 11:16:36.864 GoogleSoftwareUpdateAgent[1459/0xa0e631d4] [lvl=2] -[KSAgentApp setupLoggerOutput] Agent settings: <KSAgentSettings:0x467870 bundleID=com.google.Keystone.Agent lastCheck=(null) checkInterval=18000.000000 uiDisplayInterval=604800.000000 sleepInterval=1800.000000 jitterInterval=900 maxRunInterval=0.000000 isConsoleUser=1 ticketStorePath=/Users/technology/Library/Google/GoogleSoftwareUpdate/TicketStore/Keystone.ticketstore runMode=3 daemonUpdateEngineBrokerServiceName=com.google.Keystone.Daemon.UpdateEngine daemonAdministrationServiceName=com.google.Keystone.Daemon.Administration logEverything=0 logBufferSize=2048 alwaysPromptForUpdates=0 productIDToUpdate=(null) lastUIDisplayed=(null) lastCheck=(null) alwaysShowStatusItem=0 updateCheckTag=(null) printResults=NO userInitiated=NO>
+2015-09-18 11:16:36.883 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSProductsReportingStore updateActivesData:forProductID:withKey:] Updating of actives data started.
+2015-09-18 11:16:36.884 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSProductsReportingStore updateActivesData:forProductID:withKey:] Updating of actives data completed.
+2015-09-18 11:16:36.884 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSProductsReportingStore updateProductActivesWithError:] Retrieving product actives started.
+2015-09-18 11:16:36.886 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSProductsReportingStore updateProductActivesWithError:] Retrieving product actives completed. Success: YES
+2015-09-18 11:16:36.887 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] +[KSProductsReportingStore loadReportingAttributesWithError:] Retrieving product reporting attributes started.
+2015-09-18 11:16:36.889 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] +[KSProductsReportingStore loadReportingAttributesWithError:] Retrieving product reporting attributes completed.
+2015-09-18 11:16:36.918 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=2] -[KSUpdateEngine updateProductID:] KSUpdateEngine updating product ID: "com.google.Keystone"
+2015-09-18 11:16:36.920 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSUpdateEngine(PrivateMethods) triggerUpdateForTickets:] KSUpdateEngine creating update action pipeline for ticket(s): {(
+	<KSTicket:0x488850
+		productID=com.google.Keystone
+		version=1.2.0.7886
+		xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+		url=https://tools.google.com/service/update2
+		creationDate=2015-09-18 15:16:36
+	>
+)}
+2015-09-18 11:16:36.920 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSUpdateEngine(KSActionProcessorDelegate) processingStarted:] KSUpdateEngine starting update processing.
+2015-09-18 11:16:36.920 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSUpdateEngine(KSActionProcessorDelegate) processor:startingAction:] KSUpdateEngine starting action: <KSCheckAction:0x488cf0
+	engine=<KSUpdateEngine:0x483080>
+	subProcessor=<KSActionProcessor:0x488dd0
+		delegate=<KSCheckAction:0x488cf0>
+		isProcessing=NO actionsCompleted=0 progress=0.00
+		errors=0 currentActionErrors=0
+		actionQueue=( )
+	>
+	inputTickets={(
+		<KSTicket:0x488850
+			productID=com.google.Keystone
+			version=1.2.0.7886
+			xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+			url=https://tools.google.com/service/update2
+			creationDate=2015-09-18 15:16:36
+		>
+	)}
+	outputUpdates=(null)
+>
+2015-09-18 11:16:36.920 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=2] -[KSCheckAction performAction] KSCheckAction checking 1 ticket(s).
+2015-09-18 11:16:36.921 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSCheckAction performAction] KSCheckAction checking ticket(s): {(
+	<KSTicket:0x488850
+		productID=com.google.Keystone
+		version=1.2.0.7886
+		xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+		url=https://tools.google.com/service/update2
+		creationDate=2015-09-18 15:16:36
+	>
+)}
+2015-09-18 11:16:36.921 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSCheckAction performAction] KSCheckAction constructing update check pipeline for Omaha server "https://tools.google.com/service/update2". Tickets for this server: {(
+	<KSTicket:0x488850
+		productID=com.google.Keystone
+		version=1.2.0.7886
+		xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+		url=https://tools.google.com/service/update2
+		creationDate=2015-09-18 15:16:36
+	>
+)}
+2015-09-18 11:16:36.929 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSCheckAction performAction] KSCheckAction found installed product for ticket: <KSTicket:0x488850
+	productID=com.google.Keystone
+	version=1.2.0.7886
+	xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+	url=https://tools.google.com/service/update2
+	creationDate=2015-09-18 15:16:36
+>
+2015-09-18 11:16:36.962 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSMultiAction(KSActionProcessorDelegate) processingStarted:] KSCheckAction subprocessor starting: <KSActionProcessor:0x488dd0
+	delegate=<KSCheckAction:0x488cf0>
+	isProcessing=YES actionsCompleted=0 progress=0.00
+	errors=0 currentActionErrors=0
+	actionQueue=(
+		<KSUpdateCheckAction:0x48b530
+			engine=<KSUpdateEngine:0x483080>
+			fetcherFactory=<KSFetcherFactory:0x483950>
+			server=<KSOmahaServer:0x489a60
+				engine=<KSUpdateEngine:0x483080>
+				params={
+					ActivesInfo = {
+						"com.google.Keystone" = {
+							LastActiveDate = 2015-09-18 15:16:36 +0000;
+						};
+						"com.google.Chrome" = {
+							LastActiveDate = 2015-09-18 15:16:32 +0000;
+						};
+					};
+					IsSystem = 0;
+					ReportingAttributes = {
+						"com.google.Chrome" = (
+							<KSUnsignedReportingAttribute:0x345280 name='_numaccounts' value='1' expiration time='2015-10-16 15:16:32 +0000' aggregation='sum'>,
+							<KSUnsignedReportingAttribute:0x345370 name='_numsignedin' value='0' expiration time='2015-10-16 15:16:32 +0000' aggregation='sum'>
+						);
+					};
+					EngineVersion = "1.2.0.7886";
+					UserInitiated = 0;
+					Identity = KeystoneAgent;
+				}
+			>
+			runningRequests=0
+			inputTickets={(
+				<KSTicket:0x488850
+					productID=com.google.Keystone
+					version=1.2.0.7886
+					xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+					url=https://tools.google.com/service/update2
+					creationDate=2015-09-18 15:16:36
+				>
+			)}
+			outputUpdates=(null)
+		>
+	)
+>
+2015-09-18 11:16:36.963 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSMultiAction(KSActionProcessorDelegate) processor:startingAction:] KSCheckAction subprocessor starting: <KSUpdateCheckAction:0x48b530
+	engine=<KSUpdateEngine:0x483080>
+	fetcherFactory=<KSFetcherFactory:0x483950>
+	server=<KSOmahaServer:0x489a60
+		engine=<KSUpdateEngine:0x483080>
+		params={
+			ActivesInfo = {
+				"com.google.Keystone" = {
+					LastActiveDate = 2015-09-18 15:16:36 +0000;
+				};
+				"com.google.Chrome" = {
+					LastActiveDate = 2015-09-18 15:16:32 +0000;
+				};
+			};
+			IsSystem = 0;
+			ReportingAttributes = {
+				"com.google.Chrome" = (
+					<KSUnsignedReportingAttribute:0x345280 name='_numaccounts' value='1' expiration time='2015-10-16 15:16:32 +0000' aggregation='sum'>,
+					<KSUnsignedReportingAttribute:0x345370 name='_numsignedin' value='0' expiration time='2015-10-16 15:16:32 +0000' aggregation='sum'>
+				);
+			};
+			EngineVersion = "1.2.0.7886";
+			UserInitiated = 0;
+			Identity = KeystoneAgent;
+		}
+	>
+	runningRequests=0
+	inputTickets={(
+		<KSTicket:0x488850
+			productID=com.google.Keystone
+			version=1.2.0.7886
+			xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+			url=https://tools.google.com/service/update2
+			creationDate=2015-09-18 15:16:36
+		>
+	)}
+	outputUpdates=(null)
+>
+2015-09-18 11:16:36.964 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=2] -[KSUpdateCheckAction performAction] KSUpdateCheckAction starting update check for ticket(s): {(
+	<KSTicket:0x488850
+		productID=com.google.Keystone
+		version=1.2.0.7886
+		xc=<KSPathExistenceChecker:0x488350 path=/Users/technology/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle>
+		url=https://tools.google.com/service/update2
+		creationDate=2015-09-18 15:16:36
+	>
+)}
+Using server: <KSOmahaServer:0x489a60
+	engine=<KSUpdateEngine:0x483080>
+	params={
+		ActivesInfo = {
+			"com.google.Keystone" = {
+				LastActiveDate = 2015-09-18 15:16:36 +0000;
+			};
+			"com.google.Chrome" = {
+				LastActiveDate = 2015-09-18 15:16:32 +0000;
+			};
+		};
+		IsSystem = 0;
+		ReportingAttributes = {
+			"com.google.Chrome" = (
+				<KSUnsignedReportingAttribute:0x345280 name='_numaccounts' value='1' expiration time='2015-10-16 15:16:32 +0000' aggregation='sum'>,
+				<KSUnsignedReportingAttribute:0x345370 name='_numsignedin' value='0' expiration time='2015-10-16 15:16:32 +0000' aggregation='sum'>
+			);
+		};
+		EngineVersion = "1.2.0.7886";
+		UserInitiated = 0;
+		Identity = KeystoneAgent;
+	}
+>
+2015-09-18 11:16:37.066 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] +[KSCUPProtocol(InternalHelpers) addCupDataToRequest:fixedNonce:publicKey:error:] Added CUP information to URL: https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248
+2015-09-18 11:16:37.258 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=2] -[KSUpdateCheckAction performAction] KSUpdateCheckAction running KSServerUpdateRequest: <KSOmahaServerUpdateRequest:0x32d000
+	server=<KSOmahaServer:0x489a60>
+	url="https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248"
+	runningFetchers=0
+	tickets=1
+	activeTickets=1
+	rollCallTickets=1
+	body=
+		<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+		<o:gupdate xmlns:o="http://www.google.com/update2/request" protocol="2.0" version="KeystoneAgent-1.2.0.7886" ismachine="0" requestid="{1DEB18DA-2697-4241-9870-9EB7B2FA3629}">
+		    <o:os platform="mac" version="MacOSX" sp="10.10.3_i486"></o:os>
+		    <o:app appid="com.google.Keystone" version="1.2.0.7886" lang="en-us" installage="0" brand="GGLG">
+		        <o:ping r="-1" a="-1"></o:ping>
+		        <o:updatecheck></o:updatecheck>
+		    </o:app>
+		</o:gupdate>
+>
+2015-09-18 11:16:37.258 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSServerUpdateRequest fetchWithDelegate:fetcherFactory:] KSOmahaServerUpdateRequest begin fetch "https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248" for delegate <KSUpdateCheckAction:0x48b530>
+2015-09-18 11:16:37.286 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSOutOfProcessFetcher beginFetchWithDelegate:didFinishSelector:didFailSelector:] KSOutOfProcessFetcher start fetch from URL: "https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248"
+2015-09-18 11:16:37.563 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSOutOfProcessFetcher beginFetchWithDelegate:didFinishSelector:didFailSelector:] KSOutOfProcessFetcher fetching from URL: "https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248"
+2015-09-18 11:16:41.271 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSOutOfProcessFetcher(PrivateMethods) helperDidTerminate:] KSOutOfProcessFetcher fetch ended for URL: "https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248"
+2015-09-18 11:16:41.319 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=1] -[KSServerUpdateRequest(PrivateMethods) fetcher:finishedWithData:] KSOmahaServerUpdateRequest successfully fetched "https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248"
+2015-09-18 11:16:41.319 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=2] -[KSUpdateCheckAction(KSServerUpdateRequestDelegate) serverRequest:fetchedWithResponse:] KSUpdateCheckAction received KSServerUpdateResponse: <KSOmahaServerUpdateResponse:0x491400
+	server=<KSOmahaServer:0x489a60>
+	url="https://tools.google.com/service/update2?cup2hreq=c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34&cup2key=5:3547331248"
+	status=200
+	tickets=1
+	activeTickets=1
+	rollCallTickets=1
+	data=
+		<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+		<gupdate xmlns="http://www.google.com/update2/response" protocol="2.0" server="prod">
+		    <daystart elapsed_days="3182" elapsed_seconds="29801"></daystart>
+		    <app appid="com.google.Keystone" cohort="" cohortname="" status="ok">
+		        <ping status="ok"></ping>
+		        <updatecheck codebase="http://dl.google.com/keystone/GoogleSoftwareUpdate-1.2.2.428.dmg" fp="1.279c8997f1c9625c95de186fa509660dc530c10a2c7ec4bdf26d87c358c6ab96" hash="/G46Wx91O932rnUo78qsSmTVEfc=" hash_sha256="279c8997f1c9625c95de186fa509660dc530c10a2c7ec4bdf26d87c358c6ab96" needsadmin="false" size="934726" status="ok"></updatecheck>
+		    </app>
+		</gupdate>
+>
+2015-09-18 11:16:41.320 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=3] -[KSOmahaServer updateInfosForUpdateResponse:updateRequest:infoStore:upToDateTickets:errors:] Response did NOT pass CUP validation.
+2015-09-18 11:16:41.330 GoogleSoftwareUpdateAgent[1459/0xb0219000] [lvl=3] -[KSOmahaServer updateInfosForUpdateResponse:updateRequest:infoStore:upToDateTickets:errors:] Request hash in ETag is the wrong size: "W/"30450221009daac37169ea1ecc4db16a3f2d68965dfbe2720b66f461ea139dcc6d5308d28f02205638101ba18cfb35fabb00f309858f9740d63864edc643bb37cc965cc7d32729:c18e767005be112cf187fb3fd8faa18c198fe7790313dc8dde15220b807e5a34"" [com.google.UpdateEngine.CommonErrorDomain:1803 - 'KSCUPProtocol.m:95']

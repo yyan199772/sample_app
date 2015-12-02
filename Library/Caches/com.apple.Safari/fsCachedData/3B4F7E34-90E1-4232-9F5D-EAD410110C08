@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Quadratic formula - Wikipedia, the free encyclopedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Quadratic_formula","wgTitle":"Quadratic formula","wgCurRevisionId":688015362,"wgRevisionId":688015362,"wgArticleId":59217,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Polynomials","Elementary algebra","Equations"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Quadratic_formula","wgRelevantArticleId":59217,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wikilove-recipient":"","wikilove-anon":0,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgGatherShouldShowTutorial":true,"wgGatherEnableSample":0,"wgGatherPageImageThumbnail":"//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Scuola_di_atene_07.jpg/85px-Scuola_di_atene_07.jpg","wgULSAcceptLanguageList":["en-us","en"],"wgULSCurrentAutonym":"English","wgFlaggedRevsParams":{"tags":{"status":{"levels":1,"quality":2,"pristine":3}}},"wgStableRevisionId":null,"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q15909572","wgVisualEditorToolbarScrollOffset":0}); /* @nomin */mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"}); /* @nomin */ ;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","ext.gadget.WatchlistBase","ext.gadget.WatchlistGreenIndicators","mmv.head","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","ext.centralNotice.bannerController","skins.vector.js"]);
+} );</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.gadget.DRN-wizard%2CReferenceTooltips%2CWatchlistBase%2CWatchlistGreenIndicators%2Ccharinsert%2Cfeatured-articles-links%2CrefToolbar%2Cswitcher%2Cteahouse%7Cext.math.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.raggett%2CsectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}</style>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.27.0-wmf.5" />
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Quadratic_formula" />
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Quadratic_formula&amp;action=edit" />
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Quadratic_formula&amp;action=edit" />
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png" />
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Quadratic_formula" />
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/static/1.27.0-wmf.5/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Quadratic_formula skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><!-- CentralNotice --></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Quadratic formula</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">From Wikipedia, the free encyclopedia</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/File:Quadratic_formula.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Quadratic_formula.svg/220px-Quadratic_formula.svg.png" width="220" height="68" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Quadratic_formula.svg/330px-Quadratic_formula.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Quadratic_formula.svg/440px-Quadratic_formula.svg.png 2x" data-file-width="402" data-file-height="124" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Quadratic_formula.svg" class="internal" title="Enlarge"></a></div>
+The quadratic formula</div>
+</div>
+</div>
+<p>In <a href="/wiki/Elementary_algebra" title="Elementary algebra">elementary algebra</a>, the <b>quadratic formula</b> is the solution of the <a href="/wiki/Quadratic_equation" title="Quadratic equation">quadratic equation</a>. There are other ways to solve the quadratic equation instead of using the quadratic formula, such as <a href="/wiki/Factorization" title="Factorization">factoring</a>, <a href="/wiki/Completing_the_square" title="Completing the square">completing the square</a>, or <a href="/wiki/Graph_of_a_function" title="Graph of a function">graphing</a>. Using the quadratic formula is often the most convenient way.</p>
+<p>The general quadratic equation is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="ax^2+bx+c=0." src="//upload.wikimedia.org/math/2/7/e/27e1ff481bccce378d6637a3a88b22c3.png" /></dd>
+</dl>
+<p>Here <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> represents an unknown, while <span class="texhtml mvar" style="font-style:italic;"><i>a</i></span>, <span class="texhtml mvar" style="font-style:italic;"><i>b</i></span>, and <span class="texhtml mvar" style="font-style:italic;"><i>c</i></span> are <a href="/wiki/Constant_term" title="Constant term">constants</a> with <span class="texhtml mvar" style="font-style:italic;"><i>a</i></span> not equal to 0. One can verify that the quadratic formula satisfies the quadratic equation, by inserting the former into the latter. Each of the solutions given by the quadratic formula is called a <a href="/wiki/Zero_of_a_function" title="Zero of a function">root</a> of the quadratic equation.</p>
+<p>Geometrically, these roots represent the <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> values at which <i>any</i> <a href="/wiki/Parabola" title="Parabola">parabola</a>, explicitly given as <img class="mwe-math-fallback-image-inline tex" alt="y = ax^2+bx+c," src="//upload.wikimedia.org/math/8/6/8/8689dcea76202770f031c9c76bf366ff.png" /> crosses the <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> axis. As well as being a formula that will yield the zeros of any parabola, the quadratic equation will give the axis of symmetry of the parabola, and it can be used to immediately determine how many zeros to expect the parabola to have.</p>
+<p></p>
+<div id="toc" class="toc">
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Derivation_of_the_formula"><span class="tocnumber">1</span> <span class="toctext">Derivation of the formula</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Geometrical_significance"><span class="tocnumber">2</span> <span class="toctext">Geometrical significance</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Historical_development"><span class="tocnumber">3</span> <span class="toctext">Historical development</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Other_derivations"><span class="tocnumber">4</span> <span class="toctext">Other derivations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Alternate_method_of_completing_the_square"><span class="tocnumber">4.1</span> <span class="toctext">Alternate method of completing the square</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#By_substitution"><span class="tocnumber">4.2</span> <span class="toctext">By substitution</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#By_using_algebraic_identities"><span class="tocnumber">4.3</span> <span class="toctext">By using algebraic identities</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#By_Lagrange_resolvents"><span class="tocnumber">4.4</span> <span class="toctext">By Lagrange resolvents</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Derivation_of_the_formula">Derivation of the formula</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=1" title="Edit section: Derivation of the formula">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Once a student understands how to <a href="/wiki/Completing_the_square" title="Completing the square">complete the square</a>, they can then derive the quadratic formula.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span>[</span>2<span>]</span></a></sup> For that reason, the derivation is sometimes left as an exercise for the student, who can thereby experience rediscovery of this important formula.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="#cite_note-4"><span>[</span>4<span>]</span></a></sup> The explicit derivation is as follows.</p>
+<p>Divide the quadratic equation by <span class="texhtml mvar" style="font-style:italic;"><i>a</i></span>, which is allowed because <span class="texhtml mvar" style="font-style:italic;"><i>a</i></span> is non-zero:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x^2 + \frac{b}{a} x + \frac{c}{a}=0." src="//upload.wikimedia.org/math/6/2/b/62b3759d12f172fc24ef8a9c6f5bd85f.png" /></dd>
+</dl>
+<p>Subtract <span class="texhtml mvar" style="font-style:italic;"><i>c</i>/<i>a</i></span> from both sides of the equation, yielding:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x^2 + \frac{b}{a} x= -\frac{c}{a}." src="//upload.wikimedia.org/math/1/4/3/1435e1a582704849186cd188263a9b33.png" /></dd>
+</dl>
+<p>The quadratic equation is now in a form to which the method of completing the square can be applied. Thus, add a constant to both sides of the equation such that the left hand side becomes a complete square:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x^2+\frac{b}{a}x+\left( \frac{b}{2a} \right)^2 =-\frac{c}{a}+\left( \frac{b}{2a} \right)^2," src="//upload.wikimedia.org/math/f/c/8/fc82f4bb167d871b266e519d4e460319.png" /></dd>
+</dl>
+<p>which produces:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left(x+\frac{b}{2a}\right)^2=-\frac{c}{a}+\frac{b^2}{4a^2}" src="//upload.wikimedia.org/math/c/9/0/c90f31c8efac891a9f44a6e4574cba40.png" />.</dd>
+</dl>
+<p>Accordingly, after rearranging the terms on the right hand side to have a common denominator, we obtain this:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left(x+\frac{b}{2a}\right)^2=\frac{b^2-4ac}{4a^2}." src="//upload.wikimedia.org/math/6/e/e/6ee0ac4d5fad8cdfa2ddd45a843e7541.png" /></dd>
+</dl>
+<p>The square has thus been completed. Taking the <a href="/wiki/Square_root" title="Square root">square root</a> of both sides yields the following equation:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x+\frac{b}{2a}=\pm\frac{\sqrt{b^2-4ac\ }}{2a}." src="//upload.wikimedia.org/math/a/d/8/ad888a142382896b3621905160b3e441.png" /></dd>
+</dl>
+<p>Isolating <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> gives the quadratic formula:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x=\frac{-b\pm\sqrt{b^2-4ac\ }}{2a}." src="//upload.wikimedia.org/math/b/b/a/bba46479d07af61b6e596219ce4e2cd5.png" /></dd>
+</dl>
+<p>The <a href="/wiki/Plus-minus_sign" title="Plus-minus sign">plus-minus symbol "±"</a> indicates that both</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" x=\frac{-b + \sqrt {b^2-4ac}}{2a}\quad\text{and}\quad x=\frac{-b - \sqrt {b^2-4ac}}{2a}" src="//upload.wikimedia.org/math/8/2/7/82750cc2754b3d4982a9ecfc19f1876d.png" /></dd>
+</dl>
+<p>are solutions of the quadratic equation.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5"><span>[</span>5<span>]</span></a></sup> There are many alternatives of this derivation with minor differences, mostly concerning the manipulation of <img class="mwe-math-fallback-image-inline tex" alt="a" src="//upload.wikimedia.org/math/0/c/c/0cc175b9c0f1b6a831c399e269772661.png" />.</p>
+<p>Some sources, particularly older ones, use alternative parameterizations of the quadratic equation such as <span class="texhtml"><i>ax</i><sup>2</sup> - 2<i>bx</i> + <i>c</i> = 0</span><sup id="cite_ref-kahan_6-0" class="reference"><a href="#cite_note-kahan-6"><span>[</span>6<span>]</span></a></sup> or <span class="texhtml"><i>ax</i><sup>2</sup> + 2<i>bx</i> + <i>c</i> = 0</span>,<sup id="cite_ref-7" class="reference"><a href="#cite_note-7"><span>[</span>7<span>]</span></a></sup> where <span class="texhtml mvar" style="font-style:italic;"><i>b</i></span> has a magnitude one half of the more common one. These result in slightly different forms for the solution, but are otherwise equivalent.</p>
+<p>A lesser known quadratic formula, as used in <a href="/wiki/Muller%27s_method" title="Muller's method">Muller's method</a>, and which can be found from <a href="/wiki/Vieta%27s_formulas" title="Vieta's formulas">Vieta's formulas</a>, provides the same roots via the equation:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x=\frac{-2c}{b\pm\sqrt{b^2-4ac}}." src="//upload.wikimedia.org/math/4/4/9/449964c4043551266294982bf042c525.png" /></dd>
+</dl>
+<h2><span class="mw-headline" id="Geometrical_significance">Geometrical significance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=2" title="Edit section: Geometrical significance">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Without going into parabolas as geometrical objects on a cone (see <a href="/wiki/Conic_section" title="Conic section">Conic section</a>), a parabola is any curve described by a second-order polynomial, i.e. any equation of the form:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="p_2 \left(x \right) = a_2x^2 + a_1x +a_0 " src="//upload.wikimedia.org/math/b/7/f/b7fa9fa807abcfd42fe02019e1e07e27.png" /></p>
+<p>where <span class="texhtml mvar" style="font-style:italic;"><i>p</i><sub>2</sub></span> represents the polynomial of order 2 and <span class="texhtml mvar" style="font-style:italic;"><i>a</i><sub>0</sub>, <i>a</i><sub>1</sub>,</span> and <span class="texhtml mvar" style="font-style:italic;"><i>a</i><sub>2</sub></span> are constant coefficients whose subscripts correspond to their respective term's order. The first and foremost geometrical application of the quadratic formula is that it will define the points along the <span class="texhtml"><i>x</i></span> axis where the parabola will cross it. Additionally, if the quadratic formula were broken into two terms,</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="x = \frac{-b\pm\sqrt{b^2-4ac\ }}{2a}=-\frac{b}{2a} \pm\frac{\sqrt{b^2-4ac\ }}{2a}" src="//upload.wikimedia.org/math/f/0/c/f0c2a9ffc9c633c0b4a3a1423a7f5112.png" /></p>
+<p>the definition of the axis of symmetry appears as the <img class="mwe-math-fallback-image-inline tex" alt="\; -\frac{b}{2a}\;" src="//upload.wikimedia.org/math/0/e/2/0e2ec56562d7119a746ed6dda3459ad8.png" /> term. The other term, <img class="mwe-math-fallback-image-inline tex" alt="\frac{\sqrt{b^2-4ac\ }}{2a}" src="//upload.wikimedia.org/math/3/0/8/3084b6c79af6d5c50c78f4e16d5d6410.png" />, must then be the distance the zeros are away from the axis of symmetry, where the plus sign represents the distance away to the right, and the minus sign represents the distance away to the left.</p>
+<p>If this distance term were to decrease to zero, the axis of symmetry would be the <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> value of the zero, indicating there is only one possible solution to the quadratic equation. Algebraically, this means that <img class="mwe-math-fallback-image-inline tex" alt="\sqrt{b^2 - 4ac\ } = 0, " src="//upload.wikimedia.org/math/9/9/d/99daff360de490254c41e8a9301fb466.png" /> or simply <img class="mwe-math-fallback-image-inline tex" alt=" b^2 -4ac = 0, \; " src="//upload.wikimedia.org/math/6/7/c/67cc45f25824d50f43793c78c48f917a.png" /> (where the left-hand side is referred to as the <i>discriminant</i>) for its term to be reduced to zero. This is simply once case of three, where the discriminant can indicate how many zeros the parabola will have. If the discriminant were positive, the distance would be non-zero, and there will be two solutions, as expected. However, there is the case where the discriminant is less than zero, and this indicates the distance will be <i>imaginary</i> - or some multiple of the unit <span class="texhtml mvar" style="font-style:italic;"><i>i</i></span>, such that <img class="mwe-math-fallback-image-inline tex" alt=" i = \sqrt{-1\ } " src="//upload.wikimedia.org/math/7/a/e/7ae637dc1532c23048d6c2211534768b.png" /> - and the parabola's zeros will be a <a href="/wiki/Complex_number" title="Complex number">complex number</a>. The complex roots will be <a href="/wiki/Complex_conjugate" title="Complex conjugate">complex conjugates</a>, and by definition cannot be entirely real, where the real part of the complex root will be the axis of symmetry, therefore geometrical interpretation is that there are no real values of <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> such that the parabola will be observed to cross the <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> axis.</p>
+<h2><span class="mw-headline" id="Historical_development">Historical development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=3" title="Edit section: Historical development">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:172px;"><a href="/wiki/File:Scuola_di_atene_07.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Scuola_di_atene_07.jpg/170px-Scuola_di_atene_07.jpg" width="170" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Scuola_di_atene_07.jpg/255px-Scuola_di_atene_07.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Scuola_di_atene_07.jpg/340px-Scuola_di_atene_07.jpg 2x" data-file-width="930" data-file-height="1094" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Scuola_di_atene_07.jpg" class="internal" title="Enlarge"></a></div>
+<a href="/wiki/Euclid" title="Euclid">Euclid</a> in <a href="/wiki/Raphael_Sanzio" title="Raphael Sanzio" class="mw-redirect">Raphael</a>'s <i><a href="/wiki/School_of_Athens" title="School of Athens" class="mw-redirect">School of Athens</a></i></div>
+</div>
+</div>
+<p>The earliest methods for solving quadratic equations were geometric. Babylonian cuneiform tablets contain problems reducible to solving quadratic equations.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8"><span>[</span>8<span>]</span></a></sup> The Egyptian <a href="/wiki/Berlin_Papyrus_6619" title="Berlin Papyrus 6619">Berlin Papyrus</a>, dating back to the <a href="/wiki/Middle_Kingdom_of_Egypt" title="Middle Kingdom of Egypt">Middle Kingdom</a> (2050 BC to 1650 BC), contains the solution to a two-term quadratic equation.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9"><span>[</span>9<span>]</span></a></sup></p>
+<p>The Greek mathematician <a href="/wiki/Euclid" title="Euclid">Euclid</a> (circa 300 BC) used geometric methods to solve quadratic equations in Book 2 of his <i><a href="/wiki/Euclid%27s_Elements" title="Euclid's Elements">Elements</a></i>, an influential mathematical treatise.<sup id="cite_ref-quad_10-0" class="reference"><a href="#cite_note-quad-10"><span>[</span>10<span>]</span></a></sup> Rules for quadratic equations appear in the Chinese <i><a href="/wiki/The_Nine_Chapters_on_the_Mathematical_Art" title="The Nine Chapters on the Mathematical Art">The Nine Chapters on the Mathematical Art</a></i> circa 200 BC.<sup id="cite_ref-Aitken_11-0" class="reference"><a href="#cite_note-Aitken-11"><span>[</span>11<span>]</span></a></sup><sup id="cite_ref-12" class="reference"><a href="#cite_note-12"><span>[</span>12<span>]</span></a></sup> In his work <i><a href="/wiki/Arithmetica" title="Arithmetica">Arithmetica</a></i>, the Greek mathematician <a href="/wiki/Diophantus" title="Diophantus">Diophantus</a> (circa 250 BC) solved quadratic equations with a method more recognizably algebraic than the geometric algebra of Euclid.<sup id="cite_ref-quad_10-1" class="reference"><a href="#cite_note-quad-10"><span>[</span>10<span>]</span></a></sup> His solution gives only one root, even when both roots are positive.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<p>The <a href="/wiki/Indian_mathematics" title="Indian mathematics">Indian mathematician</a> <a href="/wiki/Brahmagupta" title="Brahmagupta">Brahmagupta</a> (597–668 AD) explicitly described the quadratic formula in his treatise <i><a href="/wiki/Br%C4%81hmasphu%E1%B9%ADasiddh%C4%81nta" title="Brāhmasphuṭasiddhānta">Brāhmasphuṭasiddhānta</a></i> published in 628 AD,<sup id="cite_ref-Bradley_14-0" class="reference"><a href="#cite_note-Bradley-14"><span>[</span>14<span>]</span></a></sup> but written in words instead of symbols.<sup id="cite_ref-15" class="reference"><a href="#cite_note-15"><span>[</span>15<span>]</span></a></sup> His solution of the quadratic equation <span class="texhtml"><i>ax</i><sup>2</sup> + <i>bx</i> = <i>c</i></span> was as follows: "To the absolute number multiplied by four times the [coefficient of the] square, add the square of the [coefficient of the] middle term; the square root of the same, less the [coefficient of the] middle term, being divided by twice the [coefficient of the] square is the value."<sup id="cite_ref-Stillwell2004_16-0" class="reference"><a href="#cite_note-Stillwell2004-16"><span>[</span>16<span>]</span></a></sup> This is equivalent to:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x = \frac{\sqrt{4ac+b^2}-b}{2a}." src="//upload.wikimedia.org/math/c/f/a/cfa86e1e2865401291ca0703a9c48720.png" /></dd>
+</dl>
+<p>The 9th-century Persian mathematician <a href="/wiki/Mu%E1%B8%A5ammad_ibn_M%C5%ABs%C4%81_al-Khw%C4%81rizm%C4%AB" title="Muḥammad ibn Mūsā al-Khwārizmī" class="mw-redirect">al-Khwārizmī</a>, influenced by earlier Greek and Indian mathematicians, solved quadratic equations algebraically.<sup id="cite_ref-17" class="reference"><a href="#cite_note-17"><span>[</span>17<span>]</span></a></sup> The quadratic formula covering all cases was first obtained by <a href="/wiki/Simon_Stevin" title="Simon Stevin">Simon Stevin</a> in 1594.<sup id="cite_ref-18" class="reference"><a href="#cite_note-18"><span>[</span>18<span>]</span></a></sup> In 1637 <a href="/wiki/Ren%C3%A9_Descartes" title="René Descartes">René Descartes</a> published <i><a href="/wiki/La_G%C3%A9om%C3%A9trie" title="La Géométrie">La Géométrie</a></i> containing the quadratic formula in the form we know today. The first appearance of the general solution in the modern mathematical literature appeared in an 1896 paper by Henry Heaton.<sup id="cite_ref-heaton-1896_19-0" class="reference"><a href="#cite_note-heaton-1896-19"><span>[</span>19<span>]</span></a></sup></p>
+<h2><span class="mw-headline" id="Other_derivations">Other derivations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=4" title="Edit section: Other derivations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A number of alternative derivations of the quadratic formula can be found in the literature. These derivations either (a) are simpler than the standard completing the square method, (b) represent interesting applications of other frequently used techniques in algebra, or (c) offer insight into other areas of mathematics.</p>
+<h3><span class="mw-headline" id="Alternate_method_of_completing_the_square">Alternate method of completing the square</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=5" title="Edit section: Alternate method of completing the square">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The great majority of algebra texts published over the last several decades teach <a href="/wiki/Quadratic_equation#Completing_the_square" title="Quadratic equation">completing the square using the sequence presented earlier</a>: (1) divide each side by <span class="texhtml mvar" style="font-style:italic;"><i>a</i></span>, (2) rearrange, (3) then add the square of one-half of <span class="texhtml mvar" style="font-style:italic;"><i>b/a</i></span>.</p>
+<p>As pointed out by Larry Hoehn in 1975, completing the square can be accomplished by a different sequence that leads to a simpler sequence of intermediate terms: (1) multiply each side by <span class="texhtml mvar" style="font-style:italic;"><i>4a</i></span>, (2) rearrange, (3) then add <span class="texhtml mvar" style="font-style:italic;"><i>b</i><sup>2</sup></span>.<sup id="cite_ref-Hoehn1975_20-0" class="reference"><a href="#cite_note-Hoehn1975-20"><span>[</span>20<span>]</span></a></sup></p>
+<p>In other words, the quadratic formula can be derived as follows:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+ax^2+bx+c &amp;= 0 \\
+4 a^2 x^2 + 4abx + 4ac &amp;= 0 \\
+4 a^2 x^2 + 4abx &amp;= -4ac \\
+4 a^2 x^2 + 4abx + b^2 &amp;= b^2 - 4ac \\
+(2ax + b)^2 &amp;= b^2 - 4ac \\
+2ax + b &amp;= \pm \sqrt{b^2-4ac} \\
+2ax &amp;= -b \pm \sqrt{b^2-4ac} \\ 
+x &amp;= \frac{-b\pm\sqrt{b^2-4ac }}{2a}. \\
+\end{align}" src="//upload.wikimedia.org/math/1/e/c/1ec4b2ce0bf3a786a62af9f52ceb7e12.png" /></dd>
+</dl>
+<p>This actually represents an ancient derivation of the quadratic formula, and was known to the Hindus at least as far back as 1025 AD.<sup id="cite_ref-Smith1958_21-0" class="reference"><a href="#cite_note-Smith1958-21"><span>[</span>21<span>]</span></a></sup> Compared with the derivation in standard usage, this alternate derivation is shorter, involves fewer computations with literal coefficients, avoids fractions until the last step, has simpler expressions, and uses simpler mathematics. As Hoehn states, "it is easier 'to add the square of <span class="texhtml mvar" style="font-style:italic;"><i>b</i></span>' than it is 'to add the square of half the coefficient of the <span class="texhtml mvar" style="font-style:italic;"><i>x</i></span> term'".<sup id="cite_ref-Hoehn1975_20-1" class="reference"><a href="#cite_note-Hoehn1975-20"><span>[</span>20<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="By_substitution">By substitution</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=6" title="Edit section: By substitution">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Another technique is solution by substitution.<sup id="cite_ref-22" class="reference"><a href="#cite_note-22"><span>[</span>22<span>]</span></a></sup> In this technique, we substitute <span class="texhtml"><i>x</i> = <i>y</i> + <i>m</i></span> into the quadratic to get:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="a(y+m)^2 + b(y+m) + c =0." src="//upload.wikimedia.org/math/7/e/e/7eec7fbb4bb83eb1157ff42789481ef5.png" /></dd>
+</dl>
+<p>Expanding the result and then collecting the powers of <span class="texhtml mvar" style="font-style:italic;"><i>y</i></span> produces:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="ay^2 + y(2am + b) + (am^2+bm+c) = 0." src="//upload.wikimedia.org/math/4/d/d/4ddd89ebac273fbd99334d5bfd9498cb.png" /></dd>
+</dl>
+<p>We have not yet imposed a second condition on <span class="texhtml mvar" style="font-style:italic;"><i>y</i></span> and <span class="texhtml mvar" style="font-style:italic;"><i>m</i></span>, so we now choose <span class="texhtml mvar" style="font-style:italic;"><i>m</i></span> so that the middle term vanishes. That is, <span class="texhtml">2<i>am</i> + <i>b</i> = 0</span> or <img class="mwe-math-fallback-image-inline tex" alt="m=\frac{-b}{2a}" src="//upload.wikimedia.org/math/7/a/f/7afe74729aa91e76ca28221f40ade9d6.png" />. Subtracting the constant term from both sides of the equation (to move it to the right hand side) and then dividing by <span class="texhtml mvar" style="font-style:italic;"><i>a</i></span> gives:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="y^2=\frac{-(am^2+bm+c)}{a}." src="//upload.wikimedia.org/math/1/e/b/1ebf54a6bf1a86483d70628a01771d94.png" /></dd>
+</dl>
+<p>Substituting for <span class="texhtml mvar" style="font-style:italic;"><i>m</i></span> gives:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="y^2=\frac{-(\frac{b^2}{4a}+\frac{-b^2}{2a}+c)}{a}=\frac{b^2-4ac}{4a^2}." src="//upload.wikimedia.org/math/3/2/7/32767b456b6649437999eda087ba8b5e.png" /></dd>
+</dl>
+<p>Therefore, <img class="mwe-math-fallback-image-inline tex" alt="y=\pm\frac{\sqrt{b^2-4ac}}{2a}" src="//upload.wikimedia.org/math/4/a/c/4acc7cfaa167055ff34698e3ce95cdb2.png" />; substituting <img class="mwe-math-fallback-image-inline tex" alt="x=y+m=y-\frac{b}{2a}" src="//upload.wikimedia.org/math/f/8/d/f8d5a3651d835d88e031bde3cce542dc.png" /> provides the quadratic formula.</p>
+<h3><span class="mw-headline" id="By_using_algebraic_identities">By using algebraic identities</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=7" title="Edit section: By using algebraic identities">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following method was used by many historical mathematicians:<sup id="cite_ref-23" class="reference"><a href="#cite_note-23"><span>[</span>23<span>]</span></a></sup></p>
+<p>Let the roots of the standard quadratic equation be <span class="texhtml mvar" style="font-style:italic;"><i>r</i><sub>1</sub></span> and <span class="texhtml mvar" style="font-style:italic;"><i>r</i><sub>2</sub></span>. At this point, we recall the identity:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="(r_1 - r_2)^2 = (r_1 + r_2)^2 - 4r_1r_2." src="//upload.wikimedia.org/math/f/3/4/f3420e4dae097ec41ab2717f412466bc.png" /></dd>
+</dl>
+<p>Taking the square root on both sides, we get:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r_1 - r_2 = \pm\sqrt{(r_1 + r_2)^2 - 4r_1r_2}." src="//upload.wikimedia.org/math/1/9/4/1947d37d1e1b23c755b9b8cbd7be6896.png" /></dd>
+</dl>
+<p>Since the coefficient <span class="texhtml"><i>a</i> ≠ 0</span>, we can divide the standard equation by <span class="texhtml mvar" style="font-style:italic;"><i>a</i></span> to obtain a quadratic polynomial having the same roots. Namely,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" x^2 + \frac{b}{a}x + \frac{c}{a} = (x - r_1)(x-r_2) = x^2 - (r_1 + r_2)x + r_1 r_2." src="//upload.wikimedia.org/math/e/1/9/e19a89dce4579640a66b8b486cbe1442.png" /></dd>
+</dl>
+<p>From this we can see that the sum of the roots of the standard quadratic equation is given by <img class="mwe-math-fallback-image-inline tex" alt="-\frac{b}{a}" src="//upload.wikimedia.org/math/3/b/6/3b6f684200565365bd8178840633848a.png" />, and the product of those roots is given by <img class="mwe-math-fallback-image-inline tex" alt="\frac{c}{a}." src="//upload.wikimedia.org/math/d/0/6/d06c2e069f722a4a85377da34ab0c18b.png" /></p>
+<p>Hence the identity can be rewritten as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r_1 - r_2 = \pm\sqrt{(-\frac{b}{a})^2-4\frac{c}{a}} = \pm\sqrt{\frac{b^2}{a^2} - \frac{4ac}{a^2}} = \pm\frac{\sqrt{b^2-4ac}}{a}." src="//upload.wikimedia.org/math/7/a/5/7a5e7caad568dfdd14b3916a2cb6fc45.png" /></dd>
+</dl>
+<p>Now,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r_1 = \frac{(r_1 + r_2) + (r_1 - r_2)}{2} = \frac{-\frac{b}{a} \pm \frac{\sqrt{b^2 - 4ac}}{a}}{2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}." src="//upload.wikimedia.org/math/5/e/9/5e9282181ee3b4b7a18cbd9952ff0bf8.png" /></dd>
+</dl>
+<p>Since, <img class="mwe-math-fallback-image-inline tex" alt="r_2 = - r_1 - \frac{b}{a}" src="//upload.wikimedia.org/math/f/e/a/fea8de6bf7f9bca49894c2a2f10abd08.png" />, if we take <img class="mwe-math-fallback-image-inline tex" alt="r_1 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}" src="//upload.wikimedia.org/math/0/e/f/0efd9301cd989fb1e700d990211ae575.png" /> then we obtain <img class="mwe-math-fallback-image-inline tex" alt="r_2 = \frac{-b - \sqrt{b^2 - 4ac}}{2a} " src="//upload.wikimedia.org/math/d/7/2/d727367f9879db5370f00ac3e7d0369f.png" /> and if we instead take <img class="mwe-math-fallback-image-inline tex" alt="r_1 = \frac{-b - \sqrt{b^2 - 4ac}}{2a}" src="//upload.wikimedia.org/math/5/7/a/57a64d7219fa5a1d14f80ea557b22856.png" /> then we calculate that <img class="mwe-math-fallback-image-inline tex" alt="r_2 = \frac{-b + \sqrt{b^2 - 4ac}}{2a}." src="//upload.wikimedia.org/math/e/f/2/ef2acc8055f795a4dffe285c9bed5050.png" /> Combining these results by using the standard shorthand, we have that the solutions of the quadratic equation are given by:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" x =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}." src="//upload.wikimedia.org/math/8/a/c/8ac2dd414804eff2a2332a387bb755e7.png" /></dd>
+</dl>
+<h3><span class="mw-headline" id="By_Lagrange_resolvents">By Lagrange resolvents</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=8" title="Edit section: By Lagrange resolvents">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="hatnote">For more details on this topic, see <a href="/wiki/Lagrange_resolvents" title="Lagrange resolvents" class="mw-redirect">Lagrange resolvents</a>.</div>
+<p>An alternative way of deriving the quadratic formula is via the method of <a href="/wiki/Lagrange_resolvents" title="Lagrange resolvents" class="mw-redirect">Lagrange resolvents</a>,<sup id="cite_ref-Clark_24-0" class="reference"><a href="#cite_note-Clark-24"><span>[</span>24<span>]</span></a></sup> which is an early part of <a href="/wiki/Galois_theory" title="Galois theory">Galois theory</a>.<sup id="cite_ref-efei_25-0" class="reference"><a href="#cite_note-efei-25"><span>[</span>25<span>]</span></a></sup> This method can be generalized to give the roots of <a href="/wiki/Cubic_polynomial" title="Cubic polynomial" class="mw-redirect">cubic polynomials</a> and <a href="/wiki/Quartic_polynomial" title="Quartic polynomial" class="mw-redirect">quartic polynomials</a>, and leads to Galois theory, which allows one to understand the solution of algebraic equations of any degree in terms of the <a href="/wiki/Symmetry_group" title="Symmetry group">symmetry group</a> of their roots, the <a href="/wiki/Galois_group" title="Galois group">Galois group</a>.</p>
+<p>This approach focuses on the <i>roots</i> more than on rearranging the original equation. Given a monic quadratic polynomial</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x^2+px+q," src="//upload.wikimedia.org/math/b/c/8/bc8ddf5bd582d64eb17eac7ff6426e8f.png" /></dd>
+</dl>
+<p>assume that it factors as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x^2+px+q=(x-\alpha)(x-\beta)," src="//upload.wikimedia.org/math/4/f/a/4fa91d778e4aecd16dd57d5ddeae1d18.png" /></dd>
+</dl>
+<p>Expanding yields</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="x^2+px+q=x^2-(\alpha+\beta)x+\alpha \beta," src="//upload.wikimedia.org/math/5/4/2/542de2a80e237b527b43e9514ebfa41d.png" /></dd>
+</dl>
+<p>where <img class="mwe-math-fallback-image-inline tex" alt="p=-(\alpha+\beta)" src="//upload.wikimedia.org/math/d/7/5/d75a69d6f6ce0c080f86e2eb9c61c561.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="q=\alpha \beta" src="//upload.wikimedia.org/math/6/8/6/686af2542bfab6033eb5784de9f6f6b4.png" />.</p>
+<p>Since the order of multiplication does not matter, one can switch <img class="mwe-math-fallback-image-inline tex" alt="\alpha" src="//upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\beta" src="//upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png" /> and the values of <i>p</i> and <i>q</i> will not change: one can say that <i>p</i> and <i>q</i> are <a href="/wiki/Symmetric_polynomials" title="Symmetric polynomials" class="mw-redirect">symmetric polynomials</a> in <img class="mwe-math-fallback-image-inline tex" alt="\alpha" src="//upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\beta" src="//upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png" />. In fact, they are the <a href="/wiki/Elementary_symmetric_polynomials" title="Elementary symmetric polynomials" class="mw-redirect">elementary symmetric polynomials</a> – any symmetric polynomial in <img class="mwe-math-fallback-image-inline tex" alt="\alpha" src="//upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\beta" src="//upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png" /> can be expressed in terms of <img class="mwe-math-fallback-image-inline tex" alt="\alpha+\beta" src="//upload.wikimedia.org/math/e/b/9/eb9c93dfda0ee7c4102cfc49fb9c4021.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\alpha\beta." src="//upload.wikimedia.org/math/4/0/6/40676ec5b0ae8e6a08f101ebfc6c4604.png" /> The Galois theory approach to analyzing and solving polynomials is: given the coefficients of a polynomial, which are symmetric functions in the roots, can one "break the symmetry" and recover the roots? Thus solving a polynomial of degree <i>n</i> is related to the ways of rearranging ("permuting") <i>n</i> terms, which is called the <a href="/wiki/Symmetric_group" title="Symmetric group">symmetric group</a> on <i>n</i> letters, and denoted <img class="mwe-math-fallback-image-inline tex" alt="S_n." src="//upload.wikimedia.org/math/d/1/e/d1eb21c17431c708407d248b1488b495.png" /> For the quadratic polynomial, the only way to rearrange two terms is to swap them ("<a href="/wiki/Transposition_(mathematics)" title="Transposition (mathematics)" class="mw-redirect">transpose</a>" them), and thus solving a quadratic polynomial is simple.</p>
+<p>To find the roots <img class="mwe-math-fallback-image-inline tex" alt="\alpha" src="//upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\beta," src="//upload.wikimedia.org/math/6/c/c/6cc1507a81ccbaeab9595f0928fa486c.png" /> consider their sum and difference:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+r_1 &amp;= \alpha + \beta\\
+r_2 &amp;= \alpha - \beta.
+\end{align}" src="//upload.wikimedia.org/math/d/5/5/d552fb2513f4bb04e4aec7d307740f2e.png" /></dd>
+</dl>
+<p>These are called the <b><a href="/wiki/Lagrange_resolvents" title="Lagrange resolvents" class="mw-redirect">Lagrange resolvents</a></b> of the polynomial; notice that one of these depends on the order of the roots, which is the key point. One can recover the roots from the resolvents by inverting the above equations:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+\alpha &amp;= \textstyle{\frac{1}{2}}\left(r_1+r_2\right)\\
+\beta  &amp;= \textstyle{\frac{1}{2}}\left(r_1-r_2\right).
+\end{align}" src="//upload.wikimedia.org/math/7/8/a/78a185ea17089a92e21283b6e951fad6.png" /></dd>
+</dl>
+<p>Thus, solving for the resolvents gives the original roots.</p>
+<p>Now <img class="mwe-math-fallback-image-inline tex" alt="r_1=\alpha + \beta" src="//upload.wikimedia.org/math/b/1/e/b1e0ee9a0d89db6f97bcd477eea87f60.png" /> is a symmetric function in <img class="mwe-math-fallback-image-inline tex" alt="\alpha" src="//upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\beta," src="//upload.wikimedia.org/math/6/c/c/6cc1507a81ccbaeab9595f0928fa486c.png" /> so it can be expressed in terms of <i>p</i> and <i>q,</i> and in fact <img class="mwe-math-fallback-image-inline tex" alt="r_1 = -p," src="//upload.wikimedia.org/math/8/e/e/8ee6211455219d33ceebf1f2b4c91bec.png" /> as noted above. But <img class="mwe-math-fallback-image-inline tex" alt="r_2=\alpha - \beta" src="//upload.wikimedia.org/math/4/a/e/4aee7c1c6e5f56be3b2dcf64390a98b8.png" /> is not symmetric, since switching <img class="mwe-math-fallback-image-inline tex" alt="\alpha" src="//upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="\beta" src="//upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png" /> yields <img class="mwe-math-fallback-image-inline tex" alt="-r_2=\beta - \alpha" src="//upload.wikimedia.org/math/e/0/8/e08269ac48af1c31daa9bb888accb6ce.png" /> (formally, this is termed a <a href="/wiki/Group_action" title="Group action">group action</a> of the symmetric group of the roots). Since <img class="mwe-math-fallback-image-inline tex" alt="r_2" src="//upload.wikimedia.org/math/a/c/b/acb7bc85ecad9b0a5ba463144b229605.png" /> is not symmetric, it cannot be expressed in terms of the polynomials <i>p</i> and <i>q</i>, as these are symmetric in the roots and thus so is any polynomial expression involving them. Changing the order of the roots only changes <img class="mwe-math-fallback-image-inline tex" alt="r_2" src="//upload.wikimedia.org/math/a/c/b/acb7bc85ecad9b0a5ba463144b229605.png" /> by a factor of <img class="mwe-math-fallback-image-inline tex" alt="-1," src="//upload.wikimedia.org/math/f/5/0/f50e2e5af0581d9f4dbed19107cb5915.png" /> and thus the square <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle r_2^2 = (\alpha - \beta)^2" src="//upload.wikimedia.org/math/3/7/b/37b863949a8b5c378c61d904805cadd7.png" /> <i>is</i> symmetric in the roots, and thus expressible in terms of <i>p</i> and <i>q.</i> Using the equationappl</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="(\alpha - \beta)^2 = (\alpha + \beta)^2 - 4\alpha\beta\!" src="//upload.wikimedia.org/math/1/b/d/1bd2f2b4c0e4a11d818592c21cd23564.png" /></dd>
+</dl>
+<p>yields</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r_2^2 = p^2 - 4q\!" src="//upload.wikimedia.org/math/6/3/9/639052b04cfcd53ea0fd87617591a01a.png" /></dd>
+</dl>
+<p>and thus</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="r_2 = \pm \sqrt{p^2 - 4q}.\!" src="//upload.wikimedia.org/math/7/a/a/7aa5e393004e837a1dc388f4d18d80ab.png" /></dd>
+</dl>
+<p>If one takes the positive root, breaking symmetry, one obtains:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+r_1 &amp;= -p\\
+r_2 &amp;= \sqrt{p^2 - 4q}
+\end{align}" src="//upload.wikimedia.org/math/4/f/2/4f2d60e40111a8779cfdf96e7987dc54.png" /></dd>
+</dl>
+<p>and thus</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+\alpha &amp;= \textstyle{\frac{1}{2}}\left(-p+\sqrt{p^2 - 4q}\right)\\
+\beta  &amp;= \textstyle{\frac{1}{2}}\left(-p-\sqrt{p^2 - 4q}\right)
+\end{align}" src="//upload.wikimedia.org/math/6/2/1/6210817b51d6b5ef871b1ea0aa04b583.png" /></dd>
+</dl>
+<p>Thus the roots are</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\textstyle{\frac{1}{2}}\left(-p \pm \sqrt{p^2 - 4q}\right)" src="//upload.wikimedia.org/math/b/9/5/b955c375414f86b87ff6b786a8df0142.png" /></dd>
+</dl>
+<p>which is the quadratic formula. Substituting <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle p=\tfrac{b}{a}, q=\tfrac{c}{a}\!" src="//upload.wikimedia.org/math/5/1/3/51383dbcc792eff87a0c4118d1d33ba2.png" /> yields the usual form for when a quadratic is not monic. The resolvents can be recognized as <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle \frac{r_1}{2} = \frac{-p}{2}=\frac{-b}{2a}\!" src="//upload.wikimedia.org/math/6/f/c/6fceb6464fb55bbb675b2aa1e115b184.png" /> being the vertex, and <img class="mwe-math-fallback-image-inline tex" alt="\scriptstyle r_2^2=p^2-4q\!" src="//upload.wikimedia.org/math/6/0/b/60b4d2eb6411abd52208a5204db77364.png" /> is the discriminant (of a monic polynomial).</p>
+<p>A similar but more complicated method works for cubic equations, where one has three resolvents and a quadratic equation (the "resolving polynomial") relating <img class="mwe-math-fallback-image-inline tex" alt="r_2" src="//upload.wikimedia.org/math/a/c/b/acb7bc85ecad9b0a5ba463144b229605.png" /> and <img class="mwe-math-fallback-image-inline tex" alt="r_3," src="//upload.wikimedia.org/math/2/f/e/2fe78edb736d2a55a6b7d670ac96a1eb.png" /> which one can solve by the quadratic equation, and similarly for a quartic (degree 4) equation, whose resolving polynomial is a cubic, which can in turn be solved.<sup id="cite_ref-Clark_24-1" class="reference"><a href="#cite_note-Clark-24"><span>[</span>24<span>]</span></a></sup> The same method for a quintic equation yields a polynomial of degree 24, which does not simplify the problem, and in fact solutions to quintic equations in general cannot be expressed using only roots.</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Discriminant" title="Discriminant">Discriminant</a></li>
+<li><a href="/wiki/Fundamental_theorem_of_algebra" title="Fundamental theorem of algebra">Fundamental theorem of algebra</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFRichSchmidt2004" class="citation">Rich, Barnett; Schmidt, Philip (2004), <a rel="nofollow" class="external text" href="http://books.google.com/?id=8PRU9cTKprsC"><i>Schaum's Outline of Theory and Problems of Elementary Algebra</i></a>, The McGraw–Hill Companies, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-07-141083-X" title="Special:BookSources/0-07-141083-X">0-07-141083-X</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Barnett&amp;rft.aulast=Rich&amp;rft.au=Schmidt%2C+Philip&amp;rft.btitle=Schaum%27s+Outline+of+Theory+and+Problems+of+Elementary+Algebra&amp;rft.date=2004&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3D8PRU9cTKprsC&amp;rft.isbn=0-07-141083-X&amp;rft.pub=The+McGraw%E2%80%93Hill+Companies&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span>, <a rel="nofollow" class="external text" href="http://books.google.be/books?id=8PRU9cTKprsC&amp;pg=PA291">Chapter 13 §4.4, p. 291</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Li, Xuhui. <i>An Investigation of Secondary School Algebra Teachers' Mathematical Knowledge for Teaching Algebraic Equation Solving</i>, p. 56 (ProQuest, 2007): "The quadratic formula is the most general method for solving quadratic equations and is derived from another general method: completing the square."</span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Rockswold, Gary. <i>College algebra and trigonometry and precalculus</i>, p. 178 (Addison Wesley, 2002).</span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text">Beckenbach, Edwin et al. <i>Modern college algebra and trigonometry</i>, p. 81 (Wadsworth Pub. Co., 1986).</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite id="CITEREFSterling2010" class="citation">Sterling, Mary Jane (2010), <a rel="nofollow" class="external text" href="http://books.google.com/?id=2toggaqJMzEC&amp;pg=PA219&amp;dq=quadratic+formula#v=onepage&amp;q=quadratic%20formula&amp;f=false"><i>Algebra I For Dummies</i></a>, Wiley Publishing, p.&#160;219, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-470-55964-2" title="Special:BookSources/978-0-470-55964-2">978-0-470-55964-2</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Mary+Jane&amp;rft.aulast=Sterling&amp;rft.btitle=Algebra+I+For+Dummies&amp;rft.date=2010&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3D2toggaqJMzEC%26pg%3DPA219%26dq%3Dquadratic%2Bformula%23v%3Donepage%26q%3Dquadratic%2520formula%26f%3Dfalse&amp;rft.isbn=978-0-470-55964-2&amp;rft.pages=219&amp;rft.pub=Wiley+Publishing&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-kahan-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-kahan_6-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFKahan2004" class="citation">Kahan, Willian (November 20, 2004), <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/Qdrtcs.pdf"><i>On the Cost of Floating-Point Computation Without Extra-Precise Arithmetic</i></a> <span style="font-size:85%;">(PDF)</span><span class="reference-accessdate">, retrieved <span class="nowrap">2012-12-25</span></span></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Willian&amp;rft.aulast=Kahan&amp;rft.btitle=On+the+Cost+of+Floating-Point+Computation+Without+Extra-Precise+Arithmetic&amp;rft.date=November+20%2C+2004&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F~wkahan%2FQdrtcs.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation"><a rel="nofollow" class="external text" href="http://www.proofwiki.org/wiki/Quadratic_Equation#Also_defined_as">"Quadratic Equation"</a>, <i>Proof Wiki</i><span class="reference-accessdate">, retrieved <span class="nowrap">2012-12-25</span></span></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.atitle=Quadratic+Equation&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fwww.proofwiki.org%2Fwiki%2FQuadratic_Equation%23Also_defined_as&amp;rft.jtitle=Proof+Wiki&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation book">Irving, Ron (2013). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=CV_UInCRO38C&amp;pg=PA39"><i>Beyond the Quadratic Formula</i></a>. MAA. p.&#160;34. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-88385-783-0" title="Special:BookSources/978-0-88385-783-0">978-0-88385-783-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Ron&amp;rft.aulast=Irving&amp;rft.btitle=Beyond+the+Quadratic+Formula&amp;rft.date=2013&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DCV_UInCRO38C%26pg%3DPA39&amp;rft.isbn=978-0-88385-783-0&amp;rft.pages=34&amp;rft.pub=MAA&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation book"><a rel="nofollow" class="external text" href="http://books.google.com/books?id=slR7SFScEnwC&amp;pg=PA530"><i>The Cambridge Ancient History Part 2 Early History of the Middle East</i></a>. Cambridge University Press. 1971. p.&#160;530. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-521-07791-0" title="Special:BookSources/978-0-521-07791-0">978-0-521-07791-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.btitle=The+Cambridge+Ancient+History+Part+2+Early+History+of+the+Middle+East&amp;rft.date=1971&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DslR7SFScEnwC%26pg%3DPA530&amp;rft.isbn=978-0-521-07791-0&amp;rft.pages=530&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-quad-10"><span class="mw-cite-backlink">^ <a href="#cite_ref-quad_10-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-quad_10-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation book">Irving, Ron (2013). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=CV_UInCRO38C&amp;pg=PA39"><i>Beyond the Quadratic Formula</i></a>. MAA. p.&#160;39. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-88385-783-0" title="Special:BookSources/978-0-88385-783-0">978-0-88385-783-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Ron&amp;rft.aulast=Irving&amp;rft.btitle=Beyond+the+Quadratic+Formula&amp;rft.date=2013&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DCV_UInCRO38C%26pg%3DPA39&amp;rft.isbn=978-0-88385-783-0&amp;rft.pages=39&amp;rft.pub=MAA&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Aitken-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-Aitken_11-0">^</a></b></span> <span class="reference-text"><cite class="citation web">Aitken, Wayne. <a rel="nofollow" class="external text" href="http://public.csusm.edu/aitken_html/m330/china/ninechapters.pdf">"A Chinese Classic: The Nine Chapters"</a> <span style="font-size:85%;">(PDF)</span>. Mathematics Department, California State University<span class="reference-accessdate">. Retrieved <span class="nowrap">28 April</span> 2013</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Wayne&amp;rft.aulast=Aitken&amp;rft.btitle=A+Chinese+Classic%3A+The+Nine+Chapters&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fpublic.csusm.edu%2Faitken_html%2Fm330%2Fchina%2Fninechapters.pdf&amp;rft.pub=Mathematics+Department%2C+California+State+University&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation book">Smith, David Eugene (1958). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=uTytJGnTf1kC&amp;pg=PA380"><i>History of Mathematics</i></a>. Courier Dover Publications. p.&#160;380. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-486-20430-7" title="Special:BookSources/978-0-486-20430-7">978-0-486-20430-7</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=David+Eugene&amp;rft.aulast=Smith&amp;rft.btitle=History+of+Mathematics&amp;rft.date=1958&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DuTytJGnTf1kC%26pg%3DPA380&amp;rft.isbn=978-0-486-20430-7&amp;rft.pages=380&amp;rft.pub=Courier+Dover+Publications&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation book">Smith, David Eugene (1958). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=12qdOZ0gsWoC&amp;pg=PA134&amp;dq&amp;hl=en#v=onepage&amp;q=&amp;f=false"><i>History of Mathematics</i></a>. Courier Dover Publications. p.&#160;134. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-486-20429-4" title="Special:BookSources/0-486-20429-4">0-486-20429-4</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=David+Eugene&amp;rft.aulast=Smith&amp;rft.btitle=History+of+Mathematics&amp;rft.date=1958&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3D12qdOZ0gsWoC%26pg%3DPA134%26dq%26hl%3Den%23v%3Donepage%26q%3D%26f%3Dfalse&amp;rft.isbn=0-486-20429-4&amp;rft.pages=134&amp;rft.pub=Courier+Dover+Publications&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Bradley-14"><span class="mw-cite-backlink"><b><a href="#cite_ref-Bradley_14-0">^</a></b></span> <span class="reference-text">Bradley, Michael. <i>The Birth of Mathematics: Ancient Times to 1300</i>, p. 86 (Infobase Publishing 2006).</span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="#cite_ref-15">^</a></b></span> <span class="reference-text">Mackenzie, Dana. <i>The Universe in Zero Words: The Story of Mathematics as Told through Equations</i>, p. 61 (Princeton University Press, 2012).</span></li>
+<li id="cite_note-Stillwell2004-16"><span class="mw-cite-backlink"><b><a href="#cite_ref-Stillwell2004_16-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Stillwell, John (2004). <i>Mathematics and Its History (2nd ed.)</i>. Springer. p.&#160;87. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-387-95336-1" title="Special:BookSources/0-387-95336-1">0-387-95336-1</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=John&amp;rft.aulast=Stillwell&amp;rft.btitle=Mathematics+and+Its+History+%282nd+ed.%29&amp;rft.date=2004&amp;rft.genre=book&amp;rft.isbn=0-387-95336-1&amp;rft.pages=87&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation book">Irving, Ron (2013). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=CV_UInCRO38C&amp;pg=PA39"><i>Beyond the Quadratic Formula</i></a>. MAA. p.&#160;42. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-88385-783-0" title="Special:BookSources/978-0-88385-783-0">978-0-88385-783-0</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Ron&amp;rft.aulast=Irving&amp;rft.btitle=Beyond+the+Quadratic+Formula&amp;rft.date=2013&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DCV_UInCRO38C%26pg%3DPA39&amp;rft.isbn=978-0-88385-783-0&amp;rft.pages=42&amp;rft.pub=MAA&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="#cite_ref-18">^</a></b></span> <span class="reference-text"><cite id="CITEREFStruikStevin1958" class="citation">Struik, D. J.; Stevin, Simon (1958), <a rel="nofollow" class="external text" href="http://www.dwc.knaw.nl/pub/bronnen/Simon_Stevin-%5bII_B%5d_The_Principal_Works_of_Simon_Stevin,_Mathematics.pdf"><i>The Principal Works of Simon Stevin, Mathematics</i></a> <span style="font-size:85%;">(PDF)</span> <b>II–B</b>, C. V. Swets &amp; Zeitlinger, p.&#160;470</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=D.+J.&amp;rft.aulast=Struik&amp;rft.au=Stevin%2C+Simon&amp;rft.btitle=The+Principal+Works+of+Simon+Stevin%2C+Mathematics&amp;rft.date=1958&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.dwc.knaw.nl%2Fpub%2Fbronnen%2FSimon_Stevin-%255bII_B%255d_The_Principal_Works_of_Simon_Stevin%2C_Mathematics.pdf&amp;rft.pages=470&amp;rft.pub=C.+V.+Swets+%26+Zeitlinger&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.volume=II-B" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-heaton-1896-19"><span class="mw-cite-backlink"><b><a href="#cite_ref-heaton-1896_19-0">^</a></b></span> <span class="reference-text">Heaton, H. (1896) <i><a rel="nofollow" class="external text" href="http://www.jstor.org/stable/info/2971099">A Method of Solving Quadratic Equations</a></i>, <a href="/wiki/American_Mathematical_Monthly" title="American Mathematical Monthly">American Mathematical Monthly</a> <b>3</b>(10), 236–237.</span></li>
+<li id="cite_note-Hoehn1975-20"><span class="mw-cite-backlink">^ <a href="#cite_ref-Hoehn1975_20-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Hoehn1975_20-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite class="citation journal">Hoehn, Larry (1975). "A More Elegant Method of Deriving the Quadratic Formula". <i>The Mathematics Teacher</i> <b>68</b> (5): 442–443.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.atitle=A+More+Elegant+Method+of+Deriving+the+Quadratic+Formula&amp;rft.aufirst=Larry&amp;rft.aulast=Hoehn&amp;rft.date=1975&amp;rft.genre=article&amp;rft.issue=5&amp;rft.jtitle=The+Mathematics+Teacher&amp;rft.pages=442-443&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=68" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-Smith1958-21"><span class="mw-cite-backlink"><b><a href="#cite_ref-Smith1958_21-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Smith, David E. (1958). <i>History of Mathematics, Vol. II</i>. Dover Publications. p.&#160;446. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0486204308" title="Special:BookSources/0486204308">0486204308</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=David+E.&amp;rft.aulast=Smith&amp;rft.btitle=History+of+Mathematics%2C+Vol.+II&amp;rft.date=1958&amp;rft.genre=book&amp;rft.isbn=0486204308&amp;rft.pages=446&amp;rft.pub=Dover+Publications&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="#cite_ref-22">^</a></b></span> <span class="reference-text">Joseph J. Rotman. (2010). Advanced modern algebra (Vol. 114). American Mathematical Soc. Section 1.1</span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="#cite_ref-23">^</a></b></span> <span class="reference-text">Debnath, L. (2009). The legacy of Leonhard Euler–a tricentennial tribute. International Journal of Mathematical Education in Science and Technology, 40(3), 353–388. Section 3.6</span></li>
+<li id="cite_note-Clark-24"><span class="mw-cite-backlink">^ <a href="#cite_ref-Clark_24-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Clark_24-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Clark, A. (1984). <i>Elements of abstract algebra</i>. Courier Corporation. p. 146.</span></li>
+<li id="cite_note-efei-25"><span class="mw-cite-backlink"><b><a href="#cite_ref-efei_25-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFPrasolovSolovyev1997" class="citation">Prasolov, Viktor; Solovyev, Yuri (1997), <a rel="nofollow" class="external text" href="http://books.google.com/?id=fcp9IiZd3tQC"><i>Elliptic functions and elliptic integrals</i></a>, AMS Bookstore, <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/978-0-8218-0587-9" title="Special:BookSources/978-0-8218-0587-9">978-0-8218-0587-9</a></cite><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AQuadratic+formula&amp;rft.aufirst=Viktor&amp;rft.aulast=Prasolov&amp;rft.au=Solovyev%2C+Yuri&amp;rft.btitle=Elliptic+functions+and+elliptic+integrals&amp;rft.date=1997&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3Dfcp9IiZd3tQC&amp;rft.isbn=978-0-8218-0587-9&amp;rft.pub=AMS+Bookstore&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;">&#160;</span></span>, <a rel="nofollow" class="external text" href="http://books.google.com/books?id=fcp9IiZd3tQC&amp;pg=PA134#PPA134,M1">§6.2, p. 134</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://quadratic-formula-calculator.com/">Quadratic formula calculator</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mymathdone.com/quadratic-formula-calculator/">Free Quadratic formula calculator</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.studygeek.org/free-math-solvers/quadratic-formula-calculator/">Quadratic formula calculator Online</a></li>
+<li><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/QuadraticFormula.html">Alternative formula (Wolfram)</a></li>
+</ul>
+<table class="navbox" style="border-spacing:0">
+<tr>
+<td style="padding:2px">
+<table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit">
+<tr>
+<th scope="col" class="navbox-title" colspan="2">
+<div class="plainlinks hlist navbar mini">
+<ul>
+<li class="nv-view"><a href="/wiki/Template:Polynomials" title="Template:Polynomials"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="/wiki/Template_talk:Polynomials" title="Template talk:Polynomials"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Polynomials&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+</div>
+<div style="font-size:114%"><a href="/wiki/Polynomial" title="Polynomial">Polynomials</a> and <a href="/wiki/Polynomial_function" title="Polynomial function" class="mw-redirect">polynomial functions</a></div>
+</th>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">By <a href="/wiki/Degree_of_a_polynomial" title="Degree of a polynomial">degree</a></th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Zero_polynomial" title="Zero polynomial" class="mw-redirect">Zero polynomial (degree undefined or −1 or −∞)</a></li>
+<li><a href="/wiki/Constant_function" title="Constant function">Constant function (0)</a></li>
+<li><a href="/wiki/Linear_function_(calculus)" title="Linear function (calculus)">Linear function (1)</a></li>
+<li><a href="/wiki/Quadratic_function" title="Quadratic function">Quadratic function (2)</a></li>
+<li><a href="/wiki/Cubic_function" title="Cubic function">Cubic function (3)</a></li>
+<li><a href="/wiki/Quartic_function" title="Quartic function">Quartic function (4)</a></li>
+<li><a href="/wiki/Quintic_function" title="Quintic function">Quintic function (5)</a></li>
+<li><a href="/wiki/Sextic_equation" title="Sextic equation">Sextic equation (6)</a></li>
+<li><a href="/wiki/Septic_equation" title="Septic equation">Septic equation (7)</a></li>
+<li><a href="/wiki/Octic_equation" title="Octic equation">Octic equation (8)</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">By number of <a href="/wiki/Polynomial#Definition" title="Polynomial">terms</a></th>
+<td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Monomial" title="Monomial">Monomial</a></li>
+<li><a href="/wiki/Binomial_equation" title="Binomial equation" class="mw-redirect">Binomial</a></li>
+<li><a href="/wiki/Trinomial" title="Trinomial">Trinomial</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td colspan="2"></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group">Algorithms</th>
+<td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="/wiki/Factorization_of_polynomials" title="Factorization of polynomials">Factorization</a></li>
+<li><a href="/wiki/Polynomial_greatest_common_divisor" title="Polynomial greatest common divisor">Greatest common divisor</a></li>
+<li><a href="/wiki/Polynomial_long_division" title="Polynomial long division">Division</a></li>
+<li><a href="/wiki/Horner%27s_method" title="Horner's method">Horner's method of evaluation</a></li>
+<li><a href="/wiki/Resultant" title="Resultant">Resultant</a></li>
+<li><a href="/wiki/Discriminant" title="Discriminant">Discriminant</a></li>
+<li><a href="/wiki/Gr%C3%B6bner_basis" title="Gröbner basis">Gröbner basis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1066
+Cached time: 20151106190831
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.331 seconds
+Real time usage: 0.392 seconds
+Preprocessor visited node count: 1898/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 39909/2097152 bytes
+Template argument size: 476/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.088/10.000 seconds
+Lua memory usage: 2.68 MB/50 MB
+Number of Wikibase entities loaded: 0-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  316.106      1 - -total
+ 48.51%  153.338      1 - Template:Reflist
+ 18.34%   57.977      6 - Template:Citation
+ 11.26%   35.594      8 - Template:Cite_book
+  8.75%   27.672      1 - Template:Details
+  5.44%   17.185      1 - Template:Polynomials
+  4.40%   13.900      1 - Template:Navbox
+  2.16%    6.828      1 - Template:Cite_web
+  2.08%    6.579      1 - Template:Cite_journal
+  1.29%    4.092     34 - Template:Mvar
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:59217-0!*!0!!en!4!*!math=0 and timestamp 20151106190830 and revision id 688015362
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Quadratic_formula&amp;oldid=688015362">https://en.wikipedia.org/w/index.php?title=Quadratic_formula&amp;oldid=688015362</a>"					</div>
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Polynomials" title="Category:Polynomials">Polynomials</a></li><li><a href="/wiki/Category:Elementary_algebra" title="Category:Elementary algebra">Elementary algebra</a></li><li><a href="/wiki/Category:Equations" title="Category:Equations">Equations</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quadratic+formula&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Quadratic+formula" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/Quadratic_formula"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="/wiki/Talk:Quadratic_formula"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span><a href="#"></a>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/Quadratic_formula" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Quadratic_formula&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Quadratic_formula&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search" title="Search Wikipedia [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Special:Search" name="title" /><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton" />							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Quadratic_formula" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Quadratic_formula" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Quadratic_formula&amp;oldid=688015362" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Quadratic_formula&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="//www.wikidata.org/wiki/Q15909572" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Quadratic_formula&amp;id=688015362" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Quadratic+formula">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:Book&amp;bookcmd=render_article&amp;arttitle=Quadratic+formula&amp;returnto=Quadratic+formula&amp;oldid=688015362&amp;writer=rdf2latex">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Quadratic_formula&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fr"><a href="//fr.wikipedia.org/wiki/Formule_quadratique" title="Formule quadratique – French" lang="fr" hreflang="fr">Français</a></li><li class="interlanguage-link interwiki-nl"><a href="//nl.wikipedia.org/wiki/Wortelformule" title="Wortelformule – Dutch" lang="nl" hreflang="nl">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="//ja.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%81%AE%E8%A7%A3%E3%81%AE%E5%85%AC%E5%BC%8F" title="二次方程式の解の公式 – Japanese" lang="ja" hreflang="ja">日本語</a></li><li class="interlanguage-link interwiki-zh"><a href="//zh.wikipedia.org/wiki/%E4%BA%8C%E6%AC%A1%E6%96%B9%E7%A8%8B" title="二次方程 – Chinese" lang="zh" hreflang="zh">中文</a></li><li class="uls-p-lang-dummy"><a href="#"></a></li>					</ul>
+				<div class='after-portlet after-portlet-lang'><span class="wb-langlinks-edit wb-langlinks-link"><a href="//www.wikidata.org/wiki/Q15909572#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 29 October 2015, at 02:32.</li>
+											<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="//wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Quadratic_formula&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="//wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/1.27.0-wmf.5/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/1.27.0-wmf.5/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /static/1.27.0-wmf.5/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"ext.globalCssJs.site":"ready","ext.globalCssJs.user":"ready","user":"ready","user.groups":"ready"});mw.loader.load(["ext.cite.a11y","mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.switcher","ext.gadget.featured-articles-links","mmv.bootstrap.autostart","ext.visualEditor.targetLoader","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.interlanguage"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":507,"wgHostname":"mw1066"}); /* @nomin */
+} );</script>
+	</body>
+</html>

@@ -1,0 +1,613 @@
+.conversationLeftContainer {
+	float: left;
+	width: 72%;
+}
+.conversationRightContainer {
+	float: right;
+	width: 25%;
+}
+.conversationParticipantImage {
+	max-width: 36px;
+	max-height: 36px;
+	border-radius: 6px;
+	float: left;
+	margin-left: -40px;
+}
+.conversationParticipantInfo {
+	margin-left: 40px;
+	padding-bottom: 12px;
+}
+.convoSearchResultsSubview {
+	border: 2px solid #555;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.messageAttachments{
+	margin:1em;
+}
+.messageContextLink {
+	float: right;
+}
+.messageDisplayList {
+	margin-top: 1em;
+}
+.messageSearchForm{
+	float: right;
+}
+.messageSearchClear {
+	display: none;
+}
+.streamEntry{
+	border-top: 1px solid #E8E8E8;
+	padding: 12px 6px;
+}
+#inboxViewport .streamEntry {
+	cursor: pointer;
+}
+.streamEntryImage{
+	float:left;
+	max-width:48px;
+	max-height:48px;
+	border-radius:8px;
+	cursor: pointer;
+}
+.streamEntry.consecutive .streamEntryImage {
+	display: none;
+}
+.streamEntry.consecutive {
+	border: none;
+}
+.streamEntry.selectedMessage {
+	outline: 1px dashed #999;
+}
+.streamEntry.unreadMessage {
+	background-color: #DDD;
+}
+.streamEntry .fsGlyphGrayX {
+	float: right;
+	display: none;
+}
+.streamEntry:hover > .fsGlyphGrayX{
+	display: block;
+}
+.fsActivitySublist > li:hover > .fsGlyphGrayX{
+	display: block;
+}
+.streamEntryComment:hover .fsGlyphGrayX{
+	display: block;
+}
+.streamEntry .fsGlyphGrayX:hover {
+	/* Turn it in to the red X */
+	background-position-x: -24px;
+}
+.streamEntryAttachment {
+	background: #E8E8E8;
+	border-radius: 3px;
+	color: #333;
+	display: inline-block;
+	font-size: 0.9em;
+	margin-right: 0.5em;
+	padding: 1px 4px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.streamEntryAttachment:hover {
+	background: #666666;
+	color: white;
+}
+.streamEntryBody {
+	line-height: 1.7em;
+}
+.streamEntryBody .iconBtnAttach{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+}
+.streamEntryComment {
+	border-top: 1px dotted #E8E8E8;
+	padding: 6px;
+}
+.streamEntryCommentUnread {
+	background: #E5F1FE;
+	border: 2px solid #99CCFF;
+	margin-top: 4px;
+}
+.streamEntryComment .streamEntryBody {
+	line-height: 1.5em;
+}
+.streamEntryComment .streamEntryDetail {
+	margin-left: 42px;
+}
+.streamEntryComment .streamEntryImage {
+	max-width: 32px;
+	max-height: 32px;
+	border-radius: 6px;
+}
+.streamEntryCommentAddButton {
+	vertical-align: top;
+	margin-left: 6px;
+}
+.streamEntryCommentInput {
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	height: 28px;
+	padding: 4px 5px;
+	margin-top: 1px;
+	width: 70%;
+}
+.streamEntryCommentCount {
+	border-top: 2px dotted #E8E8E8;
+	display: inline-block;
+	font-size: 0.9em;
+	padding: 6px;
+	text-decoration: none;
+}
+.streamEntryHiddenComments {
+	display: none;
+}
+.streamEntryComments {
+	display: block;
+}
+.streamEntryCommentSection {
+	margin-top: 6px;
+}
+.streamEntryDate{
+	color:#666;
+	font-style:italic;
+	font-size:.85714em;
+}
+.streamEntryDetail {
+	margin-left: 64px;
+}
+.streamEntry.consecutive .streamEntryDetail{
+	border-top: 1px solid #BBB;
+	padding-top: 6px;
+}
+.streamHideAvatar .streamEntryDetail {
+	margin-left: 18px;
+}
+.streamLoadMore, .convoSearchResultsLoadMore {
+	text-align: center;
+	width: 100%;
+}
+.streamEntryTitle{
+	font-weight: bold;
+	font-size: 1.1em;
+	margin:0;
+}
+.streamEntryTitle a{
+	text-decoration: none;
+}
+.streamEntry.consecutive .streamEntryTitle {
+	display: none;
+}
+.streamEntry.unreadMessage .streamEntryTitle {
+	font-weight: bold;
+}
+.unreadMessagesCount {
+	display: none;
+}
+.streamEntry.unreadMessage .unreadMessagesCount {
+	display: inline;
+}
+#conversationList {
+	list-style: none;
+	padding-left: 0;
+}
+#conversationViewport {
+	display: none;
+}
+#messageList {
+	list-style: none;
+	padding-left: 0;
+}
+#messageSearchBack{
+	display: none;
+}
+#searchResultsList, #convoSearchResultsList {
+	display: none;
+}
+
+/* Activity Stream Specifics */
+.fsActivityExpandLink{
+	display:block;
+	float:left;
+	width:11px;
+	height:11px;
+	background:transparent url('../../images/admin_ui/2.0/black/expand-open.png') no-repeat;
+	text-indent:-9999px;
+	text-decoration:none;
+	margin:5px 5px 0 0;
+	cursor: pointer;
+    }
+.fsActivityExpandLink.fsActivityExpandLinkOpen{
+	background-image:url('../../images/admin_ui/2.0/black/expand-close.png');
+}
+.fsActivityStreamFilter {
+	margin-bottom: 1.5em;
+}
+.fsActivityStreamFilter button, button.fsSocialNewPost  {
+    background-color: #5BB75B;
+    background-image: -moz-linear-gradient(center top , #62C462, #51A351);
+    background-image: -moz-linear-gradient(top, #62C462 0%, #51A351 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#62C462), color-stop(100%,#51A351)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #62C462 0%,#51A351 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, #62C462 0%,#51A351 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, #62C462 0%,#51A351 100%); /* IE10+ */
+	background-image: linear-gradient(top, #62C462 0%,#51A351 100%); /* W3C */
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-radius: 4px 4px 4px 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding: 2px 7px;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: middle;
+}
+.fsActivityStreamFilter button:hover, button.fsSocialNewPost:hover {
+	background: #51A351;
+}
+.fsActivityStreamFilter select{
+	text-align: left;
+}
+#fsActivityStreamSearch {
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	float: right;
+	padding: 3px 7px;
+}
+.composeMsgSearchForm {
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	padding: 3px 7px;
+	display: block;
+	float: left;
+	clear:left;
+}
+.composeMsgSearchForm button{
+	border: none;
+	cursor: pointer;
+}
+#composeMsgSearch {
+	border: none;
+	line-height: 15px;
+	margin: 0;
+	padding: 3px 3px;
+	-webkit-appearance: none;
+}
+#triggerNewMsg {
+	float:Right;
+	padding: 3px 7px;
+	margin:1px 10px;
+}
+#fsActivityStreamSearch button{
+	border: none;
+	cursor: pointer;
+}
+#fsActivityStreamSearchKeyword {
+	border: none;
+	line-height: 15px;
+	margin: 0;
+	padding: 3px 3px;
+	-webkit-appearance: none;
+}
+.fsActivitySublist {
+	display : none;
+	list-style: none;
+}
+.fsSocialAddComment {
+	border-left: 1px solid black;
+	padding: 2px 0 2px 4px;
+}
+.fsSocialButton {
+	background: #F5F5F5; /* Old browsers */
+	background-image: -moz-linear-gradient(top, #FFF 0%, #E6E6E6 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#E6E6E6)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* IE10+ */
+	background-image: linear-gradient(top, #FFF 0%,#E6E6E6 100%); /* W3C */
+	border: 1px solid;
+	border-color: #E6E6E6 #E6E6E6 #B3B3B3 #E6E6E6;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#E6E6E6',GradientType=0 ); /* IE6-9 */
+	font-size: 13px;
+	line-height: 18px;
+	margin-bottom: 0;
+	padding: 4px 10px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+}
+.fsSocialButton:hover {
+	background: #E7E7E7;
+}
+.fsSocialButton.markAllAsReadBtn {
+	display: none;
+	float: right;
+}
+.fsSocialNewStreamEntries {
+	display: none;
+	width: 100%;
+}
+.fsSocialPostAddRecipients {
+	float: right;
+	line-height: 10px;
+	min-height: 24px;
+	vertical-align: top;
+}
+.fsSocialPostAttachFileControls {
+	margin: 4px 0 4px 0;
+}
+.fsSocialPostAttachFileEntry {
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+}
+.fsSocialPostAttachFileEntry input:first-child {
+	margin-right: 6px;
+}
+.fsSocialPostAttachFileEntry .fsGlyphRedX{
+	display: none;
+	float: right;
+	margin-top: 5px;
+}
+.fsSocialPostAttachFileEntry:hover .fsGlyphRedX{
+	display: block;
+}
+
+.fsSocialPostAttachOption{
+	margin-left:5px;
+}
+
+.fsSocialPostAttachOption:first-child{
+	margin-left:0;
+}
+
+.fsSocialPostAttachments {
+	display: none;
+	padding: 6px;
+}
+.fsSocialPostAttachSelectFileName {
+	background: none;
+	border: none;
+}
+.fsSocialPostAvailableGroup {
+	display: block;
+	text-decoration: none;
+}
+.fsSocialPostAvailableRecipients {
+	background: white;
+	border: 1px solid #CCC;
+	border-radius: 0 0 4px 4px;
+	border-top: none;
+	display: none;
+	height: 7em;
+	margin: 0 auto 6px auto;
+	max-height: 100px;
+	overflow-y: auto;
+	padding: 3px 6px;
+	width: 95%;
+}
+.fsSocialPostRecipientPicker {
+	background: none repeat scroll 0 0 white;
+    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
+    border-radius: 4px;
+    border:1px solid #ccc;
+    display: none;
+    margin: 10px 0 0;
+    min-height: 150px;
+    overflow-y: auto;
+    padding: 3px 6px;
+    position: relative;
+    width: 97.5%;
+}
+.fsSocialPostCloseGroups {
+	position: absolute;
+	right: 6px;
+	top: 3px;
+}
+.fsSocialPostForm {
+	background: #E8E8E8;
+	border-bottom: 1px solid #AAA;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 2em;
+}
+#fsSocialPostIFrame, .fsSocialPostIFrame, #fsSocialPostIFrameCmpMsg {
+	display:none;
+}
+.fsSocialPostMessage {
+	background: white;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+    display: block;
+    height: 5em;
+    margin: 0;
+    max-height: 70px;
+    padding: 5px;
+    width: 100%;
+}
+.fsSocialPostComposeMessage {
+    margin: 5px 0;
+}
+.fsSocialPostSelectedRecipient {
+	background-color: #ABD6EE;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 2px;
+    padding: 2px 4px;
+}
+.fsSocialPostSelectedRecipient:hover .fsGlyphDarkGrayX {
+	background-position-x: -24px;
+}
+.fsSocialPostSubmit {
+	background: #0074CC; /* Old browsers */
+	background-image: -moz-linear-gradient(top, #0088CC 0%, #0055CC 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0088CC), color-stop(100%,#0055CC)); /* Chrome,Safari4+ */
+	background-image: -webkit-linear-gradient(top, #0088CC 0%,#0055CC 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-linear-gradient(top, #0088CC 0%,#0055CC 100%); /* Opera 11.10+ */
+	background-image: -ms-linear-gradient(top, #0088CC 0%,#0055CC 100%); /* IE10+ */
+	background-image: linear-gradient(top, #0088CC 0%,#0055CC 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088CC', endColorstr='#0055CC',GradientType=0 ); /* IE6-9 */
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: white;
+	float: right;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.fsSocialPostSubmit:hover {
+	background: #0058CC;
+}
+.fsComposeMessagePostSpan { display: none; }
+.fsSocialPostTo {
+	background: white;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 6px 5px -1px auto;
+	min-height: 22px;
+	padding: 3px;
+	width: 100%;
+}
+.fsSocialComposeTo {
+	width: 80%; /* overwrite */
+}
+.fsSocialComposeAddRecipients {
+	width: 11%; /* overwrite */
+	height: 27px;
+	display: inline-block;
+	margin-bottom: -1px;
+	padding: 5px 0 0 3px;
+}
+.fsSocialPostToButton {
+	background-color: lightgreen;
+	border: 1px solid darkgreen;
+	color: black;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.fsSocialPostToInput {
+	display: none;
+}
+.fsSocialPostToPlaceholder{
+	vertical-align: middle;
+	color: darkgrey;
+}
+.fsSocialPostUpdateTitle{
+	padding-left: 22px;
+	background: url("../../images/postupdate.png") no-repeat transparent;
+}
+
+
+.fsGlyphChatBubble,
+.fsGlyphDarkGrayX,
+.fsGlyphGrayX,
+.fsGlyphGroup,
+.fsGlyphInbox,
+.fsGlyphList,
+.fsGlyphOpenFolder,
+.fsGlyphPlus,
+.fsGlyphProfile,
+.fsGlyphRedX,
+.fsGlyphSearch,
+.fsGlyphUpArrow,
+.fsGlyphWorld {
+	vertical-align: middle;
+	margin-bottom: 2px;
+}
+
+/* Collapsed post box*/
+.fsSocialPostFormCollapsed div, .fsSocialPostFormCollapsed button {
+	display: none;
+}
+
+.fsSocialPostFormCollapsed .fsSocialPostMessage {
+	font-size: 13px;
+	height: 26px;
+	line-height: 1em;
+}
+
+.fsSocialPostFormCollapsed .fsSocialPostMessageContainer {
+	display: block;
+	background: url("../../images/sticky-note.png") no-repeat 0 0;
+	padding-left: 35px;
+}
+.conversationParticipantInfo a {
+    padding: 2px 0 2px 4px;
+}
+.conversationParticipantInfo a.profileLink {
+	border-left: 1px solid black;
+	padding-left: 6px;
+}
+
+.avatarMultiPerson {
+	background:transparent url('../../images/group-avatar.png') no-repeat;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.avatarMultiPerson img{
+	max-width:36px;
+	max-height:36px;
+	border-radius:6px;
+	position:relative;
+	top:2px;
+	left:2px;
+}
+
+
+/* Attachment icons */
+.fsSocialAttachIconAudio,
+.fsSocialAttachIconDoc,
+.fsSocialAttachIconImage,
+.fsSocialAttachIconLink,
+.fsSocialAttachIconVideo {
+  background-image: url(../../images/attachmentsSprite.png);
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+
+.fsSocialAttachIconAudio {
+  background-position: 0px 0px;
+  width: 13px;
+  height: 14px;
+}
+
+.fsSocialAttachIconDoc {
+  background-position: 0px -16px;
+  width: 9px;
+  height: 12px;
+}
+
+.fsSocialAttachIconImage {
+  background-position: -11px -16px;
+  width: 12px;
+  height: 11px;
+}
+
+.fsSocialAttachIconLink {
+  background-position: -31px 0px;
+  width: 12px;
+  height: 12px;
+}
+
+.fsSocialAttachIconVideo {
+  background-position: -15px 0px;
+  width: 14px;
+  height: 13px;
+}

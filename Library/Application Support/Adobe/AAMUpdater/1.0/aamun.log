@@ -1,0 +1,45 @@
+2012-07-30T18:36:07: >>> Adobe Updater Log Begin >>>
+2012-07-30T18:36:07: Application Version: 6.0.0.24
+2012-07-30T18:36:07: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamun.log
+2012-07-30T18:36:07: cmdline option: -logLevel = 2
+2012-07-30T18:37:39: <<< Adobe Updater Log End <<<
+
+
+2015-11-04T17:43:23: >>> Adobe Updater Log Begin >>>
+2015-11-04T17:43:23: Application Version: 6.0.0.24
+2015-11-04T17:43:23: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamun.log
+2015-11-04T17:43:23: cmdline option: -logLevel = 2
+2015-11-04T17:43:23: UpdaterNotifications : Stepped into << UpdaterNotificationsGetLEIDList >> call.
+2015-11-04T17:43:23: UpdaterNotifications : Updater task is not present. Creating new task for daily scheduled checks
+2015-11-04T17:43:23: UpdaterNotifications : Stepped into << AddUpdaterSchedulerTask >> call.
+2015-11-04T17:43:23: UpdaterNotifications : Adding scheduled task for csupdater.
+2015-11-04T17:43:23: UpdaterNotifications : Successfully returning from  << AddUpdaterSchedulerTask >> call.
+2015-11-04T17:43:23: UpdaterNotifications : Successfully returning from << UpdaterNotificationsGetLEIDList >> call.
+2015-11-04T17:53:27: <<< Adobe Updater Log End <<<
+
+
+2015-11-09T19:04:45: >>> Adobe Updater Log Begin >>>
+2015-11-09T19:04:45: Application Version: 6.0.0.24
+2015-11-09T19:04:45: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamun.log
+2015-11-09T19:04:45: cmdline option: -logLevel = 2
+2015-11-09T19:04:45: UpdaterNotifications : Stepped into << UpdaterNotificationsGetLEIDList >> call.
+2015-11-09T19:04:45: UpdaterNotifications : Successfully returning from << UpdaterNotificationsGetLEIDList >> call.
+2015-11-09T19:43:32: <<< Adobe Updater Log End <<<
+
+
+2015-11-11T16:55:43: >>> Adobe Updater Log Begin >>>
+2015-11-11T16:55:43: Application Version: 6.0.0.24
+2015-11-11T16:55:43: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamun.log
+2015-11-11T16:55:43: cmdline option: -logLevel = 2
+2015-11-11T16:57:31: <<< Adobe Updater Log End <<<
+
+
+2015-11-16T13:11:54: >>> Adobe Updater Log Begin >>>
+2015-11-16T13:11:54: Application Version: 6.0.0.24
+2015-11-16T13:11:54: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamun.log
+2015-11-16T13:11:54: cmdline option: -logLevel = 2
+2015-11-16T13:11:54: UpdaterNotifications : Stepped into << UpdaterNotificationsGetLEIDList >> call.
+2015-11-16T13:11:54: UpdaterNotifications : Successfully returning from << UpdaterNotificationsGetLEIDList >> call.
+2015-11-16T15:36:32: <<< Adobe Updater Log End <<<
+
+
