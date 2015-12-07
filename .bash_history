@@ -135,3 +135,9 @@ git checkout -b static-pages
 rails generate controller StaticPages home help
 git status
 git add -A
+git status
+git add -A
+git commit -m "Add a Static Pages cpntroller"
+git push -u origin static-pages
+git push 
+rails generate controller static_pages

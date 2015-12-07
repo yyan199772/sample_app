@@ -2618,3 +2618,293 @@ Wed Dec  2 13:04:55 2015	[INFO] AAMUpdatesNotifier - All updates count 18
 Wed Dec  2 13:04:56 2015	[INFO] AAMUpdatesNotifier - All enabled updates count 21 
 Wed Dec  2 13:04:56 2015	[INFO] AAMUpdatesNotifier - All filtered application count to display 12 
 Wed Dec  2 13:04:56 2015	[INFO] AAMUpdatesNotifier - haveUpdatesToInstall(status) 1 numberOfApplications 12 
+Fri Dec  4 10:06:32 2015	[INFO] AAMUpdatesNotifier - Build Version - 6.0.335.0
+Fri Dec  4 10:06:32 2015	[INFO] AAMUpdatesNotifier - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:32 2015	[INFO] AAMUpdatesNotifier - Application initialization start, Looking for command line arguments
+Fri Dec  4 10:06:32 2015	[INFO] Common.CommandLineParser - Parsing the command line provided. Number of command line arguments is 1
+Fri Dec  4 10:06:32 2015	[INFO] AAMUpdatesNotifier - No AAM Notifier is running so new instance is allowed to run...
+Fri Dec  4 10:06:40 2015	[INFO] AAMUpdatesNotifier - Registering Notification to listen messages from another instance
+Fri Dec  4 10:06:40 2015	[INFO] AAMUpdatesNotifier - Handle Relaunch Notification Action...
+Fri Dec  4 10:06:41 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:41 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:41 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:41 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:41 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:42 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:42 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:42 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:43 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:43 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:43 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:43 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:43 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:43 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:43 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:44 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:44 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:44 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:44 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:44 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:45 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:45 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:45 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:46 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:46 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:47 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:47 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:47 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:47 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Build Version - 6.0.281.0
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:47 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Released OPM refrence successfully
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Build Version - 6.0.238.0
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Fri Dec  4 10:06:47 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Fri Dec  4 10:06:47 2015	[INFO] OPM - No Record found for the input fields
+Fri Dec  4 10:06:48 2015	[INFO] AAMUpdatesNotifier - CFU .... StatusCode(21) ErrorCode(0)
+Fri Dec  4 10:06:48 2015	[INFO] AAMUpdatesNotifier - Handle updateUI Notification Action...
+Fri Dec  4 10:06:48 2015	[INFO] AAMUpdatesNotifier - inside getUpdates
+Fri Dec  4 10:06:49 2015	[INFO] AAMUpdatesNotifier - All updates count 18 
+Fri Dec  4 10:06:49 2015	[INFO] AAMUpdatesNotifier - All enabled updates count 21 
+Fri Dec  4 10:06:49 2015	[INFO] AAMUpdatesNotifier - All filtered application count to display 12 
+Fri Dec  4 10:06:49 2015	[INFO] AAMUpdatesNotifier - haveUpdatesToInstall(status) 1 numberOfApplications 12 
+Mon Dec  7 08:35:53 2015	[INFO] AAMUpdatesNotifier - Build Version - 6.0.335.0
+Mon Dec  7 08:35:53 2015	[INFO] AAMUpdatesNotifier - Logging Level verbosity Set  to 4
+Mon Dec  7 08:35:53 2015	[INFO] AAMUpdatesNotifier - Application initialization start, Looking for command line arguments
+Mon Dec  7 08:35:53 2015	[INFO] Common.CommandLineParser - Parsing the command line provided. Number of command line arguments is 1
+Mon Dec  7 08:35:53 2015	[INFO] AAMUpdatesNotifier - No AAM Notifier is running so new instance is allowed to run...
+Mon Dec  7 08:35:54 2015	[INFO] AAMUpdatesNotifier - Registering Notification to listen messages from another instance
+Mon Dec  7 08:35:54 2015	[INFO] AAMUpdatesNotifier - Handle Relaunch Notification Action...
+Mon Dec  7 08:35:58 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:35:58 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:35:58 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:35:58 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:35:58 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:00 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:00 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:00 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:00 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:00 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:00 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:00 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:00 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:01 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:01 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:01 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:02 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:02 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:02 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:02 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:02 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:02 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:02 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:02 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:03 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:03 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:03 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:03 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:03 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:03 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:03 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:04 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:04 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:04 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Build Version - 6.0.281.0
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:04 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:04 2015	[INFO] OPM - Released OPM refrence successfully
+Mon Dec  7 08:36:05 2015	[INFO] OPM - Build Version - 6.0.238.0
+Mon Dec  7 08:36:05 2015	[INFO] OPM - Logging Level verbosity Set  to 4
+Mon Dec  7 08:36:05 2015	[INFO] OPM - Schema version and schema compatibility version are same or greater than current
+
+Mon Dec  7 08:36:05 2015	[INFO] OPM - No Record found for the input fields
+Mon Dec  7 08:36:06 2015	[INFO] AAMUpdatesNotifier - CFU .... StatusCode(21) ErrorCode(0)
+Mon Dec  7 08:36:06 2015	[INFO] AAMUpdatesNotifier - Handle updateUI Notification Action...
+Mon Dec  7 08:36:06 2015	[INFO] AAMUpdatesNotifier - inside getUpdates
+Mon Dec  7 08:36:08 2015	[INFO] AAMUpdatesNotifier - All updates count 18 
+Mon Dec  7 08:36:08 2015	[INFO] AAMUpdatesNotifier - All enabled updates count 21 
+Mon Dec  7 08:36:08 2015	[INFO] AAMUpdatesNotifier - All filtered application count to display 12 
+Mon Dec  7 08:36:08 2015	[INFO] AAMUpdatesNotifier - haveUpdatesToInstall(status) 1 numberOfApplications 12 

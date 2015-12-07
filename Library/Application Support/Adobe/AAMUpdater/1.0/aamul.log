@@ -576,3 +576,38 @@
 2015-12-02T18:04:36: <<< Adobe Updater Log End <<<
 
 
+2015-12-04T15:06:31: >>> Adobe Updater Log Begin >>>
+2015-12-04T15:06:31: Application Version: 6.0.0.67
+2015-12-04T15:06:31: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamul.log
+2015-12-04T15:06:31: cmdline option: -logLevel = 2
+2015-12-04T15:06:31: StartupUtility : Loaded at startup/logon.
+2015-12-04T15:06:31: UCIsUpdaterEnabled : UpdaterIsEnabled.
+2015-12-04T15:06:31: Scheduled check window has elapsed 
+2015-12-04T15:06:31: StartupUtility : Window is Elapsed and going to launch PDApp.
+2015-12-04T15:06:31: StartupUtility: Calling LaunchExecutable for exe  = /Library/Application Support/Adobe/OOBE/PDApp/UWA/AAM Updates Notifier.app/Contents/MacOS/AAM Updates Notifier
+2015-12-04T15:06:32: <<< Adobe Updater Log End <<<
+
+
+2015-12-04T20:19:46: >>> Adobe Updater Log Begin >>>
+2015-12-04T20:19:46: Application Version: 6.0.0.67
+2015-12-04T20:19:46: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamul.log
+2015-12-04T20:19:46: cmdline option: -logLevel = 2
+2015-12-04T20:19:46: StartupUtility : Loaded at startup/logon.
+2015-12-04T20:19:46: UCIsUpdaterEnabled : UpdaterIsEnabled.
+2015-12-04T20:19:46: Scheduled check window has not yet elapsed 
+2015-12-04T20:19:46: StartupUtility : Window is NOT Elapsed.
+2015-12-04T20:19:46: <<< Adobe Updater Log End <<<
+
+
+2015-12-07T13:35:52: >>> Adobe Updater Log Begin >>>
+2015-12-07T13:35:52: Application Version: 6.0.0.67
+2015-12-07T13:35:52: cmdline option: -logFile = /Users/technology/Library/Application Support/Adobe/AAMUpdater/1.0/aamul.log
+2015-12-07T13:35:52: cmdline option: -logLevel = 2
+2015-12-07T13:35:52: StartupUtility : Loaded at startup/logon.
+2015-12-07T13:35:52: UCIsUpdaterEnabled : UpdaterIsEnabled.
+2015-12-07T13:35:52: Scheduled check window has elapsed 
+2015-12-07T13:35:52: StartupUtility : Window is Elapsed and going to launch PDApp.
+2015-12-07T13:35:52: StartupUtility: Calling LaunchExecutable for exe  = /Library/Application Support/Adobe/OOBE/PDApp/UWA/AAM Updates Notifier.app/Contents/MacOS/AAM Updates Notifier
+2015-12-07T13:35:52: <<< Adobe Updater Log End <<<
+
+
